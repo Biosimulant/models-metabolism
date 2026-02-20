@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2204190005
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2204190005?filename=Dinh2019_iRhto1108N.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.dinh2019_a_comprehensive_genome_scale_model_for_model2204190005_model:Dinh2019AComprehensiveGenomeScaleModelForModel2204190005Model
   init_kwargs:
     model_path: data/MODEL2204190005.xml

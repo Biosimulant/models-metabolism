@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2312190001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2312190001?filename=ford20.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.ford2020_whole_body_vitamin_a_metabolism_in_huma_model2312190001_model:Ford2020WholeBodyVitaminAMetabolismInHumaModel2312190001Model
   init_kwargs:
     model_path: data/MODEL2312190001.xml

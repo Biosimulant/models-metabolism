@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2408030004
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2408030004?filename=Mgcr1.omex
   license: CC0
-bsim:
+biosim:
   entrypoint: src.mandakovic2020_microbacterium_species_mgcr1_and_model2408030004_model:Mandakovic2020MicrobacteriumSpeciesMgcr1AndModel2408030004Model
   init_kwargs:
     model_path: data/MODEL2408030004.xml

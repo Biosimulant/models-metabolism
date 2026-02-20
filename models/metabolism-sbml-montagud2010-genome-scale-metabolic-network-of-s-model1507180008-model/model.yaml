@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1507180008
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1507180008?filename=MODEL1507180008_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.montagud2010_genome_scale_metabolic_network_of_s_model1507180008_model:Montagud2010GenomeScaleMetabolicNetworkOfSModel1507180008Model
   init_kwargs:
     model_path: data/MODEL1507180008.xml

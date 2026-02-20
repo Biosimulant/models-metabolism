@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1204270001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1204270001?filename=MODEL1204270001_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.koenig2012_hepatic_glucose_metabolism_model1204270001_model:Koenig2012HepaticGlucoseMetabolismModel1204270001Model
   init_kwargs:
     model_path: data/MODEL1204270001.xml

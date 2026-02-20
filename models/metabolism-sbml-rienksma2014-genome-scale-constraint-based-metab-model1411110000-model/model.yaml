@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1411110000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1411110000?filename=MODEL1411110000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.rienksma2014_genome_scale_constraint_based_metab_model1411110000_model:Rienksma2014GenomeScaleConstraintBasedMetabModel1411110000Model
   init_kwargs:
     model_path: data/MODEL1411110000.xml

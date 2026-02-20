@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2405300001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2405300001?filename=Gap-filled_Curated_HMO_GEMs.zip
   license: CC0
-bsim:
+biosim:
   entrypoint: src.ioannou2024_synthetic_human_infant_gut_microbial_model2405300001_model:Ioannou2024SyntheticHumanInfantGutMicrobialModel2405300001Model
   init_kwargs:
     model_path: data/MODEL2405300001.xml

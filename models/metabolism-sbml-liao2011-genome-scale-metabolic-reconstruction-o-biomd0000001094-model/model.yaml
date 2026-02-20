@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000001094
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000001094?filename=MODEL1507180054_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.liao2011_genome_scale_metabolic_reconstruction_o_biomd0000001094_model:Liao2011GenomeScaleMetabolicReconstructionOBiomd0000001094Model
   init_kwargs:
     model_path: data/BIOMD0000001094.xml

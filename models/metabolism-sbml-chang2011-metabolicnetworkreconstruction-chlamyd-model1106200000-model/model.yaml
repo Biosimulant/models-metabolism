@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1106200000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1106200000?filename=MODEL1106200000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.chang2011_metabolicnetworkreconstruction_chlamyd_model1106200000_model:Chang2011MetabolicnetworkreconstructionChlamydModel1106200000Model
   init_kwargs:
     model_path: data/MODEL1106200000.xml

@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1507180049
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1507180049?filename=MODEL1507180049_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.borodina2005_genome_scale_metabolic_network_of_s_model1507180049_model:Borodina2005GenomeScaleMetabolicNetworkOfSModel1507180049Model
   init_kwargs:
     model_path: data/MODEL1507180049.xml

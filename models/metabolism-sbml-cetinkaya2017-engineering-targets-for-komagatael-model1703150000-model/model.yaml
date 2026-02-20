@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1703150000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1703150000?filename=MODEL1703150000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.cetinkaya2017_engineering_targets_for_komagatael_model1703150000_model:Cetinkaya2017EngineeringTargetsForKomagataelModel1703150000Model
   init_kwargs:
     model_path: data/MODEL1703150000.xml

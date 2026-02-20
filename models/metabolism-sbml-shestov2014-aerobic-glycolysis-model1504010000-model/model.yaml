@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1504010000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1504010000?filename=MODEL1504010000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.shestov2014_aerobic_glycolysis_model1504010000_model:Shestov2014AerobicGlycolysisModel1504010000Model
   init_kwargs:
     model_path: data/MODEL1504010000.xml

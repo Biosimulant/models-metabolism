@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL3023641273
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL3023641273?filename=MODEL3023641273_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.feist2007_ecmetabol_flux2_model3023641273_model:Feist2007EcmetabolFlux2Model3023641273Model
   init_kwargs:
     model_path: data/MODEL3023641273.xml

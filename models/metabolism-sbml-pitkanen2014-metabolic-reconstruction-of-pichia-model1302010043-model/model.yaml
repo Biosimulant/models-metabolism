@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1302010043
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1302010043?filename=MODEL1302010043_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.pitkanen2014_metabolic_reconstruction_of_pichia_model1302010043_model:Pitkanen2014MetabolicReconstructionOfPichiaModel1302010043Model
   init_kwargs:
     model_path: data/MODEL1302010043.xml

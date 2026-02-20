@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1402200000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1402200000?filename=MODEL1402200000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.mardinoglu2013_genome_scale_metabolic_model_hmr_model1402200000_model:Mardinoglu2013GenomeScaleMetabolicModelHmrModel1402200000Model
   init_kwargs:
     model_path: data/MODEL1402200000.xml

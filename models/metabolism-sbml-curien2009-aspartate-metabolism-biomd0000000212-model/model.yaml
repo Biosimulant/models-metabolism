@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000212
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000212?filename=BIOMD0000000212_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.curien2009_aspartate_metabolism_biomd0000000212_model:Curien2009AspartateMetabolismBiomd0000000212Model
   init_kwargs:
     model_path: data/BIOMD0000000212.xml

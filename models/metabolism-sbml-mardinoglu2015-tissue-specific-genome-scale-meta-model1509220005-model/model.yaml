@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1509220005
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1509220005?filename=MODEL1509220005_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.mardinoglu2015_tissue_specific_genome_scale_meta_model1509220005_model:Mardinoglu2015TissueSpecificGenomeScaleMetaModel1509220005Model
   init_kwargs:
     model_path: data/MODEL1509220005.xml

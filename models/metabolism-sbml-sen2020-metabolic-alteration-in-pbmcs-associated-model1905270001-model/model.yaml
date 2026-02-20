@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1905270001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1905270001?filename=Sen_et_al_PBMC_GEM_MODEL1905270001.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.sen2020_metabolic_alteration_in_pbmcs_associated_model1905270001_model:Sen2020MetabolicAlterationInPbmcsAssociatedModel1905270001Model
   init_kwargs:
     model_path: data/MODEL1905270001.xml

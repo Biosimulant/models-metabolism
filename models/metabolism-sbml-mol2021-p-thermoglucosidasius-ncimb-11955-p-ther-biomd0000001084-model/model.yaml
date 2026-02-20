@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000001084
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000001084?filename=p_thermo.omex
   license: CC0
-bsim:
+biosim:
   entrypoint: src.mol2021_p_thermoglucosidasius_ncimb_11955_p_ther_biomd0000001084_model:Mol2021PThermoglucosidasiusNcimb11955PTherBiomd0000001084Model
   init_kwargs:
     model_path: data/BIOMD0000001084.xml

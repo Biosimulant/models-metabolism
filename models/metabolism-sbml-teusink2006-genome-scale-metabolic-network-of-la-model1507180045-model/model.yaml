@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1507180045
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1507180045?filename=MODEL1507180045_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.teusink2006_genome_scale_metabolic_network_of_la_model1507180045_model:Teusink2006GenomeScaleMetabolicNetworkOfLaModel1507180045Model
   init_kwargs:
     model_path: data/MODEL1507180045.xml

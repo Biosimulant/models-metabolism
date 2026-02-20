@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000570
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000570?filename=BIOMD0000000570_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.aubert2002_coupling_between_brain_electrical_act_biomd0000000570_model:Aubert2002CouplingBetweenBrainElectricalActBiomd0000000570Model
   init_kwargs:
     model_path: data/BIOMD0000000570.xml

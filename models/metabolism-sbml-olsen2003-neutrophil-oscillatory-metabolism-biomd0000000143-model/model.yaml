@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000143
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000143?filename=BIOMD0000000143_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.olsen2003_neutrophil_oscillatory_metabolism_biomd0000000143_model:Olsen2003NeutrophilOscillatoryMetabolismBiomd0000000143Model
   init_kwargs:
     model_path: data/BIOMD0000000143.xml

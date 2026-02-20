@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1507180067
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1507180067?filename=MODEL1507180067_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.quek2008_genome_scale_metabolic_network_of_mus_m_model1507180067_model:Quek2008GenomeScaleMetabolicNetworkOfMusMModel1507180067Model
   init_kwargs:
     model_path: data/MODEL1507180067.xml

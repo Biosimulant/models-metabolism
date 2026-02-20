@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000505
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000505?filename=BIOMD0000000505_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.vaneunen2013_network_dynamics_of_fatty_acid_oxid_biomd0000000505_model:Vaneunen2013NetworkDynamicsOfFattyAcidOxidBiomd0000000505Model
   init_kwargs:
     model_path: data/BIOMD0000000505.xml

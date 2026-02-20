@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1006230090
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1006230090?filename=MODEL1006230090_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.wu2007_mitochondrialtcacycle_model1006230090_model:Wu2007MitochondrialtcacycleModel1006230090Model
   init_kwargs:
     model_path: data/MODEL1006230090.xml

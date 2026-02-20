@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1310110036
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1310110036?filename=MODEL1310110036_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.thiele2013_lymph_node_germinal_center_cells_model1310110036_model:Thiele2013LymphNodeGerminalCenterCellsModel1310110036Model
   init_kwargs:
     model_path: data/MODEL1310110036.xml

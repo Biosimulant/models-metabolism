@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000436
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000436?filename=BIOMD0000000436_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.gupta2009_eicosanoid_metabolism_biomd0000000436_model:Gupta2009EicosanoidMetabolismBiomd0000000436Model
   init_kwargs:
     model_path: data/BIOMD0000000436.xml

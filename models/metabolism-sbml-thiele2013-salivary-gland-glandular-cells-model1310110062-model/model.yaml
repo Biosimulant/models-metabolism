@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1310110062
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1310110062?filename=MODEL1310110062_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.thiele2013_salivary_gland_glandular_cells_model1310110062_model:Thiele2013SalivaryGlandGlandularCellsModel1310110062Model
   init_kwargs:
     model_path: data/MODEL1310110062.xml

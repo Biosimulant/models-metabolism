@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2306150001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2306150001?filename=iPrub22.sbml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.n_gre2023_genome_scale_metabolic_network_of_peni_model2306150001_model:NGre2023GenomeScaleMetabolicNetworkOfPeniModel2306150001Model
   init_kwargs:
     model_path: data/MODEL2306150001.sbml

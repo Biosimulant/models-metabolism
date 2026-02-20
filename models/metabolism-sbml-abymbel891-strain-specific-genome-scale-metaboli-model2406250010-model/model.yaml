@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2406250010
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2406250010?filename=AbyMBEL891.omex
   license: CC0
-bsim:
+biosim:
   entrypoint: src.abymbel891_strain_specific_genome_scale_metaboli_model2406250010_model:Abymbel891StrainSpecificGenomeScaleMetaboliModel2406250010Model
   init_kwargs:
     model_path: data/MODEL2406250010.xml

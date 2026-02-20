@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1302010041
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1302010041?filename=MODEL1302010041_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.pitkanen2014_metabolic_reconstruction_of_laccari_model1302010041_model:Pitkanen2014MetabolicReconstructionOfLaccariModel1302010041Model
   init_kwargs:
     model_path: data/MODEL1302010041.xml

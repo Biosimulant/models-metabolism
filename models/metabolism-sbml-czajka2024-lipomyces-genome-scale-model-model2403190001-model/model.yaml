@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2403190001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2403190001?filename=iLst996.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.czajka2024_lipomyces_genome_scale_model_model2403190001_model:Czajka2024LipomycesGenomeScaleModelModel2403190001Model
   init_kwargs:
     model_path: data/MODEL2403190001.xml

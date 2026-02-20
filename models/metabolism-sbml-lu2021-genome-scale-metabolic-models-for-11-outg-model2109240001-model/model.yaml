@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2109240001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2109240001?filename=Schizosaccharomyces_pombe.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.lu2021_genome_scale_metabolic_models_for_11_outg_model2109240001_model:Lu2021GenomeScaleMetabolicModelsFor11OutgModel2109240001Model
   init_kwargs:
     model_path: data/MODEL2109240001.xml

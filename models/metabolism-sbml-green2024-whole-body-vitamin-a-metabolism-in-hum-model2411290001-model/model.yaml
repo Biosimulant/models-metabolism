@@ -18,7 +18,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2411290001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2411290001?filename=green24.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.green2024_whole_body_vitamin_a_metabolism_in_hum_model2411290001_model:Green2024WholeBodyVitaminAMetabolismInHumModel2411290001Model
   init_kwargs:
     model_path: data/MODEL2411290001.xml

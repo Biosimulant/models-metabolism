@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1710040000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1710040000?filename=MODEL1710040000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.kees2018_genome_scale_constraint_based_model_of_model1710040000_model:Kees2018GenomeScaleConstraintBasedModelOfModel1710040000Model
   init_kwargs:
     model_path: data/MODEL1710040000.xml

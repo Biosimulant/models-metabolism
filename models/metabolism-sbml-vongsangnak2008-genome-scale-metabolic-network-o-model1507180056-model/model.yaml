@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1507180056
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1507180056?filename=MODEL1507180056_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.vongsangnak2008_genome_scale_metabolic_network_o_model1507180056_model:Vongsangnak2008GenomeScaleMetabolicNetworkOModel1507180056Model
   init_kwargs:
     model_path: data/MODEL1507180056.xml

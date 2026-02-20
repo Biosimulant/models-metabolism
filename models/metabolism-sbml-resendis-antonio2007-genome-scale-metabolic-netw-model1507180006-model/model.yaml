@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1507180006
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1507180006?filename=MODEL1507180006_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.resendis_antonio2007_genome_scale_metabolic_netw_model1507180006_model:ResendisAntonio2007GenomeScaleMetabolicNetwModel1507180006Model
   init_kwargs:
     model_path: data/MODEL1507180006.xml

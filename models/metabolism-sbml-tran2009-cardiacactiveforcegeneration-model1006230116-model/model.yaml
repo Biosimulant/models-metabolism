@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1006230116
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1006230116?filename=MODEL1006230116_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.tran2009_cardiacactiveforcegeneration_model1006230116_model:Tran2009CardiacactiveforcegenerationModel1006230116Model
   init_kwargs:
     model_path: data/MODEL1006230116.xml

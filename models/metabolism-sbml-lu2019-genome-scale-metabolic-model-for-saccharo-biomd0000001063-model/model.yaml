@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000001063
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000001063?filename=yeast-GEM.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.lu2019_genome_scale_metabolic_model_for_saccharo_biomd0000001063_model:Lu2019GenomeScaleMetabolicModelForSaccharoBiomd0000001063Model
   init_kwargs:
     model_path: data/BIOMD0000001063.xml

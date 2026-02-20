@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1105030000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1105030000?filename=MODEL1105030000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.zhuang2011_ecoli_fba_with_membrane_economics_model1105030000_model:Zhuang2011EcoliFbaWithMembraneEconomicsModel1105030000Model
   init_kwargs:
     model_path: data/MODEL1105030000.xml

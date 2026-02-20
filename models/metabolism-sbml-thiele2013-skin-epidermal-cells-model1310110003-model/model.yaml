@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1310110003
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1310110003?filename=MODEL1310110003_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.thiele2013_skin_epidermal_cells_model1310110003_model:Thiele2013SkinEpidermalCellsModel1310110003Model
   init_kwargs:
     model_path: data/MODEL1310110003.xml

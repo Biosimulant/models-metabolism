@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000376
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000376?filename=BIOMD0000000376_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.bertram2007_isletcell_oscillations_biomd0000000376_model:Bertram2007IsletcellOscillationsBiomd0000000376Model
   init_kwargs:
     model_path: data/BIOMD0000000376.xml

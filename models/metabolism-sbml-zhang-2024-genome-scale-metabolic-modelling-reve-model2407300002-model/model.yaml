@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2407300002
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2407300002?filename=8-species_network_simulations_HT_and_Laurate_100th_hr.RDS
   license: CC0
-bsim:
+biosim:
   entrypoint: src.zhang_2024_genome_scale_metabolic_modelling_reve_model2407300002_model:Zhang2024GenomeScaleMetabolicModellingReveModel2407300002Model
   init_kwargs:
     model_path: data/MODEL2407300002.xml

@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000257
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000257?filename=BIOMD0000000257_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.piedrafita2010_mr_system_biomd0000000257_model:Piedrafita2010MrSystemBiomd0000000257Model
   init_kwargs:
     model_path: data/BIOMD0000000257.xml

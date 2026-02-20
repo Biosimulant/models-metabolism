@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1105180000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1105180000?filename=MODEL1105180000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.smallbone2009_fba_model_geometric_perspective_model1105180000_model:Smallbone2009FbaModelGeometricPerspectiveModel1105180000Model
   init_kwargs:
     model_path: data/MODEL1105180000.xml

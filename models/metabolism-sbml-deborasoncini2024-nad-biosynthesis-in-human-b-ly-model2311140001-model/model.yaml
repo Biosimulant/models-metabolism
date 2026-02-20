@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2311140001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2311140001?filename=NADnet_Bcell_model_L2V4_Nov2024.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.deborasoncini2024_nad_biosynthesis_in_human_b_ly_model2311140001_model:Deborasoncini2024NadBiosynthesisInHumanBLyModel2311140001Model
   init_kwargs:
     model_path: data/MODEL2311140001.xml

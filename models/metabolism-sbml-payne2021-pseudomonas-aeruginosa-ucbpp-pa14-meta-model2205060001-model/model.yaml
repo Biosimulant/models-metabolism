@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2205060001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2205060001?filename=iPau21.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.payne2021_pseudomonas_aeruginosa_ucbpp_pa14_meta_model2205060001_model:Payne2021PseudomonasAeruginosaUcbppPa14MetaModel2205060001Model
   init_kwargs:
     model_path: data/MODEL2205060001.xml

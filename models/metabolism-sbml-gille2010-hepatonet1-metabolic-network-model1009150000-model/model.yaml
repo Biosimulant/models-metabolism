@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1009150000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1009150000?filename=MODEL1009150000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.gille2010_hepatonet1_metabolic_network_model1009150000_model:Gille2010Hepatonet1MetabolicNetworkModel1009150000Model
   init_kwargs:
     model_path: data/MODEL1009150000.xml

@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2002050001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2002050001?filename=pxr-fkk5-docked.pdb
   license: CC0
-bsim:
+biosim:
   entrypoint: src.dvarak2020_pxr_targeting_using_microbial_metabol_model2002050001_model:Dvarak2020PxrTargetingUsingMicrobialMetabolModel2002050001Model
   init_kwargs:
     model_path: data/MODEL2002050001.xml

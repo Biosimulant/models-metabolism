@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1507180071
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1507180071?filename=MODEL1507180071_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.vanee2010_genome_scale_metabolic_model_of_crypto_model1507180071_model:Vanee2010GenomeScaleMetabolicModelOfCryptoModel1507180071Model
   init_kwargs:
     model_path: data/MODEL1507180071.xml

@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2003240001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2003240001?filename=iGD1348.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.dicenzo2020_sinorhizobium_meliloti_1021_genome_s_model2003240001_model:Dicenzo2020SinorhizobiumMeliloti1021GenomeSModel2003240001Model
   init_kwargs:
     model_path: data/MODEL2003240001.xml

@@ -20,7 +20,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2404260001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2404260001?filename=HpM485.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.a_genome_scale_metabolic_model_for_helicobacter_model2404260001_model:AGenomeScaleMetabolicModelForHelicobacterModel2404260001Model
   init_kwargs:
     model_path: data/MODEL2404260001.xml

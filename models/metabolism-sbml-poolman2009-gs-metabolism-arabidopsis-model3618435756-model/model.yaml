@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL3618435756
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL3618435756?filename=MODEL3618435756_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.poolman2009_gs_metabolism_arabidopsis_model3618435756_model:Poolman2009GsMetabolismArabidopsisModel3618435756Model
   init_kwargs:
     model_path: data/MODEL3618435756.xml

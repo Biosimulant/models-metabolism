@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2204300002
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2204300002?filename=MODEL2204300002.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.blasche2021_kefir_interactions_rothia_kefirresid_model2204300002_model:Blasche2021KefirInteractionsRothiaKefirresidModel2204300002Model
   init_kwargs:
     model_path: data/MODEL2204300002.xml

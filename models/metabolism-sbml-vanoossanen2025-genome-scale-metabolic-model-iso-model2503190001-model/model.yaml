@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2503190001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2503190001?filename=iSO1949_Noceanica.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.vanoossanen2025_genome_scale_metabolic_model_iso_model2503190001_model:Vanoossanen2025GenomeScaleMetabolicModelIsoModel2503190001Model
   init_kwargs:
     model_path: data/MODEL2503190001.xml

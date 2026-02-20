@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1912180001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1912180001?filename=iCHO2291.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.yeo2020_genome_scale_model_of_cho_cells_model1912180001_model:Yeo2020GenomeScaleModelOfChoCellsModel1912180001Model
   init_kwargs:
     model_path: data/MODEL1912180001.xml

@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1401290000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1401290000?filename=MODEL1401290000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.thomas2014_the_effect_of_aspirin_resistance_on_p_model1401290000_model:Thomas2014TheEffectOfAspirinResistanceOnPModel1401290000Model
   init_kwargs:
     model_path: data/MODEL1401290000.xml

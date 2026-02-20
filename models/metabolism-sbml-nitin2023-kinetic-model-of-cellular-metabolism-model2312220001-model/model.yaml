@@ -23,7 +23,7 @@ upstream:
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2312220001?filename=Kinetic
     glycolysis assay model.sbml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.nitin2023_kinetic_model_of_cellular_metabolism_model2312220001_model:Nitin2023KineticModelOfCellularMetabolismModel2312220001Model
   init_kwargs:
     model_path: data/MODEL2312220001.sbml

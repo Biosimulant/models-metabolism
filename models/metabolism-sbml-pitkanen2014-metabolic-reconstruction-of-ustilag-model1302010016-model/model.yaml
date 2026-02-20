@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1302010016
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1302010016?filename=MODEL1302010016_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.pitkanen2014_metabolic_reconstruction_of_ustilag_model1302010016_model:Pitkanen2014MetabolicReconstructionOfUstilagModel1302010016Model
   init_kwargs:
     model_path: data/MODEL1302010016.xml

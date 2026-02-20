@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1508190002
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1508190002?filename=MODEL1508190002_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.kerkhoven2016_genome_scale_metabolic_model_of_ya_model1508190002_model:Kerkhoven2016GenomeScaleMetabolicModelOfYaModel1508190002Model
   init_kwargs:
     model_path: data/MODEL1508190002.xml

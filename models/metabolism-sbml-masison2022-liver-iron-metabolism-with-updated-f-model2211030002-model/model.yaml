@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2211030002
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2211030002?filename=LiverIronMetabolism_UpdatedFerritin_sbml_l3v1.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.masison2022_liver_iron_metabolism_with_updated_f_model2211030002_model:Masison2022LiverIronMetabolismWithUpdatedFModel2211030002Model
   init_kwargs:
     model_path: data/MODEL2211030002.xml

@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2109130008
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2109130008?filename=Cyberlindnera_americana.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.lu2021_genome_scale_metabolic_models_for_yeast_s_model2109130008_model:Lu2021GenomeScaleMetabolicModelsForYeastSModel2109130008Model
   init_kwargs:
     model_path: data/MODEL2109130008.xml

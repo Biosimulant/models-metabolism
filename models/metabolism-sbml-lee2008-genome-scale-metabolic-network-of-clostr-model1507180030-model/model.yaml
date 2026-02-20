@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1507180030
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1507180030?filename=MODEL1507180030_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.lee2008_genome_scale_metabolic_network_of_clostr_model1507180030_model:Lee2008GenomeScaleMetabolicNetworkOfClostrModel1507180030Model
   init_kwargs:
     model_path: data/MODEL1507180030.xml

@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2012220003
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2012220003?filename=iDPM21RW.omex
   license: CC0
-bsim:
+biosim:
   entrypoint: src.renz2021_genome_scale_metabolic_model_idpm21rw_o_model2012220003_model:Renz2021GenomeScaleMetabolicModelIdpm21rwOModel2012220003Model
   init_kwargs:
     model_path: data/MODEL2012220003.xml

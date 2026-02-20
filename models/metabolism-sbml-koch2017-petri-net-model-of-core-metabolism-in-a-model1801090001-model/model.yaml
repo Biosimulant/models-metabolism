@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1801090001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1801090001?filename=Koch2017_Core_Metabolism_Arabidopsis_thaliana_Petri_Nets.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.koch2017_petri_net_model_of_core_metabolism_in_a_model1801090001_model:Koch2017PetriNetModelOfCoreMetabolismInAModel1801090001Model
   init_kwargs:
     model_path: data/MODEL1801090001.xml

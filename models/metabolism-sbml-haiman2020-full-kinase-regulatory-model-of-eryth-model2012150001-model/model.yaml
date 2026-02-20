@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2012150001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2012150001?filename=Glycolysis_FKRM.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.haiman2020_full_kinase_regulatory_model_of_eryth_model2012150001_model:Haiman2020FullKinaseRegulatoryModelOfErythModel2012150001Model
   init_kwargs:
     model_path: data/MODEL2012150001.xml

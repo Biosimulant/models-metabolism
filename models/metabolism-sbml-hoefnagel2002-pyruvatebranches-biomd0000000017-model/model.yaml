@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000017
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000017?filename=BIOMD0000000017_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.hoefnagel2002_pyruvatebranches_biomd0000000017_model:Hoefnagel2002PyruvatebranchesBiomd0000000017Model
   init_kwargs:
     model_path: data/BIOMD0000000017.xml

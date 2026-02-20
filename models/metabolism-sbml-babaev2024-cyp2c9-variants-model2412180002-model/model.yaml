@@ -22,7 +22,7 @@ upstream:
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2412180002?filename=Babaev2024
     - CYP2C9 variants.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.babaev2024_cyp2c9_variants_model2412180002_model:Babaev2024Cyp2c9VariantsModel2412180002Model
   init_kwargs:
     model_path: data/MODEL2412180002.xml

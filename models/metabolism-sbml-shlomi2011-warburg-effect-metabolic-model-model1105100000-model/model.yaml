@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1105100000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1105100000?filename=MODEL1105100000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.shlomi2011_warburg_effect_metabolic_model_model1105100000_model:Shlomi2011WarburgEffectMetabolicModelModel1105100000Model
   init_kwargs:
     model_path: data/MODEL1105100000.xml

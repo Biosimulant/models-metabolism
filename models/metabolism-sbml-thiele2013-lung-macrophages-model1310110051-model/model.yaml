@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1310110051
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1310110051?filename=MODEL1310110051_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.thiele2013_lung_macrophages_model1310110051_model:Thiele2013LungMacrophagesModel1310110051Model
   init_kwargs:
     model_path: data/MODEL1310110051.xml

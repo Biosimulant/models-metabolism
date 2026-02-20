@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1302010027
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1302010027?filename=MODEL1302010027_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.pitkanen2014_metabolic_reconstruction_of_botryti_model1302010027_model:Pitkanen2014MetabolicReconstructionOfBotrytiModel1302010027Model
   init_kwargs:
     model_path: data/MODEL1302010027.xml

@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1504080000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1504080000?filename=MODEL1504080000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.quek2014_metabolic_flux_analysis_of_hek_cell_cul_model1504080000_model:Quek2014MetabolicFluxAnalysisOfHekCellCulModel1504080000Model
   init_kwargs:
     model_path: data/MODEL1504080000.xml

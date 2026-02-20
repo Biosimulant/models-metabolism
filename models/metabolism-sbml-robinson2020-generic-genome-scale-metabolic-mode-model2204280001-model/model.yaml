@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2204280001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2204280001?filename=Human-GEM.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.robinson2020_generic_genome_scale_metabolic_mode_model2204280001_model:Robinson2020GenericGenomeScaleMetabolicModeModel2204280001Model
   init_kwargs:
     model_path: data/MODEL2204280001.xml

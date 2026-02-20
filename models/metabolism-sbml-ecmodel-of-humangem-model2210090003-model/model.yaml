@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2210090003
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2210090003?filename=ecHumanGEM.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.ecmodel_of_humangem_model2210090003_model:EcmodelOfHumangemModel2210090003Model
   init_kwargs:
     model_path: data/MODEL2210090003.xml

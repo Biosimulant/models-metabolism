@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL8236441887
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL8236441887?filename=MODEL8236441887_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.yang2008_aanetwork_pmn_model8236441887_model:Yang2008AanetworkPmnModel8236441887Model
   init_kwargs:
     model_path: data/MODEL8236441887.xml

@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2110210002
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2110210002?filename=Suppl_Data_S1.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.mirhakkakschaeuble2021_a_candida_albicans_genome_model2110210002_model:Mirhakkakschaeuble2021ACandidaAlbicansGenomeModel2110210002Model
   init_kwargs:
     model_path: data/MODEL2110210002.xml

@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2110030001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2110030001?filename=iMM1865.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.khodaee2020_reconstruction_of_mouse_genome_scale_model2110030001_model:Khodaee2020ReconstructionOfMouseGenomeScaleModel2110030001Model
   init_kwargs:
     model_path: data/MODEL2110030001.xml

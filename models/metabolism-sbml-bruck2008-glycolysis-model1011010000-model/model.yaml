@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1011010000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1011010000?filename=MODEL1011010000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.bruck2008_glycolysis_model1011010000_model:Bruck2008GlycolysisModel1011010000Model
   init_kwargs:
     model_path: data/MODEL1011010000.xml

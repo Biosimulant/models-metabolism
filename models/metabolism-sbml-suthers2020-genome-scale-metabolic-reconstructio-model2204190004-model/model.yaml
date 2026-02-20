@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2204190004
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2204190004?filename=Suthers2020_iIsor850.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.suthers2020_genome_scale_metabolic_reconstructio_model2204190004_model:Suthers2020GenomeScaleMetabolicReconstructioModel2204190004Model
   init_kwargs:
     model_path: data/MODEL2204190004.xml

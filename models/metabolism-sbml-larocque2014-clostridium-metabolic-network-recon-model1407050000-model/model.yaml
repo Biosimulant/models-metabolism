@@ -20,7 +20,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1407050000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1407050000?filename=MODEL1407050000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.larocque2014_clostridium_metabolic_network_recon_model1407050000_model:Larocque2014ClostridiumMetabolicNetworkReconModel1407050000Model
   init_kwargs:
     model_path: data/MODEL1407050000.xml

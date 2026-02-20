@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2507280001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2507280001?filename=iLG240.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.ilg335_model2507280001_model:Ilg335Model2507280001Model
   init_kwargs:
     model_path: data/MODEL2507280001.xml

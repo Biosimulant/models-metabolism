@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1011080002
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1011080002?filename=MODEL1011080002_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.cottret2010_b_cicadellinicola_met_net_model1011080002_model:Cottret2010BCicadellinicolaMetNetModel1011080002Model
   init_kwargs:
     model_path: data/MODEL1011080002.xml

@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2211290001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2211290001?filename=Casini2022_iMTD22IC_unbound.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.casini2022_genome_scale_metabolic_model_imtd22ic_model2211290001_model:Casini2022GenomeScaleMetabolicModelImtd22icModel2211290001Model
   init_kwargs:
     model_path: data/MODEL2211290001.xml

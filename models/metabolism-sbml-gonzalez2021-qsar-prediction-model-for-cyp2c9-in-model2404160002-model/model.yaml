@@ -25,7 +25,7 @@ upstream:
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2404160002?filename=BioModelsMetadata
     - eos5jz9.csv
   license: CC0
-bsim:
+biosim:
   entrypoint: src.gonzalez2021_qsar_prediction_model_for_cyp2c9_in_model2404160002_model:Gonzalez2021QsarPredictionModelForCyp2c9InModel2404160002Model
   init_kwargs:
     model_path: data/MODEL2404160002.xml

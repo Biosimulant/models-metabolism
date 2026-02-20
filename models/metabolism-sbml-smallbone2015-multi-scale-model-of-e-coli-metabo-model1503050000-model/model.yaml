@@ -19,7 +19,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1503050000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1503050000?filename=MODEL1503050000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.smallbone2015_multi_scale_model_of_e_coli_metabo_model1503050000_model:Smallbone2015MultiScaleModelOfEColiMetaboModel1503050000Model
   init_kwargs:
     model_path: data/MODEL1503050000.xml

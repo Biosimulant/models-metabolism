@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1507180012
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1507180012?filename=MODEL1507180012_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.f_rster2008_genome_scale_metabolic_network_of_sa_model1507180012_model:FRster2008GenomeScaleMetabolicNetworkOfSaModel1507180012Model
   init_kwargs:
     model_path: data/MODEL1507180012.xml

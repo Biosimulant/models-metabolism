@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2406250007
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2406250007?filename=iCN718.omex
   license: CC0
-bsim:
+biosim:
   entrypoint: src.icn718_strain_specific_genome_scale_metabolic_mo_model2406250007_model:Icn718StrainSpecificGenomeScaleMetabolicMoModel2406250007Model
   init_kwargs:
     model_path: data/MODEL2406250007.xml

@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1507180024
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1507180024?filename=MODEL1507180024_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.risso2009_genome_scale_metabolic_network_of_rhod_model1507180024_model:Risso2009GenomeScaleMetabolicNetworkOfRhodModel1507180024Model
   init_kwargs:
     model_path: data/MODEL1507180024.xml

@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2309110001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2309110001?filename=iEC1073.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.carter2023_genome_scale_metabolic_model_of_photo_model2309110001_model:Carter2023GenomeScaleMetabolicModelOfPhotoModel2309110001Model
   init_kwargs:
     model_path: data/MODEL2309110001.xml

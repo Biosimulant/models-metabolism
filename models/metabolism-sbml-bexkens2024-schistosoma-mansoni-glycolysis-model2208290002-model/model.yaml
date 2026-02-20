@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2208290002
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2208290002?filename=s_mansoni_glycolysis_steady_state.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.bexkens2024_schistosoma_mansoni_glycolysis_model2208290002_model:Bexkens2024SchistosomaMansoniGlycolysisModel2208290002Model
   init_kwargs:
     model_path: data/MODEL2208290002.xml

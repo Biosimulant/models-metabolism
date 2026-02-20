@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1108160000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1108160000?filename=MODEL1108160000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.orth2011_e_coli_metabolicnetwork_model1108160000_model:Orth2011EColiMetabolicnetworkModel1108160000Model
   init_kwargs:
     model_path: data/MODEL1108160000.xml

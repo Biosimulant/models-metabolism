@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2504020001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2504020001?filename=Babaev2025-CYP2C9-and-ABCB1-losartan-metabolism-model.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.babaev2025_cyp2c9_and_abcb1_losartan_metabolism_model2504020001_model:Babaev2025Cyp2c9AndAbcb1LosartanMetabolismModel2504020001Model
   init_kwargs:
     model_path: data/MODEL2504020001.xml

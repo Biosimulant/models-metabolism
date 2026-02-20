@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000001062
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000001062?filename=iDK1463.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.kim2021_development_of_a_genome_scale_metabolic_biomd0000001062_model:Kim2021DevelopmentOfAGenomeScaleMetabolicBiomd0000001062Model
   init_kwargs:
     model_path: data/BIOMD0000001062.xml

@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1012300000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1012300000?filename=MODEL1012300000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.macdonald2011_geneticmetabolicdeterminants_buchn_model1012300000_model:Macdonald2011GeneticmetabolicdeterminantsBuchnModel1012300000Model
   init_kwargs:
     model_path: data/MODEL1012300000.xml

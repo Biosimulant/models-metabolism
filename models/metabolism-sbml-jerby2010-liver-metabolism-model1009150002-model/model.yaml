@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1009150002
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1009150002?filename=MODEL1009150002_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.jerby2010_liver_metabolism_model1009150002_model:Jerby2010LiverMetabolismModel1009150002Model
   init_kwargs:
     model_path: data/MODEL1009150002.xml

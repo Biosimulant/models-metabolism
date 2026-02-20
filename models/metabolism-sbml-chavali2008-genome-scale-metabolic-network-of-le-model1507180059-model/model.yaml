@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1507180059
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1507180059?filename=MODEL1507180059_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.chavali2008_genome_scale_metabolic_network_of_le_model1507180059_model:Chavali2008GenomeScaleMetabolicNetworkOfLeModel1507180059Model
   init_kwargs:
     model_path: data/MODEL1507180059.xml

@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000373
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000373?filename=BIOMD0000000373_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.bertram2004_pancreaticbetacell_modelb_biomd0000000373_model:Bertram2004PancreaticbetacellModelbBiomd0000000373Model
   init_kwargs:
     model_path: data/BIOMD0000000373.xml

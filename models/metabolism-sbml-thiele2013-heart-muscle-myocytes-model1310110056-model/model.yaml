@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1310110056
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1310110056?filename=MODEL1310110056_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.thiele2013_heart_muscle_myocytes_model1310110056_model:Thiele2013HeartMuscleMyocytesModel1310110056Model
   init_kwargs:
     model_path: data/MODEL1310110056.xml

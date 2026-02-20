@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000248
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000248?filename=BIOMD0000000248_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.lai2007_o2_transport_metabolism_biomd0000000248_model:Lai2007O2TransportMetabolismBiomd0000000248Model
   init_kwargs:
     model_path: data/BIOMD0000000248.xml

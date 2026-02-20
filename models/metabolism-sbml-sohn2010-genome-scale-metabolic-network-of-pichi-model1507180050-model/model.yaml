@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1507180050
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1507180050?filename=MODEL1507180050_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.sohn2010_genome_scale_metabolic_network_of_pichi_model1507180050_model:Sohn2010GenomeScaleMetabolicNetworkOfPichiModel1507180050Model
   init_kwargs:
     model_path: data/MODEL1507180050.xml

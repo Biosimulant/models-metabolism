@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000627
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000627?filename=BIOMD0000000627_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.winter2017_brain_energy_metabolism_with_ppp_biomd0000000627_model:Winter2017BrainEnergyMetabolismWithPppBiomd0000000627Model
   init_kwargs:
     model_path: data/BIOMD0000000627.xml

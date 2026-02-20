@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2111120001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2111120001?filename=Sl2183.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.sl2183_tomato_metabolic_model_model2111120001_model:Sl2183TomatoMetabolicModelModel2111120001Model
   init_kwargs:
     model_path: data/MODEL2111120001.xml

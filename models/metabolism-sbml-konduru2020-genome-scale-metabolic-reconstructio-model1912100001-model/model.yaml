@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1912100001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1912100001?filename=Xanthomonas_oryzae_KACC_10331.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.konduru2020_genome_scale_metabolic_reconstructio_model1912100001_model:Konduru2020GenomeScaleMetabolicReconstructioModel1912100001Model
   init_kwargs:
     model_path: data/MODEL1912100001.xml

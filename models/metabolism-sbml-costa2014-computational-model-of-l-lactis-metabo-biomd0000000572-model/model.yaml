@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000572
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000572?filename=BIOMD0000000572_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.costa2014_computational_model_of_l_lactis_metabo_biomd0000000572_model:Costa2014ComputationalModelOfLLactisMetaboBiomd0000000572Model
   init_kwargs:
     model_path: data/BIOMD0000000572.xml

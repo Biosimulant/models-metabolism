@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2784700357
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2784700357?filename=MODEL2784700357_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.feala2007_dros_mel_central_metabolism_model2784700357_model:Feala2007DrosMelCentralMetabolismModel2784700357Model
   init_kwargs:
     model_path: data/MODEL2784700357.xml

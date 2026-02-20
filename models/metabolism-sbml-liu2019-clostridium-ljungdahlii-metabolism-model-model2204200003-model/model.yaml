@@ -25,7 +25,7 @@ upstream:
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2204200003?filename=Clostridium
     ljungdahlii Liu Updated.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.liu2019_clostridium_ljungdahlii_metabolism_model_model2204200003_model:Liu2019ClostridiumLjungdahliiMetabolismModelModel2204200003Model
   init_kwargs:
     model_path: data/MODEL2204200003.xml

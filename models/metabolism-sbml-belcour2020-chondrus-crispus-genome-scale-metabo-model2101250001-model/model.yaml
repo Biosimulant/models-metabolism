@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2101250001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2101250001?filename=Chondrus_1.3.sbml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.belcour2020_chondrus_crispus_genome_scale_metabo_model2101250001_model:Belcour2020ChondrusCrispusGenomeScaleMetaboModel2101250001Model
   init_kwargs:
     model_path: data/MODEL2101250001.sbml

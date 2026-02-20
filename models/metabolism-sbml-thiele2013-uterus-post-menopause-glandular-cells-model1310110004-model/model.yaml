@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1310110004
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1310110004?filename=MODEL1310110004_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.thiele2013_uterus_post_menopause_glandular_cells_model1310110004_model:Thiele2013UterusPostMenopauseGlandularCellsModel1310110004Model
   init_kwargs:
     model_path: data/MODEL1310110004.xml

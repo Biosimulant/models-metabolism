@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2204220001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2204220001?filename=22-03-17_MODEL_copasi.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.hurbain2022_oxidative_stress_response_model_model2204220001_model:Hurbain2022OxidativeStressResponseModelModel2204220001Model
   init_kwargs:
     model_path: data/MODEL2204220001.xml

@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2006010001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2006010001?filename=Modelo_mod3_032020.m
   license: CC0
-bsim:
+biosim:
   entrypoint: src.shene2020_flux_balance_analysis_of_biomass_and_l_model2006010001_model:Shene2020FluxBalanceAnalysisOfBiomassAndLModel2006010001Model
   init_kwargs:
     model_path: data/MODEL2006010001.xml

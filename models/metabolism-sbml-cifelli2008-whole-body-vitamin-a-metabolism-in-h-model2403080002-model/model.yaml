@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2403080002
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2403080002?filename=cifelli08.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.cifelli2008_whole_body_vitamin_a_metabolism_in_h_model2403080002_model:Cifelli2008WholeBodyVitaminAMetabolismInHModel2403080002Model
   init_kwargs:
     model_path: data/MODEL2403080002.xml

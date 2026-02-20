@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1303140001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1303140001?filename=MODEL1303140001_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.ray2013_s_cerevisiae_meiosis_specific_metabolic_model1303140001_model:Ray2013SCerevisiaeMeiosisSpecificMetabolicModel1303140001Model
   init_kwargs:
     model_path: data/MODEL1303140001.xml

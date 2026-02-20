@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000001083
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000001083?filename=iJB785.omex
   license: CC0
-bsim:
+biosim:
   entrypoint: src.broddrick2016_synechococcus_elongatus_pcc_7942_i_biomd0000001083_model:Broddrick2016SynechococcusElongatusPcc7942IBiomd0000001083Model
   init_kwargs:
     model_path: data/BIOMD0000001083.xml

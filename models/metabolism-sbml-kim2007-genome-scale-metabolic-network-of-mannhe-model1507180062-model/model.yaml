@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1507180062
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1507180062?filename=MODEL1507180062_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.kim2007_genome_scale_metabolic_network_of_mannhe_model1507180062_model:Kim2007GenomeScaleMetabolicNetworkOfMannheModel1507180062Model
   init_kwargs:
     model_path: data/MODEL1507180062.xml

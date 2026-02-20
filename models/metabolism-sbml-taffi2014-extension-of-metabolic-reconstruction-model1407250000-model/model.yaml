@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1407250000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1407250000?filename=MODEL1407250000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.taffi2014_extension_of_metabolic_reconstruction_model1407250000_model:Taffi2014ExtensionOfMetabolicReconstructionModel1407250000Model
   init_kwargs:
     model_path: data/MODEL1407250000.xml

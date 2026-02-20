@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2103060001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2103060001?filename=main.py
   license: CC0
-bsim:
+biosim:
   entrypoint: src.dalvigarcia2021_dopaminergic_and_serotonergic_ky_model2103060001_model:Dalvigarcia2021DopaminergicAndSerotonergicKyModel2103060001Model
   init_kwargs:
     model_path: data/MODEL2103060001.xml

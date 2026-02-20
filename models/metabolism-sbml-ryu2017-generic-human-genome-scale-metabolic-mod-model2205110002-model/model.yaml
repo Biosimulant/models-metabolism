@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2205110002
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2205110002?filename=Recon2M.2_MNX_Entrez_Gene.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.ryu2017_generic_human_genome_scale_metabolic_mod_model2205110002_model:Ryu2017GenericHumanGenomeScaleMetabolicModModel2205110002Model
   init_kwargs:
     model_path: data/MODEL2205110002.xml

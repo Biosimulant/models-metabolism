@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1910040001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1910040001?filename=iMT1026v3_contextualized.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.torres2019_contextualized_p_pastoris_gsmm_under_model1910040001_model:Torres2019ContextualizedPPastorisGsmmUnderModel1910040001Model
   init_kwargs:
     model_path: data/MODEL1910040001.xml

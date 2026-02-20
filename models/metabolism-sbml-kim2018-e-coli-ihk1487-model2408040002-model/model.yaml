@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2408040002
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2408040002?filename=iHK1487.omex
   license: CC0
-bsim:
+biosim:
   entrypoint: src.kim2018_e_coli_ihk1487_model2408040002_model:Kim2018EColiIhk1487Model2408040002Model
   init_kwargs:
     model_path: data/MODEL2408040002.xml

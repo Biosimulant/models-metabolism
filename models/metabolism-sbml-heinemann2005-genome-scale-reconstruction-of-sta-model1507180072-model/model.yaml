@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1507180072
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1507180072?filename=MODEL1507180072_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.heinemann2005_genome_scale_reconstruction_of_sta_model1507180072_model:Heinemann2005GenomeScaleReconstructionOfStaModel1507180072Model
   init_kwargs:
     model_path: data/MODEL1507180072.xml

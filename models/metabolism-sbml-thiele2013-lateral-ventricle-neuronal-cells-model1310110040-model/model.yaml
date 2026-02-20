@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1310110040
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1310110040?filename=MODEL1310110040_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.thiele2013_lateral_ventricle_neuronal_cells_model1310110040_model:Thiele2013LateralVentricleNeuronalCellsModel1310110040Model
   init_kwargs:
     model_path: data/MODEL1310110040.xml

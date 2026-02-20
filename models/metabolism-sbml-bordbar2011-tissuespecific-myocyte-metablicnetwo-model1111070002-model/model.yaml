@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1111070002
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1111070002?filename=MODEL1111070002_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.bordbar2011_tissuespecific_myocyte_metablicnetwo_model1111070002_model:Bordbar2011TissuespecificMyocyteMetablicnetwoModel1111070002Model
   init_kwargs:
     model_path: data/MODEL1111070002.xml

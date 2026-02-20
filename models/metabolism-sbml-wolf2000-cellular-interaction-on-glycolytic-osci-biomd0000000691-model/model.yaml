@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000691
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000691?filename=BIOMD0000000691_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.wolf2000_cellular_interaction_on_glycolytic_osci_biomd0000000691_model:Wolf2000CellularInteractionOnGlycolyticOsciBiomd0000000691Model
   init_kwargs:
     model_path: data/BIOMD0000000691.xml

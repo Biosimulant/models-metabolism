@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1505110000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1505110000?filename=MODEL1505110000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.millard2016_e_coli_central_carbon_and_energy_met_model1505110000_model:Millard2016EColiCentralCarbonAndEnergyMetModel1505110000Model
   init_kwargs:
     model_path: data/MODEL1505110000.xml

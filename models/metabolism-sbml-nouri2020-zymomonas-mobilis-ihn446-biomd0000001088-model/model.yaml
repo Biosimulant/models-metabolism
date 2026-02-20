@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000001088
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000001088?filename=iHN446.omex
   license: CC0
-bsim:
+biosim:
   entrypoint: src.nouri2020_zymomonas_mobilis_ihn446_biomd0000001088_model:Nouri2020ZymomonasMobilisIhn446Biomd0000001088Model
   init_kwargs:
     model_path: data/BIOMD0000001088.xml

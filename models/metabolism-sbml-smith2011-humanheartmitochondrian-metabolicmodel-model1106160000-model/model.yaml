@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1106160000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1106160000?filename=MODEL1106160000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.smith2011_humanheartmitochondrian_metabolicmodel_model1106160000_model:Smith2011HumanheartmitochondrianMetabolicmodelModel1106160000Model
   init_kwargs:
     model_path: data/MODEL1106160000.xml

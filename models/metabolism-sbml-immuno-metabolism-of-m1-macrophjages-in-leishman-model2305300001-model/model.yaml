@@ -22,7 +22,7 @@ upstream:
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2305300001?filename=Immuno-metabolism
     of M1 macrophages in leishmaniasis.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.immuno_metabolism_of_m1_macrophjages_in_leishman_model2305300001_model:ImmunoMetabolismOfM1MacrophjagesInLeishmanModel2305300001Model
   init_kwargs:
     model_path: data/MODEL2305300001.xml

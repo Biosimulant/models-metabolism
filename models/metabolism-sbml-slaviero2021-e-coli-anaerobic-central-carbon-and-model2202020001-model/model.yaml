@@ -25,7 +25,7 @@ upstream:
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2202020001?filename=Slaviero2021-E
     coli anaerobic metabolism.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.slaviero2021_e_coli_anaerobic_central_carbon_and_model2202020001_model:Slaviero2021EColiAnaerobicCentralCarbonAndModel2202020001Model
   init_kwargs:
     model_path: data/MODEL2202020001.xml

@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1507180009
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1507180009?filename=MODEL1507180009_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.abuoun2009_genome_scale_metabolic_network_of_sal_model1507180009_model:Abuoun2009GenomeScaleMetabolicNetworkOfSalModel1507180009Model
   init_kwargs:
     model_path: data/MODEL1507180009.xml

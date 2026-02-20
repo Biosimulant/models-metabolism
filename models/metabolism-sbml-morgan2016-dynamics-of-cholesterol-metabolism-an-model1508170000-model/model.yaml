@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1508170000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1508170000?filename=MODEL1508170000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.morgan2016_dynamics_of_cholesterol_metabolism_an_model1508170000_model:Morgan2016DynamicsOfCholesterolMetabolismAnModel1508170000Model
   init_kwargs:
     model_path: data/MODEL1508170000.xml

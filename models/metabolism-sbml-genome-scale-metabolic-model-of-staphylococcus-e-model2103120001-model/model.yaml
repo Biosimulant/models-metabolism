@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2103120001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2103120001?filename=Sepi.sbml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.genome_scale_metabolic_model_of_staphylococcus_e_model2103120001_model:GenomeScaleMetabolicModelOfStaphylococcusEModel2103120001Model
   init_kwargs:
     model_path: data/MODEL2103120001.sbml

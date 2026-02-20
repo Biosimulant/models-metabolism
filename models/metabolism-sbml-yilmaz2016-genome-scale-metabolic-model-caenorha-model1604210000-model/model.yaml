@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1604210000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1604210000?filename=MODEL1604210000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.yilmaz2016_genome_scale_metabolic_model_caenorha_model1604210000_model:Yilmaz2016GenomeScaleMetabolicModelCaenorhaModel1604210000Model
   init_kwargs:
     model_path: data/MODEL1604210000.xml

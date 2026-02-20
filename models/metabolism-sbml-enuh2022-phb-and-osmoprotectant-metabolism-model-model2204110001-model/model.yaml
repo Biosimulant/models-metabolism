@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2204110001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2204110001?filename=iEB1159_C_canadensis.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.enuh2022_phb_and_osmoprotectant_metabolism_model_model2204110001_model:Enuh2022PhbAndOsmoprotectantMetabolismModelModel2204110001Model
   init_kwargs:
     model_path: data/MODEL2204110001.xml

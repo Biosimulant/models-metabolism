@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000001091
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000001091?filename=Kulyashov2020_SBMLL3V1fbcV2-GSM_model_Geobacillus_icigianus.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.kulyashov2020_genome_scale_metabolic_model_for_g_biomd0000001091_model:Kulyashov2020GenomeScaleMetabolicModelForGBiomd0000001091Model
   init_kwargs:
     model_path: data/BIOMD0000001091.xml

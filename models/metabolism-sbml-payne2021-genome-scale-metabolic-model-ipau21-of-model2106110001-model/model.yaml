@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2106110001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2106110001?filename=iPau21.omex
   license: CC0
-bsim:
+biosim:
   entrypoint: src.payne2021_genome_scale_metabolic_model_ipau21_of_model2106110001_model:Payne2021GenomeScaleMetabolicModelIpau21OfModel2106110001Model
   init_kwargs:
     model_path: data/MODEL2106110001.xml

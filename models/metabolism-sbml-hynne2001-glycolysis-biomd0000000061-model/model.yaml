@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000061
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000061?filename=BIOMD0000000061_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.hynne2001_glycolysis_biomd0000000061_model:Hynne2001GlycolysisBiomd0000000061Model
   init_kwargs:
     model_path: data/BIOMD0000000061.xml

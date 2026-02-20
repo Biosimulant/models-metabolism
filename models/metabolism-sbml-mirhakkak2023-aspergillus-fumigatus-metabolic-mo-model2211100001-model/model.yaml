@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2211100001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2211100001?filename=Pan_Aspergillus_fumigatus.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.mirhakkak2023_aspergillus_fumigatus_metabolic_mo_model2211100001_model:Mirhakkak2023AspergillusFumigatusMetabolicMoModel2211100001Model
   init_kwargs:
     model_path: data/MODEL2211100001.xml

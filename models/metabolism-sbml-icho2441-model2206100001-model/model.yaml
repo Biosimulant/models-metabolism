@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2206100001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2206100001?filename=iCHO2441.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.icho2441_model2206100001_model:Icho2441Model2206100001Model
   init_kwargs:
     model_path: data/MODEL2206100001.xml

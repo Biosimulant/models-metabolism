@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1310110030
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1310110030?filename=MODEL1310110030_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.thiele2013_bone_marrow_hematopoietic_cells_model1310110030_model:Thiele2013BoneMarrowHematopoieticCellsModel1310110030Model
   init_kwargs:
     model_path: data/MODEL1310110030.xml

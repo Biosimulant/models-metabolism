@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1007200000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1007200000?filename=MODEL1007200000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.nijhout2006_hepatic_folate_metab_model1007200000_model:Nijhout2006HepaticFolateMetabModel1007200000Model
   init_kwargs:
     model_path: data/MODEL1007200000.xml

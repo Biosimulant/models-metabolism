@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1106220000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1106220000?filename=MODEL1106220000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.imam2011_rhodobactersphaeroides_metabolicnetwork_model1106220000_model:Imam2011RhodobactersphaeroidesMetabolicnetworkModel1106220000Model
   init_kwargs:
     model_path: data/MODEL1106220000.xml

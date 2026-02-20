@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000932
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000932?filename=Garde2020.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.garde2020_minimal_model_describing_metabolic_osc_biomd0000000932_model:Garde2020MinimalModelDescribingMetabolicOscBiomd0000000932Model
   init_kwargs:
     model_path: data/BIOMD0000000932.xml

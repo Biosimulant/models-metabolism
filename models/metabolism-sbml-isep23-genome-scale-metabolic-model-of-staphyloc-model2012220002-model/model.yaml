@@ -20,7 +20,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2012220002
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2012220002?filename=iSep23.omex
   license: CC0
-bsim:
+biosim:
   entrypoint: src.isep23_genome_scale_metabolic_model_of_staphyloc_model2012220002_model:Isep23GenomeScaleMetabolicModelOfStaphylocModel2012220002Model
   init_kwargs:
     model_path: data/MODEL2012220002.xml

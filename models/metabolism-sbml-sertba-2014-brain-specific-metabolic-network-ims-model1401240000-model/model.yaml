@@ -20,7 +20,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1401240000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1401240000?filename=MODEL1401240000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.sertba_2014_brain_specific_metabolic_network_ims_model1401240000_model:Sertba2014BrainSpecificMetabolicNetworkImsModel1401240000Model
   init_kwargs:
     model_path: data/MODEL1401240000.xml

@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2408050002
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2408050002?filename=iIS312.omex
   license: CC0
-bsim:
+biosim:
   entrypoint: src.shiratsubaki2020_t_cruzi_iis312_model2408050002_model:Shiratsubaki2020TCruziIis312Model2408050002Model
   init_kwargs:
     model_path: data/MODEL2408050002.xml

@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1310110044
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1310110044?filename=MODEL1310110044_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.thiele2013_cervix_uterine_squamous_epithelial_ce_model1310110044_model:Thiele2013CervixUterineSquamousEpithelialCeModel1310110044Model
   init_kwargs:
     model_path: data/MODEL1310110044.xml

@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000001096
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000001096?filename=MODEL1510220000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.irani2015_genome_scale_metabolic_model_of_p_past_biomd0000001096_model:Irani2015GenomeScaleMetabolicModelOfPPastBiomd0000001096Model
   init_kwargs:
     model_path: data/BIOMD0000001096.xml

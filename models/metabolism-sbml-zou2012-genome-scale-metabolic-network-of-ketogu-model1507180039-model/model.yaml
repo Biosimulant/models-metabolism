@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1507180039
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1507180039?filename=MODEL1507180039_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.zou2012_genome_scale_metabolic_network_of_ketogu_model1507180039_model:Zou2012GenomeScaleMetabolicNetworkOfKetoguModel1507180039Model
   init_kwargs:
     model_path: data/MODEL1507180039.xml

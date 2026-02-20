@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1908040004
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1908040004?filename=iZinClas.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.ankrah2019_syntrophic_splitting_of_central_carbo_model1908040004_model:Ankrah2019SyntrophicSplittingOfCentralCarboModel1908040004Model
   init_kwargs:
     model_path: data/MODEL1908040004.xml

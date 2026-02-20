@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1507180038
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1507180038?filename=MODEL1507180038_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.mazumdar2008_genome_scale_metabolic_network_of_p_model1507180038_model:Mazumdar2008GenomeScaleMetabolicNetworkOfPModel1507180038Model
   init_kwargs:
     model_path: data/MODEL1507180038.xml

@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1302010042
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1302010042?filename=MODEL1302010042_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.pitkanen2014_metabolic_reconstruction_of_batrach_model1302010042_model:Pitkanen2014MetabolicReconstructionOfBatrachModel1302010042Model
   init_kwargs:
     model_path: data/MODEL1302010042.xml

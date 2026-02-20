@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2204260001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2204260001?filename=iWS902_wine.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.iws902_model2204260001_model:Iws902Model2204260001Model
   init_kwargs:
     model_path: data/MODEL2204260001.xml

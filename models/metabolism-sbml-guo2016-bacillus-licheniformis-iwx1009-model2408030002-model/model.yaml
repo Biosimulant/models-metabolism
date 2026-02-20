@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2408030002
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2408030002?filename=iWX1009.omex
   license: CC0
-bsim:
+biosim:
   entrypoint: src.guo2016_bacillus_licheniformis_iwx1009_model2408030002_model:Guo2016BacillusLicheniformisIwx1009Model2408030002Model
   init_kwargs:
     model_path: data/MODEL2408030002.xml

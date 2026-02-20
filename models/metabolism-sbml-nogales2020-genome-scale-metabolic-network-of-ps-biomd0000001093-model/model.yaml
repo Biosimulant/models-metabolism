@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000001093
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000001093?filename=iJN1463.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.nogales2020_genome_scale_metabolic_network_of_ps_biomd0000001093_model:Nogales2020GenomeScaleMetabolicNetworkOfPsBiomd0000001093Model
   init_kwargs:
     model_path: data/BIOMD0000001093.xml

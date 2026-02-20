@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2503310002
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2503310002?filename=kurpad23_study1.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.kurpad_2023_vitamin_b12_metabolism_in_humans_stu_model2503310002_model:Kurpad2023VitaminB12MetabolismInHumansStuModel2503310002Model
   init_kwargs:
     model_path: data/MODEL2503310002.xml

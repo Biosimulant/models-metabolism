@@ -20,7 +20,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000063
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000063?filename=BIOMD0000000063_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.galazzo1990_fermentationpathwaykinetics_biomd0000000063_model:Galazzo1990FermentationpathwaykineticsBiomd0000000063Model
   init_kwargs:
     model_path: data/BIOMD0000000063.xml

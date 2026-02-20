@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1949107276
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1949107276?filename=MODEL1949107276_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.durot2008_a_baylyi_adp1metabolism_model1949107276_model:Durot2008ABaylyiAdp1metabolismModel1949107276Model
   init_kwargs:
     model_path: data/MODEL1949107276.xml

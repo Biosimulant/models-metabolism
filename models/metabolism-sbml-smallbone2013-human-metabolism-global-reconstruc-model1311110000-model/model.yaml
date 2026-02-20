@@ -20,7 +20,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1311110000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1311110000?filename=MODEL1311110000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.smallbone2013_human_metabolism_global_reconstruc_model1311110000_model:Smallbone2013HumanMetabolismGlobalReconstrucModel1311110000Model
   init_kwargs:
     model_path: data/MODEL1311110000.xml

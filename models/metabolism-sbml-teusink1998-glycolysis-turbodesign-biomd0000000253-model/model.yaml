@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000253
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000253?filename=BIOMD0000000253_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.teusink1998_glycolysis_turbodesign_biomd0000000253_model:Teusink1998GlycolysisTurbodesignBiomd0000000253Model
   init_kwargs:
     model_path: data/BIOMD0000000253.xml

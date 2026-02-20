@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1302010000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1302010000?filename=MODEL1302010000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.pitkanen2014_metabolic_reconstruction_of_phaeosp_model1302010000_model:Pitkanen2014MetabolicReconstructionOfPhaeospModel1302010000Model
   init_kwargs:
     model_path: data/MODEL1302010000.xml

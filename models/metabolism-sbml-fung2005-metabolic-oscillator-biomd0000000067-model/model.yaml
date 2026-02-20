@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000067
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000067?filename=BIOMD0000000067_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.fung2005_metabolic_oscillator_biomd0000000067_model:Fung2005MetabolicOscillatorBiomd0000000067Model
   init_kwargs:
     model_path: data/BIOMD0000000067.xml

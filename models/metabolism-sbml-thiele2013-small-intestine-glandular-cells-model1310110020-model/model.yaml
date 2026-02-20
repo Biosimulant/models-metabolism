@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1310110020
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1310110020?filename=MODEL1310110020_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.thiele2013_small_intestine_glandular_cells_model1310110020_model:Thiele2013SmallIntestineGlandularCellsModel1310110020Model
   init_kwargs:
     model_path: data/MODEL1310110020.xml

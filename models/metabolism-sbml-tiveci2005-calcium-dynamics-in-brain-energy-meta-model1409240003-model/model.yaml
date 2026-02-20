@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1409240003
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1409240003?filename=MODEL1409240003_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.tiveci2005_calcium_dynamics_in_brain_energy_meta_model1409240003_model:Tiveci2005CalciumDynamicsInBrainEnergyMetaModel1409240003Model
   init_kwargs:
     model_path: data/MODEL1409240003.xml

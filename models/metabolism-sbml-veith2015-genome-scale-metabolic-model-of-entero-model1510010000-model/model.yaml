@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1510010000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1510010000?filename=MODEL1510010000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.veith2015_genome_scale_metabolic_model_of_entero_model1510010000_model:Veith2015GenomeScaleMetabolicModelOfEnteroModel1510010000Model
   init_kwargs:
     model_path: data/MODEL1510010000.xml

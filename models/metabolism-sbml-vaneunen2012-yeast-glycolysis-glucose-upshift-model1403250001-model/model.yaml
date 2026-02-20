@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1403250001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1403250001?filename=MODEL1403250001_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.vaneunen2012_yeast_glycolysis_glucose_upshift_model1403250001_model:Vaneunen2012YeastGlycolysisGlucoseUpshiftModel1403250001Model
   init_kwargs:
     model_path: data/MODEL1403250001.xml

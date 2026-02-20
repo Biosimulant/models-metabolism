@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1603150000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1603150000?filename=MODEL1603150000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.saa2016_mammalian_methionine_cycle_approximate_b_model1603150000_model:Saa2016MammalianMethionineCycleApproximateBModel1603150000Model
   init_kwargs:
     model_path: data/MODEL1603150000.xml

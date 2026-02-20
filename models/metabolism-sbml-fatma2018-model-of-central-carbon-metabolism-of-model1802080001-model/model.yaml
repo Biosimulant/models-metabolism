@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1802080001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1802080001?filename=MetaColi.sbml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.fatma2018_model_of_central_carbon_metabolism_of_model1802080001_model:Fatma2018ModelOfCentralCarbonMetabolismOfModel1802080001Model
   init_kwargs:
     model_path: data/MODEL1802080001.sbml

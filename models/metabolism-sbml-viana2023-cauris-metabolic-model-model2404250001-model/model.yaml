@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2404250001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2404250001?filename=Cauris.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.viana2023_cauris_metabolic_model_model2404250001_model:Viana2023CaurisMetabolicModelModel2404250001Model
   init_kwargs:
     model_path: data/MODEL2404250001.xml

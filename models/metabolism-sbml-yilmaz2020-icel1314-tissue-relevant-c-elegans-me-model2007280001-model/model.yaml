@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2007280001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2007280001?filename=iCEL1314.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.yilmaz2020_icel1314_tissue_relevant_c_elegans_me_model2007280001_model:Yilmaz2020Icel1314TissueRelevantCElegansMeModel2007280001Model
   init_kwargs:
     model_path: data/MODEL2007280001.xml

@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1507180015
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1507180015?filename=MODEL1507180015_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.henry2009_genome_scale_metabolic_network_of_baci_model1507180015_model:Henry2009GenomeScaleMetabolicNetworkOfBaciModel1507180015Model
   init_kwargs:
     model_path: data/MODEL1507180015.xml

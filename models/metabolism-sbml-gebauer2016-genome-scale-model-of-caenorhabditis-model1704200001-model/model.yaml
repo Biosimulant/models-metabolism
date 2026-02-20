@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1704200001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1704200001?filename=MODEL1704200001_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.gebauer2016_genome_scale_model_of_caenorhabditis_model1704200001_model:Gebauer2016GenomeScaleModelOfCaenorhabditisModel1704200001Model
   init_kwargs:
     model_path: data/MODEL1704200001.xml

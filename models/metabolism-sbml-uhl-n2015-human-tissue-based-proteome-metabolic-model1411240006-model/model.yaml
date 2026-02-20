@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1411240006
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1411240006?filename=MODEL1411240006_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.uhl_n2015_human_tissue_based_proteome_metabolic_model1411240006_model:UhlN2015HumanTissueBasedProteomeMetabolicModel1411240006Model
   init_kwargs:
     model_path: data/MODEL1411240006.xml

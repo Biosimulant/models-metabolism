@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2310250001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2310250001?filename=model_GL-GNT-bypass_13Cflux.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.millard2023_gluconolactone_gluconate_extracellul_model2310250001_model:Millard2023GluconolactoneGluconateExtracellulModel2310250001Model
   init_kwargs:
     model_path: data/MODEL2310250001.xml

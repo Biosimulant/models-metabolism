@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1507180021
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1507180021?filename=MODEL1507180021_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.beste2007_genome_scale_metabolic_network_of_myco_model1507180021_model:Beste2007GenomeScaleMetabolicNetworkOfMycoModel1507180021Model
   init_kwargs:
     model_path: data/MODEL1507180021.xml

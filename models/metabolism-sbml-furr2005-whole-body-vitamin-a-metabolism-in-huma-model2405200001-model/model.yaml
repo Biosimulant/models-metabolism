@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2405200001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2405200001?filename=furr05.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.furr2005_whole_body_vitamin_a_metabolism_in_huma_model2405200001_model:Furr2005WholeBodyVitaminAMetabolismInHumaModel2405200001Model
   init_kwargs:
     model_path: data/MODEL2405200001.xml

@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1109130000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1109130000?filename=MODEL1109130000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.thiele2013_human_metabolism_global_reconstructio_model1109130000_model:Thiele2013HumanMetabolismGlobalReconstructioModel1109130000Model
   init_kwargs:
     model_path: data/MODEL1109130000.xml

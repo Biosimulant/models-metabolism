@@ -20,7 +20,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1006230027
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1006230027?filename=MODEL1006230027_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.vanbeek2007_oxphos_heartmusclecells_model1006230027_model:Vanbeek2007OxphosHeartmusclecellsModel1006230027Model
   init_kwargs:
     model_path: data/MODEL1006230027.xml

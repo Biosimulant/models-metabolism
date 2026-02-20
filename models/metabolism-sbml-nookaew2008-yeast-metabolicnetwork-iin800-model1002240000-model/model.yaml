@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1002240000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1002240000?filename=MODEL1002240000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.nookaew2008_yeast_metabolicnetwork_iin800_model1002240000_model:Nookaew2008YeastMetabolicnetworkIin800Model1002240000Model
   init_kwargs:
     model_path: data/MODEL1002240000.xml

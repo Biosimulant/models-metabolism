@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1202170000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1202170000?filename=MODEL1202170000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.nazaret2008_dynnik1980_carbohydrateenergymetabol_model1202170000_model:Nazaret2008Dynnik1980CarbohydrateenergymetabolModel1202170000Model
   init_kwargs:
     model_path: data/MODEL1202170000.xml

@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2405070001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2405070001?filename=iEM759.xlsx
   license: CC0
-bsim:
+biosim:
   entrypoint: src.iem759_model2405070001_model:Iem759Model2405070001Model
   init_kwargs:
     model_path: data/MODEL2405070001.xml

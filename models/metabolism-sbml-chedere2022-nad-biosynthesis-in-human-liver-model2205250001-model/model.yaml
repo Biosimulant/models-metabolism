@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2205250001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2205250001?filename=Normal_Liver_NAD_Biosynthesis_Base_model_L2V4.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.chedere2022_nad_biosynthesis_in_human_liver_model2205250001_model:Chedere2022NadBiosynthesisInHumanLiverModel2205250001Model
   init_kwargs:
     model_path: data/MODEL2205250001.xml

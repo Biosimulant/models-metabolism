@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2504110001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2504110001?filename=ec_iYO844_lvn.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.immanuel2024_bacillus_subtilis_levan_biosynthesi_model2504110001_model:Immanuel2024BacillusSubtilisLevanBiosynthesiModel2504110001Model
   init_kwargs:
     model_path: data/MODEL2504110001.xml

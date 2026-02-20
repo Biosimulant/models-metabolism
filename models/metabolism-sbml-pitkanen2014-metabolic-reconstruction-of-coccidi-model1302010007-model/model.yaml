@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1302010007
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1302010007?filename=MODEL1302010007_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.pitkanen2014_metabolic_reconstruction_of_coccidi_model1302010007_model:Pitkanen2014MetabolicReconstructionOfCoccidiModel1302010007Model
   init_kwargs:
     model_path: data/MODEL1302010007.xml

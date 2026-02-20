@@ -20,7 +20,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1507180033
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1507180033?filename=MODEL1507180033_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.mo2009_genome_scale_metabolic_network_of_sacchar_model1507180033_model:Mo2009GenomeScaleMetabolicNetworkOfSaccharModel1507180033Model
   init_kwargs:
     model_path: data/MODEL1507180033.xml

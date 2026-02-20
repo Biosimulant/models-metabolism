@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1011080003
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1011080003?filename=MODEL1011080003_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.islam2010_dehalococcoides_metabolism_model1011080003_model:Islam2010DehalococcoidesMetabolismModel1011080003Model
   init_kwargs:
     model_path: data/MODEL1011080003.xml

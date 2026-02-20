@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2010130001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2010130001?filename=iAS556.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.subramanian2017_metabolic_adaptations_of_leishma_model2010130001_model:Subramanian2017MetabolicAdaptationsOfLeishmaModel2010130001Model
   init_kwargs:
     model_path: data/MODEL2010130001.xml

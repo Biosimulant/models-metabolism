@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000690
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000690?filename=BIOMD0000000690_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.thiaville2016_folate_pathway_model_panb_overexpr_biomd0000000690_model:Thiaville2016FolatePathwayModelPanbOverexprBiomd0000000690Model
   init_kwargs:
     model_path: data/BIOMD0000000690.xml

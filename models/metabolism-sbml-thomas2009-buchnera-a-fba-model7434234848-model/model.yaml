@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL7434234848
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL7434234848?filename=MODEL7434234848_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.thomas2009_buchnera_a_fba_model7434234848_model:Thomas2009BuchneraAFbaModel7434234848Model
   init_kwargs:
     model_path: data/MODEL7434234848.xml

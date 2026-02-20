@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1507180004
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1507180004?filename=MODEL1507180004_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.roberts2010_genome_scale_metabolic_network_of_cl_model1507180004_model:Roberts2010GenomeScaleMetabolicNetworkOfClModel1507180004Model
   init_kwargs:
     model_path: data/MODEL1507180004.xml

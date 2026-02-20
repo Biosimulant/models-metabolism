@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1507180013
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1507180013?filename=MODEL1507180013_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.oh2007_genome_scale_metabolic_network_of_bacillu_model1507180013_model:Oh2007GenomeScaleMetabolicNetworkOfBacilluModel1507180013Model
   init_kwargs:
     model_path: data/MODEL1507180013.xml

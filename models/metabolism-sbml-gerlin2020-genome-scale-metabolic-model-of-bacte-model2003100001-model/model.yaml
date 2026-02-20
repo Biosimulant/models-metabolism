@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2003100001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2003100001?filename=XF_network.sbml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.gerlin2020_genome_scale_metabolic_model_of_bacte_model2003100001_model:Gerlin2020GenomeScaleMetabolicModelOfBacteModel2003100001Model
   init_kwargs:
     model_path: data/MODEL2003100001.sbml

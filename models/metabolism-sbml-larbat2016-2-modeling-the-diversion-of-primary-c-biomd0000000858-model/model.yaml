@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000858
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000858?filename=Larbat2016.2.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.larbat2016_2_modeling_the_diversion_of_primary_c_biomd0000000858_model:Larbat20162ModelingTheDiversionOfPrimaryCBiomd0000000858Model
   init_kwargs:
     model_path: data/BIOMD0000000858.xml

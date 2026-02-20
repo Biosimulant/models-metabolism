@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2209060001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2209060001?filename=220831_SBFucose_AdditionalFile1_MCF.mat
   license: CC0
-bsim:
+biosim:
   entrypoint: src.strain_engineering_and_metabolic_flux_analysis_o_model2209060001_model:StrainEngineeringAndMetabolicFluxAnalysisOModel2209060001Model
   init_kwargs:
     model_path: data/MODEL2209060001.xml

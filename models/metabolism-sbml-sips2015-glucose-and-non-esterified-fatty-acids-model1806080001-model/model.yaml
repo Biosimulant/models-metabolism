@@ -25,7 +25,7 @@ upstream:
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1806080001?filename=Sips2015
     - GlcNEFA model.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.sips2015_glucose_and_non_esterified_fatty_acids_model1806080001_model:Sips2015GlucoseAndNonEsterifiedFattyAcidsModel1806080001Model
   init_kwargs:
     model_path: data/MODEL1806080001.xml

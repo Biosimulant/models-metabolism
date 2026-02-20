@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2406250005
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2406250005?filename=iLP844.omex
   license: CC0
-bsim:
+biosim:
   entrypoint: src.ilp844_genome_scale_metabolic_model_of_acinetoba_model2406250005_model:Ilp844GenomeScaleMetabolicModelOfAcinetobaModel2406250005Model
   init_kwargs:
     model_path: data/MODEL2406250005.xml

@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000001081
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000001081?filename=iMsOB3b.omex
   license: CC0
-bsim:
+biosim:
   entrypoint: src.naizabekov2020_methylosinus_trichosporium_ob3b_i_biomd0000001081_model:Naizabekov2020MethylosinusTrichosporiumOb3bIBiomd0000001081Model
   init_kwargs:
     model_path: data/BIOMD0000001081.xml

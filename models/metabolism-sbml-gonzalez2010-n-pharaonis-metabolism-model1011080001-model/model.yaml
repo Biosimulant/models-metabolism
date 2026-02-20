@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1011080001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1011080001?filename=MODEL1011080001_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.gonzalez2010_n_pharaonis_metabolism_model1011080001_model:Gonzalez2010NPharaonisMetabolismModel1011080001Model
   init_kwargs:
     model_path: data/MODEL1011080001.xml

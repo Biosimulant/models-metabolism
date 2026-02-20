@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1601050000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1601050000?filename=MODEL1601050000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.ponce_de_leon2015_genome_scale_model_of_bacteria_model1601050000_model:PonceDeLeon2015GenomeScaleModelOfBacteriaModel1601050000Model
   init_kwargs:
     model_path: data/MODEL1601050000.xml

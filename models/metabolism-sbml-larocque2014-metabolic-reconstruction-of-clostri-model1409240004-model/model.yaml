@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1409240004
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1409240004?filename=MODEL1409240004_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.larocque2014_metabolic_reconstruction_of_clostri_model1409240004_model:Larocque2014MetabolicReconstructionOfClostriModel1409240004Model
   init_kwargs:
     model_path: data/MODEL1409240004.xml

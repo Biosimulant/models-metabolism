@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1008240001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1008240001?filename=MODEL1008240001_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.akir2004_central_carbon_metabolism_of_s_cerevisi_model1008240001_model:Akir2004CentralCarbonMetabolismOfSCerevisiModel1008240001Model
   init_kwargs:
     model_path: data/MODEL1008240001.xml

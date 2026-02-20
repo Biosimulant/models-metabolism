@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000947
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000947?filename=Lee2017_Paracetamol_Metabolism.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.lee2017_paracetamol_first_pass_metabolism_pk_mod_biomd0000000947_model:Lee2017ParacetamolFirstPassMetabolismPkModBiomd0000000947Model
   init_kwargs:
     model_path: data/BIOMD0000000947.xml

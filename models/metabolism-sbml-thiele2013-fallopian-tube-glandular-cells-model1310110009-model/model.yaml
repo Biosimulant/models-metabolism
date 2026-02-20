@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1310110009
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1310110009?filename=MODEL1310110009_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.thiele2013_fallopian_tube_glandular_cells_model1310110009_model:Thiele2013FallopianTubeGlandularCellsModel1310110009Model
   init_kwargs:
     model_path: data/MODEL1310110009.xml

@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1504280000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1504280000?filename=MODEL1504280000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.tymoshenko2015_genome_scale_metabolic_model_toxo_model1504280000_model:Tymoshenko2015GenomeScaleMetabolicModelToxoModel1504280000Model
   init_kwargs:
     model_path: data/MODEL1504280000.xml

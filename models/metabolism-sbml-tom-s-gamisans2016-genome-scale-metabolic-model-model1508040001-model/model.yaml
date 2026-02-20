@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1508040001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1508040001?filename=MODEL1508040001_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.tom_s_gamisans2016_genome_scale_metabolic_model_model1508040001_model:TomSGamisans2016GenomeScaleMetabolicModelModel1508040001Model
   init_kwargs:
     model_path: data/MODEL1508040001.xml

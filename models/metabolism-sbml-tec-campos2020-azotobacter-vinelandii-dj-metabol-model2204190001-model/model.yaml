@@ -25,7 +25,7 @@ upstream:
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2204190001?filename=Azotobacter
     vinelandii DJ from MATLAB Updated.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.tec_campos2020_azotobacter_vinelandii_dj_metabol_model2204190001_model:TecCampos2020AzotobacterVinelandiiDjMetabolModel2204190001Model
   init_kwargs:
     model_path: data/MODEL2204190001.xml

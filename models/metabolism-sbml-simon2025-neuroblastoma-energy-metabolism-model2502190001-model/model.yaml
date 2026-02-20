@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2502190001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2502190001?filename=Neuroblastoma_lowMYCN.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.simon2025_neuroblastoma_energy_metabolism_model2502190001_model:Simon2025NeuroblastomaEnergyMetabolismModel2502190001Model
   init_kwargs:
     model_path: data/MODEL2502190001.xml

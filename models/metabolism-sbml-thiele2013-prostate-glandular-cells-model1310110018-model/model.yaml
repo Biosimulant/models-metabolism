@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1310110018
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1310110018?filename=MODEL1310110018_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.thiele2013_prostate_glandular_cells_model1310110018_model:Thiele2013ProstateGlandularCellsModel1310110018Model
   init_kwargs:
     model_path: data/MODEL1310110018.xml

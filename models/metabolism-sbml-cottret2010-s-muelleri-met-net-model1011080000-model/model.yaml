@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1011080000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1011080000?filename=MODEL1011080000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.cottret2010_s_muelleri_met_net_model1011080000_model:Cottret2010SMuelleriMetNetModel1011080000Model
   init_kwargs:
     model_path: data/MODEL1011080000.xml

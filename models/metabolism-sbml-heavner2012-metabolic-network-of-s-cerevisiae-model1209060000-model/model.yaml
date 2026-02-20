@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1209060000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1209060000?filename=MODEL1209060000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.heavner2012_metabolic_network_of_s_cerevisiae_model1209060000_model:Heavner2012MetabolicNetworkOfSCerevisiaeModel1209060000Model
   init_kwargs:
     model_path: data/MODEL1209060000.xml

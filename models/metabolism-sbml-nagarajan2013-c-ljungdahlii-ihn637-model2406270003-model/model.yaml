@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2406270003
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2406270003?filename=iHN637.omex
   license: CC0
-bsim:
+biosim:
   entrypoint: src.nagarajan2013_c_ljungdahlii_ihn637_model2406270003_model:Nagarajan2013CLjungdahliiIhn637Model2406270003Model
   init_kwargs:
     model_path: data/MODEL2406270003.xml

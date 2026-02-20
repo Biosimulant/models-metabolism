@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1310110026
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1310110026?filename=MODEL1310110026_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.thiele2013_cervix_uterine_glandular_cells_model1310110026_model:Thiele2013CervixUterineGlandularCellsModel1310110026Model
   init_kwargs:
     model_path: data/MODEL1310110026.xml

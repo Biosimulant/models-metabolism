@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1008120000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1008120000?filename=MODEL1008120000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.bekaert2010_chimpanzee_inferred_metabolic_networ_model1008120000_model:Bekaert2010ChimpanzeeInferredMetabolicNetworModel1008120000Model
   init_kwargs:
     model_path: data/MODEL1008120000.xml

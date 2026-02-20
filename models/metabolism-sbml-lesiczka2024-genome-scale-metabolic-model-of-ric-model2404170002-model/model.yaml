@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2404170002
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2404170002?filename=Ir9_Rh.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.lesiczka2024_genome_scale_metabolic_model_of_ric_model2404170002_model:Lesiczka2024GenomeScaleMetabolicModelOfRicModel2404170002Model
   init_kwargs:
     model_path: data/MODEL2404170002.xml

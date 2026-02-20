@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2002040004
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2002040004?filename=AT.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.ankrah2021_genome_scale_metabolic_model_of_droso_model2002040004_model:Ankrah2021GenomeScaleMetabolicModelOfDrosoModel2002040004Model
   init_kwargs:
     model_path: data/MODEL2002040004.xml

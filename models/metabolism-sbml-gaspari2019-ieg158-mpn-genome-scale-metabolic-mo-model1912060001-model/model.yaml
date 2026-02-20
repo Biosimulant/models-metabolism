@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1912060001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1912060001?filename=iEG158_mpn.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.gaspari2019_ieg158_mpn_genome_scale_metabolic_mo_model1912060001_model:Gaspari2019Ieg158MpnGenomeScaleMetabolicMoModel1912060001Model
   init_kwargs:
     model_path: data/MODEL1912060001.xml

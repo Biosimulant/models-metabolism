@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2408160001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2408160001?filename=1_iMS7199_leaf.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.diel_multi_tissue_genome_scale_metabolic_models_model2408160001_model:DielMultiTissueGenomeScaleMetabolicModelsModel2408160001Model
   init_kwargs:
     model_path: data/MODEL2408160001.xml

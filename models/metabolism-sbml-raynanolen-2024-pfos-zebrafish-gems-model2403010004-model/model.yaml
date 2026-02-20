@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2403010004
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2403010004?filename=Zebrafish-GEM_v2_5dpf_BaseModel.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.raynanolen_2024_pfos_zebrafish_gems_model2403010004_model:Raynanolen2024PfosZebrafishGemsModel2403010004Model
   init_kwargs:
     model_path: data/MODEL2403010004.xml

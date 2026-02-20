@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000426
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000426?filename=BIOMD0000000426_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.mosca2012_central_carbon_metabolism_regulated_by_biomd0000000426_model:Mosca2012CentralCarbonMetabolismRegulatedByBiomd0000000426Model
   init_kwargs:
     model_path: data/BIOMD0000000426.xml

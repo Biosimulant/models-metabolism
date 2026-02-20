@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2009110001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2009110001?filename=Spatio-temporal-model-of-liver-zonation-MorpheusML.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.kolbe2019_spatio_temporal_liver_zonation_model2009110001_model:Kolbe2019SpatioTemporalLiverZonationModel2009110001Model
   init_kwargs:
     model_path: data/MODEL2009110001.xml

@@ -12,13 +12,13 @@ from pathlib import Path
 from typing import Any, Dict, Optional, Set, TYPE_CHECKING
 
 if TYPE_CHECKING:  # pragma: no cover - typing only
-    from bsim import BioWorld
+    from biosim import BioWorld
 
-import bsim
-from bsim.signals import BioSignal, SignalMetadata
+import biosim
+from biosim.signals import BioSignal, SignalMetadata
 
 
-class SbmlLarbat20163ModelingTheDiversionOfPrimaryCarbonFlux(bsim.BioModule):
+class SbmlLarbat20163ModelingTheDiversionOfPrimaryCarbonFlux(biosim.BioModule):
     """BioModule wrapper for SBML model: Larbat2016.3 - Modeling the diversion of primary carbon flux into secondary metabolism under variable nitrate and light or dark conditions (Light Dark Cycles with Minimum Starch Adaption)."""
 
     def __init__(self, model_path: str = "data/BIOMD0000000859.xml", min_dt: float = 0.01) -> None:

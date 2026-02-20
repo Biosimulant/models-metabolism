@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000674
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000674?filename=BIOMD0000000674_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.reyes_palomares2012_a_combined_model_hepatic_pol_biomd0000000674_model:ReyesPalomares2012ACombinedModelHepaticPolBiomd0000000674Model
   init_kwargs:
     model_path: data/BIOMD0000000674.xml

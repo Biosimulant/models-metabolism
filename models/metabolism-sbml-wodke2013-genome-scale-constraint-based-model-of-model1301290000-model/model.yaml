@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1301290000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1301290000?filename=MODEL1301290000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.wodke2013_genome_scale_constraint_based_model_of_model1301290000_model:Wodke2013GenomeScaleConstraintBasedModelOfModel1301290000Model
   init_kwargs:
     model_path: data/MODEL1301290000.xml

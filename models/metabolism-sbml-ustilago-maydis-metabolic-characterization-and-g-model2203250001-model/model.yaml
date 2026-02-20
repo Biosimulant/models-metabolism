@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2203250001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2203250001?filename=iUma22.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.ustilago_maydis_metabolic_characterization_and_g_model2203250001_model:UstilagoMaydisMetabolicCharacterizationAndGModel2203250001Model
   init_kwargs:
     model_path: data/MODEL2203250001.xml

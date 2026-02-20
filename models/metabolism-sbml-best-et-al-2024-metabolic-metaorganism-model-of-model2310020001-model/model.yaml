@@ -20,7 +20,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2310020001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2310020001?filename=metamodel_20230510.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.best_et_al_2024_metabolic_metaorganism_model_of_model2310020001_model:BestEtAl2024MetabolicMetaorganismModelOfModel2310020001Model
   init_kwargs:
     model_path: data/MODEL2310020001.xml

@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000554
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000554?filename=BIOMD0000000554_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.cloutier2009_brain_energy_metabolism_biomd0000000554_model:Cloutier2009BrainEnergyMetabolismBiomd0000000554Model
   init_kwargs:
     model_path: data/BIOMD0000000554.xml

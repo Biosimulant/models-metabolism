@@ -12,13 +12,13 @@ from pathlib import Path
 from typing import Any, Dict, Optional, Set, TYPE_CHECKING
 
 if TYPE_CHECKING:  # pragma: no cover - typing only
-    from bsim import BioWorld
+    from biosim import BioWorld
 
-import bsim
-from bsim.signals import BioSignal, SignalMetadata
+import biosim
+from biosim.signals import BioSignal, SignalMetadata
 
 
-class SbmlKees2018GenomeScaleConstraintBasedModelOfTheMucin(bsim.BioModule):
+class SbmlKees2018GenomeScaleConstraintBasedModelOfTheMucin(biosim.BioModule):
     """BioModule wrapper for SBML model: Kees2018 - Genome-scale constraint-based model of the mucin-degrader <I>Akkermansia muciniphila</I>."""
 
     def __init__(self, model_path: str = "data/MODEL1710040000.xml", min_dt: float = 0.01) -> None:

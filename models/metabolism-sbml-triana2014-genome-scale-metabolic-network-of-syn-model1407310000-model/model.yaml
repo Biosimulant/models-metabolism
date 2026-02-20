@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1407310000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1407310000?filename=MODEL1407310000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.triana2014_genome_scale_metabolic_network_of_syn_model1407310000_model:Triana2014GenomeScaleMetabolicNetworkOfSynModel1407310000Model
   init_kwargs:
     model_path: data/MODEL1407310000.xml

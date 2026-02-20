@@ -19,7 +19,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000001092
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000001092?filename=Gautam2020_RQ7_iJG408.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.gautam2020_metabolic_network_of_thermotoga_sp_st_biomd0000001092_model:Gautam2020MetabolicNetworkOfThermotogaSpStBiomd0000001092Model
   init_kwargs:
     model_path: data/BIOMD0000001092.xml

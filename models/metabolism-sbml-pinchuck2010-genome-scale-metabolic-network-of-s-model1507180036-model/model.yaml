@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1507180036
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1507180036?filename=MODEL1507180036_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.pinchuck2010_genome_scale_metabolic_network_of_s_model1507180036_model:Pinchuck2010GenomeScaleMetabolicNetworkOfSModel1507180036Model
   init_kwargs:
     model_path: data/MODEL1507180036.xml

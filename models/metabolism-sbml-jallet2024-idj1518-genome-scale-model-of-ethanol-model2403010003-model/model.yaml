@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2403010003
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2403010003?filename=iDJ1518.json
   license: CC0
-bsim:
+biosim:
   entrypoint: src.jallet2024_idj1518_genome_scale_model_of_ethanol_model2403010003_model:Jallet2024Idj1518GenomeScaleModelOfEthanolModel2403010003Model
   init_kwargs:
     model_path: data/MODEL2403010003.xml

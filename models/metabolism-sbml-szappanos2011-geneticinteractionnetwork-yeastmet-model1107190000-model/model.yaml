@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1107190000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1107190000?filename=MODEL1107190000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.szappanos2011_geneticinteractionnetwork_yeastmet_model1107190000_model:Szappanos2011GeneticinteractionnetworkYeastmetModel1107190000Model
   init_kwargs:
     model_path: data/MODEL1107190000.xml

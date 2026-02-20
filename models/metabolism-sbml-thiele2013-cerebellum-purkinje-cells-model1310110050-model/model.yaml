@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1310110050
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1310110050?filename=MODEL1310110050_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.thiele2013_cerebellum_purkinje_cells_model1310110050_model:Thiele2013CerebellumPurkinjeCellsModel1310110050Model
   init_kwargs:
     model_path: data/MODEL1310110050.xml

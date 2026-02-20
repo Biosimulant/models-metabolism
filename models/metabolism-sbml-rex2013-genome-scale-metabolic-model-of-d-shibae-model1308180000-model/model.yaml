@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1308180000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1308180000?filename=MODEL1308180000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.rex2013_genome_scale_metabolic_model_of_d_shibae_model1308180000_model:Rex2013GenomeScaleMetabolicModelOfDShibaeModel1308180000Model
   init_kwargs:
     model_path: data/MODEL1308180000.xml

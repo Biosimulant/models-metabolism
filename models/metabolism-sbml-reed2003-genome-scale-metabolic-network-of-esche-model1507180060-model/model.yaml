@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1507180060
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1507180060?filename=MODEL1507180060_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.reed2003_genome_scale_metabolic_network_of_esche_model1507180060_model:Reed2003GenomeScaleMetabolicNetworkOfEscheModel1507180060Model
   init_kwargs:
     model_path: data/MODEL1507180060.xml

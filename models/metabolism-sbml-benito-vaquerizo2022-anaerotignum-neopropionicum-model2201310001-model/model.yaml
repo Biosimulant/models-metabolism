@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2201310001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2201310001?filename=iANEO_SB607.omex
   license: CC0
-bsim:
+biosim:
   entrypoint: src.benito_vaquerizo2022_anaerotignum_neopropionicum_model2201310001_model:BenitoVaquerizo2022AnaerotignumNeopropionicumModel2201310001Model
   init_kwargs:
     model_path: data/MODEL2201310001.xml

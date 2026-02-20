@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1507180028
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1507180028?filename=MODEL1507180028_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.deoliveiradalmolin2010_genome_scale_metabolic_ne_model1507180028_model:Deoliveiradalmolin2010GenomeScaleMetabolicNeModel1507180028Model
   init_kwargs:
     model_path: data/MODEL1507180028.xml

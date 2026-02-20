@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1507180063
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1507180063?filename=MODEL1507180063_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.pastick2009_genome_scale_metabolic_network_of_st_model1507180063_model:Pastick2009GenomeScaleMetabolicNetworkOfStModel1507180063Model
   init_kwargs:
     model_path: data/MODEL1507180063.xml

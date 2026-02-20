@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000013
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000013?filename=BIOMD0000000013_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.poolman2004_calvincycle_biomd0000000013_model:Poolman2004CalvincycleBiomd0000000013Model
   init_kwargs:
     model_path: data/BIOMD0000000013.xml

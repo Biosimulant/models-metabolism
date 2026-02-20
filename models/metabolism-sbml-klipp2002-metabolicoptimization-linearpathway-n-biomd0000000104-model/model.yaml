@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000104
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000104?filename=BIOMD0000000104_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.klipp2002_metabolicoptimization_linearpathway_n_biomd0000000104_model:Klipp2002MetabolicoptimizationLinearpathwayNBiomd0000000104Model
   init_kwargs:
     model_path: data/BIOMD0000000104.xml

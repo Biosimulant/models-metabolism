@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000001064
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000001064?filename=Kim2011_VvuMBEL943.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.kim2011_the_genome_scale_reconstruction_of_the_v_biomd0000001064_model:Kim2011TheGenomeScaleReconstructionOfTheVBiomd0000001064Model
   init_kwargs:
     model_path: data/BIOMD0000001064.xml

@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1810120001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1810120001?filename=Model.tar.gz
   license: CC0
-bsim:
+biosim:
   entrypoint: src.norman2019_genome_scale_model_of_clostridium_aut_model1810120001_model:Norman2019GenomeScaleModelOfClostridiumAutModel1810120001Model
   init_kwargs:
     model_path: data/MODEL1810120001.xml

@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1610250000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1610250000?filename=MODEL1610250000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.fuentealb2016_genome_scale_metabolic_reconstruct_model1610250000_model:Fuentealb2016GenomeScaleMetabolicReconstructModel1610250000Model
   init_kwargs:
     model_path: data/MODEL1610250000.xml

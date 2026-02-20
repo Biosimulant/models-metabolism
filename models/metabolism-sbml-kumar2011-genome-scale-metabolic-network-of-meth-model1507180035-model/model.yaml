@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1507180035
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1507180035?filename=MODEL1507180035_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.kumar2011_genome_scale_metabolic_network_of_meth_model1507180035_model:Kumar2011GenomeScaleMetabolicNetworkOfMethModel1507180035Model
   init_kwargs:
     model_path: data/MODEL1507180035.xml

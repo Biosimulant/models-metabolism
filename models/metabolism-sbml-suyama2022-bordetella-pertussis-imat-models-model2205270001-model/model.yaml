@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2205270001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2205270001?filename=suyama_biofilm_imat_model.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.suyama2022_bordetella_pertussis_imat_models_model2205270001_model:Suyama2022BordetellaPertussisImatModelsModel2205270001Model
   init_kwargs:
     model_path: data/MODEL2205270001.xml

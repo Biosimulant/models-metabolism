@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1807230002
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1807230002?filename=WormJam-GEM.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.witting2018_wormjam_gem_whole_genome_metabolic_r_model1807230002_model:Witting2018WormjamGemWholeGenomeMetabolicRModel1807230002Model
   init_kwargs:
     model_path: data/MODEL1807230002.xml

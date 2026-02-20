@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2303050001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2303050001?filename=G._dulcis_SBML_model_v2.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.moore2023_gloeocapsopsis_dulcis_model_model2303050001_model:Moore2023GloeocapsopsisDulcisModelModel2303050001Model
   init_kwargs:
     model_path: data/MODEL2303050001.xml

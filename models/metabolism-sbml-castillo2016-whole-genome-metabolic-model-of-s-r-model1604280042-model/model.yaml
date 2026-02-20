@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1604280042
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1604280042?filename=MODEL1604280042_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.castillo2016_whole_genome_metabolic_model_of_s_r_model1604280042_model:Castillo2016WholeGenomeMetabolicModelOfSRModel1604280042Model
   init_kwargs:
     model_path: data/MODEL1604280042.xml

@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1106080000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1106080000?filename=MODEL1106080000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.bordbar2011_humanerythrocyte_metabolicnetwork_model1106080000_model:Bordbar2011HumanerythrocyteMetabolicnetworkModel1106080000Model
   init_kwargs:
     model_path: data/MODEL1106080000.xml

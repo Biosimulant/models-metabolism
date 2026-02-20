@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1310110019
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1310110019?filename=MODEL1310110019_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.thiele2013_vagina_squamous_epithelial_cells_model1310110019_model:Thiele2013VaginaSquamousEpithelialCellsModel1310110019Model
   init_kwargs:
     model_path: data/MODEL1310110019.xml

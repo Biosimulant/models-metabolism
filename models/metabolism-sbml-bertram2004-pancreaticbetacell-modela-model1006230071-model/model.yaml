@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1006230071
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1006230071?filename=MODEL1006230071_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.bertram2004_pancreaticbetacell_modela_model1006230071_model:Bertram2004PancreaticbetacellModelaModel1006230071Model
   init_kwargs:
     model_path: data/MODEL1006230071.xml

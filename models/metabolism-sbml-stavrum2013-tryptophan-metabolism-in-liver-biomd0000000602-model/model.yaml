@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000602
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000602?filename=BIOMD0000000602_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.stavrum2013_tryptophan_metabolism_in_liver_biomd0000000602_model:Stavrum2013TryptophanMetabolismInLiverBiomd0000000602Model
   init_kwargs:
     model_path: data/BIOMD0000000602.xml

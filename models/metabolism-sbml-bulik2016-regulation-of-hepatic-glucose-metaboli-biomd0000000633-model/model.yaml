@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000633
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000633?filename=BIOMD0000000633_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.bulik2016_regulation_of_hepatic_glucose_metaboli_biomd0000000633_model:Bulik2016RegulationOfHepaticGlucoseMetaboliBiomd0000000633Model
   init_kwargs:
     model_path: data/BIOMD0000000633.xml

@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1510060001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1510060001?filename=MODEL1510060001_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.kav_ek2015_genome_scale_metabolic_model_of_yarro_model1510060001_model:KavEk2015GenomeScaleMetabolicModelOfYarroModel1510060001Model
   init_kwargs:
     model_path: data/MODEL1510060001.xml

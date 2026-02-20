@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2109130013
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2109130013?filename=Hanseniaspora_uvarum.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.lu2021_genome_scale_metabolic_models_for_yeast_s_model2109130013_model:Lu2021GenomeScaleMetabolicModelsForYeastSModel2109130013Model
   init_kwargs:
     model_path: data/MODEL2109130013.xml

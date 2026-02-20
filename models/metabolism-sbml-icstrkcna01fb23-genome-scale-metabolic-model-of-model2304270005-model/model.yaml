@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2304270005
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2304270005?filename=iCstrKCNa01FB23.omex
   license: CC0
-bsim:
+biosim:
   entrypoint: src.icstrkcna01fb23_genome_scale_metabolic_model_of_model2304270005_model:Icstrkcna01fb23GenomeScaleMetabolicModelOfModel2304270005Model
   init_kwargs:
     model_path: data/MODEL2304270005.xml

@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1001200000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1001200000?filename=MODEL1001200000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.smallbone2010_genome_scale_yeast_kinetics_model1001200000_model:Smallbone2010GenomeScaleYeastKineticsModel1001200000Model
   init_kwargs:
     model_path: data/MODEL1001200000.xml

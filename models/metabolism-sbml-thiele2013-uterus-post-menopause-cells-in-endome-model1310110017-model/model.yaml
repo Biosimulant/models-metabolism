@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1310110017
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1310110017?filename=MODEL1310110017_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.thiele2013_uterus_post_menopause_cells_in_endome_model1310110017_model:Thiele2013UterusPostMenopauseCellsInEndomeModel1310110017Model
   init_kwargs:
     model_path: data/MODEL1310110017.xml

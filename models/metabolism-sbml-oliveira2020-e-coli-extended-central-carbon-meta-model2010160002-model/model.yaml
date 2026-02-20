@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2010160002
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2010160002?filename=CCM_ext_Gly.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.oliveira2020_e_coli_extended_central_carbon_meta_model2010160002_model:Oliveira2020EColiExtendedCentralCarbonMetaModel2010160002Model
   init_kwargs:
     model_path: data/MODEL2010160002.xml

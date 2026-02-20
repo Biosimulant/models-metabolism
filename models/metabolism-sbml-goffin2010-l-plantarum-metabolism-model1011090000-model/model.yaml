@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1011090000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1011090000?filename=MODEL1011090000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.goffin2010_l_plantarum_metabolism_model1011090000_model:Goffin2010LPlantarumMetabolismModel1011090000Model
   init_kwargs:
     model_path: data/MODEL1011090000.xml

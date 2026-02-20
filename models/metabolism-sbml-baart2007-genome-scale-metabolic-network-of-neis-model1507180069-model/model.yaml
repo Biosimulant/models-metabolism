@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1507180069
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1507180069?filename=MODEL1507180069_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.baart2007_genome_scale_metabolic_network_of_neis_model1507180069_model:Baart2007GenomeScaleMetabolicNetworkOfNeisModel1507180069Model
   init_kwargs:
     model_path: data/MODEL1507180069.xml

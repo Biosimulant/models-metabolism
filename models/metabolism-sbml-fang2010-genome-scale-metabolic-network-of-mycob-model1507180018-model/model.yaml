@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1507180018
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1507180018?filename=MODEL1507180018_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.fang2010_genome_scale_metabolic_network_of_mycob_model1507180018_model:Fang2010GenomeScaleMetabolicNetworkOfMycobModel1507180018Model
   init_kwargs:
     model_path: data/MODEL1507180018.xml

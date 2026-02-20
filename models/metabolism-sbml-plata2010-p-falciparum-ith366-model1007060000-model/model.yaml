@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1007060000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1007060000?filename=MODEL1007060000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.plata2010_p_falciparum_ith366_model1007060000_model:Plata2010PFalciparumIth366Model1007060000Model
   init_kwargs:
     model_path: data/MODEL1007060000.xml

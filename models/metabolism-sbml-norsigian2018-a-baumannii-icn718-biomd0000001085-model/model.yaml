@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000001085
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000001085?filename=iCN718.omex
   license: CC0
-bsim:
+biosim:
   entrypoint: src.norsigian2018_a_baumannii_icn718_biomd0000001085_model:Norsigian2018ABaumanniiIcn718Biomd0000001085Model
   init_kwargs:
     model_path: data/BIOMD0000001085.xml

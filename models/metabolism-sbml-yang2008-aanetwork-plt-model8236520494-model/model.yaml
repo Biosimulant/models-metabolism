@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL8236520494
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL8236520494?filename=MODEL8236520494_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.yang2008_aanetwork_plt_model8236520494_model:Yang2008AanetworkPltModel8236520494Model
   init_kwargs:
     model_path: data/MODEL8236520494.xml

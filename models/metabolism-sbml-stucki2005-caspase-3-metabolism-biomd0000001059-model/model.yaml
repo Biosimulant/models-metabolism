@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000001059
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000001059?filename=Stucki2005.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.stucki2005_caspase_3_metabolism_biomd0000001059_model:Stucki2005Caspase3MetabolismBiomd0000001059Model
   init_kwargs:
     model_path: data/BIOMD0000001059.xml

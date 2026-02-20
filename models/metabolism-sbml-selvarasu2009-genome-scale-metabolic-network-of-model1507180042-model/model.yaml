@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1507180042
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1507180042?filename=MODEL1507180042_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.selvarasu2009_genome_scale_metabolic_network_of_model1507180042_model:Selvarasu2009GenomeScaleMetabolicNetworkOfModel1507180042Model
   init_kwargs:
     model_path: data/MODEL1507180042.xml

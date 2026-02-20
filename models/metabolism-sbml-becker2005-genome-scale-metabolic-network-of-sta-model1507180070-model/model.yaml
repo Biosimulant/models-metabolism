@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1507180070
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1507180070?filename=MODEL1507180070_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.becker2005_genome_scale_metabolic_network_of_sta_model1507180070_model:Becker2005GenomeScaleMetabolicNetworkOfStaModel1507180070Model
   init_kwargs:
     model_path: data/MODEL1507180070.xml

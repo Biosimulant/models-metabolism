@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1603150001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1603150001?filename=MODEL1603150001_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.swainston2016_reconstruction_of_human_metabolic_model1603150001_model:Swainston2016ReconstructionOfHumanMetabolicModel1603150001Model
   init_kwargs:
     model_path: data/MODEL1603150001.xml

@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000001087
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000001087?filename=iKS1317.omex
   license: CC0
-bsim:
+biosim:
   entrypoint: src.kumelj2019_streptomyces_coelicolor_iks1317_biomd0000001087_model:Kumelj2019StreptomycesCoelicolorIks1317Biomd0000001087Model
   init_kwargs:
     model_path: data/BIOMD0000001087.xml

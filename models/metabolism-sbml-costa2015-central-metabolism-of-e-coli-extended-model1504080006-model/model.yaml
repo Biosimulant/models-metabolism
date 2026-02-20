@@ -19,7 +19,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1504080006
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1504080006?filename=MODEL1504080006_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.costa2015_central_metabolism_of_e_coli_extended_model1504080006_model:Costa2015CentralMetabolismOfEColiExtendedModel1504080006Model
   init_kwargs:
     model_path: data/MODEL1504080006.xml

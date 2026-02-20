@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1806250004
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1806250004?filename=Graphocephala_iNA629.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.ankrah2018_the_cost_of_metabolic_interactions_in_model1806250004_model:Ankrah2018TheCostOfMetabolicInteractionsInModel1806250004Model
   init_kwargs:
     model_path: data/MODEL1806250004.xml

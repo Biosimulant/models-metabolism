@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1302010022
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1302010022?filename=MODEL1302010022_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.pitkanen2014_metabolic_reconstruction_of_histopl_model1302010022_model:Pitkanen2014MetabolicReconstructionOfHistoplModel1302010022Model
   init_kwargs:
     model_path: data/MODEL1302010022.xml

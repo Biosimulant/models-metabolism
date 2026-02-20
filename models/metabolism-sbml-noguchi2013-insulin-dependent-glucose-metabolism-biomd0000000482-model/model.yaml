@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000482
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000482?filename=BIOMD0000000482_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.noguchi2013_insulin_dependent_glucose_metabolism_biomd0000000482_model:Noguchi2013InsulinDependentGlucoseMetabolismBiomd0000000482Model
   init_kwargs:
     model_path: data/BIOMD0000000482.xml

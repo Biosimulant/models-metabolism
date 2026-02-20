@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1110130000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1110130000?filename=MODEL1110130000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.gonz_lez_domenech2012_metabolicnetwork_icg238_model1110130000_model:GonzLezDomenech2012MetabolicnetworkIcg238Model1110130000Model
   init_kwargs:
     model_path: data/MODEL1110130000.xml

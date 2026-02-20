@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2204190002
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2204190002?filename=Feist2014_Gmetallireducens_ac_Fe_updated.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.feist2014_geobacter_metallireducens_gs_15_metabo_model2204190002_model:Feist2014GeobacterMetallireducensGs15MetaboModel2204190002Model
   init_kwargs:
     model_path: data/MODEL2204190002.xml

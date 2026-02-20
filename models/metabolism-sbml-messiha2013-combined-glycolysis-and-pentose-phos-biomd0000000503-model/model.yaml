@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000503
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000503?filename=BIOMD0000000503_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.messiha2013_combined_glycolysis_and_pentose_phos_biomd0000000503_model:Messiha2013CombinedGlycolysisAndPentosePhosBiomd0000000503Model
   init_kwargs:
     model_path: data/BIOMD0000000503.xml

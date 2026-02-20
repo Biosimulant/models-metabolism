@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000434
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000434?filename=BIOMD0000000434_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.mcauley2012_whole_body_cholesterol_metabolism_biomd0000000434_model:Mcauley2012WholeBodyCholesterolMetabolismBiomd0000000434Model
   init_kwargs:
     model_path: data/BIOMD0000000434.xml

@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1303260002
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1303260002?filename=MODEL1303260002_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.smallbone2013_glycolysis_in_s_cerevisiae_iterati_model1303260002_model:Smallbone2013GlycolysisInSCerevisiaeIteratiModel1303260002Model
   init_kwargs:
     model_path: data/MODEL1303260002.xml

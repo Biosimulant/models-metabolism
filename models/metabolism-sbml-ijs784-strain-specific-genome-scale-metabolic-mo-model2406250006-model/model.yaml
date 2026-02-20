@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2406250006
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2406250006?filename=iJS784.omex
   license: CC0
-bsim:
+biosim:
   entrypoint: src.ijs784_strain_specific_genome_scale_metabolic_mo_model2406250006_model:Ijs784StrainSpecificGenomeScaleMetabolicMoModel2406250006Model
   init_kwargs:
     model_path: data/MODEL2406250006.xml

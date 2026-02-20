@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1310110027
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1310110027?filename=MODEL1310110027_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.thiele2013_oral_mucosa_squamous_epithelial_cells_model1310110027_model:Thiele2013OralMucosaSquamousEpithelialCellsModel1310110027Model
   init_kwargs:
     model_path: data/MODEL1310110027.xml

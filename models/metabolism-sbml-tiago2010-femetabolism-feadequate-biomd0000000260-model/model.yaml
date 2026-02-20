@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000260
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000260?filename=BIOMD0000000260_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.tiago2010_femetabolism_feadequate_biomd0000000260_model:Tiago2010FemetabolismFeadequateBiomd0000000260Model
   init_kwargs:
     model_path: data/BIOMD0000000260.xml

@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000471
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000471?filename=BIOMD0000000471_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.smallbone2013_yeast_metabolic_model_with_linlog_biomd0000000471_model:Smallbone2013YeastMetabolicModelWithLinlogBiomd0000000471Model
   init_kwargs:
     model_path: data/BIOMD0000000471.xml

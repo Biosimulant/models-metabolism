@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1006230016
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1006230016?filename=MODEL1006230016_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.cloutier2009_energymetabolism_modelb_model1006230016_model:Cloutier2009EnergymetabolismModelbModel1006230016Model
   init_kwargs:
     model_path: data/MODEL1006230016.xml

@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000001090
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000001090?filename=Dias2019_iDS372.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.dias2019_gsm_model_of_s_pneumoniae_r6_biomd0000001090_model:Dias2019GsmModelOfSPneumoniaeR6Biomd0000001090Model
   init_kwargs:
     model_path: data/BIOMD0000001090.xml

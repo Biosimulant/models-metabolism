@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2408040001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2408040001?filename=iMK1208.omex
   license: CC0
-bsim:
+biosim:
   entrypoint: src.kim2014_streptomyces_coelicolor_imk1208_model2408040001_model:Kim2014StreptomycesCoelicolorImk1208Model2408040001Model
   init_kwargs:
     model_path: data/MODEL2408040001.xml

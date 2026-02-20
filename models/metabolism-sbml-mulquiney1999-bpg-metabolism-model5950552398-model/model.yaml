@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL5950552398
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL5950552398?filename=MODEL5950552398_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.mulquiney1999_bpg_metabolism_model5950552398_model:Mulquiney1999BpgMetabolismModel5950552398Model
   init_kwargs:
     model_path: data/MODEL5950552398.xml

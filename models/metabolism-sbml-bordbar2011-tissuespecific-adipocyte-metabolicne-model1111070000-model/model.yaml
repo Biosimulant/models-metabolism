@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1111070000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1111070000?filename=MODEL1111070000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.bordbar2011_tissuespecific_adipocyte_metabolicne_model1111070000_model:Bordbar2011TissuespecificAdipocyteMetabolicneModel1111070000Model
   init_kwargs:
     model_path: data/MODEL1111070000.xml

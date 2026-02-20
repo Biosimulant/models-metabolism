@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1212060001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1212060001?filename=MODEL1212060001_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.dreyfuss2013_genome_scale_metabolic_model_n_cras_model1212060001_model:Dreyfuss2013GenomeScaleMetabolicModelNCrasModel1212060001Model
   init_kwargs:
     model_path: data/MODEL1212060001.xml

@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2310240001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2310240001?filename=iRM23NL.omex
   license: CC0
-bsim:
+biosim:
   entrypoint: src.irm23nl_genome_scale_metabolic_model_of_rothia_m_model2310240001_model:Irm23nlGenomeScaleMetabolicModelOfRothiaMModel2310240001Model
   init_kwargs:
     model_path: data/MODEL2310240001.xml

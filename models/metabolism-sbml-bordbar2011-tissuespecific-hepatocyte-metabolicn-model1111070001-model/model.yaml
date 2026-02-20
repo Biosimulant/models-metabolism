@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1111070001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1111070001?filename=MODEL1111070001_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.bordbar2011_tissuespecific_hepatocyte_metabolicn_model1111070001_model:Bordbar2011TissuespecificHepatocyteMetabolicnModel1111070001Model
   init_kwargs:
     model_path: data/MODEL1111070001.xml

@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1503240000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1503240000?filename=MODEL1503240000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.v_remo2015_human_myocyte_metabolic_model_model1503240000_model:VRemo2015HumanMyocyteMetabolicModelModel1503240000Model
   init_kwargs:
     model_path: data/MODEL1503240000.xml

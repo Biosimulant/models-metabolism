@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000511
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000511?filename=BIOMD0000000511_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.kerkhoven2013_glycolysis_and_pentose_phosphate_p_biomd0000000511_model:Kerkhoven2013GlycolysisAndPentosePhosphatePBiomd0000000511Model
   init_kwargs:
     model_path: data/BIOMD0000000511.xml

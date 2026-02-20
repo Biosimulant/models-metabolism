@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1302010010
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1302010010?filename=MODEL1302010010_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.pitkanen2014_metabolic_reconstruction_of_phycomy_model1302010010_model:Pitkanen2014MetabolicReconstructionOfPhycomyModel1302010010Model
   init_kwargs:
     model_path: data/MODEL1302010010.xml

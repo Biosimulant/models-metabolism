@@ -22,7 +22,7 @@ upstream:
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2306300001?filename=Merged
     model SBML.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.davies2023_cholesterol_metabolism_and_atheroscle_model2306300001_model:Davies2023CholesterolMetabolismAndAtheroscleModel2306300001Model
   init_kwargs:
     model_path: data/MODEL2306300001.xml

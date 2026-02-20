@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000961
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000961?filename=McDougal2017.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.mcdougal2017_metabolism_in_ischemic_cardiomyocyt_biomd0000000961_model:Mcdougal2017MetabolismInIschemicCardiomyocytBiomd0000000961Model
   init_kwargs:
     model_path: data/BIOMD0000000961.xml

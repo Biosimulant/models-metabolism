@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2012150002
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2012150002?filename=Glycolysis_Hb_PYK.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.haiman2020_pyruvate_kinase_regulatory_model_of_e_model2012150002_model:Haiman2020PyruvateKinaseRegulatoryModelOfEModel2012150002Model
   init_kwargs:
     model_path: data/MODEL2012150002.xml

@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1304300000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1304300000?filename=MODEL1304300000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.hofmeyr1996_metabolic_control_analysis_model1304300000_model:Hofmeyr1996MetabolicControlAnalysisModel1304300000Model
   init_kwargs:
     model_path: data/MODEL1304300000.xml

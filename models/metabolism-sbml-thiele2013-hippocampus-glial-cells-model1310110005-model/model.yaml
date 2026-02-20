@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1310110005
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1310110005?filename=MODEL1310110005_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.thiele2013_hippocampus_glial_cells_model1310110005_model:Thiele2013HippocampusGlialCellsModel1310110005Model
   init_kwargs:
     model_path: data/MODEL1310110005.xml

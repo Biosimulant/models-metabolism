@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1111190000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1111190000?filename=MODEL1111190000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.loira2012_metabolic_network_of_y_lipolytica_model1111190000_model:Loira2012MetabolicNetworkOfYLipolyticaModel1111190000Model
   init_kwargs:
     model_path: data/MODEL1111190000.xml

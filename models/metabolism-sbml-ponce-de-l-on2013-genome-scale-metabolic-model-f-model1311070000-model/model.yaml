@@ -20,7 +20,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1311070000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1311070000?filename=MODEL1311070000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.ponce_de_l_on2013_genome_scale_metabolic_model_f_model1311070000_model:PonceDeLOn2013GenomeScaleMetabolicModelFModel1311070000Model
   init_kwargs:
     model_path: data/MODEL1311070000.xml

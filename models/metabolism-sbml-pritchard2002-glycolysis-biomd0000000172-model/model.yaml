@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000172
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000172?filename=BIOMD0000000172_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.pritchard2002_glycolysis_biomd0000000172_model:Pritchard2002GlycolysisBiomd0000000172Model
   init_kwargs:
     model_path: data/BIOMD0000000172.xml

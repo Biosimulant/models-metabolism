@@ -20,7 +20,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1204120000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1204120000?filename=MODEL1204120000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.bekaert2012_reconstruction_of_d_rerio_metabolic_model1204120000_model:Bekaert2012ReconstructionOfDRerioMetabolicModel1204120000Model
   init_kwargs:
     model_path: data/MODEL1204120000.xml

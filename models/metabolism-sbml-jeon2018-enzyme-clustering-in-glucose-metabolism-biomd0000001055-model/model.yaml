@@ -23,7 +23,7 @@ upstream:
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000001055?filename=Enzyme_clustering_in
     glucose_metabolism.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.jeon2018_enzyme_clustering_in_glucose_metabolism_biomd0000001055_model:Jeon2018EnzymeClusteringInGlucoseMetabolismBiomd0000001055Model
   init_kwargs:
     model_path: data/BIOMD0000001055.xml

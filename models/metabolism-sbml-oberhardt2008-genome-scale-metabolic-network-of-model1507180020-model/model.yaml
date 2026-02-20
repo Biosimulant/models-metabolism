@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1507180020
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1507180020?filename=MODEL1507180020_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.oberhardt2008_genome_scale_metabolic_network_of_model1507180020_model:Oberhardt2008GenomeScaleMetabolicNetworkOfModel1507180020Model
   init_kwargs:
     model_path: data/MODEL1507180020.xml

@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1411210000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1411210000?filename=MODEL1411210000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.aubert2005_interaction_between_astrocytes_and_ne_model1411210000_model:Aubert2005InteractionBetweenAstrocytesAndNeModel1411210000Model
   init_kwargs:
     model_path: data/MODEL1411210000.xml

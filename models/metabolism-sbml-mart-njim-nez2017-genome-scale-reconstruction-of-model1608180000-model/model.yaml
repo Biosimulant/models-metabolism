@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1608180000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1608180000?filename=MODEL1608180000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.mart_njim_nez2017_genome_scale_reconstruction_of_model1608180000_model:MartNjimNez2017GenomeScaleReconstructionOfModel1608180000Model
   init_kwargs:
     model_path: data/MODEL1608180000.xml

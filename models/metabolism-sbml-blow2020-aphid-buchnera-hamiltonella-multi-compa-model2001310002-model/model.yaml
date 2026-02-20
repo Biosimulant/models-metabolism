@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2001310002
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2001310002?filename=AphBucHam.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.blow2020_aphid_buchnera_hamiltonella_multi_compa_model2001310002_model:Blow2020AphidBuchneraHamiltonellaMultiCompaModel2001310002Model
   init_kwargs:
     model_path: data/MODEL2001310002.xml

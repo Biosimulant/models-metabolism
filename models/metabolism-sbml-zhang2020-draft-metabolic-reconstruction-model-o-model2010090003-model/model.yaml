@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2010090003
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2010090003?filename=draftModel_gadMor1_s3f.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.zhang2020_draft_metabolic_reconstruction_model_o_model2010090003_model:Zhang2020DraftMetabolicReconstructionModelOModel2010090003Model
   init_kwargs:
     model_path: data/MODEL2010090003.xml

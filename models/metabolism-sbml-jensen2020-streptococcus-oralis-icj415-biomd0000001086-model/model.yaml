@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000001086
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000001086?filename=suppl_datasheet_s2_iCJ415.omex
   license: CC0
-bsim:
+biosim:
   entrypoint: src.jensen2020_streptococcus_oralis_icj415_biomd0000001086_model:Jensen2020StreptococcusOralisIcj415Biomd0000001086Model
   init_kwargs:
     model_path: data/BIOMD0000001086.xml

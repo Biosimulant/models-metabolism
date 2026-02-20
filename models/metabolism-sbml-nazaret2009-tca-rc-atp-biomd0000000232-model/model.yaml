@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000232
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000232?filename=BIOMD0000000232_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.nazaret2009_tca_rc_atp_biomd0000000232_model:Nazaret2009TcaRcAtpBiomd0000000232Model
   init_kwargs:
     model_path: data/BIOMD0000000232.xml

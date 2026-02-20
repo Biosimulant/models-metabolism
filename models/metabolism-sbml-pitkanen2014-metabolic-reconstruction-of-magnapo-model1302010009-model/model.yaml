@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1302010009
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1302010009?filename=MODEL1302010009_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.pitkanen2014_metabolic_reconstruction_of_magnapo_model1302010009_model:Pitkanen2014MetabolicReconstructionOfMagnapoModel1302010009Model
   init_kwargs:
     model_path: data/MODEL1302010009.xml

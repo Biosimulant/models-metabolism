@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2404250002
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2404250002?filename=Cparapsilosis.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.viana2022_cparapsilosis_metabolic_model_model2404250002_model:Viana2022CparapsilosisMetabolicModelModel2404250002Model
   init_kwargs:
     model_path: data/MODEL2404250002.xml

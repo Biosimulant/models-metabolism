@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1310110021
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1310110021?filename=MODEL1310110021_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.thiele2013_tonsil_germinal_center_cells_model1310110021_model:Thiele2013TonsilGerminalCenterCellsModel1310110021Model
   init_kwargs:
     model_path: data/MODEL1310110021.xml

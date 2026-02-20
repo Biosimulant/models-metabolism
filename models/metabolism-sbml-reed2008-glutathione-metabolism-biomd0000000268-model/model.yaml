@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000268
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000268?filename=BIOMD0000000268_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.reed2008_glutathione_metabolism_biomd0000000268_model:Reed2008GlutathioneMetabolismBiomd0000000268Model
   init_kwargs:
     model_path: data/BIOMD0000000268.xml

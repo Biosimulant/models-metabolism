@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2112310002
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2112310002?filename=pcbi.1004144.s001.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.luna2013_circadianclock_sirt1_model2112310002_model:Luna2013CircadianclockSirt1Model2112310002Model
   init_kwargs:
     model_path: data/MODEL2112310002.xml

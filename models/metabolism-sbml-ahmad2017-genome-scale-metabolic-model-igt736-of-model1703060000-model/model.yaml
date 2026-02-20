@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1703060000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1703060000?filename=MODEL1703060000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.ahmad2017_genome_scale_metabolic_model_igt736_of_model1703060000_model:Ahmad2017GenomeScaleMetabolicModelIgt736OfModel1703060000Model
   init_kwargs:
     model_path: data/MODEL1703060000.xml

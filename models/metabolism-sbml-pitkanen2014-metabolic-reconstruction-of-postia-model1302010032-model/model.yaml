@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1302010032
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1302010032?filename=MODEL1302010032_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.pitkanen2014_metabolic_reconstruction_of_postia_model1302010032_model:Pitkanen2014MetabolicReconstructionOfPostiaModel1302010032Model
   init_kwargs:
     model_path: data/MODEL1302010032.xml

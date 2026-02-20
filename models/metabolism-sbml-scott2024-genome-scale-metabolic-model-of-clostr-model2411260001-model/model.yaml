@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2411260001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2411260001?filename=iSJ444.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.scott2024_genome_scale_metabolic_model_of_clostr_model2411260001_model:Scott2024GenomeScaleMetabolicModelOfClostrModel2411260001Model
   init_kwargs:
     model_path: data/MODEL2411260001.xml

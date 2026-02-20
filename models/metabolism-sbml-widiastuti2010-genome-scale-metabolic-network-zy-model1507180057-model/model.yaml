@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1507180057
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1507180057?filename=MODEL1507180057_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.widiastuti2010_genome_scale_metabolic_network_zy_model1507180057_model:Widiastuti2010GenomeScaleMetabolicNetworkZyModel1507180057Model
   init_kwargs:
     model_path: data/MODEL1507180057.xml

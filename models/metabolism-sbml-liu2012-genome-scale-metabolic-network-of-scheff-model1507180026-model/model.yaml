@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1507180026
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1507180026?filename=MODEL1507180026_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.liu2012_genome_scale_metabolic_network_of_scheff_model1507180026_model:Liu2012GenomeScaleMetabolicNetworkOfScheffModel1507180026Model
   init_kwargs:
     model_path: data/MODEL1507180026.xml

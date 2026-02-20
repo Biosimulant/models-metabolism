@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2109130004
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2109130004?filename=Pachysolen_tannophilus.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.lu2021_genome_scale_metabolic_model_for_yeast_sp_model2109130004_model:Lu2021GenomeScaleMetabolicModelForYeastSpModel2109130004Model
   init_kwargs:
     model_path: data/MODEL2109130004.xml

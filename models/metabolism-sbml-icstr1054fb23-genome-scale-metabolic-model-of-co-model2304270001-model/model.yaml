@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2304270001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2304270001?filename=iCstr1054FB23.omex
   license: CC0
-bsim:
+biosim:
   entrypoint: src.icstr1054fb23_genome_scale_metabolic_model_of_co_model2304270001_model:Icstr1054fb23GenomeScaleMetabolicModelOfCoModel2304270001Model
   init_kwargs:
     model_path: data/MODEL2304270001.xml

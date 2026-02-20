@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1304120000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1304120000?filename=MODEL1304120000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.goyal2014_genome_scale_metabolic_model_of_m_mari_model1304120000_model:Goyal2014GenomeScaleMetabolicModelOfMMariModel1304120000Model
   init_kwargs:
     model_path: data/MODEL1304120000.xml

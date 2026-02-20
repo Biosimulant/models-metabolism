@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2012150003
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2012150003?filename=Ecoli_Growth_Glycolysis.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.haiman2020_functional_enzyme_states_in_the_e_col_model2012150003_model:Haiman2020FunctionalEnzymeStatesInTheEColModel2012150003Model
   init_kwargs:
     model_path: data/MODEL2012150003.xml

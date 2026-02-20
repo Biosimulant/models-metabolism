@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1403250002
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1403250002?filename=MODEL1403250002_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.rao2014_yeast_glycolysis_reduced_model_model1403250002_model:Rao2014YeastGlycolysisReducedModelModel1403250002Model
   init_kwargs:
     model_path: data/MODEL1403250002.xml

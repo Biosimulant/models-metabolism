@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1612020000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1612020000?filename=MODEL1612020000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.peyraud2016_metabolic_reconstruction_irp1476_of_model1612020000_model:Peyraud2016MetabolicReconstructionIrp1476OfModel1612020000Model
   init_kwargs:
     model_path: data/MODEL1612020000.xml

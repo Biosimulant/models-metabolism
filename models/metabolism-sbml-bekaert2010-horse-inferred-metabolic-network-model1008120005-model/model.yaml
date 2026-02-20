@@ -21,7 +21,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1008120005
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1008120005?filename=MODEL1008120005_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.bekaert2010_horse_inferred_metabolic_network_model1008120005_model:Bekaert2010HorseInferredMetabolicNetworkModel1008120005Model
   init_kwargs:
     model_path: data/MODEL1008120005.xml

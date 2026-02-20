@@ -20,7 +20,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2311220001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2311220001?filename=green85.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.green1985_whole_body_vitamin_a_metabolism_in_rat_model2311220001_model:Green1985WholeBodyVitaminAMetabolismInRatModel2311220001Model
   init_kwargs:
     model_path: data/MODEL2311220001.xml

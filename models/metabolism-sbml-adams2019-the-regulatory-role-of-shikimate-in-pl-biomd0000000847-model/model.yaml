@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000847
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000847?filename=Adams2019.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.adams2019_the_regulatory_role_of_shikimate_in_pl_biomd0000000847_model:Adams2019TheRegulatoryRoleOfShikimateInPlBiomd0000000847Model
   init_kwargs:
     model_path: data/BIOMD0000000847.xml

@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2407310001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2407310001?filename=iCTUB2024RM.omex
   license: CC0
-bsim:
+biosim:
   entrypoint: src.ictub2024rm_genome_scale_metabolic_model_of_cory_model2407310001_model:Ictub2024rmGenomeScaleMetabolicModelOfCoryModel2407310001Model
   init_kwargs:
     model_path: data/MODEL2407310001.xml

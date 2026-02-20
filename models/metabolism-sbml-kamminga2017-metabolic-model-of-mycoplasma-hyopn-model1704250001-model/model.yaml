@@ -24,7 +24,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1704250001
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1704250001?filename=MODEL1704250001_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.kamminga2017_metabolic_model_of_mycoplasma_hyopn_model1704250001_model:Kamminga2017MetabolicModelOfMycoplasmaHyopnModel1704250001Model
   init_kwargs:
     model_path: data/MODEL1704250001.xml

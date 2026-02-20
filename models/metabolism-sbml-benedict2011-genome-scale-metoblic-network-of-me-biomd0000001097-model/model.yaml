@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000001097
   download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000001097?filename=MODEL1507180040_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.benedict2011_genome_scale_metoblic_network_of_me_biomd0000001097_model:Benedict2011GenomeScaleMetoblicNetworkOfMeBiomd0000001097Model
   init_kwargs:
     model_path: data/BIOMD0000001097.xml

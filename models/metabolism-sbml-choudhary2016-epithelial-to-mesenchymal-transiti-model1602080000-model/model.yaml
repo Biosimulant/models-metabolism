@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL1602080000
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1602080000?filename=MODEL1602080000_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.choudhary2016_epithelial_to_mesenchymal_transiti_model1602080000_model:Choudhary2016EpithelialToMesenchymalTransitiModel1602080000Model
   init_kwargs:
     model_path: data/MODEL1602080000.xml

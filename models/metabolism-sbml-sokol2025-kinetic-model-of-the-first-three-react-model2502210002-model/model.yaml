@@ -22,7 +22,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL2502210002
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2502210002?filename=kinetic_model.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.sokol2025_kinetic_model_of_the_first_three_react_model2502210002_model:Sokol2025KineticModelOfTheFirstThreeReactModel2502210002Model
   init_kwargs:
     model_path: data/MODEL2502210002.xml

@@ -23,7 +23,7 @@ upstream:
   original_url: https://www.ebi.ac.uk/biomodels/MODEL3618487388
   download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL3618487388?filename=MODEL3618487388_url.xml
   license: CC0
-bsim:
+biosim:
   entrypoint: src.poolman2009_metab_arabidopsis_reduced_model3618487388_model:Poolman2009MetabArabidopsisReducedModel3618487388Model
   init_kwargs:
     model_path: data/MODEL3618487388.xml
