@@ -1,0 +1,28 @@
+modules:
+  bexkens2024_schi_1:
+    class: src.bexkens2024_schistosoma_mansoni_glycolysis_model2208290002_model:Bexkens2024SchistosomaMansoniGlycolysisModel2208290002Model
+    args:
+      model_path: data/MODEL2208290002.xml
+  blasche2021_kefi_2:
+    class: src.blasche2021_kefir_interactions_rothia_kefirresid_model2204300002_model:Blasche2021KefirInteractionsRothiaKefirresidModel2204300002Model
+    args:
+      model_path: data/MODEL2204300002.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: bexkens2024_schi_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: blasche2021_kefi_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b

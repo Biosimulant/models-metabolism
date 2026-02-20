@@ -1,0 +1,86 @@
+schema_version: '2.0'
+title: 'Metabolism: General (COMBO_0063)'
+description: Metabolism general comparative space with 4 models, configured as non-causal
+  co-simulation.
+models:
+- repo: Biosimulant/models-metabolism
+  alias: liu2019_clostrid_1
+  manifest_path: models/metabolism-sbml-liu2019-clostridium-ljungdahlii-metabolism-model-model2204200003-model/model.yaml
+  parameters:
+    model_path: data/MODEL2204200003.xml
+- repo: Biosimulant/models-metabolism
+  alias: luna2013_circadi_2
+  manifest_path: models/metabolism-sbml-luna2013-circadianclock-sirt1-model2112310002-model/model.yaml
+  parameters:
+    model_path: data/MODEL2112310002.xml
+- repo: Biosimulant/models-metabolism
+  alias: masison2022_live_3
+  manifest_path: models/metabolism-sbml-masison2022-liver-iron-metabolism-with-updated-f-model2211030002-model/model.yaml
+  parameters:
+    model_path: data/MODEL2211030002.xml
+- repo: Biosimulant/models-metabolism
+  alias: mcdougal2017_met_4
+  manifest_path: models/metabolism-sbml-mcdougal2017-metabolism-in-ischemic-cardiomyocyt-biomd0000000961-model/model.yaml
+  parameters:
+    model_path: data/BIOMD0000000961.xml
+- repo: Biosimulant/models-observability
+  alias: state_compare_mon
+  manifest_path: models/observability-state-comparison-monitor/model.yaml
+  parameters:
+    max_points: 2000
+    min_dt: 1.0
+- repo: Biosimulant/models-observability
+  alias: state_metrics_mon
+  manifest_path: models/observability-state-metrics-monitor/model.yaml
+  parameters:
+    max_points: 2000
+    min_dt: 1.0
+runtime:
+  duration: 60.0
+  tick_dt: 0.01
+  initial_inputs: {}
+wiring:
+- from: liu2019_clostrid_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: luna2013_circadi_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: masison2022_live_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+- from: mcdougal2017_met_4.state
+  to:
+  - state_compare_mon.state_d
+  - state_metrics_mon.state_d
+scientific_context:
+  question: How do general mechanisms compare across these models?
+  mode: comparative
+  assumptions:
+  - Model implementations are used as published in their curated manifests without
+    biological reinterpretation.
+  - Time integration uses a shared global tick compatible with model min_dt constraints.
+  - Comparative (non-causal) mode is used because full deterministic IO coverage for
+    causal coupling was not satisfied.
+  expected_observables:
+  - Model output trajectories under shared runtime settings.
+  - Cross-model agreement/divergence in key state or metric signals.
+  - Relative behavior comparison without causal linkage claims.
+  limitations:
+  - No new biology is introduced beyond what upstream models encode.
+  - Cross-model semantic matching is rule-based and may under-connect uncertain routes.
+  provenance:
+  - 'metabolism-sbml-liu2019-clostridium-ljungdahlii-metabolism-model-model2204200003-model
+    :: biomodels_ebi:MODEL2204200003 :: https://www.ebi.ac.uk/biomodels/MODEL2204200003'
+  - 'metabolism-sbml-luna2013-circadianclock-sirt1-model2112310002-model :: biomodels_ebi:MODEL2112310002
+    :: https://www.ebi.ac.uk/biomodels/MODEL2112310002'
+  - 'metabolism-sbml-masison2022-liver-iron-metabolism-with-updated-f-model2211030002-model
+    :: biomodels_ebi:MODEL2211030002 :: https://www.ebi.ac.uk/biomodels/MODEL2211030002'
+  - 'metabolism-sbml-mcdougal2017-metabolism-in-ischemic-cardiomyocyt-biomd0000000961-model
+    :: biomodels_ebi:BIOMD0000000961 :: https://www.ebi.ac.uk/biomodels/BIOMD0000000961'
+  visualization_rationale: A dedicated monitor model receives all participating model
+    state streams (`state_a..state_d`) so trajectories can be compared in one place
+    without claiming causal coupling when IO semantics are incomplete.

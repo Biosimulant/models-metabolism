@@ -1,0 +1,36 @@
+modules:
+  babaev2024_cyp2c_1:
+    class: src.babaev2024_cyp2c9_variants_model2412180002_model:Babaev2024Cyp2c9VariantsModel2412180002Model
+    args:
+      model_path: data/MODEL2412180002.xml
+  babaev2025_cyp2c_2:
+    class: src.babaev2025_cyp2c9_and_abcb1_losartan_metabolism_model2504020001_model:Babaev2025Cyp2c9AndAbcb1LosartanMetabolismModel2504020001Model
+    args:
+      model_path: data/MODEL2504020001.xml
+  bannerman2022_wh_3:
+    class: src.bannerman2022_whole_genome_metabolism_m_abscessu_model2203300002_model:Bannerman2022WholeGenomeMetabolismMAbscessuModel2203300002Model
+    args:
+      model_path: data/MODEL2203300002.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: babaev2024_cyp2c_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: babaev2025_cyp2c_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: bannerman2022_wh_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c

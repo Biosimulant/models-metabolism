@@ -1,0 +1,28 @@
+modules:
+  bordbar2011_tiss_1:
+    class: src.bordbar2011_tissuespecific_myocyte_metablicnetwo_model1111070002_model:Bordbar2011TissuespecificMyocyteMetablicnetwoModel1111070002Model
+    args:
+      model_path: data/MODEL1111070002.xml
+  borodina2005_gen_2:
+    class: src.borodina2005_genome_scale_metabolic_network_of_s_model1507180049_model:Borodina2005GenomeScaleMetabolicNetworkOfSModel1507180049Model
+    args:
+      model_path: data/MODEL1507180049.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: bordbar2011_tiss_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: borodina2005_gen_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b

@@ -1,0 +1,44 @@
+modules:
+  haiman2020_funct_1:
+    class: src.haiman2020_functional_enzyme_states_in_the_e_col_model2012150003_model:Haiman2020FunctionalEnzymeStatesInTheEColModel2012150003Model
+    args:
+      model_path: data/MODEL2012150003.xml
+  haiman2020_pyruv_2:
+    class: src.haiman2020_pyruvate_kinase_regulatory_model_of_e_model2012150002_model:Haiman2020PyruvateKinaseRegulatoryModelOfEModel2012150002Model
+    args:
+      model_path: data/MODEL2012150002.xml
+  heinemann2005_ge_3:
+    class: src.heinemann2005_genome_scale_reconstruction_of_sta_model1507180072_model:Heinemann2005GenomeScaleReconstructionOfStaModel1507180072Model
+    args:
+      model_path: data/MODEL1507180072.xml
+  icho2441_4:
+    class: src.icho2441_model2206100001_model:Icho2441Model2206100001Model
+    args:
+      model_path: data/MODEL2206100001.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: haiman2020_funct_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: haiman2020_pyruv_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: heinemann2005_ge_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+- from: icho2441_4.state
+  to:
+  - state_compare_mon.state_d
+  - state_metrics_mon.state_d

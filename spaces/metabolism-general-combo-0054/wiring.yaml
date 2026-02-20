@@ -1,0 +1,36 @@
+modules:
+  deborasoncini202_1:
+    class: src.deborasoncini2024_nad_biosynthesis_in_human_b_ly_model2311140001_model:Deborasoncini2024NadBiosynthesisInHumanBLyModel2311140001Model
+    args:
+      model_path: data/MODEL2311140001.xml
+  dicenzo2020_sino_2:
+    class: src.dicenzo2020_sinorhizobium_meliloti_1021_genome_s_model2003240001_model:Dicenzo2020SinorhizobiumMeliloti1021GenomeSModel2003240001Model
+    args:
+      model_path: data/MODEL2003240001.xml
+  dvarak2020_pxr_3:
+    class: src.dvarak2020_pxr_targeting_using_microbial_metabol_model2002050001_model:Dvarak2020PxrTargetingUsingMicrobialMetabolModel2002050001Model
+    args:
+      model_path: data/MODEL2002050001.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: deborasoncini202_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: dicenzo2020_sino_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: dvarak2020_pxr_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c

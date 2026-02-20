@@ -1,0 +1,28 @@
+modules:
+  bekaert2010_maca_1:
+    class: src.bekaert2010_macaque_inferred_metabolic_network_model1008120001_model:Bekaert2010MacaqueInferredMetabolicNetworkModel1008120001Model
+    args:
+      model_path: data/MODEL1008120001.xml
+  bekaert2010_mous_2:
+    class: src.bekaert2010_mouse_inferred_metabolic_network_model1008120002_model:Bekaert2010MouseInferredMetabolicNetworkModel1008120002Model
+    args:
+      model_path: data/MODEL1008120002.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: bekaert2010_maca_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: bekaert2010_mous_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b

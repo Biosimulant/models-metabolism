@@ -1,0 +1,36 @@
+modules:
+  adams2019_the_1:
+    class: src.adams2019_the_regulatory_role_of_shikimate_in_pl_biomd0000000847_model:Adams2019TheRegulatoryRoleOfShikimateInPlBiomd0000000847Model
+    args:
+      model_path: data/BIOMD0000000847.xml
+  aubert2002_coupl_2:
+    class: src.aubert2002_coupling_between_brain_electrical_act_biomd0000000570_model:Aubert2002CouplingBetweenBrainElectricalActBiomd0000000570Model
+    args:
+      model_path: data/BIOMD0000000570.xml
+  aubert2005_inter_3:
+    class: src.aubert2005_interaction_between_astrocytes_and_ne_model1411210000_model:Aubert2005InteractionBetweenAstrocytesAndNeModel1411210000Model
+    args:
+      model_path: data/MODEL1411210000.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: adams2019_the_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: aubert2002_coupl_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: aubert2005_inter_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c

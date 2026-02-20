@@ -1,0 +1,36 @@
+modules:
+  bannerman2022_wh_1:
+    class: src.bannerman2022_whole_genome_metabolism_mycobacter_model2203300001_model:Bannerman2022WholeGenomeMetabolismMycobacterModel2203300001Model
+    args:
+      model_path: data/MODEL2203300001.xml
+  bulik2016_regula_2:
+    class: src.bulik2016_regulation_of_hepatic_glucose_metaboli_biomd0000000633_model:Bulik2016RegulationOfHepaticGlucoseMetaboliBiomd0000000633Model
+    args:
+      model_path: data/BIOMD0000000633.xml
+  canto_encalada20_3:
+    class: src.canto_encalada2022_fba_of_simultaneous_degradati_biomd0000001061_model:CantoEncalada2022FbaOfSimultaneousDegradatiBiomd0000001061Model
+    args:
+      model_path: data/BIOMD0000001061.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: bannerman2022_wh_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: bulik2016_regula_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: canto_encalada20_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c

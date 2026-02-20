@@ -1,0 +1,44 @@
+modules:
+  feist2014_geobac_1:
+    class: src.feist2014_geobacter_metallireducens_gs_15_metabo_model2204190002_model:Feist2014GeobacterMetallireducensGs15MetaboModel2204190002Model
+    args:
+      model_path: data/MODEL2204190002.xml
+  ford2020_whole_2:
+    class: src.ford2020_whole_body_vitamin_a_metabolism_in_huma_model2312190001_model:Ford2020WholeBodyVitaminAMetabolismInHumaModel2312190001Model
+    args:
+      model_path: data/MODEL2312190001.xml
+  furr2005_whole_3:
+    class: src.furr2005_whole_body_vitamin_a_metabolism_in_huma_model2405200001_model:Furr2005WholeBodyVitaminAMetabolismInHumaModel2405200001Model
+    args:
+      model_path: data/MODEL2405200001.xml
+  gebauer2016_geno_4:
+    class: src.gebauer2016_genome_scale_model_of_caenorhabditis_model1704200000_model:Gebauer2016GenomeScaleModelOfCaenorhabditisModel1704200000Model
+    args:
+      model_path: data/MODEL1704200000.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: feist2014_geobac_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: ford2020_whole_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: furr2005_whole_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+- from: gebauer2016_geno_4.state
+  to:
+  - state_compare_mon.state_d
+  - state_metrics_mon.state_d

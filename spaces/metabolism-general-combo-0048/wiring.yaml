@@ -1,0 +1,36 @@
+modules:
+  chedere2022_nad_1:
+    class: src.chedere2022_nad_biosynthesis_in_human_liver_model2205250001_model:Chedere2022NadBiosynthesisInHumanLiverModel2205250001Model
+    args:
+      model_path: data/MODEL2205250001.xml
+  choudhary2016_ep_2:
+    class: src.choudhary2016_epithelial_to_mesenchymal_transiti_model1602080000_model:Choudhary2016EpithelialToMesenchymalTransitiModel1602080000Model
+    args:
+      model_path: data/MODEL1602080000.xml
+  cifelli2008_whol_3:
+    class: src.cifelli2008_whole_body_vitamin_a_metabolism_in_h_model2403080002_model:Cifelli2008WholeBodyVitaminAMetabolismInHModel2403080002Model
+    args:
+      model_path: data/MODEL2403080002.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: chedere2022_nad_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: choudhary2016_ep_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: cifelli2008_whol_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c

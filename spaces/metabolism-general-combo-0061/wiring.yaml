@@ -1,0 +1,44 @@
+modules:
+  kees2018_genome_1:
+    class: src.kees2018_genome_scale_constraint_based_model_of_model1710040000_model:Kees2018GenomeScaleConstraintBasedModelOfModel1710040000Model
+    args:
+      model_path: data/MODEL1710040000.xml
+  koenig2012_hepat_2:
+    class: src.koenig2012_hepatic_glucose_metabolism_model1204270001_model:Koenig2012HepaticGlucoseMetabolismModel1204270001Model
+    args:
+      model_path: data/MODEL1204270001.xml
+  koenig2012_hepat_3:
+    class: src.koenig2012_hepatic_glucose_metabolism_model1209260000_model:Koenig2012HepaticGlucoseMetabolismModel1209260000Model
+    args:
+      model_path: data/MODEL1209260000.xml
+  kolbe2019_spatio_4:
+    class: src.kolbe2019_spatio_temporal_liver_zonation_model2009110001_model:Kolbe2019SpatioTemporalLiverZonationModel2009110001Model
+    args:
+      model_path: data/MODEL2009110001.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: kees2018_genome_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: koenig2012_hepat_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: koenig2012_hepat_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+- from: kolbe2019_spatio_4.state
+  to:
+  - state_compare_mon.state_d
+  - state_metrics_mon.state_d

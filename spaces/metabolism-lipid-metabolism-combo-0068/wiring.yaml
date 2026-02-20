@@ -1,0 +1,44 @@
+modules:
+  davies2023_chole_1:
+    class: src.davies2023_cholesterol_metabolism_and_atheroscle_model2306300001_model:Davies2023CholesterolMetabolismAndAtheroscleModel2306300001Model
+    args:
+      model_path: data/MODEL2306300001.xml
+  gupta2009_eicosa_2:
+    class: src.gupta2009_eicosanoid_metabolism_biomd0000000436_model:Gupta2009EicosanoidMetabolismBiomd0000000436Model
+    args:
+      model_path: data/BIOMD0000000436.xml
+  mcauley2012_whol_3:
+    class: src.mcauley2012_whole_body_cholesterol_metabolism_biomd0000000434_model:Mcauley2012WholeBodyCholesterolMetabolismBiomd0000000434Model
+    args:
+      model_path: data/BIOMD0000000434.xml
+  morgan2016_dynam_4:
+    class: src.morgan2016_dynamics_of_cholesterol_metabolism_an_model1508170000_model:Morgan2016DynamicsOfCholesterolMetabolismAnModel1508170000Model
+    args:
+      model_path: data/MODEL1508170000.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: davies2023_chole_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: gupta2009_eicosa_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: mcauley2012_whol_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+- from: morgan2016_dynam_4.state
+  to:
+  - state_compare_mon.state_d
+  - state_metrics_mon.state_d

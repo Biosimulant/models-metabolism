@@ -1,0 +1,28 @@
+modules:
+  broddrick2016_sy_1:
+    class: src.broddrick2016_synechococcus_elongatus_pcc_7942_i_biomd0000001083_model:Broddrick2016SynechococcusElongatusPcc7942IBiomd0000001083Model
+    args:
+      model_path: data/BIOMD0000001083.xml
+  bruck2008_glycol_2:
+    class: src.bruck2008_glycolysis_model1011010000_model:Bruck2008GlycolysisModel1011010000Model
+    args:
+      model_path: data/MODEL1011010000.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: broddrick2016_sy_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: bruck2008_glycol_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b

@@ -1,0 +1,44 @@
+modules:
+  kurpad_vitamin_1:
+    class: src.kurpad_2023_vitamin_b12_metabolism_in_humans_stu_model2503310002_model:Kurpad2023VitaminB12MetabolismInHumansStuModel2503310002Model
+    args:
+      model_path: data/MODEL2503310002.xml
+  lai2007_o2_2:
+    class: src.lai2007_o2_transport_metabolism_biomd0000000248_model:Lai2007O2TransportMetabolismBiomd0000000248Model
+    args:
+      model_path: data/BIOMD0000000248.xml
+  lavoie2020_f_3:
+    class: src.lavoie2020_f_cylindrus_genome_scale_model_model2001280001_model:Lavoie2020FCylindrusGenomeScaleModelModel2001280001Model
+    args:
+      model_path: data/MODEL2001280001.xml
+  lee2017_paraceta_4:
+    class: src.lee2017_paracetamol_first_pass_metabolism_pk_mod_biomd0000000947_model:Lee2017ParacetamolFirstPassMetabolismPkModBiomd0000000947Model
+    args:
+      model_path: data/BIOMD0000000947.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: kurpad_vitamin_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: lai2007_o2_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: lavoie2020_f_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+- from: lee2017_paraceta_4.state
+  to:
+  - state_compare_mon.state_d
+  - state_metrics_mon.state_d

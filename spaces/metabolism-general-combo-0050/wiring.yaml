@@ -1,0 +1,36 @@
+modules:
+  cloutier2009_ene_1:
+    class: src.cloutier2009_energymetabolism_modelc_model1006230068_model:Cloutier2009EnergymetabolismModelcModel1006230068Model
+    args:
+      model_path: data/MODEL1006230068.xml
+  cloutier2009_ene_2:
+    class: src.cloutier2009_energymetabolism_modeld_model1006230095_model:Cloutier2009EnergymetabolismModeldModel1006230095Model
+    args:
+      model_path: data/MODEL1006230095.xml
+  cloutier2009_ene_3:
+    class: src.cloutier2009_energymetabolism_modele_model1006230059_model:Cloutier2009EnergymetabolismModeleModel1006230059Model
+    args:
+      model_path: data/MODEL1006230059.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: cloutier2009_ene_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: cloutier2009_ene_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: cloutier2009_ene_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c

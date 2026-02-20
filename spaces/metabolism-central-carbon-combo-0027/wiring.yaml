@@ -1,0 +1,28 @@
+modules:
+  burgos2025_genom_1:
+    class: src.burgos2025_genome_scale_metabolic_model_for_rumi_model2503030001_model:Burgos2025GenomeScaleMetabolicModelForRumiModel2503030001Model
+    args:
+      model_path: data/MODEL2503030001.xml
+  carter2023_genom_2:
+    class: src.carter2023_genome_scale_metabolic_model_of_photo_model2309110001_model:Carter2023GenomeScaleMetabolicModelOfPhotoModel2309110001Model
+    args:
+      model_path: data/MODEL2309110001.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: burgos2025_genom_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: carter2023_genom_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b

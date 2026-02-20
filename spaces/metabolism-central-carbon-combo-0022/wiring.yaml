@@ -1,0 +1,28 @@
+modules:
+  blasche2021_meta_1:
+    class: src.blasche2021_metabolic_cooperation_and_spatiotemp_model2204300001_model:Blasche2021MetabolicCooperationAndSpatiotempModel2204300001Model
+    args:
+      model_path: data/MODEL2204300001.xml
+  blow2020_aphid_2:
+    class: src.blow2020_aphid_buchnera_hamiltonella_multi_compa_model2001310002_model:Blow2020AphidBuchneraHamiltonellaMultiCompaModel2001310002Model
+    args:
+      model_path: data/MODEL2001310002.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: blasche2021_meta_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: blow2020_aphid_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b

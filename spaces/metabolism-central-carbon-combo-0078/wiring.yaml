@@ -1,0 +1,44 @@
+modules:
+  alam2010_genome_1:
+    class: src.alam2010_genome_scale_metabolic_network_of_strep_model1507180005_model:Alam2010GenomeScaleMetabolicNetworkOfStrepModel1507180005Model
+    args:
+      model_path: data/MODEL1507180005.xml
+  andersen2009_gen_2:
+    class: src.andersen2009_genome_scale_metabolic_network_of_a_model1507180047_model:Andersen2009GenomeScaleMetabolicNetworkOfAModel1507180047Model
+    args:
+      model_path: data/MODEL1507180047.xml
+  ankrah2018_the_3:
+    class: src.ankrah2018_the_cost_of_metabolic_interactions_in_model1806250003_model:Ankrah2018TheCostOfMetabolicInteractionsInModel1806250003Model
+    args:
+      model_path: data/MODEL1806250003.xml
+  ankrah2018_the_4:
+    class: src.ankrah2018_the_cost_of_metabolic_interactions_in_model1806250004_model:Ankrah2018TheCostOfMetabolicInteractionsInModel1806250004Model
+    args:
+      model_path: data/MODEL1806250004.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: alam2010_genome_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: andersen2009_gen_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: ankrah2018_the_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+- from: ankrah2018_the_4.state
+  to:
+  - state_compare_mon.state_d
+  - state_metrics_mon.state_d

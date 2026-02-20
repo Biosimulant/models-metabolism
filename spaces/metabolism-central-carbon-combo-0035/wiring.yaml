@@ -1,0 +1,36 @@
+modules:
+  castillo2016_who_1:
+    class: src.castillo2016_whole_genome_metabolic_model_of_c_n_model1604280045_model:Castillo2016WholeGenomeMetabolicModelOfCNModel1604280045Model
+    args:
+      model_path: data/MODEL1604280045.xml
+  castillo2016_who_2:
+    class: src.castillo2016_whole_genome_metabolic_model_of_c_t_model1604280006_model:Castillo2016WholeGenomeMetabolicModelOfCTModel1604280006Model
+    args:
+      model_path: data/MODEL1604280006.xml
+  castillo2016_who_3:
+    class: src.castillo2016_whole_genome_metabolic_model_of_d_h_model1604280028_model:Castillo2016WholeGenomeMetabolicModelOfDHModel1604280028Model
+    args:
+      model_path: data/MODEL1604280028.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: castillo2016_who_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: castillo2016_who_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: castillo2016_who_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c

@@ -1,0 +1,28 @@
+modules:
+  bekaert2010_dog_1:
+    class: src.bekaert2010_dog_inferred_metabolic_network_model1008120006_model:Bekaert2010DogInferredMetabolicNetworkModel1008120006Model
+    args:
+      model_path: data/MODEL1008120006.xml
+  bekaert2010_hors_2:
+    class: src.bekaert2010_horse_inferred_metabolic_network_model1008120005_model:Bekaert2010HorseInferredMetabolicNetworkModel1008120005Model
+    args:
+      model_path: data/MODEL1008120005.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: bekaert2010_dog_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: bekaert2010_hors_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b

@@ -1,0 +1,44 @@
+modules:
+  reyes_palomares2_1:
+    class: src.reyes_palomares2012_a_combined_model_hepatic_pol_biomd0000000450_model:ReyesPalomares2012ACombinedModelHepaticPolBiomd0000000450Model
+    args:
+      model_path: data/BIOMD0000000450.xml
+  reyes_palomares2_2:
+    class: src.reyes_palomares2012_a_combined_model_hepatic_pol_biomd0000000674_model:ReyesPalomares2012ACombinedModelHepaticPolBiomd0000000674Model
+    args:
+      model_path: data/BIOMD0000000674.xml
+  rienksma2014_gen_3:
+    class: src.rienksma2014_genome_scale_constraint_based_metab_model1411110000_model:Rienksma2014GenomeScaleConstraintBasedMetabModel1411110000Model
+    args:
+      model_path: data/MODEL1411110000.xml
+  saa2016_mammalia_4:
+    class: src.saa2016_mammalian_methionine_cycle_approximate_b_model1603150000_model:Saa2016MammalianMethionineCycleApproximateBModel1603150000Model
+    args:
+      model_path: data/MODEL1603150000.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: reyes_palomares2_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: reyes_palomares2_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: rienksma2014_gen_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+- from: saa2016_mammalia_4.state
+  to:
+  - state_compare_mon.state_d
+  - state_metrics_mon.state_d

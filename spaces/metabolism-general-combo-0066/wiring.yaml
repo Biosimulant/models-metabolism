@@ -1,0 +1,44 @@
+modules:
+  oliveira2020_e_1:
+    class: src.oliveira2020_e_coli_extended_central_carbon_meta_model2010160002_model:Oliveira2020EColiExtendedCentralCarbonMetaModel2010160002Model
+    args:
+      model_path: data/MODEL2010160002.xml
+  oliveira2020_ext_2:
+    class: src.oliveira2020_extended_e_coli_central_carbon_meta_model2010030001_model:Oliveira2020ExtendedEColiCentralCarbonMetaModel2010030001Model
+    args:
+      model_path: data/MODEL2010030001.xml
+  olsen2003_neutro_3:
+    class: src.olsen2003_neutrophil_oscillatory_metabolism_biomd0000000143_model:Olsen2003NeutrophilOscillatoryMetabolismBiomd0000000143Model
+    args:
+      model_path: data/BIOMD0000000143.xml
+  ponce_de_4:
+    class: src.ponce_de_leon2015_genome_scale_model_of_bacteria_model1601050000_model:PonceDeLeon2015GenomeScaleModelOfBacteriaModel1601050000Model
+    args:
+      model_path: data/MODEL1601050000.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: oliveira2020_e_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: oliveira2020_ext_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: olsen2003_neutro_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+- from: ponce_de_4.state
+  to:
+  - state_compare_mon.state_d
+  - state_metrics_mon.state_d

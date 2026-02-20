@@ -1,0 +1,28 @@
+modules:
+  akir2004_central_1:
+    class: src.akir2004_central_carbon_metabolism_of_s_cerevisi_model1008240001_model:Akir2004CentralCarbonMetabolismOfSCerevisiModel1008240001Model
+    args:
+      model_path: data/MODEL1008240001.xml
+  alam2010_genome_2:
+    class: src.alam2010_genome_scale_metabolic_network_of_strep_model1507180005_model:Alam2010GenomeScaleMetabolicNetworkOfStrepModel1507180005Model
+    args:
+      model_path: data/MODEL1507180005.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: akir2004_central_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: alam2010_genome_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b

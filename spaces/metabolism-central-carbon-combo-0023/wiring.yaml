@@ -1,0 +1,28 @@
+modules:
+  bordbar2011_huma_1:
+    class: src.bordbar2011_humanerythrocyte_metabolicnetwork_model1106080000_model:Bordbar2011HumanerythrocyteMetabolicnetworkModel1106080000Model
+    args:
+      model_path: data/MODEL1106080000.xml
+  bordbar2011_mult_2:
+    class: src.bordbar2011_multitissuetype_metabolicnetwork_model1111070003_model:Bordbar2011MultitissuetypeMetabolicnetworkModel1111070003Model
+    args:
+      model_path: data/MODEL1111070003.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: bordbar2011_huma_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: bordbar2011_mult_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b

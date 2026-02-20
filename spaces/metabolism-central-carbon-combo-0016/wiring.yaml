@@ -1,0 +1,28 @@
+modules:
+  bekaert2010_rat_1:
+    class: src.bekaert2010_rat_inferred_metabolic_network_model1008120003_model:Bekaert2010RatInferredMetabolicNetworkModel1008120003Model
+    args:
+      model_path: data/MODEL1008120003.xml
+  bekaert2012_reco_2:
+    class: src.bekaert2012_reconstruction_of_d_rerio_metabolic_model1204120000_model:Bekaert2012ReconstructionOfDRerioMetabolicModel1204120000Model
+    args:
+      model_path: data/MODEL1204120000.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: bekaert2010_rat_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: bekaert2012_reco_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b

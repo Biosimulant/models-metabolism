@@ -1,0 +1,44 @@
+modules:
+  reddyhoff2015_ac_1:
+    class: src.reddyhoff2015_acetaminophen_metabolism_and_toxic_biomd0000000609_model:Reddyhoff2015AcetaminophenMetabolismAndToxicBiomd0000000609Model
+    args:
+      model_path: data/BIOMD0000000609.xml
+  reed2008_glutath_2:
+    class: src.reed2008_glutathione_metabolism_biomd0000000268_model:Reed2008GlutathioneMetabolismBiomd0000000268Model
+    args:
+      model_path: data/BIOMD0000000268.xml
+  reyes_palomares2_3:
+    class: src.reyes_palomares2012_a_combined_model_hepatic_pol_biomd0000000450_model:ReyesPalomares2012ACombinedModelHepaticPolBiomd0000000450Model
+    args:
+      model_path: data/BIOMD0000000450.xml
+  reyes_palomares2_4:
+    class: src.reyes_palomares2012_a_combined_model_hepatic_pol_biomd0000000674_model:ReyesPalomares2012ACombinedModelHepaticPolBiomd0000000674Model
+    args:
+      model_path: data/BIOMD0000000674.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: reddyhoff2015_ac_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: reed2008_glutath_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: reyes_palomares2_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+- from: reyes_palomares2_4.state
+  to:
+  - state_compare_mon.state_d
+  - state_metrics_mon.state_d

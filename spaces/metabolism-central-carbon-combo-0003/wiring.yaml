@@ -1,0 +1,28 @@
+modules:
+  agora_strain_1:
+    class: src.agora_strain_specific_genome_scale_metabolic_mod_model2406250011_model:AgoraStrainSpecificGenomeScaleMetabolicModModel2406250011Model
+    args:
+      model_path: data/MODEL2406250011.xml
+  ahmad2017_genome_2:
+    class: src.ahmad2017_genome_scale_metabolic_model_igt736_of_model1703060000_model:Ahmad2017GenomeScaleMetabolicModelIgt736OfModel1703060000Model
+    args:
+      model_path: data/MODEL1703060000.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: agora_strain_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: ahmad2017_genome_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b

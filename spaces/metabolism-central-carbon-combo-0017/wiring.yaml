@@ -1,0 +1,28 @@
+modules:
+  belcour2020_chon_1:
+    class: src.belcour2020_chondrus_crispus_genome_scale_metabo_model2101250001_model:Belcour2020ChondrusCrispusGenomeScaleMetaboModel2101250001Model
+    args:
+      model_path: data/MODEL2101250001.sbml
+  benedict2011_gen_2:
+    class: src.benedict2011_genome_scale_metoblic_network_of_me_biomd0000001097_model:Benedict2011GenomeScaleMetoblicNetworkOfMeBiomd0000001097Model
+    args:
+      model_path: data/BIOMD0000001097.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: belcour2020_chon_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: benedict2011_gen_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b

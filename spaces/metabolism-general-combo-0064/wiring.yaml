@@ -1,0 +1,44 @@
+modules:
+  mitchell2013_liv_1:
+    class: src.mitchell2013_liver_iron_metabolism_biomd0000000498_model:Mitchell2013LiverIronMetabolismBiomd0000000498Model
+    args:
+      model_path: data/BIOMD0000000498.xml
+  moore2023_gloeoc_2:
+    class: src.moore2023_gloeocapsopsis_dulcis_model_model2303050001_model:Moore2023GloeocapsopsisDulcisModelModel2303050001Model
+    args:
+      model_path: data/MODEL2303050001.xml
+  mosca2012_centra_3:
+    class: src.mosca2012_central_carbon_metabolism_regulated_by_biomd0000000426_model:Mosca2012CentralCarbonMetabolismRegulatedByBiomd0000000426Model
+    args:
+      model_path: data/BIOMD0000000426.xml
+  mulquiney1999_bp_4:
+    class: src.mulquiney1999_bpg_metabolism_model5950552398_model:Mulquiney1999BpgMetabolismModel5950552398Model
+    args:
+      model_path: data/MODEL5950552398.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: mitchell2013_liv_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: moore2023_gloeoc_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: mosca2012_centra_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+- from: mulquiney1999_bp_4.state
+  to:
+  - state_compare_mon.state_d
+  - state_metrics_mon.state_d

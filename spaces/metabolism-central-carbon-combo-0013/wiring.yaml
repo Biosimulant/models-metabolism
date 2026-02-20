@@ -1,0 +1,28 @@
+modules:
+  bekaert2010_catt_1:
+    class: src.bekaert2010_cattle_inferred_metabolic_network_model1008120004_model:Bekaert2010CattleInferredMetabolicNetworkModel1008120004Model
+    args:
+      model_path: data/MODEL1008120004.xml
+  bekaert2010_chim_2:
+    class: src.bekaert2010_chimpanzee_inferred_metabolic_networ_model1008120000_model:Bekaert2010ChimpanzeeInferredMetabolicNetworModel1008120000Model
+    args:
+      model_path: data/MODEL1008120000.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: bekaert2010_catt_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: bekaert2010_chim_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b

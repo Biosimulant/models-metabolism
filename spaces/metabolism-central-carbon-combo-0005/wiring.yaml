@@ -1,0 +1,28 @@
+modules:
+  andersen2009_gen_1:
+    class: src.andersen2009_genome_scale_metabolic_network_of_a_model1507180047_model:Andersen2009GenomeScaleMetabolicNetworkOfAModel1507180047Model
+    args:
+      model_path: data/MODEL1507180047.xml
+  ankrah2018_the_2:
+    class: src.ankrah2018_the_cost_of_metabolic_interactions_in_model1806250003_model:Ankrah2018TheCostOfMetabolicInteractionsInModel1806250003Model
+    args:
+      model_path: data/MODEL1806250003.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: andersen2009_gen_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: ankrah2018_the_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b

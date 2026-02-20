@@ -1,0 +1,86 @@
+schema_version: '2.0'
+title: 'Metabolism: General (COMBO_0060)'
+description: Metabolism general comparative space with 4 models, configured as non-causal
+  co-simulation.
+models:
+- repo: Biosimulant/models-metabolism
+  alias: jallet2024_idj15_1
+  manifest_path: models/metabolism-sbml-jallet2024-idj1518-genome-scale-model-of-ethanol-model2403010003-model/model.yaml
+  parameters:
+    model_path: data/MODEL2403010003.xml
+- repo: Biosimulant/models-metabolism
+  alias: jallet2024_isoto_2
+  manifest_path: models/metabolism-sbml-jallet2024-isotopic-model-of-ethanolamine-metabo-model2403010002-model/model.yaml
+  parameters:
+    model_path: data/MODEL2403010002.xml
+- repo: Biosimulant/models-metabolism
+  alias: jensen2020_strep_3
+  manifest_path: models/metabolism-sbml-jensen2020-streptococcus-oralis-icj415-biomd0000001086-model/model.yaml
+  parameters:
+    model_path: data/BIOMD0000001086.xml
+- repo: Biosimulant/models-metabolism
+  alias: jeon2018_enzyme_4
+  manifest_path: models/metabolism-sbml-jeon2018-enzyme-clustering-in-glucose-metabolism-biomd0000001055-model/model.yaml
+  parameters:
+    model_path: data/BIOMD0000001055.xml
+- repo: Biosimulant/models-observability
+  alias: state_compare_mon
+  manifest_path: models/observability-state-comparison-monitor/model.yaml
+  parameters:
+    max_points: 2000
+    min_dt: 1.0
+- repo: Biosimulant/models-observability
+  alias: state_metrics_mon
+  manifest_path: models/observability-state-metrics-monitor/model.yaml
+  parameters:
+    max_points: 2000
+    min_dt: 1.0
+runtime:
+  duration: 60.0
+  tick_dt: 0.01
+  initial_inputs: {}
+wiring:
+- from: jallet2024_idj15_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: jallet2024_isoto_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: jensen2020_strep_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+- from: jeon2018_enzyme_4.state
+  to:
+  - state_compare_mon.state_d
+  - state_metrics_mon.state_d
+scientific_context:
+  question: How do general mechanisms compare across these models?
+  mode: comparative
+  assumptions:
+  - Model implementations are used as published in their curated manifests without
+    biological reinterpretation.
+  - Time integration uses a shared global tick compatible with model min_dt constraints.
+  - Comparative (non-causal) mode is used because full deterministic IO coverage for
+    causal coupling was not satisfied.
+  expected_observables:
+  - Model output trajectories under shared runtime settings.
+  - Cross-model agreement/divergence in key state or metric signals.
+  - Relative behavior comparison without causal linkage claims.
+  limitations:
+  - No new biology is introduced beyond what upstream models encode.
+  - Cross-model semantic matching is rule-based and may under-connect uncertain routes.
+  provenance:
+  - 'metabolism-sbml-jallet2024-idj1518-genome-scale-model-of-ethanol-model2403010003-model
+    :: biomodels_ebi:MODEL2403010003 :: https://www.ebi.ac.uk/biomodels/MODEL2403010003'
+  - 'metabolism-sbml-jallet2024-isotopic-model-of-ethanolamine-metabo-model2403010002-model
+    :: biomodels_ebi:MODEL2403010002 :: https://www.ebi.ac.uk/biomodels/MODEL2403010002'
+  - 'metabolism-sbml-jensen2020-streptococcus-oralis-icj415-biomd0000001086-model
+    :: biomodels_ebi:BIOMD0000001086 :: https://www.ebi.ac.uk/biomodels/BIOMD0000001086'
+  - 'metabolism-sbml-jeon2018-enzyme-clustering-in-glucose-metabolism-biomd0000001055-model
+    :: biomodels_ebi:BIOMD0000001055 :: https://www.ebi.ac.uk/biomodels/BIOMD0000001055'
+  visualization_rationale: A dedicated monitor model receives all participating model
+    state streams (`state_a..state_d`) so trajectories can be compared in one place
+    without claiming causal coupling when IO semantics are incomplete.

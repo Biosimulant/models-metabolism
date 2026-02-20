@@ -1,0 +1,36 @@
+modules:
+  costa2015_centra_1:
+    class: src.costa2015_central_metabolism_of_e_coli_non_regul_model1504080005_model:Costa2015CentralMetabolismOfEColiNonRegulModel1504080005Model
+    args:
+      model_path: data/MODEL1504080005.xml
+  costa2015_centra_2:
+    class: src.costa2015_central_metabolism_of_e_coli_regulated_model1504080004_model:Costa2015CentralMetabolismOfEColiRegulatedModel1504080004Model
+    args:
+      model_path: data/MODEL1504080004.xml
+  curien2009_aspar_3:
+    class: src.curien2009_aspartate_metabolism_biomd0000000212_model:Curien2009AspartateMetabolismBiomd0000000212Model
+    args:
+      model_path: data/BIOMD0000000212.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: costa2015_centra_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: costa2015_centra_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: curien2009_aspar_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c

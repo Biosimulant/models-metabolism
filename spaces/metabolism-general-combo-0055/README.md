@@ -1,0 +1,50 @@
+# COMBO_0055 - Metabolism General
+
+## Scientific Question
+How do general mechanisms compare across these models?
+
+## Biological Context
+Biochemical flux and energy balance across metabolic pathways.
+
+## Mechanistic Assumptions
+- Model implementations are used as published in their curated manifests without biological reinterpretation.
+- Time integration uses a shared global tick compatible with model min_dt constraints.
+- Comparative (non-causal) mode is used because full deterministic IO coverage for causal coupling was not satisfied.
+
+## Why These Models Belong Together
+The combination was selected from a shared domain/theme bucket with deterministic compatibility checks.
+- `metabolism-sbml-ecmodel-of-humangem-model2210090003-model`: Metabolism: EcmodelOfHumangemModel2210090003Model
+- `metabolism-sbml-enuh2022-phb-and-osmoprotectant-metabolism-model-model2204110001-model`: Metabolism: Enuh2022PhbAndOsmoprotectantMetabolismModelModel2204110001Model
+- `metabolism-sbml-erythrocyte-model-of-the-hemoglobin-oxygen-disso-model2305140001-model`: Metabolism: ErythrocyteModelOfTheHemoglobinOxygenDissoModel2305140001Model
+
+## Wiring Rationale
+- Comparative (non-causal) mode: no direct causal links were created.
+
+## Visualization Strategy
+- Monitor-driven visualization is required for this space.
+- State streams are routed into explicit monitor ports (`state_a..state_d`) to avoid signal overwrite.
+- At minimum, monitor visuals include one timeseries panel and one summary table.
+- Rationale: A dedicated monitor model receives all participating model state streams (`state_a..state_d`) so trajectories can be compared in one place without claiming causal coupling when IO semantics are incomplete.
+
+## Expected Behaviors
+- Model output trajectories under shared runtime settings.
+- Cross-model agreement/divergence in key state or metric signals.
+- Relative behavior comparison without causal linkage claims.
+
+## Known Limitations
+- No new biology is introduced beyond what upstream models encode.
+- Cross-model semantic matching is rule-based and may under-connect uncertain routes.
+
+## Source Provenance
+- metabolism-sbml-ecmodel-of-humangem-model2210090003-model :: biomodels_ebi:MODEL2210090003 :: https://www.ebi.ac.uk/biomodels/MODEL2210090003
+- metabolism-sbml-enuh2022-phb-and-osmoprotectant-metabolism-model-model2204110001-model :: biomodels_ebi:MODEL2204110001 :: https://www.ebi.ac.uk/biomodels/MODEL2204110001
+- metabolism-sbml-erythrocyte-model-of-the-hemoglobin-oxygen-disso-model2305140001-model :: biomodels_ebi:MODEL2305140001 :: https://www.ebi.ac.uk/biomodels/MODEL2305140001
+
+## How to Run
+```bash
+python run_local.py --duration auto --tick-dt auto
+```
+
+## How to Interpret Outputs
+Use output trajectories and summary metrics to compare mechanistic consistency across constituent models.
+Interpret comparative spaces as non-causal side-by-side simulation views.

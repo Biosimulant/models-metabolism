@@ -1,0 +1,28 @@
+modules:
+  benito_vaquerizo_1:
+    class: src.benito_vaquerizo2022_anaerotignum_neopropionicum_model2201310001_model:BenitoVaquerizo2022AnaerotignumNeopropionicumModel2201310001Model
+    args:
+      model_path: data/MODEL2201310001.xml
+  bertram2004_panc_2:
+    class: src.bertram2004_pancreaticbetacell_modela_model1006230071_model:Bertram2004PancreaticbetacellModelaModel1006230071Model
+    args:
+      model_path: data/MODEL1006230071.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: benito_vaquerizo_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: bertram2004_panc_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b

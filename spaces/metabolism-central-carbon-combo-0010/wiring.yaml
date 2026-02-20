@@ -1,0 +1,28 @@
+modules:
+  ankrah2021_genom_1:
+    class: src.ankrah2021_genome_scale_metabolic_model_of_droso_model2002040005_model:Ankrah2021GenomeScaleMetabolicModelOfDrosoModel2002040005Model
+    args:
+      model_path: data/MODEL2002040005.xml
+  ankrah2021_genom_2:
+    class: src.ankrah2021_genome_scale_metabolic_model_of_droso_model2002040006_model:Ankrah2021GenomeScaleMetabolicModelOfDrosoModel2002040006Model
+    args:
+      model_path: data/MODEL2002040006.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: ankrah2021_genom_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: ankrah2021_genom_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b

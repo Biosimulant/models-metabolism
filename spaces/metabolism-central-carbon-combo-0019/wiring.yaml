@@ -1,0 +1,28 @@
+modules:
+  bertram2004_panc_1:
+    class: src.bertram2004_pancreaticbetacell_modelb_biomd0000000373_model:Bertram2004PancreaticbetacellModelbBiomd0000000373Model
+    args:
+      model_path: data/BIOMD0000000373.xml
+  bertram2007_isle_2:
+    class: src.bertram2007_isletcell_oscillations_biomd0000000376_model:Bertram2007IsletcellOscillationsBiomd0000000376Model
+    args:
+      model_path: data/BIOMD0000000376.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: bertram2004_panc_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: bertram2007_isle_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b

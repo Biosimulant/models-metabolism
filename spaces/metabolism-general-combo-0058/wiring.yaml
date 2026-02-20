@@ -1,0 +1,44 @@
+modules:
+  gebauer2016_geno_1:
+    class: src.gebauer2016_genome_scale_model_of_caenorhabditis_model1704200001_model:Gebauer2016GenomeScaleModelOfCaenorhabditisModel1704200001Model
+    args:
+      model_path: data/MODEL1704200001.xml
+  green1994_whole_2:
+    class: src.green1994_whole_body_vitamin_a_metabolism_in_hum_model2403010001_model:Green1994WholeBodyVitaminAMetabolismInHumModel2403010001Model
+    args:
+      model_path: data/MODEL2403010001.xml
+  green2024_whole_3:
+    class: src.green2024_whole_body_vitamin_a_metabolism_in_hum_model2411290001_model:Green2024WholeBodyVitaminAMetabolismInHumModel2411290001Model
+    args:
+      model_path: data/MODEL2411290001.xml
+  haiman2020_full_4:
+    class: src.haiman2020_full_kinase_regulatory_model_of_eryth_model2012150001_model:Haiman2020FullKinaseRegulatoryModelOfErythModel2012150001Model
+    args:
+      model_path: data/MODEL2012150001.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: gebauer2016_geno_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: green1994_whole_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: green2024_whole_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+- from: haiman2020_full_4.state
+  to:
+  - state_compare_mon.state_d
+  - state_metrics_mon.state_d

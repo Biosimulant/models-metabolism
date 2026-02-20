@@ -1,0 +1,36 @@
+modules:
+  cloutier2009_ene_1:
+    class: src.cloutier2009_energymetabolism_modelf_model1006230096_model:Cloutier2009EnergymetabolismModelfModel1006230096Model
+    args:
+      model_path: data/MODEL1006230096.xml
+  costa2014_comput_2:
+    class: src.costa2014_computational_model_of_l_lactis_metabo_biomd0000000572_model:Costa2014ComputationalModelOfLLactisMetaboBiomd0000000572Model
+    args:
+      model_path: data/BIOMD0000000572.xml
+  costa2015_centra_3:
+    class: src.costa2015_central_metabolism_of_e_coli_extended_model1504080006_model:Costa2015CentralMetabolismOfEColiExtendedModel1504080006Model
+    args:
+      model_path: data/MODEL1504080006.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: cloutier2009_ene_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: costa2014_comput_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: costa2015_centra_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c

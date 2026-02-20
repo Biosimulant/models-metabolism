@@ -1,0 +1,44 @@
+modules:
+  liu2019_clostrid_1:
+    class: src.liu2019_clostridium_ljungdahlii_metabolism_model_model2204200003_model:Liu2019ClostridiumLjungdahliiMetabolismModelModel2204200003Model
+    args:
+      model_path: data/MODEL2204200003.xml
+  luna2013_circadi_2:
+    class: src.luna2013_circadianclock_sirt1_model2112310002_model:Luna2013CircadianclockSirt1Model2112310002Model
+    args:
+      model_path: data/MODEL2112310002.xml
+  masison2022_live_3:
+    class: src.masison2022_liver_iron_metabolism_with_updated_f_model2211030002_model:Masison2022LiverIronMetabolismWithUpdatedFModel2211030002Model
+    args:
+      model_path: data/MODEL2211030002.xml
+  mcdougal2017_met_4:
+    class: src.mcdougal2017_metabolism_in_ischemic_cardiomyocyt_biomd0000000961_model:Mcdougal2017MetabolismInIschemicCardiomyocytBiomd0000000961Model
+    args:
+      model_path: data/BIOMD0000000961.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: liu2019_clostrid_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: luna2013_circadi_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: masison2022_live_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+- from: mcdougal2017_met_4.state
+  to:
+  - state_compare_mon.state_d
+  - state_metrics_mon.state_d

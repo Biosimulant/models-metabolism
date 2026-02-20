@@ -1,0 +1,44 @@
+modules:
+  fatma2018_model_1:
+    class: src.fatma2018_model_of_central_carbon_metabolism_of_model1802080001_model:Fatma2018ModelOfCentralCarbonMetabolismOfModel1802080001Model
+    args:
+      model_path: data/MODEL1802080001.sbml
+  feala2007_dros_2:
+    class: src.feala2007_dros_mel_central_metabolism_model2784700357_model:Feala2007DrosMelCentralMetabolismModel2784700357Model
+    args:
+      model_path: data/MODEL2784700357.xml
+  feist2007_ecmeta_3:
+    class: src.feist2007_ecmetabol_flux1_model3023609334_model:Feist2007EcmetabolFlux1Model3023609334Model
+    args:
+      model_path: data/MODEL3023609334.xml
+  feist2007_ecmeta_4:
+    class: src.feist2007_ecmetabol_flux2_model3023641273_model:Feist2007EcmetabolFlux2Model3023641273Model
+    args:
+      model_path: data/MODEL3023641273.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: fatma2018_model_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: feala2007_dros_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
+- from: feist2007_ecmeta_3.state
+  to:
+  - state_compare_mon.state_c
+  - state_metrics_mon.state_c
+- from: feist2007_ecmeta_4.state
+  to:
+  - state_compare_mon.state_d
+  - state_metrics_mon.state_d

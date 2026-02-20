@@ -1,0 +1,28 @@
+modules:
+  ankrah2018_the_1:
+    class: src.ankrah2018_the_cost_of_metabolic_interactions_in_model1806250004_model:Ankrah2018TheCostOfMetabolicInteractionsInModel1806250004Model
+    args:
+      model_path: data/MODEL1806250004.xml
+  ankrah2018_the_2:
+    class: src.ankrah2018_the_cost_of_metabolic_interactions_in_model1806250005_model:Ankrah2018TheCostOfMetabolicInteractionsInModel1806250005Model
+    args:
+      model_path: data/MODEL1806250005.xml
+  state_compare_mon:
+    class: src.state_comparison_monitor:StateComparisonMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+  state_metrics_mon:
+    class: src.state_metrics_monitor:StateMetricsMonitor
+    args:
+      max_points: 2000
+      min_dt: 1.0
+wiring:
+- from: ankrah2018_the_1.state
+  to:
+  - state_compare_mon.state_a
+  - state_metrics_mon.state_a
+- from: ankrah2018_the_2.state
+  to:
+  - state_compare_mon.state_b
+  - state_metrics_mon.state_b
