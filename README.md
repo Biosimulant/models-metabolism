@@ -1,67 +1,88 @@
-# models
+# models-metabolism
 
-Public curated monorepo of biological simulation model packs and composed spaces for the **biosim** platform. Models are modular, composable components that can be wired together into full simulation scenarios without writing code — just YAML.
+Curated collection of **metabolism** simulation models for the **biosim** platform. This repository contains comprehensive computational models of metabolic pathways, genome-scale metabolic networks (GEMs), central carbon metabolism, energy production, biosynthesis, and organism-specific metabolic reconstructions across bacteria, fungi, plants, and mammals.
 
 ## What's Inside
 
-### Models (20 packages)
+### Models (707 packages)
 
-Each model is a self-contained simulation component with a `model.yaml` manifest.
+This is the **largest model repository** with 707 metabolism models, including genome-scale reconstructions, pathway-specific models, and metabolic subsystems.
 
-**Neuroscience** — spiking neural networks, synaptic dynamics, and neural monitoring:
+**Metabolism** — metabolic networks, pathways, and biochemical reactions:
 
-| Model | Description |
-|-------|-------------|
-| `neuro-izhikevich-population` | Spiking neuron population (Regular Spiking, Fast Spiking presets) |
-| `neuro-hodgkin-huxley-population` | Conductance-based Hodgkin-Huxley neuron population |
-| `neuro-hodgkin-huxley-state-monitor` | Detailed HH state monitor (V, gates, ionic currents) |
-| `neuro-exp-synapse-current` | Exponential-decay synapses with configurable connectivity |
-| `neuro-step-current` | Constant/step current injection into neurons |
-| `neuro-poisson-input` | Poisson-distributed spike train generator |
-| `neuro-spike-monitor` | Spike raster visualization |
-| `neuro-rate-monitor` | Firing rate computation and display |
-| `neuro-state-monitor` | Neuron state variable tracking (membrane potential, etc.) |
-| `neuro-spike-metrics` | Summary statistics from spike streams |
+#### Key Model Categories
 
-**Ecology** — population dynamics, environments, and ecosystem interactions:
+**Genome-Scale Metabolic Models (GEMs):**
+- Bacterial GEMs: E. coli, Salmonella, Streptococcus, Helicobacter, Neisseria, and 100+ other species
+- Fungal GEMs: S. cerevisiae, C. albicans, A. niger, and other fungi
+- Plant GEMs: Arabidopsis, rice, maize metabolic networks
+- Mammalian GEMs: Human Recon models, mouse, rat tissue-specific metabolism
+- AGORA collection: Strain-specific gut microbiome metabolic models
 
-| Model | Description |
-|-------|-------------|
-| `ecology-abiotic-environment` | Broadcasts environmental conditions (temperature, water, food, sunlight) |
-| `ecology-organism-population` | Population dynamics with birth, death, and predation |
-| `ecology-predator-prey-interaction` | Predation rates and functional response |
-| `ecology-population-monitor` | Population size tracking over time |
-| `ecology-phase-space-monitor` | Predator vs prey phase-space visualization |
-| `ecology-population-metrics` | Ecosystem summary statistics |
+**Central Carbon Metabolism:**
+- Glycolysis and gluconeogenesis
+- TCA cycle (Krebs cycle)
+- Pentose phosphate pathway
+- Entner-Doudoroff pathway
 
-**Virtual Cell** — gene regulatory networks, perturbations, and expression monitoring:
+**Energy Metabolism:**
+- Oxidative phosphorylation and ATP synthesis
+- Fermentation pathways
+- Photosynthesis (plant and cyanobacterial)
+- Chemolithotrophy and alternative energy sources
 
-| Model | Description |
-|-------|-------------|
-| `virtualcell-perturbation-source` | Defines gene perturbations (knockout/overexpression) over time |
-| `virtualcell-grn-predictor` | Classical GRN-based virtual cell producing expression profiles |
-| `virtualcell-arc-state-predictor` | Arc Institute State Transition ML model for expression prediction |
-| `virtualcell-expression-translator` | Translates expression profiles into neural input currents |
-| `virtualcell-expression-monitor` | Visualizes gene expression fold-changes and timeseries |
+**Amino Acid & Protein Metabolism:**
+- Amino acid biosynthesis and degradation
+- Nitrogen metabolism and assimilation
+- Shikimate pathway (aromatic amino acids)
+- Branched-chain amino acid metabolism
 
-### Spaces (6 composed simulations)
+**Lipid Metabolism:**
+- Fatty acid synthesis and β-oxidation
+- Phospholipid and sphingolipid metabolism
+- Cholesterol biosynthesis and regulation
+- Membrane lipid dynamics
 
-Spaces wire multiple models into runnable simulation scenarios.
+**Nucleotide Metabolism:**
+- Purine and pyrimidine biosynthesis
+- Salvage pathways
+- DNA/RNA precursor synthesis
 
-| Space | Models | Description |
-|-------|--------|-------------|
-| `neuro-single-neuron` | 5 | Single Izhikevich neuron with step current, monitors, and metrics |
-| `neuro-microcircuit` | 13 | Balanced E/I microcircuit: 40 excitatory + 10 inhibitory neurons, Poisson input, recurrent synaptic connectivity |
-| `ecology-predator-prey` | 7 | Classic predator-prey dynamics with environment broadcast and monitors |
-| `ecology-temperature-control` | 7 | Predator-prey ecosystem where environment temperature is an exposed parameter |
-| `virtualcell-drug-neural-effect` | 8 | Virtual cell perturbation translated into a neural spiking response |
+**Specialized Metabolism:**
+- Secondary metabolite production
+- Polyketide and non-ribosomal peptide synthesis
+- Vitamin and cofactor biosynthesis
+- Xenobiotic degradation
+
+**Brain & Neuronal Metabolism:**
+- Neuron-astrocyte metabolic coupling
+- Brain glucose and lactate metabolism
+- Neurotransmitter biosynthesis and recycling
+
+**Symbiotic & Community Metabolism:**
+- Syntrophic metabolic interactions
+- Cross-feeding networks
+- Host-microbiome metabolic exchange
+- Drosophila-Wolbachia symbiotic metabolism
+
+**Metabolic Engineering & Biotechnology:**
+- Heterologous pathway expression
+- Flux optimization for bioproduction
+- Ketogulonic acid, biofuel, and chemical production
+
+**Constraint-Based Analysis:**
+- Flux balance analysis (FBA) models
+- Minimal media growth predictions
+- Gene essentiality and knockout simulations
+- Membrane economics and resource allocation
+
+**Note:** This repository contains 707 models spanning all domains of life and metabolic processes. For a complete list, see the `models/` directory.
 
 ## Layout
 
 ```
-models/
+models-metabolism/
 ├── models/<model-slug>/     # One model package per folder, each with model.yaml
-├── spaces/<space-slug>/     # Composed spaces with space.yaml
 ├── libs/                    # Shared helper code for curated models
 ├── templates/model-pack/    # Starter template for new model packs
 ├── scripts/                 # Manifest and entrypoint validation scripts
@@ -75,29 +96,19 @@ models/
 
 Every model implements the `biosim.BioModule` interface:
 
-- **`inputs()`** — declares named input signals the module consumes
-- **`outputs()`** — declares named output signals the module produces
-- **`advance_to(t)`** — advances the model's internal state to time `t`
+- **`inputs()`** — declares named input signals (e.g., nutrient availability, oxygen)
+- **`outputs()`** — declares named output signals (e.g., metabolite concentrations, growth rate)
+- **`advance_to(t)`** — advances the metabolic state to time `t`
 
-Most curated models include Python source under `src/` and are wired together via `space.yaml` without additional code.
+Genome-scale models typically use constraint-based methods (FBA, FVA) while pathway models use ODE-based kinetics.
 
-### Wiring
+### Model Standards
 
-Spaces connect models by routing outputs to inputs in `space.yaml`:
-
-```yaml
-wiring:
-  - from: current_source.current
-    to: [neuron.input_current]
-  - from: neuron.spikes
-    to: [spike_monitor.spikes, rate_monitor.spikes]
-```
-
-No code changes needed to recombine models into new configurations.
-
-### Running a Space
-
-Spaces are loaded and executed by the `biosim-platform`. The platform reads `space.yaml`, instantiates models from their manifests, wires signals, and runs the simulation loop at the configured `tick_dt` timestep for the specified `duration`.
+Models in this repository include:
+- **SBML format**: Systems Biology Markup Language for metabolic networks
+- **Tellurium runtime**: For executing SBML models
+- **Constraint-based models**: FBA-compatible GEMs with reactions, metabolites, and gene-protein-reaction (GPR) associations
+- **Kinetic models**: ODE-based pathway dynamics with rate laws
 
 ## Getting Started
 
@@ -105,6 +116,7 @@ Spaces are loaded and executed by the `biosim-platform`. The platform reads `spa
 
 - Python 3.11+
 - `biosim` framework
+- Optional: COBRApy for advanced FBA analysis
 
 ### Install biosim
 
@@ -112,50 +124,56 @@ Spaces are loaded and executed by the `biosim-platform`. The platform reads `spa
 pip install "biosim @ git+https://github.com/BioSimulant/biosim.git@main"
 ```
 
-### Create a New Model
+### Using Metabolism Models
 
-1. Copy `templates/model-pack/` to `models/<your-model-slug>/`
-2. Edit `model.yaml` with metadata, entrypoint, and pinned dependencies
-3. Implement your module (subclass `biosim.BioModule` or use a built-in pack)
-4. Validate: `python scripts/validate_manifests.py && python scripts/check_entrypoints.py`
-
-### Create a New Space
-
-1. Create `spaces/<your-space-slug>/space.yaml`
-2. Reference models by `manifest_path` (e.g., `models/neuro-step-current/model.yaml`)
-3. Define wiring between model outputs and inputs
-4. Set `runtime.duration` and `runtime.tick_dt`
-
-## Linking in biosim-platform
-
-- Root manifests can be linked with `manifest_path=model.yaml` or `space.yaml`
-- Subdirectory manifests require explicit paths:
-  - `models/neuro-izhikevich-population/model.yaml`
-  - `spaces/neuro-microcircuit/space.yaml`
-
-## External Repos
-
-External authors can keep models in independent repositories and link them directly in `biosim-platform`. This monorepo is curated, not exclusive.
+1. Reference models by `manifest_path` (e.g., `models/metabolism-sbml-achcar2012-glycolysis-in-bloodstream-form-t-bruc/model.yaml`)
+2. Configure nutrient uptake rates and environmental conditions
+3. Simulate metabolic flux distributions and growth phenotypes
+4. Couple metabolism with gene regulation, signaling, or environmental models
 
 ## Validation & CI
 
-Three scripts enforce repository integrity on every push:
+Three scripts enforce repository integrity:
 
 | Script | Purpose |
 |--------|---------|
-| `scripts/validate_manifests.py` | Schema validation for all model.yaml and space.yaml files |
+| `scripts/validate_manifests.py` | Schema validation for all model.yaml files |
 | `scripts/check_entrypoints.py` | Verifies Python entrypoints are importable and callable |
 | `scripts/check_public_boundary.sh` | Prevents business-sensitive content in this public repo |
 
-The CI pipeline (`.github/workflows/ci.yml`) runs: **secret scan** → **manifest validation** → **smoke sandbox** (Docker).
+The CI pipeline runs: **secret scan** → **manifest validation** → **smoke sandbox** (Docker).
 
 ## Contributing
 
 - All dependencies must use exact version pinning (`==`)
-- Model slugs use kebab-case with domain prefix (`neuro-`, `ecology-`, `virtualcell-`)
-- Custom modules must follow the `biosim.BioModule` interface
-- Pre-commit hooks enforce trailing whitespace, EOF newlines, YAML syntax, and secret detection
-- See [docs/PUBLIC_INTERNAL_BOUNDARY.md](docs/PUBLIC_INTERNAL_BOUNDARY.md) for content policy
+- Model slugs use kebab-case with domain prefix (`metabolism-sbml-`)
+- Models must follow the `biosim.BioModule` interface
+- SBML models use tellurium or COBRApy runtime
+
+## Domain-Specific Notes
+
+**Metabolism Focus Areas:**
+- **Genome-Scale Reconstruction**: Comprehensive metabolic network models with 1000+ reactions
+- **Pathway-Level Modeling**: Focused subsystems (glycolysis, TCA, amino acid synthesis)
+- **Flux Balance Analysis**: Constraint-based prediction of metabolic states
+- **Kinetic Modeling**: Dynamic ODE models with enzyme kinetics and regulation
+- **Multi-Organism Models**: Community metabolism and metabolic exchange
+- **Clinical & Biotechnology Applications**: Disease metabolism, drug targets, bioproduction
+
+**Organism Coverage:**
+- **Bacteria**: 200+ species (gut microbiota, pathogens, model organisms)
+- **Archaea**: Methanogenic and extremophile metabolism
+- **Fungi**: Yeast, filamentous fungi, pathogens
+- **Plants**: C3/C4 photosynthesis, specialized metabolism
+- **Animals**: Human tissue-specific, mouse, Drosophila
+- **Symbionts**: Endosymbionts, microbiome members
+
+**Model Types:**
+- Genome-scale metabolic models (GEMs)
+- Core metabolic models (subset of pathways)
+- Pathway-specific kinetic models
+- Stoichiometric models for FBA
+- Dynamic metabolic flux models
 
 ## License
 
