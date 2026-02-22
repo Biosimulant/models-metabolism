@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: BestEtAl2024MetabolicMetaorganismModelOfModel2310020001Model'
-description: Metabolic model of host and microbiota comprising a merged model of the
-  microbiota and generic models for brain, liver and colon connected via the bloodstream.
-  The model is conditioned to the SNIFF di
+description: "Metabolic model of host and microbiota comprising a merged model of the microbiota and generic models for brain, liver and colon connected via the bloodstream. The model is conditioned to the SNIFF di."
 standard: other
 tags:
 - metabolism

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Shene2020FluxBalanceAnalysisOfBiomassAndLModel2006010001Model'
-description: Modelo_mod3_032020.m is a Matlab code used for the simulation of the
-  growth curve of Antarctic thraustochytrid Oblongichytrium sp. RT2316-13.The model
-  is based on the genome scale model adapted for th
+description: "Modelo_mod3_032020.m is a Matlab code used for the simulation of the growth curve of Antarctic thraustochytrid Oblongichytrium sp. RT2316-13.The model is based on the genome scale model adapted for th."
 standard: other
 tags:
 - metabolism

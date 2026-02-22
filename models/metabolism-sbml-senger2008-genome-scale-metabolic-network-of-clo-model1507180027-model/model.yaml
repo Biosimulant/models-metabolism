@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Senger2008GenomeScaleMetabolicNetworkOfCloModel1507180027Model'
-description: 'Senger2008 - Genome-scale metabolic networkof Clostridium acetobutylicum
-  (iCac802) This model is described in the article: Genome-scale model for Clostridium
-  acetobutylicum: Part I. Metabolic network '
+description: "Senger2008 - Genome-scale metabolic networkof Clostridium acetobutylicum (iCac802) This model is described in the article: Genome-scale model for Clostridium acetobutylicum: Part I. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

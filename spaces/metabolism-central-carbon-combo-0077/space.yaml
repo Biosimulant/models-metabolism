@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Central Carbon (COMBO_0077)'
-description: Metabolism central carbon comparative space with 4 models, configured
-  as non-causal co-simulation.
+description: "Metabolism Central Carbon (COMBO_0077) brings together akir2004_central_1, alam2010_genome_2, andersen2009_gen_3 in a comparative space to examine how central carbon mechanisms compare across these models. When you run it, you can compare participant trajectories through shared runtime settings and routed output streams."
 models:
 - repo: Biosimulant/models-metabolism
   alias: akir2004_central_1

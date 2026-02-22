@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Thiele2013EsophagusSquamousEpithelialCellsModel1310110048Model'
-description: Thiele2013 - Esophagus squamous epithelial cells The model of esophagus
-  squamous epithelial cells metabolism is derived from the community-driven global
-  reconstruction of human metabolism (version 2.0
+description: "Thiele2013 - Esophagus squamous epithelial cells The model of esophagus squamous epithelial cells metabolism is derived from the community-driven global reconstruction of human metabolism (version 2.0. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

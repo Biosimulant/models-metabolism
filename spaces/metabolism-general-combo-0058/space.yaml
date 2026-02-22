@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: General (COMBO_0058)'
-description: Metabolism general comparative space with 4 models, configured as non-causal
-  co-simulation.
+description: "Metabolism General (COMBO_0058) brings together gebauer2016_geno_1, green1994_whole_2, green2024_whole_3 in a comparative space to examine how general mechanisms compare across these models. When you run it, you can compare participant trajectories through shared runtime settings and routed output streams."
 models:
 - repo: Biosimulant/models-metabolism
   alias: gebauer2016_geno_1

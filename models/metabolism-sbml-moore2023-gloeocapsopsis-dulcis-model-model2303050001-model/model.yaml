@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Moore2023GloeocapsopsisDulcisModelModel2303050001Model'
-description: This is the first genome-scale model of G. dulcis, an extremely desiccation-tolerant
-  cyanobacterium isolated from the Atacama desert by Azua-Bustos et al. (2014). We
-  sequenced, closed, and annotated t
+description: "This is the first genome-scale model of G. dulcis, an extremely desiccation-tolerant cyanobacterium isolated from the Atacama desert by Azua-Bustos et al."
 standard: other
 tags:
 - metabolism

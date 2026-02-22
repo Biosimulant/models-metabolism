@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Lu2021GenomeScaleMetabolicModelForYeastSpModel2109130004Model'
-description: This is genome-scale metabolic model of Pachysolen tannophilus as the
-  representative yeast species for the clade CUG-Ala. This model was generated through
-  homology search using a fungal pan-GEM largel
+description: "This is genome-scale metabolic model of Pachysolen tannophilus as the representative yeast species for the clade CUG-Ala. This model was generated through homology search using a fungal pan-GEM largel."
 standard: other
 tags:
 - metabolism

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: DielMultiTissueGenomeScaleMetabolicModelsModel2408160001Model'
-description: The first GSSM of V. vinifera was reconstructed (MODEL2408120001). Tissue-specific
-  models for stem, leaf, and berry of the Cabernet Sauvignon cultivar were generated
-  from the original model, through t
+description: "The first GSSM of V. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

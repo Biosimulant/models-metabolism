@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: General (COMBO_0054)'
-description: Metabolism general comparative space with 3 models, configured as non-causal
-  co-simulation.
+description: "Metabolism General (COMBO_0054) assembles deborasoncini202_1, dicenzo2020_sino_2, dvarak2020_pxr_3 as a comparative composed simulation to examine how general mechanisms compare across these models. When you run it, you can compare synchronized outputs through the declared wiring paths and monitor views."
 models:
 - repo: Biosimulant/models-metabolism
   alias: deborasoncini202_1

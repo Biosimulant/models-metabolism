@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Kim2014StreptomycesCoelicolorImk1208Model2408040001Model'
-description: We have provided the FROG and miniFROG reports for the reconstructed
-  metabolic model for Streptomyces coelicolor A3(2), called iMK1208. The model can
-  be found in the Supplementary Information of Kim e
+description: "We have provided the FROG and miniFROG reports for the reconstructed metabolic model for Streptomyces coelicolor A3(2), called iMK1208. The model can be found in the Supplementary Information of Kim e."
 standard: other
 tags:
 - metabolism

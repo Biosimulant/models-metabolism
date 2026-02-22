@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Karlstaedt2012CardionetAHumanMetabolicNetwoModel1212040000Model'
-description: Karlstaedt2012 - CardioNet, A Human Metabolic Network CardioNet is a
-  functionally validated metabolic network of the human cardiomyocyte that enables
-  theorectical studies of cellular metabolic process
+description: "Karlstaedt2012 - CardioNet, A Human Metabolic Network CardioNet is a functionally validated metabolic network of the human cardiomyocyte that enables theorectical studies of cellular metabolic process. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

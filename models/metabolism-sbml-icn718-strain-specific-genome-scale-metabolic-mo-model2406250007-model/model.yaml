@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Icn718StrainSpecificGenomeScaleMetabolicMoModel2406250007Model'
-description: This model is part of a collection comprising eight strain-specific genome-scale
-  metabolic models of five different Acinetobacter baumannii strains. Seven of these
-  models have been previously publishe
+description: "This model is part of a collection comprising eight strain-specific genome-scale metabolic models of five different Acinetobacter baumannii strains. Seven of these models have been previously publishe."
 standard: other
 tags:
 - metabolism

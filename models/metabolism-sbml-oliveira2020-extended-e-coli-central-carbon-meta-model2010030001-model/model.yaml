@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Oliveira2020ExtendedEColiCentralCarbonMetaModel2010030001Model'
-description: The kinetic model of E. coli central carbon metabolism developed by Millard
-  et al. 2016 was extended to include the production Glycerol, Malonyl-CoA, and Beta-Alanine.
-  This model was then used as a ba
+description: "The kinetic model of E. coli central carbon metabolism developed by Millard et al."
 standard: other
 tags:
 - metabolism

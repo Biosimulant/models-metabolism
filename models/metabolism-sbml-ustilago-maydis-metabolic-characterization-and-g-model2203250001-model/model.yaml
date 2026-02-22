@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: UstilagoMaydisMetabolicCharacterizationAndGModel2203250001Model'
-description: 'Ustilago maydis is an important plant pathogen causing corn-smut disease
-  and an effective biotechnological production host. The lack of a comprehensive metabolic
-  overview hinders a full understanding '
+description: "Ustilago maydis is an important plant pathogen causing corn-smut disease and an effective biotechnological production host. The lack of a comprehensive metabolic overview hinders a full understanding."
 standard: other
 tags:
 - metabolism

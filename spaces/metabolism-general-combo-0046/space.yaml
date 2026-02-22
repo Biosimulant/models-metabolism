@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: General (COMBO_0046)'
-description: Metabolism general comparative space with 3 models, configured as non-causal
-  co-simulation.
+description: "Metabolism General (COMBO_0046) brings together babaev2024_cyp2c_1, babaev2025_cyp2c_2, bannerman2022_wh_3 in a comparative space to examine how general mechanisms compare across these models. When you run it, you can compare participant trajectories through shared runtime settings and routed output streams."
 models:
 - repo: Biosimulant/models-metabolism
   alias: babaev2024_cyp2c_1

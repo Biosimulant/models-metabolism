@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Thiele2013LymphNodeNonGerminalCenterCellsModel1310110007Model'
-description: Thiele2013 - Lymph node non germinal center cells The model of lymph
-  node non germinal center cells metabolism is derived from the community-driven global
-  reconstruction of human metabolism (version 2
+description: "Thiele2013 - Lymph node non germinal center cells The model of lymph node non germinal center cells metabolism is derived from the community-driven global reconstruction of human metabolism (version 2. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

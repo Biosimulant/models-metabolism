@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Kim2011TheGenomeScaleReconstructionOfTheVBiomd0000001064Model'
-description: 'This is a model of the genome scale reconstruction of the Vibrio vulnificus
-  metabolic network, VvuMBEL943, described in the article: Integrative genome-scale
-  metabolic analysis of Vibrio vulnificus fo'
+description: "This is a model of the genome scale reconstruction of the Vibrio vulnificus metabolic network, VvuMBEL943, described in the article: Integrative genome-scale metabolic analysis of Vibrio vulnificus fo. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

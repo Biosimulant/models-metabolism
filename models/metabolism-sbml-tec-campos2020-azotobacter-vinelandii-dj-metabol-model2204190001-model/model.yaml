@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: TecCampos2020AzotobacterVinelandiiDjMetabolModel2204190001Model'
-description: Nitrogen fixation is an important metabolic process carried out by microorganisms,
-  which converts molecular nitrogen into inorganic nitrogenous compounds such as ammonia
-  (NH3). These nitrogenous compo
+description: "Nitrogen fixation is an important metabolic process carried out by microorganisms, which converts molecular nitrogen into inorganic nitrogenous compounds such as ammonia (NH3). It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

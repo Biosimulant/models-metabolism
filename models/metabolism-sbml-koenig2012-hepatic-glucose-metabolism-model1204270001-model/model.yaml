@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Koenig2012HepaticGlucoseMetabolismModel1204270001Model'
-description: 'Quantifying the Contribution of the Liver to Glucose Homeostasis: A
-  Detailed KineticModel of Human Hepatic Glucose Metabolism Kinetic Model of Human
-  Hepatic Glucose Metabolism Authors Matthias Koenig,'
+description: "Quantifying the Contribution of the Liver to Glucose Homeostasis: A Detailed KineticModel of Human Hepatic Glucose Metabolism Kinetic Model of Human Hepatic Glucose Metabolism Authors Matthias Koenig,. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

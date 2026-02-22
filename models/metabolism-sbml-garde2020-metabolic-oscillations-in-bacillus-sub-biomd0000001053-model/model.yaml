@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Garde2020MetabolicOscillationsInBacillusSubBiomd0000001053Model'
-description: Ravindra Garde, Bashar Ibrahim & Stefan Schuster. Extending the minimal
-  model of metabolic oscillations in Bacillus subtilis biofilms. Scientific Reports
-  10, 1 (2020). Biofilms are composed of microor
+description: "Ravindra Garde, Bashar Ibrahim & Stefan Schuster. Extending the minimal model of metabolic oscillations in Bacillus subtilis biofilms."
 standard: other
 tags:
 - metabolism

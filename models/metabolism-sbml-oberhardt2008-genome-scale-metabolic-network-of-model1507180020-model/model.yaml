@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Oberhardt2008GenomeScaleMetabolicNetworkOfModel1507180020Model'
-description: 'Oberhardt2008 - Genome-scale metabolicnetwork of Pseudomonas aeruginosa
-  (iMO1056) This model is described in the article: Genome-scale metabolic network
-  analysis of the opportunistic pathogen Pseudomo'
+description: "Oberhardt2008 - Genome-scale metabolicnetwork of Pseudomonas aeruginosa (iMO1056) This model is described in the article: Genome-scale metabolic network analysis of the opportunistic pathogen Pseudomo. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

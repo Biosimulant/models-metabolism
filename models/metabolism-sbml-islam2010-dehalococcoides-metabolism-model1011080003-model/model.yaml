@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Islam2010DehalococcoidesMetabolismModel1011080003Model'
-description: 'This is metabolic network reconstruction of Dehalococcoides , iAI549,
-  described in the article Characterizing the metabolism of dehalococcoides with a
-  constraint-based model. Ahsanul Islam M, Edwards '
+description: "This is metabolic network reconstruction of Dehalococcoides , iAI549, described in the article Characterizing the metabolism of dehalococcoides with a constraint-based model. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

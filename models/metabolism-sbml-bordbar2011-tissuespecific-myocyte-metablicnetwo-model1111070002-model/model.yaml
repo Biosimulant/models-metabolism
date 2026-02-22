@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Bordbar2011TissuespecificMyocyteMetablicnetwoModel1111070002Model'
-description: 'This model is from the article: A multi-tissue type genome-scale metabolic
-  network for analysis of whole-body systems physiology. Bordbar A, Feist AM, Usaite-Black
-  R, Woodcock J, Palsson BO, Famili I.'
+description: "This model is from the article: A multi-tissue type genome-scale metabolic network for analysis of whole-body systems physiology. Bordbar A, Feist AM, Usaite-Black R, Woodcock J, Palsson BO, Famili I."
 standard: other
 tags:
 - metabolism

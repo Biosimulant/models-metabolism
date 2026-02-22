@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Bertram2007IsletcellOscillationsBiomd0000000376Model'
-description: 'This is the model described in the article: Interaction of glycolysis
-  and mitochondrial respiration in metabolic oscillations of pancreatic islets. Bertram
-  R, Satin LS, Pedersen MG, Luciani DS, Sherma'
+description: "This is the model described in the article: Interaction of glycolysis and mitochondrial respiration in metabolic oscillations of pancreatic islets. Bertram R, Satin LS, Pedersen MG, Luciani DS, Sherma."
 standard: other
 tags:
 - metabolism

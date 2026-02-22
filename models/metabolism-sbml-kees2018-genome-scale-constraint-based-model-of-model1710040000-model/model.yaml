@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Kees2018GenomeScaleConstraintBasedModelOfModel1710040000Model'
-description: 'Kees2018 - Genome-scale constraint-based model of the mucin-degrader
-  &lt;I&gt;Akkermansia muciniphila&lt;/I&gt; This model is described in the article:
-  Model-driven design of a minimal medium for Akke'
+description: "Kees2018 - Genome-scale constraint-based model of the mucin-degrader &lt;I&gt;Akkermansia muciniphila&lt;/I&gt; This model is described in the article: Model-driven design of a minimal medium for Akke. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

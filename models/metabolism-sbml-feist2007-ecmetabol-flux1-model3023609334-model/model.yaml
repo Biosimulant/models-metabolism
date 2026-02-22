@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Feist2007EcmetabolFlux1Model3023609334Model'
-description: organism E. coli K-12 MG1655model iAF1260Biomass Objective Function (BOF)
-  Ec_biomass_iAF1260_core_59p81M (E. coli biomass objective function (iAF1260) - core
-  - with 59.81 GAM estimate)flux balance ana
+description: "organism E. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

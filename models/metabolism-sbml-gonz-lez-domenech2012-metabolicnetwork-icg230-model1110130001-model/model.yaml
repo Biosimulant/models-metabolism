@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: GonzLezDomenech2012MetabolicnetworkIcg230Model1110130001Model'
-description: "This model is from the article: Metabolic stasis in an ancient symbiosis:\
-  \ genome-scale metabolic networks from two Blattabacterium cuenoti strains, primary\
-  \ endosymbionts of cockroaches Carmen M Gonz\xE1l"
+description: "This model is from the article: Metabolic stasis in an ancient symbiosis: genome-scale metabolic networks from two Blattabacterium cuenoti strains, primary endosymbionts of cockroaches Carmen M Gonz\u00e1l. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

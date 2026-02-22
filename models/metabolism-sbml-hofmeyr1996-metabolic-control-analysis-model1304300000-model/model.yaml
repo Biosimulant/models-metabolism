@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Hofmeyr1996MetabolicControlAnalysisModel1304300000Model'
-description: Hofmeyr1996 - metabolic control analysis Understanding of genetic mechanisms
-  would not be possible by studying the properties of individual components. To better
-  understand the system as a whole, it i
+description: "Hofmeyr1996 - metabolic control analysis Understanding of genetic mechanisms would not be possible by studying the properties of individual components. To better understand the system as a whole, it i."
 standard: other
 tags:
 - metabolism

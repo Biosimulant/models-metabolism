@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Thiele2013LungMacrophagesModel1310110051Model'
-description: Thiele2013 - Lung macrophages The model of lung macrophages metabolism
-  is derived from the community-driven global reconstruction of human metabolism (version
-  2.02, MODEL1109130000 ). This model is de
+description: "Thiele2013 - Lung macrophages The model of lung macrophages metabolism is derived from the community-driven global reconstruction of human metabolism (version 2.02, MODEL1109130000 ). It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

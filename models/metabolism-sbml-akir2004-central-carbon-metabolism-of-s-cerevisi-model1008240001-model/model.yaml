@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Akir2004CentralCarbonMetabolismOfSCerevisiModel1008240001Model'
-description: "This is an SBML version of the reaction network used in the article:\
-  \ Metabolic pathway analysis of yeast strengthens the bridge between transcriptomics\
-  \ and metabolic networks Tunahan \xC7akir, Bet\xFCl Kird"
+description: "This is an SBML version of the reaction network used in the article: Metabolic pathway analysis of yeast strengthens the bridge between transcriptomics and metabolic networks Tunahan \u00c7akir, Bet\u00fcl Kird. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

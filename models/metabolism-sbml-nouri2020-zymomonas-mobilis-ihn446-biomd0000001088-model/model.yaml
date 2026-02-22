@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Nouri2020ZymomonasMobilisIhn446Biomd0000001088Model'
-description: FROG and miniFROG reports are compiled for the reconstructed genome-scale
-  metabolic model (iHN446) for Z. mobilis. The model can be found in the article Nouri
-  et al, 2020 cited here.
+description: "FROG and miniFROG reports are compiled for the reconstructed genome-scale metabolic model (iHN446) for Z. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

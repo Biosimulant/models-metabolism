@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: General (COMBO_0045)'
-description: Metabolism general comparative space with 3 models, configured as non-causal
-  co-simulation.
+description: "Metabolism General (COMBO_0045) organizes adams2019_the_1, aubert2002_coupl_2, aubert2005_inter_3 into a comparative simulation setup to examine how general mechanisms compare across these models. When you run it, you can compare participant trajectories through shared runtime settings and routed output streams."
 models:
 - repo: Biosimulant/models-metabolism
   alias: adams2019_the_1

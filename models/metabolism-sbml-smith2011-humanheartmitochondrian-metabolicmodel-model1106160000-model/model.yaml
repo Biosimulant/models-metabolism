@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Smith2011HumanheartmitochondrianMetabolicmodelModel1106160000Model'
-description: 'This model is from the article: A metabolic model of the mitochondrion
-  and its use in modelling diseases of the tricarboxylic acid cycle. Smith AC, Robinson
-  AJ. BMC Syst Biol. 2011 Jun 29;5(1):102. 21'
+description: "This model is from the article: A metabolic model of the mitochondrion and its use in modelling diseases of the tricarboxylic acid cycle. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

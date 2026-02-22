@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Veith2015GenomeScaleMetabolicModelOfEnteroModel1510010000Model'
-description: efa201208
+description: "Metabolism Veith2015Genome Scale Metabolic Model Of Entero Model1510010000Model models core biological dynamics as a OTHER simulation curated from biomodels_ebi (biomodels_ebi:MODEL1510010000), focused on metab. When you run it, you can track state over time and compare response patterns across parameter settings."
 standard: other
 tags:
 - metabolism

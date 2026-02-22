@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Lu2021GenomeScaleMetabolicModelsForYeastSModel2109130010Model'
-description: This is genome-scale metabolic model of Saccharomyces cerevisiae as the
-  representative yeast species for the clade Saccharomycetaceae. This model was generated
-  through homology search using a fungal p
+description: "This is genome-scale metabolic model of Saccharomyces cerevisiae as the representative yeast species for the clade Saccharomycetaceae. This model was generated through homology search using a fungal p."
 standard: other
 tags:
 - metabolism

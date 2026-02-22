@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Chavali2008GenomeScaleMetabolicNetworkOfLeModel1507180059Model'
-description: 'Chavali2008 - Genome-scale metabolic networkof Leishmania major (iAC560)
-  This model is described in the article: Systems analysis of metabolism in the pathogenic
-  trypanosomatid Leishmania major. Chava'
+description: "Chavali2008 - Genome-scale metabolic networkof Leishmania major (iAC560) This model is described in the article: Systems analysis of metabolism in the pathogenic trypanosomatid Leishmania major. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

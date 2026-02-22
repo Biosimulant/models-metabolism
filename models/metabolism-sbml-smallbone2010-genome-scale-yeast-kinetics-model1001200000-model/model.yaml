@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Smallbone2010GenomeScaleYeastKineticsModel1001200000Model'
-description: 'This is the model described in the article: Towards a genome-scale kinetic
-  model of cellular metabolism Smallbone K, Simeonidis E, Swainston N, Mendes P. BMC
-  Syst Biol. 2010 Jan 28;4(1):6. PMID: 20109'
+description: "This is the model described in the article: Towards a genome-scale kinetic model of cellular metabolism Smallbone K, Simeonidis E, Swainston N, Mendes P. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

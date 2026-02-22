@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Teusink2006GenomeScaleMetabolicNetworkOfLaModel1507180045Model'
-description: 'Teusink2006 - Genome-scale metabolic networkof Lactobacillus plantarum
-  (iBT721) This model is described in the article: Analysis of growth of Lactobacillus
-  plantarum WCFS1 on a complex medium using a '
+description: "Teusink2006 - Genome-scale metabolic networkof Lactobacillus plantarum (iBT721) This model is described in the article: Analysis of growth of Lactobacillus plantarum WCFS1 on a complex medium using a. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

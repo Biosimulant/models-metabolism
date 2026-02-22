@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Sips2015GlucoseAndNonEsterifiedFattyAcidsModel1806080001Model'
-description: 'This a model from the article: Model-Based Quantification of the Systemic
-  Interplay between Glucose and Fatty Acids in the Postprandial State. Fianne L. P.
-  Sips, Elin Nyman, Martin Adiels, Peter A. J.'
+description: "This a model from the article: Model-Based Quantification of the Systemic Interplay between Glucose and Fatty Acids in the Postprandial State. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

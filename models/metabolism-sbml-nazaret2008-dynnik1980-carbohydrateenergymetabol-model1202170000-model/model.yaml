@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Nazaret2008Dynnik1980CarbohydrateenergymetabolModel1202170000Model'
-description: "This model is from the article: An old paper revisited: \u2018\u2018\
-  A mathematical model of carbohydrate energy metabolism. Interaction between glycolysis,\
-  \ the Krebs cycle and the H-transporting shuttles at var"
+description: "This model is from the article: An old paper revisited: \u2018\u2018A mathematical model of carbohydrate energy metabolism. Interaction between glycolysis, the Krebs cycle and the H-transporting shuttles at var."
 standard: other
 tags:
 - metabolism

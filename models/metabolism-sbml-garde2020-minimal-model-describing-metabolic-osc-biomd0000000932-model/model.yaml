@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Garde2020MinimalModelDescribingMetabolicOscBiomd0000000932Model'
-description: Biofilms offer an excellent example of ecological interaction among bacteria.
-  Temporal and spatial oscillations in biofilms are an emerging topic. In this paper,
-  we describe the metabolic oscillations
+description: "Biofilms offer an excellent example of ecological interaction among bacteria. Temporal and spatial oscillations in biofilms are an emerging topic."
 standard: other
 tags:
 - metabolism

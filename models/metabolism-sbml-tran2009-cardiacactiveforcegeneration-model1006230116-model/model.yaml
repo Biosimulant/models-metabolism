@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Tran2009CardiacactiveforcegenerationModel1006230116Model'
-description: 'This a model from the article: A metabolite-sensitive, thermodynamically
-  constrained model of cardiaccross-bridge cycling: implications for force development
-  during ischemia. Tran K, Smith NP, Loisell'
+description: "This a model from the article: A metabolite-sensitive, thermodynamically constrained model of cardiaccross-bridge cycling: implications for force development during ischemia. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

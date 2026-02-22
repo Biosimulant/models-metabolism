@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Tiveci2005CalciumDynamicsInBrainEnergyMetaModel1409240003Model'
-description: "Tiveci2005 - Calcium dynamics in brain energymetabolism and Alzheimer's\
-  \ disease Encoded non-curated model. Issues: - Missing values: dHb,0 ; \u03B1 ;\
-  \ V ; \u03B3 ; Volume ; rc ;V leak,mem,Ca ; V Ca,Pump,ER ; V c"
+description: "Tiveci2005 - Calcium dynamics in brain energymetabolism and Alzheimer's disease Encoded non-curated model. Issues: - Missing values: dHb,0 ; \u03b1 ; V ; \u03b3 ; Volume ; rc ;V leak,mem,Ca ; V Ca,Pump,ER ; V c."
 standard: other
 tags:
 - metabolism

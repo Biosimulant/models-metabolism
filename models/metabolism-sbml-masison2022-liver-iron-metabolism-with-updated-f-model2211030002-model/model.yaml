@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Masison2022LiverIronMetabolismWithUpdatedFModel2211030002Model'
-description: This is a new version of a liver iron model (original from Mitchell 2013
-  BIOMD0000000498) with updated kinetics of ferritin iron storage. It uses MODEL2211030001
-  as a substitute for the original ferri
+description: "This is a new version of a liver iron model (original from Mitchell 2013 BIOMD0000000498) with updated kinetics of ferritin iron storage. It uses MODEL2211030001 as a substitute for the original ferri."
 standard: other
 tags:
 - metabolism

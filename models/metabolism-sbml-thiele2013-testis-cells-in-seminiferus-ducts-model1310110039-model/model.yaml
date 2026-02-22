@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Thiele2013TestisCellsInSeminiferusDuctsModel1310110039Model'
-description: Thiele2013 - Testis cells in seminiferus ducts The model of testis cells
-  in seminiferus ducts metabolism is derived from the community-driven global reconstruction
-  of human metabolism (version 2.02, M
+description: "Thiele2013 - Testis cells in seminiferus ducts The model of testis cells in seminiferus ducts metabolism is derived from the community-driven global reconstruction of human metabolism (version 2.02, M. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

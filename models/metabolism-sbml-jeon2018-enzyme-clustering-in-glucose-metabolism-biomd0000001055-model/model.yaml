@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Jeon2018EnzymeClusteringInGlucoseMetabolismBiomd0000001055Model'
-description: Miji Jeon, Hye-Won Kang & Songon An. A Mathematical Model for Enzyme
-  Clustering in Glucose Metabolism. Scientific Reports 8, 1 (2018). We have recently
-  demonstrated that the rate-limiting enzymes in h
+description: "Miji Jeon, Hye-Won Kang & Songon An. A Mathematical Model for Enzyme Clustering in Glucose Metabolism."
 standard: other
 tags:
 - metabolism

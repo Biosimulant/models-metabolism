@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Thiele2013PlacentaDecidualCellsModel1310110049Model'
-description: Thiele2013 - Placenta decidual cells The model of placenta decidual cells
-  metabolism is derived from the community-driven global reconstruction of human metabolism
-  (version 2.02, MODEL1109130000 ). Th
+description: "Thiele2013 - Placenta decidual cells The model of placenta decidual cells metabolism is derived from the community-driven global reconstruction of human metabolism (version 2.02, MODEL1109130000 ). It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

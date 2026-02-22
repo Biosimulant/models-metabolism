@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Smallbone2013EColiMetabolicModelWithLinlogBiomd0000000469Model'
-description: 'Kieran Smallbone & Pedro Mendes. Large-Scale Metabolic Models: From
-  Reconstruction to Differential Equations. Industrial Biotechnology 9, 4 (2013).
-  Genome-scale kinetic models of metabolism are import'
+description: "Kieran Smallbone & Pedro Mendes. Large-Scale Metabolic Models: From Reconstruction to Differential Equations."
 standard: other
 tags:
 - metabolism

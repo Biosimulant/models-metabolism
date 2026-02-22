@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Winter2017BrainEnergyMetabolismWithPppBiomd0000000627Model'
-description: 'Winter2017 - Brain Energy Metabolism with PPP This model is described
-  in the article: Mathematical analysis of the influence of brain metabolism on the
-  BOLD signal in Alzheimer''s disease Felix Winter1'
+description: "Winter2017 - Brain Energy Metabolism with PPP This model is described in the article: Mathematical analysis of the influence of brain metabolism on the BOLD signal in Alzheimer's disease Felix Winter1. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

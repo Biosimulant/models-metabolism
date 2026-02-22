@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Shestov2014AerobicGlycolysisModel1504010000Model'
-description: Faithful wrapper of upstream SBML model.
+description: "Metabolism Shestov2014Aerobic Glycolysis Model1504010000Model models metabolism shestov2014 aerobic glycolysis model1504010000 dynamics as a OTHER simulation curated from biomodels_ebi (biomodels_ebi:MODEL15040. When you run it, you can track state over time and compare response patterns across parameter settings."
 standard: other
 tags:
 - metabolism

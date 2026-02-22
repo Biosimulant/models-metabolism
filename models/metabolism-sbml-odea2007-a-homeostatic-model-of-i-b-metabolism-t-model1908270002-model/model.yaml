@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Odea2007AHomeostaticModelOfIBMetabolismTModel1908270002Model'
-description: Insert Citation Questions concerning the paper should be addressed to
-  the corresponding author. Alexander Hoffmann (ahoffmann@ucsd.edu) The original model
-  was written and simulated within MathWorks Ma
+description: "Insert Citation Questions concerning the paper should be addressed to the corresponding author. Alexander Hoffmann (ahoffmann@ucsd.edu) The original model was written and simulated within MathWorks Ma."
 standard: other
 tags:
 - metabolism

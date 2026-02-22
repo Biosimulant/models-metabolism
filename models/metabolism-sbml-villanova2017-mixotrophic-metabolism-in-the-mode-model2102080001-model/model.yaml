@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Villanova2017MixotrophicMetabolismInTheModeModel2102080001Model'
-description: Genome-scale metabolic model of Phaeodactylum tricornutum
+description: "Genome-scale metabolic model of Phaeodactylum tricornutum. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

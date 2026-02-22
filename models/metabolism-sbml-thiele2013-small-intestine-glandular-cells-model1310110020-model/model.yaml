@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Thiele2013SmallIntestineGlandularCellsModel1310110020Model'
-description: Thiele2013 - Small intestine glandular cells The model of small intestine
-  glandular cells metabolism is derived from the community-driven global reconstruction
-  of human metabolism (version 2.02, MODEL
+description: "Thiele2013 - Small intestine glandular cells The model of small intestine glandular cells metabolism is derived from the community-driven global reconstruction of human metabolism (version 2.02, MODEL. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

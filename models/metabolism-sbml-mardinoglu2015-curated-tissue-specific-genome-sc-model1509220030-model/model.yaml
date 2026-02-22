@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Mardinoglu2015CuratedTissueSpecificGenomeScModel1509220030Model'
-description: 'Genome-scale metabolic model for mouse colontissue This model is described
-  in the article: The gut microbiota modulates host amino acid and glutathione metabolism
-  in mice. Mardinoglu A, Shoaie S, Berg'
+description: "Genome-scale metabolic model for mouse colontissue This model is described in the article: The gut microbiota modulates host amino acid and glutathione metabolism in mice. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

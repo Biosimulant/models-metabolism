@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Kotte2010EcoliMetabolicAdaptionBiomd0000000244Model'
-description: 'This is the model described in: Bacterial adaptation through distributed
-  sensing of metabolic fluxes Oliver Kotte, Judith B Zaugg and Matthias Heinemann;
-  Mol Sys Biol 2010; 6 :355. doi: 10.1038/msb.20'
+description: "This is the model described in: Bacterial adaptation through distributed sensing of metabolic fluxes Oliver Kotte, Judith B Zaugg and Matthias Heinemann; Mol Sys Biol 2010; 6 :355. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

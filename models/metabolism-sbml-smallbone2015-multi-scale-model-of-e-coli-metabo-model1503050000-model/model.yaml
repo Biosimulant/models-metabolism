@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Smallbone2015MultiScaleModelOfEColiMetaboModel1503050000Model'
-description: Faithful wrapper of upstream SBML model.
+description: "Metabolism Smallbone2015Multi Scale Model Of EColi Metabo Model1503050000Model captures core biological behavior in the context of metabolism, sbml, biomodels_ebi using a biomodels_ebi-sourced OTHER model. When you run it, you can observe state and evaluate how the modeled system changes across runs."
 standard: other
 tags:
 - metabolism

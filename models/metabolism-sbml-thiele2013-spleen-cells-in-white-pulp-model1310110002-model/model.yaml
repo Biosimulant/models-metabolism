@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Thiele2013SpleenCellsInWhitePulpModel1310110002Model'
-description: Thiele2013 - Spleen cells in white pulp The model of spleen cells in
-  white pulp metabolism is derived from the community-driven global reconstruction
-  of human metabolism (version 2.02, MODEL1109130000
+description: "Thiele2013 - Spleen cells in white pulp The model of spleen cells in white pulp metabolism is derived from the community-driven global reconstruction of human metabolism (version 2.02, MODEL1109130000. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

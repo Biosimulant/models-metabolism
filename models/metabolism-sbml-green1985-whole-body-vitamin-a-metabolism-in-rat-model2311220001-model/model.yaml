@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Green1985WholeBodyVitaminAMetabolismInRatModel2311220001Model'
-description: The first known metabolic model of Vitamin A metabolism
+description: "The first known metabolic model of Vitamin A metabolism. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Mcauley2012WholeBodyCholesterolMetabolismBiomd0000000434Model'
-description: McAuley2012 - Whole-body Cholesterol Metabolism Lipid metabolism has
-  a key role to play in human longevity and healthy aging. A whole-body mathematical
-  model of cholesterol metabolism that explores th
+description: "McAuley2012 - Whole-body Cholesterol Metabolism Lipid metabolism has a key role to play in human longevity and healthy aging. A whole-body mathematical model of cholesterol metabolism that explores th."
 standard: other
 tags:
 - metabolism

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Sl2183TomatoMetabolicModelModel2111120001Model'
-description: 'Sl2183 is an updated version of the previous tomato metabolic model
-  (iHY3410), with additional reactions and metabolites, IDs converted into the BiGG
-  nomenclature and biomass reactions for leaf, stem '
+description: "Sl2183 is an updated version of the previous tomato metabolic model (iHY3410), with additional reactions and metabolites, IDs converted into the BiGG nomenclature and biomass reactions for leaf, stem. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

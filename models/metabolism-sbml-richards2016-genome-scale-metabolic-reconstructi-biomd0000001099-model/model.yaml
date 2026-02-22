@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Richards2016GenomeScaleMetabolicReconstructiBiomd0000001099Model'
-description: 'Richards2016 - Genome-scale metabolicreconstruction of Methanococcus
-  maripaludis (iMR539) This model is described in the article: Exploring Hydrogenotrophic
-  Methanogenesis: a Genome Scale Metabolic Re'
+description: "Richards2016 - Genome-scale metabolicreconstruction of Methanococcus maripaludis (iMR539) This model is described in the article: Exploring Hydrogenotrophic Methanogenesis: a Genome Scale Metabolic Re. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

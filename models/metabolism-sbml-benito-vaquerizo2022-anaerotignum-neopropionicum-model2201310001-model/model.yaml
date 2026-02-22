@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: BenitoVaquerizo2022AnaerotignumNeopropionicumModel2201310001Model'
-description: This project contains the first genome-scale metabolic model of Anaerotignum
-  neopropionicum DSM 3847.
+description: "This project contains the first genome-scale metabolic model of Anaerotignum neopropionicum DSM 3847. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

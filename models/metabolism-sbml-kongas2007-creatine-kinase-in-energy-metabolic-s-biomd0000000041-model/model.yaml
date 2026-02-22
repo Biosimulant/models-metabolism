@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Kongas2007CreatineKinaseInEnergyMetabolicSBiomd0000000041Model'
-description: 'Kongas2007 - Creatine Kinase in energy metabolic signaling in muscle
-  This model is described in the article: Creatine kinase in energy metabolic signaling
-  in muscle Olav Kongas and Johannes H. G. M. v'
+description: "Kongas2007 - Creatine Kinase in energy metabolic signaling in muscle This model is described in the article: Creatine kinase in energy metabolic signaling in muscle Olav Kongas and Johannes H. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

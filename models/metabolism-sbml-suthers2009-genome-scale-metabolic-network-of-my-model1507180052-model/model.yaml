@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Suthers2009GenomeScaleMetabolicNetworkOfMyModel1507180052Model'
-description: 'Suthers2009 - Genome-scale metabolic networkof Mycoplasma genitalium
-  (iPS189) This model is described in the article: A genome-scale metabolic reconstruction
-  of Mycoplasma genitalium, iPS189. Suthers '
+description: "Suthers2009 - Genome-scale metabolic networkof Mycoplasma genitalium (iPS189) This model is described in the article: A genome-scale metabolic reconstruction of Mycoplasma genitalium, iPS189. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

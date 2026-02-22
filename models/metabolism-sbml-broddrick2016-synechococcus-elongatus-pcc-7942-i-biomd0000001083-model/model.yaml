@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Broddrick2016SynechococcusElongatusPcc7942IBiomd0000001083Model'
-description: 'FROG and miniFROG Reports for the organism Synechococcus elongatus PCC
-  7942 . These models originate from BiGG Models Database: A Database of Genome-Scale
-  Metabolic Models (http://bigg.ucsd.edu/). Cop'
+description: "FROG and miniFROG Reports for the organism Synechococcus elongatus PCC 7942 . These models originate from BiGG Models Database: A Database of Genome-Scale Metabolic Models (http://bigg.ucsd.edu/)."
 standard: other
 tags:
 - metabolism

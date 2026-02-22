@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Icstr1115fb23GenomeScaleMetabolicModelOfCoModel2304270002Model'
-description: Genome-scale metabolic model of Corynebacterium striatum strain FDA-ARGOS_1115
+description: "Genome-scale metabolic model of Corynebacterium striatum strain FDA-ARGOS_1115. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

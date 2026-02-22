@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Vaneunen2013NetworkDynamicsOfFattyAcidOxidBiomd0000000505Model'
-description: "vanEunen2013 - Network dynamics of fatty acid \u03B2-oxidation (steady-state\
-  \ model) Lipid metabolism plays an important role in the development of metabolic\
-  \ syndrome, a major risk factor for cardiovascular"
+description: "vanEunen2013 - Network dynamics of fatty acid \u03b2-oxidation (steady-state model) Lipid metabolism plays an important role in the development of metabolic syndrome, a major risk factor for cardiovascular. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Flahaut2013GenomeScaleMetabolicModelOfLLaModel1310300000Model'
-description: Flahaut2013 - Genome-scale metabolic model of L.lactis (MG1363) Genome-scale
-  metabolic model for Lactococcus lactis MG1363 and its application to the analysis
-  of flavor formation. This model is descri
+description: "Flahaut2013 - Genome-scale metabolic model of L.lactis (MG1363) Genome-scale metabolic model for Lactococcus lactis MG1363 and its application to the analysis of flavor formation. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

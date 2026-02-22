@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: FRster2008GenomeScaleMetabolicNetworkOfSaModel1507180012Model'
-description: "F\xF6rster2008 - Genome-scale metabolicnetwork of Saccharamyces cerevisiae\
-  \ (iFF708) This model is described in the article: Genome-scale reconstruction of\
-  \ the Saccharomyces cerevisiae metabolic network. "
+description: "F\u00f6rster2008 - Genome-scale metabolicnetwork of Saccharamyces cerevisiae (iFF708) This model is described in the article: Genome-scale reconstruction of the Saccharomyces cerevisiae metabolic network. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

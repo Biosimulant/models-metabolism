@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Oliveira2005GenomeScaleMetabolicNetworkOfLModel1507180014Model'
-description: 'Oliveira2005 - Genome-scale metabolic networkof Lactococcus lactis (iAO358)
-  This model is described in the article: Modeling Lactococcus lactis using a genome-scale
-  flux model. Oliveira AP, Nielsen J,'
+description: "Oliveira2005 - Genome-scale metabolic networkof Lactococcus lactis (iAO358) This model is described in the article: Modeling Lactococcus lactis using a genome-scale flux model. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Smallbone2009FbaModelGeometricPerspectiveModel1105180000Model'
-description: 'This model is from the article: Flux balance analysis: a geometric perspective.
-  Smallbone K, Simeonidis E. J Theor Biol. 2009 May 21;258(2):315-5 19490860 , Abstract:
-  Advances in the field of bioinfor'
+description: "This model is from the article: Flux balance analysis: a geometric perspective. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

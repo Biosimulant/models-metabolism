@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Nazaret2009TcaRcAtpBiomd0000000232Model'
-description: 'This a model from the article: Mitochondrial energetic metabolism: a
-  simplified model of TCA cycle with ATP production. Nazaret C, Heiske M, Thurley
-  K, Mazat JP J. Theor. Biol. 2009 Jun;258(3):455-64 '
+description: "This a model from the article: Mitochondrial energetic metabolism: a simplified model of TCA cycle with ATP production. Nazaret C, Heiske M, Thurley K, Mazat JP J."
 standard: other
 tags:
 - metabolism

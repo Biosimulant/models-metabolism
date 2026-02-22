@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Yilmaz2020Icel1314TissueRelevantCElegansMeModel2007280001Model'
-description: 'iCEL1314 is a genome-scale metabolic network model of Caenorhabditis
-  elegans. This model is based on a previous model named iCEL1273. Updates include
-  the addition of ascaroside biosynthesis pathways, '
+description: "iCEL1314 is a genome-scale metabolic network model of Caenorhabditis elegans. This model is based on a previous model named iCEL1273."
 standard: other
 tags:
 - metabolism

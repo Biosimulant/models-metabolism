@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Mol2021PThermoglucosidasiusNcimb11955PTherBiomd0000001084Model'
-description: 'FROG and miniFROG reports are provided for p_thermo genome-scale metabolic
-  model. p_thermo is the model for Parageobacillus thermoglucosidasius NCIMB 11955.
-  An analysis of the metabolism and internal '
+description: "FROG and miniFROG reports are provided for p_thermo genome-scale metabolic model. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Haiman2025RbcGemV120Model2410170001Model'
-description: Initial submission of RBC-GEM genome-scale metabolic model, version 1.2.0.
+description: "Initial submission of RBC-GEM genome-scale metabolic model, version 1.2.0. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

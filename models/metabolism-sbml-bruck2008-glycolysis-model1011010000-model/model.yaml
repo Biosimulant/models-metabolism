@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Bruck2008GlycolysisModel1011010000Model'
-description: 'Exploring the effect of variable enzyme concentrations in a kinetic
-  model of yeast glycolysis Jozsef Bruck, Wolfram Liebermeister, Edda Klipp, Genome
-  Inform 2008 20:1-14 Abstract: Metabolism is one of'
+description: "Exploring the effect of variable enzyme concentrations in a kinetic model of yeast glycolysis Jozsef Bruck, Wolfram Liebermeister, Edda Klipp, Genome Inform 2008 20:1-14 Abstract: Metabolism is one of. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

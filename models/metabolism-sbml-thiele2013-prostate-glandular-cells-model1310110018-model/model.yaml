@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Thiele2013ProstateGlandularCellsModel1310110018Model'
-description: 'Thiele2013 - Prostate glandular cells The model of prostate glandular
-  cells metabolism is derived from the community-driven global reconstruction of human
-  metabolism (version 2.02, MODEL1109130000 ). '
+description: "Thiele2013 - Prostate glandular cells The model of prostate glandular cells metabolism is derived from the community-driven global reconstruction of human metabolism (version 2.02, MODEL1109130000 ). It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

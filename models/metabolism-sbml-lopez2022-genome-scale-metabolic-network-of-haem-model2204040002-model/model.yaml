@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Lopez2022GenomeScaleMetabolicNetworkOfHaemModel2204040002Model'
-description: Genome-scale metabolic network of Haemophilus influenzae RdKW20 (iNL638)
+description: "Genome-scale metabolic network of Haemophilus influenzae RdKW20 (iNL638). It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

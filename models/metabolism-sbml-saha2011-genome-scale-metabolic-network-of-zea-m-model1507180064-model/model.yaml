@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Saha2011GenomeScaleMetabolicNetworkOfZeaMModel1507180064Model'
-description: 'Saha2011- Genome-scale metabolic network ofZea mays (iRS1563) This model
-  is described in the article: Zea mays iRS1563: a comprehensive genome-scale metabolic
-  reconstruction of maize metabolism. Saha '
+description: "Saha2011- Genome-scale metabolic network ofZea mays (iRS1563) This model is described in the article: Zea mays iRS1563: a comprehensive genome-scale metabolic reconstruction of maize metabolism. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

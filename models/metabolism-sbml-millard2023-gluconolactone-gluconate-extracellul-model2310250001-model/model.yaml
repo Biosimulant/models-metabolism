@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Millard2023GluconolactoneGluconateExtracellulModel2310250001Model'
-description: This model was used for instationary 13C metabolic flux analysis of the
-  extracellular GL-GNT by-pass of E. coli
+description: "This model was used for instationary 13C metabolic flux analysis of the extracellular GL-GNT by-pass of E. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

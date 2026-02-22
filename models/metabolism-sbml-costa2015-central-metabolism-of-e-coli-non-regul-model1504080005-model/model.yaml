@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Costa2015CentralMetabolismOfEColiNonRegulModel1504080005Model'
-description: Faithful wrapper of upstream SBML model.
+description: "Metabolism Costa2015Central Metabolism Of EColi Non Regul Model1504080005Model captures core biological behavior in the context of metabolism, sbml, biomodels_ebi using a biomodels_ebi-sourced OTHER model. When you run it, you can observe state and evaluate how the modeled system changes across runs."
 standard: other
 tags:
 - metabolism

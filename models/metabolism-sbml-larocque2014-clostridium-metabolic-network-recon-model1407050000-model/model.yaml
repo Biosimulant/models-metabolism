@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Larocque2014ClostridiumMetabolicNetworkReconModel1407050000Model'
-description: Faithful wrapper of upstream SBML model.
+description: "Metabolism Larocque2014Clostridium Metabolic Network Recon Model1407050000Model captures core biological behavior in the context of metabolism, sbml, biomodels_ebi using a biomodels_ebi-sourced OTHER model. When you run it, you can observe state and evaluate how the modeled system changes across runs."
 standard: other
 tags:
 - metabolism

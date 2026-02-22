@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Kulyashov2020GenomeScaleMetabolicModelForGBiomd0000001091Model'
-description: Here we present a genome-scale metabolic model iMK1321 for Geobacillus
-  icigianus constructed using an auto-generating pipeline with consequent thorough
-  manual curation. The model contains 1321 genes a
+description: "Here we present a genome-scale metabolic model iMK1321 for Geobacillus icigianus constructed using an auto-generating pipeline with consequent thorough manual curation. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Jensen2020StreptococcusOralisIcj415Biomd0000001086Model'
-description: 'We have presented FROG and miniFROG reports for the first genome-scale
-  model, iCJ415, for Streptococcus oralis SK141. The model can be found in the Supplementary
-  Material of the publication by Jensen '
+description: "We have presented FROG and miniFROG reports for the first genome-scale model, iCJ415, for Streptococcus oralis SK141. The model can be found in the Supplementary Material of the publication by Jensen."
 standard: other
 tags:
 - metabolism

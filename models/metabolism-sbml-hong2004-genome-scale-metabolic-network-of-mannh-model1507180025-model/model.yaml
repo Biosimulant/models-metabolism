@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Hong2004GenomeScaleMetabolicNetworkOfMannhModel1507180025Model'
-description: 'Hong2004 - Genome-scale metabolic network ofMannheimia succiniciproducens
-  (iSH335) This model is described in the article: The genome sequence of the capnophilic
-  rumen bacterium Mannheimia succinicipr'
+description: "Hong2004 - Genome-scale metabolic network ofMannheimia succiniciproducens (iSH335) This model is described in the article: The genome sequence of the capnophilic rumen bacterium Mannheimia succinicipr. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

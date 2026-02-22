@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Raghunathan2010GenomeScaleMetabolicNetworkOModel1507180003Model'
-description: 'Raghunathan2010 - Genome-scale metabolicnetwork of Francisella tularensis
-  (iRS605) This model is described in the article: Systems approach to investigating
-  host-pathogen interactions in infections wi'
+description: "Raghunathan2010 - Genome-scale metabolicnetwork of Francisella tularensis (iRS605) This model is described in the article: Systems approach to investigating host-pathogen interactions in infections wi. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

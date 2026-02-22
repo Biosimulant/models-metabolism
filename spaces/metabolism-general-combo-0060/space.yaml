@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: General (COMBO_0060)'
-description: Metabolism general comparative space with 4 models, configured as non-causal
-  co-simulation.
+description: "Metabolism General (COMBO_0060) organizes jallet2024_idj15_1, jallet2024_isoto_2, jensen2020_strep_3 into a comparative simulation setup to examine how general mechanisms compare across these models. When you run it, you can compare participant trajectories through shared runtime settings and routed output streams."
 models:
 - repo: Biosimulant/models-metabolism
   alias: jallet2024_idj15_1

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: UhlN2015HumanTissueBasedProteomeMetabolicModel1411240030Model'
-description: "Uhl\xE9n2015 - Human tissue-based proteome metabolic network - placenta\
-  \ Human placenta specific proteome metabolic network This model is described in\
-  \ the article: Tissue-based map of the human proteome U"
+description: "Uhl\u00e9n2015 - Human tissue-based proteome metabolic network - placenta Human placenta specific proteome metabolic network This model is described in the article: Tissue-based map of the human proteome U. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Deoliveiradalmolin2010GenomeScaleMetabolicNeModel1507180028Model'
-description: 'deOliveiraDalMolin2010 - Genome-scalemetabolic network of Arabidopsis
-  thaliana (AraGEM) This model is described in the article: AraGEM, a genome-scale
-  reconstruction of the primary metabolic network i'
+description: "deOliveiraDalMolin2010 - Genome-scalemetabolic network of Arabidopsis thaliana (AraGEM) This model is described in the article: AraGEM, a genome-scale reconstruction of the primary metabolic network i. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

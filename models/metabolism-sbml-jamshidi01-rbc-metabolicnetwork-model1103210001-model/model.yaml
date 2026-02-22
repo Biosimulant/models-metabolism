@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Jamshidi01RbcMetabolicnetworkModel1103210001Model'
-description: Dynamic simulation of the human red blood cell metabolic network Neema
-  Jamshidi, Jeremy S. Edwards, Tom Fahland, George M. Church, Bernhard O. Palsson,
-  Bioinformatics 2001 17:286-287 This SBML file wa
+description: "Dynamic simulation of the human red blood cell metabolic network Neema Jamshidi, Jeremy S. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

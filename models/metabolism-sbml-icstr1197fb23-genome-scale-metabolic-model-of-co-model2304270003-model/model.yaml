@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Icstr1197fb23GenomeScaleMetabolicModelOfCoModel2304270003Model'
-description: Genome-scale metabolic model of Corynebacterium striatum strain FDAARGOS_1197
+description: "Genome-scale metabolic model of Corynebacterium striatum strain FDAARGOS_1197. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

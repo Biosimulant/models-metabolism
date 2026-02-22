@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Duarte2004GenomeScaleMetabolicNetworkOfSacModel1507180019Model'
-description: 'Duarte2004 - Genome-scale metabolic networkof Saccharomyces cerevisiae
-  (iND750) This model is described in the article: Reconstruction and validation of
-  Saccharomyces cerevisiae iND750, a fully compar'
+description: "Duarte2004 - Genome-scale metabolic networkof Saccharomyces cerevisiae (iND750) This model is described in the article: Reconstruction and validation of Saccharomyces cerevisiae iND750, a fully compar. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

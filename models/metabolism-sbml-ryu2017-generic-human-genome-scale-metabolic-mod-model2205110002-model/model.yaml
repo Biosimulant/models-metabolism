@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Ryu2017GenericHumanGenomeScaleMetabolicModModel2205110002Model'
-description: Recon 2M.2 is a generic genome-scale metabolic model of Homo sapiens,
-  in which a framework for gene-transcript-protein-reaction associations (GeTPRA)
-  was deployed to generate metabolic reactions by co
+description: "Recon 2M.2 is a generic genome-scale metabolic model of Homo sapiens, in which a framework for gene-transcript-protein-reaction associations (GeTPRA) was deployed to generate metabolic reactions by co. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

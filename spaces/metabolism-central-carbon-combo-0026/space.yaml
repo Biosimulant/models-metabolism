@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Central Carbon (COMBO_0026)'
-description: Metabolism central carbon comparative space with 2 models, configured
-  as non-causal co-simulation.
+description: "Metabolism Central Carbon (COMBO_0026) assembles broddrick2016_sy_1, bruck2008_glycol_2, state_compare_mon as a comparative composed simulation to examine how central carbon mechanisms compare across these models. When you run it, you can compare synchronized outputs through the declared wiring paths and monitor views."
 models:
 - repo: Biosimulant/models-metabolism
   alias: broddrick2016_sy_1

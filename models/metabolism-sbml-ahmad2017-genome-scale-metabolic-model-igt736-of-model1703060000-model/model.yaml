@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Ahmad2017GenomeScaleMetabolicModelIgt736OfModel1703060000Model'
-description: 'Ahmad2017 - Genome-scale metabolic model(iGT736) of Geobacillus thermoglucosidasius
-  (C56-YS93) This model is described in the article: A Genome Scale Model of Geobacillus
-  thermoglucosidasius (C56-YS93'
+description: "Ahmad2017 - Genome-scale metabolic model(iGT736) of Geobacillus thermoglucosidasius (C56-YS93) This model is described in the article: A Genome Scale Model of Geobacillus thermoglucosidasius (C56-YS93. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

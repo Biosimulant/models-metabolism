@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Castillo2016WholeGenomeMetabolicModelOfBCModel1604280032Model'
-description: This model was reconstructed with CoReCo method from protein sequence
-  and phylogeny data. CoReCo is described in Pitkanen, E., Jouhten, P., Hou, J., Syed,
-  M. F., Blomberg, P., Kludas, J., Oja, M., Hol
+description: "This model was reconstructed with CoReCo method from protein sequence and phylogeny data. CoReCo is described in Pitkanen, E., Jouhten, P., Hou, J., Syed, M."
 standard: other
 tags:
 - metabolism

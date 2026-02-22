@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Gille2010Hepatonet1MetabolicNetworkModel1009150000Model'
-description: 'This is the genome-scale metabolic network of a hepatocyte described
-  in the article: HepatoNet1: a comprehensive metabolic reconstruction of the human
-  hepatocyte for the analysis of liver physiology. '
+description: "This is the genome-scale metabolic network of a hepatocyte described in the article: HepatoNet1: a comprehensive metabolic reconstruction of the human hepatocyte for the analysis of liver physiology. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

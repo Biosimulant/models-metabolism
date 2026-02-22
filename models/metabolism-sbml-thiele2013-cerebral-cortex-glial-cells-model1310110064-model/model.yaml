@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Thiele2013CerebralCortexGlialCellsModel1310110064Model'
-description: Thiele2013 - Cerebral cortex glial cells The model of cerebral cortex
-  glial cells metabolism is derived from the community-driven global reconstruction
-  of human metabolism (version 2.02, MODEL11091300
+description: "Thiele2013 - Cerebral cortex glial cells The model of cerebral cortex glial cells metabolism is derived from the community-driven global reconstruction of human metabolism (version 2.02, MODEL11091300. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

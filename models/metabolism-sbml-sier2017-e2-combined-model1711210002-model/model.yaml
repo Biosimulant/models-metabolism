@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Sier2017E2CombinedModel1711210002Model'
-description: 'Using scaling from PhysB modelBlood flow in L/hrCompartments in KgBaseline
-  as ~0.003nM Free E2 in Blood_venous E2 biosynthesis rate constant = 2 E2 biosynthesis
-  species = 1nMCLeh = 5CLint = metabolic '
+description: "Using scaling from PhysB modelBlood flow in L/hrCompartments in KgBaseline as ~0.003nM Free E2 in Blood_venous E2 biosynthesis rate constant = 2 E2 biosynthesis species = 1nMCLeh = 5CLint = metabolic. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

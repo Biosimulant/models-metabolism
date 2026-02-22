@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Kerkhoven2013GlycolysisAndPentosePhosphatePBiomd0000000511Model'
-description: Kerkhoven2013 - Glycolysis and Pentose Phosphate Pathway in T.brucei
-  - MODEL D (with ATP:ADP antiporter) There are six models (Model A, B, C, C-fruc,
-  D, D-fruc) described in the paper. Model A ( BIOMD
+description: "Kerkhoven2013 - Glycolysis and Pentose Phosphate Pathway in T.brucei - MODEL D (with ATP:ADP antiporter) There are six models (Model A, B, C, C-fruc, D, D-fruc) described in the paper. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

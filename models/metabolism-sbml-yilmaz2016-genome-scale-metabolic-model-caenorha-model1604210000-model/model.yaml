@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Yilmaz2016GenomeScaleMetabolicModelCaenorhaModel1604210000Model'
-description: 'Yilmaz2016 - Genome scale metabolic model -Caenorhabditis elegans (iCEL1273)
-  This model is described in the article: A Caenorhabditis elegans Genome-Scale Metabolic
-  Network Model. Yilmaz LS, Walhout A'
+description: "Yilmaz2016 - Genome scale metabolic model -Caenorhabditis elegans (iCEL1273) This model is described in the article: A Caenorhabditis elegans Genome-Scale Metabolic Network Model. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

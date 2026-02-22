@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Quek2014MetabolicFluxAnalysisOfHekCellCulModel1504080000Model'
-description: 'Quek2014 - Metabolic flux analysis of HEKcell culture using Recon 2
-  (reduced version of Recon 2) This model is described in the article: Reducing Recon
-  2 for steady-state flux analysis of HEK cell cul'
+description: "Quek2014 - Metabolic flux analysis of HEKcell culture using Recon 2 (reduced version of Recon 2) This model is described in the article: Reducing Recon 2 for steady-state flux analysis of HEK cell cul. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

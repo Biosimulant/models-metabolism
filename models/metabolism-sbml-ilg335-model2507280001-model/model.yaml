@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Ilg335Model2507280001Model'
-description: "Metabolic model of Buchnera aphidicola, as presented in Gerlin et al.,\
-  \ 'Quantifying supply and demand in the pea aphid-Buchnera symbiosis reveals the\
-  \ metabolic Achilles\u2019 heels of this interaction' (Me"
+description: "Metabolic model of Buchnera aphidicola, as presented in Gerlin et al., 'Quantifying supply and demand in the pea aphid-Buchnera symbiosis reveals the metabolic Achilles\u2019 heels of this interaction' (Me. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Gebauer2016GenomeScaleModelOfCaenorhabditisModel1704200000Model'
-description: Gebauer2016 - Genome-scale model ofCaenorhabditis elegans metabolism
-  (without bacteria) This model is one of the two versionsof ElegCyc presented in
-  the paper. It describes the metabolism of aworm rai
+description: "Gebauer2016 - Genome-scale model ofCaenorhabditis elegans metabolism (without bacteria) This model is one of the two versionsof ElegCyc presented in the paper. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

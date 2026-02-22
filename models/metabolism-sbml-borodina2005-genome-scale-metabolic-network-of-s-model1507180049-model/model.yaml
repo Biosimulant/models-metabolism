@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Borodina2005GenomeScaleMetabolicNetworkOfSModel1507180049Model'
-description: 'Borodina2005 - Genome-scale metabolic networkof Streptomyces coelicolor
-  (iIB711) This model is described in the article: Genome-scale analysis of Streptomyces
-  coelicolor A3(2) metabolism. Borodina I, '
+description: "Borodina2005 - Genome-scale metabolic networkof Streptomyces coelicolor (iIB711) This model is described in the article: Genome-scale analysis of Streptomyces coelicolor A3(2) metabolism. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

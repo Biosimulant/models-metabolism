@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Archer2011GenomeScaleMetabolicModelOfEscheModel1507180010Model'
-description: 'Archer2011 - Genome-scale metabolic model ofEscherichia coli (iCA1273)
-  This model is described in the article: The genome sequence of E. coli W (ATCC 9637):
-  comparative genome analysis and an improved'
+description: "Archer2011 - Genome-scale metabolic model ofEscherichia coli (iCA1273) This model is described in the article: The genome sequence of E. coli W (ATCC 9637): comparative genome analysis and an improved."
 standard: other
 tags:
 - metabolism

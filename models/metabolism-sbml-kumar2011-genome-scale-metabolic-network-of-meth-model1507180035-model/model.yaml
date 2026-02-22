@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Kumar2011GenomeScaleMetabolicNetworkOfMethModel1507180035Model'
-description: 'Kumar2011 - Genome-scale metabolic network of Methanosarcina acetivorans
-  (iVS941) This model is described in the article: Metabolic reconstruction of the
-  archaeon methanogen Methanosarcina Acetivorans'
+description: "Kumar2011 - Genome-scale metabolic network of Methanosarcina acetivorans (iVS941) This model is described in the article: Metabolic reconstruction of the archaeon methanogen Methanosarcina Acetivorans. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

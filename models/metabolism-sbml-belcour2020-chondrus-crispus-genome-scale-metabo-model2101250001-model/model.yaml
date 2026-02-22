@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Belcour2020ChondrusCrispusGenomeScaleMetaboModel2101250001Model'
-description: This is the first version of a Genome-Scale Metabolic Network model of
-  the red alga Chondrus crispus, published in a paper by Belcour et al., iScience
-  2020 (https://doi.org/10.1016/j.isci.2020.100849)
+description: "This is the first version of a Genome-Scale Metabolic Network model of the red alga Chondrus crispus, published in a paper by Belcour et al., iScience 2020 (https://doi.org/10.1016/j.isci.2020.100849). It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

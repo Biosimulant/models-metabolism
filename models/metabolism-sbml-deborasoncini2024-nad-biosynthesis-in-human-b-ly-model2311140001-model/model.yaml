@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Deborasoncini2024NadBiosynthesisInHumanBLyModel2311140001Model'
-description: 'This SBML file was created to capture NAD biosynthesis in human B-cells.
-  This model contains 27 reactions with 42 enzymes, 31 metabolites and 157 parameters.
-  This model is used further for generating '
+description: "This SBML file was created to capture NAD biosynthesis in human B-cells. This model contains 27 reactions with 42 enzymes, 31 metabolites and 157 parameters."
 standard: other
 tags:
 - metabolism

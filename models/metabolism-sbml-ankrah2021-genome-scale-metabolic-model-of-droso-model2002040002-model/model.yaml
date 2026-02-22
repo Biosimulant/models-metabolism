@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Ankrah2021GenomeScaleMetabolicModelOfDrosoModel2002040002Model'
-description: Genome scale metabolic model of Drosophila gut microbe Acetobacter fabarumAbstract
-  -An important goal for many nutrition-based microbiome studies is to identify the
-  metabolic function of microbes in c
+description: "Genome scale metabolic model of Drosophila gut microbe Acetobacter fabarumAbstract -An important goal for many nutrition-based microbiome studies is to identify the metabolic function of microbes in c. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

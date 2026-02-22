@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Benedict2011GenomeScaleMetoblicNetworkOfMeBiomd0000001097Model'
-description: 'Benedict2011 - Genome-scale metoblic networkof Methanosarcina acetivorans
-  (iMB745) This model is described in the article: Genome-scale metabolic reconstruction
-  and hypothesis testing in the methanoge'
+description: "Benedict2011 - Genome-scale metoblic networkof Methanosarcina acetivorans (iMB745) This model is described in the article: Genome-scale metabolic reconstruction and hypothesis testing in the methanoge. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

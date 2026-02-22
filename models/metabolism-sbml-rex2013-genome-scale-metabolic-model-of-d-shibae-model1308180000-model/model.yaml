@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Rex2013GenomeScaleMetabolicModelOfDShibaeModel1308180000Model'
-description: Rex2013 - Genome scale metabolic model of D.shibae (iDsh827) The aerobic
-  anoxygenic phototroph Dinoroseobacter shibae DFL12T is a representative of an important
-  group of marine bacteria called the Ros
+description: "Rex2013 - Genome scale metabolic model of D.shibae (iDsh827) The aerobic anoxygenic phototroph Dinoroseobacter shibae DFL12T is a representative of an important group of marine bacteria called the Ros. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

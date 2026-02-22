@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Quek2008GenomeScaleMetabolicNetworkOfMusMModel1507180067Model'
-description: 'Quek2008 - Genome-scale metabolic network ofMus musculus This model
-  is described in the article: On the reconstruction of the Mus musculus genome-scale
-  metabolic network model. Quek LE, Nielsen LK. Ge'
+description: "Quek2008 - Genome-scale metabolic network ofMus musculus This model is described in the article: On the reconstruction of the Mus musculus genome-scale metabolic network model. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

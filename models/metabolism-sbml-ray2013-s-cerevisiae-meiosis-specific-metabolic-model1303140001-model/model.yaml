@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Ray2013SCerevisiaeMeiosisSpecificMetabolicModel1303140001Model'
-description: Ray2013 - S.cerevisiae meiosis-specific metabolic network Meiosis is
-  a strongly concerved cell division program that generates haploid gametes from a
-  diploid parental cell. Successful meiosis is the f
+description: "Ray2013 - S.cerevisiae meiosis-specific metabolic network Meiosis is a strongly concerved cell division program that generates haploid gametes from a diploid parental cell. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

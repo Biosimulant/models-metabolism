@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Mardinoglu2015GenericMouseGenomeScaleMetaboModel1509220028Model'
-description: 'Mardinoglu2015 - Generic mouse genome-scalemetabolic network (MMR) This
-  model is described in the article: The gut microbiota modulates host amino acid
-  and glutathione metabolism in mice. Mardinoglu A'
+description: "Mardinoglu2015 - Generic mouse genome-scalemetabolic network (MMR) This model is described in the article: The gut microbiota modulates host amino acid and glutathione metabolism in mice. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

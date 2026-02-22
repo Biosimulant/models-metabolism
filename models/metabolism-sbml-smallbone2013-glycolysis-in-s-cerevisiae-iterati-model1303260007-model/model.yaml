@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Smallbone2013GlycolysisInSCerevisiaeIteratiModel1303260007Model'
-description: 'Smallbone2013 - Glycolysis in S.cerevisiae - Iteration 07 This model
-  is described in the article: A model of yeast glycolysis based on a consistent kinetic
-  characterization of all its enzymes Kieran S'
+description: "Smallbone2013 - Glycolysis in S.cerevisiae - Iteration 07 This model is described in the article: A model of yeast glycolysis based on a consistent kinetic characterization of all its enzymes Kieran S. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

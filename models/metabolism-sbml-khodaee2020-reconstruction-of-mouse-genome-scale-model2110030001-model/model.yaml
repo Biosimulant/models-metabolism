@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Khodaee2020ReconstructionOfMouseGenomeScaleModel2110030001Model'
-description: Here, we presented iMM1865 model as an orthology-based reconstruction
-  of a GSM model for Mus musculus based on the last flux-consistent version of the
-  human metabolic network, Recon3D. We proposed two
+description: "Here, we presented iMM1865 model as an orthology-based reconstruction of a GSM model for Mus musculus based on the last flux-consistent version of the human metabolic network, Recon3D. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

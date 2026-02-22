@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Lu2021GenomeScaleMetabolicModelsForYeastSModel2109130005Model'
-description: This is genome-scale metabolic model of Ascoidea rubescens as the representative
-  yeast species for the clade CUG-Ser2. This model was generated through homology
-  search using a fungal pan-GEM largely b
+description: "This is genome-scale metabolic model of Ascoidea rubescens as the representative yeast species for the clade CUG-Ser2. This model was generated through homology search using a fungal pan-GEM largely b."
 standard: other
 tags:
 - metabolism

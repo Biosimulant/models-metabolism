@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Ankrah2018TheCostOfMetabolicInteractionsInModel1806250004Model'
-description: Multi-compartment metabolic model of the sharpshooter Graphocephala coccinea
-  and its endosymbionts Sulcia and Baumannia
+description: "Multi-compartment metabolic model of the sharpshooter Graphocephala coccinea and its endosymbionts Sulcia and Baumannia. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

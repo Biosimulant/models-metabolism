@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Lu2021GenomeScaleMetabolicModelsForYeastSModel2109130002Model'
-description: This is genome-scale metabolic model of Alloascoidea hylecoeti as the
-  representative yeast species for the clade Alloascoideaceae. This model was generated
-  through homology search using a fungal pan-G
+description: "This is genome-scale metabolic model of Alloascoidea hylecoeti as the representative yeast species for the clade Alloascoideaceae. This model was generated through homology search using a fungal pan-G."
 standard: other
 tags:
 - metabolism

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Dalvigarcia2021DopaminergicAndSerotonergicKyModel2103060001Model'
-description: A mathematical model predicting a novel role of the dopamine and serotonin
-  metabolites DOPAL and 5-HIAL in the ethiology of depression, which is facilitated
-  through increased cortisol levels.
+description: "A mathematical model predicting a novel role of the dopamine and serotonin metabolites DOPAL and 5-HIAL in the ethiology of depression, which is facilitated through increased cortisol levels. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

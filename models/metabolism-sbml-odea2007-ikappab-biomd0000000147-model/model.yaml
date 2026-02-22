@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Odea2007IkappabBiomd0000000147Model'
-description: O'Dea, E.L., Barken, D., Peralta, R.Q., Tran K.T., Werner, S.L., Kearns,
-  J.D., Levchenko, A., Hoffmann, A. A homeostatic model of IkB metabolism to control
-  constitutive activity. Molecular Systems Bio
+description: "O'Dea, E.L., Barken, D., Peralta, R.Q., Tran K.T., Werner, S.L., Kearns, J.D., Levchenko, A., Hoffmann, A. A homeostatic model of IkB metabolism to control constitutive activity."
 standard: other
 tags:
 - metabolism

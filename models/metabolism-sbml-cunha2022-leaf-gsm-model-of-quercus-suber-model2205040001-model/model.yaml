@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Cunha2022LeafGsmModelOfQuercusSuberModel2205040001Model'
-description: Genome-scale metabolic model for the leaf of Quercus suber.
+description: "Genome-scale metabolic model for the leaf of Quercus suber. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

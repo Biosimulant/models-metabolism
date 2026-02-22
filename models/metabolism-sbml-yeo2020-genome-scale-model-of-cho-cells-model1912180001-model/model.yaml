@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Yeo2020GenomeScaleModelOfChoCellsModel1912180001Model'
-description: 'The iCHO2291 model was reconstructed by updating the previously published
-  iCHO1766 model in a 6-step procedure: 1) identification and removal of duplicate
-  metabolites and reactions, 2) replacement of '
+description: "The iCHO2291 model was reconstructed by updating the previously published iCHO1766 model in a 6-step procedure: 1) identification and removal of duplicate metabolites and reactions, 2) replacement of. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

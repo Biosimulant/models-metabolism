@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Cloutier2009EnergymetabolismModeldModel1006230095Model'
-description: 'This a model from the article: The control systems structures of energy
-  metabolism. Cloutier M, Wellstead P. J R Soc Interface 2010 Apr 6;7(45):651-65 19828503
-  , Abstract: The biochemical regulation o'
+description: "This a model from the article: The control systems structures of energy metabolism. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

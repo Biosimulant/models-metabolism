@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Raynanolen2024PfosZebrafishGemsModel2403010004Model'
-description: Condition specific zebrafish metabolic models generated using the COBRA
-  MetaboTools framework. The Wang et al., (2021) zebrafish genome-scale metabolic
-  model (GEM) was constrained with experimental da
+description: "Condition specific zebrafish metabolic models generated using the COBRA MetaboTools framework. The Wang et al., (2021) zebrafish genome-scale metabolic model (GEM) was constrained with experimental da."
 standard: other
 tags:
 - metabolism

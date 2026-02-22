@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Cifelli2008WholeBodyVitaminAMetabolismInHModel2403080002Model'
-description: Note that this model reimplementation does NOT predict the steady states
-  presented in Table 3
+description: "Note that this model reimplementation does NOT predict the steady states presented in Table 3. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

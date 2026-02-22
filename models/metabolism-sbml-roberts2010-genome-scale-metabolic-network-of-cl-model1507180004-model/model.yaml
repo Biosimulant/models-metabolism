@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Roberts2010GenomeScaleMetabolicNetworkOfClModel1507180004Model'
-description: 'Roberts2010 - Genome-scale metabolic networkof Clostridium thermocellum
-  (iSR432) This model is described in the article: Genome-scale metabolic analysis
-  of Clostridium thermocellum for bioethanol prod'
+description: "Roberts2010 - Genome-scale metabolic networkof Clostridium thermocellum (iSR432) This model is described in the article: Genome-scale metabolic analysis of Clostridium thermocellum for bioethanol prod. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

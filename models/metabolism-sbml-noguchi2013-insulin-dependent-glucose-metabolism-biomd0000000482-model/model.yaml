@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Noguchi2013InsulinDependentGlucoseMetabolismBiomd0000000482Model'
-description: Rei Noguchi, Hiroyuki Kubota, Katsuyuki Yugi, Yu Toyoshima, Yasunori
-  Komori, Tomoyoshi Soga & Shinya Kuroda. The selective control of glycolysis, gluconeogenesis
-  and glycogenesis by temporal insulin p
+description: "Rei Noguchi, Hiroyuki Kubota, Katsuyuki Yugi, Yu Toyoshima, Yasunori Komori, Tomoyoshi Soga & Shinya Kuroda. The selective control of glycolysis, gluconeogenesis and glycogenesis by temporal insulin p."
 standard: other
 tags:
 - metabolism

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Lu2021GenomeScaleMetabolicModelsForYeastSModel2109130007Model'
-description: 'This is genome-scale metabolic model of Yarrowia lipolytica as the representative
-  yeast species for the clade Dipodascaceae_Trichomonascaceae. This model was generated
-  through homology search using a '
+description: "This is genome-scale metabolic model of Yarrowia lipolytica as the representative yeast species for the clade Dipodascaceae_Trichomonascaceae. This model was generated through homology search using a."
 standard: other
 tags:
 - metabolism

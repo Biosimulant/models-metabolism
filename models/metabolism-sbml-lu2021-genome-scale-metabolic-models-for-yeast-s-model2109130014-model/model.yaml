@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Lu2021GenomeScaleMetabolicModelsForYeastSModel2109130014Model'
-description: This is genome-scale metabolic model of Candida albicans as the representative
-  yeast species for the clade CUG-Ser1. This model was generated through homology
-  search using a fungal pan-GEM largely bas
+description: "This is genome-scale metabolic model of Candida albicans as the representative yeast species for the clade CUG-Ser1. This model was generated through homology search using a fungal pan-GEM largely bas."
 standard: other
 tags:
 - metabolism

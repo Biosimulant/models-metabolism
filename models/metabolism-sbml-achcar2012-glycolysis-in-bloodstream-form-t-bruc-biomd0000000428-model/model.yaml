@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Achcar2012GlycolysisInBloodstreamFormTBrucBiomd0000000428Model'
-description: Achcar2012 - Glycolysis in bloodstream form T. brucei Kinetic models
-  of metabolism require quantitative knowledge of detailed kinetic parameters. However,
-  the knowledge about these parameters is often
+description: "Achcar2012 - Glycolysis in bloodstream form T. brucei Kinetic models of metabolism require quantitative knowledge of detailed kinetic parameters."
 standard: other
 tags:
 - metabolism

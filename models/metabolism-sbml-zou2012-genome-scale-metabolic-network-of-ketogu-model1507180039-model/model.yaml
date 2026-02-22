@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Zou2012GenomeScaleMetabolicNetworkOfKetoguModel1507180039Model'
-description: 'Zou2012 - Genome-scale metabolic network ofKetogulonicigenium vulgare
-  (iWZ663) This model is described in the article: Genome-scale metabolic model of
-  Helicobacter pylori 26695. Schilling CH, Covert M'
+description: "Zou2012 - Genome-scale metabolic network ofKetogulonicigenium vulgare (iWZ663) This model is described in the article: Genome-scale metabolic model of Helicobacter pylori 26695. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

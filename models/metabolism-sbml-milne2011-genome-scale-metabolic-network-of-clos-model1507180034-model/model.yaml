@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Milne2011GenomeScaleMetabolicNetworkOfClosModel1507180034Model'
-description: 'Milne2011 - Genome-scale metabolic network ofClostridium beijerinckii
-  (iCB925) This model is described in the article: Metabolic network reconstruction
-  and genome-scale model of butanol-producing stra'
+description: "Milne2011 - Genome-scale metabolic network ofClostridium beijerinckii (iCB925) This model is described in the article: Metabolic network reconstruction and genome-scale model of butanol-producing stra. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

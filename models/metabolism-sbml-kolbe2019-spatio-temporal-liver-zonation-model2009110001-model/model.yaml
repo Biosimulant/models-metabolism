@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Kolbe2019SpatioTemporalLiverZonationModel2009110001Model'
-description: 'Metabolism of the adult liver in mice and human is spatially zonated
-  with hepatocytes along the axis from each portal vein to the nearest central vein
-  expressing enzymes in a zonated manner. Upstream '
+description: "Metabolism of the adult liver in mice and human is spatially zonated with hepatocytes along the axis from each portal vein to the nearest central vein expressing enzymes in a zonated manner. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

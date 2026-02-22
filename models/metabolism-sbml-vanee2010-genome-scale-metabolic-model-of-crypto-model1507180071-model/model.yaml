@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Vanee2010GenomeScaleMetabolicModelOfCryptoModel1507180071Model'
-description: 'Vanee2010 - Genome-scale metabolic model ofCryptosporidium hominis (iNV213)
-  This model is described in the article: A genome-scale metabolic model of Cryptosporidium
-  hominis. Vanee N, Roberts SB, Fong'
+description: "Vanee2010 - Genome-scale metabolic model ofCryptosporidium hominis (iNV213) This model is described in the article: A genome-scale metabolic model of Cryptosporidium hominis. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

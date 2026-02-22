@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Scott2024GenomeScaleMetabolicModelOfClostrModel2411260001Model'
-description: Faithful wrapper of upstream SBML model.
+description: "Metabolism Scott2024Genome Scale Metabolic Model Of Clostr Model2411260001Model represents core biological mechanisms from biomodels_ebi reference biomodels_ebi:MODEL2411260001. When you run it, you can inspect state and compare temporal behavior between baseline and adjusted inputs."
 standard: other
 tags:
 - metabolism

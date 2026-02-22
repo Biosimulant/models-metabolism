@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Bannerman2022WholeGenomeMetabolismMycobacterModel2203300001Model'
-description: This is a whole genome metabolism model of Mycobacterium leprae
+description: "This is a whole genome metabolism model of Mycobacterium leprae. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

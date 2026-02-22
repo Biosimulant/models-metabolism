@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Fuentealb2016GenomeScaleMetabolicReconstructModel1610250000Model'
-description: 'Fuentealb2016 - Genome-scale metabolicreconstruction (iPF215) of Piscirickettsia
-  salmonis LF-89 This model is described in the article: Genome-scale metabolic reconstruction
-  for the insidious bacteriu'
+description: "Fuentealb2016 - Genome-scale metabolicreconstruction (iPF215) of Piscirickettsia salmonis LF-89 This model is described in the article: Genome-scale metabolic reconstruction for the insidious bacteriu. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

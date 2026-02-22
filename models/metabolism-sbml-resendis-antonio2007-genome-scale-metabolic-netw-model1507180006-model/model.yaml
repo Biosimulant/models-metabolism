@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: ResendisAntonio2007GenomeScaleMetabolicNetwModel1507180006Model'
-description: 'Resendis-Antonio2007 - Genome-scale metabolicnetwork of Rhizobium etli
-  (iOR363) This model is described in the article: Metabolic reconstruction and modeling
-  of nitrogen fixation in Rhizobium etli. Re'
+description: "Resendis-Antonio2007 - Genome-scale metabolicnetwork of Rhizobium etli (iOR363) This model is described in the article: Metabolic reconstruction and modeling of nitrogen fixation in Rhizobium etli. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Jamshidi2007GenomeScaleMetabolicNetworkOfMBiomd0000001095Model'
-description: 'Jamshidi2007 - Genome-scale metabolic networkof Mycobacterium tuberculosis
-  (iNJ661) This model is described in the article: Investigating the metabolic capabilities
-  of Mycobacterium tuberculosis H37Rv'
+description: "Jamshidi2007 - Genome-scale metabolic networkof Mycobacterium tuberculosis (iNJ661) This model is described in the article: Investigating the metabolic capabilities of Mycobacterium tuberculosis H37Rv. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

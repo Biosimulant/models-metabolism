@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Larocque2014MetabolicReconstructionOfClostriModel1409240004Model'
-description: In the current work, we present the first extensively curated metabolic
-  network reconstruction for C. difficile (strain 630) i MLTC806cdf and validate it
-  with experimental data on essential metabolite
+description: "In the current work, we present the first extensively curated metabolic network reconstruction for C. difficile (strain 630) i MLTC806cdf and validate it with experimental data on essential metabolite."
 standard: other
 tags:
 - metabolism

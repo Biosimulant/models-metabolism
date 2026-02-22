@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Kim2021DevelopmentOfAGenomeScaleMetabolicBiomd0000001062Model'
-description: Escherichia coli Nissle 1917 (EcN) is an intestinal probiotic that is
-  effective for the treatment of intestinal disorders, such as inflammatory bowel
-  disease and ulcerative colitis. EcN is a represent
+description: "Escherichia coli Nissle 1917 (EcN) is an intestinal probiotic that is effective for the treatment of intestinal disorders, such as inflammatory bowel disease and ulcerative colitis. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

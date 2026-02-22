@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Dias2019GsmModelOfSPneumoniaeR6Biomd0000001090Model'
-description: Phenotypically Reconciled Genome-scale Metabolic Model for the Metabolism
-  of Streptococcus pneumoniae Strain R6.
+description: "Phenotypically Reconciled Genome-scale Metabolic Model for the Metabolism of Streptococcus pneumoniae Strain R6. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

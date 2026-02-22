@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Mardinoglu2015TissueSpecificGenomeScaleMetaModel1509220011Model'
-description: 'Mardinoglu2015 - Tissue-specific genome-scalemetabolic network - Adrenal
-  gland This model is described in the article: The gut microbiota modulates host
-  amino acid and glutathione metabolism in mice. '
+description: "Mardinoglu2015 - Tissue-specific genome-scalemetabolic network - Adrenal gland This model is described in the article: The gut microbiota modulates host amino acid and glutathione metabolism in mice. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Zhuang2011EcoliFbaWithMembraneEconomicsModel1105030000Model'
-description: 'Zhuang2011 - Ecoli FBA with membrane economics Genome-scale metabolic
-  model of Escherichia coli able to simulate respiro-fermentation. This model is described
-  in the article: Economics of membrane occ'
+description: "Zhuang2011 - Ecoli FBA with membrane economics Genome-scale metabolic model of Escherichia coli able to simulate respiro-fermentation. This model is described in the article: Economics of membrane occ."
 standard: other
 tags:
 - metabolism

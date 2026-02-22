@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Viana2022CparapsilosisMetabolicModelModel2404250002Model'
-description: The herein described metabolic model reports on the yeast Candida parapsilosis
-  with the taxonomic ID 5480. Model reconstruction was performed using merlin 4.0.5,
-  and further curation and validation we
+description: "The herein described metabolic model reports on the yeast Candida parapsilosis with the taxonomic ID 5480. Model reconstruction was performed using merlin 4.0.5, and further curation and validation we."
 standard: other
 tags:
 - metabolism

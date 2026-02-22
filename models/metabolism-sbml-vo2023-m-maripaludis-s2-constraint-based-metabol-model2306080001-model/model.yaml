@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Vo2023MMaripaludisS2ConstraintBasedMetabolModel2306080001Model'
-description: Genome-scale metabolic model of Methanococcus maripaludis S2, including
-  the updated biosynthetic pathways for NAD and thiamine and the salvage pathway for
-  5'-deoxyadenosine.
+description: "Genome-scale metabolic model of Methanococcus maripaludis S2, including the updated biosynthetic pathways for NAD and thiamine and the salvage pathway for 5'-deoxyadenosine. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

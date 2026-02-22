@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Gonzalez2021QsarPredictionModelForCyp2c9InModel2404160002Model'
-description: Analysis of metabolic stability, determining the inhibition of CYP2C9
-  activity and whether the compounds are a substrate for the CYP2C9 enzyme. The data
-  used to build these models has been publicly av
+description: "Analysis of metabolic stability, determining the inhibition of CYP2C9 activity and whether the compounds are a substrate for the CYP2C9 enzyme. The data used to build these models has been publicly av."
 standard: other
 tags:
 - metabolism

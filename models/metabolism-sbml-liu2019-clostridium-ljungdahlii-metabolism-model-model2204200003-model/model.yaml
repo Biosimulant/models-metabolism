@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Liu2019ClostridiumLjungdahliiMetabolismModelModel2204200003Model'
-description: The unique capability of acetogens to ferment a broad range of substrates
-  renders them ideal candidates for the biotechnological production of commodity chemicals.
-  In particular the ability to grow wi
+description: "The unique capability of acetogens to ferment a broad range of substrates renders them ideal candidates for the biotechnological production of commodity chemicals. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

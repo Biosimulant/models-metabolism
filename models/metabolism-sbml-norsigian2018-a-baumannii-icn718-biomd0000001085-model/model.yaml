@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Norsigian2018ABaumanniiIcn718Biomd0000001085Model'
-description: "FROG and miniFROG Reports for the organism A. baumannii . The model\
-  \ (iCN718) originates from BiGG Models Database: A Database of Genome-Scale Metabolic\
-  \ Models (http://bigg.ucsd.edu/). Copyright \xA9 2019"
+description: "FROG and miniFROG Reports for the organism A. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

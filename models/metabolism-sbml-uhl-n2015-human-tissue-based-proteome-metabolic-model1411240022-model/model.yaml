@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: UhlN2015HumanTissueBasedProteomeMetabolicModel1411240022Model'
-description: "Uhl\xE9n2015 - Human tissue-based proteome metabolic network - skin\
-  \ Human skin specific proteome metabolic network This model is described in the\
-  \ article: Tissue-based map of the human proteome Uhl\xE9n M, "
+description: "Uhl\u00e9n2015 - Human tissue-based proteome metabolic network - skin Human skin specific proteome metabolic network This model is described in the article: Tissue-based map of the human proteome Uhl\u00e9n M,. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

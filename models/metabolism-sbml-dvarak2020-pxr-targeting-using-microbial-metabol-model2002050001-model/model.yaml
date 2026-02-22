@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Dvarak2020PxrTargetingUsingMicrobialMetabolModel2002050001Model'
-description: this is a model in the PDB format.
+description: "Metabolism Dvarak2020Pxr Targeting Using Microbial Metabol Model2002050001Model models core biological dynamics as a OTHER simulation curated from biomodels_ebi (biomodels_ebi:MODEL2002050001), focused on metab. When you run it, you can track state over time and compare response patterns across parameter settings."
 standard: other
 tags:
 - metabolism

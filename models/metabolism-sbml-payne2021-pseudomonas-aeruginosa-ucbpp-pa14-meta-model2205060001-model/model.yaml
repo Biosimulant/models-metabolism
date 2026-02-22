@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Payne2021PseudomonasAeruginosaUcbppPa14MetaModel2205060001Model'
-description: Pseudomonas aeruginosa PA14 metabolic model
+description: "Metabolism Payne2021Pseudomonas Aeruginosa Ucbpp Pa14Meta Model2205060001Model captures core biological behavior in the context of metabolism, sbml, biomodels_ebi using a biomodels_ebi-sourced OTHER model. When you run it, you can observe state and evaluate how the modeled system changes across runs."
 standard: other
 tags:
 - metabolism

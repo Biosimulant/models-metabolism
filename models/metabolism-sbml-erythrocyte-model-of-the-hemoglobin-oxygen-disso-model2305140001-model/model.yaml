@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: ErythrocyteModelOfTheHemoglobinOxygenDissoModel2305140001Model'
-description: 'This file contains the models, simulation, and generated data that were
-  used in the manuscript ''Erythrocyte Metabolism''. The equations used to create
-  the models were derived from the paper by Dash et '
+description: "This file contains the models, simulation, and generated data that were used in the manuscript 'Erythrocyte Metabolism'. The equations used to create the models were derived from the paper by Dash et."
 standard: other
 tags:
 - metabolism

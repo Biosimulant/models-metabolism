@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Vanoossanen2025GenomeScaleMetabolicModelIsoModel2503190001Model'
-description: Genome-scale metabolic model of the oleaginous microalga Nannochloropsis
-  oceanica. The model is extensively curated on the core, light, lipid, and pigment
-  metabolism. Two biomass compositions are supp
+description: "Genome-scale metabolic model of the oleaginous microalga Nannochloropsis oceanica. The model is extensively curated on the core, light, lipid, and pigment metabolism."
 standard: other
 tags:
 - metabolism

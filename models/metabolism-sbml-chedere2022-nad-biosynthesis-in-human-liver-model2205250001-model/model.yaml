@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Chedere2022NadBiosynthesisInHumanLiverModel2205250001Model'
-description: This SBML (L2V4) file is a well-annotated ODE-based model created to
-  capture NAD biosynthesis in the human liver. This model contains 26 reactions with
-  29 genes, 31 metabolites and 138 parameters.
+description: "This SBML (L2V4) file is a well-annotated ODE-based model created to capture NAD biosynthesis in the human liver. This model contains 26 reactions with 29 genes, 31 metabolites and 138 parameters."
 standard: other
 tags:
 - metabolism

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Gerlin2020GenomeScaleMetabolicModelOfBacteModel2003100001Model'
-description: High proliferation rate and robustness are vital characteristics of bacterial
-  pathogens to successfully colonize their hosts. The observation of drastically slow
-  growth in some pathogens is thus parad
+description: "High proliferation rate and robustness are vital characteristics of bacterial pathogens to successfully colonize their hosts. The observation of drastically slow growth in some pathogens is thus parad."
 standard: other
 tags:
 - metabolism

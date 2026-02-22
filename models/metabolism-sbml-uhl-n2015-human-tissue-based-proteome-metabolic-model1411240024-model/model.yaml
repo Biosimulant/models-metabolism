@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: UhlN2015HumanTissueBasedProteomeMetabolicModel1411240024Model'
-description: "Uhl\xE9n2015 - Human tissue-based proteome metabolic network - small\
-  \ intestine Human small intestine specific proteome metabolic network This model\
-  \ is described in the article: Tissue-based map of the hu"
+description: "Uhl\u00e9n2015 - Human tissue-based proteome metabolic network - small intestine Human small intestine specific proteome metabolic network This model is described in the article: Tissue-based map of the hu. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

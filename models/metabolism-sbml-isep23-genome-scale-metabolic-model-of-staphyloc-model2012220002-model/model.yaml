@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Isep23GenomeScaleMetabolicModelOfStaphylocModel2012220002Model'
-description: 'Staphylococcus epidermidis is a Gram-positive, coagulase-negative (CoNS)
-  bacterium that is carried asymptomatically on the skin and mucous membranes of virtually
-  all human beings. It is a major cause '
+description: "Staphylococcus epidermidis is a Gram-positive, coagulase-negative (CoNS) bacterium that is carried asymptomatically on the skin and mucous membranes of virtually all human beings. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

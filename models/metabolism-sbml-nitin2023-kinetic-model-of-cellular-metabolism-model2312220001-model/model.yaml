@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Nitin2023KineticModelOfCellularMetabolismModel2312220001Model'
-description: A simplistic numerical model designed to simulate and augment the commercially
-  available real-time, in-vitro, end-point kinetic glycolysis assay with and without
-  pathway-modulating drugs to extend the
+description: "A simplistic numerical model designed to simulate and augment the commercially available real-time, in-vitro, end-point kinetic glycolysis assay with and without pathway-modulating drugs to extend the. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

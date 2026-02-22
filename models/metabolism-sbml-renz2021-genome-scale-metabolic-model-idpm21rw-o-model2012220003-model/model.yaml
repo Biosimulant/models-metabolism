@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Renz2021GenomeScaleMetabolicModelIdpm21rwOModel2012220003Model'
-description: Dolosigranulum pigrum is a quite recently discovered Gram-positive coccus.
-  It has gained increasing attention due to its negative correlation with Staphylococcus
-  aureus, which is one of the most succe
+description: "Dolosigranulum pigrum is a quite recently discovered Gram-positive coccus. It has gained increasing attention due to its negative correlation with Staphylococcus aureus, which is one of the most succe."
 standard: other
 tags:
 - metabolism

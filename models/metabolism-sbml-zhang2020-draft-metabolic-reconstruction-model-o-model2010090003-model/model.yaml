@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Zhang2020DraftMetabolicReconstructionModelOModel2010090003Model'
-description: This is an auto-generated model with COBRA Matlab toolbox.
+description: "This is an auto-generated model with COBRA Matlab toolbox. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

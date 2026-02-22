@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Babaev2025Cyp2c9AndAbcb1LosartanMetabolismModel2504020001Model'
-description: The model can simultaneously predict the profiles of both losartan and
-  its active metabolite, E-3174, based on a given patient's CYP2C9 and ABCB1 genotypes.The
-  CYP2C9 alleles considered are CYP2C9*1 a
+description: "The model can simultaneously predict the profiles of both losartan and its active metabolite, E-3174, based on a given patient's CYP2C9 and ABCB1 genotypes.The CYP2C9 alleles considered are CYP2C9*1 a. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

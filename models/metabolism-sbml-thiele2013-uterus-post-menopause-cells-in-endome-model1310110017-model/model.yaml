@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Thiele2013UterusPostMenopauseCellsInEndomeModel1310110017Model'
-description: Thiele2013 - Uterus post menopause cells in endometrial stroma The model
-  of uterus post menopause cells in endometrial stroma metabolism is derived from
-  the community-driven global reconstruction of h
+description: "Thiele2013 - Uterus post menopause cells in endometrial stroma The model of uterus post menopause cells in endometrial stroma metabolism is derived from the community-driven global reconstruction of h. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

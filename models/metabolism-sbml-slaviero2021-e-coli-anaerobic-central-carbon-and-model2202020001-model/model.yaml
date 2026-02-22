@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Slaviero2021EColiAnaerobicCentralCarbonAndModel2202020001Model'
-description: 'This model describes the central carbon and energy metabolism of E.
-  coli growing under anaerobic conditions.For complete information about the model
-  see: ''Deciphering the physiological response of Esc'
+description: "This model describes the central carbon and energy metabolism of E. coli growing under anaerobic conditions.For complete information about the model see: 'Deciphering the physiological response of Esc."
 standard: other
 tags:
 - metabolism

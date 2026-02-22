@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Dinh2019AComprehensiveGenomeScaleModelForModel2204190005Model'
-description: Rhodosporidium toruloides is a red, basidiomycetes yeast that can accumulate
-  a large amount of lipids and produce carotenoids. To better assess this non-model
-  yeast's metabolic capabilities, we recons
+description: "Rhodosporidium toruloides is a red, basidiomycetes yeast that can accumulate a large amount of lipids and produce carotenoids. To better assess this non-model yeast's metabolic capabilities, we recons."
 standard: other
 tags:
 - metabolism

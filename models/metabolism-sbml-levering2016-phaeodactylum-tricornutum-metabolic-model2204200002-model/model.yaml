@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Levering2016PhaeodactylumTricornutumMetabolicModel2204200002Model'
-description: Diatoms are eukaryotic microalgae that contain genes from various sources,
-  including bacteria and the secondary endosymbiotic host. Due to this unique combination
-  of genes, diatoms are taxonomically a
+description: "Diatoms are eukaryotic microalgae that contain genes from various sources, including bacteria and the secondary endosymbiotic host. Due to this unique combination of genes, diatoms are taxonomically a."
 standard: other
 tags:
 - metabolism

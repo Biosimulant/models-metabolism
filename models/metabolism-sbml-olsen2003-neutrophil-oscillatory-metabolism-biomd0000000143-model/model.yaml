@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Olsen2003NeutrophilOscillatoryMetabolismBiomd0000000143Model'
-description: 'Olsen2003_neutrophil_oscillatory_metabolism This model is described
-  in the article: A model of the oscillatory metabolism of activated neutrophils.
-  Olsen LF, Kummer U, Kindzelskii AL, Petty HR. Biophy'
+description: "Olsen2003_neutrophil_oscillatory_metabolism This model is described in the article: A model of the oscillatory metabolism of activated neutrophils. Olsen LF, Kummer U, Kindzelskii AL, Petty HR."
 standard: other
 tags:
 - metabolism

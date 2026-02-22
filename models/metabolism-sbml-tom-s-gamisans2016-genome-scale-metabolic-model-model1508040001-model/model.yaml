@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: TomSGamisans2016GenomeScaleMetabolicModelModel1508040001Model'
-description: "Tom\xE0s-Gamisans2016 - Genome-Scale Metabolic Model of Pichia pastoris\
-  \ (version 2) Note: This is iMT1026v2, an update of the original iMT1026 Pichia\
-  \ pastoris' genome-scale metabolic model PMID:26812499 "
+description: "Tom\u00e0s-Gamisans2016 - Genome-Scale Metabolic Model of Pichia pastoris (version 2) Note: This is iMT1026v2, an update of the original iMT1026 Pichia pastoris' genome-scale metabolic model PMID:26812499. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Aubert2005InteractionBetweenAstrocytesAndNeModel1411210000Model'
-description: 'Aubert2005 - Interaction between astrocytesand neurons on energy metabolism
-  Enocded non-curated model. Issues: - Confusing equations A.41 and A.42 - Missing
-  values for parameters Vv,0 and dHb,0 This m'
+description: "Aubert2005 - Interaction between astrocytesand neurons on energy metabolism Enocded non-curated model. Issues: - Confusing equations A.41 and A.42 - Missing values for parameters Vv,0 and dHb,0 This m."
 standard: other
 tags:
 - metabolism

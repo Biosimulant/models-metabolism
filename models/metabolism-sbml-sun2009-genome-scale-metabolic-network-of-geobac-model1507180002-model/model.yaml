@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Sun2009GenomeScaleMetabolicNetworkOfGeobacModel1507180002Model'
-description: 'Sun2009 - Genome-scale metabolic network ofGeobacter metallireducens
-  (iJS747) This model is described in the article: Genome-scale constraint-based modeling
-  of Geobacter metallireducens. Sun J, Sayyar'
+description: "Sun2009 - Genome-scale metabolic network ofGeobacter metallireducens (iJS747) This model is described in the article: Genome-scale constraint-based modeling of Geobacter metallireducens. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

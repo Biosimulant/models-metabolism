@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Feist2014GeobacterMetallireducensGs15MetaboModel2204190002Model'
-description: Geobacter species are of great interest for environmental and biotechnology
-  applications as they can carry out direct electron transfer to insoluble metals
-  or other microorganisms and have the ability
+description: "Geobacter species are of great interest for environmental and biotechnology applications as they can carry out direct electron transfer to insoluble metals or other microorganisms and have the ability. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

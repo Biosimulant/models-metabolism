@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Robinson2020GenericGenomeScaleMetabolicModeModel2204280001Model'
-description: This is the generic genome-scale metabolic model of Homo sapiens accompanying
-  the publication (doi:10.1126/scisignal.aaz1482). The version of the submitted model
-  is 1.11.0. Further curations of this m
+description: "This is the generic genome-scale metabolic model of Homo sapiens accompanying the publication (doi:10.1126/scisignal.aaz1482). It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

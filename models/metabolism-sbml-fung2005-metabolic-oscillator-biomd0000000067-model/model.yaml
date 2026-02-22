@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Fung2005MetabolicOscillatorBiomd0000000067Model'
-description: 'A Synthetic Gene-Metabolic Oscillator Reference: Fung et al; Nature
-  (2005) 435:118-122 Name of kinetic law Reaction Glycolytic flux, V_gly: nil -&gt;
-  AcCoA; Flux to TCA cycle/ETOH, V_TCA: AcCoA -&gt; '
+description: "A Synthetic Gene-Metabolic Oscillator Reference: Fung et al; Nature (2005) 435:118-122 Name of kinetic law Reaction Glycolytic flux, V_gly: nil -&gt; AcCoA; Flux to TCA cycle/ETOH, V_TCA: AcCoA -&gt;. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

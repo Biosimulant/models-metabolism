@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Teusink1998GlycolysisTurbodesignBiomd0000000253Model'
-description: 'This is the model described in the article: The danger of metabolic
-  pathways with turbo design Teusink B, Walsh MC, van Dam K, Westerhoff HV Trends
-  Biochem. Sci. 1998 May; Volume: 23 (Issue: 5 ): 162-'
+description: "This is the model described in the article: The danger of metabolic pathways with turbo design Teusink B, Walsh MC, van Dam K, Westerhoff HV Trends Biochem. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

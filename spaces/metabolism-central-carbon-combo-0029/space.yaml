@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Central Carbon (COMBO_0029)'
-description: Metabolism central carbon comparative space with 2 models, configured
-  as non-causal co-simulation.
+description: "Metabolism Central Carbon (COMBO_0029) brings together caspeta2012_geno_1, castillo2016_who_2, state_compare_mon in a comparative space to examine how central carbon mechanisms compare across these models. When you run it, you can compare participant trajectories through shared runtime settings and routed output streams."
 models:
 - repo: Biosimulant/models-metabolism
   alias: caspeta2012_geno_1

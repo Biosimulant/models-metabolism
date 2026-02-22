@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Iem759Model2405070001Model'
-description: A genome-scale metabolic network named iEM759 was reconstructed for S.
-  bombicola using the information from databases, literature, and experimental data
-  generated in this research.
+description: "A genome-scale metabolic network named iEM759 was reconstructed for S. bombicola using the information from databases, literature, and experimental data generated in this research."
 standard: other
 tags:
 - metabolism

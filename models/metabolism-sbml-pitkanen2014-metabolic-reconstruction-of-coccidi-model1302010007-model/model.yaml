@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Pitkanen2014MetabolicReconstructionOfCoccidiModel1302010007Model'
-description: Pitkanen2014 - Metabolic reconstruction of Coccidioides immitis using
-  CoReCo This model was reconstructed with the CoReCo method (Comparative ReConstruction
-  of genome-scale metabolic networks) from pr
+description: "Pitkanen2014 - Metabolic reconstruction of Coccidioides immitis using CoReCo This model was reconstructed with the CoReCo method (Comparative ReConstruction of genome-scale metabolic networks) from pr. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

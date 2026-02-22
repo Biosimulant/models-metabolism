@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Reed2008GlutathioneMetabolismBiomd0000000268Model'
-description: 'This is the model described in the article: A mathematical model of
-  glutathione metabolism. Michael C Reed, Rachel L Thomas, Jovana Pavisic, S. Jill
-  James, Cornelia M Ulrich and H. Frederik Nijhout, T'
+description: "This is the model described in the article: A mathematical model of glutathione metabolism. Michael C Reed, Rachel L Thomas, Jovana Pavisic, S."
 standard: other
 tags:
 - metabolism

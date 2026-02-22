@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Thiele2005GenomeScaleMetabolicNetworkOfHelModel1507180007Model'
-description: 'Thiele2005 - Genome-scale metabolic networkof Helicobacter pylori (iIT341)
-  This model is described in the article: Expanded metabolic reconstruction of Helicobacter
-  pylori (iIT341 GSM/GPR): an in sili'
+description: "Thiele2005 - Genome-scale metabolic networkof Helicobacter pylori (iIT341) This model is described in the article: Expanded metabolic reconstruction of Helicobacter pylori (iIT341 GSM/GPR): an in sili. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

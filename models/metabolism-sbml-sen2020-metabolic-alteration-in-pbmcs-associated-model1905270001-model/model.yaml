@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Sen2020MetabolicAlterationInPbmcsAssociatedModel1905270001Model'
-description: '&lt;notes xmlns=&quot;http://www.sbml.org/sbml/level2&quot;&gt; &lt;body
-  xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt; &lt;p&gt;Genome-Scale draft model
-  for Human Peripheral Blood Mononuclear Cel'
+description: "&lt;notes xmlns=&quot;http://www.sbml.org/sbml/level2&quot;&gt; &lt;body xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt; &lt;p&gt;Genome-Scale draft model for Human Peripheral Blood Mononuclear Cel. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

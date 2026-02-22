@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Blasche2021MetabolicCooperationAndSpatiotempModel2204300001Model'
-description: Model of a microbial species involved in the kefir community. The model
-  has been generated with the tool CarveMe.
+description: "Model of a microbial species involved in the kefir community. The model has been generated with the tool CarveMe."
 standard: other
 tags:
 - metabolism

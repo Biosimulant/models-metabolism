@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Subramanian2017MetabolicAdaptationsOfLeishmaModel2010130001Model'
-description: 'The uploaded model is linked to the Scientific Reports article: Subramanian,
-  A., Sarkar, R.R. Revealing the mystery of metabolic adaptations using a genome scale
-  model of Leishmania infantum . Sci Rep'
+description: "The uploaded model is linked to the Scientific Reports article: Subramanian, A., Sarkar, R.R. Revealing the mystery of metabolic adaptations using a genome scale model of Leishmania infantum ."
 standard: other
 tags:
 - metabolism

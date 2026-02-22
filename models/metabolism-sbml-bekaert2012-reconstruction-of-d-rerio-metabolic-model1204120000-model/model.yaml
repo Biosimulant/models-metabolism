@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Bekaert2012ReconstructionOfDRerioMetabolicModel1204120000Model'
-description: Bekaert2012 - Reconstruction of D.rerio Metabolic Network Danio rerio
-  metabolic model accounting for subcellular compartmentalisation (ZebraGEM) This
-  SBML representation of the D. rerio (zebrafish) me
+description: "Bekaert2012 - Reconstruction of D.rerio Metabolic Network Danio rerio metabolic model accounting for subcellular compartmentalisation (ZebraGEM) This SBML representation of the D. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

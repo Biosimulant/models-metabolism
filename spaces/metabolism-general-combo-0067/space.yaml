@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: General (COMBO_0067)'
-description: Metabolism general comparative space with 4 models, configured as non-causal
-  co-simulation.
+description: "Metabolism General (COMBO_0067) assembles reddyhoff2015_ac_1, reed2008_glutath_2, reyes_palomares2_3 as a comparative composed simulation to examine how general mechanisms compare across these models. When you run it, you can compare synchronized outputs through the declared wiring paths and monitor views."
 models:
 - repo: Biosimulant/models-metabolism
   alias: reddyhoff2015_ac_1

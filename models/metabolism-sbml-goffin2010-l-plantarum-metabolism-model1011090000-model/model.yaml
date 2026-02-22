@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Goffin2010LPlantarumMetabolismModel1011090000Model'
-description: 'This is the genome scale metabolic reconstruction of Lactobacillus plantarum
-  described in the article: Understanding the physiology of Lactobacillus plantarum
-  at zero growth. Goffin P, van de Bunt B, '
+description: "This is the genome scale metabolic reconstruction of Lactobacillus plantarum described in the article: Understanding the physiology of Lactobacillus plantarum at zero growth. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Pereira2018GenomeScaleMetabolicModelForActModel1804130001Model'
-description: The model, iBP722, was reconstructed based on the functional reannotation
-  of the complete genome sequence of A. succinogenes 130Z and manual inspection of
-  metabolic pathways, covering 1072 enzymatic r
+description: "The model, iBP722, was reconstructed based on the functional reannotation of the complete genome sequence of A. succinogenes 130Z and manual inspection of metabolic pathways, covering 1072 enzymatic r."
 standard: other
 tags:
 - metabolism

@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: General (COMBO_0049)'
-description: Metabolism general comparative space with 3 models, configured as non-causal
-  co-simulation.
+description: "Metabolism General (COMBO_0049) brings together cloutier2009_bra_1, cloutier2009_ene_2, cloutier2009_ene_3 in a comparative space to examine how general mechanisms compare across these models. When you run it, you can compare participant trajectories through shared runtime settings and routed output streams."
 models:
 - repo: Biosimulant/models-metabolism
   alias: cloutier2009_bra_1

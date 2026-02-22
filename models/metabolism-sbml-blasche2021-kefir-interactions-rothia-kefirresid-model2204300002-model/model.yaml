@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Blasche2021KefirInteractionsRothiaKefirresidModel2204300002Model'
-description: Genome-scale metabolic model of recently isolated kefir-associated bacterial
-  species Rothia kefirresidentii KRP. See also https://github.com/cdanielmachado/kefir_paper,
-  https://journals.asm.org/doi/fu
+description: "Genome-scale metabolic model of recently isolated kefir-associated bacterial species Rothia kefirresidentii KRP. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

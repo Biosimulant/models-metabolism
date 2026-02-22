@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Saha2011GenomeScaleMetabolicNetworkOfArabiModel1507180011Model'
-description: 'Saha2011 - Genome-scale metabolic network ofArabidopsis thaliana (iRS1597)
-  This model is described in the article: Zea mays iRS1563: a comprehensive genome-scale
-  metabolic reconstruction of maize meta'
+description: "Saha2011 - Genome-scale metabolic network ofArabidopsis thaliana (iRS1597) This model is described in the article: Zea mays iRS1563: a comprehensive genome-scale metabolic reconstruction of maize meta. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Gupta2009EicosanoidMetabolismBiomd0000000436Model'
-description: 'Gupta2009 - Eicosanoid Metabolism Integrated model of eicosanoid metabolism
-  and signaling based on lipidomics flux analysis. This model is described in the
-  article: An integrated model of eicosanoid m'
+description: "Gupta2009 - Eicosanoid Metabolism Integrated model of eicosanoid metabolism and signaling based on lipidomics flux analysis. This model is described in the article: An integrated model of eicosanoid m."
 standard: other
 tags:
 - metabolism

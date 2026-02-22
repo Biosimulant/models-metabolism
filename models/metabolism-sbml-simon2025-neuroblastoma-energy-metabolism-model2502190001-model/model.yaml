@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Simon2025NeuroblastomaEnergyMetabolismModel2502190001Model'
-description: Faithful wrapper of upstream SBML model.
+description: "Metabolism Simon2025Neuroblastoma Energy Metabolism Model2502190001Model models core biological dynamics as a OTHER simulation curated from biomodels_ebi (biomodels_ebi:MODEL2502190001), focused on metabolism. When you run it, you can track state over time and compare response patterns across parameter settings."
 standard: other
 tags:
 - metabolism

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Bae2017MathematicalAnalysisOfCircadianDisruBiomd0000001005Model'
-description: The circadian rhythms influence the metabolic activity from molecular
-  level to tissue, organ, and host level. Disruption of the circadian rhythms manifests
-  to the host's health as metabolic syndromes,
+description: "The circadian rhythms influence the metabolic activity from molecular level to tissue, organ, and host level. Disruption of the circadian rhythms manifests to the host's health as metabolic syndromes,."
 standard: other
 tags:
 - metabolism

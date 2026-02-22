@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Yang2008AanetworkPltModel8236520494Model'
-description: 'This is the arachidonic acid metabolic network model for human platelet
-  cells (PLT) described in the article: Finding multiple target optimal intervention
-  in disease-related molecular network. Yang K,'
+description: "This is the arachidonic acid metabolic network model for human platelet cells (PLT) described in the article: Finding multiple target optimal intervention in disease-related molecular network. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

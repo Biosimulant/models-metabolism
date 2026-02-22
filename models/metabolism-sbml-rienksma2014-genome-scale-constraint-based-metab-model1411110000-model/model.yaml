@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Rienksma2014GenomeScaleConstraintBasedMetabModel1411110000Model'
-description: 'Model created from Excel spreadsheet: sMtb2.xls'
+description: "Metabolism Rienksma2014Genome Scale Constraint Based Metab Model1411110000Model models core biological dynamics as a OTHER simulation curated from biomodels_ebi (biomodels_ebi:MODEL1411110000), focused on metab. When you run it, you can track state over time and compare response patterns across parameter settings."
 standard: other
 tags:
 - metabolism

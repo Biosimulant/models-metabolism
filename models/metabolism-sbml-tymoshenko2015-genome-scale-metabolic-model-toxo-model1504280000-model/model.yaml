@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Tymoshenko2015GenomeScaleMetabolicModelToxoModel1504280000Model'
-description: 'Tymoshenko2015 - Genome scale metabolic model- ToxoNet1 This model is
-  described in the article: Metabolic Needs and Capabilities of Toxoplasma gondii
-  through Combined Computational and Experimental An'
+description: "Tymoshenko2015 - Genome scale metabolic model- ToxoNet1 This model is described in the article: Metabolic Needs and Capabilities of Toxoplasma gondii through Combined Computational and Experimental An. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

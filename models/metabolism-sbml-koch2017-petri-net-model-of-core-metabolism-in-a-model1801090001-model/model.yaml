@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Koch2017PetriNetModelOfCoreMetabolismInAModel1801090001Model'
-description: 'Arabidopsis thaliana is a well-established model system for the analysis
-  of the basic physiological and metabolic pathways of plants. The presented model
-  is a new semi-quantitative mathematical model '
+description: "Arabidopsis thaliana is a well-established model system for the analysis of the basic physiological and metabolic pathways of plants. The presented model is a new semi-quantitative mathematical model."
 standard: other
 tags:
 - metabolism

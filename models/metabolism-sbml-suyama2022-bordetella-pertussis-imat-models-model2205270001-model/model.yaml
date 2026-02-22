@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Suyama2022BordetellaPertussisImatModelsModel2205270001Model'
-description: Proteomic expression data was integrated into a manually curated base
-  Bordetella pertussis metabolic model (iBP1870). This study included preoteomic expression
-  from cells grown in biofilm and plankton
+description: "Proteomic expression data was integrated into a manually curated base Bordetella pertussis metabolic model (iBP1870). This study included preoteomic expression from cells grown in biofilm and plankton."
 standard: other
 tags:
 - metabolism

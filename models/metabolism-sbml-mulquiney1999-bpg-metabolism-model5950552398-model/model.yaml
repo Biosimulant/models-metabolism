@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Mulquiney1999BpgMetabolismModel5950552398Model'
-description: 'This model is described and analysed in a series of three articles:
-  Model of 2,3-bisphosphoglycerate metabolism in the human erythrocyte based on detailed
-  enzyme kinetic equations: in vivo kinetic cha'
+description: "This model is described and analysed in a series of three articles: Model of 2,3-bisphosphoglycerate metabolism in the human erythrocyte based on detailed enzyme kinetic equations: in vivo kinetic cha. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

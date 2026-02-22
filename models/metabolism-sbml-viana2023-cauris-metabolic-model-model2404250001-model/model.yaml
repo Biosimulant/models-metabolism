@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Viana2023CaurisMetabolicModelModel2404250001Model'
-description: The metabolic model described here refers to the yeast Candida auris
-  with the taxonomic ID 498019. Network reconstruction was performed using merlin
-  4.05 (Dias et al. 2015) and subsequent curation and
+description: "The metabolic model described here refers to the yeast Candida auris with the taxonomic ID 498019. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

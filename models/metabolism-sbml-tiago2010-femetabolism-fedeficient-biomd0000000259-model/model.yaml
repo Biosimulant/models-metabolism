@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Tiago2010FemetabolismFedeficientBiomd0000000259Model'
-description: 'This a model from the article: Systems analysis of iron metabolism:
-  the network of iron pools and fluxes Tiago JS Lopes, Tatyana Luganskaja, Maja Vujic-Spasic,
-  Matthias W Hentze, Martina U Muckenthale'
+description: "This a model from the article: Systems analysis of iron metabolism: the network of iron pools and fluxes Tiago JS Lopes, Tatyana Luganskaja, Maja Vujic-Spasic, Matthias W Hentze, Martina U Muckenthale. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

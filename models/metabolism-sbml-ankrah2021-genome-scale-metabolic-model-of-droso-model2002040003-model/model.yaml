@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Ankrah2021GenomeScaleMetabolicModelOfDrosoModel2002040003Model'
-description: An important goal for many nutrition-based microbiome studies is to identify
-  the metabolic function of microbes in complex microbial communities and its impact
-  on host physiology. This research can be
+description: "An important goal for many nutrition-based microbiome studies is to identify the metabolic function of microbes in complex microbial communities and its impact on host physiology. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

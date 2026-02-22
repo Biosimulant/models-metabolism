@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Thiele2013CervixUterineGlandularCellsModel1310110026Model'
-description: Thiele2013 - Cervix uterine glandular cells The model of cervix uterine
-  glandular cells metabolism is derived from the community-driven global reconstruction
-  of human metabolism (version 2.02, MODEL11
+description: "Thiele2013 - Cervix uterine glandular cells The model of cervix uterine glandular cells metabolism is derived from the community-driven global reconstruction of human metabolism (version 2.02, MODEL11. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

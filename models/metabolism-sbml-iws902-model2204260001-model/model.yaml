@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Iws902Model2204260001Model'
-description: "Saccharomyces cerevisiae Genome\u2010Scale Metabolic Model for Predicting\
-  \ Production of Sensory Impact Molecules under Enological Conditions"
+description: "Saccharomyces cerevisiae Genome\u2010Scale Metabolic Model for Predicting Production of Sensory Impact Molecules under Enological Conditions. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

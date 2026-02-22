@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Smallbone2013MetabolicControlAnalysisExampleBiomd0000000454Model'
-description: Smallbone2013 - Metabolic Control Analysis - Example 1 Metabolic control
-  analysis (MCA) is a biochemical formalism, defining how variables, such as fluxes
-  and concentrations, depend on network paramet
+description: "Smallbone2013 - Metabolic Control Analysis - Example 1 Metabolic control analysis (MCA) is a biochemical formalism, defining how variables, such as fluxes and concentrations, depend on network paramet. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

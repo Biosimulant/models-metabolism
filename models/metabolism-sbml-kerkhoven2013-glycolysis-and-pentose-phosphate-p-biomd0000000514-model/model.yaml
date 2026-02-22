@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Kerkhoven2013GlycolysisAndPentosePhosphatePBiomd0000000514Model'
-description: 'Kerkhoven2013 - Glycolysis and Pentose Phosphate Pathway in T.brucei
-  - MODEL B There are six models (Model A, B, C, C-fruc, D, D-fruc) described in the
-  paper. Model A ( BIOMD0000000513 ) is the model '
+description: "Kerkhoven2013 - Glycolysis and Pentose Phosphate Pathway in T.brucei - MODEL B There are six models (Model A, B, C, C-fruc, D, D-fruc) described in the paper. Model A ( BIOMD0000000513 ) is the model."
 standard: other
 tags:
 - metabolism

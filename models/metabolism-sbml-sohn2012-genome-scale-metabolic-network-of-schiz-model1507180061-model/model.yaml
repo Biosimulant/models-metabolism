@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Sohn2012GenomeScaleMetabolicNetworkOfSchizModel1507180061Model'
-description: 'Sohn2012 - Genome-scale metabolic network ofSchizosaccharomyces pombe
-  (SpoMBEL1693) This model is described in the article: Genome-scale metabolic model
-  of the fission yeast Schizosaccharomyces pombe '
+description: "Sohn2012 - Genome-scale metabolic network ofSchizosaccharomyces pombe (SpoMBEL1693) This model is described in the article: Genome-scale metabolic model of the fission yeast Schizosaccharomyces pombe. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

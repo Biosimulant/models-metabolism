@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Becker2005GenomeScaleMetabolicNetworkOfStaModel1507180070Model'
-description: 'Becker2005 - Genome-scale metabolic networkof Staphylococcus aureus
-  (iSB619) This model is described in the article: Genome-scale reconstruction of
-  the metabolic network in Staphylococcus aureus N315:'
+description: "Becker2005 - Genome-scale metabolic networkof Staphylococcus aureus (iSB619) This model is described in the article: Genome-scale reconstruction of the metabolic network in Staphylococcus aureus N315:. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

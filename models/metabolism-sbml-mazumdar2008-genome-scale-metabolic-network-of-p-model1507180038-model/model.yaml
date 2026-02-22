@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Mazumdar2008GenomeScaleMetabolicNetworkOfPModel1507180038Model'
-description: 'Mazumdar2008 - Genome-scale metabolic networkof Porphyromonas gingivalis
-  (iVM679) This model is described in the article: Metabolic network model of a human
-  oral pathogen. Mazumdar V, Snitkin ES, Amar'
+description: "Mazumdar2008 - Genome-scale metabolic networkof Porphyromonas gingivalis (iVM679) This model is described in the article: Metabolic network model of a human oral pathogen. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Beste2007GenomeScaleMetabolicNetworkOfMycoModel1507180021Model'
-description: 'Beste2007 - Genome-scale metabolic network ofMycobacterium tuberculosis
-  (GSMN_TB) This model is described in the article: GSMN-TB: a web-based genome-scale
-  network model of Mycobacterium tuberculosis '
+description: "Beste2007 - Genome-scale metabolic network ofMycobacterium tuberculosis (GSMN_TB) This model is described in the article: GSMN-TB: a web-based genome-scale network model of Mycobacterium tuberculosis. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

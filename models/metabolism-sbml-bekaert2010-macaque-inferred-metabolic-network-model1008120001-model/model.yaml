@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Bekaert2010MacaqueInferredMetabolicNetworkModel1008120001Model'
-description: 'Orthologous iso-enzyme metabolic network for Macaca mulatta Copy number
-  alterations in the mammalian metabolic network co-occur in clusters Michael Bekaert
-  and Gavin C. Conant in preparation Clusters '
+description: "Orthologous iso-enzyme metabolic network for Macaca mulatta Copy number alterations in the mammalian metabolic network co-occur in clusters Michael Bekaert and Gavin C. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

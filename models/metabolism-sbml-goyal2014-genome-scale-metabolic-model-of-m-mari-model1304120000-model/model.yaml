@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Goyal2014GenomeScaleMetabolicModelOfMMariModel1304120000Model'
-description: Constraint-based genome-scale Metabolic Model of Methanococcus maripaludis
-  S2
+description: "Constraint-based genome-scale Metabolic Model of Methanococcus maripaludis S2. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

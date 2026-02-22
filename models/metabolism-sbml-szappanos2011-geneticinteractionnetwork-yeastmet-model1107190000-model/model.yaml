@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Szappanos2011GeneticinteractionnetworkYeastmetModel1107190000Model'
-description: "This model is from the article: An integrated approach to characterize\
-  \ genetic interaction networks in yeast metabolism Bal\xE1zs Szappanos, K\xE1roly\
-  \ Kov\xE1cs, B\xE9la Szamecz, Frantisek Honti, Michael Costanzo"
+description: "This model is from the article: An integrated approach to characterize genetic interaction networks in yeast metabolism Bal\u00e1zs Szappanos, K\u00e1roly Kov\u00e1cs, B\u00e9la Szamecz, Frantisek Honti, Michael Costanzo. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

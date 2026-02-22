@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Haiman2025RbcGemV120ProteomeConstrainedModel2501130001Model'
-description: 'Initial submission of the proteome-constrained RBC-GEM genome-scale
-  metabolic model, version 1.2.0. Constraints were formulated using a modified version
-  of the OVERLAY computational pipeline (PMID: 36'
+description: "Initial submission of the proteome-constrained RBC-GEM genome-scale metabolic model, version 1.2.0. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

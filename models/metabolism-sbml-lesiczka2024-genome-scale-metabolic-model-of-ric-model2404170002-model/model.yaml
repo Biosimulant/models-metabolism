@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Lesiczka2024GenomeScaleMetabolicModelOfRicModel2404170002Model'
-description: Genome-scale metabolic model of Rickettsia helvetica generated with the
-  CarveMe reconstruction tool with accompanying MEMOTE and FROG analysis reports.
+description: "Genome-scale metabolic model of Rickettsia helvetica generated with the CarveMe reconstruction tool with accompanying MEMOTE and FROG analysis reports. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

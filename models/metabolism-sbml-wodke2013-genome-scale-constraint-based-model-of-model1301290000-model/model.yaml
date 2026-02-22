@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Wodke2013GenomeScaleConstraintBasedModelOfModel1301290000Model'
-description: Wodke2013 - Genome-scale constraint-based model of M.pneumoniae energy
-  metabolism (iJW145) A new genome-scale metabolic reconstruction of M.pneumoniae
-  is used in combination with external metabolite m
+description: "Wodke2013 - Genome-scale constraint-based model of M.pneumoniae energy metabolism (iJW145) A new genome-scale metabolic reconstruction of M.pneumoniae is used in combination with external metabolite m. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

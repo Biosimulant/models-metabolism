@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Zakhartsev2022ConstraintBasedModelOfMetabolModel2207070001Model'
-description: SALARECON links the Atlantic salmon genome to metabolic fluxes and growth,
-  focusing on energy, amino acid, and nucleotide metabolism.
+description: "SALARECON links the Atlantic salmon genome to metabolic fluxes and growth, focusing on energy, amino acid, and nucleotide metabolism. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

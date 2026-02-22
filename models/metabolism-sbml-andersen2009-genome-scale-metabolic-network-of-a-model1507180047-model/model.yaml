@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Andersen2009GenomeScaleMetabolicNetworkOfAModel1507180047Model'
-description: 'Andersen2009 - Genome-scale metabolic networkof Aspergillus niger (iMA871)
-  This model is described in the article: Metabolic model integration of the bibliome,
-  genome, metabolome and reactome of Asper'
+description: "Andersen2009 - Genome-scale metabolic networkof Aspergillus niger (iMA871) This model is described in the article: Metabolic model integration of the bibliome, genome, metabolome and reactome of Asper. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Yang2007ArachidonicacidBiomd0000000106Model'
-description: This model is according to the paper Dynamic Simulation on the Arachidonic
-  Acid Metabolic Network . Figure 2A has been reproduced by SBML ode solver on line.
-  In the original model, all the reactions a
+description: "This model is according to the paper Dynamic Simulation on the Arachidonic Acid Metabolic Network . Figure 2A has been reproduced by SBML ode solver on line."
 standard: other
 tags:
 - metabolism

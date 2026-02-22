@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Poolman2009MetabArabidopsisReducedModel3618487388Model'
-description: 'This is the reduced model of the Arabidopsis metabolic network described
-  in the article: A Genome-scale Metabolic Model of Arabidopsis thaliana and Some
-  of its Properties. Poolman MG, Miguet L, Sweetl'
+description: "This is the reduced model of the Arabidopsis metabolic network described in the article: A Genome-scale Metabolic Model of Arabidopsis thaliana and Some of its Properties. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Central Carbon (COMBO_0015)'
-description: Metabolism central carbon comparative space with 2 models, configured
-  as non-causal co-simulation.
+description: "Metabolism Central Carbon (COMBO_0015) assembles bekaert2010_maca_1, bekaert2010_mous_2, state_compare_mon as a comparative composed simulation to examine how central carbon mechanisms compare across these models. When you run it, you can compare synchronized outputs through the declared wiring paths and monitor views."
 models:
 - repo: Biosimulant/models-metabolism
   alias: bekaert2010_maca_1

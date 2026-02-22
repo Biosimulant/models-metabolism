@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Hurbain2022OxidativeStressResponseModelModel2204220001Model'
-description: Metabolic network describing oxidative stress response by a mathematical
-  model with a data-driven parameter estimation (from Kuehne2015).
+description: "Metabolic network describing oxidative stress response by a mathematical model with a data-driven parameter estimation (from Kuehne2015). It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

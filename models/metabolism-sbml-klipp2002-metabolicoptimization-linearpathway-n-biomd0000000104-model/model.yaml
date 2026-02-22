@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Klipp2002MetabolicoptimizationLinearpathwayNBiomd0000000104Model'
-description: Klipp2002_MetabolicOptimization_linearPathway(n=2) The model describes
-  time dependent gene expression as a means to enable cells to adapt metabolic activity
-  optimally based on environmental conditions
+description: "Klipp2002_MetabolicOptimization_linearPathway(n=2) The model describes time dependent gene expression as a means to enable cells to adapt metabolic activity optimally based on environmental conditions. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

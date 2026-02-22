@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Lu2021GenomeScaleMetabolicModelsForYeastSModel2109130011Model'
-description: This is genome-scale metabolic model of Tortispora caseinolytica as the
-  representative species for the clade Trigonopsidaceae. This model was generated
-  through homology search using a fungal pan-GEM l
+description: "This is genome-scale metabolic model of Tortispora caseinolytica as the representative species for the clade Trigonopsidaceae. This model was generated through homology search using a fungal pan-GEM l."
 standard: other
 tags:
 - metabolism

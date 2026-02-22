@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Vanbeek2007OxphosHeartmusclecellsModel1006230027Model'
-description: 'This a model from the article: Adenine nucleotide-creatine-phosphate
-  module in myocardial metabolic systemexplains fast phase of dynamic regulation of
-  oxidative phosphorylation. van Beek JH. Am J Phys'
+description: "This a model from the article: Adenine nucleotide-creatine-phosphate module in myocardial metabolic systemexplains fast phase of dynamic regulation of oxidative phosphorylation. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

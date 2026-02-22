@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Suthers2020GenomeScaleMetabolicReconstructioModel2204190004Model'
-description: 'Published 2020 version of the first genome-scale metabolic model for
-  Issatchenkia orientalis SD108. Abstract : Many platform chemicals can be produced
-  from renewable biomass by microorganisms, with or'
+description: "Published 2020 version of the first genome-scale metabolic model for Issatchenkia orientalis SD108. Abstract : Many platform chemicals can be produced from renewable biomass by microorganisms, with or."
 standard: other
 tags:
 - metabolism

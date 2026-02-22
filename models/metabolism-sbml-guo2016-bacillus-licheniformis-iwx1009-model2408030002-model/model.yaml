@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Guo2016BacillusLicheniformisIwx1009Model2408030002Model'
-description: 'FROG and miniFROG reports are given for the genome-scale metabolic network
-  of Bacillus licheniformis WX-02. The model iWX1009 contains 1009 genes, 1141 metabolites
-  and 1762 reactions and is the study '
+description: "FROG and miniFROG reports are given for the genome-scale metabolic network of Bacillus licheniformis WX-02. The model iWX1009 contains 1009 genes, 1141 metabolites and 1762 reactions and is the study."
 standard: other
 tags:
 - metabolism

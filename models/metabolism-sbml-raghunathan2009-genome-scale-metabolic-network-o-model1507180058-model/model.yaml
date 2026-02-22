@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Raghunathan2009GenomeScaleMetabolicNetworkOModel1507180058Model'
-description: 'Raghunathan2009 - Genome-scale metabolicnetwork of Salmonella typhimurium
-  (iRR1083) This model is described in the article: Constraint-based analysis of metabolic
-  capacity of Salmonella typhimurium du'
+description: "Raghunathan2009 - Genome-scale metabolicnetwork of Salmonella typhimurium (iRR1083) This model is described in the article: Constraint-based analysis of metabolic capacity of Salmonella typhimurium du. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

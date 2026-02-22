@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Haiman2020FullKinaseRegulatoryModelOfErythModel2012150001Model'
-description: Dynamic model utilizing mass action kinetics to elucidate network-level
-  effects of allosteric regulation in erythrocyte metabolism. The full kinase regulatory
-  model includes the glycolytic pathway, th
+description: "Dynamic model utilizing mass action kinetics to elucidate network-level effects of allosteric regulation in erythrocyte metabolism. The full kinase regulatory model includes the glycolytic pathway, th."
 standard: other
 tags:
 - metabolism

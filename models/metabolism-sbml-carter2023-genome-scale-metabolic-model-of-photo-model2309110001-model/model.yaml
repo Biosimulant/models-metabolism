@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Carter2023GenomeScaleMetabolicModelOfPhotoModel2309110001Model'
-description: 'Photorhabdus asymbiotica is an emerging human pathogen shown to display
-  a dramatic metabolic shift when growing at a temperature associated with mammalian
-  body temperature compared to the temperature '
+description: "Photorhabdus asymbiotica is an emerging human pathogen shown to display a dramatic metabolic shift when growing at a temperature associated with mammalian body temperature compared to the temperature. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Nogales2020GenomeScaleMetabolicNetworkOfPsBiomd0000001093Model'
-description: iJN1462 (i) incorporates several hundred additional genes and associated
-  reactions resulting in new predictive capabilities, including new nutrients supporting
-  growth; (ii) was validated by in vivo gr
+description: "iJN1462 (i) incorporates several hundred additional genes and associated reactions resulting in new predictive capabilities, including new nutrients supporting growth; (ii) was validated by in vivo gr. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

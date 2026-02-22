@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Kumelj2019StreptomycesCoelicolorIks1317Biomd0000001087Model'
-description: FROG and miniFROG reports compiled for iKS1317, a reconstructed genome-scale
-  metabolic model (GEM) for Streptomyces coelicolor. The model reconstruction is available
-  in the Supporting Information of K
+description: "FROG and miniFROG reports compiled for iKS1317, a reconstructed genome-scale metabolic model (GEM) for Streptomyces coelicolor. The model reconstruction is available in the Supporting Information of K."
 standard: other
 tags:
 - metabolism

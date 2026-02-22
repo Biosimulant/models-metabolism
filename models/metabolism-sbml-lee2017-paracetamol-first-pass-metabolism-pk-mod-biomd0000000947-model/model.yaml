@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Lee2017ParacetamolFirstPassMetabolismPkModBiomd0000000947Model'
-description: Authors developed a microfluidic gut-liver co-culture chip that aims
-  to reproduce the first-pass metabolism of oral drugs. The study suggests the possibility
-  of reproducing the human PK profile on a c
+description: "Authors developed a microfluidic gut-liver co-culture chip that aims to reproduce the first-pass metabolism of oral drugs. The study suggests the possibility of reproducing the human PK profile on a c."
 standard: other
 tags:
 - metabolism

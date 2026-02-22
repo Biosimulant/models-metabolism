@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Millard2016EColiCentralCarbonAndEnergyMetModel1505110000Model'
-description: 'Millard2016 - E. coli central carbon andenergy metabolism This model
-  is described in the article: Metabolic regulation is sufficient for global and robust
-  coordination of glucose uptake, catabolism, e'
+description: "Millard2016 - E. coli central carbon andenergy metabolism This model is described in the article: Metabolic regulation is sufficient for global and robust coordination of glucose uptake, catabolism, e."
 standard: other
 tags:
 - metabolism

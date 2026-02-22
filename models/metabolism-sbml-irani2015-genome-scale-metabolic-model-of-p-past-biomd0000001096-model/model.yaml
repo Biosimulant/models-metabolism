@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Irani2015GenomeScaleMetabolicModelOfPPastBiomd0000001096Model'
-description: 'Irani2015 - Genome-scale metabolic model ofP.pastoris N-glycosylation
-  This model is described in the article: Genome-scale metabolic model of Pichia pastoris
-  with native and humanized glycosylation of'
+description: "Irani2015 - Genome-scale metabolic model ofP.pastoris N-glycosylation This model is described in the article: Genome-scale metabolic model of Pichia pastoris with native and humanized glycosylation of. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

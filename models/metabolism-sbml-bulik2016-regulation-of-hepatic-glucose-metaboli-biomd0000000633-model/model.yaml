@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Bulik2016RegulationOfHepaticGlucoseMetaboliBiomd0000000633Model'
-description: 'Bulik2016 - Regulation of hepatic glucosemetabolism This model is described
-  in the article: The relative importance of kinetic mechanisms and variable enzyme
-  abundances for the regulation of hepatic g'
+description: "Bulik2016 - Regulation of hepatic glucosemetabolism This model is described in the article: The relative importance of kinetic mechanisms and variable enzyme abundances for the regulation of hepatic g. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

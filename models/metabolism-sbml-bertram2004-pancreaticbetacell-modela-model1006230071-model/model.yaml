@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Bertram2004PancreaticbetacellModelaModel1006230071Model'
-description: 'This a model from the article: Calcium and glycolysis mediate multiple
-  bursting modes in pancreatic islets. Bertram R, Satin L, Zhang M, Smolen P, Sherman
-  A. Biophys J 2004 Nov;87(5):3074-87 15347584 '
+description: "This a model from the article: Calcium and glycolysis mediate multiple bursting modes in pancreatic islets. Bertram R, Satin L, Zhang M, Smolen P, Sherman A."
 standard: other
 tags:
 - metabolism

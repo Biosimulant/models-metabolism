@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Pastick2009GenomeScaleMetabolicNetworkOfStModel1507180063Model'
-description: 'Pastick2009 - Genome-scale metabolic networkof Streptococcus thermophilus
-  (iMP429) This model is described in the article: Genome-scale model of Streptococcus
-  thermophilus LMG18311 for metabolic compa'
+description: "Pastick2009 - Genome-scale metabolic networkof Streptococcus thermophilus (iMP429) This model is described in the article: Genome-scale model of Streptococcus thermophilus LMG18311 for metabolic compa. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

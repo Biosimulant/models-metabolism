@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Aubert2002CouplingBetweenBrainElectricalActBiomd0000000570Model'
-description: 'Aubert2002 - Coupling between Brainelectrical activity, Metabolism and
-  Hemodynamics Felix Winter encoded this model in SBMLas part of his work at ASD GmbH
-  This model is described in the article: A mod'
+description: "Aubert2002 - Coupling between Brainelectrical activity, Metabolism and Hemodynamics Felix Winter encoded this model in SBMLas part of his work at ASD GmbH This model is described in the article: A mod. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

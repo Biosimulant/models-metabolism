@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Kerkhoven2013GlycolysisInTBruceiModelABiomd0000000513Model'
-description: 'Kerkhoven2013 - Glycolysis in T.brucei - MODEL A There are six models
-  (Model A, B, C, C-fruc, D, D-fruc) described in the paper. Model A ( BIOMD0000000513
-  ) is the model developed originally by Achar '
+description: "Kerkhoven2013 - Glycolysis in T.brucei - MODEL A There are six models (Model A, B, C, C-fruc, D, D-fruc) described in the paper. Model A ( BIOMD0000000513 ) is the model developed originally by Achar."
 standard: other
 tags:
 - metabolism

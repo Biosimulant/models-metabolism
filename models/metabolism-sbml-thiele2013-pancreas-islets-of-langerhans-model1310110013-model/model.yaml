@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Thiele2013PancreasIsletsOfLangerhansModel1310110013Model'
-description: Thiele2013 - Pancreas islets of Langerhans The model of pancreas islets
-  of Langerhans metabolism is derived from the community-driven global reconstruction
-  of human metabolism (version 2.02, MODEL1109
+description: "Thiele2013 - Pancreas islets of Langerhans The model of pancreas islets of Langerhans metabolism is derived from the community-driven global reconstruction of human metabolism (version 2.02, MODEL1109. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

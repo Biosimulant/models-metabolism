@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Casini2022GenomeScaleMetabolicModelImtd22icModel2211290001Model'
-description: (iMTD22IC)This model is described in these articles:Casini, I., McCubbin,
-  T., Esquivel-Elizondo, S., Luque, G.G., Evseeva, D., Fink, C., Beblawy, S., Youngblut,
-  N.D., Aristilde, L., Huson, D., Drager,
+description: "(iMTD22IC)This model is described in these articles:Casini, I., McCubbin, T., Esquivel-Elizondo, S., Luque, G.G., Evseeva, D., Fink, C., Beblawy, S., Youngblut, N.D., Aristilde, L., Huson, D., Drager,. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

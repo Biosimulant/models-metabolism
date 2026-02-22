@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Larbat20161ModelingTheDiversionOfPrimaryCBiomd0000000857Model'
-description: This is a global mathematical model describing metabolic partitioning
-  of carbon resources in plants between growth and defense, as a function of nitrate
-  fertilization. The model hinges on the dynamics
+description: "This is a global mathematical model describing metabolic partitioning of carbon resources in plants between growth and defense, as a function of nitrate fertilization. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

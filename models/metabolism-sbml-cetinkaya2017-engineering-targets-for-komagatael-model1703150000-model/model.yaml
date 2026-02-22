@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Cetinkaya2017EngineeringTargetsForKomagataelModel1703150000Model'
-description: 'Cetinkaya2017 - Engineering targets forKomagataella phaffii This model
-  is described in the article: Metabolic modelling to identify engineering targets
-  for Komagataella phaffii: The effect of biomass '
+description: "Cetinkaya2017 - Engineering targets forKomagataella phaffii This model is described in the article: Metabolic modelling to identify engineering targets for Komagataella phaffii: The effect of biomass. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Thiele2013UterusPreMenopauseGlandularCellsModel1310110006Model'
-description: Thiele2013 - Uterus pre menopause glandular cells The model of uterus
-  pre menopause glandular cells metabolism is derived from the community-driven global
-  reconstruction of human metabolism (version 2
+description: "Thiele2013 - Uterus pre menopause glandular cells The model of uterus pre menopause glandular cells metabolism is derived from the community-driven global reconstruction of human metabolism (version 2. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

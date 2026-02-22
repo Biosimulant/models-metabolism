@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Babaev2024Cyp2c9VariantsModel2412180002Model'
-description: Modified model of losartan metabolism (Karatza and Karalis, 2020) incorporating
-  different allelic variants of CYP2C9
+description: "Modified model of losartan metabolism (Karatza and Karalis, 2020) incorporating different allelic variants of CYP2C9. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

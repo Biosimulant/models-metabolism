@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Lipid Metabolism (COMBO_0070)'
-description: Metabolism lipid metabolism comparative space with 4 models, configured
-  as non-causal co-simulation.
+description: "Metabolism Lipid Metabolism (COMBO_0070) brings together gupta2009_eicosa_1, mcauley2012_whol_2, morgan2016_dynam_3 in a comparative space to examine how lipid metabolism mechanisms compare across these models. When you run it, you can compare participant trajectories through shared runtime settings and routed output streams."
 models:
 - repo: Biosimulant/models-metabolism
   alias: gupta2009_eicosa_1

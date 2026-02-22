@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Kurpad2023VitaminB12MetabolismInHumansStuModel2503310002Model'
-description: Faithful wrapper of upstream SBML model.
+description: "Metabolism Kurpad2023Vitamin B12Metabolism In Humans Stu Model2503310002Model captures core biological behavior in the context of metabolism, sbml, biomodels_ebi using a biomodels_ebi-sourced OTHER model. When you run it, you can observe state and evaluate how the modeled system changes across runs."
 standard: other
 tags:
 - metabolism

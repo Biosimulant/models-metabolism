@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Lai2007O2TransportMetabolismBiomd0000000248Model'
-description: 'This file describes the SBML version of the mathematical model in the
-  following journal article: Linking Pulmonary Oxygen Uptake, Muscle Oxygen Utilization
-  and Cellular Metabolism during Exercise, Ann'
+description: "This file describes the SBML version of the mathematical model in the following journal article: Linking Pulmonary Oxygen Uptake, Muscle Oxygen Utilization and Cellular Metabolism during Exercise, Ann. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

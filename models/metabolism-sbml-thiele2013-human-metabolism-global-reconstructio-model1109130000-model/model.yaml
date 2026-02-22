@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Thiele2013HumanMetabolismGlobalReconstructioModel1109130000Model'
-description: 'Thiele2013 - Human metabolism global reconstruction (Recon 2) Community-driven
-  global reconstruction of human metabolism (version 2.02). This model is described
-  in the article: A community-driven glob'
+description: "Thiele2013 - Human metabolism global reconstruction (Recon 2) Community-driven global reconstruction of human metabolism (version 2.02). This model is described in the article: A community-driven glob."
 standard: other
 tags:
 - metabolism

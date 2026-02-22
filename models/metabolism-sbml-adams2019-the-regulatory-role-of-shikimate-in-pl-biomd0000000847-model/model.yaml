@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Adams2019TheRegulatoryRoleOfShikimateInPlBiomd0000000847Model'
-description: This is a mathematical model of phenylalanine metabolism in plants as
-  influenced by shikimate, with specific evidence of how shikimate dynamics influence
-  phenylalanine metabolism as a function of phen
+description: "This is a mathematical model of phenylalanine metabolism in plants as influenced by shikimate, with specific evidence of how shikimate dynamics influence phenylalanine metabolism as a function of phen. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

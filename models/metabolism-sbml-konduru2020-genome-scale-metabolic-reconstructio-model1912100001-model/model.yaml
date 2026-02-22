@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Konduru2020GenomeScaleMetabolicReconstructioModel1912100001Model'
-description: Genome-scale metabolic reconstruction and in silico analysis of rice
-  leaf blight pathogen, Xanthomonas oryzae
+description: "Genome-scale metabolic reconstruction and in silico analysis of rice leaf blight pathogen, Xanthomonas oryzae. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

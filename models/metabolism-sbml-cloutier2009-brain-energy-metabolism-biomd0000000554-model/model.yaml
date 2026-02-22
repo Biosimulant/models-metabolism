@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Cloutier2009BrainEnergyMetabolismBiomd0000000554Model'
-description: Cloutier2009 - Brain Energy Metabolism This model was taken from the
-  CellMLrepository andautomatically converted to SBML. Following thesubmission the
-  parameters are manually encoded and annotated assp
+description: "Cloutier2009 - Brain Energy Metabolism This model was taken from the CellMLrepository andautomatically converted to SBML. Following thesubmission the parameters are manually encoded and annotated assp."
 standard: other
 tags:
 - metabolism

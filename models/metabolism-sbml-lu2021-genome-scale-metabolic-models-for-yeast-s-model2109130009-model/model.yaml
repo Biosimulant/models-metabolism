@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Lu2021GenomeScaleMetabolicModelsForYeastSModel2109130009Model'
-description: This is genome-scale metabolic model of Komagataella pastoris as the
-  representative yeast species for the clade Pichiaceae. This model was generated
-  through homology search using a fungal pan-GEM larg
+description: "This is genome-scale metabolic model of Komagataella pastoris as the representative yeast species for the clade Pichiaceae. This model was generated through homology search using a fungal pan-GEM larg."
 standard: other
 tags:
 - metabolism

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Selvarasu2009GenomeScaleMetabolicNetworkOfModel1507180042Model'
-description: 'Selvarasu2009 - Genome-scale metabolicnetwork of Mus Musculus (iSS724)
-  This model is described in the article: Genome-scale modeling and in silico analysis
-  of mouse cell metabolic network. Selvarasu S'
+description: "Selvarasu2009 - Genome-scale metabolicnetwork of Mus Musculus (iSS724) This model is described in the article: Genome-scale modeling and in silico analysis of mouse cell metabolic network. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

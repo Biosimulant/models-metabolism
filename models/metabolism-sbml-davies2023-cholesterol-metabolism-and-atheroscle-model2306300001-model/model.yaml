@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Davies2023CholesterolMetabolismAndAtheroscleModel2306300001Model'
-description: Merged model of whole body cholesterol metabolism (BIOMD0000000434) and
-  atherosclerosis (MODEL1002160000).
+description: "Merged model of whole body cholesterol metabolism (BIOMD0000000434) and atherosclerosis (MODEL1002160000). It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

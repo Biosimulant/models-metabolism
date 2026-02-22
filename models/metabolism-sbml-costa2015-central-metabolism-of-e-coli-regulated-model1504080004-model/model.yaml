@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Costa2015CentralMetabolismOfEColiRegulatedModel1504080004Model'
-description: Faithful wrapper of upstream SBML model.
+description: "Metabolism Costa2015Central Metabolism Of EColi Regulated Model1504080004Model represents core biological mechanisms from biomodels_ebi reference biomodels_ebi:MODEL1504080004. When you run it, you can inspect state and compare temporal behavior between baseline and adjusted inputs."
 standard: other
 tags:
 - metabolism

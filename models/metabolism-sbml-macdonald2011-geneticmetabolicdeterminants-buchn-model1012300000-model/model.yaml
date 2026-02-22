@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Macdonald2011GeneticmetabolicdeterminantsBuchnModel1012300000Model'
-description: 'This model is from the article: Genetic and metabolic determinants of
-  nutritional phenotype in an insect-bacterial symbiosis. MacDonald SJ, Thomas GH,
-  Douglas AE. Mol Ecol. 2011 May;20(10):2073-84. 21'
+description: "This model is from the article: Genetic and metabolic determinants of nutritional phenotype in an insect-bacterial symbiosis. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

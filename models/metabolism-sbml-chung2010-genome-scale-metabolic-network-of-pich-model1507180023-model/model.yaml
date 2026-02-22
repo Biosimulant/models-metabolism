@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Chung2010GenomeScaleMetabolicNetworkOfPichModel1507180023Model'
-description: 'Chung2010 - Genome-scale metabolic network ofPichia pastoris (iPP668)
-  This model is described in the article: Genome-scale metabolic reconstruction and
-  in silico analysis of methylotrophic yeast Pichi'
+description: "Chung2010 - Genome-scale metabolic network ofPichia pastoris (iPP668) This model is described in the article: Genome-scale metabolic reconstruction and in silico analysis of methylotrophic yeast Pichi. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

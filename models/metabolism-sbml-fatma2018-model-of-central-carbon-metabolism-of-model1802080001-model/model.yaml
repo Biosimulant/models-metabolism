@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Fatma2018ModelOfCentralCarbonMetabolismOfModel1802080001Model'
-description: Model of cetnral carbon metabolism of E. coli with additional reactions
-  to investigate potential routes of alkane synthesis
+description: "Model of cetnral carbon metabolism of E. coli with additional reactions to investigate potential routes of alkane synthesis."
 standard: other
 tags:
 - metabolism

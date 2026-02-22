@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Pritchard2002GlycolysisBiomd0000000172Model'
-description: 'from: Schemes of fluc control in a model of Saccharomyces cerevisiae
-  glycolysis Pritchard, L and Kell, DB Eur. J. Biochem. 269(2002), 3894-3904. It represents
-  a modified version of Teusink et al. Eur.'
+description: "from: Schemes of fluc control in a model of Saccharomyces cerevisiae glycolysis Pritchard, L and Kell, DB Eur. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

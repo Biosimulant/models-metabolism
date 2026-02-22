@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Green1994WholeBodyVitaminAMetabolismInHumModel2403010001Model'
-description: Faithful wrapper of upstream SBML model.
+description: "Metabolism Green1994Whole Body Vitamin AMetabolism In Hum Model2403010001Model represents core biological mechanisms from biomodels_ebi reference biomodels_ebi:MODEL2403010001. When you run it, you can inspect state and compare temporal behavior between baseline and adjusted inputs."
 standard: other
 tags:
 - metabolism

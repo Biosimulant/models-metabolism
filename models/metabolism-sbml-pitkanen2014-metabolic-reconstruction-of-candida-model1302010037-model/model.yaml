@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Pitkanen2014MetabolicReconstructionOfCandidaModel1302010037Model'
-description: Pitkanen2014 - Metabolic reconstruction of Candida lusitaniae using CoReCo
-  This model was reconstructed with the CoReCo method (Comparative ReConstruction
-  of genome-scale metabolic networks) from prot
+description: "Pitkanen2014 - Metabolic reconstruction of Candida lusitaniae using CoReCo This model was reconstructed with the CoReCo method (Comparative ReConstruction of genome-scale metabolic networks) from prot. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Thiele2013OralMucosaSquamousEpithelialCellsModel1310110027Model'
-description: Thiele2013 - Oral mucosa squamous epithelial cells The model of oral
-  mucosa squamous epithelial cells metabolism is derived from the community-driven
-  global reconstruction of human metabolism (version
+description: "Thiele2013 - Oral mucosa squamous epithelial cells The model of oral mucosa squamous epithelial cells metabolism is derived from the community-driven global reconstruction of human metabolism (version. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

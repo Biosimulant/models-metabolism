@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Teusink2000GlycolysisBiomd0000000064Model'
-description: 'Can yeast glycolysis be understood in terms of in vitro kinetics of
-  the constituent enzymes? Testing biochemistry. Teusink,B et al.: Eur J Biochem 2000
-  Sep;267(17):5313-29. The model reproduces the st'
+description: "Can yeast glycolysis be understood in terms of in vitro kinetics of the constituent enzymes? It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

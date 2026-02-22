@@ -1,7 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Ims7199GenomeScaleMetabolicModelOfVitisViModel2408120001Model'
-description: The first GSSM of V. vinifera was reconstructed and validated, comprising
-  7199 genes, 5399 reactions, and 5141 metabolites across 8 compartments.
+description: "The first GSSM of V. vinifera was reconstructed and validated, comprising 7199 genes, 5399 reactions, and 5141 metabolites across 8 compartments."
 standard: other
 tags:
 - metabolism

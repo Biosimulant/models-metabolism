@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Wolf2000CellularInteractionOnGlycolyticOsciBiomd0000000691Model'
-description: 'Wolf2000 - Cellular interaction on glycolyticoscillations in yeast A
-  two-cell model of glycolysis. This model is described in the article: Effect of
-  cellular interaction on glycolytic oscillations in '
+description: "Wolf2000 - Cellular interaction on glycolyticoscillations in yeast A two-cell model of glycolysis. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Mandakovic2020MicrobacteriumSpeciesMgcr1AndModel2408030004Model'
-description: FROG and miniFROG reports are provided for the study involving genome-scale
-  modelling the Microbacterium species to identify strain-specific features for metabolic
-  adaptation to the Atacama Desert. Th
+description: "FROG and miniFROG reports are provided for the study involving genome-scale modelling the Microbacterium species to identify strain-specific features for metabolic adaptation to the Atacama Desert. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

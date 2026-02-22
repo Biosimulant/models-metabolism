@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Immanuel2024BacillusSubtilisLevanBiosynthesiModel2504110001Model'
-description: we report an updated Bacillus subtilis model, wherein the metabolic pathway
-  for levan biosynthesis is added. The revised genome-scale enzyme-constrained metabolic
-  model (ecGEM) and performed simulatio
+description: "we report an updated Bacillus subtilis model, wherein the metabolic pathway for levan biosynthesis is added. The revised genome-scale enzyme-constrained metabolic model (ecGEM) and performed simulatio."
 standard: other
 tags:
 - metabolism

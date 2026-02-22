@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Dreyfuss2013GenomeScaleMetabolicModelNCrasModel1212060001Model'
-description: 'Dreyfuss2013 - Genome-Scale Metabolic Model - N.crassa iJDZ836 Genome-scale
-  metabolic model of the filamentous fungus Neurospora crassa This model is described
-  in the article: Reconstruction and Valid'
+description: "Dreyfuss2013 - Genome-Scale Metabolic Model - N.crassa iJDZ836 Genome-scale metabolic model of the filamentous fungus Neurospora crassa This model is described in the article: Reconstruction and Valid. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

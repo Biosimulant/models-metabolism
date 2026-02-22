@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Curien2009AspartateMetabolismBiomd0000000212Model'
-description: 'This a model described in the article: Understanding the regulation
-  of aspartate metabolism using a model based on measured kinetic parameters. Curien
-  G, Bastien O, Robert-Genthon M, Cornish-Bowden A,'
+description: "This a model described in the article: Understanding the regulation of aspartate metabolism using a model based on measured kinetic parameters. Curien G, Bastien O, Robert-Genthon M, Cornish-Bowden A,."
 standard: other
 tags:
 - metabolism

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Poolman2004CalvincycleBiomd0000000013Model'
-description: 'This a model from the article: Applications of metabolic modelling to
-  plant metabolism. Poolman MG ,Assmus HE, Fell DA J. Exp. Bot. [2004 May; Volume:
-  55 (Issue: 400 )]: 1177-86 15073223 , Abstract: I'
+description: "This a model from the article: Applications of metabolic modelling to plant metabolism. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

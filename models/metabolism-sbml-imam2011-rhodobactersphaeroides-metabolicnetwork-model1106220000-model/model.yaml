@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Imam2011RhodobactersphaeroidesMetabolicnetworkModel1106220000Model'
-description: 'This model is from the article: iRsp1095: A genome-scale reconstruction
-  of the Rhodobacter sphaeroides metabolic network Imam S, Yilmaz S, Sohmen U, Gorzalski
-  AS, Reed JL, Noguera DR, Donohue TJ. BMC '
+description: "This model is from the article: iRsp1095: A genome-scale reconstruction of the Rhodobacter sphaeroides metabolic network Imam S, Yilmaz S, Sohmen U, Gorzalski AS, Reed JL, Noguera DR, Donohue TJ. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

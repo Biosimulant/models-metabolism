@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Swainston2016ReconstructionOfHumanMetabolicModel1603150001Model'
-description: Faithful wrapper of upstream SBML model.
+description: "Metabolism Swainston2016Reconstruction Of Human Metabolic Model1603150001Model models core biological dynamics as a OTHER simulation curated from biomodels_ebi (biomodels_ebi:MODEL1603150001), focused on metabo. When you run it, you can track state over time and compare response patterns across parameter settings."
 standard: other
 tags:
 - metabolism

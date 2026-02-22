@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Mcdougal2017MetabolismInIschemicCardiomyocytBiomd0000000961Model'
-description: Heart disease remains the leading cause of death globally. Although reperfusion
-  following myocardial ischemia can prevent death by restoring nutrient flow, ischemia/reperfusion
-  injury can cause signif
+description: "Heart disease remains the leading cause of death globally. Although reperfusion following myocardial ischemia can prevent death by restoring nutrient flow, ischemia/reperfusion injury can cause signif."
 standard: other
 tags:
 - metabolism

@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Haiman2020FunctionalEnzymeStatesInTheEColModel2012150003Model'
-description: Dynamic model utilizing mass action kinetics to compute the functional
-  states of the E.coli glycolytic proteome, providing insight into distribution of
-  catalytic activities of enzymes for different me
+description: "Dynamic model utilizing mass action kinetics to compute the functional states of the E.coli glycolytic proteome, providing insight into distribution of catalytic activities of enzymes for different me. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

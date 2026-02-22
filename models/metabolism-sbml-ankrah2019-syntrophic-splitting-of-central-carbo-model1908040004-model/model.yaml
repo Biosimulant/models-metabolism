@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Ankrah2019SyntrophicSplittingOfCentralCarboModel1908040004Model'
-description: Multi-compartment Zinderia-Clastoptera (spittlebug) metabolic model
+description: "Multi-compartment Zinderia-Clastoptera (spittlebug) metabolic model. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

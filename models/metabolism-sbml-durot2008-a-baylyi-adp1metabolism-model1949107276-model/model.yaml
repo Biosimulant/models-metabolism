@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Durot2008ABaylyiAdp1metabolismModel1949107276Model'
-description: 'This is the constraint based model from: Iterative reconstruction of
-  a global metabolic model of Acinetobacter baylyi ADP1 using high-throughput growth
-  phenotype and gene essentiality data. Durot M et'
+description: "This is the constraint based model from: Iterative reconstruction of a global metabolic model of Acinetobacter baylyi ADP1 using high-throughput growth phenotype and gene essentiality data. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

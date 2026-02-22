@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Liu2012GenomeScaleMetabolicNetworkOfScheffModel1507180026Model'
-description: 'Liu2012 - Genome-scale metabolic network of Scheffersomyces stipitis
-  (iTL885) This model is described in the article: A constraint-based model of Scheffersomyces
-  stipitis for improved ethanol producti'
+description: "Liu2012 - Genome-scale metabolic network of Scheffersomyces stipitis (iTL885) This model is described in the article: A constraint-based model of Scheffersomyces stipitis for improved ethanol producti. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

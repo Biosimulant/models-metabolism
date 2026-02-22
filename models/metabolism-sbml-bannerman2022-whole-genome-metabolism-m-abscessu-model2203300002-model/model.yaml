@@ -1,6 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Bannerman2022WholeGenomeMetabolismMAbscessuModel2203300002Model'
-description: This is a whole genome metabolism model of M. abscessus
+description: "This is a whole genome metabolism model of M. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

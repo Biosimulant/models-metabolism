@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Stanford2013KineticModelOfYeastMetabolicNeBiomd0000000496Model'
-description: Stanford2013 - Kinetic model of yeast metabolic network (standard) Large-scale
-  model construction based on a logical layering of data such as reaction fluxes,
-  metabolite concentrations, and kinetic co
+description: "Stanford2013 - Kinetic model of yeast metabolic network (standard) Large-scale model construction based on a logical layering of data such as reaction fluxes, metabolite concentrations, and kinetic co. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism

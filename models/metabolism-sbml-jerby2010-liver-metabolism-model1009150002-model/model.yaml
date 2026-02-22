@@ -1,8 +1,6 @@
 schema_version: '2.0'
 title: 'Metabolism: Jerby2010LiverMetabolismModel1009150002Model'
-description: 'This is the genome-scale metabolic network described in the article:
-  Computational reconstruction of tissue-specific metabolic models: application to
-  human liver metabolism Livnat Jerby, Tomer Shlomi,'
+description: "This is the genome-scale metabolic network described in the article: Computational reconstruction of tissue-specific metabolic models: application to human liver metabolism Livnat Jerby, Tomer Shlomi,. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
 - metabolism
