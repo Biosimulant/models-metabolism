@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Metabolism: Hoefnagel2002PyruvatebranchesBiomd0000000017Model'
+title: "Hoefnagel2002_PyruvateBranches"
 description: "This a model from the article: Metabolic engineering of lactic acid bacteria, the combined approach: kinetic modelling, metabolic control and experimental analysis. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:

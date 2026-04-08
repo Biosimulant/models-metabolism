@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Metabolism: Oliveira2022GsmModelOfTheXylellaFastidiosaModel2205020002Model'
+title: "Oliveira2022 - GSM Model of the Xylella fastidiosa’s_iMS508"
 description: "Genome-scale Metabolic Model for Xylella Fastidiosa subsp. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:

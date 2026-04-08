@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Metabolism: Nogales2012GenomeScaleMetabolicNetworkOfSyModel1507180046Model'
+title: "Nogales2012 - Genome-scale metabolic network of Synechocystis sp. PCC6803 (iJN678)"
 description: "Nogales2012 - Genome-scale metabolic networkof Synechocystis sp. (iJN678) This model is described in the article: Detailing the optimality of photosynthesis in cyanobacteria through systems biology an."
 standard: other
 tags:

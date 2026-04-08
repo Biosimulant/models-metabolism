@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Metabolism: Bannerman2022WholeGenomeMetabolismMycobacterModel2203300001Model'
+title: "Bannerman2022 Whole Genome Metabolism - Mycobacterium leprae (strain Br4923)_1"
 description: "This is a whole genome metabolism model of Mycobacterium leprae. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:

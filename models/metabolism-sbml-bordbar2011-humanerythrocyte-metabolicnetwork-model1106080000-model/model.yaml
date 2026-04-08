@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Metabolism: Bordbar2011HumanerythrocyteMetabolicnetworkModel1106080000Model'
+title: "Bordbar2011_HumanErythrocyte_MetabolicNetwork"
 description: "This model is from the article: iAB-RBC-283: A proteomically derived knowledge-base of erythrocyte metabolism that can be used to simulate its physiological and patho-physiological states. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:

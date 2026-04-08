@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Metabolism: Costa2014ComputationalModelOfLLactisMetaboBiomd0000000572Model'
+title: "Costa2014 - Computational Model of L. lactis Metabolism"
 description: "Costa2014 - Computational Model of L. lactisMetabolism This model is described in the article: An extended dynamic model of Lactococcus lactis metabolism for mannitol and 2,3-butanediol production."
 standard: other
 tags:

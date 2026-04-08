@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Metabolism: StrainEngineeringAndMetabolicFluxAnalysisOModel2209060001Model'
+title: "Strain engineering and metabolic flux analysis of a probiotic yeast Saccharomyces cerevisiae for metabolizing L-fucose, a mammalian mucin component"
 description: "Genome scale metabolic model of Saccharomyces cerevisiae that metabolizes L-fucose. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:

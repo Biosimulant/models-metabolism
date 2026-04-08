@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Metabolism: Burgos2025GenomeScaleMetabolicModelForRumiModel2503030001Model'
+title: "Burgos2025 - Genome-scale metabolic model for Ruminiclostridium cellulolyticum"
 description: "A genome-scale metabolic model for the gram-positive, and polysaccharide degrading bacterium Ruminiclostridium cellulolyticum H10. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:

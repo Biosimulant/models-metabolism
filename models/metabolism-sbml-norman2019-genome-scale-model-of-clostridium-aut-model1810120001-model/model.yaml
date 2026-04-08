@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Metabolism: Norman2019GenomeScaleModelOfClostridiumAutModel1810120001Model'
+title: "Norman2019 - Genome-scale model of Clostridium autoethanogenum"
 description: "REQUIRES SCRUMPY (mudshark.brookes.ac.uk/ScrumPy)To initiate model object, navigate to Model directory and start ScrumPy, then run:>>> m = ScrumPy.Model('MetaCLAU.spy'). It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:

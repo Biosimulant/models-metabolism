@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Metabolism: Mardinoglu2014GenomeScaleMetabolicModelHmrModel1402200002Model'
+title: "Mardinoglu2014 - Genome-scale metabolic model (HMR version 2.0) - generic human cell"
 description: "Metabolism Mardinoglu2014Genome Scale Metabolic Model Hmr Model1402200002Model represents core biological mechanisms from biomodels_ebi reference biomodels_ebi:MODEL1402200002. When you run it, you can inspect state and compare temporal behavior between baseline and adjusted inputs."
 standard: other
 tags:

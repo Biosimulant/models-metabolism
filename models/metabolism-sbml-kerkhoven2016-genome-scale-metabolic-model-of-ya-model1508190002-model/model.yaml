@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Metabolism: Kerkhoven2016GenomeScaleMetabolicModelOfYaModel1508190002Model'
+title: "Kerkhoven2016 - Genome-scale metabolic model of Yarrowia lipolytica"
 description: "Metabolism Kerkhoven2016Genome Scale Metabolic Model Of Ya Model1508190002Model models core biological dynamics as a OTHER simulation curated from biomodels_ebi (biomodels_ebi:MODEL1508190002), focused on metab. When you run it, you can track state over time and compare response patterns across parameter settings."
 standard: other
 tags:

@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Metabolism: Shiratsubaki2020TCruziIis312Model2408050002Model'
+title: "Shiratsubaki2020 - T. cruzi (iIS312)"
 description: "FROG and miniFROG Reports for the organism Trypanosoma cruzi . These models originate from BiGG Models Database: A Database of Genome-Scale Metabolic Models (http://bigg.ucsd.edu/)."
 standard: other
 tags:

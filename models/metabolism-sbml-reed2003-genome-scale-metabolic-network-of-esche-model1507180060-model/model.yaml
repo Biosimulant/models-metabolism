@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Metabolism: Reed2003GenomeScaleMetabolicNetworkOfEscheModel1507180060Model'
+title: "Reed2003 - Genome-scale metabolic network of Escherichia coli (iJR904)"
 description: "Reed2003 - Genome-scale metabolic network ofEscherichia coli (iJR904) This model is described in the article: An expanded genome-scale model of Escherichia coli K-12 (iJR904 GSM/GPR). It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:

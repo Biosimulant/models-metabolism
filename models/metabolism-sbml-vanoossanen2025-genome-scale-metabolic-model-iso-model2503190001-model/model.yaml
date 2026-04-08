@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Metabolism: Vanoossanen2025GenomeScaleMetabolicModelIsoModel2503190001Model'
+title: "vanOossanen2025 - Genome-scale metabolic model iSO1949_N.oceanica for light-dependent modeling of central carbon, lipid, and pigment metabolism"
 description: "Genome-scale metabolic model of the oleaginous microalga Nannochloropsis oceanica. The model is extensively curated on the core, light, lipid, and pigment metabolism."
 standard: other
 tags:

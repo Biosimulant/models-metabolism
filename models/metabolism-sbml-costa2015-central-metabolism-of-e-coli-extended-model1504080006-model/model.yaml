@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Metabolism: Costa2015CentralMetabolismOfEColiExtendedModel1504080006Model'
+title: "Costa2015 - Central metabolism of E. coli, extended regulated linlog model ( with additional allosteric regulations than the Model1)"
 description: "Metabolism Costa2015Central Metabolism Of EColi Extended Model1504080006Model models core biological dynamics as a OTHER simulation curated from biomodels_ebi (biomodels_ebi:MODEL1504080006), focused on metabol. When you run it, you can track state over time and compare response patterns across parameter settings."
 standard: other
 tags:

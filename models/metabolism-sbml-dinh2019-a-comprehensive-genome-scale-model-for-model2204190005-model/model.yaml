@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Metabolism: Dinh2019AComprehensiveGenomeScaleModelForModel2204190005Model'
+title: "Dinh2019 - A comprehensive genome-scale model for Rhodosporidium toruloides IFO0880 - iRhto1108N"
 description: "Rhodosporidium toruloides is a red, basidiomycetes yeast that can accumulate a large amount of lipids and produce carotenoids. To better assess this non-model yeast's metabolic capabilities, we recons."
 standard: other
 tags:

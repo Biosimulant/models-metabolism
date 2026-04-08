@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Metabolism: Bexkens2024SchistosomaMansoniGlycolysisModel2208290002Model'
+title: "Bexkens2024 - Schistosoma mansoni glycolysis"
 description: "A kinetic model of S. mansoni glycolysis in which we can vary the allosteric regulation on lactate dehydrogenase (LDH)."
 standard: other
 tags:

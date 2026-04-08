@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Metabolism: Garde2020MetabolicOscillationsInBacillusSubBiomd0000001053Model'
+title: "Garde2020 - metabolic oscillations in Bacillus subtilis biofilms"
 description: "Ravindra Garde, Bashar Ibrahim & Stefan Schuster. Extending the minimal model of metabolic oscillations in Bacillus subtilis biofilms."
 standard: other
 tags:

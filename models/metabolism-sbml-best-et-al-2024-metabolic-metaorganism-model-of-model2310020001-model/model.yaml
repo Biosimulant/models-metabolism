@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Metabolism: BestEtAl2024MetabolicMetaorganismModelOfModel2310020001Model'
+title: "Best et al. 2024 - Metabolic metaorganism model of mice and their microbiota"
 description: "Metabolic model of host and microbiota comprising a merged model of the microbiota and generic models for brain, liver and colon connected via the bloodstream. The model is conditioned to the SNIFF di."
 standard: other
 tags:

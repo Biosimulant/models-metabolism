@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Metabolism: Caspeta2012GenomeScaleMetabolicNetworkOfPiModel1507180022Model'
+title: "Caspeta2012 - Genome-scale metabolic network of Pichia stipitis (iSS884)"
 description: "Caspeta2012 - Genome-scale metabolic networkof Pichia stipitis (iSS884) This model is described in the article: Genome-scale metabolic reconstructions of Pichia stipitis and Pichia pastoris and in sil. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:

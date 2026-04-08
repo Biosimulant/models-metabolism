@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Metabolism: Castillo2016WholeGenomeMetabolicModelOfCAModel1604280052Model'
+title: "Castillo2016 - Whole-genome metabolic model of C.albicans using CoReCo"
 description: "This model was reconstructed with CoReCo method from protein sequence and phylogeny data. CoReCo is described in Pitkanen, E., Jouhten, P., Hou, J., Syed, M."
 standard: other
 tags:

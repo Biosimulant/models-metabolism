@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Metabolism: Montagud2010GenomeScaleMetabolicNetworkOfSModel1507180008Model'
+title: "Montagud2010 - Genome-scale metabolic network of Synechocystis sp. PCC6803 (iSyn669)"
 description: "Montagud2010 - Genome-scale metabolic networkof Synechocystis sp. PCC6803 (iSyn669) This model is described in the article: Reconstruction and analysis of genome-scale metabolic model of a photosynthe."
 standard: other
 tags:

@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Metabolism: Iacb23lxGenomeScaleMetabolicModelOfAcinetoModel2309120001Model'
+title: "iACB23LX - Genome-scale metabolic model of Acinetobacter baumannii ATCC 17978"
 description: "This model is part of a collection comprising eight strain-specific genome-scale metabolic models of five different Acinetobacter baumannii strains, seven of which have been previously published and w. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:

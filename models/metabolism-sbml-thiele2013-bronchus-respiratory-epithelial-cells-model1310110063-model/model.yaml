@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Metabolism: Thiele2013BronchusRespiratoryEpithelialCellsModel1310110063Model'
+title: "Thiele2013 - Bronchus respiratory epithelial cells"
 description: "Thiele2013 - Bronchus respiratory epithelial cells The model of bronchus respiratory epithelial cells metabolism is derived from the community-driven global reconstruction of human metabolism (version. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:

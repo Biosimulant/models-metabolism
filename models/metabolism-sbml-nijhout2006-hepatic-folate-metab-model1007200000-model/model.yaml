@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Metabolism: Nijhout2006HepaticFolateMetabModel1007200000Model'
+title: "Nijhout2006_Hepatic_Folate_Metab"
 description: "This is the model described in the article: In silico experimentation with a model of hepatic mitochondrial folate metabolism. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:

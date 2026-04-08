@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Metabolism: Fang2010GenomeScaleMetabolicNetworkOfMycobModel1507180018Model'
+title: "Fang2010 - Genome-scale metabolic network of Mycobacterium tuberculosis (iNJ661m)"
 description: "Fang2010 - Genome-scale metabolic network ofMycobacterium tuberculosis (iNJ661m) This model is described in the article: Development and analysis of an in vivo-compatible metabolic network of Mycobact. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:

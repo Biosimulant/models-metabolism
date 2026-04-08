@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Metabolism: Thiaville2016FolatePathwayModelPanbOverexprBiomd0000000690Model'
+title: "Thiaville2016 - Folate pathway model (PanB overexpression and THF regulation)"
 description: "Henry2016 Folate pathway model with inducedPanB reaction This model is described in the article: Experimental and Metabolic Modeling Evidence for a Folate-Cleaving Side-Activity of Ketopantoate Hydrox. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:

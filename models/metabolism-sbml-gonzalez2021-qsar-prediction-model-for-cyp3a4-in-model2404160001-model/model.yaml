@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Metabolism: Gonzalez2021QsarPredictionModelForCyp3a4InModel2404160001Model'
+title: "Gonzalez2021 - QSAR Prediction Model for CYP3A4 Inhibitor and Substrate"
 description: "Analysis of metabolic stability, determining the inhibition of CYP3A4 activity and whether the compounds are a substrate for the CYP3A4 enzyme. The data used to build these models has been publicly av."
 standard: other
 tags:

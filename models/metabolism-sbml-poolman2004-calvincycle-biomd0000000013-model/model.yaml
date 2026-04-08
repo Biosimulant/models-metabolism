@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Metabolism: Poolman2004CalvincycleBiomd0000000013Model'
+title: "Poolman2004_CalvinCycle"
 description: "This a model from the article: Applications of metabolic modelling to plant metabolism. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:

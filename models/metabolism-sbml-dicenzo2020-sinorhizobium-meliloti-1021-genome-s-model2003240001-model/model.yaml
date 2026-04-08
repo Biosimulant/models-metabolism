@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Metabolism: Dicenzo2020SinorhizobiumMeliloti1021GenomeSModel2003240001Model'
+title: "diCenzo2020 - Sinorhizobium meliloti 1021 genome-scale metabolic model"
 description: "An updated representation of S. meliloti metabolism that was manually-curated and encompasses information from 240 literature sources, which includes transposon-sequencing (Tn-seq) data and Phenotype."
 standard: other
 tags:

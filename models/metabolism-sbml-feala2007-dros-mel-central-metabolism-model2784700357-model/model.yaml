@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Metabolism: Feala2007DrosMelCentralMetabolismModel2784700357Model'
+title: "Feala2007_dros_mel_central_metabolism"
 description: "Model described in: Flexibility in energy metabolism supports hypoxia tolerance in Drosophila flight muscle: metabolomic and computational systems analysis. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:

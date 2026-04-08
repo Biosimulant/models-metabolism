@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Metabolism: Castillo2016WholeGenomeMetabolicModelOfAGModel1604280044Model'
+title: "Castillo2016 - Whole-genome metabolic model of A.gossypii using CoReCo"
 description: "This model was reconstructed with CoReCo method from protein sequence and phylogeny data. CoReCo is described in Pitkanen, E., Jouhten, P., Hou, J., Syed, M."
 standard: other
 tags:

@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Metabolism: Liu2019ClostridiumLjungdahliiMetabolismModelModel2204200003Model'
+title: "Liu2019 - Clostridium ljungdahlii metabolism model"
 description: "The unique capability of acetogens to ferment a broad range of substrates renders them ideal candidates for the biotechnological production of commodity chemicals. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:

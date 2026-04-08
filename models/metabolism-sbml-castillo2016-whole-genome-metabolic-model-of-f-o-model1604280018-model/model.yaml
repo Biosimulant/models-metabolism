@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Metabolism: Castillo2016WholeGenomeMetabolicModelOfFOModel1604280018Model'
+title: "Castillo2016 - Whole-genome metabolic model of F.oxysporum using CoReCo"
 description: "This model was reconstructed with CoReCo method from protein sequence and phylogeny data. CoReCo is described in Pitkanen, E., Jouhten, P., Hou, J., Syed, M."
 standard: other
 tags:

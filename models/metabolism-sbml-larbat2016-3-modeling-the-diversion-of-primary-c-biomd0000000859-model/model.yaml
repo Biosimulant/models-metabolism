@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Metabolism: Larbat20163ModelingTheDiversionOfPrimaryCBiomd0000000859Model'
+title: "Larbat2016.3 - Modeling the diversion of primary carbon flux into secondary metabolism under variable nitrate and light or dark conditions (Light Dark Cycles with Minimum Starch Adaption)"
 description: "This is a global mathematical model describing metabolic partitioning of carbon resources in plants between growth and defense, as a function of nitrate fertilization. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:

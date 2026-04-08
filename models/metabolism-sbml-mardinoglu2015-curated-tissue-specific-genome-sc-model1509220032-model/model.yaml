@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Metabolism: Mardinoglu2015CuratedTissueSpecificGenomeScModel1509220032Model'
+title: "Mardinoglu2015 - Curated tissue-specific genome-scale metabolic model - Small intestine"
 description: "Mardinoglu2015 - Curated tissue-specificgenome-scale metabolic model - Small intestine This model is described in the article: The gut microbiota modulates host amino acid and glutathione metabolism i. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:

@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Metabolism: Jeon2018EnzymeClusteringInGlucoseMetabolismBiomd0000001055Model'
+title: "Jeon2018 - Enzyme clustering in Glucose metabolism"
 description: "Miji Jeon, Hye-Won Kang & Songon An. A Mathematical Model for Enzyme Clustering in Glucose Metabolism."
 standard: other
 tags:

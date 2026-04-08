@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Metabolism: Oliveira2020EColiExtendedCentralCarbonMetaModel2010160002Model'
+title: "Oliveira2020 - E. coli Extended Central Carbon Metabolism from Glycerol"
 description: "The kinetic model of E. coli central carbon metabolism developed by Millard et al."
 standard: other
 tags:

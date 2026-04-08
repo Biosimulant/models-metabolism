@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Metabolism: Mitchell2013LiverIronMetabolismBiomd0000000498Model'
+title: "Mitchell2013 - Liver Iron Metabolism"
 description: "Mitchell2013 - Liver Iron Metabolism The model includes the core regulatory components of human liver iron metabolism. This model is described in the article: A computational model of liver iron metab."
 standard: other
 tags:

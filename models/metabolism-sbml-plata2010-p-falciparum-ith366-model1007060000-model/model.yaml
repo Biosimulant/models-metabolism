@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Metabolism: Plata2010PFalciparumIth366Model1007060000Model'
+title: "Plata2010_P_falciparum_iTH366"
 description: "This is the genome-scale metabolic network of Plasmodium falciparum described in the article: Reconstruction and flux-balance analysis of the Plasmodium falciparum metabolic network. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:

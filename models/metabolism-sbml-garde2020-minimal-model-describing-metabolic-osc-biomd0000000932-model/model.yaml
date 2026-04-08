@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Metabolism: Garde2020MinimalModelDescribingMetabolicOscBiomd0000000932Model'
+title: "Garde2020-Minimal model describing metabolic oscillations in Bacillus subtilis biofilms"
 description: "Biofilms offer an excellent example of ecological interaction among bacteria. Temporal and spatial oscillations in biofilms are an emerging topic."
 standard: other
 tags:

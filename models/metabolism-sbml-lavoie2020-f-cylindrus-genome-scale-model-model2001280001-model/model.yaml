@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Metabolism: Lavoie2020FCylindrusGenomeScaleModelModel2001280001Model'
+title: "Lavoie2020 - F.cylindrus_Genome_scale_model"
 description: "This is an automatically generated .xml file describing a genome-scale model of the metabolism of a polar diatom, Fragilariopsis cylindrus. This reconstruction has been used for an in-depth study of m."
 standard: other
 tags:

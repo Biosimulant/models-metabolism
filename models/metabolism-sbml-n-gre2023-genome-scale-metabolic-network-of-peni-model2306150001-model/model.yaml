@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Metabolism: NGre2023GenomeScaleMetabolicNetworkOfPeniModel2306150001Model'
+title: "Nègre2023 - Genome-Scale Metabolic Network of Penicillium rubens Wisconsin 54-1255"
 description: "Using in silico modelling, such Genome-Scale Metabolic Network (GSMN), represents a promising approach to predicting and understanding the potential for specialised metabolite production in a given or. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:

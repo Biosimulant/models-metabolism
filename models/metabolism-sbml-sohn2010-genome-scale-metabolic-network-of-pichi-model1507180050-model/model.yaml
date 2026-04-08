@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Metabolism: Sohn2010GenomeScaleMetabolicNetworkOfPichiModel1507180050Model'
+title: "Sohn2010 - Genome-scale metabolic network of Pichia pastoris (PpaMBEL1254)"
 description: "Sohn2010 - Genome-scale metabolic network ofPichia pastoris (PpaMBEL1254) This model is described in the article: Genome-scale metabolic model of methylotrophic yeast Pichia pastoris and its use for i. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:

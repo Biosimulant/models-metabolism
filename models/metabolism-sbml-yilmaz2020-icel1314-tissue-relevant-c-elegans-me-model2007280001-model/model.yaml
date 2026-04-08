@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Metabolism: Yilmaz2020Icel1314TissueRelevantCElegansMeModel2007280001Model'
+title: "Yilmaz2020 - iCEL1314 (Tissue relevant C.Elegans metabolism model)"
 description: "iCEL1314 is a genome-scale metabolic network model of Caenorhabditis elegans. This model is based on a previous model named iCEL1273."
 standard: other
 tags:

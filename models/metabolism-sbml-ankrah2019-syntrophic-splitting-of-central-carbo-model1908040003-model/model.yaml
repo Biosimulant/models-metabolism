@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Metabolism: Ankrah2019SyntrophicSplittingOfCentralCarboModel1908040003Model'
+title: "Ankrah2019 Syntrophic splitting of central carbon metabolism in host cells bearing functionally-different symbiotic bacteria_SulciaClastoptera"
 description: "Multi-compartment Sulcia-Clastoptera (spittlebug) metabolic model. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:

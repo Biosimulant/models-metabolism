@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Metabolism: Nagarajan2013CLjungdahliiIhn637Model2406270003Model'
+title: "Nagarajan2013 - C. ljungdahlii (iHN637)"
 description: "FROG and miniFROG Reports for the organism C. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:

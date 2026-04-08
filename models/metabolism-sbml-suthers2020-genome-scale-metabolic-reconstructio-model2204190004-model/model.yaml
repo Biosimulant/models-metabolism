@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Metabolism: Suthers2020GenomeScaleMetabolicReconstructioModel2204190004Model'
+title: "Suthers2020 - Genome-scale metabolic reconstruction of the non-model yeast Issatchenkia orientalis SD108 - iIsor850"
 description: "Published 2020 version of the first genome-scale metabolic model for Issatchenkia orientalis SD108. Abstract : Many platform chemicals can be produced from renewable biomass by microorganisms, with or."
 standard: other
 tags:

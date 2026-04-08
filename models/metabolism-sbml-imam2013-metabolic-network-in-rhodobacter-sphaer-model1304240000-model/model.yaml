@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Metabolism: Imam2013MetabolicNetworkInRhodobacterSphaerModel1304240000Model'
+title: "Imam2013 - Metabolic network in Rhodobacter sphaeroides (iRsp1140)"
 description: "Rhodobacter sphaeroides model (Version 2 - iRsp1140). It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:

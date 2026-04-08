@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Metabolism: Smallbone2013HumanMetabolismGlobalReconstrucModel1311110000Model'
+title: "Smallbone2013 - Human metabolism global reconstruction (recon 2.1)"
 description: "Smallbone2013 - Human metabolism global reconstruction (recon 2.1) Recon 2.1. This model is described in the article: Striking a balance with Recon 2.1 Kieran Smallbone Molecular Networks (q-bio.MN) A."
 standard: other
 tags:

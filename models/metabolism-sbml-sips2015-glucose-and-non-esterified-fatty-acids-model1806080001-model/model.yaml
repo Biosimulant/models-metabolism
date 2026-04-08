@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Metabolism: Sips2015GlucoseAndNonEsterifiedFattyAcidsModel1806080001Model'
+title: "Sips2015 - Glucose and non-esterified fatty acids (NEFA) metabolism"
 description: "This a model from the article: Model-Based Quantification of the Systemic Interplay between Glucose and Fatty Acids in the Postprandial State. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:

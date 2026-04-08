@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Metabolism: Henry2009GenomeScaleMetabolicNetworkOfBaciModel1507180015Model'
+title: "Henry2009 - Genome-scale metabolic network of Bacillus subtilis (iBsu1103)"
 description: "Henry2009 - Genome-scale metabolic network ofBacillus subtilis (iBsu1103) This model is described in the article: iBsu1103: a new genome-scale metabolic model of Bacillus subtilis based on SEED annota. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:

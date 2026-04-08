@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Metabolism: Mirhakkakschaeuble2021ACandidaAlbicansGenomeModel2110210002Model'
+title: "MirhakkakSchaeuble2021 - a Candida albicans genome-scale metabolic model reconstruction"
 description: "A genome-scale metabolic model (GEM) of C. albicans was reconstructed and curated by using phenotypic microarray data and resolving erroneous energy-generating cycles.It comprises 771 genes, 3082 meta."
 standard: other
 tags:

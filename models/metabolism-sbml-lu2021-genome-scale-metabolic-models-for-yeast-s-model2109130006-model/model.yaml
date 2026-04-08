@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Metabolism: Lu2021GenomeScaleMetabolicModelsForYeastSModel2109130006Model'
+title: "Lu2021-Genome scale metabolic models for yeast species of clade Lipomycetaceae"
 description: "This is genome-scale metabolic model of Lipomyces starkeyi as the representative yeast species for the clade Lipomycetaceae. This model was generated through homology search using a fungal pan-GEM lar."
 standard: other
 tags:

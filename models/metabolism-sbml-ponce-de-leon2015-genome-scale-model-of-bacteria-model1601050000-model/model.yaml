@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Metabolism: PonceDeLeon2015GenomeScaleModelOfBacteriaModel1601050000Model'
+title: "Ponce-de-Leon2015 - Genome-Scale Model of Bacterial Metabolism (MM130)"
 description: "Metabolism Ponce De Leon2015Genome Scale Model Of Bacteria Model1601050000Model represents core biological mechanisms from biomodels_ebi reference biomodels_ebi:MODEL1601050000. When you run it, you can inspect state and compare temporal behavior between baseline and adjusted inputs."
 standard: other
 tags:

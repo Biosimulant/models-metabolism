@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Metabolism: Icho2441Model2206100001Model'
+title: "iCHO2441"
 description: "A synthesized Chinese Hamster Ovary (CHO) cell genome-scale model (GeM) consisting of iCHO2291 (Yeo. et al 2020) coupled with the secretory machinery presented in iCHO2048 (Gutierrez et al."
 standard: other
 tags:

@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Metabolism: Enuh2022PhbAndOsmoprotectantMetabolismModelModel2204110001Model'
+title: "Enuh2022-PHB and Osmoprotectant metabolism model of Chromohalobacter canadensis"
 description: "This model is the first of Chromohalobacter canadensis. The pathways for PHB mtabolism, and osmoprotectants (ectoine, betaine, choline) were curated."
 standard: other
 tags:

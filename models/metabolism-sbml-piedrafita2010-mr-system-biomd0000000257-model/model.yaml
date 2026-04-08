@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Metabolism: Piedrafita2010MrSystemBiomd0000000257Model'
+title: "Piedrafita2010_MR_System"
 description: "This is the self maintaining metabolism model described in the article: A Simple Self-Maintaining Metabolic System: Robustness, Autocatalysis, Bistability. Piedrafita G, Montero F, Mor\u00e1n F, C\u00e1rdenas M."
 standard: other
 tags:

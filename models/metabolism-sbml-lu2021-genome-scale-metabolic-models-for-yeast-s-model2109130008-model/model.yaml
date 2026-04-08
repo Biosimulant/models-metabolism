@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Metabolism: Lu2021GenomeScaleMetabolicModelsForYeastSModel2109130008Model'
+title: "Lu2021-Genome scale metabolic models for yeast species of clade Phaffomycetaceae"
 description: "This is genome-scale metabolic model of Cyberlindnera americana as the representative yeast species for the clade Phaffomycetaceae. This model was generated through homology search using a fungal pan-."
 standard: other
 tags:

@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Metabolism: Lu2019GenomeScaleMetabolicModelForSaccharoBiomd0000001063Model'
+title: "Lu2019 - Genome scale metabolic model for Saccharomyces cerevisiae - yeastGEM8.5.0"
 description: "yeast-GEM: The consensus genome-scale metabolic model of Saccharomyces cerevisiae. Further curations of this model will be tracked in the GitHub repository:https://github.com/SysBioChalmers/yeast-GEM."
 standard: other
 tags:

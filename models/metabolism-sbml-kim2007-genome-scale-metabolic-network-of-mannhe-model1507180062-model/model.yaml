@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Metabolism: Kim2007GenomeScaleMetabolicNetworkOfMannheModel1507180062Model'
+title: "Kim2007 - Genome-scale metabolic network of Mannheimia succiniciproducens (iTY425)"
 description: "Kim2007 - Genome-scale metabolic network ofMannheimia succiniciproducens (iTY425) This model is described in the article: Genome-scale analysis of Mannheimia succiniciproducens metabolism. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:

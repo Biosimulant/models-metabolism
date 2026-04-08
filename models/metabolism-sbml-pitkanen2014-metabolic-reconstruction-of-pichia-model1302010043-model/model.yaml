@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Metabolism: Pitkanen2014MetabolicReconstructionOfPichiaModel1302010043Model'
+title: "Pitkanen2014 - Metabolic reconstruction of Pichia stipitis using CoReCo"
 description: "Pitkanen2014 - Metabolic reconstruction of Pichia stipitis using CoReCo This model was reconstructed with the CoReCo method (Comparative ReConstruction of genome-scale metabolic networks) from protein. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:

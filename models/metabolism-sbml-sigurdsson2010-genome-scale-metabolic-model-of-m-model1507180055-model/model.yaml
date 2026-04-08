@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Metabolism: Sigurdsson2010GenomeScaleMetabolicModelOfMModel1507180055Model'
+title: "Sigurdsson2010 - Genome-scale metabolic model of Mus Musculus (iMM1415)"
 description: "Sigurdsson2010 - Genome-scale metabolic modelof Mus Musculus (iMM1415) This model is described in the article: A detailed genome-wide reconstruction of mouse metabolism based on human Recon 1. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:

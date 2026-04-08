@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Metabolism: Charusanti2011YPestisIpc815Biomd0000001082Model'
+title: "Charusanti2011 - Y. pestis (iPC815)"
 description: "FROG and miniFROG Reports for the organism Yersinia pestis . These models originate from BiGG Models Database: A Database of Genome-Scale Metabolic Models (http://bigg.ucsd.edu/)."
 standard: other
 tags:

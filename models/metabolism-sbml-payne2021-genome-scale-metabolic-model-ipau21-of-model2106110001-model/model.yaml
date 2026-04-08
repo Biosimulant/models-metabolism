@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Metabolism: Payne2021GenomeScaleMetabolicModelIpau21OfModel2106110001Model'
+title: "Payne2021 - genome-scale metabolic model (iPau21) of Pseudomonas aeruginosa UCBPP-PA14"
 description: "This model, iPau21, updates and extends the genome-scale metabolic model of the harmful pathogen Pseudomonas aeruginosa UCBPP-PA14, initially published by Bartell et al. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:

@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Metabolism: Jamshidi01RbcMetabolicnetworkModel1103210001Model'
+title: "Jamshidi01_RBC_MetabolicNetwork"
 description: "Dynamic simulation of the human red blood cell metabolic network Neema Jamshidi, Jeremy S. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:

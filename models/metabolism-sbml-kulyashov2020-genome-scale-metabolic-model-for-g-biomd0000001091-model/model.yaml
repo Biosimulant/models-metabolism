@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Metabolism: Kulyashov2020GenomeScaleMetabolicModelForGBiomd0000001091Model'
+title: "Kulyashov2020 - Genome-Scale Metabolic Model for Geobacillus icigianus"
 description: "Here we present a genome-scale metabolic model iMK1321 for Geobacillus icigianus constructed using an auto-generating pipeline with consequent thorough manual curation. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:

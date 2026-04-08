@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Metabolism: Wu2007MitochondrialtcacycleModel1006230090Model'
+title: "Wu2007_MitochondrialTCAcycle"
 description: "This a model from the article: Computer modeling of mitochondrial tricarboxylic acid cycle, oxidativephosphorylation, metabolite transport, and electrophysiology. Wu F, Yang F, Vinnakota KC, Beard DA."
 standard: other
 tags:

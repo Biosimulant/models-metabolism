@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Metabolism: Saldivar2024Ias473MethylacidiphilumFumariolicModel2308220001Model'
+title: "Saldivar2024 - iAS473 - Methylacidiphilum fumariolicum - GEM"
 description: "Genome Scale metabolic model of M. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:

@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Metabolism: Smallbone2013SerineBiosynthesisBiomd0000000458Model'
+title: "Smallbone2013 - Serine biosynthesis"
 description: "Smallbone2013 - Serine biosynthesis Kinetic modelling of metabolic pathways in application to Serine biosynthesis. This model is described in the article: Kinetic Modeling of Metabolic Pathways: Appli."
 standard: other
 tags:

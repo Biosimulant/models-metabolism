@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Metabolism: Mahadevan2006GenomeScaleMetabolicNetworkOfModel1507180000Model'
+title: "Mahadevan2006 - Genome-scale metabolic network of Geobacter sulfurreducens (iRM588)"
 description: "Mahadevan2006 - Genome-scale metabolicnetwork of Geobacter sulfurreducens (iRM588) This model is described in the article: Characterization of metabolism in the Fe(III)-reducing organism Geobacter sul. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:

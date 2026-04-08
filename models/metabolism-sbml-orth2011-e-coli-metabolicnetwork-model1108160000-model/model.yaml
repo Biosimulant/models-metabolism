@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Metabolism: Orth2011EColiMetabolicnetworkModel1108160000Model'
+title: "Orth2011_E.coli_MetabolicNetwork"
 description: "This model is from the article: A comprehensive genome-scale reconstruction of Escherichia coli metabolism-2011. Orth JD, Conrad TM, Na J, Lerman JA, Nam H, Feist AM, Palsson B\u00d8."
 standard: other
 tags:

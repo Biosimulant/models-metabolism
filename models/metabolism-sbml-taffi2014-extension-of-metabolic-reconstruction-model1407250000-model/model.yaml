@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Metabolism: Taffi2014ExtensionOfMetabolicReconstructionModel1407250000Model'
+title: "Taffi2014 - Extension of metabolic reconstruction of Pseudomonas putida KT2440 with aerobic pathway of PCBs degradation"
 description: "Metabolism Taffi2014Extension Of Metabolic Reconstruction Model1407250000Model models core biological dynamics as a OTHER simulation curated from biomodels_ebi (biomodels_ebi:MODEL1407250000), focused on metabo. When you run it, you can track state over time and compare response patterns across parameter settings."
 standard: other
 tags:

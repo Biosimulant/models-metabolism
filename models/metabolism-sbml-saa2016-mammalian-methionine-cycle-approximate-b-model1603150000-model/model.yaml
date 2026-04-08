@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Metabolism: Saa2016MammalianMethionineCycleApproximateBModel1603150000Model'
+title: "Saa2016 - Mammalian methionine cycle - approximate bayesian computation"
 description: "Construction of feasible and accurate kinetic models of metabolism: A Bayesian approachPedro A. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:

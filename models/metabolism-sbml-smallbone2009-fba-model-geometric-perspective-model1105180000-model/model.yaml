@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Metabolism: Smallbone2009FbaModelGeometricPerspectiveModel1105180000Model'
+title: "Smallbone2009 - FBA model-Geometric Perspective"
 description: "This model is from the article: Flux balance analysis: a geometric perspective. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:

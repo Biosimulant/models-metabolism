@@ -1,5 +1,5 @@
 schema_version: '2.0'
-title: 'Metabolism: Lee2008GenomeScaleMetabolicNetworkOfClostrModel1507180030Model'
+title: "Lee2008 - Genome-scale metabolic network of Clostridium acetobutylicum (iJL432)"
 description: "Lee2008 - Genome-scale metabolic network ofClostridium acetobutylicum (iJL432) This model is described in the article: Genome-scale reconstruction and in silico analysis of the Clostridium acetobutyli. It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions."
 standard: other
 tags:
