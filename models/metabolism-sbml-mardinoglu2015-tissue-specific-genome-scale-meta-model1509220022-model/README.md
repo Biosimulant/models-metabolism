@@ -11,14 +11,13 @@ Mardinoglu2015 - Tissue-specific genome-scalemetabolic network - Salivary gland 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-mardinoglu2015-tissue-specific-genome-scale-meta-model1509220022-model
     alias: model
-    manifest_path: models/metabolism-sbml-mardinoglu2015-tissue-specific-genome-scale-meta-model1509220022-model/model.yaml
 ```
 
 ## Tags

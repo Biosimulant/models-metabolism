@@ -11,14 +11,13 @@ Thiele2013 - Liver hepatocytes The model of liver hepatocytes metabolism is deri
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-thiele2013-liver-hepatocytes-model1310110014-model
     alias: model
-    manifest_path: models/metabolism-sbml-thiele2013-liver-hepatocytes-model1310110014-model/model.yaml
 ```
 
 ## Tags

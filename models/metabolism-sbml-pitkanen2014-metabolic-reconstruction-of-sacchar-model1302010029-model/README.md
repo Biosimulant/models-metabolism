@@ -11,14 +11,13 @@ Pitkanen2014 - Metabolic reconstruction of Saccharomyces cerevisiae using CoReCo
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-pitkanen2014-metabolic-reconstruction-of-sacchar-model1302010029-model
     alias: model
-    manifest_path: models/metabolism-sbml-pitkanen2014-metabolic-reconstruction-of-sacchar-model1302010029-model/model.yaml
 ```
 
 ## Tags

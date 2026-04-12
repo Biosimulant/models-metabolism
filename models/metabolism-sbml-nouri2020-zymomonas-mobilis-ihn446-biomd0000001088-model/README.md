@@ -11,14 +11,13 @@ FROG and miniFROG reports are compiled for the reconstructed genome-scale metabo
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-nouri2020-zymomonas-mobilis-ihn446-biomd0000001088-model
     alias: model
-    manifest_path: models/metabolism-sbml-nouri2020-zymomonas-mobilis-ihn446-biomd0000001088-model/model.yaml
 ```
 
 ## Tags

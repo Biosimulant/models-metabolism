@@ -11,14 +11,13 @@ Orthologous iso-enzyme metabolic network for Mus musculus Copy number alteration
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-bekaert2010-mouse-inferred-metabolic-network-model1008120002-model
     alias: model
-    manifest_path: models/metabolism-sbml-bekaert2010-mouse-inferred-metabolic-network-model1008120002-model/model.yaml
 ```
 
 ## Tags

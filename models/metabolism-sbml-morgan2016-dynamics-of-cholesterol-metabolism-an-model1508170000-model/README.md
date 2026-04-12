@@ -11,14 +11,13 @@ Morgan2016 - Dynamics of cholesterolmetabolism and ageing This model is describe
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-morgan2016-dynamics-of-cholesterol-metabolism-an-model1508170000-model
     alias: model
-    manifest_path: models/metabolism-sbml-morgan2016-dynamics-of-cholesterol-metabolism-an-model1508170000-model/model.yaml
 ```
 
 ## Tags

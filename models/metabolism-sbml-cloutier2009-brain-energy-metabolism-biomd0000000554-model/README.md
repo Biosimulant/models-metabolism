@@ -11,14 +11,13 @@ Cloutier2009 - Brain Energy Metabolism This model was taken from the CellMLrepos
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-cloutier2009-brain-energy-metabolism-biomd0000000554-model
     alias: model
-    manifest_path: models/metabolism-sbml-cloutier2009-brain-energy-metabolism-biomd0000000554-model/model.yaml
 ```
 
 ## Tags

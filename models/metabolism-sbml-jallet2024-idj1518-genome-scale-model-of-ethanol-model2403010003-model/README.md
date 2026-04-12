@@ -11,14 +11,13 @@ Jallet2024 - iDJ1518 - Genome-scale model of ethanolamine metabolism in Escheric
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-jallet2024-idj1518-genome-scale-model-of-ethanol-model2403010003-model
     alias: model
-    manifest_path: models/metabolism-sbml-jallet2024-idj1518-genome-scale-model-of-ethanol-model2403010003-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ O'Dea, E.L., Barken, D., Peralta, R.Q., Tran K.T., Werner, S.L., Kearns, J.D., L
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-odea2007-ikappab-biomd0000000147-model
     alias: model
-    manifest_path: models/metabolism-sbml-odea2007-ikappab-biomd0000000147-model/model.yaml
 ```
 
 ## Tags

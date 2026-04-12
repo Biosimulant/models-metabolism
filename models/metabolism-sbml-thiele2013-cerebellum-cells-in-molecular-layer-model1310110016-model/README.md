@@ -11,14 +11,13 @@ Thiele2013 - Cerebellum cells in molecular layer The model of cerebellum cells i
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-thiele2013-cerebellum-cells-in-molecular-layer-model1310110016-model
     alias: model
-    manifest_path: models/metabolism-sbml-thiele2013-cerebellum-cells-in-molecular-layer-model1310110016-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ Ravindra Garde, Bashar Ibrahim & Stefan Schuster. Extending the minimal model of
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-garde2020-metabolic-oscillations-in-bacillus-sub-biomd0000001053-model
     alias: model
-    manifest_path: models/metabolism-sbml-garde2020-metabolic-oscillations-in-bacillus-sub-biomd0000001053-model/model.yaml
 ```
 
 ## Tags

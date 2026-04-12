@@ -11,14 +11,13 @@ Shlomi2011 - Warburg effect, metabolic model Using a genome-scale human metaboli
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-shlomi2011-warburg-effect-metabolic-model-model1105100000-model
     alias: model
-    manifest_path: models/metabolism-sbml-shlomi2011-warburg-effect-metabolic-model-model1105100000-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ Thiele2013 - Smooth muscle smooth muscle cells The model of smooth muscle smooth
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-thiele2013-smooth-muscle-smooth-muscle-cells-model1310110025-model
     alias: model
-    manifest_path: models/metabolism-sbml-thiele2013-smooth-muscle-smooth-muscle-cells-model1310110025-model/model.yaml
 ```
 
 ## Tags

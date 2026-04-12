@@ -11,14 +11,13 @@ Staphylococcus epidermidis is a Gram-positive, coagulase-negative (CoNS) bacteri
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-isep23-genome-scale-metabolic-model-of-staphyloc-model2012220002-model
     alias: model
-    manifest_path: models/metabolism-sbml-isep23-genome-scale-metabolic-model-of-staphyloc-model2012220002-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ Modified model of losartan metabolism (Karatza and Karalis, 2020) incorporating 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-babaev2024-cyp2c9-variants-model2412180002-model
     alias: model
-    manifest_path: models/metabolism-sbml-babaev2024-cyp2c9-variants-model2412180002-model/model.yaml
 ```
 
 ## Tags

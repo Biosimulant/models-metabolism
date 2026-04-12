@@ -11,14 +11,13 @@ Genome Scale metabolic model of M. fumariolicum strain Pic
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-saldivar2024-ias473-methylacidiphilum-fumariolic-model2308220001-model
     alias: model
-    manifest_path: models/metabolism-sbml-saldivar2024-ias473-methylacidiphilum-fumariolic-model2308220001-model/model.yaml
 ```
 
 ## Tags

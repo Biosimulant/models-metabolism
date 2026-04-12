@@ -11,14 +11,13 @@ Smallbone2013 - Glycolysis in S.cerevisiae - Iteration 11 This model is describe
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-smallbone2013-glycolysis-in-s-cerevisiae-iterati-model1303260011-model
     alias: model
-    manifest_path: models/metabolism-sbml-smallbone2013-glycolysis-in-s-cerevisiae-iterati-model1303260011-model/model.yaml
 ```
 
 ## Tags

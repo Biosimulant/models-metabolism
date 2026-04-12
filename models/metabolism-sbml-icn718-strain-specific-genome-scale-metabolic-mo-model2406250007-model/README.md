@@ -11,14 +11,13 @@ This model is part of a collection comprising eight strain-specific genome-scale
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-icn718-strain-specific-genome-scale-metabolic-mo-model2406250007-model
     alias: model
-    manifest_path: models/metabolism-sbml-icn718-strain-specific-genome-scale-metabolic-mo-model2406250007-model/model.yaml
 ```
 
 ## Tags

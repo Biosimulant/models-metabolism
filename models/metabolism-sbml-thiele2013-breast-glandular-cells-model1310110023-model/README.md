@@ -11,14 +11,13 @@ Thiele2013 - Breast glandular cells The model of breast glandular cells metaboli
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-thiele2013-breast-glandular-cells-model1310110023-model
     alias: model
-    manifest_path: models/metabolism-sbml-thiele2013-breast-glandular-cells-model1310110023-model/model.yaml
 ```
 
 ## Tags

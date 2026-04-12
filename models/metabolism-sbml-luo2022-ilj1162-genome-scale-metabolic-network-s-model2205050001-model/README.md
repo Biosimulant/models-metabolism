@@ -11,14 +11,13 @@ The model iLJ1162 , comprised 1162 genes, 1818 metabolites and 2084 reactions, c
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-luo2022-ilj1162-genome-scale-metabolic-network-s-model2205050001-model
     alias: model
-    manifest_path: models/metabolism-sbml-luo2022-ilj1162-genome-scale-metabolic-network-s-model2205050001-model/model.yaml
 ```
 
 ## Tags

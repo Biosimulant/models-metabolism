@@ -11,14 +11,13 @@ Beste2007 - Genome-scale metabolic network ofMycobacterium tuberculosis (GSMN_TB
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-beste2007-genome-scale-metabolic-network-of-myco-model1507180021-model
     alias: model
-    manifest_path: models/metabolism-sbml-beste2007-genome-scale-metabolic-network-of-myco-model1507180021-model/model.yaml
 ```
 
 ## Tags

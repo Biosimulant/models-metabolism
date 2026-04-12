@@ -11,14 +11,13 @@ The model can simultaneously predict the profiles of both losartan and its activ
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-babaev2025-cyp2c9-and-abcb1-losartan-metabolism-model2504020001-model
     alias: model
-    manifest_path: models/metabolism-sbml-babaev2025-cyp2c9-and-abcb1-losartan-metabolism-model2504020001-model/model.yaml
 ```
 
 ## Tags

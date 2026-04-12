@@ -11,14 +11,13 @@ Genome scale metabolic model of Saccharomyces cerevisiae that metabolizes L-fuco
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-strain-engineering-and-metabolic-flux-analysis-o-model2209060001-model
     alias: model
-    manifest_path: models/metabolism-sbml-strain-engineering-and-metabolic-flux-analysis-o-model2209060001-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ FROG and miniFROG reports compiled for the metabolic model, iMsOB3b. The model c
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-naizabekov2020-methylosinus-trichosporium-ob3b-i-biomd0000001081-model
     alias: model
-    manifest_path: models/metabolism-sbml-naizabekov2020-methylosinus-trichosporium-ob3b-i-biomd0000001081-model/model.yaml
 ```
 
 ## Tags

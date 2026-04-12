@@ -11,14 +11,13 @@ This model was reconstructed with CoReCo method from protein sequence and phylog
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-castillo2016-whole-genome-metabolic-model-of-c-c-model1604280009-model
     alias: model
-    manifest_path: models/metabolism-sbml-castillo2016-whole-genome-metabolic-model-of-c-c-model1604280009-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ Oliveira2005 - Genome-scale metabolic networkof Lactococcus lactis (iAO358) This
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-oliveira2005-genome-scale-metabolic-network-of-l-model1507180014-model
     alias: model
-    manifest_path: models/metabolism-sbml-oliveira2005-genome-scale-metabolic-network-of-l-model1507180014-model/model.yaml
 ```
 
 ## Tags

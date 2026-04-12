@@ -11,14 +11,13 @@ Dreyfuss2013 - Genome-Scale Metabolic Model - N.crassa iJDZ836 Genome-scale meta
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-dreyfuss2013-genome-scale-metabolic-model-n-cras-model1212060001-model
     alias: model
-    manifest_path: models/metabolism-sbml-dreyfuss2013-genome-scale-metabolic-model-n-cras-model1212060001-model/model.yaml
 ```
 
 ## Tags

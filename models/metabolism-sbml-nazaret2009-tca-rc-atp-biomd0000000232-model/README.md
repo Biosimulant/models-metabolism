@@ -11,14 +11,13 @@ This a model from the article: Mitochondrial energetic metabolism: a simplified 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-nazaret2009-tca-rc-atp-biomd0000000232-model
     alias: model
-    manifest_path: models/metabolism-sbml-nazaret2009-tca-rc-atp-biomd0000000232-model/model.yaml
 ```
 
 ## Tags

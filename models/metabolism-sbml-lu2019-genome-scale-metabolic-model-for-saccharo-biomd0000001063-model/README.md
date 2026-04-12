@@ -11,14 +11,13 @@ yeast-GEM: The consensus genome-scale metabolic model of Saccharomyces cerevisia
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-lu2019-genome-scale-metabolic-model-for-saccharo-biomd0000001063-model
     alias: model
-    manifest_path: models/metabolism-sbml-lu2019-genome-scale-metabolic-model-for-saccharo-biomd0000001063-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ Schilling2002 - Genome-scale metabolicnetwork of Helicobacter pylori (iCS291) Th
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-schilling2002-genome-scale-metabolic-network-of-model1507180037-model
     alias: model
-    manifest_path: models/metabolism-sbml-schilling2002-genome-scale-metabolic-network-of-model1507180037-model/model.yaml
 ```
 
 ## Tags

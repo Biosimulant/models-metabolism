@@ -11,14 +11,13 @@ Genome-scale constraint-based model of Mycoplasma pneumoniae strain M129 metabol
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-gaspari2019-ieg158-mpn-genome-scale-metabolic-mo-model1912060001-model
     alias: model
-    manifest_path: models/metabolism-sbml-gaspari2019-ieg158-mpn-genome-scale-metabolic-mo-model1912060001-model/model.yaml
 ```
 
 ## Tags

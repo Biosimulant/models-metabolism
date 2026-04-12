@@ -11,14 +11,13 @@ This is the model described in the article: Interaction of glycolysis and mitoch
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-bertram2007-isletcell-oscillations-biomd0000000376-model
     alias: model
-    manifest_path: models/metabolism-sbml-bertram2007-isletcell-oscillations-biomd0000000376-model/model.yaml
 ```
 
 ## Tags

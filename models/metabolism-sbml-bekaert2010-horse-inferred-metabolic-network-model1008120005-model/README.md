@@ -11,14 +11,13 @@ Orthologous iso-enzyme metabolic network for Equus caballus Copy number alterati
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-bekaert2010-horse-inferred-metabolic-network-model1008120005-model
     alias: model
-    manifest_path: models/metabolism-sbml-bekaert2010-horse-inferred-metabolic-network-model1008120005-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ Cetinkaya2017 - Engineering targets forKomagataella phaffii This model is descri
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-cetinkaya2017-engineering-targets-for-komagatael-model1703150000-model
     alias: model
-    manifest_path: models/metabolism-sbml-cetinkaya2017-engineering-targets-for-komagatael-model1703150000-model/model.yaml
 ```
 
 ## Tags

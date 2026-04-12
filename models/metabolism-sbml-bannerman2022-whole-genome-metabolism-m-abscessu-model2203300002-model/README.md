@@ -11,14 +11,13 @@ This is a whole genome metabolism model of M. abscessus
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-bannerman2022-whole-genome-metabolism-m-abscessu-model2203300002-model
     alias: model
-    manifest_path: models/metabolism-sbml-bannerman2022-whole-genome-metabolism-m-abscessu-model2203300002-model/model.yaml
 ```
 
 ## Tags

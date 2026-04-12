@@ -11,14 +11,13 @@ Geobacter species are of great interest for environmental and biotechnology appl
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-feist2014-geobacter-metallireducens-gs-15-metabo-model2204190002-model
     alias: model
-    manifest_path: models/metabolism-sbml-feist2014-geobacter-metallireducens-gs-15-metabo-model2204190002-model/model.yaml
 ```
 
 ## Tags

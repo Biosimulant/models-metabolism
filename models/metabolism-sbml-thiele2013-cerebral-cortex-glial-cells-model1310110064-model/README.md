@@ -11,14 +11,13 @@ Thiele2013 - Cerebral cortex glial cells The model of cerebral cortex glial cell
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-thiele2013-cerebral-cortex-glial-cells-model1310110064-model
     alias: model
-    manifest_path: models/metabolism-sbml-thiele2013-cerebral-cortex-glial-cells-model1310110064-model/model.yaml
 ```
 
 ## Tags

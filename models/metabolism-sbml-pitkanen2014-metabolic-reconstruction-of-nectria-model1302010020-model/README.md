@@ -11,14 +11,13 @@ Pitkanen2014 - Metabolic reconstruction of Nectria haematococca using CoReCo Thi
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-pitkanen2014-metabolic-reconstruction-of-nectria-model1302010020-model
     alias: model
-    manifest_path: models/metabolism-sbml-pitkanen2014-metabolic-reconstruction-of-nectria-model1302010020-model/model.yaml
 ```
 
 ## Tags

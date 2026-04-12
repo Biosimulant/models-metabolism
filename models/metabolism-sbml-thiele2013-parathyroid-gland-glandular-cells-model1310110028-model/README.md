@@ -11,14 +11,13 @@ Thiele2013 - Parathyroid gland glandular cells The model of parathyroid gland gl
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-thiele2013-parathyroid-gland-glandular-cells-model1310110028-model
     alias: model
-    manifest_path: models/metabolism-sbml-thiele2013-parathyroid-gland-glandular-cells-model1310110028-model/model.yaml
 ```
 
 ## Tags

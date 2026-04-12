@@ -11,14 +11,13 @@ MartínJiménez2017 - Genome-scale reconstruction of the human astrocyte metabol
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-mart-njim-nez2017-genome-scale-reconstruction-of-model1608180000-model
     alias: model
-    manifest_path: models/metabolism-sbml-mart-njim-nez2017-genome-scale-reconstruction-of-model1608180000-model/model.yaml
 ```
 
 ## Tags

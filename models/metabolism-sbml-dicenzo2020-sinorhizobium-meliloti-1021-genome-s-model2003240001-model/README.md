@@ -11,14 +11,13 @@ An updated representation of S. meliloti metabolism that was manually-curated an
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-dicenzo2020-sinorhizobium-meliloti-1021-genome-s-model2003240001-model
     alias: model
-    manifest_path: models/metabolism-sbml-dicenzo2020-sinorhizobium-meliloti-1021-genome-s-model2003240001-model/model.yaml
 ```
 
 ## Tags

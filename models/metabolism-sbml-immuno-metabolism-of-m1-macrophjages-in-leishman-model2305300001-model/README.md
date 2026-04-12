@@ -11,14 +11,13 @@ The M1 polarization is important for the control of infection by Leishmania spp.
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-immuno-metabolism-of-m1-macrophjages-in-leishman-model2305300001-model
     alias: model
-    manifest_path: models/metabolism-sbml-immuno-metabolism-of-m1-macrophjages-in-leishman-model2305300001-model/model.yaml
 ```
 
 ## Tags

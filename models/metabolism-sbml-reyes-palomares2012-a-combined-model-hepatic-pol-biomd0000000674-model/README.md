@@ -11,14 +11,13 @@ Reyes-Palomares2012 - a combined modelhepatic polyamine and sulfur aminoacid met
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-reyes-palomares2012-a-combined-model-hepatic-pol-biomd0000000674-model
     alias: model
-    manifest_path: models/metabolism-sbml-reyes-palomares2012-a-combined-model-hepatic-pol-biomd0000000674-model/model.yaml
 ```
 
 ## Tags

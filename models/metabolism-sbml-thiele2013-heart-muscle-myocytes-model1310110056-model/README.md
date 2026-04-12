@@ -11,14 +11,13 @@ Thiele2013 - Heart muscle myocytes The model of heart muscle myocytes metabolism
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-thiele2013-heart-muscle-myocytes-model1310110056-model
     alias: model
-    manifest_path: models/metabolism-sbml-thiele2013-heart-muscle-myocytes-model1310110056-model/model.yaml
 ```
 
 ## Tags

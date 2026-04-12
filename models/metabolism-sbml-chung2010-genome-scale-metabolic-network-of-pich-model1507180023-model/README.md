@@ -11,14 +11,13 @@ Chung2010 - Genome-scale metabolic network ofPichia pastoris (iPP668) This model
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-chung2010-genome-scale-metabolic-network-of-pich-model1507180023-model
     alias: model
-    manifest_path: models/metabolism-sbml-chung2010-genome-scale-metabolic-network-of-pich-model1507180023-model/model.yaml
 ```
 
 ## Tags

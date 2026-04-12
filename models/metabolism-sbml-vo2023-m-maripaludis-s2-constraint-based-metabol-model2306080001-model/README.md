@@ -11,14 +11,13 @@ Genome-scale metabolic model of Methanococcus maripaludis S2, including the upda
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-vo2023-m-maripaludis-s2-constraint-based-metabol-model2306080001-model
     alias: model
-    manifest_path: models/metabolism-sbml-vo2023-m-maripaludis-s2-constraint-based-metabol-model2306080001-model/model.yaml
 ```
 
 ## Tags

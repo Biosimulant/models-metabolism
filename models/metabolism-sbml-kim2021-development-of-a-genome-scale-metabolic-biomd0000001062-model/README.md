@@ -11,14 +11,13 @@ Escherichia coli Nissle 1917 (EcN) is an intestinal probiotic that is effective 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-kim2021-development-of-a-genome-scale-metabolic-biomd0000001062-model
     alias: model
-    manifest_path: models/metabolism-sbml-kim2021-development-of-a-genome-scale-metabolic-biomd0000001062-model/model.yaml
 ```
 
 ## Tags

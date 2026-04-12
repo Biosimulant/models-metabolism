@@ -11,14 +11,13 @@ Pitkanen2014 - Metabolic reconstruction of Lodderomyces elongisporus using CoReC
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-pitkanen2014-metabolic-reconstruction-of-loddero-model1302010033-model
     alias: model
-    manifest_path: models/metabolism-sbml-pitkanen2014-metabolic-reconstruction-of-loddero-model1302010033-model/model.yaml
 ```
 
 ## Tags

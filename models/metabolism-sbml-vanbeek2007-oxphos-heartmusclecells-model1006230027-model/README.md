@@ -11,14 +11,13 @@ This a model from the article: Adenine nucleotide-creatine-phosphate module in m
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-vanbeek2007-oxphos-heartmusclecells-model1006230027-model
     alias: model
-    manifest_path: models/metabolism-sbml-vanbeek2007-oxphos-heartmusclecells-model1006230027-model/model.yaml
 ```
 
 ## Tags

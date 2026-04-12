@@ -11,14 +11,13 @@ Henry2009 - Genome-scale metabolic network ofBacillus subtilis (iBsu1103) This m
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-henry2009-genome-scale-metabolic-network-of-baci-model1507180015-model
     alias: model
-    manifest_path: models/metabolism-sbml-henry2009-genome-scale-metabolic-network-of-baci-model1507180015-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ The uploaded model is linked to the Scientific Reports article: Subramanian, A.,
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-subramanian2017-metabolic-adaptations-of-leishma-model2010130001-model
     alias: model
-    manifest_path: models/metabolism-sbml-subramanian2017-metabolic-adaptations-of-leishma-model2010130001-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ This model, iPau21, updates and extends the genome-scale metabolic model of the 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-payne2021-genome-scale-metabolic-model-ipau21-of-model2106110001-model
     alias: model
-    manifest_path: models/metabolism-sbml-payne2021-genome-scale-metabolic-model-ipau21-of-model2106110001-model/model.yaml
 ```
 
 ## Tags

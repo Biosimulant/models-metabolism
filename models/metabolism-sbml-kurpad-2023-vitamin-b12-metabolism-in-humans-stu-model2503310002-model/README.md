@@ -11,14 +11,13 @@ Faithful wrapper of upstream SBML model.
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-kurpad-2023-vitamin-b12-metabolism-in-humans-stu-model2503310002-model
     alias: model
-    manifest_path: models/metabolism-sbml-kurpad-2023-vitamin-b12-metabolism-in-humans-stu-model2503310002-model/model.yaml
 ```
 
 ## Tags

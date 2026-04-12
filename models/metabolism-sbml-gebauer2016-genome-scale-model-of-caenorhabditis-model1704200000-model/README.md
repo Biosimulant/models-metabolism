@@ -11,14 +11,13 @@ Gebauer2016 - Genome-scale model ofCaenorhabditis elegans metabolism (without ba
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-gebauer2016-genome-scale-model-of-caenorhabditis-model1704200000-model
     alias: model
-    manifest_path: models/metabolism-sbml-gebauer2016-genome-scale-model-of-caenorhabditis-model1704200000-model/model.yaml
 ```
 
 ## Tags

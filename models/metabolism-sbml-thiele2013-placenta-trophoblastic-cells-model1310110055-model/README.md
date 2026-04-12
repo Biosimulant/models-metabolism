@@ -11,14 +11,13 @@ Thiele2013 - Placenta trophoblastic cells The model of placenta trophoblastic ce
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-thiele2013-placenta-trophoblastic-cells-model1310110055-model
     alias: model
-    manifest_path: models/metabolism-sbml-thiele2013-placenta-trophoblastic-cells-model1310110055-model/model.yaml
 ```
 
 ## Tags

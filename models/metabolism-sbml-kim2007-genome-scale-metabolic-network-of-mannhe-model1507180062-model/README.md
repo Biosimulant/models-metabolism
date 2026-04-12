@@ -11,14 +11,13 @@ Kim2007 - Genome-scale metabolic network ofMannheimia succiniciproducens (iTY425
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-kim2007-genome-scale-metabolic-network-of-mannhe-model1507180062-model
     alias: model
-    manifest_path: models/metabolism-sbml-kim2007-genome-scale-metabolic-network-of-mannhe-model1507180062-model/model.yaml
 ```
 
 ## Tags

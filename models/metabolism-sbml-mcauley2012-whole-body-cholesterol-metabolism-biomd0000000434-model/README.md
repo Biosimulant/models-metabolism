@@ -11,14 +11,13 @@ McAuley2012 - Whole-body Cholesterol Metabolism Lipid metabolism has a key role 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-mcauley2012-whole-body-cholesterol-metabolism-biomd0000000434-model
     alias: model
-    manifest_path: models/metabolism-sbml-mcauley2012-whole-body-cholesterol-metabolism-biomd0000000434-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ Uhlén2015 - Human tissue-based proteome metabolic network - apendix Human apend
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-uhl-n2015-human-tissue-based-proteome-metabolic-model1411240004-model
     alias: model
-    manifest_path: models/metabolism-sbml-uhl-n2015-human-tissue-based-proteome-metabolic-model1411240004-model/model.yaml
 ```
 
 ## Tags

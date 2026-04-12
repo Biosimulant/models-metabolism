@@ -11,14 +11,13 @@ Kerkhoven2013 - Glycolysis in T.brucei - MODEL A There are six models (Model A, 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-kerkhoven2013-glycolysis-in-t-brucei-model-a-biomd0000000513-model
     alias: model
-    manifest_path: models/metabolism-sbml-kerkhoven2013-glycolysis-in-t-brucei-model-a-biomd0000000513-model/model.yaml
 ```
 
 ## Tags

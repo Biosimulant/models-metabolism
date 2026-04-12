@@ -11,14 +11,13 @@ This is the model described in the article: Towards a genome-scale kinetic model
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-smallbone2010-genome-scale-yeast-kinetics-model1001200000-model
     alias: model
-    manifest_path: models/metabolism-sbml-smallbone2010-genome-scale-yeast-kinetics-model1001200000-model/model.yaml
 ```
 
 ## Tags

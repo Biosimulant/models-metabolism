@@ -11,14 +11,13 @@ Orthologous iso-enzyme metabolic network for Bos taurus Copy number alterations 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-bekaert2010-cattle-inferred-metabolic-network-model1008120004-model
     alias: model
-    manifest_path: models/metabolism-sbml-bekaert2010-cattle-inferred-metabolic-network-model1008120004-model/model.yaml
 ```
 
 ## Tags

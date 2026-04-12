@@ -11,14 +11,13 @@ Fuentealb2016 - Genome-scale metabolicreconstruction (iPF215) of Piscirickettsia
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-fuentealb2016-genome-scale-metabolic-reconstruct-model1610250000-model
     alias: model
-    manifest_path: models/metabolism-sbml-fuentealb2016-genome-scale-metabolic-reconstruct-model1610250000-model/model.yaml
 ```
 
 ## Tags

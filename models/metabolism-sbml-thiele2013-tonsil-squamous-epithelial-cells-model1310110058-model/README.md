@@ -11,14 +11,13 @@ Thiele2013 - Tonsil squamous epithelial cells The model of tonsil squamous epith
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-thiele2013-tonsil-squamous-epithelial-cells-model1310110058-model
     alias: model
-    manifest_path: models/metabolism-sbml-thiele2013-tonsil-squamous-epithelial-cells-model1310110058-model/model.yaml
 ```
 
 ## Tags

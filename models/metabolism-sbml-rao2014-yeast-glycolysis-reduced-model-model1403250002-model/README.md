@@ -11,14 +11,13 @@ This is the reduced model corresponding to 'glucose upshift' condition described
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-rao2014-yeast-glycolysis-reduced-model-model1403250002-model
     alias: model
-    manifest_path: models/metabolism-sbml-rao2014-yeast-glycolysis-reduced-model-model1403250002-model/model.yaml
 ```
 
 ## Tags

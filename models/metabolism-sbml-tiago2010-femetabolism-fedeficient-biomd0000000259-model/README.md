@@ -11,14 +11,13 @@ This a model from the article: Systems analysis of iron metabolism: the network 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-tiago2010-femetabolism-fedeficient-biomd0000000259-model
     alias: model
-    manifest_path: models/metabolism-sbml-tiago2010-femetabolism-fedeficient-biomd0000000259-model/model.yaml
 ```
 
 ## Tags

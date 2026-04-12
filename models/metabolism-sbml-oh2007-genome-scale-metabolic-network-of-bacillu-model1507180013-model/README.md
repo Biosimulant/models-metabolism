@@ -11,14 +11,13 @@ Oh2007 - Genome-scale metabolic network ofBacillus subtilis (iYO844) This model 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-oh2007-genome-scale-metabolic-network-of-bacillu-model1507180013-model
     alias: model
-    manifest_path: models/metabolism-sbml-oh2007-genome-scale-metabolic-network-of-bacillu-model1507180013-model/model.yaml
 ```
 
 ## Tags

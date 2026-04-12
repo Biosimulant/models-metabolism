@@ -11,14 +11,13 @@ Genome-scale metabolic model for the leaf of Quercus suber.
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-cunha2022-leaf-gsm-model-of-quercus-suber-model2205040001-model
     alias: model
-    manifest_path: models/metabolism-sbml-cunha2022-leaf-gsm-model-of-quercus-suber-model2205040001-model/model.yaml
 ```
 
 ## Tags

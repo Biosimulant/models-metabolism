@@ -11,14 +11,13 @@ Phenotypically Reconciled Genome-scale Metabolic Model for the Metabolism of Str
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-dias2019-gsm-model-of-s-pneumoniae-r6-biomd0000001090-model
     alias: model
-    manifest_path: models/metabolism-sbml-dias2019-gsm-model-of-s-pneumoniae-r6-biomd0000001090-model/model.yaml
 ```
 
 ## Tags

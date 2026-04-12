@@ -11,14 +11,13 @@ Thiele2013 - Salivary gland glandular cells The model of salivary gland glandula
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-thiele2013-salivary-gland-glandular-cells-model1310110062-model
     alias: model
-    manifest_path: models/metabolism-sbml-thiele2013-salivary-gland-glandular-cells-model1310110062-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ Montagud2010 - Genome-scale metabolic networkof Synechocystis sp. PCC6803 (iSyn6
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-montagud2010-genome-scale-metabolic-network-of-s-model1507180008-model
     alias: model
-    manifest_path: models/metabolism-sbml-montagud2010-genome-scale-metabolic-network-of-s-model1507180008-model/model.yaml
 ```
 
 ## Tags

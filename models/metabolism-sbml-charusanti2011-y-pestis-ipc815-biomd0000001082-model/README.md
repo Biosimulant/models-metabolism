@@ -11,14 +11,13 @@ FROG and miniFROG Reports for the organism Yersinia pestis . These models origin
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-charusanti2011-y-pestis-ipc815-biomd0000001082-model
     alias: model
-    manifest_path: models/metabolism-sbml-charusanti2011-y-pestis-ipc815-biomd0000001082-model/model.yaml
 ```
 
 ## Tags

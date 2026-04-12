@@ -11,14 +11,13 @@ This is the model described in: Bacterial adaptation through distributed sensing
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-kotte2010-ecoli-metabolic-adaption-biomd0000000244-model
     alias: model
-    manifest_path: models/metabolism-sbml-kotte2010-ecoli-metabolic-adaption-biomd0000000244-model/model.yaml
 ```
 
 ## Tags

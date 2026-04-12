@@ -11,14 +11,13 @@ Whole-genome metabolic reconstructions for the model organism Caenorhabditis ele
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-witting2018-wormjam-gem-whole-genome-metabolic-r-model1807230002-model
     alias: model
-    manifest_path: models/metabolism-sbml-witting2018-wormjam-gem-whole-genome-metabolic-r-model1807230002-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ Smallbone2013 - Metabolic Control Analysis - Example 2 Metabolic control analysi
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-smallbone2013-metabolic-control-analysis-example-biomd0000000455-model
     alias: model
-    manifest_path: models/metabolism-sbml-smallbone2013-metabolic-control-analysis-example-biomd0000000455-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ FROG and miniFROG Reports for the organism Synechococcus elongatus PCC 7942 . Th
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-broddrick2016-synechococcus-elongatus-pcc-7942-i-biomd0000001083-model
     alias: model
-    manifest_path: models/metabolism-sbml-broddrick2016-synechococcus-elongatus-pcc-7942-i-biomd0000001083-model/model.yaml
 ```
 
 ## Tags

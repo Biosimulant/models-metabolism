@@ -11,14 +11,13 @@ As in DOI: 10.1007/s12010-020-03470-z
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-gautam2020-metabolic-network-of-thermotoga-sp-st-biomd0000001092-model
     alias: model
-    manifest_path: models/metabolism-sbml-gautam2020-metabolic-network-of-thermotoga-sp-st-biomd0000001092-model/model.yaml
 ```
 
 ## Tags

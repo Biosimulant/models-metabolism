@@ -11,14 +11,13 @@ Thiele2013 - Pancreas islets of Langerhans The model of pancreas islets of Lange
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-thiele2013-pancreas-islets-of-langerhans-model1310110013-model
     alias: model
-    manifest_path: models/metabolism-sbml-thiele2013-pancreas-islets-of-langerhans-model1310110013-model/model.yaml
 ```
 
 ## Tags

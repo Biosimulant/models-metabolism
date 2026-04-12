@@ -11,14 +11,13 @@ Faithful wrapper of upstream SBML model.
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-thomas2014-the-effect-of-aspirin-resistance-on-p-model1401290000-model
     alias: model
-    manifest_path: models/metabolism-sbml-thomas2014-the-effect-of-aspirin-resistance-on-p-model1401290000-model/model.yaml
 ```
 
 ## Tags

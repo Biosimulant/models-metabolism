@@ -11,14 +11,13 @@ Thiele2013 - Ovary ovarian stroma cells The model of ovary ovarian stroma cells 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-thiele2013-ovary-ovarian-stroma-cells-model1310110029-model
     alias: model
-    manifest_path: models/metabolism-sbml-thiele2013-ovary-ovarian-stroma-cells-model1310110029-model/model.yaml
 ```
 
 ## Tags

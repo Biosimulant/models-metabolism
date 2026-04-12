@@ -11,14 +11,13 @@ Can yeast glycolysis be understood in terms of in vitro kinetics of the constitu
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-teusink2000-glycolysis-biomd0000000064-model
     alias: model
-    manifest_path: models/metabolism-sbml-teusink2000-glycolysis-biomd0000000064-model/model.yaml
 ```
 
 ## Tags

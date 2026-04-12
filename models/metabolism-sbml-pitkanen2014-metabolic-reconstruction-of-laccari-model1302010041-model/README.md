@@ -11,14 +11,13 @@ Pitkanen2014 - Metabolic reconstruction of Laccaria bicolor using CoReCo This mo
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-pitkanen2014-metabolic-reconstruction-of-laccari-model1302010041-model
     alias: model
-    manifest_path: models/metabolism-sbml-pitkanen2014-metabolic-reconstruction-of-laccari-model1302010041-model/model.yaml
 ```
 
 ## Tags

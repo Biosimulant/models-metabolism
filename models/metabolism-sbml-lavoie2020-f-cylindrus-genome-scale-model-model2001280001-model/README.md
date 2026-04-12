@@ -11,14 +11,13 @@ This is an automatically generated .xml file describing a genome-scale model of 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-lavoie2020-f-cylindrus-genome-scale-model-model2001280001-model
     alias: model
-    manifest_path: models/metabolism-sbml-lavoie2020-f-cylindrus-genome-scale-model-model2001280001-model/model.yaml
 ```
 
 ## Tags

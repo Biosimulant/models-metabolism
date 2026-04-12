@@ -11,14 +11,13 @@ Rhodobacter sphaeroides model (Version 2 - iRsp1140)
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-imam2013-metabolic-network-in-rhodobacter-sphaer-model1304240000-model
     alias: model
-    manifest_path: models/metabolism-sbml-imam2013-metabolic-network-in-rhodobacter-sphaer-model1304240000-model/model.yaml
 ```
 
 ## Tags

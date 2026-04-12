@@ -11,14 +11,13 @@ The model, iBP722, was reconstructed based on the functional reannotation of the
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-pereira2018-genome-scale-metabolic-model-for-act-model1804130001-model
     alias: model
-    manifest_path: models/metabolism-sbml-pereira2018-genome-scale-metabolic-model-for-act-model1804130001-model/model.yaml
 ```
 
 ## Tags

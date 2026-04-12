@@ -11,14 +11,13 @@ This is the model described in the article: In silico experimentation with a mod
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-nijhout2006-hepatic-folate-metab-model1007200000-model
     alias: model
-    manifest_path: models/metabolism-sbml-nijhout2006-hepatic-folate-metab-model1007200000-model/model.yaml
 ```
 
 ## Tags

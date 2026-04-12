@@ -11,14 +11,13 @@ Thiele2013 - Esophagus squamous epithelial cells The model of esophagus squamous
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-thiele2013-esophagus-squamous-epithelial-cells-model1310110048-model
     alias: model
-    manifest_path: models/metabolism-sbml-thiele2013-esophagus-squamous-epithelial-cells-model1310110048-model/model.yaml
 ```
 
 ## Tags

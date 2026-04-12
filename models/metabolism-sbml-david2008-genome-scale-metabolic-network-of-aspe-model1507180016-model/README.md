@@ -11,14 +11,13 @@ David2008 - Genome-scale metabolic network ofAspergillus nidulans (iHD666) This 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-david2008-genome-scale-metabolic-network-of-aspe-model1507180016-model
     alias: model
-    manifest_path: models/metabolism-sbml-david2008-genome-scale-metabolic-network-of-aspe-model1507180016-model/model.yaml
 ```
 
 ## Tags

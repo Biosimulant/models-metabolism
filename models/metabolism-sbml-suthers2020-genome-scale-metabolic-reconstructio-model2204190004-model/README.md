@@ -11,14 +11,13 @@ Published 2020 version of the first genome-scale metabolic model for Issatchenki
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-suthers2020-genome-scale-metabolic-reconstructio-model2204190004-model
     alias: model
-    manifest_path: models/metabolism-sbml-suthers2020-genome-scale-metabolic-reconstructio-model2204190004-model/model.yaml
 ```
 
 ## Tags

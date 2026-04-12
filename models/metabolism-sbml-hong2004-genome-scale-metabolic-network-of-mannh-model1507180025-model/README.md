@@ -11,14 +11,13 @@ Hong2004 - Genome-scale metabolic network ofMannheimia succiniciproducens (iSH33
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-hong2004-genome-scale-metabolic-network-of-mannh-model1507180025-model
     alias: model
-    manifest_path: models/metabolism-sbml-hong2004-genome-scale-metabolic-network-of-mannh-model1507180025-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ Pinchuck2010 - Genome-scale metabolic networkof Shewanella oneidensis (iSO783) T
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-pinchuck2010-genome-scale-metabolic-network-of-s-model1507180036-model
     alias: model
-    manifest_path: models/metabolism-sbml-pinchuck2010-genome-scale-metabolic-network-of-s-model1507180036-model/model.yaml
 ```
 
 ## Tags

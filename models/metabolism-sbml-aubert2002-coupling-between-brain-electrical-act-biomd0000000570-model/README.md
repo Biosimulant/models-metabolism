@@ -11,14 +11,13 @@ Aubert2002 - Coupling between Brainelectrical activity, Metabolism and Hemodynam
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-aubert2002-coupling-between-brain-electrical-act-biomd0000000570-model
     alias: model
-    manifest_path: models/metabolism-sbml-aubert2002-coupling-between-brain-electrical-act-biomd0000000570-model/model.yaml
 ```
 
 ## Tags

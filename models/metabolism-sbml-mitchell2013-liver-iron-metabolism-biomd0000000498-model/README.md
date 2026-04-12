@@ -11,14 +11,13 @@ Mitchell2013 - Liver Iron Metabolism The model includes the core regulatory comp
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-mitchell2013-liver-iron-metabolism-biomd0000000498-model
     alias: model
-    manifest_path: models/metabolism-sbml-mitchell2013-liver-iron-metabolism-biomd0000000498-model/model.yaml
 ```
 
 ## Tags

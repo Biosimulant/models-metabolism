@@ -11,14 +11,13 @@ This is a whole genome metabolism model of Mycobacterium leprae
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-bannerman2022-whole-genome-metabolism-mycobacter-model2203300001-model
     alias: model
-    manifest_path: models/metabolism-sbml-bannerman2022-whole-genome-metabolism-mycobacter-model2203300001-model/model.yaml
 ```
 
 ## Tags

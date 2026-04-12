@@ -11,14 +11,13 @@ Condition specific zebrafish metabolic models generated using the COBRA MetaboTo
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-raynanolen-2024-pfos-zebrafish-gems-model2403010004-model
     alias: model
-    manifest_path: models/metabolism-sbml-raynanolen-2024-pfos-zebrafish-gems-model2403010004-model/model.yaml
 ```
 
 ## Tags

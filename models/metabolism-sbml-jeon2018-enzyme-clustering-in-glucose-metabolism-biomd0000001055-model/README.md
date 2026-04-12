@@ -11,14 +11,13 @@ Miji Jeon, Hye-Won Kang & Songon An. A Mathematical Model for Enzyme Clustering 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-jeon2018-enzyme-clustering-in-glucose-metabolism-biomd0000001055-model
     alias: model
-    manifest_path: models/metabolism-sbml-jeon2018-enzyme-clustering-in-glucose-metabolism-biomd0000001055-model/model.yaml
 ```
 
 ## Tags

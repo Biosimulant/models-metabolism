@@ -11,14 +11,13 @@ Analysis of metabolic stability, determining the inhibition of CYP2C9 activity a
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-gonzalez2021-qsar-prediction-model-for-cyp2c9-in-model2404160002-model
     alias: model
-    manifest_path: models/metabolism-sbml-gonzalez2021-qsar-prediction-model-for-cyp2c9-in-model2404160002-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ Analysis of metabolic stability, determining the inhibition of CYP2D6 activity a
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-gonzalez2021-qsar-prediction-model-for-cyp2d6-in-model2404160003-model
     alias: model
-    manifest_path: models/metabolism-sbml-gonzalez2021-qsar-prediction-model-for-cyp2d6-in-model2404160003-model/model.yaml
 ```
 
 ## Tags

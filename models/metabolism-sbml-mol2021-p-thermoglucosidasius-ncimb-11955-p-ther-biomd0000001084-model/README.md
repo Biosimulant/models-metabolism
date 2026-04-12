@@ -11,14 +11,13 @@ FROG and miniFROG reports are provided for p_thermo genome-scale metabolic model
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-mol2021-p-thermoglucosidasius-ncimb-11955-p-ther-biomd0000001084-model
     alias: model
-    manifest_path: models/metabolism-sbml-mol2021-p-thermoglucosidasius-ncimb-11955-p-ther-biomd0000001084-model/model.yaml
 ```
 
 ## Tags

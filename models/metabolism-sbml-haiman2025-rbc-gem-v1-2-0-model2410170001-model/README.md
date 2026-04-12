@@ -11,14 +11,13 @@ Initial submission of RBC-GEM genome-scale metabolic model, version 1.2.0.
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-haiman2025-rbc-gem-v1-2-0-model2410170001-model
     alias: model
-    manifest_path: models/metabolism-sbml-haiman2025-rbc-gem-v1-2-0-model2410170001-model/model.yaml
 ```
 
 ## Tags

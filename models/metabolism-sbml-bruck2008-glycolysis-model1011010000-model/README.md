@@ -11,14 +11,13 @@ Exploring the effect of variable enzyme concentrations in a kinetic model of yea
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-bruck2008-glycolysis-model1011010000-model
     alias: model
-    manifest_path: models/metabolism-sbml-bruck2008-glycolysis-model1011010000-model/model.yaml
 ```
 
 ## Tags

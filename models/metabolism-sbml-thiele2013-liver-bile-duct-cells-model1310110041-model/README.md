@@ -11,14 +11,13 @@ Thiele2013 - Liver bile duct cells The model of liver bile duct cells metabolism
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-thiele2013-liver-bile-duct-cells-model1310110041-model
     alias: model
-    manifest_path: models/metabolism-sbml-thiele2013-liver-bile-duct-cells-model1310110041-model/model.yaml
 ```
 
 ## Tags

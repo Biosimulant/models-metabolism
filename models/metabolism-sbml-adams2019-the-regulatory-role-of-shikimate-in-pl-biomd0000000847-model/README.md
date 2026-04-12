@@ -11,14 +11,13 @@ This is a mathematical model of phenylalanine metabolism in plants as influenced
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-adams2019-the-regulatory-role-of-shikimate-in-pl-biomd0000000847-model
     alias: model
-    manifest_path: models/metabolism-sbml-adams2019-the-regulatory-role-of-shikimate-in-pl-biomd0000000847-model/model.yaml
 ```
 
 ## Tags

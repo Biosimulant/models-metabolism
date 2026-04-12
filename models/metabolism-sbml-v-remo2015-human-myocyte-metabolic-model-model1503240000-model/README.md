@@ -11,14 +11,13 @@ This SBML representation of the Homo sapiens myocyte metabolic network is made a
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-v-remo2015-human-myocyte-metabolic-model-model1503240000-model
     alias: model
-    manifest_path: models/metabolism-sbml-v-remo2015-human-myocyte-metabolic-model-model1503240000-model/model.yaml
 ```
 
 ## Tags

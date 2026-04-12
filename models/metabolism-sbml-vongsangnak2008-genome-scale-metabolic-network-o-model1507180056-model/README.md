@@ -11,14 +11,13 @@ Vongsangnak2008 - Genome-scale metabolicnetwork of Aspergillus oryzae (iWV1314) 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-vongsangnak2008-genome-scale-metabolic-network-o-model1507180056-model
     alias: model
-    manifest_path: models/metabolism-sbml-vongsangnak2008-genome-scale-metabolic-network-o-model1507180056-model/model.yaml
 ```
 
 ## Tags

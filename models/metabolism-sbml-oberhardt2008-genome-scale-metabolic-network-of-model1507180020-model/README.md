@@ -11,14 +11,13 @@ Oberhardt2008 - Genome-scale metabolicnetwork of Pseudomonas aeruginosa (iMO1056
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-oberhardt2008-genome-scale-metabolic-network-of-model1507180020-model
     alias: model
-    manifest_path: models/metabolism-sbml-oberhardt2008-genome-scale-metabolic-network-of-model1507180020-model/model.yaml
 ```
 
 ## Tags

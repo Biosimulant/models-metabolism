@@ -11,14 +11,13 @@ FROG and miniFROG reports are provided for the study involving genome-scale mode
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-mandakovic2020-microbacterium-species-mgcr1-and-model2408030004-model
     alias: model
-    manifest_path: models/metabolism-sbml-mandakovic2020-microbacterium-species-mgcr1-and-model2408030004-model/model.yaml
 ```
 
 ## Tags

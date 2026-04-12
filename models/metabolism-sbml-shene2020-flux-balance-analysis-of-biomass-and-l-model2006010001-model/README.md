@@ -11,14 +11,13 @@ Modelo_mod3_032020.m is a Matlab code used for the simulation of the growth curv
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-shene2020-flux-balance-analysis-of-biomass-and-l-model2006010001-model
     alias: model
-    manifest_path: models/metabolism-sbml-shene2020-flux-balance-analysis-of-biomass-and-l-model2006010001-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ Karlstaedt2012 - CardioNet, A Human Metabolic Network CardioNet is a functionall
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-karlstaedt2012-cardionet-a-human-metabolic-netwo-model1212040000-model
     alias: model
-    manifest_path: models/metabolism-sbml-karlstaedt2012-cardionet-a-human-metabolic-netwo-model1212040000-model/model.yaml
 ```
 
 ## Tags

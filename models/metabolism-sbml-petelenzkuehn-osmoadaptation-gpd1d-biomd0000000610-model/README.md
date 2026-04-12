@@ -11,14 +11,13 @@ Petelenz-kurdzeil2013 - Osmo adaptationgpd1D This model is described in the arti
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-petelenzkuehn-osmoadaptation-gpd1d-biomd0000000610-model
     alias: model
-    manifest_path: models/metabolism-sbml-petelenzkuehn-osmoadaptation-gpd1d-biomd0000000610-model/model.yaml
 ```
 
 ## Tags

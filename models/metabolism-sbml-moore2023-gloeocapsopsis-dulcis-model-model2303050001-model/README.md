@@ -11,14 +11,13 @@ This is the first genome-scale model of G. dulcis, an extremely desiccation-tole
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-moore2023-gloeocapsopsis-dulcis-model-model2303050001-model
     alias: model
-    manifest_path: models/metabolism-sbml-moore2023-gloeocapsopsis-dulcis-model-model2303050001-model/model.yaml
 ```
 
 ## Tags

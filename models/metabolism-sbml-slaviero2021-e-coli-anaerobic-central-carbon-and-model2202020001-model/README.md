@@ -11,14 +11,13 @@ This model describes the central carbon and energy metabolism of E. coli growing
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-slaviero2021-e-coli-anaerobic-central-carbon-and-model2202020001-model
     alias: model
-    manifest_path: models/metabolism-sbml-slaviero2021-e-coli-anaerobic-central-carbon-and-model2202020001-model/model.yaml
 ```
 
 ## Tags

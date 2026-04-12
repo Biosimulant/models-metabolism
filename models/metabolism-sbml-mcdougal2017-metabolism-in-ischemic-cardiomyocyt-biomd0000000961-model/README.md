@@ -11,14 +11,13 @@ Heart disease remains the leading cause of death globally. Although reperfusion 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-mcdougal2017-metabolism-in-ischemic-cardiomyocyt-biomd0000000961-model
     alias: model
-    manifest_path: models/metabolism-sbml-mcdougal2017-metabolism-in-ischemic-cardiomyocyt-biomd0000000961-model/model.yaml
 ```
 
 ## Tags

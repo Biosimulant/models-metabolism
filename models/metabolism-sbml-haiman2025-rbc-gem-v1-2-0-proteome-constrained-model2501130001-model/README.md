@@ -11,14 +11,13 @@ Initial submission of the proteome-constrained RBC-GEM genome-scale metabolic mo
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-haiman2025-rbc-gem-v1-2-0-proteome-constrained-model2501130001-model
     alias: model
-    manifest_path: models/metabolism-sbml-haiman2025-rbc-gem-v1-2-0-proteome-constrained-model2501130001-model/model.yaml
 ```
 
 ## Tags

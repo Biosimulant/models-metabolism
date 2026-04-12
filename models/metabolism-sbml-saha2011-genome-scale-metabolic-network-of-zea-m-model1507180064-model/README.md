@@ -11,14 +11,13 @@ Saha2011- Genome-scale metabolic network ofZea mays (iRS1563) This model is desc
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-saha2011-genome-scale-metabolic-network-of-zea-m-model1507180064-model
     alias: model
-    manifest_path: models/metabolism-sbml-saha2011-genome-scale-metabolic-network-of-zea-m-model1507180064-model/model.yaml
 ```
 
 ## Tags

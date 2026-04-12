@@ -11,14 +11,13 @@ FROG and miniFROG reports are given for the genome-scale metabolic network of Ba
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-guo2016-bacillus-licheniformis-iwx1009-model2408030002-model
     alias: model
-    manifest_path: models/metabolism-sbml-guo2016-bacillus-licheniformis-iwx1009-model2408030002-model/model.yaml
 ```
 
 ## Tags

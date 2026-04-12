@@ -11,14 +11,13 @@ This is the full scale model of the Arabidopsis metabolic network described in t
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-poolman2009-gs-metabolism-arabidopsis-model3618435756-model
     alias: model
-    manifest_path: models/metabolism-sbml-poolman2009-gs-metabolism-arabidopsis-model3618435756-model/model.yaml
 ```
 
 ## Tags

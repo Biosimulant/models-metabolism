@@ -11,14 +11,13 @@ This is an SBML version of the reaction network used in the article: Metabolic p
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-akir2004-central-carbon-metabolism-of-s-cerevisi-model1008240001-model
     alias: model
-    manifest_path: models/metabolism-sbml-akir2004-central-carbon-metabolism-of-s-cerevisi-model1008240001-model/model.yaml
 ```
 
 ## Tags

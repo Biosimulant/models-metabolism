@@ -11,14 +11,13 @@ Enzyme-constrained model for human metabolism based on humanGEM1
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-ecmodel-of-humangem-model2210090003-model
     alias: model
-    manifest_path: models/metabolism-sbml-ecmodel-of-humangem-model2210090003-model/model.yaml
 ```
 
 ## Tags

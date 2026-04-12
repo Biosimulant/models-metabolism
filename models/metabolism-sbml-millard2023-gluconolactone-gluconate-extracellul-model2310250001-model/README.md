@@ -11,14 +11,13 @@ This model was used for instationary 13C metabolic flux analysis of the extracel
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-millard2023-gluconolactone-gluconate-extracellul-model2310250001-model
     alias: model
-    manifest_path: models/metabolism-sbml-millard2023-gluconolactone-gluconate-extracellul-model2310250001-model/model.yaml
 ```
 
 ## Tags

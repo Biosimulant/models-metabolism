@@ -11,14 +11,13 @@ Fang2010 - Genome-scale metabolic network ofMycobacterium tuberculosis (iNJ661m)
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-fang2010-genome-scale-metabolic-network-of-mycob-model1507180018-model
     alias: model
-    manifest_path: models/metabolism-sbml-fang2010-genome-scale-metabolic-network-of-mycob-model1507180018-model/model.yaml
 ```
 
 ## Tags

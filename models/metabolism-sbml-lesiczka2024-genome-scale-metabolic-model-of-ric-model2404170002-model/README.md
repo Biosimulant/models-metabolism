@@ -11,14 +11,13 @@ Genome-scale metabolic model of Rickettsia helvetica generated with the CarveMe 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-lesiczka2024-genome-scale-metabolic-model-of-ric-model2404170002-model
     alias: model
-    manifest_path: models/metabolism-sbml-lesiczka2024-genome-scale-metabolic-model-of-ric-model2404170002-model/model.yaml
 ```
 
 ## Tags

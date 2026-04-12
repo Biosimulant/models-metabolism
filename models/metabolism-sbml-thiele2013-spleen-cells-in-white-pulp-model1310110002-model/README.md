@@ -11,14 +11,13 @@ Thiele2013 - Spleen cells in white pulp The model of spleen cells in white pulp 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-thiele2013-spleen-cells-in-white-pulp-model1310110002-model
     alias: model
-    manifest_path: models/metabolism-sbml-thiele2013-spleen-cells-in-white-pulp-model1310110002-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ REQUIRES SCRUMPY (mudshark.brookes.ac.uk/ScrumPy)To initiate model object, navig
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-norman2019-genome-scale-model-of-clostridium-aut-model1810120001-model
     alias: model
-    manifest_path: models/metabolism-sbml-norman2019-genome-scale-model-of-clostridium-aut-model1810120001-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ We have provided the FROG and miniFROG reports of the genome-scale metabolic net
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-kim2018-e-coli-ihk1487-model2408040002-model
     alias: model
-    manifest_path: models/metabolism-sbml-kim2018-e-coli-ihk1487-model2408040002-model/model.yaml
 ```
 
 ## Tags

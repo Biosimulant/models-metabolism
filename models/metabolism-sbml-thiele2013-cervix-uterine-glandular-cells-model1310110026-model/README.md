@@ -11,14 +11,13 @@ Thiele2013 - Cervix uterine glandular cells The model of cervix uterine glandula
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-thiele2013-cervix-uterine-glandular-cells-model1310110026-model
     alias: model
-    manifest_path: models/metabolism-sbml-thiele2013-cervix-uterine-glandular-cells-model1310110026-model/model.yaml
 ```
 
 ## Tags

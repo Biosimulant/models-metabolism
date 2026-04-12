@@ -11,14 +11,13 @@ Baart2007 - Genome-scale metabolic network ofNeisseria meningitidis (iGB555) Thi
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-baart2007-genome-scale-metabolic-network-of-neis-model1507180069-model
     alias: model
-    manifest_path: models/metabolism-sbml-baart2007-genome-scale-metabolic-network-of-neis-model1507180069-model/model.yaml
 ```
 
 ## Tags

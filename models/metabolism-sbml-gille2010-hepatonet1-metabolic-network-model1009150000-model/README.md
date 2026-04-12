@@ -11,14 +11,13 @@ This is the genome-scale metabolic network of a hepatocyte described in the arti
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-gille2010-hepatonet1-metabolic-network-model1009150000-model
     alias: model
-    manifest_path: models/metabolism-sbml-gille2010-hepatonet1-metabolic-network-model1009150000-model/model.yaml
 ```
 
 ## Tags

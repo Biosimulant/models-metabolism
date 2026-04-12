@@ -11,14 +11,13 @@ Thiele2013 - Bronchus respiratory epithelial cells The model of bronchus respira
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-thiele2013-bronchus-respiratory-epithelial-cells-model1310110063-model
     alias: model
-    manifest_path: models/metabolism-sbml-thiele2013-bronchus-respiratory-epithelial-cells-model1310110063-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ Thiele2013 - Nasopharynx respiratory epithelial cells The model of nasopharynx r
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-thiele2013-nasopharynx-respiratory-epithelial-ce-model1310110052-model
     alias: model
-    manifest_path: models/metabolism-sbml-thiele2013-nasopharynx-respiratory-epithelial-ce-model1310110052-model/model.yaml
 ```
 
 ## Tags

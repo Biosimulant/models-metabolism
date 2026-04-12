@@ -11,14 +11,13 @@ The metabolic model described here refers to the yeast Candida auris with the ta
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-viana2023-cauris-metabolic-model-model2404250001-model
     alias: model
-    manifest_path: models/metabolism-sbml-viana2023-cauris-metabolic-model-model2404250001-model/model.yaml
 ```
 
 ## Tags

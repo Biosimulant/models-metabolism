@@ -11,14 +11,13 @@ Wodke2013 - Genome-scale constraint-based model of M.pneumoniae energy metabolis
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-wodke2013-genome-scale-constraint-based-model-of-model1301290000-model
     alias: model
-    manifest_path: models/metabolism-sbml-wodke2013-genome-scale-constraint-based-model-of-model1301290000-model/model.yaml
 ```
 
 ## Tags

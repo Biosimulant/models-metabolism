@@ -11,14 +11,13 @@ An in silico model to examine damage-induced circadian phase shifts by investiga
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-luna2013-circadianclock-sirt1-model2112310002-model
     alias: model
-    manifest_path: models/metabolism-sbml-luna2013-circadianclock-sirt1-model2112310002-model/model.yaml
 ```
 
 ## Tags

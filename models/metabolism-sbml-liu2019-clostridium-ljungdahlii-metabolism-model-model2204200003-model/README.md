@@ -11,14 +11,13 @@ The unique capability of acetogens to ferment a broad range of substrates render
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-liu2019-clostridium-ljungdahlii-metabolism-model-model2204200003-model
     alias: model
-    manifest_path: models/metabolism-sbml-liu2019-clostridium-ljungdahlii-metabolism-model-model2204200003-model/model.yaml
 ```
 
 ## Tags

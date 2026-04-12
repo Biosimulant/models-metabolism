@@ -11,14 +11,13 @@ This is the genome-scale metabolic network of Plasmodium falciparum described in
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-plata2010-p-falciparum-ith366-model1007060000-model
     alias: model
-    manifest_path: models/metabolism-sbml-plata2010-p-falciparum-ith366-model1007060000-model/model.yaml
 ```
 
 ## Tags

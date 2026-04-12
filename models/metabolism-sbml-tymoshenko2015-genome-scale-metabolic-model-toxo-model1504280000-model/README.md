@@ -11,14 +11,13 @@ Tymoshenko2015 - Genome scale metabolic model- ToxoNet1 This model is described 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-tymoshenko2015-genome-scale-metabolic-model-toxo-model1504280000-model
     alias: model
-    manifest_path: models/metabolism-sbml-tymoshenko2015-genome-scale-metabolic-model-toxo-model1504280000-model/model.yaml
 ```
 
 ## Tags

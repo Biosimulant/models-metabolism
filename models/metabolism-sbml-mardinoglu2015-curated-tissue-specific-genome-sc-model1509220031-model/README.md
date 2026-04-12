@@ -11,14 +11,13 @@ Mardinoglu2015 - Tissue-specific genome-scalemetabolic network - Adipose tissue 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-mardinoglu2015-curated-tissue-specific-genome-sc-model1509220031-model
     alias: model
-    manifest_path: models/metabolism-sbml-mardinoglu2015-curated-tissue-specific-genome-sc-model1509220031-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ Sun2009 - Genome-scale metabolic network ofGeobacter metallireducens (iJS747) Th
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-sun2009-genome-scale-metabolic-network-of-geobac-model1507180002-model
     alias: model
-    manifest_path: models/metabolism-sbml-sun2009-genome-scale-metabolic-network-of-geobac-model1507180002-model/model.yaml
 ```
 
 ## Tags

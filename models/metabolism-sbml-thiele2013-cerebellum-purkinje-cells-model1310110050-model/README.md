@@ -11,14 +11,13 @@ Thiele2013 - Cerebellum Purkinje cells The model of cerebellum Purkinje cells me
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-thiele2013-cerebellum-purkinje-cells-model1310110050-model
     alias: model
-    manifest_path: models/metabolism-sbml-thiele2013-cerebellum-purkinje-cells-model1310110050-model/model.yaml
 ```
 
 ## Tags

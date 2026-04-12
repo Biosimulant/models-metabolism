@@ -11,14 +11,13 @@ Biofilms offer an excellent example of ecological interaction among bacteria. Te
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-garde2020-minimal-model-describing-metabolic-osc-biomd0000000932-model
     alias: model
-    manifest_path: models/metabolism-sbml-garde2020-minimal-model-describing-metabolic-osc-biomd0000000932-model/model.yaml
 ```
 
 ## Tags

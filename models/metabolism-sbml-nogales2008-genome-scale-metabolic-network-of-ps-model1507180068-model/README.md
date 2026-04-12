@@ -11,14 +11,13 @@ Nogales2008 - Genome-scale metabolic networkof Pseudomonas putida (iJN746) This 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-nogales2008-genome-scale-metabolic-network-of-ps-model1507180068-model
     alias: model
-    manifest_path: models/metabolism-sbml-nogales2008-genome-scale-metabolic-network-of-ps-model1507180068-model/model.yaml
 ```
 
 ## Tags

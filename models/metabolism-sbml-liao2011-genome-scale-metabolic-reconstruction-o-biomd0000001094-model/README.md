@@ -11,14 +11,13 @@ Liao2011 - Genome-scale metabolicreconstruction of Klebsiella pneumoniae (iYL122
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-liao2011-genome-scale-metabolic-reconstruction-o-biomd0000001094-model
     alias: model
-    manifest_path: models/metabolism-sbml-liao2011-genome-scale-metabolic-reconstruction-o-biomd0000001094-model/model.yaml
 ```
 
 ## Tags

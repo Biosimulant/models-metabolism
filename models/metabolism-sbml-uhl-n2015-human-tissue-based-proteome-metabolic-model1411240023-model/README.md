@@ -11,14 +11,13 @@ This SBML representation of the Homo sapiens generic metabolic network is made a
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-uhl-n2015-human-tissue-based-proteome-metabolic-model1411240023-model
     alias: model
-    manifest_path: models/metabolism-sbml-uhl-n2015-human-tissue-based-proteome-metabolic-model1411240023-model/model.yaml
 ```
 
 ## Tags

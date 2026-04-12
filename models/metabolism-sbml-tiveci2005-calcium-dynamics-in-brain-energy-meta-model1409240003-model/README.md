@@ -11,14 +11,13 @@ Tiveci2005 - Calcium dynamics in brain energymetabolism and Alzheimer's disease 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-tiveci2005-calcium-dynamics-in-brain-energy-meta-model1409240003-model
     alias: model
-    manifest_path: models/metabolism-sbml-tiveci2005-calcium-dynamics-in-brain-energy-meta-model1409240003-model/model.yaml
 ```
 
 ## Tags

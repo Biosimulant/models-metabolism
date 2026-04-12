@@ -11,14 +11,13 @@ Sohn2012 - Genome-scale metabolic network ofSchizosaccharomyces pombe (SpoMBEL16
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-sohn2012-genome-scale-metabolic-network-of-schiz-model1507180061-model
     alias: model
-    manifest_path: models/metabolism-sbml-sohn2012-genome-scale-metabolic-network-of-schiz-model1507180061-model/model.yaml
 ```
 
 ## Tags

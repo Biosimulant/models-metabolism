@@ -11,14 +11,13 @@ Kamminga2017 - Metabolic model of Mycoplasma hyopneumoniae growth This model is 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-kamminga2017-metabolic-model-of-mycoplasma-hyopn-model1704250001-model
     alias: model
-    manifest_path: models/metabolism-sbml-kamminga2017-metabolic-model-of-mycoplasma-hyopn-model1704250001-model/model.yaml
 ```
 
 ## Tags

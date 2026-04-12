@@ -11,14 +11,13 @@ Vanee2010 - Genome-scale metabolic model ofCryptosporidium hominis (iNV213) This
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-vanee2010-genome-scale-metabolic-model-of-crypto-model1507180071-model
     alias: model
-    manifest_path: models/metabolism-sbml-vanee2010-genome-scale-metabolic-model-of-crypto-model1507180071-model/model.yaml
 ```
 
 ## Tags

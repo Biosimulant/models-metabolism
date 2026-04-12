@@ -11,14 +11,13 @@ Nogales2012 - Genome-scale metabolic networkof Synechocystis sp. (iJN678) This m
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-nogales2012-genome-scale-metabolic-network-of-sy-model1507180046-model
     alias: model
-    manifest_path: models/metabolism-sbml-nogales2012-genome-scale-metabolic-network-of-sy-model1507180046-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ Thiele2013 - Lung pneumocytes The model of lung pneumocytes metabolism is derive
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-thiele2013-lung-pneumocytes-model1310110010-model
     alias: model
-    manifest_path: models/metabolism-sbml-thiele2013-lung-pneumocytes-model1310110010-model/model.yaml
 ```
 
 ## Tags

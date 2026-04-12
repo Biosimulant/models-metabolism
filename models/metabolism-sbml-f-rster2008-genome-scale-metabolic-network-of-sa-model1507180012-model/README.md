@@ -11,14 +11,13 @@ Förster2008 - Genome-scale metabolicnetwork of Saccharamyces cerevisiae (iFF708
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-f-rster2008-genome-scale-metabolic-network-of-sa-model1507180012-model
     alias: model
-    manifest_path: models/metabolism-sbml-f-rster2008-genome-scale-metabolic-network-of-sa-model1507180012-model/model.yaml
 ```
 
 ## Tags

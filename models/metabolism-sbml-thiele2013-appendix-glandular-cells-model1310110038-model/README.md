@@ -11,14 +11,13 @@ Thiele2013 - Appendix glandular cells The model of appendix glandular cells meta
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-thiele2013-appendix-glandular-cells-model1310110038-model
     alias: model
-    manifest_path: models/metabolism-sbml-thiele2013-appendix-glandular-cells-model1310110038-model/model.yaml
 ```
 
 ## Tags

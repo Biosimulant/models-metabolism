@@ -11,14 +11,13 @@ Strain-specific genome-scale metabolic model of C. striatum FDAARGOS_1054.
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-icstr1054fb23-genome-scale-metabolic-model-of-co-model2304270001-model
     alias: model
-    manifest_path: models/metabolism-sbml-icstr1054fb23-genome-scale-metabolic-model-of-co-model2304270001-model/model.yaml
 ```
 
 ## Tags

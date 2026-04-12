@@ -11,14 +11,13 @@ Thiele2013 - Small intestine glandular cells The model of small intestine glandu
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-thiele2013-small-intestine-glandular-cells-model1310110020-model
     alias: model
-    manifest_path: models/metabolism-sbml-thiele2013-small-intestine-glandular-cells-model1310110020-model/model.yaml
 ```
 
 ## Tags

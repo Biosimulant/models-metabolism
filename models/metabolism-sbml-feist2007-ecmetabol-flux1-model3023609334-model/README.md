@@ -11,14 +11,13 @@ organism E. coli K-12 MG1655model iAF1260Biomass Objective Function (BOF) Ec_bio
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-feist2007-ecmetabol-flux1-model3023609334-model
     alias: model
-    manifest_path: models/metabolism-sbml-feist2007-ecmetabol-flux1-model3023609334-model/model.yaml
 ```
 
 ## Tags

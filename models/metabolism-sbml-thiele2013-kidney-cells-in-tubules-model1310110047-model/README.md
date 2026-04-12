@@ -11,14 +11,13 @@ Thiele2013 - Kidney cells in tubules The model of kidney cells in tubules metabo
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-thiele2013-kidney-cells-in-tubules-model1310110047-model
     alias: model
-    manifest_path: models/metabolism-sbml-thiele2013-kidney-cells-in-tubules-model1310110047-model/model.yaml
 ```
 
 ## Tags

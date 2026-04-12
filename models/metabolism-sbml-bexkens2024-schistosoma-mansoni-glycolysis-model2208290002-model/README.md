@@ -11,14 +11,13 @@ A kinetic model of S. mansoni glycolysis in which we can vary the allosteric reg
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-bexkens2024-schistosoma-mansoni-glycolysis-model2208290002-model
     alias: model
-    manifest_path: models/metabolism-sbml-bexkens2024-schistosoma-mansoni-glycolysis-model2208290002-model/model.yaml
 ```
 
 ## Tags

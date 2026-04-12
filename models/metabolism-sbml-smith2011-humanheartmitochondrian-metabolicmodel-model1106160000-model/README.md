@@ -11,14 +11,13 @@ This model is from the article: A metabolic model of the mitochondrion and its u
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-smith2011-humanheartmitochondrian-metabolicmodel-model1106160000-model
     alias: model
-    manifest_path: models/metabolism-sbml-smith2011-humanheartmitochondrian-metabolicmodel-model1106160000-model/model.yaml
 ```
 
 ## Tags

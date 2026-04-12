@@ -11,14 +11,13 @@
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-casini2022-genome-scale-metabolic-model-imtd22ic-model2211290001-model
     alias: model
-    manifest_path: models/metabolism-sbml-casini2022-genome-scale-metabolic-model-imtd22ic-model2211290001-model/model.yaml
 ```
 
 ## Tags

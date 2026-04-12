@@ -11,14 +11,13 @@ Orthologous iso-enzyme metabolic network for Canis familiaris Copy number altera
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-bekaert2010-dog-inferred-metabolic-network-model1008120006-model
     alias: model
-    manifest_path: models/metabolism-sbml-bekaert2010-dog-inferred-metabolic-network-model1008120006-model/model.yaml
 ```
 
 ## Tags

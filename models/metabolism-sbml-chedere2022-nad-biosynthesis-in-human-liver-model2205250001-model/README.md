@@ -11,14 +11,13 @@ This SBML (L2V4) file is a well-annotated ODE-based model created to capture NAD
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-chedere2022-nad-biosynthesis-in-human-liver-model2205250001-model
     alias: model
-    manifest_path: models/metabolism-sbml-chedere2022-nad-biosynthesis-in-human-liver-model2205250001-model/model.yaml
 ```
 
 ## Tags

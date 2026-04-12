@@ -11,14 +11,13 @@ Reed2003 - Genome-scale metabolic network ofEscherichia coli (iJR904) This model
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-reed2003-genome-scale-metabolic-network-of-esche-model1507180060-model
     alias: model
-    manifest_path: models/metabolism-sbml-reed2003-genome-scale-metabolic-network-of-esche-model1507180060-model/model.yaml
 ```
 
 ## Tags

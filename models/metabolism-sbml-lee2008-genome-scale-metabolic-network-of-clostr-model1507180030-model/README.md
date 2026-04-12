@@ -11,14 +11,13 @@ Lee2008 - Genome-scale metabolic network ofClostridium acetobutylicum (iJL432) T
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-lee2008-genome-scale-metabolic-network-of-clostr-model1507180030-model
     alias: model
-    manifest_path: models/metabolism-sbml-lee2008-genome-scale-metabolic-network-of-clostr-model1507180030-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ This a model described in the article: Understanding the regulation of aspartate
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-curien2009-aspartate-metabolism-biomd0000000212-model
     alias: model
-    manifest_path: models/metabolism-sbml-curien2009-aspartate-metabolism-biomd0000000212-model/model.yaml
 ```
 
 ## Tags

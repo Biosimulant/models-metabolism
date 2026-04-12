@@ -11,14 +11,13 @@ Thiele2013 - Stomach lower glandular cells The model of stomach lower glandular 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-thiele2013-stomach-lower-glandular-cells-model1310110046-model
     alias: model
-    manifest_path: models/metabolism-sbml-thiele2013-stomach-lower-glandular-cells-model1310110046-model/model.yaml
 ```
 
 ## Tags

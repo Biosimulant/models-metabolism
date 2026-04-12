@@ -11,14 +11,13 @@ vanEunen2013 - Network dynamics of fatty acid β-oxidation (time-course model) L
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-vaneunen2013-network-dynamics-of-fatty-acid-oxid-biomd0000000506-model
     alias: model
-    manifest_path: models/metabolism-sbml-vaneunen2013-network-dynamics-of-fatty-acid-oxid-biomd0000000506-model/model.yaml
 ```
 
 ## Tags

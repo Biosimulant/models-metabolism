@@ -11,14 +11,13 @@ Model described in: Flexibility in energy metabolism supports hypoxia tolerance 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-feala2007-dros-mel-central-metabolism-model2784700357-model
     alias: model
-    manifest_path: models/metabolism-sbml-feala2007-dros-mel-central-metabolism-model2784700357-model/model.yaml
 ```
 
 ## Tags

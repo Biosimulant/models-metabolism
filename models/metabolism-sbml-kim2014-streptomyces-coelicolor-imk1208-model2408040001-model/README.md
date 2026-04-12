@@ -11,14 +11,13 @@ We have provided the FROG and miniFROG reports for the reconstructed metabolic m
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-kim2014-streptomyces-coelicolor-imk1208-model2408040001-model
     alias: model
-    manifest_path: models/metabolism-sbml-kim2014-streptomyces-coelicolor-imk1208-model2408040001-model/model.yaml
 ```
 
 ## Tags

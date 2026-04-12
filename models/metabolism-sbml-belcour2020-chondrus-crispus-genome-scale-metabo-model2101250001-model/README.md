@@ -11,14 +11,13 @@ This is the first version of a Genome-Scale Metabolic Network model of the red a
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-belcour2020-chondrus-crispus-genome-scale-metabo-model2101250001-model
     alias: model
-    manifest_path: models/metabolism-sbml-belcour2020-chondrus-crispus-genome-scale-metabo-model2101250001-model/model.yaml
 ```
 
 ## Tags

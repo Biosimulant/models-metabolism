@@ -11,14 +11,13 @@ Faithful wrapper of upstream SBML model.
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-triana2014-genome-scale-metabolic-network-of-syn-model1407310000-model
     alias: model
-    manifest_path: models/metabolism-sbml-triana2014-genome-scale-metabolic-network-of-syn-model1407310000-model/model.yaml
 ```
 
 ## Tags

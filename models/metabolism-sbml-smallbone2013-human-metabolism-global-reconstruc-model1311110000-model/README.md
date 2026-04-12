@@ -11,14 +11,13 @@ Smallbone2013 - Human metabolism global reconstruction (recon 2.1) Recon 2.1. Th
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-smallbone2013-human-metabolism-global-reconstruc-model1311110000-model
     alias: model
-    manifest_path: models/metabolism-sbml-smallbone2013-human-metabolism-global-reconstruc-model1311110000-model/model.yaml
 ```
 
 ## Tags

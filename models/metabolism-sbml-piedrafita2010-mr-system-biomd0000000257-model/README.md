@@ -11,14 +11,13 @@ This is the self maintaining metabolism model described in the article: A Simple
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-piedrafita2010-mr-system-biomd0000000257-model
     alias: model
-    manifest_path: models/metabolism-sbml-piedrafita2010-mr-system-biomd0000000257-model/model.yaml
 ```
 
 ## Tags

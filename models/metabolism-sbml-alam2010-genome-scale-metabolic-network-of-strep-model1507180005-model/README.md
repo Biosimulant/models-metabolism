@@ -11,14 +11,13 @@ Alam2010 - Genome-scale metabolic network ofStreptomyces coelicolor This model i
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-alam2010-genome-scale-metabolic-network-of-strep-model1507180005-model
     alias: model
-    manifest_path: models/metabolism-sbml-alam2010-genome-scale-metabolic-network-of-strep-model1507180005-model/model.yaml
 ```
 
 ## Tags

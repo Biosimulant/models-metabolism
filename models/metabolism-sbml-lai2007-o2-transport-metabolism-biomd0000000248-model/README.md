@@ -11,14 +11,13 @@ This file describes the SBML version of the mathematical model in the following 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-lai2007-o2-transport-metabolism-biomd0000000248-model
     alias: model
-    manifest_path: models/metabolism-sbml-lai2007-o2-transport-metabolism-biomd0000000248-model/model.yaml
 ```
 
 ## Tags

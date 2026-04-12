@@ -11,14 +11,13 @@ This file contains the models, simulation, and generated data that were used in 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-erythrocyte-model-of-the-hemoglobin-oxygen-disso-model2305140001-model
     alias: model
-    manifest_path: models/metabolism-sbml-erythrocyte-model-of-the-hemoglobin-oxygen-disso-model2305140001-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ A Synthetic Gene-Metabolic Oscillator Reference: Fung et al; Nature (2005) 435:1
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-fung2005-metabolic-oscillator-biomd0000000067-model
     alias: model
-    manifest_path: models/metabolism-sbml-fung2005-metabolic-oscillator-biomd0000000067-model/model.yaml
 ```
 
 ## Tags

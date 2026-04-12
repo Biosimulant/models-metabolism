@@ -11,14 +11,13 @@ Sohn2010 - Genome-scale metabolic network ofPichia pastoris (PpaMBEL1254) This m
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-sohn2010-genome-scale-metabolic-network-of-pichi-model1507180050-model
     alias: model
-    manifest_path: models/metabolism-sbml-sohn2010-genome-scale-metabolic-network-of-pichi-model1507180050-model/model.yaml
 ```
 
 ## Tags

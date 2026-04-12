@@ -11,14 +11,13 @@ Thiele2013 - Spleen cells in red pulp The model of spleen cells in red pulp meta
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-thiele2013-spleen-cells-in-red-pulp-model1310110060-model
     alias: model
-    manifest_path: models/metabolism-sbml-thiele2013-spleen-cells-in-red-pulp-model1310110060-model/model.yaml
 ```
 
 ## Tags

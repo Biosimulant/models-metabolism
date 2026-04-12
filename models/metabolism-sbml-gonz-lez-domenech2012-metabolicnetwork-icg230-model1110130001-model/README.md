@@ -11,14 +11,13 @@ This model is from the article: Metabolic stasis in an ancient symbiosis: genome
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-gonz-lez-domenech2012-metabolicnetwork-icg230-model1110130001-model
     alias: model
-    manifest_path: models/metabolism-sbml-gonz-lez-domenech2012-metabolicnetwork-icg230-model1110130001-model/model.yaml
 ```
 
 ## Tags

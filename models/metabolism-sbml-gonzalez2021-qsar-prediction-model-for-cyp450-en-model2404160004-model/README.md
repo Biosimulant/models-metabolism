@@ -11,14 +11,13 @@ Analysis of metabolic stability, determining the inhibition of CYP450 activity a
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-gonzalez2021-qsar-prediction-model-for-cyp450-en-model2404160004-model
     alias: model
-    manifest_path: models/metabolism-sbml-gonzalez2021-qsar-prediction-model-for-cyp450-en-model2404160004-model/model.yaml
 ```
 
 ## Tags

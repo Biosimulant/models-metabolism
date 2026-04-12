@@ -11,14 +11,13 @@ iJN1462 (i) incorporates several hundred additional genes and associated reactio
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-nogales2020-genome-scale-metabolic-network-of-ps-biomd0000001093-model
     alias: model
-    manifest_path: models/metabolism-sbml-nogales2020-genome-scale-metabolic-network-of-ps-biomd0000001093-model/model.yaml
 ```
 
 ## Tags

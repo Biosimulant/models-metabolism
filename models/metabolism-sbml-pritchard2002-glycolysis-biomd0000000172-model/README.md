@@ -11,14 +11,13 @@ from: Schemes of fluc control in a model of Saccharomyces cerevisiae glycolysis 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-pritchard2002-glycolysis-biomd0000000172-model
     alias: model
-    manifest_path: models/metabolism-sbml-pritchard2002-glycolysis-biomd0000000172-model/model.yaml
 ```
 
 ## Tags

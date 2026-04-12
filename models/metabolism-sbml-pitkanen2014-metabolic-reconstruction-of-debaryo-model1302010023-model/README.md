@@ -11,14 +11,13 @@ Pitkanen2014 - Metabolic reconstruction of Debaryomyces hansenii using CoReCo Th
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-pitkanen2014-metabolic-reconstruction-of-debaryo-model1302010023-model
     alias: model
-    manifest_path: models/metabolism-sbml-pitkanen2014-metabolic-reconstruction-of-debaryo-model1302010023-model/model.yaml
 ```
 
 ## Tags

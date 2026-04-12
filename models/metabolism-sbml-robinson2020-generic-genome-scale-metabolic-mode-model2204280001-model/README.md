@@ -11,14 +11,13 @@ This is the generic genome-scale metabolic model of Homo sapiens accompanying th
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-robinson2020-generic-genome-scale-metabolic-mode-model2204280001-model
     alias: model
-    manifest_path: models/metabolism-sbml-robinson2020-generic-genome-scale-metabolic-mode-model2204280001-model/model.yaml
 ```
 
 ## Tags

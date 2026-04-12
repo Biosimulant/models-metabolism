@@ -11,14 +11,13 @@ Thiele2013 - Placenta decidual cells The model of placenta decidual cells metabo
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-thiele2013-placenta-decidual-cells-model1310110049-model
     alias: model
-    manifest_path: models/metabolism-sbml-thiele2013-placenta-decidual-cells-model1310110049-model/model.yaml
 ```
 
 ## Tags

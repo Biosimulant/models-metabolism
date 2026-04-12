@@ -11,14 +11,13 @@ Zhang2009 - Genome-scale metabolic network ofThermotoga maritima This model is d
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-zhang2009-genome-scale-metabolic-network-of-ther-model1507180048-model
     alias: model
-    manifest_path: models/metabolism-sbml-zhang2009-genome-scale-metabolic-network-of-ther-model1507180048-model/model.yaml
 ```
 
 ## Tags

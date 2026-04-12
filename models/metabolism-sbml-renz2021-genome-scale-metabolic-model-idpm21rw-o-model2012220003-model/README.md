@@ -11,14 +11,13 @@ Dolosigranulum pigrum is a quite recently discovered Gram-positive coccus. It ha
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-renz2021-genome-scale-metabolic-model-idpm21rw-o-model2012220003-model
     alias: model
-    manifest_path: models/metabolism-sbml-renz2021-genome-scale-metabolic-model-idpm21rw-o-model2012220003-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ This a model from the article: Fermentation pathway kinetics and metabolic flux 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-galazzo1990-fermentationpathwaykinetics-biomd0000000063-model
     alias: model
-    manifest_path: models/metabolism-sbml-galazzo1990-fermentationpathwaykinetics-biomd0000000063-model/model.yaml
 ```
 
 ## Tags

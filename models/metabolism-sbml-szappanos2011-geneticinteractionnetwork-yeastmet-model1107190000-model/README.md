@@ -11,14 +11,13 @@ This model is from the article: An integrated approach to characterize genetic i
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-szappanos2011-geneticinteractionnetwork-yeastmet-model1107190000-model
     alias: model
-    manifest_path: models/metabolism-sbml-szappanos2011-geneticinteractionnetwork-yeastmet-model1107190000-model/model.yaml
 ```
 
 ## Tags

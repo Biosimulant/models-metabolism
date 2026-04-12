@@ -11,14 +11,13 @@ Reddyhoff2015 - Acetaminophen metabolism and toxicity This model examines acetam
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-reddyhoff2015-acetaminophen-metabolism-and-toxic-biomd0000000609-model
     alias: model
-    manifest_path: models/metabolism-sbml-reddyhoff2015-acetaminophen-metabolism-and-toxic-biomd0000000609-model/model.yaml
 ```
 
 ## Tags

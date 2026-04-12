@@ -11,14 +11,13 @@ Henry2016 Folate pathway model with inducedPanB reaction This model is described
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-thiaville2016-folate-pathway-model-panb-overexpr-biomd0000000689-model
     alias: model
-    manifest_path: models/metabolism-sbml-thiaville2016-folate-pathway-model-panb-overexpr-biomd0000000689-model/model.yaml
 ```
 
 ## Tags

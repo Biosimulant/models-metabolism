@@ -11,14 +11,13 @@ Archer2011 - Genome-scale metabolic model ofEscherichia coli (iCA1273) This mode
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-archer2011-genome-scale-metabolic-model-of-esche-model1507180010-model
     alias: model
-    manifest_path: models/metabolism-sbml-archer2011-genome-scale-metabolic-model-of-esche-model1507180010-model/model.yaml
 ```
 
 ## Tags

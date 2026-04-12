@@ -11,14 +11,13 @@ The model reproduces Fig 6 of the paper. The stoichiometry and rate of reactions
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-hynne2001-glycolysis-biomd0000000061-model
     alias: model
-    manifest_path: models/metabolism-sbml-hynne2001-glycolysis-biomd0000000061-model/model.yaml
 ```
 
 ## Tags

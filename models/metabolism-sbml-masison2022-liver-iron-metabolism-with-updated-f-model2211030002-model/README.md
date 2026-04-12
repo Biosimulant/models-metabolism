@@ -11,14 +11,13 @@ This is a new version of a liver iron model (original from Mitchell 2013 BIOMD00
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-masison2022-liver-iron-metabolism-with-updated-f-model2211030002-model
     alias: model
-    manifest_path: models/metabolism-sbml-masison2022-liver-iron-metabolism-with-updated-f-model2211030002-model/model.yaml
 ```
 
 ## Tags

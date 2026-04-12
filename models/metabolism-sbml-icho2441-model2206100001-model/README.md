@@ -11,14 +11,13 @@ A synthesized Chinese Hamster Ovary (CHO) cell genome-scale model (GeM) consisti
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-icho2441-model2206100001-model
     alias: model
-    manifest_path: models/metabolism-sbml-icho2441-model2206100001-model/model.yaml
 ```
 
 ## Tags

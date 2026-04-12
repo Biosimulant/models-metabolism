@@ -11,14 +11,13 @@ this is a model in the PDB format.
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-dvarak2020-pxr-targeting-using-microbial-metabol-model2002050001-model
     alias: model
-    manifest_path: models/metabolism-sbml-dvarak2020-pxr-targeting-using-microbial-metabol-model2002050001-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ Pan-genome and 252 strain-specific Aspergillus fumigatus genome-scale metabolic 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-mirhakkak2023-aspergillus-fumigatus-metabolic-mo-model2211100001-model
     alias: model
-    manifest_path: models/metabolism-sbml-mirhakkak2023-aspergillus-fumigatus-metabolic-mo-model2211100001-model/model.yaml
 ```
 
 ## Tags

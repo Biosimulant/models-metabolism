@@ -11,14 +11,13 @@ efa201208
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-veith2015-genome-scale-metabolic-model-of-entero-model1510010000-model
     alias: model
-    manifest_path: models/metabolism-sbml-veith2015-genome-scale-metabolic-model-of-entero-model1510010000-model/model.yaml
 ```
 
 ## Tags

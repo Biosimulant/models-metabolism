@@ -11,14 +11,13 @@ This is genome-scale metabolic model of Tortispora caseinolytica as the represen
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-lu2021-genome-scale-metabolic-models-for-yeast-s-model2109130011-model
     alias: model
-    manifest_path: models/metabolism-sbml-lu2021-genome-scale-metabolic-models-for-yeast-s-model2109130011-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ Sulcia-Zinderia-Clastoptera multi-compartment metabolic model
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-ankrah2019-syntrophic-splitting-of-central-carbo-model1908040002-model
     alias: model
-    manifest_path: models/metabolism-sbml-ankrah2019-syntrophic-splitting-of-central-carbo-model1908040002-model/model.yaml
 ```
 
 ## Tags

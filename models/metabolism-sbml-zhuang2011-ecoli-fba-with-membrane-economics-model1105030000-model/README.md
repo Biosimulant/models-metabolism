@@ -11,14 +11,13 @@ Zhuang2011 - Ecoli FBA with membrane economics Genome-scale metabolic model of E
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-zhuang2011-ecoli-fba-with-membrane-economics-model1105030000-model
     alias: model
-    manifest_path: models/metabolism-sbml-zhuang2011-ecoli-fba-with-membrane-economics-model1105030000-model/model.yaml
 ```
 
 ## Tags

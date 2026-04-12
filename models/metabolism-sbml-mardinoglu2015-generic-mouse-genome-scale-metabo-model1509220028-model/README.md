@@ -11,14 +11,13 @@ Mardinoglu2015 - Generic mouse genome-scalemetabolic network (MMR) This model is
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-mardinoglu2015-generic-mouse-genome-scale-metabo-model1509220028-model
     alias: model
-    manifest_path: models/metabolism-sbml-mardinoglu2015-generic-mouse-genome-scale-metabo-model1509220028-model/model.yaml
 ```
 
 ## Tags

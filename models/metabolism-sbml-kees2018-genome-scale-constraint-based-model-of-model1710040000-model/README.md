@@ -11,14 +11,13 @@ Kees2018 - Genome-scale constraint-based model of the mucin-degrader &lt;I&gt;Ak
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-kees2018-genome-scale-constraint-based-model-of-model1710040000-model
     alias: model
-    manifest_path: models/metabolism-sbml-kees2018-genome-scale-constraint-based-model-of-model1710040000-model/model.yaml
 ```
 
 ## Tags

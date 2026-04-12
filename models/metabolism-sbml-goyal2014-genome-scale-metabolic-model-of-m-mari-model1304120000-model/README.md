@@ -11,14 +11,13 @@ Constraint-based genome-scale Metabolic Model of Methanococcus maripaludis S2
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-goyal2014-genome-scale-metabolic-model-of-m-mari-model1304120000-model
     alias: model
-    manifest_path: models/metabolism-sbml-goyal2014-genome-scale-metabolic-model-of-m-mari-model1304120000-model/model.yaml
 ```
 
 ## Tags

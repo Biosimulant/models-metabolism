@@ -11,14 +11,13 @@ Benedict2011 - Genome-scale metoblic networkof Methanosarcina acetivorans (iMB74
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-benedict2011-genome-scale-metoblic-network-of-me-biomd0000001097-model
     alias: model
-    manifest_path: models/metabolism-sbml-benedict2011-genome-scale-metoblic-network-of-me-biomd0000001097-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ The circadian rhythms influence the metabolic activity from molecular level to t
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-bae2017-mathematical-analysis-of-circadian-disru-biomd0000001005-model
     alias: model
-    manifest_path: models/metabolism-sbml-bae2017-mathematical-analysis-of-circadian-disru-biomd0000001005-model/model.yaml
 ```
 
 ## Tags

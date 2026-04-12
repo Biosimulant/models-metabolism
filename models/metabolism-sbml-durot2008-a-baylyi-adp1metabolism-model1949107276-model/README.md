@@ -11,14 +11,13 @@ This is the constraint based model from: Iterative reconstruction of a global me
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-durot2008-a-baylyi-adp1metabolism-model1949107276-model
     alias: model
-    manifest_path: models/metabolism-sbml-durot2008-a-baylyi-adp1metabolism-model1949107276-model/model.yaml
 ```
 
 ## Tags

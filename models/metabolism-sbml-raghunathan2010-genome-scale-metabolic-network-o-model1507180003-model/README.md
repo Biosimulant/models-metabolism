@@ -11,14 +11,13 @@ Raghunathan2010 - Genome-scale metabolicnetwork of Francisella tularensis (iRS60
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-raghunathan2010-genome-scale-metabolic-network-o-model1507180003-model
     alias: model
-    manifest_path: models/metabolism-sbml-raghunathan2010-genome-scale-metabolic-network-o-model1507180003-model/model.yaml
 ```
 
 ## Tags

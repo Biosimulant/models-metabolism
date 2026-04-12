@@ -11,14 +11,13 @@ Risso2009 - Genome-scale metabolic network ofRhodoferax ferrireducens (iCR744) T
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-risso2009-genome-scale-metabolic-network-of-rhod-model1507180024-model
     alias: model
-    manifest_path: models/metabolism-sbml-risso2009-genome-scale-metabolic-network-of-rhod-model1507180024-model/model.yaml
 ```
 
 ## Tags

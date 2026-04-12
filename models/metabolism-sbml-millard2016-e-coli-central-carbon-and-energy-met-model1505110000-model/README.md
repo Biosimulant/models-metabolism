@@ -11,14 +11,13 @@ Millard2016 - E. coli central carbon andenergy metabolism This model is describe
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-millard2016-e-coli-central-carbon-and-energy-met-model1505110000-model
     alias: model
-    manifest_path: models/metabolism-sbml-millard2016-e-coli-central-carbon-and-energy-met-model1505110000-model/model.yaml
 ```
 
 ## Tags

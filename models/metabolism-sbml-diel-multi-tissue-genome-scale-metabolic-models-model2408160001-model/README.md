@@ -11,14 +11,13 @@ The first GSSM of V. vinifera was reconstructed (MODEL2408120001). Tissue-specif
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-diel-multi-tissue-genome-scale-metabolic-models-model2408160001-model
     alias: model
-    manifest_path: models/metabolism-sbml-diel-multi-tissue-genome-scale-metabolic-models-model2408160001-model/model.yaml
 ```
 
 ## Tags

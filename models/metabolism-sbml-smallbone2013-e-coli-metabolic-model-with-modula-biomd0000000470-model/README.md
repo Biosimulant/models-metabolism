@@ -11,14 +11,13 @@ Kieran Smallbone & Pedro Mendes. Large-Scale Metabolic Models: From Reconstructi
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-smallbone2013-e-coli-metabolic-model-with-modula-biomd0000000470-model
     alias: model
-    manifest_path: models/metabolism-sbml-smallbone2013-e-coli-metabolic-model-with-modula-biomd0000000470-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ Kerkhoven2013 - Glycolysis and Pentose Phosphate Pathway in T.brucei - MODEL B T
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-kerkhoven2013-glycolysis-and-pentose-phosphate-p-biomd0000000514-model
     alias: model
-    manifest_path: models/metabolism-sbml-kerkhoven2013-glycolysis-and-pentose-phosphate-p-biomd0000000514-model/model.yaml
 ```
 
 ## Tags

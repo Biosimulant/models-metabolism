@@ -11,14 +11,13 @@ Smallbone2013 - Serine biosynthesis Kinetic modelling of metabolic pathways in a
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-smallbone2013-serine-biosynthesis-biomd0000000458-model
     alias: model
-    manifest_path: models/metabolism-sbml-smallbone2013-serine-biosynthesis-biomd0000000458-model/model.yaml
 ```
 
 ## Tags

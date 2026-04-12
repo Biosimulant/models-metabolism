@@ -11,14 +11,13 @@ Thiele2013 - Prostate glandular cells The model of prostate glandular cells meta
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-thiele2013-prostate-glandular-cells-model1310110018-model
     alias: model
-    manifest_path: models/metabolism-sbml-thiele2013-prostate-glandular-cells-model1310110018-model/model.yaml
 ```
 
 ## Tags

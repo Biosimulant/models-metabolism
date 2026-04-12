@@ -11,14 +11,13 @@ Faithful wrapper of upstream SBML model.
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-ponce-de-leon2015-genome-scale-model-of-bacteria-model1601050000-model
     alias: model
-    manifest_path: models/metabolism-sbml-ponce-de-leon2015-genome-scale-model-of-bacteria-model1601050000-model/model.yaml
 ```
 
 ## Tags

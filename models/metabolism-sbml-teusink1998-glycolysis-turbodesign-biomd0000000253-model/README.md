@@ -11,14 +11,13 @@ This is the model described in the article: The danger of metabolic pathways wit
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-teusink1998-glycolysis-turbodesign-biomd0000000253-model
     alias: model
-    manifest_path: models/metabolism-sbml-teusink1998-glycolysis-turbodesign-biomd0000000253-model/model.yaml
 ```
 
 ## Tags

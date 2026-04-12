@@ -11,14 +11,13 @@ Kongas2007 - Creatine Kinase in energy metabolic signaling in muscle This model 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-kongas2007-creatine-kinase-in-energy-metabolic-s-biomd0000000041-model
     alias: model
-    manifest_path: models/metabolism-sbml-kongas2007-creatine-kinase-in-energy-metabolic-s-biomd0000000041-model/model.yaml
 ```
 
 ## Tags

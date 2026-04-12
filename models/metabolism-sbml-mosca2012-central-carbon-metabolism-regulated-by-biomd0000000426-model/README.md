@@ -11,14 +11,13 @@ Mosca2012 - Central Carbon Metabolism Regulated by AKT The role of the PI3K/Akt/
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-mosca2012-central-carbon-metabolism-regulated-by-biomd0000000426-model
     alias: model
-    manifest_path: models/metabolism-sbml-mosca2012-central-carbon-metabolism-regulated-by-biomd0000000426-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ Thiele2013 - Kidney cells in glomeruli The model of kidney cells in glomeruli me
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-thiele2013-kidney-cells-in-glomeruli-model1310110053-model
     alias: model
-    manifest_path: models/metabolism-sbml-thiele2013-kidney-cells-in-glomeruli-model1310110053-model/model.yaml
 ```
 
 ## Tags

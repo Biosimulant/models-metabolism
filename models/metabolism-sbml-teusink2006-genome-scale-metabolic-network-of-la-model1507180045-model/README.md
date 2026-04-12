@@ -11,14 +11,13 @@ Teusink2006 - Genome-scale metabolic networkof Lactobacillus plantarum (iBT721) 
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-teusink2006-genome-scale-metabolic-network-of-la-model1507180045-model
     alias: model
-    manifest_path: models/metabolism-sbml-teusink2006-genome-scale-metabolic-network-of-la-model1507180045-model/model.yaml
 ```
 
 ## Tags

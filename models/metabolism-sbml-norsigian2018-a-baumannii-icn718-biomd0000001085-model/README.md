@@ -11,14 +11,13 @@ FROG and miniFROG Reports for the organism A. baumannii . The model (iCN718) ori
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-norsigian2018-a-baumannii-icn718-biomd0000001085-model
     alias: model
-    manifest_path: models/metabolism-sbml-norsigian2018-a-baumannii-icn718-biomd0000001085-model/model.yaml
 ```
 
 ## Tags

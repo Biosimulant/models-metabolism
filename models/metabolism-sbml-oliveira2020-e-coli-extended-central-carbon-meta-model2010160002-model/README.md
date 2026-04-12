@@ -11,14 +11,13 @@ The kinetic model of E. coli central carbon metabolism developed by Millard et a
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-oliveira2020-e-coli-extended-central-carbon-meta-model2010160002-model
     alias: model
-    manifest_path: models/metabolism-sbml-oliveira2020-e-coli-extended-central-carbon-meta-model2010160002-model/model.yaml
 ```
 
 ## Tags

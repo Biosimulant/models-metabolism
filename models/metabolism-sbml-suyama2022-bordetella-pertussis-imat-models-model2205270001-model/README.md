@@ -11,14 +11,13 @@ Proteomic expression data was integrated into a manually curated base Bordetella
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-suyama2022-bordetella-pertussis-imat-models-model2205270001-model
     alias: model
-    manifest_path: models/metabolism-sbml-suyama2022-bordetella-pertussis-imat-models-model2205270001-model/model.yaml
 ```
 
 ## Tags

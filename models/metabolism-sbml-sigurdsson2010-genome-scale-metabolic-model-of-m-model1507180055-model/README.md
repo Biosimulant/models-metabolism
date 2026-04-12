@@ -11,14 +11,13 @@ Sigurdsson2010 - Genome-scale metabolic modelof Mus Musculus (iMM1415) This mode
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-sigurdsson2010-genome-scale-metabolic-model-of-m-model1507180055-model
     alias: model
-    manifest_path: models/metabolism-sbml-sigurdsson2010-genome-scale-metabolic-model-of-m-model1507180055-model/model.yaml
 ```
 
 ## Tags

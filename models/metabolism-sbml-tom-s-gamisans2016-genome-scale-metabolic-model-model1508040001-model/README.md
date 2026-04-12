@@ -11,14 +11,13 @@ Tomàs-Gamisans2016 - Genome-Scale Metabolic Model of Pichia pastoris (version 2
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-tom-s-gamisans2016-genome-scale-metabolic-model-model1508040001-model
     alias: model
-    manifest_path: models/metabolism-sbml-tom-s-gamisans2016-genome-scale-metabolic-model-model1508040001-model/model.yaml
 ```
 
 ## Tags

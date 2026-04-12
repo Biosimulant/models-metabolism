@@ -11,14 +11,13 @@ This model is from the article: A genome-scale metabolic model of the lipid-accu
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-loira2012-metabolic-network-of-y-lipolytica-model1111190000-model
     alias: model
-    manifest_path: models/metabolism-sbml-loira2012-metabolic-network-of-y-lipolytica-model1111190000-model/model.yaml
 ```
 
 ## Tags

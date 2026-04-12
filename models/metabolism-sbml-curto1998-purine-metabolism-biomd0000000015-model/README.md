@@ -11,14 +11,13 @@ Curto1998 - purine metabolism This is a purine metabolism model that is geared t
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-curto1998-purine-metabolism-biomd0000000015-model
     alias: model
-    manifest_path: models/metabolism-sbml-curto1998-purine-metabolism-biomd0000000015-model/model.yaml
 ```
 
 ## Tags

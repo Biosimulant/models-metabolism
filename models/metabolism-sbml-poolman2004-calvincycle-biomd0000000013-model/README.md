@@ -11,14 +11,13 @@ This a model from the article: Applications of metabolic modelling to plant meta
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-poolman2004-calvincycle-biomd0000000013-model
     alias: model
-    manifest_path: models/metabolism-sbml-poolman2004-calvincycle-biomd0000000013-model/model.yaml
 ```
 
 ## Tags

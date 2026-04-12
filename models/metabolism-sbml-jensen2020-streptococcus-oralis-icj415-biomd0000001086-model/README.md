@@ -11,14 +11,13 @@ We have presented FROG and miniFROG reports for the first genome-scale model, iC
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-jensen2020-streptococcus-oralis-icj415-biomd0000001086-model
     alias: model
-    manifest_path: models/metabolism-sbml-jensen2020-streptococcus-oralis-icj415-biomd0000001086-model/model.yaml
 ```
 
 ## Tags

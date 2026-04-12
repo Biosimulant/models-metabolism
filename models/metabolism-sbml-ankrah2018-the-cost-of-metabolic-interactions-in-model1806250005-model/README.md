@@ -11,14 +11,13 @@ Multi-compartment metabolic model of the cicada Neotibicen canicularis and its e
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-ankrah2018-the-cost-of-metabolic-interactions-in-model1806250005-model
     alias: model
-    manifest_path: models/metabolism-sbml-ankrah2018-the-cost-of-metabolic-interactions-in-model1806250005-model/model.yaml
 ```
 
 ## Tags

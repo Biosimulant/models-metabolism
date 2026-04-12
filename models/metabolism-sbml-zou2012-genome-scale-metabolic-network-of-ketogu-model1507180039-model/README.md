@@ -11,14 +11,13 @@ Zou2012 - Genome-scale metabolic network ofKetogulonicigenium vulgare (iWZ663) T
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-zou2012-genome-scale-metabolic-network-of-ketogu-model1507180039-model
     alias: model
-    manifest_path: models/metabolism-sbml-zou2012-genome-scale-metabolic-network-of-ketogu-model1507180039-model/model.yaml
 ```
 
 ## Tags

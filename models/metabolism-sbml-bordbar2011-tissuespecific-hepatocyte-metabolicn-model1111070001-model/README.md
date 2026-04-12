@@ -11,14 +11,13 @@ This model is from the article: A multi-tissue type genome-scale metabolic netwo
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-bordbar2011-tissuespecific-hepatocyte-metabolicn-model1111070001-model
     alias: model
-    manifest_path: models/metabolism-sbml-bordbar2011-tissuespecific-hepatocyte-metabolicn-model1111070001-model/model.yaml
 ```
 
 ## Tags

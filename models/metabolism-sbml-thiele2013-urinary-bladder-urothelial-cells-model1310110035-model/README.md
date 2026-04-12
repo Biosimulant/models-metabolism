@@ -11,14 +11,13 @@ Thiele2013 - Urinary bladder urothelial cells The model of urinary bladder uroth
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-thiele2013-urinary-bladder-urothelial-cells-model1310110035-model
     alias: model
-    manifest_path: models/metabolism-sbml-thiele2013-urinary-bladder-urothelial-cells-model1310110035-model/model.yaml
 ```
 
 ## Tags

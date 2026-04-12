@@ -11,14 +11,13 @@ Klipp2002_MetabolicOptimization_linearPathway(n=2) The model describes time depe
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-klipp2002-metabolicoptimization-linearpathway-n-biomd0000000104-model
     alias: model
-    manifest_path: models/metabolism-sbml-klipp2002-metabolicoptimization-linearpathway-n-biomd0000000104-model/model.yaml
 ```
 
 ## Tags

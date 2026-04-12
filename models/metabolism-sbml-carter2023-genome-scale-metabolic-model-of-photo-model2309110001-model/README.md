@@ -11,14 +11,13 @@ Photorhabdus asymbiotica is an emerging human pathogen shown to display a dramat
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-carter2023-genome-scale-metabolic-model-of-photo-model2309110001-model
     alias: model
-    manifest_path: models/metabolism-sbml-carter2023-genome-scale-metabolic-model-of-photo-model2309110001-model/model.yaml
 ```
 
 ## Tags

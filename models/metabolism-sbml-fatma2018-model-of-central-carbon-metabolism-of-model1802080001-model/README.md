@@ -11,14 +11,13 @@ Model of cetnral carbon metabolism of E. coli with additional reactions to inves
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-fatma2018-model-of-central-carbon-metabolism-of-model1802080001-model
     alias: model
-    manifest_path: models/metabolism-sbml-fatma2018-model-of-central-carbon-metabolism-of-model1802080001-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ Costa2014 - Computational Model of L. lactisMetabolism This model is described i
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-costa2014-computational-model-of-l-lactis-metabo-biomd0000000572-model
     alias: model
-    manifest_path: models/metabolism-sbml-costa2014-computational-model-of-l-lactis-metabo-biomd0000000572-model/model.yaml
 ```
 
 ## Tags

@@ -11,14 +11,13 @@ Jörg W. Stucki & Hans-Uwe Simon. Mathematical modeling of the regulation of cas
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the BioModels EBI catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-stucki2005-caspase-3-metabolism-biomd0000001059-model
     alias: model
-    manifest_path: models/metabolism-sbml-stucki2005-caspase-3-metabolism-biomd0000001059-model/model.yaml
 ```
 
 ## Tags

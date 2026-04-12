@@ -11,14 +11,13 @@ A genome-scale metabolic model (GEM) of C. albicans was reconstructed and curate
 
 ## Usage
 
-This model was auto-generated from the biomodels_ebi repository.
+This model was auto-generated from the biomodels_ebi catalog.
 
 ```yaml
 # In a space.yaml wiring file:
 models:
-  - repo: Biosimulant/models
+  - path: ../../models/metabolism-sbml-mirhakkakschaeuble2021-a-candida-albicans-genome-model2110210002-model
     alias: model
-    manifest_path: models/metabolism-sbml-mirhakkakschaeuble2021-a-candida-albicans-genome-model2110210002-model/model.yaml
 ```
 
 ## Tags
