@@ -1,0 +1,86 @@
+schema_version: '2.0'
+title: Feala2007_dros_mel_central_metabolism Lab
+description: 'Model described in: Flexibility in energy metabolism supports hypoxia tolerance
+  in Drosophila flight muscle: metabolomic and computational systems analysis. It can be used
+  to explore metabolic flux dynamics and compare pathway behavior across conditions.'
+io:
+  inputs:
+  - name: initial_metabolic_pathway_state_1
+    maps_to: metabolism_sbml_feala2007_dros_mel_central_metabolism_model2784700357_model.initial_metabolic_pathway_state_1
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 1. Maps to bundled SBML symbol
+      `M_13dpg_c`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from Tellurium setup-time value because no explicit
+      SBML initial value was available.
+  - name: initial_metabolic_pathway_state_2
+    maps_to: metabolism_sbml_feala2007_dros_mel_central_metabolism_model2784700357_model.initial_metabolic_pathway_state_2
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 2. Maps to bundled SBML symbol
+      `M_1pyr5c_m`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from Tellurium setup-time value because no explicit
+      SBML initial value was available.
+  - name: initial_m_d_glycerate_2_phosphate_c3h4o7p
+    maps_to: metabolism_sbml_feala2007_dros_mel_central_metabolism_model2784700357_model.initial_m_d_glycerate_2_phosphate_c3h4o7p
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for m d glycerate 2 phosphate c3h4o7p. Maps to bundled
+      SBML symbol `M_2pg_c`. Applied before the Tellurium simulation starts; this does not
+      change kinetic parameters or equations. Default from Tellurium setup-time value because
+      no explicit SBML initial value was available.
+  - name: initial_metabolic_pathway_state_4
+    maps_to: metabolism_sbml_feala2007_dros_mel_central_metabolism_model2784700357_model.initial_metabolic_pathway_state_4
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 4. Maps to bundled SBML symbol
+      `M_3pg_c`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from Tellurium setup-time value because no explicit
+      SBML initial value was available.
+  - name: initial_metabolic_pathway_state_5
+    maps_to: metabolism_sbml_feala2007_dros_mel_central_metabolism_model2784700357_model.initial_metabolic_pathway_state_5
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 5. Maps to bundled SBML symbol
+      `M_4abut_c`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from Tellurium setup-time value because no explicit
+      SBML initial value was available.
+  outputs:
+  - name: metabolic_pathway_state_1
+    maps_to: metabolism_sbml_feala2007_dros_mel_central_metabolism_model2784700357_model.metabolic_pathway_state_1
+  - name: metabolic_pathway_state_2
+    maps_to: metabolism_sbml_feala2007_dros_mel_central_metabolism_model2784700357_model.metabolic_pathway_state_2
+  - name: m_d_glycerate_2_phosphate_c3h4o7p
+    maps_to: metabolism_sbml_feala2007_dros_mel_central_metabolism_model2784700357_model.m_d_glycerate_2_phosphate_c3h4o7p
+  - name: metabolic_pathway_state_4
+    maps_to: metabolism_sbml_feala2007_dros_mel_central_metabolism_model2784700357_model.metabolic_pathway_state_4
+  - name: metabolic_pathway_state_5
+    maps_to: metabolism_sbml_feala2007_dros_mel_central_metabolism_model2784700357_model.metabolic_pathway_state_5
+  - name: observable_values
+    maps_to: metabolism_sbml_feala2007_dros_mel_central_metabolism_model2784700357_model.observable_values
+  - name: run_summary
+    maps_to: metabolism_sbml_feala2007_dros_mel_central_metabolism_model2784700357_model.run_summary
+  - name: observable_labels
+    maps_to: metabolism_sbml_feala2007_dros_mel_central_metabolism_model2784700357_model.observable_labels
+models:
+- alias: metabolism_sbml_feala2007_dros_mel_central_metabolism_model2784700357_model
+  path: models/core
+  parameters:
+    model_path: data/MODEL2784700357.xml
+    integration_step: 0.1
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: metabolism_sbml_feala2007_dros_mel_central_metabolism_model2784700357_model.observable_values
+  to:
+  - visualisation.metabolism_sbml_feala2007_dros_mel_central_metabolism_model2784700357_model_observable_values
+- from: metabolism_sbml_feala2007_dros_mel_central_metabolism_model2784700357_model.run_summary
+  to:
+  - visualisation.metabolism_sbml_feala2007_dros_mel_central_metabolism_model2784700357_model_run_summary
+- from: metabolism_sbml_feala2007_dros_mel_central_metabolism_model2784700357_model.observable_labels
+  to:
+  - visualisation.metabolism_sbml_feala2007_dros_mel_central_metabolism_model2784700357_model_observable_labels
+runtime:
+  duration: 10.0
+  communication_step: 1.0
+  initial_inputs: {}

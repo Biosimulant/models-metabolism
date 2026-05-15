@@ -1,0 +1,121 @@
+schema_version: '2.0'
+title: Nitin2023- Kinetic model of cellular metabolism
+description: A simplistic numerical model designed to simulate and augment the commercially
+  available real-time, in-vitro, end-point kinetic glycolysis assay with and without pathway-modulating
+  drugs to extend the. It can be used to explore metabolic flux dynamics and compare pathway
+  behavior across conditions.
+standard: sbml
+tags:
+- biomodels_ebi
+- faithful
+- metabolism
+- ode
+- sbml
+- tellurium
+authors:
+- Biosimulant Team
+- Nitin Patil
+- Zohreh Mirveis
+- Hugh J Byrne
+upstream:
+  id: biomodels_ebi:MODEL2312220001
+  source_db: biomodels_ebi
+  source_id: MODEL2312220001
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL2312220001
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2312220001?filename=Kinetic
+    glycolysis assay model.sbml
+  license: CC0
+biosim:
+  entrypoint: src.nitin2023_kinetic_model_of_cellular_metabolism_model2312220001_model:Nitin2023KineticModelOfCellularMetabolismModel2312220001Model
+  init_kwargs:
+    model_path: data/MODEL2312220001.sbml
+    integration_step: 0.1
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_metabolic_pathway_state_1
+    maps_to: mw3a3264af_63ed_4289_a17a_a14fb9d67eff
+    default: 20000.0
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 1. Maps to bundled SBML symbol
+      `mw3a3264af_63ed_4289_a17a_a14fb9d67eff`. Applied before the Tellurium simulation starts;
+      this does not change kinetic parameters or equations. Default from bundled SBML initial
+      value.
+  - name: initial_metabolic_pathway_state_2
+    maps_to: mw76465d1e_cf23_4b01_8554_20dd288edbd4
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 2. Maps to bundled SBML symbol
+      `mw76465d1e_cf23_4b01_8554_20dd288edbd4`. Applied before the Tellurium simulation starts;
+      this does not change kinetic parameters or equations. Default from bundled SBML initial
+      value.
+  - name: initial_metabolic_pathway_state_3
+    maps_to: mwf28b5b41_dded_4f05_85a9_31b845b5a48d
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 3. Maps to bundled SBML symbol
+      `mwf28b5b41_dded_4f05_85a9_31b845b5a48d`. Applied before the Tellurium simulation starts;
+      this does not change kinetic parameters or equations. Default from bundled SBML initial
+      value.
+  - name: initial_observable_2dg
+    maps_to: mw74dc94dc_3350_40dc_8283_cf793630d973
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for observable 2dg. Maps to bundled SBML symbol `mw74dc94dc_3350_40dc_8283_cf793630d973`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_metabolic_pathway_state_5
+    maps_to: mwb94475cd_d488_489d_b1fc_5b2ae6fb2aca
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 5. Maps to bundled SBML symbol
+      `mwb94475cd_d488_489d_b1fc_5b2ae6fb2aca`. Applied before the Tellurium simulation starts;
+      this does not change kinetic parameters or equations. Default from bundled SBML initial
+      value.
+  outputs:
+  - name: metabolic_pathway_state_1
+    maps_to: mw3a3264af_63ed_4289_a17a_a14fb9d67eff
+    label: Metabolic Pathway state 1
+    description: Metabolic Pathway state 1; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `mw3a3264af_63ed_4289_a17a_a14fb9d67eff`. Exact
+      metabolite identity is not encoded in the bundled SBML metadata.
+  - name: metabolic_pathway_state_2
+    maps_to: mw76465d1e_cf23_4b01_8554_20dd288edbd4
+    label: Metabolic Pathway state 2
+    description: Metabolic Pathway state 2; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `mw76465d1e_cf23_4b01_8554_20dd288edbd4`. Exact
+      metabolite identity is not encoded in the bundled SBML metadata.
+  - name: metabolic_pathway_state_3
+    maps_to: mwf28b5b41_dded_4f05_85a9_31b845b5a48d
+    label: Metabolic Pathway state 3
+    description: Metabolic Pathway state 3; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `mwf28b5b41_dded_4f05_85a9_31b845b5a48d`. Exact
+      metabolite identity is not encoded in the bundled SBML metadata.
+  - name: observable_2dg
+    maps_to: mw74dc94dc_3350_40dc_8283_cf793630d973
+    label: 2dg
+    description: 2dg. Maps to SBML symbol `mw74dc94dc_3350_40dc_8283_cf793630d973`.
+  - name: metabolic_pathway_state_5
+    maps_to: mwb94475cd_d488_489d_b1fc_5b2ae6fb2aca
+    label: Metabolic Pathway state 5
+    description: Metabolic Pathway state 5; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `mwb94475cd_d488_489d_b1fc_5b2ae6fb2aca`. Exact
+      metabolite identity is not encoded in the bundled SBML metadata.
+  - name: observable_values
+    description: Latest user-facing observable values from the SBML run.
+  - name: run_summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: observable_labels
+    description: Mapping from user-facing observable ports to display labels.
+parameters:
+- name: integration_step
+  value: 0.1
+  min: 0.0
+  units: model_time
+  description: Internal sampling step for Tellurium output collection.

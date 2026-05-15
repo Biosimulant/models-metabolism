@@ -1,0 +1,81 @@
+schema_version: '2.0'
+title: ODea2007_IkappaB Lab
+description: O'Dea, E.L., Barken, D., Peralta, R.Q., Tran K.T., Werner, S.L., Kearns, J.D.,
+  Levchenko, A., Hoffmann, A. A homeostatic model of IkB metabolism to control constitutive
+  activity.
+io:
+  inputs:
+  - name: initial_metabolic_pathway_state_1
+    maps_to: metabolism_sbml_odea2007_ikappab_biomd0000000147_model.initial_metabolic_pathway_state_1
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 1. Maps to bundled SBML symbol
+      `IkBa_mRNA`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_metabolic_pathway_state_2
+    maps_to: metabolism_sbml_odea2007_ikappab_biomd0000000147_model.initial_metabolic_pathway_state_2
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 2. Maps to bundled SBML symbol
+      `IkBa_cytoplasm`. Applied before the Tellurium simulation starts; this does not change
+      kinetic parameters or equations. Default from bundled SBML initial value.
+  - name: initial_metabolic_pathway_state_3
+    maps_to: metabolism_sbml_odea2007_ikappab_biomd0000000147_model.initial_metabolic_pathway_state_3
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 3. Maps to bundled SBML symbol
+      `IkBa_nucleus`. Applied before the Tellurium simulation starts; this does not change
+      kinetic parameters or equations. Default from bundled SBML initial value.
+  - name: initial_metabolic_pathway_state_4
+    maps_to: metabolism_sbml_odea2007_ikappab_biomd0000000147_model.initial_metabolic_pathway_state_4
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 4. Maps to bundled SBML symbol
+      `IkBaIKK`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_metabolic_pathway_state_5
+    maps_to: metabolism_sbml_odea2007_ikappab_biomd0000000147_model.initial_metabolic_pathway_state_5
+    default: 0.06
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 5. Maps to bundled SBML symbol
+      `IkBaNFkB_cytoplasm`. Applied before the Tellurium simulation starts; this does not
+      change kinetic parameters or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: metabolic_pathway_state_1
+    maps_to: metabolism_sbml_odea2007_ikappab_biomd0000000147_model.metabolic_pathway_state_1
+  - name: metabolic_pathway_state_2
+    maps_to: metabolism_sbml_odea2007_ikappab_biomd0000000147_model.metabolic_pathway_state_2
+  - name: metabolic_pathway_state_3
+    maps_to: metabolism_sbml_odea2007_ikappab_biomd0000000147_model.metabolic_pathway_state_3
+  - name: metabolic_pathway_state_4
+    maps_to: metabolism_sbml_odea2007_ikappab_biomd0000000147_model.metabolic_pathway_state_4
+  - name: metabolic_pathway_state_5
+    maps_to: metabolism_sbml_odea2007_ikappab_biomd0000000147_model.metabolic_pathway_state_5
+  - name: observable_values
+    maps_to: metabolism_sbml_odea2007_ikappab_biomd0000000147_model.observable_values
+  - name: run_summary
+    maps_to: metabolism_sbml_odea2007_ikappab_biomd0000000147_model.run_summary
+  - name: observable_labels
+    maps_to: metabolism_sbml_odea2007_ikappab_biomd0000000147_model.observable_labels
+models:
+- alias: metabolism_sbml_odea2007_ikappab_biomd0000000147_model
+  path: models/core
+  parameters:
+    model_path: data/BIOMD0000000147.xml
+    integration_step: 0.1
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: metabolism_sbml_odea2007_ikappab_biomd0000000147_model.observable_values
+  to:
+  - visualisation.metabolism_sbml_odea2007_ikappab_biomd0000000147_model_observable_values
+- from: metabolism_sbml_odea2007_ikappab_biomd0000000147_model.run_summary
+  to:
+  - visualisation.metabolism_sbml_odea2007_ikappab_biomd0000000147_model_run_summary
+- from: metabolism_sbml_odea2007_ikappab_biomd0000000147_model.observable_labels
+  to:
+  - visualisation.metabolism_sbml_odea2007_ikappab_biomd0000000147_model_observable_labels
+runtime:
+  duration: 10.0
+  communication_step: 1.0
+  initial_inputs: {}

@@ -1,0 +1,85 @@
+schema_version: '2.0'
+title: MacDonald2011_GeneticMetabolicDeterminants_BuchnereAphidicola Lab
+description: 'This model is from the article: Genetic and metabolic determinants of nutritional
+  phenotype in an insect-bacterial symbiosis. It can be used to explore metabolic flux dynamics
+  and compare pathway behavior across conditions.'
+io:
+  inputs:
+  - name: initial_metabolic_pathway_state_1
+    maps_to: metabolism_sbml_macdonald2011_geneticmetabolicdeterminants_buchn_model1012300000_model.initial_metabolic_pathway_state_1
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 1. Maps to bundled SBML symbol
+      `ser__45__L_c_`. Applied before the Tellurium simulation starts; this does not change
+      kinetic parameters or equations. Default from Tellurium setup-time value because no
+      explicit SBML initial value was available.
+  - name: initial_tetrahydrofolate
+    maps_to: metabolism_sbml_macdonald2011_geneticmetabolicdeterminants_buchn_model1012300000_model.initial_tetrahydrofolate
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for tetrahydrofolate. Maps to bundled SBML symbol `thf_c_`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from Tellurium setup-time value because no explicit SBML initial
+      value was available.
+  - name: initial_metabolic_pathway_state_3
+    maps_to: metabolism_sbml_macdonald2011_geneticmetabolicdeterminants_buchn_model1012300000_model.initial_metabolic_pathway_state_3
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 3. Maps to bundled SBML symbol
+      `gly_c_`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from Tellurium setup-time value because no explicit
+      SBML initial value was available.
+  - name: initial_h2o
+    maps_to: metabolism_sbml_macdonald2011_geneticmetabolicdeterminants_buchn_model1012300000_model.initial_h2o
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for h2o. Maps to bundled SBML symbol `h2o_c_`. Applied
+      before the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from Tellurium setup-time value because no explicit SBML initial value was available.
+  - name: initial_metabolic_pathway_state_5
+    maps_to: metabolism_sbml_macdonald2011_geneticmetabolicdeterminants_buchn_model1012300000_model.initial_metabolic_pathway_state_5
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 5. Maps to bundled SBML symbol
+      `mlthf_c_`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from Tellurium setup-time value because no explicit
+      SBML initial value was available.
+  outputs:
+  - name: metabolic_pathway_state_1
+    maps_to: metabolism_sbml_macdonald2011_geneticmetabolicdeterminants_buchn_model1012300000_model.metabolic_pathway_state_1
+  - name: tetrahydrofolate
+    maps_to: metabolism_sbml_macdonald2011_geneticmetabolicdeterminants_buchn_model1012300000_model.tetrahydrofolate
+  - name: metabolic_pathway_state_3
+    maps_to: metabolism_sbml_macdonald2011_geneticmetabolicdeterminants_buchn_model1012300000_model.metabolic_pathway_state_3
+  - name: h2o
+    maps_to: metabolism_sbml_macdonald2011_geneticmetabolicdeterminants_buchn_model1012300000_model.h2o
+  - name: metabolic_pathway_state_5
+    maps_to: metabolism_sbml_macdonald2011_geneticmetabolicdeterminants_buchn_model1012300000_model.metabolic_pathway_state_5
+  - name: observable_values
+    maps_to: metabolism_sbml_macdonald2011_geneticmetabolicdeterminants_buchn_model1012300000_model.observable_values
+  - name: run_summary
+    maps_to: metabolism_sbml_macdonald2011_geneticmetabolicdeterminants_buchn_model1012300000_model.run_summary
+  - name: observable_labels
+    maps_to: metabolism_sbml_macdonald2011_geneticmetabolicdeterminants_buchn_model1012300000_model.observable_labels
+models:
+- alias: metabolism_sbml_macdonald2011_geneticmetabolicdeterminants_buchn_model1012300000_model
+  path: models/core
+  parameters:
+    model_path: data/MODEL1012300000.xml
+    integration_step: 0.1
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: metabolism_sbml_macdonald2011_geneticmetabolicdeterminants_buchn_model1012300000_model.observable_values
+  to:
+  - visualisation.metabolism_sbml_macdonald2011_geneticmetabolicdeterminants_buchn_model1012300000_model_observable_values
+- from: metabolism_sbml_macdonald2011_geneticmetabolicdeterminants_buchn_model1012300000_model.run_summary
+  to:
+  - visualisation.metabolism_sbml_macdonald2011_geneticmetabolicdeterminants_buchn_model1012300000_model_run_summary
+- from: metabolism_sbml_macdonald2011_geneticmetabolicdeterminants_buchn_model1012300000_model.observable_labels
+  to:
+  - visualisation.metabolism_sbml_macdonald2011_geneticmetabolicdeterminants_buchn_model1012300000_model_observable_labels
+runtime:
+  duration: 10.0
+  communication_step: 1.0
+  initial_inputs: {}

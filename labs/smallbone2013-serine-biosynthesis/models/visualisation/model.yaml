@@ -1,0 +1,50 @@
+schema_version: '2.0'
+title: Smallbone2013 - Serine biosynthesis Visualisation
+description: Dedicated presentation model for Smallbone2013 - Serine biosynthesis.
+standard: other
+tags:
+- metabolism
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  entrypoint: src.metabolism_visualisation:MetabolismVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Smallbone2013 - Serine biosynthesis Lab
+    question: Which metabolic pathway dynamics observables show the strongest activity in
+      Smallbone2013 - Serine biosynthesis?
+    answer_focus: metabolic pathway dynamics
+    sources:
+    - alias: metabolism_sbml_smallbone2013_serine_biosynthesis_biomd0000000458_model
+      title: Smallbone2013 - Serine biosynthesis
+      scope: metabolic pathway dynamics
+      label_caveat: Values are native SBML quantities. The bundled SBML is executed directly
+        and equations were not rewritten.
+      observables:
+      - id: phosphohydroxypyruvate
+        label: Phosphohydroxypyruvate
+        maps_to: php
+      - id: phosphoserine
+        label: Phosphoserine
+        maps_to: pser
+  communication_step: 1.0
+runtime:
+  dependencies:
+    packages:
+    - PyYAML==6.0.2
+parameters:
+- name: integration_step
+  value: 1.0
+  min: 0.0
+  units: model_time
+  description: Sampling step for the visualisation model.
+io:
+  inputs:
+  - name: metabolism_sbml_smallbone2013_serine_biosynthesis_biomd0000000458_model_observable_values
+    description: Latest user-facing observable values from the core metabolism model.
+  - name: metabolism_sbml_smallbone2013_serine_biosynthesis_biomd0000000458_model_run_summary
+    description: Run summary from the core metabolism model.
+  - name: metabolism_sbml_smallbone2013_serine_biosynthesis_biomd0000000458_model_observable_labels
+    description: Display labels for user-facing observables.
+  outputs: []

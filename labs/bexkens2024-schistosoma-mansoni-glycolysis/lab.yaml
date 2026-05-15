@@ -1,0 +1,80 @@
+schema_version: '2.0'
+title: Bexkens2024 - Schistosoma mansoni glycolysis Lab
+description: A kinetic model of S. mansoni glycolysis in which we can vary the allosteric
+  regulation on lactate dehydrogenase (LDH).
+io:
+  inputs:
+  - name: initial_atp
+    maps_to: metabolism_sbml_bexkens2024_schistosoma_mansoni_glycolysis_model2208290002_model.initial_atp
+    default: 1.18
+    units: native SBML value
+    description: Initial condition for atp. Maps to bundled SBML symbol `ATP`. Applied before
+      the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_intracellular_glucose
+    maps_to: metabolism_sbml_bexkens2024_schistosoma_mansoni_glycolysis_model2208290002_model.initial_intracellular_glucose
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for intracellular glucose. Maps to bundled SBML symbol
+      `GLCi`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_adp
+    maps_to: metabolism_sbml_bexkens2024_schistosoma_mansoni_glycolysis_model2208290002_model.initial_adp
+    default: 1.74
+    units: native SBML value
+    description: Initial condition for adp. Maps to bundled SBML symbol `ADP`. Applied before
+      the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_glucose_6_phosphate
+    maps_to: metabolism_sbml_bexkens2024_schistosoma_mansoni_glycolysis_model2208290002_model.initial_glucose_6_phosphate
+    default: 0.00384
+    units: native SBML value
+    description: Initial condition for glucose 6 phosphate. Maps to bundled SBML symbol `G6P`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_fructose_6_phosphate
+    maps_to: metabolism_sbml_bexkens2024_schistosoma_mansoni_glycolysis_model2208290002_model.initial_fructose_6_phosphate
+    default: 0.00118
+    units: native SBML value
+    description: Initial condition for fructose 6 phosphate. Maps to bundled SBML symbol `F6P`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: atp
+    maps_to: metabolism_sbml_bexkens2024_schistosoma_mansoni_glycolysis_model2208290002_model.atp
+  - name: intracellular_glucose
+    maps_to: metabolism_sbml_bexkens2024_schistosoma_mansoni_glycolysis_model2208290002_model.intracellular_glucose
+  - name: adp
+    maps_to: metabolism_sbml_bexkens2024_schistosoma_mansoni_glycolysis_model2208290002_model.adp
+  - name: glucose_6_phosphate
+    maps_to: metabolism_sbml_bexkens2024_schistosoma_mansoni_glycolysis_model2208290002_model.glucose_6_phosphate
+  - name: fructose_6_phosphate
+    maps_to: metabolism_sbml_bexkens2024_schistosoma_mansoni_glycolysis_model2208290002_model.fructose_6_phosphate
+  - name: observable_values
+    maps_to: metabolism_sbml_bexkens2024_schistosoma_mansoni_glycolysis_model2208290002_model.observable_values
+  - name: run_summary
+    maps_to: metabolism_sbml_bexkens2024_schistosoma_mansoni_glycolysis_model2208290002_model.run_summary
+  - name: observable_labels
+    maps_to: metabolism_sbml_bexkens2024_schistosoma_mansoni_glycolysis_model2208290002_model.observable_labels
+models:
+- alias: metabolism_sbml_bexkens2024_schistosoma_mansoni_glycolysis_model2208290002_model
+  path: models/core
+  parameters:
+    model_path: data/MODEL2208290002.xml
+    integration_step: 0.1
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: metabolism_sbml_bexkens2024_schistosoma_mansoni_glycolysis_model2208290002_model.observable_values
+  to:
+  - visualisation.metabolism_sbml_bexkens2024_schistosoma_mansoni_glycolysis_model2208290002_model_observable_values
+- from: metabolism_sbml_bexkens2024_schistosoma_mansoni_glycolysis_model2208290002_model.run_summary
+  to:
+  - visualisation.metabolism_sbml_bexkens2024_schistosoma_mansoni_glycolysis_model2208290002_model_run_summary
+- from: metabolism_sbml_bexkens2024_schistosoma_mansoni_glycolysis_model2208290002_model.observable_labels
+  to:
+  - visualisation.metabolism_sbml_bexkens2024_schistosoma_mansoni_glycolysis_model2208290002_model_observable_labels
+runtime:
+  duration: 10.0
+  communication_step: 1.0
+  initial_inputs: {}

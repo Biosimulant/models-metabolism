@@ -1,0 +1,140 @@
+schema_version: '2.0'
+title: vanBeek2007_OxPhos_HeartMuscleCells Visualisation
+description: Dedicated presentation model for vanBeek2007_OxPhos_HeartMuscleCells.
+standard: other
+tags:
+- metabolism
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  entrypoint: src.metabolism_visualisation:MetabolismVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: vanBeek2007_OxPhos_HeartMuscleCells Lab
+    question: Which mitochondrial energy metabolism observables show the strongest activity
+      in vanBeek2007_OxPhos_HeartMuscleCells?
+    answer_focus: mitochondrial energy metabolism
+    sources:
+    - alias: metabolism_sbml_vanbeek2007_oxphos_heartmusclecells_model1006230027_model
+      title: vanBeek2007_OxPhos_HeartMuscleCells
+      scope: mitochondrial energy metabolism
+      label_caveat: Values are native SBML quantities. Conservative pathway-state labels are
+        used where the bundled SBML does not encode exact metabolite identities.
+      observables:
+      - id: cytosolic_atp
+        label: Cytosolic ATP
+        maps_to: ATP_cyt
+      - id: cytosolic_adp
+        label: Cytosolic ADP
+        maps_to: ADP_cyt
+      - id: mitochondrial_energy_state_3_cytosolic
+        label: Mitochondrial Energy state 3 cytosolic
+        maps_to: PCr_cyt
+      - id: mitochondrial_energy_state_4_cytosolic
+        label: Mitochondrial Energy state 4 cytosolic
+        maps_to: Cr_cyt
+      - id: mitochondrial_energy_state_5_cytosolic
+        label: Mitochondrial Energy state 5 cytosolic
+        maps_to: Pi_cyt
+      - id: mitochondrial_energy_state_6
+        label: Mitochondrial Energy state 6
+        maps_to: ATP_ims
+      - id: mitochondrial_energy_state_7
+        label: Mitochondrial Energy state 7
+        maps_to: ADP_ims
+      - id: mitochondrial_energy_state_8
+        label: Mitochondrial Energy state 8
+        maps_to: PCr_ims
+      - id: mitochondrial_energy_state_9
+        label: Mitochondrial Energy state 9
+        maps_to: Cr_ims
+      - id: mitochondrial_energy_state_10
+        label: Mitochondrial Energy state 10
+        maps_to: Pi_ims
+      - id: mitochondrial_energy_state_11
+        label: Mitochondrial Energy state 11
+        maps_to: J_CKMM
+      - id: mitochondrial_energy_state_12
+        label: Mitochondrial Energy state 12
+        maps_to: Den_MMCK
+      - id: mitochondrial_energy_state_13
+        label: Mitochondrial Energy state 13
+        maps_to: Kc_J_CKMM
+      - id: mitochondrial_energy_state_14
+        label: Mitochondrial Energy state 14
+        maps_to: KIb_J_CKMM
+      - id: mitochondrial_energy_state_15
+        label: Mitochondrial Energy state 15
+        maps_to: J_CKMi
+      - id: mitochondrial_energy_state_16
+        label: Mitochondrial Energy state 16
+        maps_to: Den_MiCK
+      - id: mitochondrial_energy_state_17
+        label: Mitochondrial Energy state 17
+        maps_to: Kc_J_CKMi
+      - id: mitochondrial_energy_state_18
+        label: Mitochondrial Energy state 18
+        maps_to: KIb_J_CKMi
+      - id: mitochondrial_energy_state_19
+        label: Mitochondrial Energy state 19
+        maps_to: t_cycle_1
+      - id: mitochondrial_energy_state_20
+        label: Mitochondrial Energy state 20
+        maps_to: t_cycle_2
+      - id: mitochondrial_energy_state_21
+        label: Mitochondrial Energy state 21
+        maps_to: duration_1
+      - id: mitochondrial_energy_state_22
+        label: Mitochondrial Energy state 22
+        maps_to: ltime
+      - id: mitochondrial_energy_state_23
+        label: Mitochondrial Energy state 23
+        maps_to: t_cycle
+      - id: mitochondrial_energy_state_24
+        label: Mitochondrial Energy state 24
+        maps_to: H_ATPmax
+      - id: mitochondrial_energy_state_25
+        label: Mitochondrial Energy state 25
+        maps_to: J_hyd
+      - id: mitochondrial_energy_state_26
+        label: Mitochondrial Energy state 26
+        maps_to: J_syn
+      - id: mitochondrial_energy_state_27
+        label: Mitochondrial Energy state 27
+        maps_to: Den_syn
+      - id: mitochondrial_energy_state_28
+        label: Mitochondrial Energy state 28
+        maps_to: J_diff_ATP
+      - id: mitochondrial_energy_state_29
+        label: Mitochondrial Energy state 29
+        maps_to: J_diff_ADP
+      - id: mitochondrial_energy_state_30
+        label: Mitochondrial Energy state 30
+        maps_to: J_diff_PCr
+      - id: mitochondrial_energy_state_31
+        label: Mitochondrial Energy state 31
+        maps_to: J_diff_Cr
+      - id: mitochondrial_energy_state_32
+        label: Mitochondrial Energy state 32
+        maps_to: J_diff_Pi
+  communication_step: 1.0
+runtime:
+  dependencies:
+    packages:
+    - PyYAML==6.0.2
+parameters:
+- name: integration_step
+  value: 1.0
+  min: 0.0
+  units: model_time
+  description: Sampling step for the visualisation model.
+io:
+  inputs:
+  - name: metabolism_sbml_vanbeek2007_oxphos_heartmusclecells_model1006230027_model_observable_values
+    description: Latest user-facing observable values from the core metabolism model.
+  - name: metabolism_sbml_vanbeek2007_oxphos_heartmusclecells_model1006230027_model_run_summary
+    description: Run summary from the core metabolism model.
+  - name: metabolism_sbml_vanbeek2007_oxphos_heartmusclecells_model1006230027_model_observable_labels
+    description: Display labels for user-facing observables.
+  outputs: []

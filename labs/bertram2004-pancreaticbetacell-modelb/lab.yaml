@@ -1,0 +1,80 @@
+schema_version: '2.0'
+title: Bertram2004_PancreaticBetaCell_modelB Lab
+description: 'This a model from the article: Calcium and glycolysis mediate multiple bursting
+  modes in pancreatic islets. Bertram R, Satin L, Zhang M, Smolen P, Sherman A.'
+io:
+  inputs:
+  - name: initial_pancreatic_metabolism_state_1
+    maps_to: metabolism_sbml_bertram2004_pancreaticbetacell_modelb_biomd0000000373_model.initial_pancreatic_metabolism_state_1
+    default: -60.0
+    units: native SBML value
+    description: Initial condition for pancreatic metabolism state 1. Maps to bundled SBML
+      symbol `V`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_pancreatic_metabolism_state_2
+    maps_to: metabolism_sbml_bertram2004_pancreaticbetacell_modelb_biomd0000000373_model.initial_pancreatic_metabolism_state_2
+    default: 0.025
+    units: native SBML value
+    description: Initial condition for pancreatic metabolism state 2. Maps to bundled SBML
+      symbol `n`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_pancreatic_metabolism_state_3
+    maps_to: metabolism_sbml_bertram2004_pancreaticbetacell_modelb_biomd0000000373_model.initial_pancreatic_metabolism_state_3
+    default: 0.25
+    units: native SBML value
+    description: Initial condition for pancreatic metabolism state 3. Maps to bundled SBML
+      symbol `c`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_pancreatic_metabolism_state_4
+    maps_to: metabolism_sbml_bertram2004_pancreaticbetacell_modelb_biomd0000000373_model.initial_pancreatic_metabolism_state_4
+    default: 185.0
+    units: native SBML value
+    description: Initial condition for pancreatic metabolism state 4. Maps to bundled SBML
+      symbol `cer`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_glucose_6_phosphate
+    maps_to: metabolism_sbml_bertram2004_pancreaticbetacell_modelb_biomd0000000373_model.initial_glucose_6_phosphate
+    default: 200.0
+    units: native SBML value
+    description: Initial condition for glucose 6 phosphate. Maps to bundled SBML symbol `g6p`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: pancreatic_metabolism_state_1
+    maps_to: metabolism_sbml_bertram2004_pancreaticbetacell_modelb_biomd0000000373_model.pancreatic_metabolism_state_1
+  - name: pancreatic_metabolism_state_2
+    maps_to: metabolism_sbml_bertram2004_pancreaticbetacell_modelb_biomd0000000373_model.pancreatic_metabolism_state_2
+  - name: pancreatic_metabolism_state_3
+    maps_to: metabolism_sbml_bertram2004_pancreaticbetacell_modelb_biomd0000000373_model.pancreatic_metabolism_state_3
+  - name: pancreatic_metabolism_state_4
+    maps_to: metabolism_sbml_bertram2004_pancreaticbetacell_modelb_biomd0000000373_model.pancreatic_metabolism_state_4
+  - name: glucose_6_phosphate
+    maps_to: metabolism_sbml_bertram2004_pancreaticbetacell_modelb_biomd0000000373_model.glucose_6_phosphate
+  - name: observable_values
+    maps_to: metabolism_sbml_bertram2004_pancreaticbetacell_modelb_biomd0000000373_model.observable_values
+  - name: run_summary
+    maps_to: metabolism_sbml_bertram2004_pancreaticbetacell_modelb_biomd0000000373_model.run_summary
+  - name: observable_labels
+    maps_to: metabolism_sbml_bertram2004_pancreaticbetacell_modelb_biomd0000000373_model.observable_labels
+models:
+- alias: metabolism_sbml_bertram2004_pancreaticbetacell_modelb_biomd0000000373_model
+  path: models/core
+  parameters:
+    model_path: data/BIOMD0000000373.xml
+    integration_step: 0.1
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: metabolism_sbml_bertram2004_pancreaticbetacell_modelb_biomd0000000373_model.observable_values
+  to:
+  - visualisation.metabolism_sbml_bertram2004_pancreaticbetacell_modelb_biomd0000000373_model_observable_values
+- from: metabolism_sbml_bertram2004_pancreaticbetacell_modelb_biomd0000000373_model.run_summary
+  to:
+  - visualisation.metabolism_sbml_bertram2004_pancreaticbetacell_modelb_biomd0000000373_model_run_summary
+- from: metabolism_sbml_bertram2004_pancreaticbetacell_modelb_biomd0000000373_model.observable_labels
+  to:
+  - visualisation.metabolism_sbml_bertram2004_pancreaticbetacell_modelb_biomd0000000373_model_observable_labels
+runtime:
+  duration: 10.0
+  communication_step: 1.0
+  initial_inputs: {}

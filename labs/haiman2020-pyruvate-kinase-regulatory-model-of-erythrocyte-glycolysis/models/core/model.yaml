@@ -1,0 +1,109 @@
+schema_version: '2.0'
+title: Haiman2020 - Pyruvate Kinase Regulatory Model of Erythrocyte Glycolysis
+description: Dynamic model utilizing mass action kinetics to elucidate network-level effects
+  of allosteric regulation in erythrocyte metabolism. The pyruvate kinase regulatory model
+  includes the glycolytic pathway.
+standard: sbml
+tags:
+- biomodels_ebi
+- faithful
+- metabolism
+- ode
+- sbml
+- tellurium
+authors:
+- Biosimulant Team
+- Zack Haiman
+- Daniel C Zielinski
+- Yuko Koike
+- James T Yurkovich
+- Palsson BO
+upstream:
+  id: biomodels_ebi:MODEL2012150002
+  source_db: biomodels_ebi
+  source_id: MODEL2012150002
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL2012150002
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2012150002?filename=Glycolysis_Hb_PYK.xml
+  license: CC0
+biosim:
+  entrypoint: src.haiman2020_pyruvate_kinase_regulatory_model_of_e_model2012150002_model:Haiman2020PyruvateKinaseRegulatoryModelOfEModel2012150002Model
+  init_kwargs:
+    model_path: data/MODEL2012150002.xml
+    integration_step: 0.1
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_d_glucose
+    maps_to: M_glc__D_c
+    default: 1.24081917841505
+    units: native SBML value
+    description: Initial condition for d glucose. Maps to bundled SBML symbol `M_glc__D_c`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_d_glucose_6_phosphate
+    maps_to: M_g6p_c
+    default: 0.0602185259654985
+    units: native SBML value
+    description: Initial condition for d glucose 6 phosphate. Maps to bundled SBML symbol
+      `M_g6p_c`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_d_fructose_6_phosphate
+    maps_to: M_f6p_c
+    default: 0.0245635954921956
+    units: native SBML value
+    description: Initial condition for d fructose 6 phosphate. Maps to bundled SBML symbol
+      `M_f6p_c`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_d_fructose_1_6_bisphosphate
+    maps_to: M_fdp_c
+    default: 0.00923798760373767
+    units: native SBML value
+    description: Initial condition for d fructose 1 6 bisphosphate. Maps to bundled SBML symbol
+      `M_fdp_c`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_dihydroxyacetone_phosphate
+    maps_to: M_dhap_c
+    default: 0.130120897020308
+    units: native SBML value
+    description: Initial condition for dihydroxyacetone phosphate. Maps to bundled SBML symbol
+      `M_dhap_c`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: d_glucose
+    maps_to: M_glc__D_c
+    label: D Glucose
+    description: D Glucose. Maps to SBML symbol `M_glc__D_c`.
+  - name: d_glucose_6_phosphate
+    maps_to: M_g6p_c
+    label: D Glucose 6 Phosphate
+    description: D Glucose 6 Phosphate. Maps to SBML symbol `M_g6p_c`.
+  - name: d_fructose_6_phosphate
+    maps_to: M_f6p_c
+    label: D Fructose 6 Phosphate
+    description: D Fructose 6 Phosphate. Maps to SBML symbol `M_f6p_c`.
+  - name: d_fructose_1_6_bisphosphate
+    maps_to: M_fdp_c
+    label: D Fructose 1 6 Bisphosphate
+    description: D Fructose 1 6 Bisphosphate. Maps to SBML symbol `M_fdp_c`.
+  - name: dihydroxyacetone_phosphate
+    maps_to: M_dhap_c
+    label: Dihydroxyacetone Phosphate
+    description: Dihydroxyacetone Phosphate. Maps to SBML symbol `M_dhap_c`.
+  - name: observable_values
+    description: Latest user-facing observable values from the SBML run.
+  - name: run_summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: observable_labels
+    description: Mapping from user-facing observable ports to display labels.
+parameters:
+- name: integration_step
+  value: 0.1
+  min: 0.0
+  units: model_time
+  description: Internal sampling step for Tellurium output collection.

@@ -1,0 +1,120 @@
+schema_version: '2.0'
+title: "vanEunen2013 - Network dynamics of fatty acid \u03B2-oxidation (time-course model)"
+description: "vanEunen2013 - Network dynamics of fatty acid \u03B2-oxidation (time-course\
+  \ model) Lipid metabolism plays an important role in the development of metabolic syndrome,\
+  \ a major risk factor for cardiovascular. It can be used to explore metabolic flux dynamics\
+  \ and compare pathway behavior across conditions."
+standard: sbml
+tags:
+- biomodels_ebi
+- faithful
+- metabolism
+- ode
+- sbml
+- tellurium
+authors:
+- Biosimulant Team
+- Karen van Eunen
+- Sereh M J Simons
+- Albert Gerding
+- Aycha Bleeker
+- Gijs den Besten
+upstream:
+  id: biomodels_ebi:BIOMD0000000506
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000506
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000506
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000506?filename=BIOMD0000000506_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.vaneunen2013_network_dynamics_of_fatty_acid_oxid_biomd0000000506_model:Vaneunen2013NetworkDynamicsOfFattyAcidOxidBiomd0000000506Model
+  init_kwargs:
+    model_path: data/BIOMD0000000506.xml
+    integration_step: 0.1
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_lipid_metabolism_state_1_cytosolic
+    maps_to: C16AcylCarCYT
+    default: 0.171
+    units: native SBML value
+    description: Initial condition for lipid metabolism state 1 cytosolic. Maps to bundled
+      SBML symbol `C16AcylCarCYT`. Applied before the Tellurium simulation starts; this does
+      not change kinetic parameters or equations. Default from bundled SBML initial value.
+  - name: initial_lipid_metabolism_state_2_mitochondrial
+    maps_to: C16AcylCarMAT
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for lipid metabolism state 2 mitochondrial. Maps to bundled
+      SBML symbol `C16AcylCarMAT`. Applied before the Tellurium simulation starts; this does
+      not change kinetic parameters or equations. Default from bundled SBML initial value.
+  - name: initial_lipid_metabolism_state_3
+    maps_to: C16AcylCoAMAT
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for lipid metabolism state 3. Maps to bundled SBML symbol
+      `C16AcylCoAMAT`. Applied before the Tellurium simulation starts; this does not change
+      kinetic parameters or equations. Default from bundled SBML initial value.
+  - name: initial_lipid_metabolism_state_4
+    maps_to: C16EnoylCoAMAT
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for lipid metabolism state 4. Maps to bundled SBML symbol
+      `C16EnoylCoAMAT`. Applied before the Tellurium simulation starts; this does not change
+      kinetic parameters or equations. Default from bundled SBML initial value.
+  - name: initial_lipid_metabolism_state_5
+    maps_to: C16HydroxyacylCoAMAT
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for lipid metabolism state 5. Maps to bundled SBML symbol
+      `C16HydroxyacylCoAMAT`. Applied before the Tellurium simulation starts; this does not
+      change kinetic parameters or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: lipid_metabolism_state_1_cytosolic
+    maps_to: C16AcylCarCYT
+    label: Lipid Metabolism state 1 cytosolic
+    description: Lipid Metabolism state 1 cytosolic; conservative display label for an abstract
+      SBML state variable. Maps to SBML symbol `C16AcylCarCYT`. Exact metabolite identity
+      is not encoded in the bundled SBML metadata.
+  - name: lipid_metabolism_state_2_mitochondrial
+    maps_to: C16AcylCarMAT
+    label: Lipid Metabolism state 2 mitochondrial
+    description: Lipid Metabolism state 2 mitochondrial; conservative display label for an
+      abstract SBML state variable. Maps to SBML symbol `C16AcylCarMAT`. Exact metabolite
+      identity is not encoded in the bundled SBML metadata.
+  - name: lipid_metabolism_state_3
+    maps_to: C16AcylCoAMAT
+    label: Lipid Metabolism state 3
+    description: Lipid Metabolism state 3; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `C16AcylCoAMAT`. Exact metabolite identity is not
+      encoded in the bundled SBML metadata.
+  - name: lipid_metabolism_state_4
+    maps_to: C16EnoylCoAMAT
+    label: Lipid Metabolism state 4
+    description: Lipid Metabolism state 4; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `C16EnoylCoAMAT`. Exact metabolite identity is not
+      encoded in the bundled SBML metadata.
+  - name: lipid_metabolism_state_5
+    maps_to: C16HydroxyacylCoAMAT
+    label: Lipid Metabolism state 5
+    description: Lipid Metabolism state 5; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `C16HydroxyacylCoAMAT`. Exact metabolite identity
+      is not encoded in the bundled SBML metadata.
+  - name: observable_values
+    description: Latest user-facing observable values from the SBML run.
+  - name: run_summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: observable_labels
+    description: Mapping from user-facing observable ports to display labels.
+parameters:
+- name: integration_step
+  value: 0.1
+  min: 0.0
+  units: model_time
+  description: Internal sampling step for Tellurium output collection.

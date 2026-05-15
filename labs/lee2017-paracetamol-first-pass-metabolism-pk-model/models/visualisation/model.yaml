@@ -1,0 +1,81 @@
+schema_version: '2.0'
+title: Lee2017 - Paracetamol first-pass metabolism PK model Visualisation
+description: Dedicated presentation model for Lee2017 - Paracetamol first-pass metabolism
+  PK model.
+standard: other
+tags:
+- metabolism
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  entrypoint: src.metabolism_visualisation:MetabolismVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Lee2017 - Paracetamol first-pass metabolism PK model Lab
+    question: Which drug and xenobiotic metabolism observables show the strongest activity
+      in Lee2017 - Paracetamol first-pass metabolism PK model?
+    answer_focus: drug and xenobiotic metabolism
+    sources:
+    - alias: metabolism_sbml_lee2017_paracetamol_first_pass_metabolism_pk_mod_biomd0000000947_model
+      title: Lee2017 - Paracetamol first-pass metabolism PK model
+      scope: drug and xenobiotic metabolism
+      label_caveat: Values are native SBML quantities. Conservative pathway-state labels are
+        used where the bundled SBML does not encode exact metabolite identities.
+      observables:
+      - id: drug_metabolism_state_1
+        label: Drug Metabolism state 1
+        maps_to: V_api
+      - id: drug_metabolism_state_2
+        label: Drug Metabolism state 2
+        maps_to: V_caco
+      - id: drug_metabolism_state_3
+        label: Drug Metabolism state 3
+        maps_to: V_basol
+      - id: drug_metabolism_state_4
+        label: Drug Metabolism state 4
+        maps_to: C_para_Apical
+      - id: drug_metabolism_state_5
+        label: Drug Metabolism state 5
+        maps_to: C_para_Caco_2
+      - id: drug_metabolism_state_6
+        label: Drug Metabolism state 6
+        maps_to: C_para__Basolateral___HepG2_
+      - id: drug_metabolism_state_7
+        label: Drug Metabolism state 7
+        maps_to: C_sulf_Apical
+      - id: drug_metabolism_state_8
+        label: Drug Metabolism state 8
+        maps_to: C_sulf_Caco_2
+      - id: drug_metabolism_state_9
+        label: Drug Metabolism state 9
+        maps_to: C_sulf__Basolateral___HepG2_
+      - id: drug_metabolism_state_10
+        label: Drug Metabolism state 10
+        maps_to: C_glu_Apical
+      - id: drug_metabolism_state_11
+        label: Drug Metabolism state 11
+        maps_to: C_glu_Caco_2
+      - id: drug_metabolism_state_12
+        label: Drug Metabolism state 12
+        maps_to: C_glu__Basolateral___HepG2_
+  communication_step: 1.0
+runtime:
+  dependencies:
+    packages:
+    - PyYAML==6.0.2
+parameters:
+- name: integration_step
+  value: 1.0
+  min: 0.0
+  units: model_time
+  description: Sampling step for the visualisation model.
+io:
+  inputs:
+  - name: metabolism_sbml_lee2017_paracetamol_first_pass_metabolism_pk_mod_biomd0000000947_model_observable_values
+    description: Latest user-facing observable values from the core metabolism model.
+  - name: metabolism_sbml_lee2017_paracetamol_first_pass_metabolism_pk_mod_biomd0000000947_model_run_summary
+    description: Run summary from the core metabolism model.
+  - name: metabolism_sbml_lee2017_paracetamol_first_pass_metabolism_pk_mod_biomd0000000947_model_observable_labels
+    description: Display labels for user-facing observables.
+  outputs: []

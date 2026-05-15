@@ -1,0 +1,118 @@
+schema_version: '2.0'
+title: Oliveira2020 - E. coli Extended Central Carbon Metabolism from Glycerol
+description: The kinetic model of E. coli central carbon metabolism developed by Millard et
+  al.
+standard: sbml
+tags:
+- biomodels_ebi
+- faithful
+- metabolism
+- ode
+- sbml
+- tellurium
+authors:
+- Biosimulant Team
+- Alexandre Oliveira
+- Joana Rodrigues
+- "Eug\xE9nio Campos Ferreira"
+- "L\xEDgia Rodrigues"
+- Oscar Dias
+upstream:
+  id: biomodels_ebi:MODEL2010160002
+  source_db: biomodels_ebi
+  source_id: MODEL2010160002
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL2010160002
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2010160002?filename=CCM_ext_Gly.xml
+  license: CC0
+biosim:
+  entrypoint: src.oliveira2020_e_coli_extended_central_carbon_meta_model2010160002_model:Oliveira2020EColiExtendedCentralCarbonMetaModel2010160002Model
+  init_kwargs:
+    model_path: data/MODEL2010160002.xml
+    integration_step: 0.1
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_glycolysis_state_1
+    maps_to: ACCOA
+    default: 0.142215148385023
+    units: native SBML value
+    description: Initial condition for glycolysis state 1. Maps to bundled SBML symbol `ACCOA`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_glycolysis_state_2
+    maps_to: ACO
+    default: 0.0460024355785109
+    units: native SBML value
+    description: Initial condition for glycolysis state 2. Maps to bundled SBML symbol `ACO`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_glycolysis_state_3
+    maps_to: ACP
+    default: 0.0282547194235527
+    units: native SBML value
+    description: Initial condition for glycolysis state 3. Maps to bundled SBML symbol `ACP`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_glycolysis_state_4
+    maps_to: AKG
+    default: 0.309617017238334
+    units: native SBML value
+    description: Initial condition for glycolysis state 4. Maps to bundled SBML symbol `AKG`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_glycolysis_state_5
+    maps_to: BPG
+    default: 0.367267442064914
+    units: native SBML value
+    description: Initial condition for glycolysis state 5. Maps to bundled SBML symbol `BPG`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: glycolysis_state_1
+    maps_to: ACCOA
+    label: Glycolysis state 1
+    description: Glycolysis state 1; conservative display label for an abstract SBML state
+      variable. Maps to SBML symbol `ACCOA`. Exact metabolite identity is not encoded in the
+      bundled SBML metadata.
+  - name: glycolysis_state_2
+    maps_to: ACO
+    label: Glycolysis state 2
+    description: Glycolysis state 2; conservative display label for an abstract SBML state
+      variable. Maps to SBML symbol `ACO`. Exact metabolite identity is not encoded in the
+      bundled SBML metadata.
+  - name: glycolysis_state_3
+    maps_to: ACP
+    label: Glycolysis state 3
+    description: Glycolysis state 3; conservative display label for an abstract SBML state
+      variable. Maps to SBML symbol `ACP`. Exact metabolite identity is not encoded in the
+      bundled SBML metadata.
+  - name: glycolysis_state_4
+    maps_to: AKG
+    label: Glycolysis state 4
+    description: Glycolysis state 4; conservative display label for an abstract SBML state
+      variable. Maps to SBML symbol `AKG`. Exact metabolite identity is not encoded in the
+      bundled SBML metadata.
+  - name: glycolysis_state_5
+    maps_to: BPG
+    label: Glycolysis state 5
+    description: Glycolysis state 5; conservative display label for an abstract SBML state
+      variable. Maps to SBML symbol `BPG`. Exact metabolite identity is not encoded in the
+      bundled SBML metadata.
+  - name: observable_values
+    description: Latest user-facing observable values from the SBML run.
+  - name: run_summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: observable_labels
+    description: Mapping from user-facing observable ports to display labels.
+parameters:
+- name: integration_step
+  value: 0.1
+  min: 0.0
+  units: model_time
+  description: Internal sampling step for Tellurium output collection.

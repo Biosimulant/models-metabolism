@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "2f170fe1-9de0-4d43-beaf-c68c22d73cd3",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "ce731ebc-a13b-4760-b29a-eee286007170",
+  "created_at": "2026-05-15T16:03:04.731205079+00:00",
+  "last_synced_at": "2026-05-15T18:16:27.969+00:00",
+  "hub_manifest_hash": "d0d8afba9c72993c590f05f4a5eb7fadb301808d1d0d28a939d018dd8e9962f9",
+  "package_name": "nazaret2009-tca-rc-atp-lab"
+}

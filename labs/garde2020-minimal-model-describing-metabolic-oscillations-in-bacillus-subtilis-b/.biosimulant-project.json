@@ -1,0 +1,10 @@
+{
+  "schema_version": "1",
+  "local_id": "8409d8e1-b0ff-4077-815d-0739783174a2",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "ecee9360-c9a7-4b90-b8ea-62b420b53818",
+  "created_at": "2026-05-15T16:03:01.782525040+00:00",
+  "last_synced_at": "2026-05-15T17:59:52.214050+00:00",
+  "hub_manifest_hash": "6560c60092e2f73f0f66dfff36b51fe6385d7dc0cf8232ff72a9f434bf40144a"
+}

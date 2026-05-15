@@ -1,0 +1,83 @@
+schema_version: '2.0'
+title: vanEunen2012 - Yeast Glycolysis (glucose upshift) Visualisation
+description: Dedicated presentation model for vanEunen2012 - Yeast Glycolysis (glucose upshift).
+standard: other
+tags:
+- metabolism
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  entrypoint: src.metabolism_visualisation:MetabolismVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: vanEunen2012 - Yeast Glycolysis (glucose upshift) Lab
+    question: Which central carbon and glycolytic metabolism observables show the strongest
+      activity in vanEunen2012 - Yeast Glycolysis (glucose upshift)?
+    answer_focus: central carbon and glycolytic metabolism
+    sources:
+    - alias: metabolism_sbml_vaneunen2012_yeast_glycolysis_glucose_upshift_model1403250001_model
+      title: vanEunen2012 - Yeast Glycolysis (glucose upshift)
+      scope: central carbon and glycolytic metabolism
+      label_caveat: Values are native SBML quantities. Conservative pathway-state labels are
+        used where the bundled SBML does not encode exact metabolite identities.
+      observables:
+      - id: intracellular_glucose
+        label: intracellular glucose
+        maps_to: species_1
+      - id: glucose_6_phosphate
+        label: glucose 6 phosphate
+        maps_to: species_2
+      - id: fructose_6_phosphate
+        label: fructose 6 phosphate
+        maps_to: species_3
+      - id: fructose_1_6_bisphosphate
+        label: fructose 1 6 bisphosphate
+        maps_to: species_4
+      - id: triose_phosphate
+        label: triose phosphate
+        maps_to: species_5
+      - id: glycolysis_state_6
+        label: Glycolysis state 6
+        maps_to: species_6
+      - id: nad
+        label: NAD
+        maps_to: species_7
+      - id: nadh
+        label: NADH
+        maps_to: species_8
+      - id: p3g
+        label: P3g
+        maps_to: species_9
+      - id: p2g
+        label: P2g
+        maps_to: species_10
+      - id: phosphoenolpyruvate
+        label: phosphoenolpyruvate
+        maps_to: species_11
+      - id: pyruvate
+        label: pyruvate
+        maps_to: species_12
+      - id: glycolysis_state_13
+        label: Glycolysis state 13
+        maps_to: species_13
+  communication_step: 1.0
+runtime:
+  dependencies:
+    packages:
+    - PyYAML==6.0.2
+parameters:
+- name: integration_step
+  value: 1.0
+  min: 0.0
+  units: model_time
+  description: Sampling step for the visualisation model.
+io:
+  inputs:
+  - name: metabolism_sbml_vaneunen2012_yeast_glycolysis_glucose_upshift_model1403250001_model_observable_values
+    description: Latest user-facing observable values from the core metabolism model.
+  - name: metabolism_sbml_vaneunen2012_yeast_glycolysis_glucose_upshift_model1403250001_model_run_summary
+    description: Run summary from the core metabolism model.
+  - name: metabolism_sbml_vaneunen2012_yeast_glycolysis_glucose_upshift_model1403250001_model_observable_labels
+    description: Display labels for user-facing observables.
+  outputs: []

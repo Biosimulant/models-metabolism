@@ -1,0 +1,94 @@
+schema_version: '2.0'
+title: Tiago2010_FeMetabolism_FeLoaded Visualisation
+description: Dedicated presentation model for Tiago2010_FeMetabolism_FeLoaded.
+standard: other
+tags:
+- metabolism
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  entrypoint: src.metabolism_visualisation:MetabolismVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Tiago2010_FeMetabolism_FeLoaded Lab
+    question: Which iron and heme metabolism observables show the strongest activity in Tiago2010_FeMetabolism_FeLoaded?
+    answer_focus: iron and heme metabolism
+    sources:
+    - alias: metabolism_sbml_tiago2010_femetabolism_feloaded_biomd0000000261_model
+      title: Tiago2010_FeMetabolism_FeLoaded
+      scope: iron and heme metabolism
+      label_caveat: Values are native SBML quantities. Conservative pathway-state labels are
+        used where the bundled SBML does not encode exact metabolite identities.
+      observables:
+      - id: iron_in_plasma
+        label: Iron In Plasma
+        maps_to: s1
+      - id: iron_in_bone_marrow
+        label: Iron In Bone Marrow
+        maps_to: s2
+      - id: iron_metabolism_state_3
+        label: Iron Metabolism state 3
+        maps_to: s3
+      - id: iron_in_spleen
+        label: Iron In Spleen
+        maps_to: s4
+      - id: iron_in_liver
+        label: Iron In Liver
+        maps_to: s5
+      - id: iron_in_muscle
+        label: Iron In Muscle
+        maps_to: s6
+      - id: iron_in_duodenum
+        label: Iron In Duodenum
+        maps_to: s7
+      - id: iron_in_integument
+        label: Iron In Integument
+        maps_to: s8
+      - id: iron_in_intestine
+        label: Iron In Intestine
+        maps_to: s9
+      - id: iron_ions_outside
+        label: Iron Ions Outside
+        maps_to: s10
+      - id: iron_in_heart
+        label: Iron In Heart
+        maps_to: s11
+      - id: iron_in_lungs
+        label: Iron In Lungs
+        maps_to: s12
+      - id: iron_in_kidneys
+        label: Iron In Kidneys
+        maps_to: s13
+      - id: iron_in_testes
+        label: Iron In Testes
+        maps_to: s14
+      - id: iron_in_stomach
+        label: Iron In Stomach
+        maps_to: s15
+      - id: iron_metabolism_state_16
+        label: Iron Metabolism state 16
+        maps_to: s16
+      - id: iron_in_brain
+        label: Iron In Brain
+        maps_to: s17
+  communication_step: 1.0
+runtime:
+  dependencies:
+    packages:
+    - PyYAML==6.0.2
+parameters:
+- name: integration_step
+  value: 1.0
+  min: 0.0
+  units: model_time
+  description: Sampling step for the visualisation model.
+io:
+  inputs:
+  - name: metabolism_sbml_tiago2010_femetabolism_feloaded_biomd0000000261_model_observable_values
+    description: Latest user-facing observable values from the core metabolism model.
+  - name: metabolism_sbml_tiago2010_femetabolism_feloaded_biomd0000000261_model_run_summary
+    description: Run summary from the core metabolism model.
+  - name: metabolism_sbml_tiago2010_femetabolism_feloaded_biomd0000000261_model_observable_labels
+    description: Display labels for user-facing observables.
+  outputs: []

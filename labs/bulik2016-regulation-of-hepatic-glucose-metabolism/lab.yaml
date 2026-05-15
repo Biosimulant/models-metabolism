@@ -1,0 +1,82 @@
+schema_version: '2.0'
+title: Bulik2016 - Regulation of hepatic glucose metabolism Lab
+description: 'Bulik2016 - Regulation of hepatic glucosemetabolism This model is described
+  in the article: The relative importance of kinetic mechanisms and variable enzyme abundances
+  for the regulation of hepatic g. It can be used to explore metabolic flux dynamics and compare
+  pathway behavior across conditions.'
+io:
+  inputs:
+  - name: initial_extracellular_glucose
+    maps_to: metabolism_sbml_bulik2016_regulation_of_hepatic_glucose_metaboli_biomd0000000633_model.initial_extracellular_glucose
+    default: 4.0
+    units: native SBML value
+    description: Initial condition for extracellular glucose. Maps to bundled SBML symbol
+      `glc_ext`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_extracellular_lactate
+    maps_to: metabolism_sbml_bulik2016_regulation_of_hepatic_glucose_metaboli_biomd0000000633_model.initial_extracellular_lactate
+    default: 1.0
+    units: native SBML value
+    description: Initial condition for extracellular lactate. Maps to bundled SBML symbol
+      `lac_ext`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_glucose
+    maps_to: metabolism_sbml_bulik2016_regulation_of_hepatic_glucose_metaboli_biomd0000000633_model.initial_glucose
+    default: 4.92256221964406
+    units: native SBML value
+    description: Initial condition for glucose. Maps to bundled SBML symbol `glc`. Applied
+      before the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_glycolysis_state_4
+    maps_to: metabolism_sbml_bulik2016_regulation_of_hepatic_glucose_metaboli_biomd0000000633_model.initial_glycolysis_state_4
+    default: 0.189929897759633
+    units: native SBML value
+    description: Initial condition for glycolysis state 4. Maps to bundled SBML symbol `glc6p`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_glycolysis_state_5
+    maps_to: metabolism_sbml_bulik2016_regulation_of_hepatic_glucose_metaboli_biomd0000000633_model.initial_glycolysis_state_5
+    default: 0.0117240677629403
+    units: native SBML value
+    description: Initial condition for glycolysis state 5. Maps to bundled SBML symbol `glc1p`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: extracellular_glucose
+    maps_to: metabolism_sbml_bulik2016_regulation_of_hepatic_glucose_metaboli_biomd0000000633_model.extracellular_glucose
+  - name: extracellular_lactate
+    maps_to: metabolism_sbml_bulik2016_regulation_of_hepatic_glucose_metaboli_biomd0000000633_model.extracellular_lactate
+  - name: glucose
+    maps_to: metabolism_sbml_bulik2016_regulation_of_hepatic_glucose_metaboli_biomd0000000633_model.glucose
+  - name: glycolysis_state_4
+    maps_to: metabolism_sbml_bulik2016_regulation_of_hepatic_glucose_metaboli_biomd0000000633_model.glycolysis_state_4
+  - name: glycolysis_state_5
+    maps_to: metabolism_sbml_bulik2016_regulation_of_hepatic_glucose_metaboli_biomd0000000633_model.glycolysis_state_5
+  - name: observable_values
+    maps_to: metabolism_sbml_bulik2016_regulation_of_hepatic_glucose_metaboli_biomd0000000633_model.observable_values
+  - name: run_summary
+    maps_to: metabolism_sbml_bulik2016_regulation_of_hepatic_glucose_metaboli_biomd0000000633_model.run_summary
+  - name: observable_labels
+    maps_to: metabolism_sbml_bulik2016_regulation_of_hepatic_glucose_metaboli_biomd0000000633_model.observable_labels
+models:
+- alias: metabolism_sbml_bulik2016_regulation_of_hepatic_glucose_metaboli_biomd0000000633_model
+  path: models/core
+  parameters:
+    model_path: data/BIOMD0000000633.xml
+    integration_step: 0.1
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: metabolism_sbml_bulik2016_regulation_of_hepatic_glucose_metaboli_biomd0000000633_model.observable_values
+  to:
+  - visualisation.metabolism_sbml_bulik2016_regulation_of_hepatic_glucose_metaboli_biomd0000000633_model_observable_values
+- from: metabolism_sbml_bulik2016_regulation_of_hepatic_glucose_metaboli_biomd0000000633_model.run_summary
+  to:
+  - visualisation.metabolism_sbml_bulik2016_regulation_of_hepatic_glucose_metaboli_biomd0000000633_model_run_summary
+- from: metabolism_sbml_bulik2016_regulation_of_hepatic_glucose_metaboli_biomd0000000633_model.observable_labels
+  to:
+  - visualisation.metabolism_sbml_bulik2016_regulation_of_hepatic_glucose_metaboli_biomd0000000633_model_observable_labels
+runtime:
+  duration: 10.0
+  communication_step: 1.0
+  initial_inputs: {}

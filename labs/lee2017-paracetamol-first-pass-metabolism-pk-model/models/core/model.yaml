@@ -1,0 +1,118 @@
+schema_version: '2.0'
+title: Lee2017 - Paracetamol first-pass metabolism PK model
+description: Authors developed a microfluidic gut-liver co-culture chip that aims to reproduce
+  the first-pass metabolism of oral drugs. The study suggests the possibility of reproducing
+  the human PK profile on a c.
+standard: sbml
+tags:
+- biomodels_ebi
+- faithful
+- metabolism
+- ode
+- sbml
+- tellurium
+authors:
+- Biosimulant Team
+- Dong Wook Lee
+- Sang Keun Ha
+- Inwook Choi
+- Jong Hwan Sung
+upstream:
+  id: biomodels_ebi:BIOMD0000000947
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000947
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000947
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000947?filename=Lee2017_Paracetamol_Metabolism.xml
+  license: CC0
+biosim:
+  entrypoint: src.lee2017_paracetamol_first_pass_metabolism_pk_mod_biomd0000000947_model:Lee2017ParacetamolFirstPassMetabolismPkModBiomd0000000947Model
+  init_kwargs:
+    model_path: data/BIOMD0000000947.xml
+    integration_step: 0.1
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_drug_metabolism_state_1
+    maps_to: V_api
+    default: 500.0
+    units: native SBML value
+    description: Initial condition for drug metabolism state 1. Maps to bundled SBML symbol
+      `V_api`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_drug_metabolism_state_2
+    maps_to: V_caco
+    default: 0.33
+    units: native SBML value
+    description: Initial condition for drug metabolism state 2. Maps to bundled SBML symbol
+      `V_caco`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_drug_metabolism_state_3
+    maps_to: V_basol
+    default: 380.0
+    units: native SBML value
+    description: Initial condition for drug metabolism state 3. Maps to bundled SBML symbol
+      `V_basol`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_drug_metabolism_state_4
+    maps_to: C_para_Apical
+    default: 2500.0
+    units: native SBML value
+    description: Initial condition for drug metabolism state 4. Maps to bundled SBML symbol
+      `C_para_Apical`. Applied before the Tellurium simulation starts; this does not change
+      kinetic parameters or equations. Default from bundled SBML initial value.
+  - name: initial_drug_metabolism_state_5
+    maps_to: C_para_Caco_2
+    default: 1.0e-15
+    units: native SBML value
+    description: Initial condition for drug metabolism state 5. Maps to bundled SBML symbol
+      `C_para_Caco_2`. Applied before the Tellurium simulation starts; this does not change
+      kinetic parameters or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: drug_metabolism_state_1
+    maps_to: V_api
+    label: Drug Metabolism state 1
+    description: Drug Metabolism state 1; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `V_api`. Exact metabolite identity is not encoded
+      in the bundled SBML metadata.
+  - name: drug_metabolism_state_2
+    maps_to: V_caco
+    label: Drug Metabolism state 2
+    description: Drug Metabolism state 2; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `V_caco`. Exact metabolite identity is not encoded
+      in the bundled SBML metadata.
+  - name: drug_metabolism_state_3
+    maps_to: V_basol
+    label: Drug Metabolism state 3
+    description: Drug Metabolism state 3; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `V_basol`. Exact metabolite identity is not encoded
+      in the bundled SBML metadata.
+  - name: drug_metabolism_state_4
+    maps_to: C_para_Apical
+    label: Drug Metabolism state 4
+    description: Drug Metabolism state 4; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `C_para_Apical`. Exact metabolite identity is not
+      encoded in the bundled SBML metadata.
+  - name: drug_metabolism_state_5
+    maps_to: C_para_Caco_2
+    label: Drug Metabolism state 5
+    description: Drug Metabolism state 5; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `C_para_Caco_2`. Exact metabolite identity is not
+      encoded in the bundled SBML metadata.
+  - name: observable_values
+    description: Latest user-facing observable values from the SBML run.
+  - name: run_summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: observable_labels
+    description: Mapping from user-facing observable ports to display labels.
+parameters:
+- name: integration_step
+  value: 0.1
+  min: 0.0
+  units: model_time
+  description: Internal sampling step for Tellurium output collection.

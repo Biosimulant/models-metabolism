@@ -1,0 +1,77 @@
+schema_version: '2.0'
+title: Hoefnagel2002_PyruvateBranches Visualisation
+description: Dedicated presentation model for Hoefnagel2002_PyruvateBranches.
+standard: other
+tags:
+- metabolism
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  entrypoint: src.metabolism_visualisation:MetabolismVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Hoefnagel2002_PyruvateBranches Lab
+    question: Which metabolic pathway dynamics observables show the strongest activity in
+      Hoefnagel2002_PyruvateBranches?
+    answer_focus: metabolic pathway dynamics
+    sources:
+    - alias: metabolism_sbml_hoefnagel2002_pyruvatebranches_biomd0000000017_model
+      title: Hoefnagel2002_PyruvateBranches
+      scope: metabolic pathway dynamics
+      label_caveat: Values are native SBML quantities. Conservative pathway-state labels are
+        used where the bundled SBML does not encode exact metabolite identities.
+      observables:
+      - id: adp
+        label: ADP
+        maps_to: ADP
+      - id: nad
+        label: NAD
+        maps_to: NAD
+      - id: atp
+        label: ATP
+        maps_to: ATP
+      - id: nadh
+        label: NADH
+        maps_to: NADH
+      - id: metabolic_pathway_state_5
+        label: Metabolic Pathway state 5
+        maps_to: pyruvate
+      - id: coa
+        label: CoA
+        maps_to: CoA
+      - id: metabolic_pathway_state_7
+        label: Metabolic Pathway state 7
+        maps_to: AcCoA
+      - id: metabolic_pathway_state_8
+        label: Metabolic Pathway state 8
+        maps_to: AcP
+      - id: metabolic_pathway_state_9
+        label: Metabolic Pathway state 9
+        maps_to: AcO
+      - id: metabolic_pathway_state_10
+        label: Metabolic Pathway state 10
+        maps_to: AcLac
+      - id: metabolic_pathway_state_11
+        label: Metabolic Pathway state 11
+        maps_to: AcetoinIn
+  communication_step: 1.0
+runtime:
+  dependencies:
+    packages:
+    - PyYAML==6.0.2
+parameters:
+- name: integration_step
+  value: 1.0
+  min: 0.0
+  units: model_time
+  description: Sampling step for the visualisation model.
+io:
+  inputs:
+  - name: metabolism_sbml_hoefnagel2002_pyruvatebranches_biomd0000000017_model_observable_values
+    description: Latest user-facing observable values from the core metabolism model.
+  - name: metabolism_sbml_hoefnagel2002_pyruvatebranches_biomd0000000017_model_run_summary
+    description: Run summary from the core metabolism model.
+  - name: metabolism_sbml_hoefnagel2002_pyruvatebranches_biomd0000000017_model_observable_labels
+    description: Display labels for user-facing observables.
+  outputs: []

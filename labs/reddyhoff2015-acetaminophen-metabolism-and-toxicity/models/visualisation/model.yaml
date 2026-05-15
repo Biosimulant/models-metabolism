@@ -1,0 +1,60 @@
+schema_version: '2.0'
+title: Reddyhoff2015 - Acetaminophen metabolism and toxicity Visualisation
+description: Dedicated presentation model for Reddyhoff2015 - Acetaminophen metabolism and
+  toxicity.
+standard: other
+tags:
+- metabolism
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  entrypoint: src.metabolism_visualisation:MetabolismVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Reddyhoff2015 - Acetaminophen metabolism and toxicity Lab
+    question: Which drug and xenobiotic metabolism observables show the strongest activity
+      in Reddyhoff2015 - Acetaminophen metabolism and toxicity?
+    answer_focus: drug and xenobiotic metabolism
+    sources:
+    - alias: metabolism_sbml_reddyhoff2015_acetaminophen_metabolism_and_toxic_biomd0000000609_model
+      title: Reddyhoff2015 - Acetaminophen metabolism and toxicity
+      scope: drug and xenobiotic metabolism
+      label_caveat: Values are native SBML quantities. Conservative pathway-state labels are
+        used where the bundled SBML does not encode exact metabolite identities.
+      observables:
+      - id: sulphate_paps
+        label: Sulphate Paps
+        maps_to: Sulphate__PAPS
+      - id: glutathione
+        label: Glutathione
+        maps_to: GSH
+      - id: drug_metabolism_state_3
+        label: Drug Metabolism state 3
+        maps_to: NAPQI
+      - id: drug_metabolism_state_4
+        label: Drug Metabolism state 4
+        maps_to: Paracetamol_APAP
+      - id: drug_metabolism_state_5
+        label: Drug Metabolism state 5
+        maps_to: Protein_adducts
+  communication_step: 1.0
+runtime:
+  dependencies:
+    packages:
+    - PyYAML==6.0.2
+parameters:
+- name: integration_step
+  value: 1.0
+  min: 0.0
+  units: model_time
+  description: Sampling step for the visualisation model.
+io:
+  inputs:
+  - name: metabolism_sbml_reddyhoff2015_acetaminophen_metabolism_and_toxic_biomd0000000609_model_observable_values
+    description: Latest user-facing observable values from the core metabolism model.
+  - name: metabolism_sbml_reddyhoff2015_acetaminophen_metabolism_and_toxic_biomd0000000609_model_run_summary
+    description: Run summary from the core metabolism model.
+  - name: metabolism_sbml_reddyhoff2015_acetaminophen_metabolism_and_toxic_biomd0000000609_model_observable_labels
+    description: Display labels for user-facing observables.
+  outputs: []

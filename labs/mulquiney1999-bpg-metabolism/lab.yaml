@@ -1,0 +1,82 @@
+schema_version: '2.0'
+title: Mulquiney1999_BPG_metabolism Lab
+description: 'This model is described and analysed in a series of three articles: Model of
+  2,3-bisphosphoglycerate metabolism in the human erythrocyte based on detailed enzyme kinetic
+  equations: in vivo kinetic cha. It can be used to explore metabolic flux dynamics and compare
+  pathway behavior across conditions.'
+io:
+  inputs:
+  - name: initial_metabolic_pathway_state_1
+    maps_to: metabolism_sbml_mulquiney1999_bpg_metabolism_model5950552398_model.initial_metabolic_pathway_state_1
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 1. Maps to bundled SBML symbol
+      `MgATP`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_metabolic_pathway_state_2
+    maps_to: metabolism_sbml_mulquiney1999_bpg_metabolism_model5950552398_model.initial_metabolic_pathway_state_2
+    default: 4.0e-05
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 2. Maps to bundled SBML symbol
+      `Glc6P`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_metabolic_pathway_state_3
+    maps_to: metabolism_sbml_mulquiney1999_bpg_metabolism_model5950552398_model.initial_metabolic_pathway_state_3
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 3. Maps to bundled SBML symbol
+      `MgADP`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_metabolic_pathway_state_4
+    maps_to: metabolism_sbml_mulquiney1999_bpg_metabolism_model5950552398_model.initial_metabolic_pathway_state_4
+    default: 0.0067
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 4. Maps to bundled SBML symbol
+      `B23PG`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_metabolic_pathway_state_5
+    maps_to: metabolism_sbml_mulquiney1999_bpg_metabolism_model5950552398_model.initial_metabolic_pathway_state_5
+    default: 0.000122
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 5. Maps to bundled SBML symbol
+      `Glc16P2`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: metabolic_pathway_state_1
+    maps_to: metabolism_sbml_mulquiney1999_bpg_metabolism_model5950552398_model.metabolic_pathway_state_1
+  - name: metabolic_pathway_state_2
+    maps_to: metabolism_sbml_mulquiney1999_bpg_metabolism_model5950552398_model.metabolic_pathway_state_2
+  - name: metabolic_pathway_state_3
+    maps_to: metabolism_sbml_mulquiney1999_bpg_metabolism_model5950552398_model.metabolic_pathway_state_3
+  - name: metabolic_pathway_state_4
+    maps_to: metabolism_sbml_mulquiney1999_bpg_metabolism_model5950552398_model.metabolic_pathway_state_4
+  - name: metabolic_pathway_state_5
+    maps_to: metabolism_sbml_mulquiney1999_bpg_metabolism_model5950552398_model.metabolic_pathway_state_5
+  - name: observable_values
+    maps_to: metabolism_sbml_mulquiney1999_bpg_metabolism_model5950552398_model.observable_values
+  - name: run_summary
+    maps_to: metabolism_sbml_mulquiney1999_bpg_metabolism_model5950552398_model.run_summary
+  - name: observable_labels
+    maps_to: metabolism_sbml_mulquiney1999_bpg_metabolism_model5950552398_model.observable_labels
+models:
+- alias: metabolism_sbml_mulquiney1999_bpg_metabolism_model5950552398_model
+  path: models/core
+  parameters:
+    model_path: data/MODEL5950552398.xml
+    integration_step: 0.1
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: metabolism_sbml_mulquiney1999_bpg_metabolism_model5950552398_model.observable_values
+  to:
+  - visualisation.metabolism_sbml_mulquiney1999_bpg_metabolism_model5950552398_model_observable_values
+- from: metabolism_sbml_mulquiney1999_bpg_metabolism_model5950552398_model.run_summary
+  to:
+  - visualisation.metabolism_sbml_mulquiney1999_bpg_metabolism_model5950552398_model_run_summary
+- from: metabolism_sbml_mulquiney1999_bpg_metabolism_model5950552398_model.observable_labels
+  to:
+  - visualisation.metabolism_sbml_mulquiney1999_bpg_metabolism_model5950552398_model_observable_labels
+runtime:
+  duration: 10.0
+  communication_step: 1.0
+  initial_inputs: {}

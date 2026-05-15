@@ -1,0 +1,81 @@
+schema_version: '2.0'
+title: Mitchell2013 - Liver Iron Metabolism Lab
+description: 'Mitchell2013 - Liver Iron Metabolism The model includes the core regulatory
+  components of human liver iron metabolism. This model is described in the article: A computational
+  model of liver iron metab.'
+io:
+  inputs:
+  - name: initial_iron_metabolism_state_1
+    maps_to: metabolism_sbml_mitchell2013_liver_iron_metabolism_biomd0000000498_model.initial_iron_metabolism_state_1
+    default: 5.0e-09
+    units: native SBML value
+    description: Initial condition for iron metabolism state 1. Maps to bundled SBML symbol
+      `species_7`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_iron_metabolism_state_2
+    maps_to: metabolism_sbml_mitchell2013_liver_iron_metabolism_biomd0000000498_model.initial_iron_metabolism_state_2
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for iron metabolism state 2. Maps to bundled SBML symbol
+      `species_24`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_ferritin
+    maps_to: metabolism_sbml_mitchell2013_liver_iron_metabolism_biomd0000000498_model.initial_ferritin
+    default: 1.66e-10
+    units: native SBML value
+    description: Initial condition for ferritin. Maps to bundled SBML symbol `species_25`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_ft1
+    maps_to: metabolism_sbml_mitchell2013_liver_iron_metabolism_biomd0000000498_model.initial_ft1
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for ft1. Maps to bundled SBML symbol `species_26`. Applied
+      before the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_iron_metabolism_state_5
+    maps_to: metabolism_sbml_mitchell2013_liver_iron_metabolism_biomd0000000498_model.initial_iron_metabolism_state_5
+    default: 3.56e-11
+    units: native SBML value
+    description: Initial condition for iron metabolism state 5. Maps to bundled SBML symbol
+      `species_1`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: iron_metabolism_state_1
+    maps_to: metabolism_sbml_mitchell2013_liver_iron_metabolism_biomd0000000498_model.iron_metabolism_state_1
+  - name: iron_metabolism_state_2
+    maps_to: metabolism_sbml_mitchell2013_liver_iron_metabolism_biomd0000000498_model.iron_metabolism_state_2
+  - name: ferritin
+    maps_to: metabolism_sbml_mitchell2013_liver_iron_metabolism_biomd0000000498_model.ferritin
+  - name: ft1
+    maps_to: metabolism_sbml_mitchell2013_liver_iron_metabolism_biomd0000000498_model.ft1
+  - name: iron_metabolism_state_5
+    maps_to: metabolism_sbml_mitchell2013_liver_iron_metabolism_biomd0000000498_model.iron_metabolism_state_5
+  - name: observable_values
+    maps_to: metabolism_sbml_mitchell2013_liver_iron_metabolism_biomd0000000498_model.observable_values
+  - name: run_summary
+    maps_to: metabolism_sbml_mitchell2013_liver_iron_metabolism_biomd0000000498_model.run_summary
+  - name: observable_labels
+    maps_to: metabolism_sbml_mitchell2013_liver_iron_metabolism_biomd0000000498_model.observable_labels
+models:
+- alias: metabolism_sbml_mitchell2013_liver_iron_metabolism_biomd0000000498_model
+  path: models/core
+  parameters:
+    model_path: data/BIOMD0000000498.xml
+    integration_step: 0.1
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: metabolism_sbml_mitchell2013_liver_iron_metabolism_biomd0000000498_model.observable_values
+  to:
+  - visualisation.metabolism_sbml_mitchell2013_liver_iron_metabolism_biomd0000000498_model_observable_values
+- from: metabolism_sbml_mitchell2013_liver_iron_metabolism_biomd0000000498_model.run_summary
+  to:
+  - visualisation.metabolism_sbml_mitchell2013_liver_iron_metabolism_biomd0000000498_model_run_summary
+- from: metabolism_sbml_mitchell2013_liver_iron_metabolism_biomd0000000498_model.observable_labels
+  to:
+  - visualisation.metabolism_sbml_mitchell2013_liver_iron_metabolism_biomd0000000498_model_observable_labels
+runtime:
+  duration: 10.0
+  communication_step: 1.0
+  initial_inputs: {}

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "173d52f6-2e28-49e1-91ba-a66bb7f4cb17",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "b4427dee-9940-47f3-abc8-a7b1311105c6",
+  "created_at": "2026-05-15T16:03:11.632296475+00:00",
+  "last_synced_at": "2026-05-15T18:41:42.527611+00:00",
+  "hub_manifest_hash": "cfdbda2ab8b72b30d66fb98c4a8948b19d50c5ec89a177f141b0b92b739d7a2a",
+  "package_name": "vanbeek2007-oxphos-heartmusclecells-lab"
+}

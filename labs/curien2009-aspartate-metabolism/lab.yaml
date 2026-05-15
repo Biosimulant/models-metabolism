@@ -1,0 +1,81 @@
+schema_version: '2.0'
+title: Curien2009_Aspartate_Metabolism Lab
+description: 'This a model described in the article: Understanding the regulation of aspartate
+  metabolism using a model based on measured kinetic parameters. Curien G, Bastien O, Robert-Genthon
+  M, Cornish-Bowden A,.'
+io:
+  inputs:
+  - name: initial_metabolic_pathway_state_1
+    maps_to: metabolism_sbml_curien2009_aspartate_metabolism_biomd0000000212_model.initial_metabolic_pathway_state_1
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 1. Maps to bundled SBML symbol
+      `Lys`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_aspartyl_p
+    maps_to: metabolism_sbml_curien2009_aspartate_metabolism_biomd0000000212_model.initial_aspartyl_p
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for aspartyl p. Maps to bundled SBML symbol `AspP`. Applied
+      before the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_threonine
+    maps_to: metabolism_sbml_curien2009_aspartate_metabolism_biomd0000000212_model.initial_threonine
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for threonine. Maps to bundled SBML symbol `Thr`. Applied
+      before the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_aspartate_semialdehyde
+    maps_to: metabolism_sbml_curien2009_aspartate_metabolism_biomd0000000212_model.initial_aspartate_semialdehyde
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for aspartate semialdehyde. Maps to bundled SBML symbol
+      `ASA`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_homoserine
+    maps_to: metabolism_sbml_curien2009_aspartate_metabolism_biomd0000000212_model.initial_homoserine
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for homoserine. Maps to bundled SBML symbol `Hser`. Applied
+      before the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  outputs:
+  - name: metabolic_pathway_state_1
+    maps_to: metabolism_sbml_curien2009_aspartate_metabolism_biomd0000000212_model.metabolic_pathway_state_1
+  - name: aspartyl_p
+    maps_to: metabolism_sbml_curien2009_aspartate_metabolism_biomd0000000212_model.aspartyl_p
+  - name: threonine
+    maps_to: metabolism_sbml_curien2009_aspartate_metabolism_biomd0000000212_model.threonine
+  - name: aspartate_semialdehyde
+    maps_to: metabolism_sbml_curien2009_aspartate_metabolism_biomd0000000212_model.aspartate_semialdehyde
+  - name: homoserine
+    maps_to: metabolism_sbml_curien2009_aspartate_metabolism_biomd0000000212_model.homoserine
+  - name: observable_values
+    maps_to: metabolism_sbml_curien2009_aspartate_metabolism_biomd0000000212_model.observable_values
+  - name: run_summary
+    maps_to: metabolism_sbml_curien2009_aspartate_metabolism_biomd0000000212_model.run_summary
+  - name: observable_labels
+    maps_to: metabolism_sbml_curien2009_aspartate_metabolism_biomd0000000212_model.observable_labels
+models:
+- alias: metabolism_sbml_curien2009_aspartate_metabolism_biomd0000000212_model
+  path: models/core
+  parameters:
+    model_path: data/BIOMD0000000212.xml
+    integration_step: 0.1
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: metabolism_sbml_curien2009_aspartate_metabolism_biomd0000000212_model.observable_values
+  to:
+  - visualisation.metabolism_sbml_curien2009_aspartate_metabolism_biomd0000000212_model_observable_values
+- from: metabolism_sbml_curien2009_aspartate_metabolism_biomd0000000212_model.run_summary
+  to:
+  - visualisation.metabolism_sbml_curien2009_aspartate_metabolism_biomd0000000212_model_run_summary
+- from: metabolism_sbml_curien2009_aspartate_metabolism_biomd0000000212_model.observable_labels
+  to:
+  - visualisation.metabolism_sbml_curien2009_aspartate_metabolism_biomd0000000212_model_observable_labels
+runtime:
+  duration: 10.0
+  communication_step: 1.0
+  initial_inputs: {}

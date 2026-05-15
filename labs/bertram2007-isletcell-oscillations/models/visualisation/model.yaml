@@ -1,0 +1,77 @@
+schema_version: '2.0'
+title: Bertram2007_IsletCell_Oscillations Visualisation
+description: Dedicated presentation model for Bertram2007_IsletCell_Oscillations.
+standard: other
+tags:
+- metabolism
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  entrypoint: src.metabolism_visualisation:MetabolismVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Bertram2007_IsletCell_Oscillations Lab
+    question: Which pancreatic beta-cell metabolism observables show the strongest activity
+      in Bertram2007_IsletCell_Oscillations?
+    answer_focus: pancreatic beta-cell metabolism
+    sources:
+    - alias: metabolism_sbml_bertram2007_isletcell_oscillations_biomd0000000376_model
+      title: Bertram2007_IsletCell_Oscillations
+      scope: pancreatic beta-cell metabolism
+      label_caveat: Values are native SBML quantities. Conservative pathway-state labels are
+        used where the bundled SBML does not encode exact metabolite identities.
+      observables:
+      - id: pancreatic_metabolism_state_1
+        label: Pancreatic Metabolism state 1
+        maps_to: Vm
+      - id: pancreatic_metabolism_state_2
+        label: Pancreatic Metabolism state 2
+        maps_to: n
+      - id: glucose_6_phosphate
+        label: Glucose 6 Phosphate
+        maps_to: G6P
+      - id: fructose_bisphosphate
+        label: Fructose Bisphosphate
+        maps_to: FBP
+      - id: mitochondrial_nadh
+        label: Mitochondrial NADH
+        maps_to: NADHm
+      - id: pancreatic_metabolism_state_6
+        label: Pancreatic Metabolism state 6
+        maps_to: delta_psi
+      - id: mitochondrial_ca
+        label: Mitochondrial CA
+        maps_to: Cam
+      - id: mitochondrial_adp
+        label: Mitochondrial ADP
+        maps_to: ADPm
+      - id: adp
+        label: ADP
+        maps_to: adp
+      - id: pancreatic_metabolism_state_10
+        label: Pancreatic Metabolism state 10
+        maps_to: c
+      - id: pancreatic_metabolism_state_11
+        label: Pancreatic Metabolism state 11
+        maps_to: Caer
+  communication_step: 1.0
+runtime:
+  dependencies:
+    packages:
+    - PyYAML==6.0.2
+parameters:
+- name: integration_step
+  value: 1.0
+  min: 0.0
+  units: model_time
+  description: Sampling step for the visualisation model.
+io:
+  inputs:
+  - name: metabolism_sbml_bertram2007_isletcell_oscillations_biomd0000000376_model_observable_values
+    description: Latest user-facing observable values from the core metabolism model.
+  - name: metabolism_sbml_bertram2007_isletcell_oscillations_biomd0000000376_model_run_summary
+    description: Run summary from the core metabolism model.
+  - name: metabolism_sbml_bertram2007_isletcell_oscillations_biomd0000000376_model_observable_labels
+    description: Display labels for user-facing observables.
+  outputs: []

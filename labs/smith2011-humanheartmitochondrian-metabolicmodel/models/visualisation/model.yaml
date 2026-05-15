@@ -1,0 +1,1022 @@
+schema_version: '2.0'
+title: Smith2011_HumanHeartMitochondrian_MetabolicModel Visualisation
+description: Dedicated presentation model for Smith2011_HumanHeartMitochondrian_MetabolicModel.
+standard: other
+tags:
+- metabolism
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  entrypoint: src.metabolism_visualisation:MetabolismVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Smith2011_HumanHeartMitochondrian_MetabolicModel Lab
+    question: Which mitochondrial energy metabolism observables show the strongest activity
+      in Smith2011_HumanHeartMitochondrian_MetabolicModel?
+    answer_focus: mitochondrial energy metabolism
+    sources:
+    - alias: metabolism_sbml_smith2011_humanheartmitochondrian_metabolicmodel_model1106160000_model
+      title: Smith2011_HumanHeartMitochondrian_MetabolicModel
+      scope: mitochondrial energy metabolism
+      label_caveat: Values are native SBML quantities. Conservative pathway-state labels are
+        used where the bundled SBML does not encode exact metabolite identities.
+      observables:
+      - id: c00000cyto_biomass
+        label: C00000cyto Biomass
+        maps_to: C00000Cyto
+      - id: c00001cyto_h2o
+        label: C00001cyto H2o
+        maps_to: C00001Cyto
+      - id: c00002cyto_atp
+        label: C00002cyto ATP
+        maps_to: C00002Cyto
+      - id: c00003cyto_nad
+        label: C00003cyto NAD
+        maps_to: C00003Cyto
+      - id: c00004cyto_nadh
+        label: C00004cyto NADH
+        maps_to: C00004Cyto
+      - id: c00007cyto_oxygen
+        label: C00007cyto Oxygen
+        maps_to: C00007Cyto
+      - id: c00008cyto_adp
+        label: C00008cyto ADP
+        maps_to: C00008Cyto
+      - id: c00009cyto_orthophosphate
+        label: C00009cyto Orthophosphate
+        maps_to: C00009Cyto
+      - id: mitochondrial_energy_state_9
+        label: Mitochondrial Energy state 9
+        maps_to: C00010Cyto
+      - id: c00011cyto_co2
+        label: C00011cyto CO2
+        maps_to: C00011Cyto
+      - id: c00013cyto_diphosphate
+        label: C00013cyto Diphosphate
+        maps_to: C00013Cyto
+      - id: c00015cyto_udp
+        label: C00015cyto Udp
+        maps_to: C00015Cyto
+      - id: c00016cyto_fad
+        label: C00016cyto Fad
+        maps_to: C00016Cyto
+      - id: c00020cyto_amp
+        label: C00020cyto AMP
+        maps_to: C00020Cyto
+      - id: c00022cyto_pyruvate
+        label: C00022cyto Pyruvate
+        maps_to: C00022Cyto
+      - id: c00025cyto_l_glutamate
+        label: C00025cyto L Glutamate
+        maps_to: C00025Cyto
+      - id: c00026cyto_2_oxoglutarate
+        label: C00026cyto 2 Oxoglutarate
+        maps_to: C00026Cyto
+      - id: c00035cyto_gdp
+        label: C00035cyto Gdp
+        maps_to: C00035Cyto
+      - id: c00036cyto_oxaloacetate
+        label: C00036cyto Oxaloacetate
+        maps_to: C00036Cyto
+      - id: c00037cyto_glycine
+        label: C00037cyto Glycine
+        maps_to: C00037Cyto
+      - id: c00042cyto_succinate
+        label: C00042cyto Succinate
+        maps_to: C00042Cyto
+      - id: c00047cyto_l_lysine
+        label: C00047cyto L Lysine
+        maps_to: C00047Cyto
+      - id: c00049cyto_l_aspartate
+        label: C00049cyto L Aspartate
+        maps_to: C00049Cyto
+      - id: c00051cyto_glutathione
+        label: C00051cyto Glutathione
+        maps_to: C00051Cyto
+      - id: c00059cyto_sulfate
+        label: C00059cyto Sulfate
+        maps_to: C00059Cyto
+      - id: c00062cyto_l_arginine
+        label: C00062cyto L Arginine
+        maps_to: C00062Cyto
+      - id: c00064cyto_l_glutamine
+        label: C00064cyto L Glutamine
+        maps_to: C00064Cyto
+      - id: c00068cyto_thiamin_diphosphate
+        label: C00068cyto Thiamin Diphosphate
+        maps_to: C00068Cyto
+      - id: c00073cyto_l_methionine
+        label: C00073cyto L Methionine
+        maps_to: C00073Cyto
+      - id: c00074cyto_phosphoenolpyruvate
+        label: C00074cyto Phosphoenolpyruvate
+        maps_to: C00074Cyto
+      - id: c00077cyto_l_ornithine
+        label: C00077cyto L Ornithine
+        maps_to: C00077Cyto
+      - id: c00078cyto_l_tryptophan
+        label: C00078cyto L Tryptophan
+        maps_to: C00078Cyto
+      - id: c00079cyto_l_phenylalanine
+        label: C00079cyto L Phenylalanine
+        maps_to: C00079Cyto
+      - id: c00080cyto_h
+        label: C00080cyto H
+        maps_to: C00080Cyto
+      - id: c00082cyto_l_tyrosine
+        label: C00082cyto L Tyrosine
+        maps_to: C00082Cyto
+      - id: c00084cyto_acetaldehyde
+        label: C00084cyto Acetaldehyde
+        maps_to: C00084Cyto
+      - id: c00086cyto_urea
+        label: C00086cyto Urea
+        maps_to: C00086Cyto
+      - id: c00093cyto_sn_glycerol_3_phosphate
+        label: C00093cyto Sn Glycerol 3 Phosphate
+        maps_to: C00093Cyto
+      - id: c00094cyto_sulfite
+        label: C00094cyto Sulfite
+        maps_to: C00094Cyto
+      - id: c00097cyto_l_cysteine
+        label: C00097cyto L Cysteine
+        maps_to: C00097Cyto
+      - id: c00111cyto_glycerone_phosphate
+        label: C00111cyto Glycerone Phosphate
+        maps_to: C00111Cyto
+      - id: c00112cyto_cdp
+        label: C00112cyto Cdp
+        maps_to: C00112Cyto
+      - id: c00116cyto_glycerol
+        label: C00116cyto Glycerol
+        maps_to: C00116Cyto
+      - id: c00118cyto_d_glyceraldehyde_3_phosphate
+        label: C00118cyto D Glyceraldehyde 3 Phosphate
+        maps_to: C00118Cyto
+      - id: c00122cyto_fumarate
+        label: C00122cyto Fumarate
+        maps_to: C00122Cyto
+      - id: c00123cyto_l_leucine
+        label: C00123cyto L Leucine
+        maps_to: C00123Cyto
+      - id: mitochondrial_energy_state_47
+        label: Mitochondrial Energy state 47
+        maps_to: C00131Cyto
+      - id: c00135cyto_l_histidine
+        label: C00135cyto L Histidine
+        maps_to: C00135Cyto
+      - id: c00148cyto_l_proline
+        label: C00148cyto L Proline
+        maps_to: C00148Cyto
+      - id: c00149cyto_s_malate
+        label: C00149cyto S Malate
+        maps_to: C00149Cyto
+      - id: c00152cyto_l_asparagine
+        label: C00152cyto L Asparagine
+        maps_to: C00152Cyto
+      - id: mitochondrial_energy_state_52
+        label: Mitochondrial Energy state 52
+        maps_to: C00154Cyto
+      - id: c00157cyto_phosphatidylcholine
+        label: C00157cyto Phosphatidylcholine
+        maps_to: C00157Cyto
+      - id: c00158cyto_citrate
+        label: C00158cyto Citrate
+        maps_to: C00158Cyto
+      - id: c00163cyto_propanoate
+        label: C00163cyto Propanoate
+        maps_to: C00163Cyto
+      - id: c00164cyto_acetoacetate
+        label: C00164cyto Acetoacetate
+        maps_to: C00164Cyto
+      - id: c00183cyto_l_valine
+        label: C00183cyto L Valine
+        maps_to: C00183Cyto
+      - id: c00186cyto_s_lactate
+        label: C00186cyto S Lactate
+        maps_to: C00186Cyto
+      - id: c00197cyto_3_phospho_d_glycerate
+        label: C00197cyto 3 Phospho D Glycerate
+        maps_to: C00197Cyto
+      - id: mitochondrial_energy_state_60
+        label: Mitochondrial Energy state 60
+        maps_to: C00206Cyto
+      - id: c00236cyto_3_phospho_d_glyceroyl_phosphate
+        label: C00236cyto 3 Phospho D Glyceroyl Phosphate
+        maps_to: C00236Cyto
+      - id: c00246cyto_butanoic_acid
+        label: C00246cyto Butanoic Acid
+        maps_to: C00246Cyto
+      - id: c00249cyto_hexadecanoic_acid
+        label: C00249cyto Hexadecanoic Acid
+        maps_to: C00249Cyto
+      - id: c00267cyto_alpha_d_glucose
+        label: C00267cyto Alpha D Glucose
+        maps_to: C00267Cyto
+      - id: mitochondrial_energy_state_65
+        label: Mitochondrial Energy state 65
+        maps_to: C00286Cyto
+      - id: c00311cyto_isocitrate
+        label: C00311cyto Isocitrate
+        maps_to: C00311Cyto
+      - id: c00318cyto_l_carnitine
+        label: C00318cyto L Carnitine
+        maps_to: C00318Cyto
+      - id: c00320cyto_thiosulfate
+        label: C00320cyto Thiosulfate
+        maps_to: C00320Cyto
+      - id: c00322cyto_2_oxoadipate
+        label: C00322cyto 2 Oxoadipate
+        maps_to: C00322Cyto
+      - id: c00327cyto_l_citrulline
+        label: C00327cyto L Citrulline
+        maps_to: C00327Cyto
+      - id: c00350cyto_phosphatidylethanolamine
+        label: C00350cyto Phosphatidylethanolamine
+        maps_to: C00350Cyto
+      - id: mitochondrial_energy_state_72
+        label: Mitochondrial Energy state 72
+        maps_to: C00361Cyto
+      - id: mitochondrial_energy_state_73
+        label: Mitochondrial Energy state 73
+        maps_to: C00363Cyto
+      - id: c00407cyto_l_isoleucine
+        label: C00407cyto L Isoleucine
+        maps_to: C00407Cyto
+      - id: c00430cyto_5_aminolevulinate
+        label: C00430cyto 5 Aminolevulinate
+        maps_to: C00430Cyto
+      - id: mitochondrial_energy_state_76
+        label: Mitochondrial Energy state 76
+        maps_to: C00458Cyto
+      - id: mitochondrial_energy_state_77
+        label: Mitochondrial Energy state 77
+        maps_to: C00459Cyto
+      - id: c00631cyto_2_phospho_d_glycerate
+        label: C00631cyto 2 Phospho D Glycerate
+        maps_to: C00631Cyto
+      - id: c00668cyto_alpha_d_glucose_6_phosphate
+        label: C00668cyto Alpha D Glucose 6 Phosphate
+        maps_to: C00668Cyto
+      - id: mitochondrial_energy_state_80
+        label: Mitochondrial Energy state 80
+        maps_to: C00705Cyto
+      - id: c00956cyto_l_2_aminoadipate
+        label: C00956cyto L 2 Aminoadipate
+        maps_to: C00956Cyto
+      - id: c01079cyto_protoporphyrinogen_ix
+        label: C01079cyto Protoporphyrinogen Ix
+        maps_to: C01079Cyto
+      - id: c01089cyto_r_3_hydroxybutanoate
+        label: C01089cyto R 3 Hydroxybutanoate
+        maps_to: C01089Cyto
+      - id: c02737cyto_phosphatidylserine
+        label: C02737cyto Phosphatidylserine
+        maps_to: C02737Cyto
+      - id: c02990cyto_l_palmitoylcarnitine
+        label: C02990cyto L Palmitoylcarnitine
+        maps_to: C02990Cyto
+      - id: c05345cyto_beta_d_fructose_6_phosphate
+        label: C05345cyto Beta D Fructose 6 Phosphate
+        maps_to: C05345Cyto
+      - id: c05378cyto_beta_d_fructose_1_6_bisphosphate
+        label: C05378cyto Beta D Fructose 1 6 Bisphosphate
+        maps_to: C05378Cyto
+      - id: c14818cyto_fe2
+        label: C14818cyto Fe2
+        maps_to: C14818Cyto
+      - id: c00000mm_biomass
+        label: C00000mm Biomass
+        maps_to: C00000MM
+      - id: c00001mm_h2o
+        label: C00001mm H2o
+        maps_to: C00001MM
+      - id: c00002mm_atp
+        label: C00002mm ATP
+        maps_to: C00002MM
+      - id: c00003mm_nad
+        label: C00003mm NAD
+        maps_to: C00003MM
+      - id: c00004mm_nadh
+        label: C00004mm NADH
+        maps_to: C00004MM
+      - id: c00005mm_nadph
+        label: C00005mm NADPH
+        maps_to: C00005MM
+      - id: c00006mm_nadp
+        label: C00006mm NADP
+        maps_to: C00006MM
+      - id: c00007mm_oxygen
+        label: C00007mm Oxygen
+        maps_to: C00007MM
+      - id: c00008mm_adp
+        label: C00008mm ADP
+        maps_to: C00008MM
+      - id: c00009mm_orthophosphate
+        label: C00009mm Orthophosphate
+        maps_to: C00009MM
+      - id: mitochondrial_energy_state_99
+        label: Mitochondrial Energy state 99
+        maps_to: C00010MM
+      - id: c00011mm_co2
+        label: C00011mm CO2
+        maps_to: C00011MM
+      - id: c00013mm_pyrophosphate
+        label: C00013mm Pyrophosphate
+        maps_to: C00013MM
+      - id: c00014mm_nh3
+        label: C00014mm Nh3
+        maps_to: C00014MM
+      - id: c00015mm_udp
+        label: C00015mm Udp
+        maps_to: C00015MM
+      - id: c00016mm_fad
+        label: C00016mm Fad
+        maps_to: C00016MM
+      - id: c00020mm_amp
+        label: C00020mm AMP
+        maps_to: C00020MM
+      - id: c00022mm_pyruvate
+        label: C00022mm Pyruvate
+        maps_to: C00022MM
+      - id: mitochondrial_energy_state_107
+        label: Mitochondrial Energy state 107
+        maps_to: C00024MM
+      - id: c00025mm_l_glutamate
+        label: C00025mm L Glutamate
+        maps_to: C00025MM
+      - id: c00026mm_2_oxoglutarate
+        label: C00026mm 2 Oxoglutarate
+        maps_to: C00026MM
+      - id: c00027mm_h2o2
+        label: C00027mm H2o2
+        maps_to: C00027MM
+      - id: c00032mm_heme
+        label: C00032mm Heme
+        maps_to: C00032MM
+      - id: c00033mm_acetate
+        label: C00033mm Acetate
+        maps_to: C00033MM
+      - id: c00035mm_gdp
+        label: C00035mm Gdp
+        maps_to: C00035MM
+      - id: c00036mm_oxaloacetate
+        label: C00036mm Oxaloacetate
+        maps_to: C00036MM
+      - id: c00037mm_glycine
+        label: C00037mm Glycine
+        maps_to: C00037MM
+      - id: mitochondrial_energy_state_116
+        label: Mitochondrial Energy state 116
+        maps_to: C00040MM
+      - id: c00041mm_l_alanine
+        label: C00041mm L Alanine
+        maps_to: C00041MM
+      - id: c00042mm_succinate
+        label: C00042mm Succinate
+        maps_to: C00042MM
+      - id: c00044mm_gtp
+        label: C00044mm Gtp
+        maps_to: C00044MM
+      - id: c00047mm_l_lysine
+        label: C00047mm L Lysine
+        maps_to: C00047MM
+      - id: c00049mm_l_aspartate
+        label: C00049mm L Aspartate
+        maps_to: C00049MM
+      - id: c00051mm_glutathione
+        label: C00051mm Glutathione
+        maps_to: C00051MM
+      - id: c00055mm_cmp
+        label: C00055mm Cmp
+        maps_to: C00055MM
+      - id: c00059mm_sulfate
+        label: C00059mm Sulfate
+        maps_to: C00059MM
+      - id: c00062mm_l_arginine
+        label: C00062mm L Arginine
+        maps_to: C00062MM
+      - id: c00063mm_ctp
+        label: C00063mm Ctp
+        maps_to: C00063MM
+      - id: c00064mm_l_glutamine
+        label: C00064mm L Glutamine
+        maps_to: C00064MM
+      - id: c00065mm_l_serine
+        label: C00065mm L Serine
+        maps_to: C00065MM
+      - id: c00068mm_thiamin_diphosphate
+        label: C00068mm Thiamin Diphosphate
+        maps_to: C00068MM
+      - id: c00073mm_l_methionine
+        label: C00073mm L Methionine
+        maps_to: C00073MM
+      - id: c00074mm_phosphoenolpyruvate
+        label: C00074mm Phosphoenolpyruvate
+        maps_to: C00074MM
+      - id: c00075mm_utp
+        label: C00075mm Utp
+        maps_to: C00075MM
+      - id: c00077mm_l_ornithine
+        label: C00077mm L Ornithine
+        maps_to: C00077MM
+      - id: c00078mm_l_tryptophan
+        label: C00078mm L Tryptophan
+        maps_to: C00078MM
+      - id: c00079mm_l_phenylalanine
+        label: C00079mm L Phenylalanine
+        maps_to: C00079MM
+      - id: c00080mm_h
+        label: C00080mm H
+        maps_to: C00080MM
+      - id: c00081mm_itp
+        label: C00081mm Itp
+        maps_to: C00081MM
+      - id: c00082mm_l_tyrosine
+        label: C00082mm L Tyrosine
+        maps_to: C00082MM
+      - id: mitochondrial_energy_state_139
+        label: Mitochondrial Energy state 139
+        maps_to: C00083MM
+      - id: c00084mm_acetaldehyde
+        label: C00084mm Acetaldehyde
+        maps_to: C00084MM
+      - id: c00086mm_urea
+        label: C00086mm Urea
+        maps_to: C00086MM
+      - id: mitochondrial_energy_state_142
+        label: Mitochondrial Energy state 142
+        maps_to: C00091MM
+      - id: c00094mm_sulfite
+        label: C00094mm Sulfite
+        maps_to: C00094MM
+      - id: c00097mm_l_cysteine
+        label: C00097mm L Cysteine
+        maps_to: C00097MM
+      - id: mitochondrial_energy_state_145
+        label: Mitochondrial Energy state 145
+        maps_to: C00100MM
+      - id: c00101mm_tetrahydrofolate
+        label: C00101mm Tetrahydrofolate
+        maps_to: C00101MM
+      - id: c00104mm_idp
+        label: C00104mm Idp
+        maps_to: C00104MM
+      - id: c00112mm_cdp
+        label: C00112mm Cdp
+        maps_to: C00112MM
+      - id: c00116mm_glycerol
+        label: C00116mm Glycerol
+        maps_to: C00116MM
+      - id: c00122mm_fumarate
+        label: C00122mm Fumarate
+        maps_to: C00122MM
+      - id: c00123mm_l_leucine
+        label: C00123mm L Leucine
+        maps_to: C00123MM
+      - id: c00125mm_ferricytochrome_c
+        label: C00125mm Ferricytochrome C
+        maps_to: C00125MM
+      - id: c00126mm_ferrocytochrome_c
+        label: C00126mm Ferrocytochrome C
+        maps_to: C00126MM
+      - id: c00127mm_glutathione_disulfide
+        label: C00127mm Glutathione Disulfide
+        maps_to: C00127MM
+      - id: mitochondrial_energy_state_155
+        label: Mitochondrial Energy state 155
+        maps_to: C00131MM
+      - id: c00134mm_putrescine
+        label: C00134mm Putrescine
+        maps_to: C00134MM
+      - id: c00135mm_l_histidine
+        label: C00135mm L Histidine
+        maps_to: C00135MM
+      - id: mitochondrial_energy_state_158
+        label: Mitochondrial Energy state 158
+        maps_to: C00136MM
+      - id: c00141mm_3_methyl_2_oxobutanoic_acid
+        label: C00141mm 3 Methyl 2 Oxobutanoic Acid
+        maps_to: C00141MM
+      - id: c00143mm_5_10_methylenetetrahydrofolate
+        label: C00143mm 5 10 Methylenetetrahydrofolate
+        maps_to: C00143MM
+      - id: c00148mm_l_proline
+        label: C00148mm L Proline
+        maps_to: C00148MM
+      - id: c00149mm_s_malate
+        label: C00149mm S Malate
+        maps_to: C00149MM
+      - id: c00152mm_l_asparagine
+        label: C00152mm L Asparagine
+        maps_to: C00152MM
+      - id: mitochondrial_energy_state_164
+        label: Mitochondrial Energy state 164
+        maps_to: C00154MM
+      - id: c00157mm_phosphatidylcholine
+        label: C00157mm Phosphatidylcholine
+        maps_to: C00157MM
+      - id: c00158mm_citrate
+        label: C00158mm Citrate
+        maps_to: C00158MM
+      - id: c00163mm_propanoate
+        label: C00163mm Propanoate
+        maps_to: C00163MM
+      - id: c00164mm_acetoacetate
+        label: C00164mm Acetoacetate
+        maps_to: C00164MM
+      - id: c00179mm_agmatine
+        label: C00179mm Agmatine
+        maps_to: C00179MM
+      - id: c00183mm_l_valine
+        label: C00183mm L Valine
+        maps_to: C00183MM
+      - id: c00188mm_l_threonine
+        label: C00188mm L Threonine
+        maps_to: C00188MM
+      - id: mitochondrial_energy_state_172
+        label: Mitochondrial Energy state 172
+        maps_to: C00206MM
+      - id: c00222mm_3_oxopropanoate
+        label: C00222mm 3 Oxopropanoate
+        maps_to: C00222MM
+      - id: c00229mm_acyl_carrier_protein
+        label: C00229mm Acyl Carrier Protein
+        maps_to: C00229MM
+      - id: c00232mm_succinate_semialdehyde
+        label: C00232mm Succinate Semialdehyde
+        maps_to: C00232MM
+      - id: c00233mm_4_methyl_2_oxopentanoate
+        label: C00233mm 4 Methyl 2 Oxopentanoate
+        maps_to: C00233MM
+      - id: c00234mm_10_formyltetrahydrofolate
+        label: C00234mm 10 Formyltetrahydrofolate
+        maps_to: C00234MM
+      - id: c00246mm_butanoic_acid
+        label: C00246mm Butanoic Acid
+        maps_to: C00246MM
+      - id: mitochondrial_energy_state_179
+        label: Mitochondrial Energy state 179
+        maps_to: C00264MM
+      - id: c00269mm_cdp_diacylglycerol
+        label: C00269mm Cdp Diacylglycerol
+        maps_to: C00269MM
+      - id: mitochondrial_energy_state_181
+        label: Mitochondrial Energy state 181
+        maps_to: C00286MM
+      - id: c00288mm_hco3
+        label: C00288mm Hco3
+        maps_to: C00288MM
+      - id: c00311mm_isocitrate
+        label: C00311mm Isocitrate
+        maps_to: C00311MM
+      - id: c00318mm_l_carnitine
+        label: C00318mm L Carnitine
+        maps_to: C00318MM
+      - id: c00320mm_thiosulfate
+        label: C00320mm Thiosulfate
+        maps_to: C00320MM
+      - id: c00322mm_2_oxoadipate
+        label: C00322mm 2 Oxoadipate
+        maps_to: C00322MM
+      - id: c00327mm_l_citrulline
+        label: C00327mm L Citrulline
+        maps_to: C00327MM
+      - id: mitochondrial_energy_state_188
+        label: Mitochondrial Energy state 188
+        maps_to: C00332MM
+      - id: c00334mm_4_aminobutanoate
+        label: C00334mm 4 Aminobutanoate
+        maps_to: C00334MM
+      - id: c00344mm_phosphatidylglycerol
+        label: C00344mm Phosphatidylglycerol
+        maps_to: C00344MM
+      - id: c00350mm_phosphatidylethanolamine
+        label: C00350mm Phosphatidylethanolamine
+        maps_to: C00350MM
+      - id: mitochondrial_energy_state_192
+        label: Mitochondrial Energy state 192
+        maps_to: C00356MM
+      - id: mitochondrial_energy_state_193
+        label: Mitochondrial Energy state 193
+        maps_to: C00361MM
+      - id: mitochondrial_energy_state_194
+        label: Mitochondrial Energy state 194
+        maps_to: C00363MM
+      - id: c00390mm_ubiquinol
+        label: C00390mm Ubiquinol
+        maps_to: C00390MM
+      - id: c00399mm_ubiquinone
+        label: C00399mm Ubiquinone
+        maps_to: C00399MM
+      - id: c00407mm_l_isoleucine
+        label: C00407mm L Isoleucine
+        maps_to: C00407MM
+      - id: c00416mm_phosphatidate
+        label: C00416mm Phosphatidate
+        maps_to: C00416MM
+      - id: c00417mm_cis_aconitate
+        label: C00417mm Cis Aconitate
+        maps_to: C00417MM
+      - id: c00430mm_5_aminolevulinate
+        label: C00430mm 5 Aminolevulinate
+        maps_to: C00430MM
+      - id: c00445mm_5_10_methenyltetrahydrofolate
+        label: C00445mm 5 10 Methenyltetrahydrofolate
+        maps_to: C00445MM
+      - id: c00449mm_n6_l_1_3_dicarboxypropyl_l_lysine
+        label: C00449mm N6 L 1 3 Dicarboxypropyl L Lysine
+        maps_to: C00449MM
+      - id: mitochondrial_energy_state_203
+        label: Mitochondrial Energy state 203
+        maps_to: C00458MM
+      - id: mitochondrial_energy_state_204
+        label: Mitochondrial Energy state 204
+        maps_to: C00459MM
+      - id: mitochondrial_energy_state_205
+        label: Mitochondrial Energy state 205
+        maps_to: C00527MM
+      - id: mitochondrial_energy_state_206
+        label: Mitochondrial Energy state 206
+        maps_to: C00630MM
+      - id: mitochondrial_energy_state_207
+        label: Mitochondrial Energy state 207
+        maps_to: C00640MM
+      - id: mitochondrial_energy_state_208
+        label: Mitochondrial Energy state 208
+        maps_to: C00658MM
+      - id: c00671mm_s_3_methyl_2_oxopentanoic_acid
+        label: C00671mm S 3 Methyl 2 Oxopentanoic Acid
+        maps_to: C00671MM
+      - id: c00681mm_1_acyl_sn_glycerol_3_phosphate
+        label: C00681mm 1 Acyl Sn Glycerol 3 Phosphate
+        maps_to: C00681MM
+      - id: mitochondrial_energy_state_211
+        label: Mitochondrial Energy state 211
+        maps_to: C00683MM
+      - id: c00704mm_o2
+        label: C00704mm O2
+        maps_to: C00704MM
+      - id: mitochondrial_energy_state_213
+        label: Mitochondrial Energy state 213
+        maps_to: C00705MM
+      - id: mitochondrial_energy_state_214
+        label: Mitochondrial Energy state 214
+        maps_to: C00877MM
+      - id: c00956mm_l_2_aminoadipate
+        label: C00956mm L 2 Aminoadipate
+        maps_to: C00956MM
+      - id: c00957mm_mercaptopyruvate
+        label: C00957mm Mercaptopyruvate
+        maps_to: C00957MM
+      - id: c01089mm_r_3_hydroxybutanoate
+        label: C01089mm R 3 Hydroxybutanoate
+        maps_to: C01089MM
+      - id: mitochondrial_energy_state_218
+        label: Mitochondrial Energy state 218
+        maps_to: C01144MM
+      - id: c01165mm_l_glutamate_5_semialdehyde
+        label: C01165mm L Glutamate 5 Semialdehyde
+        maps_to: C01165MM
+      - id: c01209mm_malonyl_acyl_carrier_protein
+        label: C01209mm Malonyl Acyl Carrier Protein
+        maps_to: C01209MM
+      - id: mitochondrial_energy_state_221
+        label: Mitochondrial Energy state 221
+        maps_to: C01213MM
+      - id: c01352mm_fadh2
+        label: C01352mm Fadh2
+        maps_to: C01352MM
+      - id: mitochondrial_energy_state_223
+        label: Mitochondrial Energy state 223
+        maps_to: C01832MM
+      - id: mitochondrial_energy_state_224
+        label: Mitochondrial Energy state 224
+        maps_to: C01944MM
+      - id: c02191mm_protoporphyrin
+        label: C02191mm Protoporphyrin
+        maps_to: C02191MM
+      - id: mitochondrial_energy_state_226
+        label: Mitochondrial Energy state 226
+        maps_to: C02593MM
+      - id: c02737mm_phosphatidylserine
+        label: C02737mm Phosphatidylserine
+        maps_to: C02737MM
+      - id: mitochondrial_energy_state_228
+        label: Mitochondrial Energy state 228
+        maps_to: C02939MM
+      - id: c02990mm_l_palmitoylcarnitine
+        label: C02990mm L Palmitoylcarnitine
+        maps_to: C02990MM
+      - id: mitochondrial_energy_state_230
+        label: Mitochondrial Energy state 230
+        maps_to: C03069MM
+      - id: mitochondrial_energy_state_231
+        label: Mitochondrial Energy state 231
+        maps_to: C03221MM
+      - id: mitochondrial_energy_state_232
+        label: Mitochondrial Energy state 232
+        maps_to: C03231MM
+      - id: c03287mm_l_glutamyl_5_phosphate
+        label: C03287mm L Glutamyl 5 Phosphate
+        maps_to: C03287MM
+      - id: mitochondrial_energy_state_234
+        label: Mitochondrial Energy state 234
+        maps_to: C03344MM
+      - id: mitochondrial_energy_state_235
+        label: Mitochondrial Energy state 235
+        maps_to: C03345MM
+      - id: mitochondrial_energy_state_236
+        label: Mitochondrial Energy state 236
+        maps_to: C03460MM
+      - id: c03508mm_l_2_amino_3_oxobutanoic_acid
+        label: C03508mm L 2 Amino 3 Oxobutanoic Acid
+        maps_to: C03508MM
+      - id: c03892mm_phosphatidylglycerophosphate
+        label: C03892mm Phosphatidylglycerophosphate
+        maps_to: C03892MM
+      - id: c03912mm_s_1_pyrroline_5_carboxylate
+        label: C03912mm S 1 Pyrroline 5 Carboxylate
+        maps_to: C03912MM
+      - id: c03939mm_acetyl_acyl_carrier_protein
+        label: C03939mm Acetyl Acyl Carrier Protein
+        maps_to: C03939MM
+      - id: c04076mm_l_2_aminoadipate_6_semialdehyde
+        label: C04076mm L 2 Aminoadipate 6 Semialdehyde
+        maps_to: C04076MM
+      - id: c04246mm_but_2_enoyl_acyl_carrier_protein
+        label: C04246mm But 2 Enoyl Acyl Carrier Protein
+        maps_to: C04246MM
+      - id: mitochondrial_energy_state_243
+        label: Mitochondrial Energy state 243
+        maps_to: C04405MM
+      - id: c04618mm_3r_3_hydroxybutanoyl_acyl_carrier_protein
+        label: C04618mm 3r 3 Hydroxybutanoyl Acyl Carrier Protein
+        maps_to: C04618MM
+      - id: c04620mm_3r_3_hydroxyoctanoyl_acyl_carrier_protein
+        label: C04620mm 3r 3 Hydroxyoctanoyl Acyl Carrier Protein
+        maps_to: C04620MM
+      - id: c05125mm_2_alpha_hydroxyethyl_thiamine_diphosphate
+        label: C05125mm 2 Alpha Hydroxyethyl Thiamine Diphosphate
+        maps_to: C05125MM
+      - id: mitochondrial_energy_state_247
+        label: Mitochondrial Energy state 247
+        maps_to: C05258MM
+      - id: mitochondrial_energy_state_248
+        label: Mitochondrial Energy state 248
+        maps_to: C05259MM
+      - id: mitochondrial_energy_state_249
+        label: Mitochondrial Energy state 249
+        maps_to: C05260MM
+      - id: mitochondrial_energy_state_250
+        label: Mitochondrial Energy state 250
+        maps_to: C05261MM
+      - id: mitochondrial_energy_state_251
+        label: Mitochondrial Energy state 251
+        maps_to: C05262MM
+      - id: mitochondrial_energy_state_252
+        label: Mitochondrial Energy state 252
+        maps_to: C05263MM
+      - id: mitochondrial_energy_state_253
+        label: Mitochondrial Energy state 253
+        maps_to: C05264MM
+      - id: mitochondrial_energy_state_254
+        label: Mitochondrial Energy state 254
+        maps_to: C05265MM
+      - id: mitochondrial_energy_state_255
+        label: Mitochondrial Energy state 255
+        maps_to: C05266MM
+      - id: mitochondrial_energy_state_256
+        label: Mitochondrial Energy state 256
+        maps_to: C05267MM
+      - id: mitochondrial_energy_state_257
+        label: Mitochondrial Energy state 257
+        maps_to: C05268MM
+      - id: mitochondrial_energy_state_258
+        label: Mitochondrial Energy state 258
+        maps_to: C05269MM
+      - id: mitochondrial_energy_state_259
+        label: Mitochondrial Energy state 259
+        maps_to: C05270MM
+      - id: mitochondrial_energy_state_260
+        label: Mitochondrial Energy state 260
+        maps_to: C05271MM
+      - id: mitochondrial_energy_state_261
+        label: Mitochondrial Energy state 261
+        maps_to: C05272MM
+      - id: mitochondrial_energy_state_262
+        label: Mitochondrial Energy state 262
+        maps_to: C05273MM
+      - id: mitochondrial_energy_state_263
+        label: Mitochondrial Energy state 263
+        maps_to: C05274MM
+      - id: mitochondrial_energy_state_264
+        label: Mitochondrial Energy state 264
+        maps_to: C05275MM
+      - id: mitochondrial_energy_state_265
+        label: Mitochondrial Energy state 265
+        maps_to: C05276MM
+      - id: c05379mm_oxalosuccinate
+        label: C05379mm Oxalosuccinate
+        maps_to: C05379MM
+      - id: mitochondrial_energy_state_267
+        label: Mitochondrial Energy state 267
+        maps_to: C05381MM
+      - id: c05744mm_acetoacetyl_acp
+        label: C05744mm Acetoacetyl Acp
+        maps_to: C05744MM
+      - id: c05745mm_butyryl_acp
+        label: C05745mm Butyryl Acp
+        maps_to: C05745MM
+      - id: c05746mm_3_oxohexanoyl_acp
+        label: C05746mm 3 Oxohexanoyl Acp
+        maps_to: C05746MM
+      - id: c05747mm_r_3_hydroxyhexanoyl_acp
+        label: C05747mm R 3 Hydroxyhexanoyl Acp
+        maps_to: C05747MM
+      - id: c05748mm_trans_hex_2_enoyl_acp
+        label: C05748mm Trans Hex 2 Enoyl Acp
+        maps_to: C05748MM
+      - id: c05749mm_hexanoyl_acp
+        label: C05749mm Hexanoyl Acp
+        maps_to: C05749MM
+      - id: c05750mm_3_oxooctanoyl_acp
+        label: C05750mm 3 Oxooctanoyl Acp
+        maps_to: C05750MM
+      - id: c05751mm_trans_oct_2_enoyl_acp
+        label: C05751mm Trans Oct 2 Enoyl Acp
+        maps_to: C05751MM
+      - id: c05752mm_octanoyl_acp
+        label: C05752mm Octanoyl Acp
+        maps_to: C05752MM
+      - id: c05980mm_cardiolipin
+        label: C05980mm Cardiolipin
+        maps_to: C05980MM
+      - id: c05983mm_propinol_adenylate
+        label: C05983mm Propinol Adenylate
+        maps_to: C05983MM
+      - id: c05993mm_acetyl_adenylate
+        label: C05993mm Acetyl Adenylate
+        maps_to: C05993MM
+      - id: mitochondrial_energy_state_280
+        label: Mitochondrial Energy state 280
+        maps_to: C06000MM
+      - id: c06001mm_s_3_hydroxyisobutyrate
+        label: C06001mm S 3 Hydroxyisobutyrate
+        maps_to: C06001MM
+      - id: c06002mm_s_methylmalonate_semialdehyde
+        label: C06002mm S Methylmalonate Semialdehyde
+        maps_to: C06002MM
+      - id: c06157mm_dihydrolipoyllysine_residue_succinyltransferase
+        label: C06157mm Dihydrolipoyllysine Residue Succinyltransferase
+        maps_to: C06157MM
+      - id: c06423mm_octanoic_acid
+        label: C06423mm Octanoic Acid
+        maps_to: C06423MM
+      - id: c14818mm_fe2
+        label: C14818mm Fe2
+        maps_to: C14818MM
+      - id: c14819mm_fe3
+        label: C14819mm Fe3
+        maps_to: C14819MM
+      - id: c15972mm_enzyme_n6_lipoyl_lysine
+        label: C15972mm Enzyme N6 Lipoyl Lysine
+        maps_to: C15972MM
+      - id: c15973mm_enzyme_n6_dihydrolipoyl_lysine
+        label: C15973mm Enzyme N6 Dihydrolipoyl Lysine
+        maps_to: C15973MM
+      - id: mitochondrial_energy_state_289
+        label: Mitochondrial Energy state 289
+        maps_to: C15974MM
+      - id: c15975mm_dihydrolipoyllysine_residue_2_methylpropanoyl_transferase
+        label: C15975mm Dihydrolipoyllysine Residue 2 Methylpropanoyl Transferase
+        maps_to: C15975MM
+      - id: mitochondrial_energy_state_291
+        label: Mitochondrial Energy state 291
+        maps_to: C15976MM
+      - id: c15977mm_dihydrolipoyllysine_residue_2_methylpropanoyl_transferase
+        label: C15977mm Dihydrolipoyllysine Residue 2 Methylpropanoyl Transferase
+        maps_to: C15977MM
+      - id: mitochondrial_energy_state_293
+        label: Mitochondrial Energy state 293
+        maps_to: C15978MM
+      - id: c15979mm_dihydrolipoyllysine_residue_2_methylpropanoyl_transferase
+        label: C15979mm Dihydrolipoyllysine Residue 2 Methylpropanoyl Transferase
+        maps_to: C15979MM
+      - id: mitochondrial_energy_state_295
+        label: Mitochondrial Energy state 295
+        maps_to: C15980MM
+      - id: c16254mm_dihydrolipoyllysine_residue_succinyltransferase
+        label: C16254mm Dihydrolipoyllysine Residue Succinyltransferase
+        maps_to: C16254MM
+      - id: c16255mm_dihydrolipoyllysine_residue_acetyltransferase
+        label: C16255mm Dihydrolipoyllysine Residue Acetyltransferase
+        maps_to: C16255MM
+      - id: c04619mm_3r_3_hydroxydecanoyl_acyl_carrier_protein
+        label: C04619mm 3r 3 Hydroxydecanoyl Acyl Carrier Protein
+        maps_to: C04619MM
+      - id: c04633mm_3r_3_hydroxypalmitoyl_acyl_carrier_protein
+        label: C04633mm 3r 3 Hydroxypalmitoyl Acyl Carrier Protein
+        maps_to: C04633MM
+      - id: c04688mm_3r_3_hydroxytetradecanoyl_acyl_carrier_protein
+        label: C04688mm 3r 3 Hydroxytetradecanoyl Acyl Carrier Protein
+        maps_to: C04688MM
+      - id: c05223mm_dodecanoyl_acyl_carrier_protein
+        label: C05223mm Dodecanoyl Acyl Carrier Protein
+        maps_to: C05223MM
+      - id: c05753mm_3_oxodecanoyl_acp
+        label: C05753mm 3 Oxodecanoyl Acp
+        maps_to: C05753MM
+      - id: c05754mm_trans_dec_2_enoyl_acp
+        label: C05754mm Trans Dec 2 Enoyl Acp
+        maps_to: C05754MM
+      - id: c05755mm_decanoyl_acp
+        label: C05755mm Decanoyl Acp
+        maps_to: C05755MM
+      - id: c05756mm_3_oxododecanoyl_acp
+        label: C05756mm 3 Oxododecanoyl Acp
+        maps_to: C05756MM
+      - id: c05757mm_r_3_hydroxydodecanoyl_acp
+        label: C05757mm R 3 Hydroxydodecanoyl Acp
+        maps_to: C05757MM
+      - id: c05758mm_trans_dodec_2_enoyl_acp
+        label: C05758mm Trans Dodec 2 Enoyl Acp
+        maps_to: C05758MM
+      - id: c05759mm_3_oxotetradecanoyl_acp
+        label: C05759mm 3 Oxotetradecanoyl Acp
+        maps_to: C05759MM
+      - id: c05760mm_trans_tetradec_2_enoyl_acp
+        label: C05760mm Trans Tetradec 2 Enoyl Acp
+        maps_to: C05760MM
+      - id: c05761mm_tetradecanoyl_acp
+        label: C05761mm Tetradecanoyl Acp
+        maps_to: C05761MM
+      - id: c05762mm_3_oxohexadecanoyl_acp
+        label: C05762mm 3 Oxohexadecanoyl Acp
+        maps_to: C05762MM
+      - id: c05763mm_trans_hexadec_2_enoyl_acp
+        label: C05763mm Trans Hexadec 2 Enoyl Acp
+        maps_to: C05763MM
+      - id: c05764mm_hexadecanoyl_acp
+        label: C05764mm Hexadecanoyl Acp
+        maps_to: C05764MM
+      - id: c00249mm_hexadecanoic_acid
+        label: C00249mm Hexadecanoic Acid
+        maps_to: C00249MM
+      - id: c00014cyto_nh3
+        label: C00014cyto Nh3
+        maps_to: C00014Cyto
+      - id: c00931cyto_porphobilinogen
+        label: C00931cyto Porphobilinogen
+        maps_to: C00931Cyto
+      - id: c01024cyto_hydroxymethylbilane
+        label: C01024cyto Hydroxymethylbilane
+        maps_to: C01024Cyto
+      - id: mitochondrial_energy_state_318
+        label: Mitochondrial Energy state 318
+        maps_to: C01051Cyto
+      - id: mitochondrial_energy_state_319
+        label: Mitochondrial Energy state 319
+        maps_to: C03263Cyto
+      - id: c00288cyto_hco3
+        label: C00288cyto Hco3
+        maps_to: C00288Cyto
+      - id: c00041cyto_l_alanine
+        label: C00041cyto L Alanine
+        maps_to: C00041Cyto
+      - id: c00134cyto_putrescine
+        label: C00134cyto Putrescine
+        maps_to: C00134Cyto
+      - id: c00065cyto_l_serine
+        label: C00065cyto L Serine
+        maps_to: C00065Cyto
+      - id: c00188cyto_l_threonine
+        label: C00188cyto L Threonine
+        maps_to: C00188Cyto
+      - id: c01888mm_aminoacetone
+        label: C01888mm Aminoacetone
+        maps_to: C01888MM
+      - id: c00546mm_methylglyoxal
+        label: C00546mm Methylglyoxal
+        maps_to: C00546MM
+  communication_step: 1.0
+runtime:
+  dependencies:
+    packages:
+    - PyYAML==6.0.2
+parameters:
+- name: integration_step
+  value: 1.0
+  min: 0.0
+  units: model_time
+  description: Sampling step for the visualisation model.
+io:
+  inputs:
+  - name: metabolism_sbml_smith2011_humanheartmitochondrian_metabolicmodel_model1106160000_model_observable_values
+    description: Latest user-facing observable values from the core metabolism model.
+  - name: metabolism_sbml_smith2011_humanheartmitochondrian_metabolicmodel_model1106160000_model_run_summary
+    description: Run summary from the core metabolism model.
+  - name: metabolism_sbml_smith2011_humanheartmitochondrian_metabolicmodel_model1106160000_model_observable_labels
+    description: Display labels for user-facing observables.
+  outputs: []

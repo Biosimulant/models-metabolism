@@ -1,0 +1,114 @@
+schema_version: '2.0'
+title: Fung2005_Metabolic_Oscillator
+description: 'A Synthetic Gene-Metabolic Oscillator Reference: Fung et al; Nature (2005) 435:118-122
+  Name of kinetic law Reaction Glycolytic flux, V_gly: nil -&gt; AcCoA; Flux to TCA cycle/ETOH,
+  V_TCA: AcCoA -&gt;. It can be used to explore metabolic flux dynamics and compare pathway
+  behavior across conditions.'
+standard: sbml
+tags:
+- biomodels_ebi
+- faithful
+- metabolism
+- ode
+- sbml
+- tellurium
+authors:
+- Biosimulant Team
+- Eileen Fung
+- Wilson W Wong
+- Jason K Suen
+- Thomas Bulter
+- Sun-gu Lee
+upstream:
+  id: biomodels_ebi:BIOMD0000000067
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000067
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000067
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000067?filename=BIOMD0000000067_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.fung2005_metabolic_oscillator_biomd0000000067_model:Fung2005MetabolicOscillatorBiomd0000000067Model
+  init_kwargs:
+    model_path: data/BIOMD0000000067.xml
+    integration_step: 0.1
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_metabolic_pathway_state_1
+    maps_to: AcCoA
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 1. Maps to bundled SBML symbol
+      `AcCoA`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_acetyl_phosphate
+    maps_to: AcP
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for acetyl phosphate. Maps to bundled SBML symbol `AcP`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_metabolic_pathway_state_3
+    maps_to: OAc
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 3. Maps to bundled SBML symbol
+      `OAc`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_protonated_acetate
+    maps_to: HOAc
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for protonated acetate. Maps to bundled SBML symbol `HOAc`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_lactate_repressor
+    maps_to: LacI
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for lactate repressor. Maps to bundled SBML symbol `LacI`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: metabolic_pathway_state_1
+    maps_to: AcCoA
+    label: Metabolic Pathway state 1
+    description: Metabolic Pathway state 1; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `AcCoA`. Exact metabolite identity is not encoded
+      in the bundled SBML metadata.
+  - name: acetyl_phosphate
+    maps_to: AcP
+    label: Acetyl Phosphate
+    description: Acetyl Phosphate. Maps to SBML symbol `AcP`.
+  - name: metabolic_pathway_state_3
+    maps_to: OAc
+    label: Metabolic Pathway state 3
+    description: Metabolic Pathway state 3; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `OAc`. Exact metabolite identity is not encoded
+      in the bundled SBML metadata.
+  - name: protonated_acetate
+    maps_to: HOAc
+    label: Protonated Acetate
+    description: Protonated Acetate. Maps to SBML symbol `HOAc`.
+  - name: lactate_repressor
+    maps_to: LacI
+    label: lactate Repressor
+    description: lactate Repressor. Maps to SBML symbol `LacI`.
+  - name: observable_values
+    description: Latest user-facing observable values from the SBML run.
+  - name: run_summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: observable_labels
+    description: Mapping from user-facing observable ports to display labels.
+parameters:
+- name: integration_step
+  value: 0.1
+  min: 0.0
+  units: model_time
+  description: Internal sampling step for Tellurium output collection.

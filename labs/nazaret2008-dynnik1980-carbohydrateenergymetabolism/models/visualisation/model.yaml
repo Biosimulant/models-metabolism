@@ -1,0 +1,80 @@
+schema_version: '2.0'
+title: Nazaret2008_Dynnik1980_CarbohydrateEnergyMetabolism Visualisation
+description: Dedicated presentation model for Nazaret2008_Dynnik1980_CarbohydrateEnergyMetabolism.
+standard: other
+tags:
+- metabolism
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  entrypoint: src.metabolism_visualisation:MetabolismVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Nazaret2008_Dynnik1980_CarbohydrateEnergyMetabolism Lab
+    question: Which metabolic pathway dynamics observables show the strongest activity in
+      Nazaret2008_Dynnik1980_CarbohydrateEnergyMetabolism?
+    answer_focus: metabolic pathway dynamics
+    sources:
+    - alias: metabolism_sbml_nazaret2008_dynnik1980_carbohydrateenergymetabol_model1202170000_model
+      title: Nazaret2008_Dynnik1980_CarbohydrateEnergyMetabolism
+      scope: metabolic pathway dynamics
+      label_caveat: Values are native SBML quantities. Conservative pathway-state labels are
+        used where the bundled SBML does not encode exact metabolite identities.
+      observables:
+      - id: glyceraldehyde_3_phosphate
+        label: glyceraldehyde 3 phosphate
+        maps_to: s1
+      - id: metabolic_pathway_state_2
+        label: Metabolic Pathway state 2
+        maps_to: s2_e1
+      - id: observable_13dpg
+        label: 13dpg
+        maps_to: s3_e2
+      - id: pyruvate
+        label: pyruvate
+        maps_to: s4_e3
+      - id: lactate
+        label: lactate
+        maps_to: s5_e4
+      - id: atp
+        label: ATP
+        maps_to: a3_e5
+      - id: amp
+        label: AMP
+        maps_to: a1_e5
+      - id: metabolic_pathway_state_8
+        label: Metabolic Pathway state 8
+        maps_to: r1_e6
+      - id: metabolic_pathway_state_9
+        label: Metabolic Pathway state 9
+        maps_to: n2_e7
+      - id: metabolic_pathway_state_10
+        label: Metabolic Pathway state 10
+        maps_to: i1_e8
+      - id: metabolic_pathway_state_11
+        label: Metabolic Pathway state 11
+        maps_to: i2_e8
+      - id: metabolic_pathway_state_12
+        label: Metabolic Pathway state 12
+        maps_to: c2_e9
+  communication_step: 1.0
+runtime:
+  dependencies:
+    packages:
+    - PyYAML==6.0.2
+parameters:
+- name: integration_step
+  value: 1.0
+  min: 0.0
+  units: model_time
+  description: Sampling step for the visualisation model.
+io:
+  inputs:
+  - name: metabolism_sbml_nazaret2008_dynnik1980_carbohydrateenergymetabol_model1202170000_model_observable_values
+    description: Latest user-facing observable values from the core metabolism model.
+  - name: metabolism_sbml_nazaret2008_dynnik1980_carbohydrateenergymetabol_model1202170000_model_run_summary
+    description: Run summary from the core metabolism model.
+  - name: metabolism_sbml_nazaret2008_dynnik1980_carbohydrateenergymetabol_model1202170000_model_observable_labels
+    description: Display labels for user-facing observables.
+  outputs: []

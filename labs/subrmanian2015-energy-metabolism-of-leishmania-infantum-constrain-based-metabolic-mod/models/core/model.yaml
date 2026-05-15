@@ -1,0 +1,113 @@
+schema_version: '2.0'
+title: Subrmanian2015 - Energy metabolism of Leishmania infantum, constrain-based metabolic
+  model
+description: 'The uploaded model is linked to the PLoS ONE article: Subramanian A, Jhawar
+  J, Sarkar RR (2015) Dissecting Leishmania infantum Energy Metabolism - A Systems Perspective.
+  It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions.'
+standard: sbml
+tags:
+- biomodels_ebi
+- faithful
+- metabolism
+- ode
+- sbml
+- tellurium
+authors:
+- Biosimulant Team
+- Abhishek Subramanian
+- Sarkar RR
+- Jitesh Jhawar
+upstream:
+  id: biomodels_ebi:MODEL2010130002
+  source_db: biomodels_ebi
+  source_id: MODEL2010130002
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL2010130002
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2010130002?filename=iAS142.xml
+  license: CC0
+biosim:
+  entrypoint: src.subrmanian2015_energy_metabolism_of_leishmania_i_model2010130002_model:Subrmanian2015EnergyMetabolismOfLeishmaniaIModel2010130002Model
+  init_kwargs:
+    model_path: data/MODEL2010130002.xml
+    integration_step: 0.1
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_observable_3_phospho_d_glyceroyl_phosphate
+    maps_to: M_13dpg_c
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for observable 3 phospho d glyceroyl phosphate. Maps to
+      bundled SBML symbol `M_13dpg_c`. Applied before the Tellurium simulation starts; this
+      does not change kinetic parameters or equations. Default from Tellurium setup-time value
+      because no explicit SBML initial value was available.
+  - name: initial_observable_3_phospho_d_glyceroyl_phosphate_2
+    maps_to: M_13dpg_x
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for observable 3 phospho d glyceroyl phosphate 2. Maps
+      to bundled SBML symbol `M_13dpg_x`. Applied before the Tellurium simulation starts;
+      this does not change kinetic parameters or equations. Default from Tellurium setup-time
+      value because no explicit SBML initial value was available.
+  - name: initial_observable_3_phospho_d_glycerate
+    maps_to: M_3pg_x
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for observable 3 phospho d glycerate. Maps to bundled SBML
+      symbol `M_3pg_x`. Applied before the Tellurium simulation starts; this does not change
+      kinetic parameters or equations. Default from Tellurium setup-time value because no
+      explicit SBML initial value was available.
+  - name: initial_observable_3_phospho_d_glycerate_2
+    maps_to: M_3pg_c
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for observable 3 phospho d glycerate 2. Maps to bundled
+      SBML symbol `M_3pg_c`. Applied before the Tellurium simulation starts; this does not
+      change kinetic parameters or equations. Default from Tellurium setup-time value because
+      no explicit SBML initial value was available.
+  - name: initial_observable_6_phospho_d_gluconate
+    maps_to: M_6pgc_c
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for observable 6 phospho d gluconate. Maps to bundled SBML
+      symbol `M_6pgc_c`. Applied before the Tellurium simulation starts; this does not change
+      kinetic parameters or equations. Default from Tellurium setup-time value because no
+      explicit SBML initial value was available.
+  outputs:
+  - name: observable_3_phospho_d_glyceroyl_phosphate
+    maps_to: M_13dpg_c
+    label: 3 Phospho D Glyceroyl Phosphate
+    description: 3 Phospho D Glyceroyl Phosphate. Maps to SBML symbol `M_13dpg_c`.
+  - name: observable_3_phospho_d_glyceroyl_phosphate_2
+    maps_to: M_13dpg_x
+    label: 3 Phospho D Glyceroyl Phosphate 2
+    description: 3 Phospho D Glyceroyl Phosphate 2. Maps to SBML symbol `M_13dpg_x`.
+  - name: observable_3_phospho_d_glycerate
+    maps_to: M_3pg_x
+    label: 3 Phospho D Glycerate
+    description: 3 Phospho D Glycerate. Maps to SBML symbol `M_3pg_x`.
+  - name: observable_3_phospho_d_glycerate_2
+    maps_to: M_3pg_c
+    label: 3 Phospho D Glycerate 2
+    description: 3 Phospho D Glycerate 2. Maps to SBML symbol `M_3pg_c`.
+  - name: observable_6_phospho_d_gluconate
+    maps_to: M_6pgc_c
+    label: 6 Phospho D Gluconate
+    description: 6 Phospho D Gluconate. Maps to SBML symbol `M_6pgc_c`.
+  - name: observable_values
+    description: Latest user-facing observable values from the SBML run.
+  - name: run_summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: observable_labels
+    description: Mapping from user-facing observable ports to display labels.
+parameters:
+- name: integration_step
+  value: 0.1
+  min: 0.0
+  units: model_time
+  description: Internal sampling step for Tellurium output collection.

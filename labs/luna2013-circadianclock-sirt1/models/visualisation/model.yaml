@@ -1,0 +1,71 @@
+schema_version: '2.0'
+title: Luna2013_CircadianClock_SIRT1 Visualisation
+description: Dedicated presentation model for Luna2013_CircadianClock_SIRT1.
+standard: other
+tags:
+- metabolism
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  entrypoint: src.metabolism_visualisation:MetabolismVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Luna2013_CircadianClock_SIRT1 Lab
+    question: Which metabolic pathway dynamics observables show the strongest activity in
+      Luna2013_CircadianClock_SIRT1?
+    answer_focus: metabolic pathway dynamics
+    sources:
+    - alias: metabolism_sbml_luna2013_circadianclock_sirt1_model2112310002_model
+      title: Luna2013_CircadianClock_SIRT1
+      scope: metabolic pathway dynamics
+      label_caveat: Values are native SBML quantities. Conservative pathway-state labels are
+        used where the bundled SBML does not encode exact metabolite identities.
+      observables:
+      - id: metabolic_pathway_state_1
+        label: Metabolic Pathway state 1
+        maps_to: species_1
+      - id: metabolic_pathway_state_2
+        label: Metabolic Pathway state 2
+        maps_to: species_2
+      - id: metabolic_pathway_state_3
+        label: Metabolic Pathway state 3
+        maps_to: species_3
+      - id: cp2
+        label: Cp2
+        maps_to: species_4
+      - id: nad
+        label: NAD
+        maps_to: species_5
+      - id: metabolic_pathway_state_6
+        label: Metabolic Pathway state 6
+        maps_to: species_6
+      - id: metabolic_pathway_state_7
+        label: Metabolic Pathway state 7
+        maps_to: species_7
+      - id: metabolic_pathway_state_8
+        label: Metabolic Pathway state 8
+        maps_to: species_11
+      - id: metabolic_pathway_state_9
+        label: Metabolic Pathway state 9
+        maps_to: species_12
+  communication_step: 1.0
+runtime:
+  dependencies:
+    packages:
+    - PyYAML==6.0.2
+parameters:
+- name: integration_step
+  value: 1.0
+  min: 0.0
+  units: model_time
+  description: Sampling step for the visualisation model.
+io:
+  inputs:
+  - name: metabolism_sbml_luna2013_circadianclock_sirt1_model2112310002_model_observable_values
+    description: Latest user-facing observable values from the core metabolism model.
+  - name: metabolism_sbml_luna2013_circadianclock_sirt1_model2112310002_model_run_summary
+    description: Run summary from the core metabolism model.
+  - name: metabolism_sbml_luna2013_circadianclock_sirt1_model2112310002_model_observable_labels
+    description: Display labels for user-facing observables.
+  outputs: []

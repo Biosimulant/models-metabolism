@@ -1,0 +1,45 @@
+schema_version: '2.0'
+title: Tiveci2005 - Calcium dynamics in brain energy metabolism and Alzheimer's disease Lab
+description: "Tiveci2005 - Calcium dynamics in brain energymetabolism and Alzheimer's disease\
+  \ Encoded non-curated model. Issues: - Missing values: dHb,0 ; \u03B1 ; V ; \u03B3 ; Volume\
+  \ ; rc ;V leak,mem,Ca ; V Ca,Pump,ER ; V c."
+io:
+  inputs:
+  - name: initial_nad
+    maps_to: metabolism_sbml_tiveci2005_calcium_dynamics_in_brain_energy_meta_model1409240003_model.initial_nad
+    default: 1.0
+    units: native SBML value
+    description: Initial condition for nad. Maps to bundled SBML symbol `NAD`. Applied before
+      the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  outputs:
+  - name: nad
+    maps_to: metabolism_sbml_tiveci2005_calcium_dynamics_in_brain_energy_meta_model1409240003_model.nad
+  - name: observable_values
+    maps_to: metabolism_sbml_tiveci2005_calcium_dynamics_in_brain_energy_meta_model1409240003_model.observable_values
+  - name: run_summary
+    maps_to: metabolism_sbml_tiveci2005_calcium_dynamics_in_brain_energy_meta_model1409240003_model.run_summary
+  - name: observable_labels
+    maps_to: metabolism_sbml_tiveci2005_calcium_dynamics_in_brain_energy_meta_model1409240003_model.observable_labels
+models:
+- alias: metabolism_sbml_tiveci2005_calcium_dynamics_in_brain_energy_meta_model1409240003_model
+  path: models/core
+  parameters:
+    model_path: data/MODEL1409240003.xml
+    integration_step: 0.1
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: metabolism_sbml_tiveci2005_calcium_dynamics_in_brain_energy_meta_model1409240003_model.observable_values
+  to:
+  - visualisation.metabolism_sbml_tiveci2005_calcium_dynamics_in_brain_energy_meta_model1409240003_model_observable_values
+- from: metabolism_sbml_tiveci2005_calcium_dynamics_in_brain_energy_meta_model1409240003_model.run_summary
+  to:
+  - visualisation.metabolism_sbml_tiveci2005_calcium_dynamics_in_brain_energy_meta_model1409240003_model_run_summary
+- from: metabolism_sbml_tiveci2005_calcium_dynamics_in_brain_energy_meta_model1409240003_model.observable_labels
+  to:
+  - visualisation.metabolism_sbml_tiveci2005_calcium_dynamics_in_brain_energy_meta_model1409240003_model_observable_labels
+runtime:
+  duration: 10.0
+  communication_step: 1.0
+  initial_inputs: {}

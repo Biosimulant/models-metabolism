@@ -1,0 +1,29 @@
+# SPDX-FileCopyrightText: 2026-present Biosimulant Team
+# SPDX-License-Identifier: Apache-2.0
+"""Tellurium-backed wrapper for Reed2008_Glutathione_Metabolism."""
+
+from __future__ import annotations
+
+from biosim.contrib.sbml import TelluriumSBMLBioModule
+
+
+class Reed2008GlutathioneMetabolismBiomd0000000268Model(TelluriumSBMLBioModule):
+    """Tellurium-backed wrapper for Reed2008_Glutathione_Metabolism."""
+
+    _SBML_ID = 'BIOMD0000000268'
+    _TITLE = 'Reed2008_Glutathione_Metabolism'
+    _TIME_UNIT = 'model_time'
+    _OBSERVABLE_STRATEGY = 'species'
+    _EXPOSE_INTEGRATION_STEP_INPUT = False
+    _SPECIES_LABELS_OUTPUT_NAME = 'observable_labels'
+    _SUMMARY_OUTPUT_NAME = 'run_summary'
+    _STATE_OUTPUT_NAME = 'observable_values'
+    _STATE_OUTPUT_ALIASES = {'c_thf': 'cytosolic_tetrahydrofolate', 'm_thf': 'mitochondrial_tetrahydrofolate', 'c_5mf': 'metabolic_pathway_state_3', 'c_2cf': 'metabolic_pathway_state_4', 'c_1cf': 'metabolic_pathway_state_5', 'c_10f': 'metabolic_pathway_state_6', 'c_dhf': 'cytosolic_dihydrofolate', 'm_2cf': 'metabolic_pathway_state_8', 'm_1cf': 'metabolic_pathway_state_9', 'm_10f': 'metabolic_pathway_state_10', 'b_gly': 'b_glycine', 'b_glu': 'b_glutamate', 'b_cys': 'b_cysteine', 'b_gsg': 'metabolic_pathway_state_14', 'b_gsh': 'blood_glutathione', 'aic': 'metabolic_pathway_state_16', 'c_glu': 'c_glutamate', 'c_cys': 'c_cysteine', 'glc': 'glutamyl_cysteine', 'c_gly': 'c_glycine', 'c_gsg': 'metabolic_pathway_state_21', 'c_gsh': 'cytosolic_glutathione', 'cyt': 'cystathione', 'hcy': 'homocysteine', 'c_ser': 'c_serine', 'sah': 's_adenosylhomocysteine', 'sam': 's_adenosylmethionine', 'met': 'c_methionine', 'c_coo': 'c_formate', 'm_ser': 'm_serine', 'm_gly': 'm_glycine', 'm_coo': 'm_formate', 'src': 'sarcosine', 'dmg': 'dimethylglycine'}
+    _OBSERVABLES = ['c_thf', 'm_thf', 'c_5mf', 'c_2cf', 'c_1cf', 'c_10f', 'c_dhf', 'm_2cf', 'm_1cf', 'm_10f', 'b_gly', 'b_glu', 'b_cys', 'b_gsg', 'b_gsh', 'aic', 'c_glu', 'c_cys', 'glc', 'c_gly', 'c_gsg', 'c_gsh', 'cyt', 'hcy', 'c_ser', 'sah', 'sam', 'met', 'c_coo', 'm_ser', 'm_gly', 'm_coo', 'src', 'dmg']
+    _SPECIES_LABELS = {'c_thf': 'Cytosolic Tetrahydrofolate', 'm_thf': 'Mitochondrial Tetrahydrofolate', 'c_5mf': 'Metabolic Pathway state 3', 'c_2cf': 'Metabolic Pathway state 4', 'c_1cf': 'Metabolic Pathway state 5', 'c_10f': 'Metabolic Pathway state 6', 'c_dhf': 'Cytosolic Dihydrofolate', 'm_2cf': 'Metabolic Pathway state 8', 'm_1cf': 'Metabolic Pathway state 9', 'm_10f': 'Metabolic Pathway state 10', 'b_gly': 'B Glycine', 'b_glu': 'B Glutamate', 'b_cys': 'B Cysteine', 'b_gsg': 'Metabolic Pathway state 14', 'b_gsh': 'Blood Glutathione', 'aic': 'Metabolic Pathway state 16', 'c_glu': 'C Glutamate', 'c_cys': 'C Cysteine', 'glc': 'Glutamyl Cysteine', 'c_gly': 'C Glycine', 'c_gsg': 'Metabolic Pathway state 21', 'c_gsh': 'Cytosolic Glutathione', 'cyt': 'Cystathione', 'hcy': 'Homocysteine', 'c_ser': 'C Serine', 'sah': 'S Adenosylhomocysteine', 'sam': 'S Adenosylmethionine', 'met': 'C Methionine', 'c_coo': 'C Formate', 'm_ser': 'M Serine', 'm_gly': 'M Glycine', 'm_coo': 'M Formate', 'src': 'Sarcosine', 'dmg': 'Dimethylglycine'}
+    _PARAMETER_INPUTS = {}
+    _INITIAL_CONDITION_INPUTS = {'initial_cytosolic_tetrahydrofolate': ('c_thf', 4.670919668857204, 'native SBML value', 'Initial condition for cytosolic tetrahydrofolate. Maps to bundled SBML symbol `c_thf`. Applied before the Tellurium simulation starts; this does not change kinetic parameters or equations.'), 'initial_mitochondrial_tetrahydrofolate': ('m_thf', 21.075801087262693, 'native SBML value', 'Initial condition for mitochondrial tetrahydrofolate. Maps to bundled SBML symbol `m_thf`. Applied before the Tellurium simulation starts; this does not change kinetic parameters or equations.'), 'initial_metabolic_pathway_state_3': ('c_5mf', 4.4965335653401, 'native SBML value', 'Initial condition for metabolic pathway state 3. Maps to bundled SBML symbol `c_5mf`. Applied before the Tellurium simulation starts; this does not change kinetic parameters or equations.'), 'initial_metabolic_pathway_state_4': ('c_2cf', 0.506278119133034, 'native SBML value', 'Initial condition for metabolic pathway state 4. Maps to bundled SBML symbol `c_2cf`. Applied before the Tellurium simulation starts; this does not change kinetic parameters or equations.'), 'initial_metabolic_pathway_state_5': ('c_1cf', 0.278602708139276, 'native SBML value', 'Initial condition for metabolic pathway state 5. Maps to bundled SBML symbol `c_1cf`. Applied before the Tellurium simulation starts; this does not change kinetic parameters or equations.')}
+    _HEADLINE_OUTPUTS = {'cytosolic_tetrahydrofolate': ('c_thf', 'native SBML value', 'Cytosolic Tetrahydrofolate. Maps to SBML symbol `c_thf`.'), 'mitochondrial_tetrahydrofolate': ('m_thf', 'native SBML value', 'Mitochondrial Tetrahydrofolate. Maps to SBML symbol `m_thf`.'), 'metabolic_pathway_state_3': ('c_5mf', 'native SBML value', 'Metabolic Pathway state 3; conservative display label for an abstract SBML state variable. Maps to SBML symbol `c_5mf`. Exact metabolite identity is not encoded in the bundled SBML metadata.'), 'metabolic_pathway_state_4': ('c_2cf', 'native SBML value', 'Metabolic Pathway state 4; conservative display label for an abstract SBML state variable. Maps to SBML symbol `c_2cf`. Exact metabolite identity is not encoded in the bundled SBML metadata.'), 'metabolic_pathway_state_5': ('c_1cf', 'native SBML value', 'Metabolic Pathway state 5; conservative display label for an abstract SBML state variable. Maps to SBML symbol `c_1cf`. Exact metabolite identity is not encoded in the bundled SBML metadata.')}
+
+    def __init__(self, model_path: str = 'data/BIOMD0000000268.xml', integration_step: float = 0.1) -> None:
+        super().__init__(model_path=model_path, integration_step=integration_step)

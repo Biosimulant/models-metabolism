@@ -1,0 +1,112 @@
+schema_version: '2.0'
+title: Reyes-Palomares2012 - a combined model hepatic polyamine and sulfur aminoacid metabolism
+  - version2
+description: Reyes-Palomares2012 - a combined model hepatic polyamine and sulfur aminoacid
+  metabolism - version2 Mammalian polyamine metabolism consists of a bi-cycle with two required
+  entrances, omithine and S-ad. It can be used to explore metabolic flux dynamics and compare
+  pathway behavior across conditions.
+standard: sbml
+tags:
+- biomodels_ebi
+- faithful
+- metabolism
+- ode
+- sbml
+- tellurium
+authors:
+- Biosimulant Team
+- Armando Reyes-Palomares
+- "Ra\xFAl Monta\xF1ez"
+- "Francisca S\xE1nchez-Jim\xE9nez"
+- Miguel Angel Medina
+upstream:
+  id: biomodels_ebi:BIOMD0000000450
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000450
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000450
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000450?filename=BIOMD0000000450_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.reyes_palomares2012_a_combined_model_hepatic_pol_biomd0000000450_model:ReyesPalomares2012ACombinedModelHepaticPolBiomd0000000450Model
+  init_kwargs:
+    model_path: data/BIOMD0000000450.xml
+    integration_step: 0.1
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_b_glycine
+    maps_to: b_gly
+    default: 218.733171504338
+    units: native SBML value
+    description: Initial condition for b glycine. Maps to bundled SBML symbol `b_gly`. Applied
+      before the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_b_glutamate
+    maps_to: b_glu
+    default: 60.4651616225031
+    units: native SBML value
+    description: Initial condition for b glutamate. Maps to bundled SBML symbol `b_glu`. Applied
+      before the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_b_cysteine
+    maps_to: b_cys
+    default: 183.099466381356
+    units: native SBML value
+    description: Initial condition for b cysteine. Maps to bundled SBML symbol `b_cys`. Applied
+      before the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_metabolic_pathway_state_4
+    maps_to: b_gsg
+    default: 0.472632922783833
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 4. Maps to bundled SBML symbol
+      `b_gsg`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_blood_glutathione
+    maps_to: b_gsh
+    default: 12.5470655822207
+    units: native SBML value
+    description: Initial condition for blood glutathione. Maps to bundled SBML symbol `b_gsh`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: b_glycine
+    maps_to: b_gly
+    label: B Glycine
+    description: B Glycine. Maps to SBML symbol `b_gly`.
+  - name: b_glutamate
+    maps_to: b_glu
+    label: B Glutamate
+    description: B Glutamate. Maps to SBML symbol `b_glu`.
+  - name: b_cysteine
+    maps_to: b_cys
+    label: B Cysteine
+    description: B Cysteine. Maps to SBML symbol `b_cys`.
+  - name: metabolic_pathway_state_4
+    maps_to: b_gsg
+    label: Metabolic Pathway state 4
+    description: Metabolic Pathway state 4; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `b_gsg`. Exact metabolite identity is not encoded
+      in the bundled SBML metadata.
+  - name: blood_glutathione
+    maps_to: b_gsh
+    label: Blood Glutathione
+    description: Blood Glutathione. Maps to SBML symbol `b_gsh`.
+  - name: observable_values
+    description: Latest user-facing observable values from the SBML run.
+  - name: run_summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: observable_labels
+    description: Mapping from user-facing observable ports to display labels.
+parameters:
+- name: integration_step
+  value: 0.1
+  min: 0.0
+  units: model_time
+  description: Internal sampling step for Tellurium output collection.

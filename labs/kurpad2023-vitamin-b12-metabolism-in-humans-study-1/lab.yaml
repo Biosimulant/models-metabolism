@@ -1,0 +1,64 @@
+schema_version: '2.0'
+title: Kurpad 2023 - vitamin B12 metabolism in humans [study 1] Lab
+description: Metabolism Kurpad2023Vitamin B12Metabolism In Humans Stu Model2503310002Model
+  captures core biological behavior in the context of metabolism, sbml, biomodels_ebi using
+  a biomodels_ebi-sourced OTHER model. When you run it, you can observe state and evaluate
+  how the modeled system changes across runs.
+io:
+  inputs:
+  - name: initial_metabolic_pathway_state_1
+    maps_to: metabolism_sbml_kurpad_2023_vitamin_b12_metabolism_in_humans_stu_model2503310002_model.initial_metabolic_pathway_state_1
+    default: 1738.3
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 1. Maps to bundled SBML symbol
+      `C_0`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_metabolic_pathway_state_2
+    maps_to: metabolism_sbml_kurpad_2023_vitamin_b12_metabolism_in_humans_stu_model2503310002_model.initial_metabolic_pathway_state_2
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 2. Maps to bundled SBML symbol
+      `C_1`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_metabolic_pathway_state_3
+    maps_to: metabolism_sbml_kurpad_2023_vitamin_b12_metabolism_in_humans_stu_model2503310002_model.initial_metabolic_pathway_state_3
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 3. Maps to bundled SBML symbol
+      `C_2`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: metabolic_pathway_state_1
+    maps_to: metabolism_sbml_kurpad_2023_vitamin_b12_metabolism_in_humans_stu_model2503310002_model.metabolic_pathway_state_1
+  - name: metabolic_pathway_state_2
+    maps_to: metabolism_sbml_kurpad_2023_vitamin_b12_metabolism_in_humans_stu_model2503310002_model.metabolic_pathway_state_2
+  - name: metabolic_pathway_state_3
+    maps_to: metabolism_sbml_kurpad_2023_vitamin_b12_metabolism_in_humans_stu_model2503310002_model.metabolic_pathway_state_3
+  - name: observable_values
+    maps_to: metabolism_sbml_kurpad_2023_vitamin_b12_metabolism_in_humans_stu_model2503310002_model.observable_values
+  - name: run_summary
+    maps_to: metabolism_sbml_kurpad_2023_vitamin_b12_metabolism_in_humans_stu_model2503310002_model.run_summary
+  - name: observable_labels
+    maps_to: metabolism_sbml_kurpad_2023_vitamin_b12_metabolism_in_humans_stu_model2503310002_model.observable_labels
+models:
+- alias: metabolism_sbml_kurpad_2023_vitamin_b12_metabolism_in_humans_stu_model2503310002_model
+  path: models/core
+  parameters:
+    model_path: data/MODEL2503310002.xml
+    integration_step: 0.1
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: metabolism_sbml_kurpad_2023_vitamin_b12_metabolism_in_humans_stu_model2503310002_model.observable_values
+  to:
+  - visualisation.metabolism_sbml_kurpad_2023_vitamin_b12_metabolism_in_humans_stu_model2503310002_model_observable_values
+- from: metabolism_sbml_kurpad_2023_vitamin_b12_metabolism_in_humans_stu_model2503310002_model.run_summary
+  to:
+  - visualisation.metabolism_sbml_kurpad_2023_vitamin_b12_metabolism_in_humans_stu_model2503310002_model_run_summary
+- from: metabolism_sbml_kurpad_2023_vitamin_b12_metabolism_in_humans_stu_model2503310002_model.observable_labels
+  to:
+  - visualisation.metabolism_sbml_kurpad_2023_vitamin_b12_metabolism_in_humans_stu_model2503310002_model_observable_labels
+runtime:
+  duration: 10.0
+  communication_step: 1.0
+  initial_inputs: {}

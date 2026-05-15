@@ -1,0 +1,80 @@
+schema_version: '2.0'
+title: Gupta2009 - Eicosanoid Metabolism Visualisation
+description: Dedicated presentation model for Gupta2009 - Eicosanoid Metabolism.
+standard: other
+tags:
+- metabolism
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  entrypoint: src.metabolism_visualisation:MetabolismVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Gupta2009 - Eicosanoid Metabolism Lab
+    question: Which lipid metabolism observables show the strongest activity in Gupta2009
+      - Eicosanoid Metabolism?
+    answer_focus: lipid metabolism
+    sources:
+    - alias: metabolism_sbml_gupta2009_eicosanoid_metabolism_biomd0000000436_model
+      title: Gupta2009 - Eicosanoid Metabolism
+      scope: lipid metabolism
+      label_caveat: Values are native SBML quantities. Conservative pathway-state labels are
+        used where the bundled SBML does not encode exact metabolite identities.
+      observables:
+      - id: lipid_metabolism_state_1
+        label: Lipid Metabolism state 1
+        maps_to: HETE
+      - id: lipid_metabolism_state_2
+        label: Lipid Metabolism state 2
+        maps_to: PGH2
+      - id: lipid_metabolism_state_3
+        label: Lipid Metabolism state 3
+        maps_to: PGE2
+      - id: lipid_metabolism_state_4
+        label: Lipid Metabolism state 4
+        maps_to: PGF2a
+      - id: lipid_metabolism_state_5
+        label: Lipid Metabolism state 5
+        maps_to: PGD2
+      - id: lipid_metabolism_state_6
+        label: Lipid Metabolism state 6
+        maps_to: PGJ2
+      - id: lipid_metabolism_state_7
+        label: Lipid Metabolism state 7
+        maps_to: dPGJ2
+      - id: arachidonic_acid
+        label: Arachidonic Acid
+        maps_to: AA
+      - id: lipid_metabolism_state_9
+        label: Lipid Metabolism state 9
+        maps_to: LPS
+      - id: lipid_metabolism_state_10
+        label: Lipid Metabolism state 10
+        maps_to: DG
+      - id: lipid_metabolism_state_11
+        label: Lipid Metabolism state 11
+        maps_to: GPCho
+      - id: lipid_metabolism_state_12
+        label: Lipid Metabolism state 12
+        maps_to: dPGD2
+  communication_step: 1.0
+runtime:
+  dependencies:
+    packages:
+    - PyYAML==6.0.2
+parameters:
+- name: integration_step
+  value: 1.0
+  min: 0.0
+  units: model_time
+  description: Sampling step for the visualisation model.
+io:
+  inputs:
+  - name: metabolism_sbml_gupta2009_eicosanoid_metabolism_biomd0000000436_model_observable_values
+    description: Latest user-facing observable values from the core metabolism model.
+  - name: metabolism_sbml_gupta2009_eicosanoid_metabolism_biomd0000000436_model_run_summary
+    description: Run summary from the core metabolism model.
+  - name: metabolism_sbml_gupta2009_eicosanoid_metabolism_biomd0000000436_model_observable_labels
+    description: Display labels for user-facing observables.
+  outputs: []

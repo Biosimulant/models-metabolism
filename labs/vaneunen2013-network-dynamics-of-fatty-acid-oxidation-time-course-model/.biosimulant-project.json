@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "8225d09d-f4aa-4d4a-b332-51678f593854",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "73bb96fa-2b22-4122-a0b1-9bd61790452c",
+  "created_at": "2026-05-15T16:03:11.844278292+00:00",
+  "last_synced_at": "2026-05-15T18:43:05.390827+00:00",
+  "hub_manifest_hash": "7c2f219edd85dbb4ca3f1fc329c1d8f9b9205a7de3699973c14d080f2228e4ea",
+  "package_name": "vaneunen2013-network-dynamics-of-fatty-acid-oxidation-time-cours"
+}

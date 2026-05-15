@@ -1,0 +1,106 @@
+schema_version: '2.0'
+title: McDougal2017 - Metabolism in ischemic cardiomyocytes
+description: Heart disease remains the leading cause of death globally. Although reperfusion
+  following myocardial ischemia can prevent death by restoring nutrient flow, ischemia/reperfusion
+  injury can cause signif.
+standard: sbml
+tags:
+- biomodels_ebi
+- faithful
+- metabolism
+- ode
+- sbml
+- tellurium
+authors:
+- Biosimulant Team
+- Anthony D McDougal
+- C Forbes Dewey
+upstream:
+  id: biomodels_ebi:BIOMD0000000961
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000961
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000961
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000961?filename=McDougal2017.xml
+  license: CC0
+biosim:
+  entrypoint: src.mcdougal2017_metabolism_in_ischemic_cardiomyocyt_biomd0000000961_model:Mcdougal2017MetabolismInIschemicCardiomyocytBiomd0000000961Model
+  init_kwargs:
+    model_path: data/BIOMD0000000961.xml
+    integration_step: 0.1
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_h_super_plus_endsuper_sub_i_endsub
+    maps_to: s1
+    default: 7.94e-05
+    units: native SBML value
+    description: Initial condition for h super plus endsuper sub i endsub. Maps to bundled
+      SBML symbol `s1`. Applied before the Tellurium simulation starts; this does not change
+      kinetic parameters or equations. Default from bundled SBML initial value.
+  - name: initial_h_super_plus_endsuper_sub_o_endsub
+    maps_to: s2
+    default: 1.0e-12
+    units: native SBML value
+    description: Initial condition for h super plus endsuper sub o endsub. Maps to bundled
+      SBML symbol `s2`. Applied before the Tellurium simulation starts; this does not change
+      kinetic parameters or equations. Default from bundled SBML initial value.
+  - name: initial_oh_super_minus_endsuper_sub_i_endsub
+    maps_to: s7
+    default: 1.0e-12
+    units: native SBML value
+    description: Initial condition for oh super minus endsuper sub i endsub. Maps to bundled
+      SBML symbol `s7`. Applied before the Tellurium simulation starts; this does not change
+      kinetic parameters or equations. Default from bundled SBML initial value.
+  - name: initial_oh_super_minus_endsuper_sub_o_endsub
+    maps_to: s8
+    default: 1.0e-12
+    units: native SBML value
+    description: Initial condition for oh super minus endsuper sub o endsub. Maps to bundled
+      SBML symbol `s8`. Applied before the Tellurium simulation starts; this does not change
+      kinetic parameters or equations. Default from bundled SBML initial value.
+  - name: initial_na_super_plus_endsuper_sub_i_endsub
+    maps_to: s24
+    default: 5.0
+    units: native SBML value
+    description: Initial condition for na super plus endsuper sub i endsub. Maps to bundled
+      SBML symbol `s24`. Applied before the Tellurium simulation starts; this does not change
+      kinetic parameters or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: h_super_plus_endsuper_sub_i_endsub
+    maps_to: s1
+    label: H Super Plus Endsuper Sub I Endsub
+    description: H Super Plus Endsuper Sub I Endsub. Maps to SBML symbol `s1`.
+  - name: h_super_plus_endsuper_sub_o_endsub
+    maps_to: s2
+    label: H Super Plus Endsuper Sub O Endsub
+    description: H Super Plus Endsuper Sub O Endsub. Maps to SBML symbol `s2`.
+  - name: oh_super_minus_endsuper_sub_i_endsub
+    maps_to: s7
+    label: Oh Super Minus Endsuper Sub I Endsub
+    description: Oh Super Minus Endsuper Sub I Endsub. Maps to SBML symbol `s7`.
+  - name: oh_super_minus_endsuper_sub_o_endsub
+    maps_to: s8
+    label: Oh Super Minus Endsuper Sub O Endsub
+    description: Oh Super Minus Endsuper Sub O Endsub. Maps to SBML symbol `s8`.
+  - name: na_super_plus_endsuper_sub_i_endsub
+    maps_to: s24
+    label: Na Super Plus Endsuper Sub I Endsub
+    description: Na Super Plus Endsuper Sub I Endsub. Maps to SBML symbol `s24`.
+  - name: observable_values
+    description: Latest user-facing observable values from the SBML run.
+  - name: run_summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: observable_labels
+    description: Mapping from user-facing observable ports to display labels.
+parameters:
+- name: integration_step
+  value: 0.1
+  min: 0.0
+  units: model_time
+  description: Internal sampling step for Tellurium output collection.

@@ -1,0 +1,105 @@
+schema_version: '2.0'
+title: Smallbone2013 - Glycolysis in S.cerevisiae - Iteration 17 Visualisation
+description: Dedicated presentation model for Smallbone2013 - Glycolysis in S.cerevisiae -
+  Iteration 17.
+standard: other
+tags:
+- metabolism
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  entrypoint: src.metabolism_visualisation:MetabolismVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Smallbone2013 - Glycolysis in S.cerevisiae - Iteration 17 Lab
+    question: Which central carbon and glycolytic metabolism observables show the strongest
+      activity in Smallbone2013 - Glycolysis in S.cerevisiae - Iteration 17?
+    answer_focus: central carbon and glycolytic metabolism
+    sources:
+    - alias: metabolism_sbml_smallbone2013_glycolysis_in_s_cerevisiae_iterati_model1303260017_model
+      title: Smallbone2013 - Glycolysis in S.cerevisiae - Iteration 17
+      scope: central carbon and glycolytic metabolism
+      label_caveat: Values are native SBML quantities. Conservative pathway-state labels are
+        used where the bundled SBML does not encode exact metabolite identities.
+      observables:
+      - id: adp
+        label: ADP
+        maps_to: ADP
+      - id: atp
+        label: ATP
+        maps_to: ATP
+      - id: acetaldehyde
+        label: Acetaldehyde
+        maps_to: AcAld
+      - id: observable_1_3_bisphosphoglycerate
+        label: 1 3 Bisphosphoglycerate
+        maps_to: BPG
+      - id: dihydroxyacetone_phosphate
+        label: Dihydroxyacetone Phosphate
+        maps_to: DHAP
+      - id: fructose_1_6_bisphosphate
+        label: Fructose 1 6 Bisphosphate
+        maps_to: F16bP
+      - id: fructose_6_phosphate
+        label: Fructose 6 Phosphate
+        maps_to: F6P
+      - id: glucose_1_phosphate
+        label: Glucose 1 Phosphate
+        maps_to: G1P
+      - id: glycerol_3_phosphate
+        label: Glycerol 3 Phosphate
+        maps_to: G3P
+      - id: glucose_6_phosphate
+        label: Glucose 6 Phosphate
+        maps_to: G6P
+      - id: glyceraldehyde_3_phosphate
+        label: Glyceraldehyde 3 Phosphate
+        maps_to: GAP
+      - id: glucose
+        label: Glucose
+        maps_to: GLC
+      - id: nad
+        label: NAD
+        maps_to: NAD
+      - id: observable_2_phosphoglycerate
+        label: 2 Phosphoglycerate
+        maps_to: P2G
+      - id: observable_3_phosphoglycerate
+        label: 3 Phosphoglycerate
+        maps_to: P3G
+      - id: phosphoenolpyruvate
+        label: Phosphoenolpyruvate
+        maps_to: PEP
+      - id: pyruvate
+        label: Pyruvate
+        maps_to: PYR
+      - id: trehalose_6_phosphate
+        label: Trehalose 6 Phosphate
+        maps_to: T6P
+      - id: glycolysis_state_19
+        label: Glycolysis state 19
+        maps_to: UDP
+      - id: glycolysis_state_20
+        label: Glycolysis state 20
+        maps_to: UTP
+  communication_step: 1.0
+runtime:
+  dependencies:
+    packages:
+    - PyYAML==6.0.2
+parameters:
+- name: integration_step
+  value: 1.0
+  min: 0.0
+  units: model_time
+  description: Sampling step for the visualisation model.
+io:
+  inputs:
+  - name: metabolism_sbml_smallbone2013_glycolysis_in_s_cerevisiae_iterati_model1303260017_model_observable_values
+    description: Latest user-facing observable values from the core metabolism model.
+  - name: metabolism_sbml_smallbone2013_glycolysis_in_s_cerevisiae_iterati_model1303260017_model_run_summary
+    description: Run summary from the core metabolism model.
+  - name: metabolism_sbml_smallbone2013_glycolysis_in_s_cerevisiae_iterati_model1303260017_model_observable_labels
+    description: Display labels for user-facing observables.
+  outputs: []

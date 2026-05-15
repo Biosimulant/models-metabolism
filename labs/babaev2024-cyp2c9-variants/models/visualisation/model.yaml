@@ -1,0 +1,65 @@
+schema_version: '2.0'
+title: Babaev2024 - CYP2C9 variants Visualisation
+description: Dedicated presentation model for Babaev2024 - CYP2C9 variants.
+standard: other
+tags:
+- metabolism
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  entrypoint: src.metabolism_visualisation:MetabolismVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Babaev2024 - CYP2C9 variants Lab
+    question: Which drug and xenobiotic metabolism observables show the strongest activity
+      in Babaev2024 - CYP2C9 variants?
+    answer_focus: drug and xenobiotic metabolism
+    sources:
+    - alias: metabolism_sbml_babaev2024_cyp2c9_variants_model2412180002_model
+      title: Babaev2024 - CYP2C9 variants
+      scope: drug and xenobiotic metabolism
+      label_caveat: Values are native SBML quantities. Conservative pathway-state labels are
+        used where the bundled SBML does not encode exact metabolite identities.
+      observables:
+      - id: drug_metabolite_e3174
+        label: Drug metabolite E3174
+        maps_to: E3174_out
+      - id: drug_metabolite_e3174_2
+        label: Drug metabolite E3174 2
+        maps_to: E3174_cc
+      - id: drug_metabolism_state_3
+        label: Drug Metabolism state 3
+        maps_to: losartan_cc
+      - id: drug_metabolism_state_4
+        label: Drug Metabolism state 4
+        maps_to: losartan_int
+      - id: drug_metabolism_state_5_extracellular
+        label: Drug Metabolism state 5 extracellular
+        maps_to: losartan_out
+      - id: drug_metabolism_state_6
+        label: Drug Metabolism state 6
+        maps_to: losartan_pc
+      - id: drug_metabolism_state_7
+        label: Drug Metabolism state 7
+        maps_to: losartan_stm
+  communication_step: 1.0
+runtime:
+  dependencies:
+    packages:
+    - PyYAML==6.0.2
+parameters:
+- name: integration_step
+  value: 1.0
+  min: 0.0
+  units: model_time
+  description: Sampling step for the visualisation model.
+io:
+  inputs:
+  - name: metabolism_sbml_babaev2024_cyp2c9_variants_model2412180002_model_observable_values
+    description: Latest user-facing observable values from the core metabolism model.
+  - name: metabolism_sbml_babaev2024_cyp2c9_variants_model2412180002_model_run_summary
+    description: Run summary from the core metabolism model.
+  - name: metabolism_sbml_babaev2024_cyp2c9_variants_model2412180002_model_observable_labels
+    description: Display labels for user-facing observables.
+  outputs: []

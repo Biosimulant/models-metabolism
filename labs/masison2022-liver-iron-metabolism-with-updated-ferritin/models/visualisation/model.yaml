@@ -1,0 +1,102 @@
+schema_version: '2.0'
+title: Masison2022 - Liver Iron Metabolism with updated ferritin Visualisation
+description: Dedicated presentation model for Masison2022 - Liver Iron Metabolism with updated
+  ferritin.
+standard: other
+tags:
+- metabolism
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  entrypoint: src.metabolism_visualisation:MetabolismVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Masison2022 - Liver Iron Metabolism with updated ferritin Lab
+    question: Which iron and heme metabolism observables show the strongest activity in Masison2022
+      - Liver Iron Metabolism with updated ferritin?
+    answer_focus: iron and heme metabolism
+    sources:
+    - alias: metabolism_sbml_masison2022_liver_iron_metabolism_with_updated_f_model2211030002_model
+      title: Masison2022 - Liver Iron Metabolism with updated ferritin
+      scope: iron and heme metabolism
+      label_caveat: Values are native SBML quantities. Conservative pathway-state labels are
+        used where the bundled SBML does not encode exact metabolite identities.
+      observables:
+      - id: iron_metabolism_state_1
+        label: Iron Metabolism state 1
+        maps_to: species_7
+      - id: iron_metabolism_state_2
+        label: Iron Metabolism state 2
+        maps_to: species_1
+      - id: iron_metabolism_state_3
+        label: Iron Metabolism state 3
+        maps_to: species_5
+      - id: iron_metabolism_state_4
+        label: Iron Metabolism state 4
+        maps_to: species_2
+      - id: iron_metabolism_state_5
+        label: Iron Metabolism state 5
+        maps_to: species_4
+      - id: iron_metabolism_state_6
+        label: Iron Metabolism state 6
+        maps_to: species_6
+      - id: iron_metabolism_state_7
+        label: Iron Metabolism state 7
+        maps_to: species_3
+      - id: iron_metabolism_state_8
+        label: Iron Metabolism state 8
+        maps_to: species_12
+      - id: iron_metabolism_state_9
+        label: Iron Metabolism state 9
+        maps_to: species_8
+      - id: iron_metabolism_state_10
+        label: Iron Metabolism state 10
+        maps_to: species_9
+      - id: iron_metabolism_state_11
+        label: Iron Metabolism state 11
+        maps_to: species_15
+      - id: iron_metabolism_state_12
+        label: Iron Metabolism state 12
+        maps_to: species_16
+      - id: iron_metabolism_state_13
+        label: Iron Metabolism state 13
+        maps_to: species_17
+      - id: iron_metabolism_state_14
+        label: Iron Metabolism state 14
+        maps_to: species_18
+      - id: iron_metabolism_state_15
+        label: Iron Metabolism state 15
+        maps_to: species_19
+      - id: iron_metabolism_state_16
+        label: Iron Metabolism state 16
+        maps_to: species_10
+      - id: iron_metabolism_state_17
+        label: Iron Metabolism state 17
+        maps_to: core
+      - id: iron_metabolism_state_18
+        label: Iron Metabolism state 18
+        maps_to: FT_cage
+      - id: iron_metabolism_state_19
+        label: Iron Metabolism state 19
+        maps_to: DFP
+  communication_step: 1.0
+runtime:
+  dependencies:
+    packages:
+    - PyYAML==6.0.2
+parameters:
+- name: integration_step
+  value: 1.0
+  min: 0.0
+  units: model_time
+  description: Sampling step for the visualisation model.
+io:
+  inputs:
+  - name: metabolism_sbml_masison2022_liver_iron_metabolism_with_updated_f_model2211030002_model_observable_values
+    description: Latest user-facing observable values from the core metabolism model.
+  - name: metabolism_sbml_masison2022_liver_iron_metabolism_with_updated_f_model2211030002_model_run_summary
+    description: Run summary from the core metabolism model.
+  - name: metabolism_sbml_masison2022_liver_iron_metabolism_with_updated_f_model2211030002_model_observable_labels
+    description: Display labels for user-facing observables.
+  outputs: []

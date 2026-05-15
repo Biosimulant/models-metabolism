@@ -1,0 +1,120 @@
+schema_version: '2.0'
+title: Larbat2016.1 - Modeling the diversion of primary carbon flux into secondary metabolism
+  under variable nitrate and light or dark conditions (Base Model)
+description: This is a global mathematical model describing metabolic partitioning of carbon
+  resources in plants between growth and defense, as a function of nitrate fertilization.
+  It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions.
+standard: sbml
+tags:
+- biomodels_ebi
+- faithful
+- metabolism
+- ode
+- sbml
+- tellurium
+authors:
+- Biosimulant Team
+- Romain Larbat
+- Christophe Robin
+- Cathrine Lillo
+- Tormod Drengstig
+- Peter Ruoff
+upstream:
+  id: biomodels_ebi:BIOMD0000000857
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000857
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000857
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000857?filename=Larbat2016.1.xml
+  license: CC0
+biosim:
+  entrypoint: src.larbat2016_1_modeling_the_diversion_of_primary_c_biomd0000000857_model:Larbat20161ModelingTheDiversionOfPrimaryCBiomd0000000857Model
+  init_kwargs:
+    model_path: data/BIOMD0000000857.xml
+    integration_step: 0.1
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_metabolic_pathway_state_1
+    maps_to: sucr
+    default: 0.7
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 1. Maps to bundled SBML symbol
+      `sucr`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_metabolic_pathway_state_2
+    maps_to: EtrioseP
+    default: 8.06
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 2. Maps to bundled SBML symbol
+      `EtrioseP`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_metabolic_pathway_state_3
+    maps_to: Ephe
+    default: 1.0e-05
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 3. Maps to bundled SBML symbol
+      `Ephe`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_metabolic_pathway_state_4
+    maps_to: N
+    default: 5.0
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 4. Maps to bundled SBML symbol
+      `N`. Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_metabolic_pathway_state_5
+    maps_to: starch
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 5. Maps to bundled SBML symbol
+      `starch`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: metabolic_pathway_state_1
+    maps_to: sucr
+    label: Metabolic Pathway state 1
+    description: Metabolic Pathway state 1; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `sucr`. Exact metabolite identity is not encoded
+      in the bundled SBML metadata.
+  - name: metabolic_pathway_state_2
+    maps_to: EtrioseP
+    label: Metabolic Pathway state 2
+    description: Metabolic Pathway state 2; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `EtrioseP`. Exact metabolite identity is not encoded
+      in the bundled SBML metadata.
+  - name: metabolic_pathway_state_3
+    maps_to: Ephe
+    label: Metabolic Pathway state 3
+    description: Metabolic Pathway state 3; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `Ephe`. Exact metabolite identity is not encoded
+      in the bundled SBML metadata.
+  - name: metabolic_pathway_state_4
+    maps_to: N
+    label: Metabolic Pathway state 4
+    description: Metabolic Pathway state 4; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `N`. Exact metabolite identity is not encoded in
+      the bundled SBML metadata.
+  - name: metabolic_pathway_state_5
+    maps_to: starch
+    label: Metabolic Pathway state 5
+    description: Metabolic Pathway state 5; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `starch`. Exact metabolite identity is not encoded
+      in the bundled SBML metadata.
+  - name: observable_values
+    description: Latest user-facing observable values from the SBML run.
+  - name: run_summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: observable_labels
+    description: Mapping from user-facing observable ports to display labels.
+parameters:
+- name: integration_step
+  value: 0.1
+  min: 0.0
+  units: model_time
+  description: Internal sampling step for Tellurium output collection.

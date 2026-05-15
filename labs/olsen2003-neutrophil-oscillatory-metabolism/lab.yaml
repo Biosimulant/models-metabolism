@@ -1,0 +1,81 @@
+schema_version: '2.0'
+title: Olsen2003_neutrophil_oscillatory_metabolism Lab
+description: 'Olsen2003_neutrophil_oscillatory_metabolism This model is described in the article:
+  A model of the oscillatory metabolism of activated neutrophils. Olsen LF, Kummer U, Kindzelskii
+  AL, Petty HR.'
+io:
+  inputs:
+  - name: initial_h2o2
+    maps_to: metabolism_sbml_olsen2003_neutrophil_oscillatory_metabolism_biomd0000000143_model.initial_h2o2
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for h2o2. Maps to bundled SBML symbol `H2O2_p`. Applied
+      before the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_ferric_peroxidase
+    maps_to: metabolism_sbml_olsen2003_neutrophil_oscillatory_metabolism_biomd0000000143_model.initial_ferric_peroxidase
+    default: 300.0
+    units: native SBML value
+    description: Initial condition for ferric peroxidase. Maps to bundled SBML symbol `per3_p`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_compound_i
+    maps_to: metabolism_sbml_olsen2003_neutrophil_oscillatory_metabolism_biomd0000000143_model.initial_compound_i
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for compound i. Maps to bundled SBML symbol `coI_p`. Applied
+      before the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_melatonin
+    maps_to: metabolism_sbml_olsen2003_neutrophil_oscillatory_metabolism_biomd0000000143_model.initial_melatonin
+    default: 300.0
+    units: native SBML value
+    description: Initial condition for melatonin. Maps to bundled SBML symbol `MLTH_p`. Applied
+      before the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_compound_ii
+    maps_to: metabolism_sbml_olsen2003_neutrophil_oscillatory_metabolism_biomd0000000143_model.initial_compound_ii
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for compound ii. Maps to bundled SBML symbol `coII_p`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: h2o2
+    maps_to: metabolism_sbml_olsen2003_neutrophil_oscillatory_metabolism_biomd0000000143_model.h2o2
+  - name: ferric_peroxidase
+    maps_to: metabolism_sbml_olsen2003_neutrophil_oscillatory_metabolism_biomd0000000143_model.ferric_peroxidase
+  - name: compound_i
+    maps_to: metabolism_sbml_olsen2003_neutrophil_oscillatory_metabolism_biomd0000000143_model.compound_i
+  - name: melatonin
+    maps_to: metabolism_sbml_olsen2003_neutrophil_oscillatory_metabolism_biomd0000000143_model.melatonin
+  - name: compound_ii
+    maps_to: metabolism_sbml_olsen2003_neutrophil_oscillatory_metabolism_biomd0000000143_model.compound_ii
+  - name: observable_values
+    maps_to: metabolism_sbml_olsen2003_neutrophil_oscillatory_metabolism_biomd0000000143_model.observable_values
+  - name: run_summary
+    maps_to: metabolism_sbml_olsen2003_neutrophil_oscillatory_metabolism_biomd0000000143_model.run_summary
+  - name: observable_labels
+    maps_to: metabolism_sbml_olsen2003_neutrophil_oscillatory_metabolism_biomd0000000143_model.observable_labels
+models:
+- alias: metabolism_sbml_olsen2003_neutrophil_oscillatory_metabolism_biomd0000000143_model
+  path: models/core
+  parameters:
+    model_path: data/BIOMD0000000143.xml
+    integration_step: 0.1
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: metabolism_sbml_olsen2003_neutrophil_oscillatory_metabolism_biomd0000000143_model.observable_values
+  to:
+  - visualisation.metabolism_sbml_olsen2003_neutrophil_oscillatory_metabolism_biomd0000000143_model_observable_values
+- from: metabolism_sbml_olsen2003_neutrophil_oscillatory_metabolism_biomd0000000143_model.run_summary
+  to:
+  - visualisation.metabolism_sbml_olsen2003_neutrophil_oscillatory_metabolism_biomd0000000143_model_run_summary
+- from: metabolism_sbml_olsen2003_neutrophil_oscillatory_metabolism_biomd0000000143_model.observable_labels
+  to:
+  - visualisation.metabolism_sbml_olsen2003_neutrophil_oscillatory_metabolism_biomd0000000143_model_observable_labels
+runtime:
+  duration: 10.0
+  communication_step: 1.0
+  initial_inputs: {}

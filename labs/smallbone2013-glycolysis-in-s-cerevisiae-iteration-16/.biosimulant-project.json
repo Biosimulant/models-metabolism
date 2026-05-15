@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "c5eacbd4-bac8-4f66-a481-a7afa2153942",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "2d032330-86b0-4775-a0f0-7609aa506abc",
+  "created_at": "2026-05-15T16:03:06.839886044+00:00",
+  "last_synced_at": "2026-05-15T18:32:00.549847+00:00",
+  "hub_manifest_hash": "7e75ff6bebff6467e3e55194d6136f16554c945ede27390749cdd551aceaf855",
+  "package_name": "smallbone2013-glycolysis-in-s-cerevisiae-iteration-16-lab"
+}

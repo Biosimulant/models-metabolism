@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "d7f1239d-52b9-4642-ad5a-65878319513c",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "d48a0948-359c-4367-bcfb-935bdd0bdbce",
+  "created_at": "2026-05-15T16:03:11.747186755+00:00",
+  "last_synced_at": "2026-05-15T18:42:35.751470+00:00",
+  "hub_manifest_hash": "80e104a9b9276da82930b28e576e06debeea7dd04aeddb5295b186c0ada8fca6",
+  "package_name": "vaneunen2013-network-dynamics-of-fatty-acid-oxidation-steady-sta"
+}

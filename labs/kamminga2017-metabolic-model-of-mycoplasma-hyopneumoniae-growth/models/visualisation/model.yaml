@@ -1,0 +1,939 @@
+schema_version: '2.0'
+title: Kamminga2017 - Metabolic model of Mycoplasma hyopneumoniae growth Visualisation
+description: Dedicated presentation model for Kamminga2017 - Metabolic model of Mycoplasma
+  hyopneumoniae growth.
+standard: other
+tags:
+- metabolism
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  entrypoint: src.metabolism_visualisation:MetabolismVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Kamminga2017 - Metabolic model of Mycoplasma hyopneumoniae growth Lab
+    question: Which metabolic pathway dynamics observables show the strongest activity in
+      Kamminga2017 - Metabolic model of Mycoplasma hyopneumoniae growth?
+    answer_focus: metabolic pathway dynamics
+    sources:
+    - alias: metabolism_sbml_kamminga2017_metabolic_model_of_mycoplasma_hyopn_model1704250001_model
+      title: Kamminga2017 - Metabolic model of Mycoplasma hyopneumoniae growth
+      scope: metabolic pathway dynamics
+      label_caveat: Values are native SBML quantities. Conservative pathway-state labels are
+        used where the bundled SBML does not encode exact metabolite identities.
+      observables:
+      - id: metabolic_pathway_state_1
+        label: Metabolic Pathway state 1
+        maps_to: M_AMMONIUM_c
+      - id: lipoyl_adenylate
+        label: Lipoyl Adenylate
+        maps_to: M_LIPOYLAMP_c
+      - id: metabolic_pathway_state_3
+        label: Metabolic Pathway state 3
+        maps_to: M_ACET_c
+      - id: l_ribulose_5_phosphate
+        label: L Ribulose 5 Phosphate
+        maps_to: M_LRIBULOSE5P_c
+      - id: l_valine
+        label: L Valine
+        maps_to: M_VAL_c
+      - id: tagatose_6_phosphate
+        label: Tagatose 6 Phosphate
+        maps_to: M_TAGATOSE6PHOSPHATE_c
+      - id: metabolic_pathway_state_7
+        label: Metabolic Pathway state 7
+        maps_to: M_PROTON_e
+      - id: h2o
+        label: H2o
+        maps_to: M_WATER_c
+      - id: observable_5_phospho_alpha_d_ribose_1_diphosphate
+        label: 5 Phospho Alpha D Ribose 1 Diphosphate
+        maps_to: M_PRPP_c
+      - id: observable_2_3_dioxo_l_gulonate
+        label: 2 3 Dioxo L Gulonate
+        maps_to: M_CPD334_c
+      - id: hydrogen_peroxide
+        label: Hydrogen Peroxide
+        maps_to: M_HYDROGENPEROXIDE_c
+      - id: metabolic_pathway_state_12
+        label: Metabolic Pathway state 12
+        maps_to: M_ChargedGLTtRNAs_c
+      - id: metabolic_pathway_state_13
+        label: Metabolic Pathway state 13
+        maps_to: M_THRtRNAs_c
+      - id: dihydroxyacetone_phosphate
+        label: Dihydroxyacetone Phosphate
+        maps_to: M_DIHYDROXYACETONEPHOSPHATE_c
+      - id: metabolic_pathway_state_15
+        label: Metabolic Pathway state 15
+        maps_to: M_CMP_c
+      - id: l_rhamnofuranose
+        label: L Rhamnofuranose
+        maps_to: M_LRHAMNOFURANOSE_c
+      - id: metabolic_pathway_state_17
+        label: Metabolic Pathway state 17
+        maps_to: M_TTP_c
+      - id: riboflavin
+        label: Riboflavin
+        maps_to: M_RIBOFLAVIN_c
+      - id: d_ribose
+        label: D Ribose
+        maps_to: M_RIBOSE_e
+      - id: d_glucose_6_phosphate
+        label: D Glucose 6 Phosphate
+        maps_to: M_Dglucose6phosphate_c
+      - id: d_xylulose_5_phosphate
+        label: D Xylulose 5 Phosphate
+        maps_to: M_XYLULOSE5PHOSPHATE_c
+      - id: metabolic_pathway_state_22
+        label: Metabolic Pathway state 22
+        maps_to: M_THYMINE_c
+      - id: metabolic_pathway_state_23
+        label: Metabolic Pathway state 23
+        maps_to: M_DCDP_c
+      - id: observable_5_deoxy_d_glucuronate
+        label: 5 Deoxy D Glucuronate
+        maps_to: M_CPD15127_c
+      - id: metabolic_pathway_state_25
+        label: Metabolic Pathway state 25
+        maps_to: M_CTP_c
+      - id: l_glutamine
+        label: L Glutamine
+        maps_to: M_GLN_c
+      - id: metabolic_pathway_state_27
+        label: Metabolic Pathway state 27
+        maps_to: M_GLNtRNAs_c
+      - id: metabolic_pathway_state_28
+        label: Metabolic Pathway state 28
+        maps_to: M_GLY_c
+      - id: an_l_1_phosphatidylglycerol_phosphate
+        label: An L 1 Phosphatidylglycerol Phosphate
+        maps_to: M_L1PHOSPHATIDYLGLYCEROLP_c
+      - id: l_glutamate
+        label: L Glutamate
+        maps_to: M_GLT_c
+      - id: metabolic_pathway_state_31
+        label: Metabolic Pathway state 31
+        maps_to: M_ILEtRNAs_c
+      - id: observable_3d_3_5_4_trihydroxycyclohexane_1_2_dione
+        label: 3d 3 5 4 Trihydroxycyclohexane 1 2 Dione
+        maps_to: M_CPD15167_c
+      - id: an_oxidized_electron_acceptor
+        label: An Oxidized Electron Acceptor
+        maps_to: M_Acceptor_c
+      - id: d_ribose_2
+        label: D Ribose 2
+        maps_to: M_RIBOSE_c
+      - id: metabolic_pathway_state_35
+        label: Metabolic Pathway state 35
+        maps_to: M_FMN_c
+      - id: metabolic_pathway_state_36
+        label: Metabolic Pathway state 36
+        maps_to: M_URIDINE_c
+      - id: metabolic_pathway_state_37
+        label: Metabolic Pathway state 37
+        maps_to: M_URACIL_c
+      - id: metabolic_pathway_state_38
+        label: Metabolic Pathway state 38
+        maps_to: M_ACYLSNGLYCEROL3P_c
+      - id: metabolic_pathway_state_39
+        label: Metabolic Pathway state 39
+        maps_to: M_DATP_c
+      - id: observable_1_3_bisphospho_d_glycerate
+        label: 1 3 Bisphospho D Glycerate
+        maps_to: M_DPG_c
+      - id: s_lactate
+        label: S Lactate
+        maps_to: M_LLACTATE_e
+      - id: l_histidine
+        label: L Histidine
+        maps_to: M_HIS_c
+      - id: sn_glycerol_3_phosphate
+        label: Sn Glycerol 3 Phosphate
+        maps_to: M_GLYCEROL3P_c
+      - id: phosphoryl_ethanolamine
+        label: Phosphoryl Ethanolamine
+        maps_to: M_PHOSPHORYLETHANOLAMINE_c
+      - id: metabolic_pathway_state_45
+        label: Metabolic Pathway state 45
+        maps_to: M_CPD4422_c
+      - id: metabolic_pathway_state_46
+        label: Metabolic Pathway state 46
+        maps_to: M_LPHOSPHATIDATE_c
+      - id: cdp_choline
+        label: Cdp Choline
+        maps_to: M_CDPCHOLINE_c
+      - id: dehydroascorbate_bicyclic_form
+        label: Dehydroascorbate Bicyclic Form
+        maps_to: M_CPD13907_c
+      - id: d_glucosamine_6_phosphate
+        label: D Glucosamine 6 Phosphate
+        maps_to: M_DGLUCOSAMINE6P_c
+      - id: observable_2_deoxycytidine
+        label: 2 Deoxycytidine
+        maps_to: M_DEOXYCYTIDINE_c
+      - id: alpha_d_mannose_6_phosphate
+        label: Alpha D Mannose 6 Phosphate
+        maps_to: M_MANNOSE6P_c
+      - id: metabolic_pathway_state_52
+        label: Metabolic Pathway state 52
+        maps_to: M_UDP_c
+      - id: metabolic_pathway_state_53
+        label: Metabolic Pathway state 53
+        maps_to: M_AMMONIA_c
+      - id: lipoamide
+        label: Lipoamide
+        maps_to: M_LIPOAMIDE_c
+      - id: a_cardiolipin
+        label: A Cardiolipin
+        maps_to: M_CARDIOLIPIN_c
+      - id: metabolic_pathway_state_56
+        label: Metabolic Pathway state 56
+        maps_to: M_LEUtRNAs_c
+      - id: s_nadhx
+        label: S Nadhx
+        maps_to: M_CPD653_c
+      - id: metabolic_pathway_state_58
+        label: Metabolic Pathway state 58
+        maps_to: M_ChargedTHRtRNAs_c
+      - id: metabolic_pathway_state_59
+        label: Metabolic Pathway state 59
+        maps_to: M_ChargedGLYtRNAs_c
+      - id: adp
+        label: ADP
+        maps_to: M_ADP_c
+      - id: adenosine
+        label: Adenosine
+        maps_to: M_ADENOSINE_c
+      - id: metabolic_pathway_state_62
+        label: Metabolic Pathway state 62
+        maps_to: M_GLYtRNAs_c
+      - id: a_pyruvate_dehydrogenase_e2_protein_n6_lipoyl_l_lysine
+        label: A Pyruvate Dehydrogenase E2 Protein N6 Lipoyl L Lysine
+        maps_to: M_Pyruvatedehydrogenaselipoate_c
+      - id: d_fructose
+        label: D Fructose
+        maps_to: M_FRU_e
+      - id: l_proline
+        label: L Proline
+        maps_to: M_PRO_c
+      - id: anthranilate
+        label: Anthranilate
+        maps_to: M_ANTHRANILATE_c
+      - id: metabolic_pathway_state_67
+        label: Metabolic Pathway state 67
+        maps_to: M_METtRNAs_c
+      - id: phosphoenolpyruvate
+        label: Phosphoenolpyruvate
+        maps_to: M_PHOSPHOENOLPYRUVATE_c
+      - id: metabolic_pathway_state_69
+        label: Metabolic Pathway state 69
+        maps_to: M_VALtRNAs_c
+      - id: mannitol_1_phosphate
+        label: Mannitol 1 Phosphate
+        maps_to: M_MANNITOL1P_c
+      - id: a_pyruvate_dehydrogenase_e2_protein_n6_dihydrolipoyl_l_lysine
+        label: A Pyruvate Dehydrogenase E2 Protein N6 Dihydrolipoyl L Lysine
+        maps_to: M_Pyruvatedehydrogenasedihydrolipoate_c
+      - id: acetaldehyde
+        label: Acetaldehyde
+        maps_to: M_ACETALD_c
+      - id: phosphocholine
+        label: Phosphocholine
+        maps_to: M_PHOSPHORYLCHOLINE_c
+      - id: l_tyrosine
+        label: L Tyrosine
+        maps_to: M_TYR_c
+      - id: metabolic_pathway_state_75
+        label: Metabolic Pathway state 75
+        maps_to: M_LglutamyltRNAGln_c
+      - id: a_reduced_thioredoxin
+        label: A Reduced Thioredoxin
+        maps_to: M_RedThioredoxin_c
+      - id: metabolic_pathway_state_77
+        label: Metabolic Pathway state 77
+        maps_to: M_ARGtRNAs_c
+      - id: orotidine_5_phosphate
+        label: Orotidine 5 Phosphate
+        maps_to: M_OROTIDINE5PHOSPHATE_c
+      - id: dihydrolipoamide
+        label: Dihydrolipoamide
+        maps_to: M_DIHYDROLIPOAMIDE_c
+      - id: metabolic_pathway_state_80
+        label: Metabolic Pathway state 80
+        maps_to: M_PROTON_c
+      - id: l_ascorbate
+        label: L Ascorbate
+        maps_to: M_ASCORBATE_e
+      - id: metabolic_pathway_state_82
+        label: Metabolic Pathway state 82
+        maps_to: M_ASNtRNAs_c
+      - id: metabolic_pathway_state_83
+        label: Metabolic Pathway state 83
+        maps_to: M_ChargedLYStRNAs_c
+      - id: metabolic_pathway_state_84
+        label: Metabolic Pathway state 84
+        maps_to: M_ChargedSERtRNAs_c
+      - id: metabolic_pathway_state_85
+        label: Metabolic Pathway state 85
+        maps_to: M_SERtRNAs_c
+      - id: metabolic_pathway_state_86
+        label: Metabolic Pathway state 86
+        maps_to: M_ChargedHIStRNAs_c
+      - id: fructose_1_phosphate
+        label: Fructose 1 Phosphate
+        maps_to: M_FRU1P_c
+      - id: metabolic_pathway_state_88
+        label: Metabolic Pathway state 88
+        maps_to: M_OXALATE_c
+      - id: atp
+        label: ATP
+        maps_to: M_ATP_c
+      - id: thymidine
+        label: Thymidine
+        maps_to: M_THYMIDINE_c
+      - id: l_aspartate
+        label: L Aspartate
+        maps_to: M_LASPARTATE_c
+      - id: l_serine
+        label: L Serine
+        maps_to: M_SER_c
+      - id: metabolic_pathway_state_93
+        label: Metabolic Pathway state 93
+        maps_to: M_L1GLYCEROPHOSPHORYLCHOLINE_c
+      - id: metabolic_pathway_state_94
+        label: Metabolic Pathway state 94
+        maps_to: M_TYRtRNAs_c
+      - id: metabolic_pathway_state_95
+        label: Metabolic Pathway state 95
+        maps_to: M_ChargedARGtRNAs_c
+      - id: l_asparagine
+        label: L Asparagine
+        maps_to: M_ASN_c
+      - id: metabolic_pathway_state_97
+        label: Metabolic Pathway state 97
+        maps_to: M_DGTP_c
+      - id: coenzyme_a
+        label: Coenzyme A
+        maps_to: M_COA_c
+      - id: metabolic_pathway_state_99
+        label: Metabolic Pathway state 99
+        maps_to: M_GTP_c
+      - id: observable_2_deoxy_d_ribose_5_phosphate
+        label: 2 Deoxy D Ribose 5 Phosphate
+        maps_to: M_DEOXYRIBOSE5P_c
+      - id: acetylphosphate
+        label: Acetylphosphate
+        maps_to: M_ACETYLP_c
+      - id: metabolic_pathway_state_102
+        label: Metabolic Pathway state 102
+        maps_to: M_ChargedGLNtRNAs_c
+      - id: metabolic_pathway_state_103
+        label: Metabolic Pathway state 103
+        maps_to: M_ChargedTRPtRNAs_c
+      - id: n_acetyl_beta_d_glucosamine
+        label: N Acetyl Beta D Glucosamine
+        maps_to: M_NACETYLDGLUCOSAMINE_c
+      - id: metabolic_pathway_state_105
+        label: Metabolic Pathway state 105
+        maps_to: M_ChargedLEUtRNAs_c
+      - id: metabolic_pathway_state_106
+        label: Metabolic Pathway state 106
+        maps_to: M_ChargedVALtRNAs_c
+      - id: l_cysteine
+        label: L Cysteine
+        maps_to: M_CYS_c
+      - id: n_acetyl_d_glucosamine_6_phosphate
+        label: N Acetyl D Glucosamine 6 Phosphate
+        maps_to: M_NACETYLDGLUCOSAMINE6P_c
+      - id: d_mannose
+        label: D Mannose
+        maps_to: M_MANNOSE_e
+      - id: l_ascorbate_6_phosphate
+        label: L Ascorbate 6 Phosphate
+        maps_to: M_LASCORBATE6PHOSPHATE_c
+      - id: metabolic_pathway_state_111
+        label: Metabolic Pathway state 111
+        maps_to: M_apoACP_c
+      - id: metabolic_pathway_state_112
+        label: Metabolic Pathway state 112
+        maps_to: M_ACETYLCOA_c
+      - id: s_lactate_2
+        label: S Lactate 2
+        maps_to: M_LLACTATE_c
+      - id: metabolic_pathway_state_114
+        label: Metabolic Pathway state 114
+        maps_to: M_DUDP_c
+      - id: a_pyruvate_dehydrogenase_e2_protein_n6_s_acetyldihydrolipoyl_l_lysine
+        label: A Pyruvate Dehydrogenase E2 Protein N6 S Acetyldihydrolipoyl L Lysine
+        maps_to: M_PyruvatedehydrogenaseacetylDHlipoyl_c
+      - id: metabolic_pathway_state_116
+        label: Metabolic Pathway state 116
+        maps_to: M_PROPIONYLCOA_c
+      - id: l_methionine
+        label: L Methionine
+        maps_to: M_MET_c
+      - id: metabolic_pathway_state_118
+        label: Metabolic Pathway state 118
+        maps_to: M_CPD4422_e
+      - id: metabolic_pathway_state_119
+        label: Metabolic Pathway state 119
+        maps_to: M_ChargedPROtRNAs_c
+      - id: observable_4_phosphopantetheine
+        label: 4 Phosphopantetheine
+        maps_to: M_PANTETHEINEP_c
+      - id: l_threonate
+        label: L Threonate
+        maps_to: M_LTHREONATE_c
+      - id: metabolic_pathway_state_122
+        label: Metabolic Pathway state 122
+        maps_to: M_DCMP_c
+      - id: observable_3_keto_l_gulonate_6_phosphate
+        label: 3 Keto L Gulonate 6 Phosphate
+        maps_to: M_CPD2343_c
+      - id: l_threonine
+        label: L Threonine
+        maps_to: M_THR_c
+      - id: tetrahydrofolate
+        label: Tetrahydrofolate
+        maps_to: M_THF_c
+      - id: alpha_d_ribose_1_phosphate
+        label: Alpha D Ribose 1 Phosphate
+        maps_to: M_RIBOSE1P_c
+      - id: observable_2_deoxy_alpha_d_ribose_1_phosphate
+        label: 2 Deoxy Alpha D Ribose 1 Phosphate
+        maps_to: M_DEOXYDRIBOSE1PHOSPHATE_c
+      - id: metabolic_pathway_state_128
+        label: Metabolic Pathway state 128
+        maps_to: M_GLYCEROL_e
+      - id: l_phenylalanine
+        label: L Phenylalanine
+        maps_to: M_PHE_c
+      - id: metabolic_pathway_state_130
+        label: Metabolic Pathway state 130
+        maps_to: M_DEPHOSPHOCOA_c
+      - id: an_l_1_phosphatidyl_glycerol
+        label: An L 1 Phosphatidyl Glycerol
+        maps_to: M_L1PHOSPHATIDYLGLYCEROL_c
+      - id: methyl_red
+        label: Methyl Red
+        maps_to: M_CPD01147_c
+      - id: n_n_dimethyl_p_phenylenediamine
+        label: N N Dimethyl P Phenylenediamine
+        maps_to: M_CPD01148_c
+      - id: observable_2_4_6_3_5_pentahydroxycyclohexanone
+        label: 2 4 6 3 5 Pentahydroxycyclohexanone
+        maps_to: M_CPD365_c
+      - id: phosphate
+        label: Phosphate
+        maps_to: M_Pi_c
+      - id: observable_7_8_dihydroneopterin_triphosphate
+        label: 7 8 Dihydroneopterin Triphosphate
+        maps_to: M_DIHYDRONEOPTERINP3_c
+      - id: metabolic_pathway_state_137
+        label: Metabolic Pathway state 137
+        maps_to: M_ChargedPHEtRNAs_c
+      - id: l_serine_2
+        label: L Serine 2
+        maps_to: M_SER_e
+      - id: l_alanine
+        label: L Alanine
+        maps_to: M_LALPHAALANINE_c
+      - id: metabolic_pathway_state_140
+        label: Metabolic Pathway state 140
+        maps_to: M_DCTP_c
+      - id: metabolic_pathway_state_141
+        label: Metabolic Pathway state 141
+        maps_to: M_DGMP_c
+      - id: metabolic_pathway_state_142
+        label: Metabolic Pathway state 142
+        maps_to: M_ChargedILEtRNAs_c
+      - id: d_erythrose_4_phosphate
+        label: D Erythrose 4 Phosphate
+        maps_to: M_ERYTHROSE4P_c
+      - id: metabolic_pathway_state_144
+        label: Metabolic Pathway state 144
+        maps_to: M_DGDP_c
+      - id: metabolic_pathway_state_145
+        label: Metabolic Pathway state 145
+        maps_to: M_LYStRNAs_c
+      - id: metabolic_pathway_state_146
+        label: Metabolic Pathway state 146
+        maps_to: M_TMP_c
+      - id: nadh
+        label: NADH
+        maps_to: M_NADH_c
+      - id: metabolic_pathway_state_148
+        label: Metabolic Pathway state 148
+        maps_to: M_UMP_c
+      - id: metabolic_pathway_state_149
+        label: Metabolic Pathway state 149
+        maps_to: M_ADENINE_c
+      - id: a_cdp_diacylglycerol
+        label: A Cdp Diacylglycerol
+        maps_to: M_CDPDIACYLGLYCEROL_c
+      - id: metabolic_pathway_state_151
+        label: Metabolic Pathway state 151
+        maps_to: M_GUANINE_c
+      - id: metabolic_pathway_state_152
+        label: Metabolic Pathway state 152
+        maps_to: M_CYTIDINE_c
+      - id: nadp
+        label: NADP
+        maps_to: M_NADP_c
+      - id: metabolic_pathway_state_154
+        label: Metabolic Pathway state 154
+        maps_to: M_GLYCEROL_c
+      - id: metabolic_pathway_state_155
+        label: Metabolic Pathway state 155
+        maps_to: M_ChargedTYRtRNAs_c
+      - id: d_ribose_5_phosphate
+        label: D Ribose 5 Phosphate
+        maps_to: M_RIBOSE5P_c
+      - id: metabolic_pathway_state_157
+        label: Metabolic Pathway state 157
+        maps_to: M_DAMP_c
+      - id: metabolic_pathway_state_158
+        label: Metabolic Pathway state 158
+        maps_to: M_ChargedALAtRNAs_c
+      - id: metabolic_pathway_state_159
+        label: Metabolic Pathway state 159
+        maps_to: M_ASPtRNAs_c
+      - id: co2
+        label: CO2
+        maps_to: M_CARBONDIOXIDE_c
+      - id: methylmalonate_semialdehyde
+        label: Methylmalonate Semialdehyde
+        maps_to: M_CPD12179_c
+      - id: observable_2_deoxyadenosine
+        label: 2 Deoxyadenosine
+        maps_to: M_DEOXYADENOSINE_c
+      - id: d_ribulose_5_phosphate
+        label: D Ribulose 5 Phosphate
+        maps_to: M_RIBULOSE5P_c
+      - id: metabolic_pathway_state_164
+        label: Metabolic Pathway state 164
+        maps_to: M_PYRUVATE_c
+      - id: nadph
+        label: NADPH
+        maps_to: M_NADPH_c
+      - id: observable_3_phospho_l_serine
+        label: 3 Phospho L Serine
+        maps_to: M_A3PSERINE_c
+      - id: sn_glycerol_3_phosphate_2
+        label: Sn Glycerol 3 Phosphate 2
+        maps_to: M_GLYCEROL3P_e
+      - id: metabolic_pathway_state_168
+        label: Metabolic Pathway state 168
+        maps_to: M_CDP_c
+      - id: metabolic_pathway_state_169
+        label: Metabolic Pathway state 169
+        maps_to: M_TDP_c
+      - id: myo_inositol
+        label: Myo Inositol
+        maps_to: M_MYOINOSITOL_c
+      - id: observable_2_deoxyguanosine
+        label: 2 Deoxyguanosine
+        maps_to: M_DEOXYGUANOSINE_c
+      - id: metabolic_pathway_state_172
+        label: Metabolic Pathway state 172
+        maps_to: M_PROtRNAs_c
+      - id: observable_3_phospho_d_glycerate
+        label: 3 Phospho D Glycerate
+        maps_to: M_G3P_c
+      - id: diphosphate
+        label: Diphosphate
+        maps_to: M_PPI_c
+      - id: d_glyceraldehyde_3_phosphate
+        label: D Glyceraldehyde 3 Phosphate
+        maps_to: M_GAP_c
+      - id: nicotinate
+        label: Nicotinate
+        maps_to: M_NIACINE_c
+      - id: metabolic_pathway_state_177
+        label: Metabolic Pathway state 177
+        maps_to: M_ALAtRNAs_c
+      - id: d_fructose_6_phosphate
+        label: D Fructose 6 Phosphate
+        maps_to: M_FRUCTOSE6P_c
+      - id: metabolic_pathway_state_179
+        label: Metabolic Pathway state 179
+        maps_to: M_FAD_c
+      - id: metabolic_pathway_state_180
+        label: Metabolic Pathway state 180
+        maps_to: M_UTP_c
+      - id: d_glyceraldehyde
+        label: D Glyceraldehyde
+        maps_to: M_GLYCERALD_c
+      - id: l_arginine
+        label: L Arginine
+        maps_to: M_ARG_c
+      - id: beta_d_ribofuranose
+        label: Beta D Ribofuranose
+        maps_to: M_CPD01108_c
+      - id: metabolic_pathway_state_184
+        label: Metabolic Pathway state 184
+        maps_to: M_DADP_c
+      - id: metabolic_pathway_state_185
+        label: Metabolic Pathway state 185
+        maps_to: M_FORMATE_c
+      - id: nad
+        label: NAD
+        maps_to: M_NAD_c
+      - id: l_rhamnose
+        label: L Rhamnose
+        maps_to: M_Lrhamnose_c
+      - id: l_isoleucine
+        label: L Isoleucine
+        maps_to: M_ILE_c
+      - id: d_galactose_6_phosphate
+        label: D Galactose 6 Phosphate
+        maps_to: M_CPD1241_c
+      - id: fructose_1_6_bisphosphate
+        label: Fructose 1 6 Bisphosphate
+        maps_to: M_FRUCTOSE16DIPHOSPHATE_c
+      - id: l_lysine
+        label: L Lysine
+        maps_to: M_LYS_c
+      - id: observable_4s_5r_4_5_dihydroxy_2_6_dioxohexanoate
+        label: 4s 5r 4 5 Dihydroxy 2 6 Dioxohexanoate
+        maps_to: M_CPD37_c
+      - id: bicarbonate
+        label: Bicarbonate
+        maps_to: M_HCO3_c
+      - id: observable_5_10_methylenetetrahydrofolate
+        label: 5 10 Methylenetetrahydrofolate
+        maps_to: M_METHYLENETHF_c
+      - id: ethanolamine
+        label: Ethanolamine
+        maps_to: M_ETHANOLAMINE_c
+      - id: beta_nicotinate_d_ribonucleotide
+        label: Beta Nicotinate D Ribonucleotide
+        maps_to: M_NICOTINATE_NUCLEOTIDE_c
+      - id: observable_3_deoxy_d_glycero_2_5_hexodiulosonate
+        label: 3 Deoxy D Glycero 2 5 Hexodiulosonate
+        maps_to: M_CPD343_c
+      - id: r_nadhx
+        label: R Nadhx
+        maps_to: M_CPD02472_c
+      - id: metabolic_pathway_state_199
+        label: Metabolic Pathway state 199
+        maps_to: M_TRPtRNAs_c
+      - id: metabolic_pathway_state_200
+        label: Metabolic Pathway state 200
+        maps_to: M_GLTtRNAs_c
+      - id: monodehydroascorbate
+        label: Monodehydroascorbate
+        maps_to: M_CPD318_c
+      - id: amp
+        label: AMP
+        maps_to: M_AMP_c
+      - id: metabolic_pathway_state_203
+        label: Metabolic Pathway state 203
+        maps_to: M_CYStRNAs_c
+      - id: s_adenosyl_l_methionine
+        label: S Adenosyl L Methionine
+        maps_to: M_SADENOSYLMETHIONINE_c
+      - id: l_tryptophan
+        label: L Tryptophan
+        maps_to: M_TRP_c
+      - id: l_ascorbate_2
+        label: L Ascorbate 2
+        maps_to: M_ASCORBATE_c
+      - id: metabolic_pathway_state_207
+        label: Metabolic Pathway state 207
+        maps_to: M_DUMP_c
+      - id: metabolic_pathway_state_208
+        label: Metabolic Pathway state 208
+        maps_to: M_HIStRNAs_c
+      - id: observable_2_phospho_d_glycerate
+        label: 2 Phospho D Glycerate
+        maps_to: M_A2PG_c
+      - id: a_holo_acyl_carrier_protein
+        label: A Holo Acyl Carrier Protein
+        maps_to: M_ACP_c
+      - id: malonate_semialdehyde
+        label: Malonate Semialdehyde
+        maps_to: M_MALONATESALD_c
+      - id: metabolic_pathway_state_212
+        label: Metabolic Pathway state 212
+        maps_to: M_LongChainAcylCoAs_c
+      - id: metabolic_pathway_state_213
+        label: Metabolic Pathway state 213
+        maps_to: M_PHEtRNAs_c
+      - id: metabolic_pathway_state_214
+        label: Metabolic Pathway state 214
+        maps_to: M_ChargedASPtRNAs_c
+      - id: guanosine
+        label: Guanosine
+        maps_to: M_GUANOSINE_c
+      - id: metabolic_pathway_state_216
+        label: Metabolic Pathway state 216
+        maps_to: M_ChargedASNtRNAs_c
+      - id: r_lipoate
+        label: R Lipoate
+        maps_to: M_LIPOICACID_c
+      - id: metabolic_pathway_state_218
+        label: Metabolic Pathway state 218
+        maps_to: M_GMP_c
+      - id: metabolic_pathway_state_219
+        label: Metabolic Pathway state 219
+        maps_to: M_GDP_c
+      - id: d_sedoheptulose_7_phosphate
+        label: D Sedoheptulose 7 Phosphate
+        maps_to: M_DSEDOHEPTULOSE7P_c
+      - id: observable_2_deoxyuridine
+        label: 2 Deoxyuridine
+        maps_to: M_DEOXYURIDINE_c
+      - id: observable_5_dehydro_2_deoxy_d_gluconate
+        label: 5 Dehydro 2 Deoxy D Gluconate
+        maps_to: M_CPD827_c
+      - id: metabolic_pathway_state_223
+        label: Metabolic Pathway state 223
+        maps_to: M_OXYGENMOLECULE_c
+      - id: l_dehydro_ascorbate
+        label: L Dehydro Ascorbate
+        maps_to: M_LDEHYDROASCORBATE_c
+      - id: l_leucine
+        label: L Leucine
+        maps_to: M_LEU_c
+      - id: d_mannitol
+        label: D Mannitol
+        maps_to: M_MANNITOL_e
+      - id: cyclic_2_3_o_oxalyl_l_threonate
+        label: Cyclic 2 3 O Oxalyl L Threonate
+        maps_to: M_CPD13914_c
+      - id: observable_2_carboxy_l_threo_pentonate
+        label: 2 Carboxy L Threo Pentonate
+        maps_to: M_CPD13912_c
+      - id: observable_2_carboxy_l_xylonolactone
+        label: 2 Carboxy L Xylonolactone
+        maps_to: M_CPD13913_c
+      - id: cyclic_3_4_o_oxalyl_l_threonate
+        label: Cyclic 3 4 O Oxalyl L Threonate
+        maps_to: M_CPD13910_c
+      - id: metabolic_pathway_state_231
+        label: Metabolic Pathway state 231
+        maps_to: M_DUTP_c
+      - id: metabolic_pathway_state_232
+        label: Metabolic Pathway state 232
+        maps_to: M_ChargedMETtRNAs_c
+      - id: metabolic_pathway_state_233
+        label: Metabolic Pathway state 233
+        maps_to: M_ChargedCYStRNAs_c
+      - id: adenosine_3_5_bisphosphate
+        label: Adenosine 3 5 Bisphosphate
+        maps_to: M_A35ADP_c
+      - id: d_glucose
+        label: D Glucose
+        maps_to: M_DGlucose_e
+      - id: a_reduced_electron_acceptor
+        label: A Reduced Electron Acceptor
+        maps_to: M_DonorH2_c
+      - id: nicotinate_adenine_dinucleotide
+        label: Nicotinate Adenine Dinucleotide
+        maps_to: M_DEAMIDONAD_c
+      - id: an_oxidized_thioredoxin
+        label: An Oxidized Thioredoxin
+        maps_to: M_OxThioredoxin_c
+      - id: observable_5_dehydro_2_deoxy_d_gluconate_6_phosphate
+        label: 5 Dehydro 2 Deoxy D Gluconate 6 Phosphate
+        maps_to: M_CPD645_c
+      - id: metabolic_pathway_state_240
+        label: Metabolic Pathway state 240
+        maps_to: M_CHOLINE_c
+      - id: l_xylulose_5_phosphate
+        label: L Xylulose 5 Phosphate
+        maps_to: M_LXYLULOSE5P_c
+      - id: h2co3
+        label: H2co3
+        maps_to: M_H2CO3_c
+      - id: lalphaalanine
+        label: Lalphaalanine
+        maps_to: M_LALPHAALANINE_e
+      - id: metabolic_pathway_state_244
+        label: Metabolic Pathway state 244
+        maps_to: M_ARG_e
+      - id: metabolic_pathway_state_245
+        label: Metabolic Pathway state 245
+        maps_to: M_ASN_e
+      - id: laspartate
+        label: Laspartate
+        maps_to: M_LASPARTATE_e
+      - id: cysteine
+        label: cysteine
+        maps_to: M_CYS_e
+      - id: metabolic_pathway_state_248
+        label: Metabolic Pathway state 248
+        maps_to: M_GLT_e
+      - id: metabolic_pathway_state_249
+        label: Metabolic Pathway state 249
+        maps_to: M_GLN_e
+      - id: metabolic_pathway_state_250
+        label: Metabolic Pathway state 250
+        maps_to: M_GLY_e
+      - id: metabolic_pathway_state_251
+        label: Metabolic Pathway state 251
+        maps_to: M_HIS_e
+      - id: metabolic_pathway_state_252
+        label: Metabolic Pathway state 252
+        maps_to: M_ILE_e
+      - id: metabolic_pathway_state_253
+        label: Metabolic Pathway state 253
+        maps_to: M_LEU_e
+      - id: metabolic_pathway_state_254
+        label: Metabolic Pathway state 254
+        maps_to: M_LYS_e
+      - id: metabolic_pathway_state_255
+        label: Metabolic Pathway state 255
+        maps_to: M_MET_e
+      - id: metabolic_pathway_state_256
+        label: Metabolic Pathway state 256
+        maps_to: M_PHE_e
+      - id: metabolic_pathway_state_257
+        label: Metabolic Pathway state 257
+        maps_to: M_PRO_e
+      - id: metabolic_pathway_state_258
+        label: Metabolic Pathway state 258
+        maps_to: M_THR_e
+      - id: metabolic_pathway_state_259
+        label: Metabolic Pathway state 259
+        maps_to: M_TRP_e
+      - id: metabolic_pathway_state_260
+        label: Metabolic Pathway state 260
+        maps_to: M_TYR_e
+      - id: metabolic_pathway_state_261
+        label: Metabolic Pathway state 261
+        maps_to: M_VAL_e
+      - id: metabolic_pathway_state_262
+        label: Metabolic Pathway state 262
+        maps_to: M_GUANINE_e
+      - id: metabolic_pathway_state_263
+        label: Metabolic Pathway state 263
+        maps_to: M_URACIL_e
+      - id: metabolic_pathway_state_264
+        label: Metabolic Pathway state 264
+        maps_to: M_ADENINE_e
+      - id: metabolic_pathway_state_265
+        label: Metabolic Pathway state 265
+        maps_to: M_THYMINE_e
+      - id: metabolic_pathway_state_266
+        label: Metabolic Pathway state 266
+        maps_to: M_CYTIDINE_e
+      - id: deoxycytidine
+        label: Deoxycytidine
+        maps_to: M_DEOXYCYTIDINE_e
+      - id: metabolic_pathway_state_268
+        label: Metabolic Pathway state 268
+        maps_to: M_Pi_e
+      - id: metabolic_pathway_state_269
+        label: Metabolic Pathway state 269
+        maps_to: M_ACET_e
+      - id: metabolic_pathway_state_270
+        label: Metabolic Pathway state 270
+        maps_to: M_PYRUVATE_e
+      - id: carbondioxide
+        label: Carbondioxide
+        maps_to: M_CARBONDIOXIDE__e
+      - id: metabolic_pathway_state_272
+        label: Metabolic Pathway state 272
+        maps_to: M_WATER_e
+      - id: oxygenmolecule
+        label: Oxygenmolecule
+        maps_to: M_OXYGENMOLECULE__e
+      - id: metabolic_pathway_state_274
+        label: Metabolic Pathway state 274
+        maps_to: M_AMMONIA__e
+      - id: riboflavin_2
+        label: Riboflavin 2
+        maps_to: M_RIBOFLAVIN_e
+      - id: hydrogenperoxide
+        label: Hydrogenperoxide
+        maps_to: M_HYDROGENPEROXIDE_e
+      - id: metabolic_pathway_state_277
+        label: Metabolic Pathway state 277
+        maps_to: M_LongChainFattyAcids_c
+      - id: metabolic_pathway_state_278
+        label: Metabolic Pathway state 278
+        maps_to: M_LongChainFattyAcids_e
+      - id: pantetheinep
+        label: Pantetheinep
+        maps_to: M_PANTETHEINEP_e
+      - id: phosphatidyl
+        label: Phosphatidyl
+        maps_to: M_PHOSPHATIDYL_CHOLINE_c
+      - id: phosphatidyl_2
+        label: Phosphatidyl 2
+        maps_to: M_PHOSPHATIDYL_CHOLINE_e
+      - id: myoinositol
+        label: Myoinositol
+        maps_to: M_MYOINOSITOL_e
+      - id: metabolic_pathway_state_283
+        label: Metabolic Pathway state 283
+        maps_to: M_NIACINE_e
+      - id: metabolic_pathway_state_284
+        label: Metabolic Pathway state 284
+        maps_to: M_PROT_mol_c
+      - id: metabolic_pathway_state_285
+        label: Metabolic Pathway state 285
+        maps_to: M_PROT_g_c
+      - id: metabolic_pathway_state_286
+        label: Metabolic Pathway state 286
+        maps_to: M_ACP_g_c
+      - id: dna
+        label: DNA
+        maps_to: M_DNA_mmol_c
+      - id: metabolic_pathway_state_288
+        label: Metabolic Pathway state 288
+        maps_to: M_DNA_g_c
+      - id: rna
+        label: RNA
+        maps_to: M_RNA_mmol_c
+      - id: metabolic_pathway_state_290
+        label: Metabolic Pathway state 290
+        maps_to: M_RNA_g_c
+      - id: lphosphatidate_g
+        label: Lphosphatidate G
+        maps_to: M_LPHOSPHATIDATE_g_c
+      - id: cardiolipin_g
+        label: Cardiolipin G
+        maps_to: M_CARDIOLIPIN_g_c
+      - id: phosphatidyl_choline_g
+        label: Phosphatidyl Choline G
+        maps_to: M_PHOSPHATIDYL_CHOLINE_g_c
+      - id: metabolic_pathway_state_294
+        label: Metabolic Pathway state 294
+        maps_to: M_LIPIDS_c
+      - id: dglucose6phosphate_g
+        label: Dglucose6phosphate G
+        maps_to: M_Dglucose6phosphate_g_c
+      - id: aabiomass
+        label: Aabiomass
+        maps_to: M_AAbiomass_mol_c
+      - id: aabiomass_g
+        label: Aabiomass G
+        maps_to: M_AAbiomass_g_c
+      - id: biomass_g
+        label: Biomass G
+        maps_to: M_BIOMASS_g_c
+  communication_step: 1.0
+runtime:
+  dependencies:
+    packages:
+    - PyYAML==6.0.2
+parameters:
+- name: integration_step
+  value: 1.0
+  min: 0.0
+  units: model_time
+  description: Sampling step for the visualisation model.
+io:
+  inputs:
+  - name: metabolism_sbml_kamminga2017_metabolic_model_of_mycoplasma_hyopn_model1704250001_model_observable_values
+    description: Latest user-facing observable values from the core metabolism model.
+  - name: metabolism_sbml_kamminga2017_metabolic_model_of_mycoplasma_hyopn_model1704250001_model_run_summary
+    description: Run summary from the core metabolism model.
+  - name: metabolism_sbml_kamminga2017_metabolic_model_of_mycoplasma_hyopn_model1704250001_model_observable_labels
+    description: Display labels for user-facing observables.
+  outputs: []

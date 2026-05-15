@@ -1,0 +1,81 @@
+schema_version: '2.0'
+title: Nazaret2008_Dynnik1980_CarbohydrateEnergyMetabolism Lab
+description: "This model is from the article: An old paper revisited: \u2018\u2018A mathematical\
+  \ model of carbohydrate energy metabolism. Interaction between glycolysis, the Krebs cycle\
+  \ and the H-transporting shuttles at var."
+io:
+  inputs:
+  - name: initial_glyceraldehyde_3_phosphate
+    maps_to: metabolism_sbml_nazaret2008_dynnik1980_carbohydrateenergymetabol_model1202170000_model.initial_glyceraldehyde_3_phosphate
+    default: 0.1
+    units: native SBML value
+    description: Initial condition for glyceraldehyde 3 phosphate. Maps to bundled SBML symbol
+      `s1`. Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_metabolic_pathway_state_2
+    maps_to: metabolism_sbml_nazaret2008_dynnik1980_carbohydrateenergymetabol_model1202170000_model.initial_metabolic_pathway_state_2
+    default: 0.5
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 2. Maps to bundled SBML symbol
+      `s2_e1`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_observable_13dpg
+    maps_to: metabolism_sbml_nazaret2008_dynnik1980_carbohydrateenergymetabol_model1202170000_model.initial_observable_13dpg
+    default: 0.5
+    units: native SBML value
+    description: Initial condition for observable 13dpg. Maps to bundled SBML symbol `s3_e2`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_pyruvate
+    maps_to: metabolism_sbml_nazaret2008_dynnik1980_carbohydrateenergymetabol_model1202170000_model.initial_pyruvate
+    default: 0.01
+    units: native SBML value
+    description: Initial condition for pyruvate. Maps to bundled SBML symbol `s4_e3`. Applied
+      before the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_lactate
+    maps_to: metabolism_sbml_nazaret2008_dynnik1980_carbohydrateenergymetabol_model1202170000_model.initial_lactate
+    default: 0.01
+    units: native SBML value
+    description: Initial condition for lactate. Maps to bundled SBML symbol `s5_e4`. Applied
+      before the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  outputs:
+  - name: glyceraldehyde_3_phosphate
+    maps_to: metabolism_sbml_nazaret2008_dynnik1980_carbohydrateenergymetabol_model1202170000_model.glyceraldehyde_3_phosphate
+  - name: metabolic_pathway_state_2
+    maps_to: metabolism_sbml_nazaret2008_dynnik1980_carbohydrateenergymetabol_model1202170000_model.metabolic_pathway_state_2
+  - name: observable_13dpg
+    maps_to: metabolism_sbml_nazaret2008_dynnik1980_carbohydrateenergymetabol_model1202170000_model.observable_13dpg
+  - name: pyruvate
+    maps_to: metabolism_sbml_nazaret2008_dynnik1980_carbohydrateenergymetabol_model1202170000_model.pyruvate
+  - name: lactate
+    maps_to: metabolism_sbml_nazaret2008_dynnik1980_carbohydrateenergymetabol_model1202170000_model.lactate
+  - name: observable_values
+    maps_to: metabolism_sbml_nazaret2008_dynnik1980_carbohydrateenergymetabol_model1202170000_model.observable_values
+  - name: run_summary
+    maps_to: metabolism_sbml_nazaret2008_dynnik1980_carbohydrateenergymetabol_model1202170000_model.run_summary
+  - name: observable_labels
+    maps_to: metabolism_sbml_nazaret2008_dynnik1980_carbohydrateenergymetabol_model1202170000_model.observable_labels
+models:
+- alias: metabolism_sbml_nazaret2008_dynnik1980_carbohydrateenergymetabol_model1202170000_model
+  path: models/core
+  parameters:
+    model_path: data/MODEL1202170000.xml
+    integration_step: 0.1
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: metabolism_sbml_nazaret2008_dynnik1980_carbohydrateenergymetabol_model1202170000_model.observable_values
+  to:
+  - visualisation.metabolism_sbml_nazaret2008_dynnik1980_carbohydrateenergymetabol_model1202170000_model_observable_values
+- from: metabolism_sbml_nazaret2008_dynnik1980_carbohydrateenergymetabol_model1202170000_model.run_summary
+  to:
+  - visualisation.metabolism_sbml_nazaret2008_dynnik1980_carbohydrateenergymetabol_model1202170000_model_run_summary
+- from: metabolism_sbml_nazaret2008_dynnik1980_carbohydrateenergymetabol_model1202170000_model.observable_labels
+  to:
+  - visualisation.metabolism_sbml_nazaret2008_dynnik1980_carbohydrateenergymetabol_model1202170000_model_observable_labels
+runtime:
+  duration: 10.0
+  communication_step: 1.0
+  initial_inputs: {}

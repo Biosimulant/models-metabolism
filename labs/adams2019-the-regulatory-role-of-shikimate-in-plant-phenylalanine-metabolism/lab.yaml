@@ -1,0 +1,73 @@
+schema_version: '2.0'
+title: Adams2019 - The regulatory role of shikimate in plant phenylalanine metabolism Lab
+description: This is a mathematical model of phenylalanine metabolism in plants as influenced
+  by shikimate, with specific evidence of how shikimate dynamics influence phenylalanine metabolism
+  as a function of phen. It can be used to explore metabolic flux dynamics and compare pathway
+  behavior across conditions.
+io:
+  inputs:
+  - name: initial_phenylalanine_pathway_state_1
+    maps_to: metabolism_sbml_adams2019_the_regulatory_role_of_shikimate_in_pl_biomd0000000847_model.initial_phenylalanine_pathway_state_1
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for phenylalanine pathway state 1. Maps to bundled SBML
+      symbol `X_1`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_phenylalanine_pathway_state_2
+    maps_to: metabolism_sbml_adams2019_the_regulatory_role_of_shikimate_in_pl_biomd0000000847_model.initial_phenylalanine_pathway_state_2
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for phenylalanine pathway state 2. Maps to bundled SBML
+      symbol `X_2`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_phenylalanine_pathway_state_3
+    maps_to: metabolism_sbml_adams2019_the_regulatory_role_of_shikimate_in_pl_biomd0000000847_model.initial_phenylalanine_pathway_state_3
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for phenylalanine pathway state 3. Maps to bundled SBML
+      symbol `X_3`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_phenylalanine_pathway_state_4
+    maps_to: metabolism_sbml_adams2019_the_regulatory_role_of_shikimate_in_pl_biomd0000000847_model.initial_phenylalanine_pathway_state_4
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for phenylalanine pathway state 4. Maps to bundled SBML
+      symbol `X_4`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: phenylalanine_pathway_state_1
+    maps_to: metabolism_sbml_adams2019_the_regulatory_role_of_shikimate_in_pl_biomd0000000847_model.phenylalanine_pathway_state_1
+  - name: phenylalanine_pathway_state_2
+    maps_to: metabolism_sbml_adams2019_the_regulatory_role_of_shikimate_in_pl_biomd0000000847_model.phenylalanine_pathway_state_2
+  - name: phenylalanine_pathway_state_3
+    maps_to: metabolism_sbml_adams2019_the_regulatory_role_of_shikimate_in_pl_biomd0000000847_model.phenylalanine_pathway_state_3
+  - name: phenylalanine_pathway_state_4
+    maps_to: metabolism_sbml_adams2019_the_regulatory_role_of_shikimate_in_pl_biomd0000000847_model.phenylalanine_pathway_state_4
+  - name: observable_values
+    maps_to: metabolism_sbml_adams2019_the_regulatory_role_of_shikimate_in_pl_biomd0000000847_model.observable_values
+  - name: run_summary
+    maps_to: metabolism_sbml_adams2019_the_regulatory_role_of_shikimate_in_pl_biomd0000000847_model.run_summary
+  - name: observable_labels
+    maps_to: metabolism_sbml_adams2019_the_regulatory_role_of_shikimate_in_pl_biomd0000000847_model.observable_labels
+models:
+- alias: metabolism_sbml_adams2019_the_regulatory_role_of_shikimate_in_pl_biomd0000000847_model
+  path: models/core
+  parameters:
+    model_path: data/BIOMD0000000847.xml
+    integration_step: 0.1
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: metabolism_sbml_adams2019_the_regulatory_role_of_shikimate_in_pl_biomd0000000847_model.observable_values
+  to:
+  - visualisation.metabolism_sbml_adams2019_the_regulatory_role_of_shikimate_in_pl_biomd0000000847_model_observable_values
+- from: metabolism_sbml_adams2019_the_regulatory_role_of_shikimate_in_pl_biomd0000000847_model.run_summary
+  to:
+  - visualisation.metabolism_sbml_adams2019_the_regulatory_role_of_shikimate_in_pl_biomd0000000847_model_run_summary
+- from: metabolism_sbml_adams2019_the_regulatory_role_of_shikimate_in_pl_biomd0000000847_model.observable_labels
+  to:
+  - visualisation.metabolism_sbml_adams2019_the_regulatory_role_of_shikimate_in_pl_biomd0000000847_model_observable_labels
+runtime:
+  duration: 10.0
+  communication_step: 1.0
+  initial_inputs: {}

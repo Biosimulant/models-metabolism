@@ -1,0 +1,63 @@
+schema_version: '2.0'
+title: Sokol2025 - Kinetic model of the first three reactions of glycolysis Visualisation
+description: Dedicated presentation model for Sokol2025 - Kinetic model of the first three
+  reactions of glycolysis.
+standard: other
+tags:
+- metabolism
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  entrypoint: src.metabolism_visualisation:MetabolismVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Sokol2025 - Kinetic model of the first three reactions of glycolysis Lab
+    question: Which central carbon and glycolytic metabolism observables show the strongest
+      activity in Sokol2025 - Kinetic model of the first three reactions of glycolysis?
+    answer_focus: central carbon and glycolytic metabolism
+    sources:
+    - alias: metabolism_sbml_sokol2025_kinetic_model_of_the_first_three_react_model2502210002_model
+      title: Sokol2025 - Kinetic model of the first three reactions of glycolysis
+      scope: central carbon and glycolytic metabolism
+      label_caveat: Values are native SBML quantities. The bundled SBML is executed directly
+        and equations were not rewritten.
+      observables:
+      - id: adp
+        label: ADP
+        maps_to: ADP
+      - id: atp
+        label: ATP
+        maps_to: ATP
+      - id: glucose_6_phosphate
+        label: Glucose 6 Phosphate
+        maps_to: G6P
+      - id: glucose
+        label: Glucose
+        maps_to: GLC
+      - id: fructose_6_phosphate
+        label: Fructose 6 Phosphate
+        maps_to: F6P
+      - id: fructose_bisphosphate
+        label: Fructose Bisphosphate
+        maps_to: FBP
+  communication_step: 1.0
+runtime:
+  dependencies:
+    packages:
+    - PyYAML==6.0.2
+parameters:
+- name: integration_step
+  value: 1.0
+  min: 0.0
+  units: model_time
+  description: Sampling step for the visualisation model.
+io:
+  inputs:
+  - name: metabolism_sbml_sokol2025_kinetic_model_of_the_first_three_react_model2502210002_model_observable_values
+    description: Latest user-facing observable values from the core metabolism model.
+  - name: metabolism_sbml_sokol2025_kinetic_model_of_the_first_three_react_model2502210002_model_run_summary
+    description: Run summary from the core metabolism model.
+  - name: metabolism_sbml_sokol2025_kinetic_model_of_the_first_three_react_model2502210002_model_observable_labels
+    description: Display labels for user-facing observables.
+  outputs: []

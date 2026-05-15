@@ -1,0 +1,237 @@
+schema_version: '2.0'
+title: Millard2016 - E. coli central carbon and energy metabolism Visualisation
+description: Dedicated presentation model for Millard2016 - E. coli central carbon and energy
+  metabolism.
+standard: other
+tags:
+- metabolism
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  entrypoint: src.metabolism_visualisation:MetabolismVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Millard2016 - E. coli central carbon and energy metabolism Lab
+    question: Which central carbon and glycolytic metabolism observables show the strongest
+      activity in Millard2016 - E. coli central carbon and energy metabolism?
+    answer_focus: central carbon and glycolytic metabolism
+    sources:
+    - alias: metabolism_sbml_millard2016_e_coli_central_carbon_and_energy_met_model1505110000_model
+      title: Millard2016 - E. coli central carbon and energy metabolism
+      scope: central carbon and glycolytic metabolism
+      label_caveat: Values are native SBML quantities. Conservative pathway-state labels are
+        used where the bundled SBML does not encode exact metabolite identities.
+      observables:
+      - id: glycolysis_state_1
+        label: Glycolysis state 1
+        maps_to: ACCOA
+      - id: glycolysis_state_2
+        label: Glycolysis state 2
+        maps_to: ACO
+      - id: glycolysis_state_3
+        label: Glycolysis state 3
+        maps_to: ACP
+      - id: glycolysis_state_4
+        label: Glycolysis state 4
+        maps_to: AKG
+      - id: glycolysis_state_5
+        label: Glycolysis state 5
+        maps_to: BPG
+      - id: glycolysis_state_6
+        label: Glycolysis state 6
+        maps_to: CIT
+      - id: glycolysis_state_7
+        label: Glycolysis state 7
+        maps_to: DAP
+      - id: glycolysis_state_8
+        label: Glycolysis state 8
+        maps_to: E4P
+      - id: fructose_6_phosphate
+        label: Fructose 6 Phosphate
+        maps_to: F6P
+      - id: glycolysis_state_10
+        label: Glycolysis state 10
+        maps_to: FDP
+      - id: glycolysis_state_11
+        label: Glycolysis state 11
+        maps_to: FUM
+      - id: glucose_6_phosphate
+        label: Glucose 6 Phosphate
+        maps_to: G6P
+      - id: glyceraldehyde_3_phosphate
+        label: Glyceraldehyde 3 Phosphate
+        maps_to: GAP
+      - id: glycolysis_state_14
+        label: Glycolysis state 14
+        maps_to: GL6P
+      - id: glycolysis_state_15
+        label: Glycolysis state 15
+        maps_to: GLX
+      - id: glycolysis_state_16
+        label: Glycolysis state 16
+        maps_to: ICIT
+      - id: glycolysis_state_17
+        label: Glycolysis state 17
+        maps_to: KDPG
+      - id: glycolysis_state_18
+        label: Glycolysis state 18
+        maps_to: MAL
+      - id: nad
+        label: NAD
+        maps_to: NAD
+      - id: nadh
+        label: NADH
+        maps_to: NADH
+      - id: nadp
+        label: NADP
+        maps_to: NADP
+      - id: nadph
+        label: NADPH
+        maps_to: NADPH
+      - id: glycolysis_state_23
+        label: Glycolysis state 23
+        maps_to: OAA
+      - id: phosphoenolpyruvate
+        label: Phosphoenolpyruvate
+        maps_to: PEP
+      - id: glycolysis_state_25
+        label: Glycolysis state 25
+        maps_to: PGA2
+      - id: glycolysis_state_26
+        label: Glycolysis state 26
+        maps_to: PGA3
+      - id: glycolysis_state_27
+        label: Glycolysis state 27
+        maps_to: PGN
+      - id: pyruvate
+        label: Pyruvate
+        maps_to: PYR
+      - id: glycolysis_state_29
+        label: Glycolysis state 29
+        maps_to: Q
+      - id: glycolysis_state_30
+        label: Glycolysis state 30
+        maps_to: QH2
+      - id: glycolysis_state_31
+        label: Glycolysis state 31
+        maps_to: R5P
+      - id: glycolysis_state_32
+        label: Glycolysis state 32
+        maps_to: RU5P
+      - id: glycolysis_state_33
+        label: Glycolysis state 33
+        maps_to: S7P
+      - id: glycolysis_state_34
+        label: Glycolysis state 34
+        maps_to: SUC
+      - id: glycolysis_state_35
+        label: Glycolysis state 35
+        maps_to: SUCCOA
+      - id: glycolysis_state_36
+        label: Glycolysis state 36
+        maps_to: X5P
+      - id: glycolysis_state_37
+        label: Glycolysis state 37
+        maps_to: ei
+      - id: glycolysis_state_38
+        label: Glycolysis state 38
+        maps_to: eiP
+      - id: glycolysis_state_39
+        label: Glycolysis state 39
+        maps_to: eiia
+      - id: glycolysis_state_40
+        label: Glycolysis state 40
+        maps_to: eiiaP
+      - id: glycolysis_state_41
+        label: Glycolysis state 41
+        maps_to: eiicb
+      - id: glycolysis_state_42
+        label: Glycolysis state 42
+        maps_to: eiicbP
+      - id: glycolysis_state_43
+        label: Glycolysis state 43
+        maps_to: hpr
+      - id: glycolysis_state_44
+        label: Glycolysis state 44
+        maps_to: hprP
+      - id: glycolysis_state_45
+        label: Glycolysis state 45
+        maps_to: icd
+      - id: glycolysis_state_46
+        label: Glycolysis state 46
+        maps_to: icdP
+      - id: glycolysis_state_47
+        label: Glycolysis state 47
+        maps_to: tal
+      - id: glycolysis_state_48
+        label: Glycolysis state 48
+        maps_to: talC3
+      - id: glycolysis_state_49
+        label: Glycolysis state 49
+        maps_to: tkt
+      - id: glycolysis_state_50
+        label: Glycolysis state 50
+        maps_to: tktC2
+      - id: adp
+        label: ADP
+        maps_to: ADP
+      - id: amp
+        label: AMP
+        maps_to: AMP
+      - id: atp
+        label: ATP
+        maps_to: ATP
+      - id: glycolysis_state_54
+        label: Glycolysis state 54
+        maps_to: CAMP
+      - id: glycolysis_state_55
+        label: Glycolysis state 55
+        maps_to: P
+      - id: glycolysis_state_56
+        label: Glycolysis state 56
+        maps_to: FAD
+      - id: glycolysis_state_57
+        label: Glycolysis state 57
+        maps_to: FADH2
+      - id: ace
+        label: ACE
+        maps_to: ACEx
+      - id: glycolysis_state_59
+        label: Glycolysis state 59
+        maps_to: GLCx
+      - id: extracellular_acetate
+        label: extracellular acetate
+        maps_to: ACEx_0
+      - id: glycolysis_state_61
+        label: Glycolysis state 61
+        maps_to: Hout
+      - id: glycolysis_state_62
+        label: Glycolysis state 62
+        maps_to: GLCp
+      - id: glycolysis_state_63
+        label: Glycolysis state 63
+        maps_to: Pp
+      - id: glycolysis_state_64
+        label: Glycolysis state 64
+        maps_to: ACEp
+  communication_step: 1.0
+runtime:
+  dependencies:
+    packages:
+    - PyYAML==6.0.2
+parameters:
+- name: integration_step
+  value: 1.0
+  min: 0.0
+  units: model_time
+  description: Sampling step for the visualisation model.
+io:
+  inputs:
+  - name: metabolism_sbml_millard2016_e_coli_central_carbon_and_energy_met_model1505110000_model_observable_values
+    description: Latest user-facing observable values from the core metabolism model.
+  - name: metabolism_sbml_millard2016_e_coli_central_carbon_and_energy_met_model1505110000_model_run_summary
+    description: Run summary from the core metabolism model.
+  - name: metabolism_sbml_millard2016_e_coli_central_carbon_and_energy_met_model1505110000_model_observable_labels
+    description: Display labels for user-facing observables.
+  outputs: []

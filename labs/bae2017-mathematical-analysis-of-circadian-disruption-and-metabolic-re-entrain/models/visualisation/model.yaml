@@ -1,0 +1,172 @@
+schema_version: '2.0'
+title: Bae2017 - Mathematical analysis of circadian disruption and metabolic re-entrainment
+  of hepatic gluconeogenesis Visualisation
+description: Dedicated presentation model for Bae2017 - Mathematical analysis of circadian
+  disruption and metabolic re-entrainment of hepatic gluconeogenesis.
+standard: other
+tags:
+- metabolism
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  entrypoint: src.metabolism_visualisation:MetabolismVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Bae2017 - Mathematical analysis of circadian disruption and metabolic re-entrainment
+      of hepatic gluconeogenesis Lab
+    question: Which metabolic pathway dynamics observables show the strongest activity in
+      Bae2017 - Mathematical analysis of circadian disruption and metabolic re-entrainment
+      of hepatic gluconeogenesis?
+    answer_focus: metabolic pathway dynamics
+    sources:
+    - alias: metabolism_sbml_bae2017_mathematical_analysis_of_circadian_disru_biomd0000001005_model
+      title: Bae2017 - Mathematical analysis of circadian disruption and metabolic re-entrainment
+        of hepatic gluconeogenesis
+      scope: metabolic pathway dynamics
+      label_caveat: Values are native SBML quantities. Conservative pathway-state labels are
+        used where the bundled SBML does not encode exact metabolite identities.
+      observables:
+      - id: crh
+        label: CRH
+        maps_to: CRH
+      - id: acth
+        label: ACTH
+        maps_to: ACTH
+      - id: metabolic_pathway_state_3
+        label: Metabolic Pathway state 3
+        maps_to: F_HPA
+      - id: metabolic_pathway_state_4_cytosolic
+        label: Metabolic Pathway state 4 cytosolic
+        maps_to: F_Cell
+      - id: metabolic_pathway_state_5
+        label: Metabolic Pathway state 5
+        maps_to: y1
+      - id: metabolic_pathway_state_6
+        label: Metabolic Pathway state 6
+        maps_to: y2
+      - id: metabolic_pathway_state_7
+        label: Metabolic Pathway state 7
+        maps_to: y3
+      - id: metabolic_pathway_state_8
+        label: Metabolic Pathway state 8
+        maps_to: y4
+      - id: metabolic_pathway_state_9
+        label: Metabolic Pathway state 9
+        maps_to: y5
+      - id: metabolic_pathway_state_10
+        label: Metabolic Pathway state 10
+        maps_to: y6
+      - id: bmal1_clock_complex
+        label: Bmal1 Clock Complex
+        maps_to: y7
+      - id: nad
+        label: NAD
+        maps_to: NAD
+      - id: metabolic_pathway_state_13
+        label: Metabolic Pathway state 13
+        maps_to: NMN
+      - id: metabolic_pathway_state_14
+        label: Metabolic Pathway state 14
+        maps_to: NAM
+      - id: metabolic_pathway_state_15
+        label: Metabolic Pathway state 15
+        maps_to: EntF
+      - id: metabolic_pathway_state_16
+        label: Metabolic Pathway state 16
+        maps_to: SIRT1
+      - id: bmal1_clock_sirt1_complex
+        label: Bmal1 Clock Sirt1 Complex
+        maps_to: y8
+      - id: metabolic_pathway_state_18
+        label: Metabolic Pathway state 18
+        maps_to: NAMPT
+      - id: metabolic_pathway_state_19
+        label: Metabolic Pathway state 19
+        maps_to: feed2
+      - id: metabolic_pathway_state_20
+        label: Metabolic Pathway state 20
+        maps_to: feed3
+      - id: metabolic_pathway_state_21
+        label: Metabolic Pathway state 21
+        maps_to: PGC1amRNA
+      - id: metabolic_pathway_state_22
+        label: Metabolic Pathway state 22
+        maps_to: PGC1a
+      - id: metabolic_pathway_state_23
+        label: Metabolic Pathway state 23
+        maps_to: PGC1aN
+      - id: metabolic_pathway_state_24
+        label: Metabolic Pathway state 24
+        maps_to: PGC1aNact
+      - id: metabolic_pathway_state_25
+        label: Metabolic Pathway state 25
+        maps_to: FOXO1
+      - id: metabolic_pathway_state_26
+        label: Metabolic Pathway state 26
+        maps_to: PckG6p
+      - id: metabolic_pathway_state_27
+        label: Metabolic Pathway state 27
+        maps_to: Phpa
+      - id: metabolic_pathway_state_28
+        label: Metabolic Pathway state 28
+        maps_to: MR
+      - id: metabolic_pathway_state_29_cytosolic
+        label: Metabolic Pathway state 29 cytosolic
+        maps_to: GR_Cell
+      - id: metabolic_pathway_state_30_cytosolic
+        label: Metabolic Pathway state 30 cytosolic
+        maps_to: FGR_Cell
+      - id: metabolic_pathway_state_31
+        label: Metabolic Pathway state 31
+        maps_to: FMR
+      - id: metabolic_pathway_state_32
+        label: Metabolic Pathway state 32
+        maps_to: FMRN
+      - id: metabolic_pathway_state_33_cytosolic
+        label: Metabolic Pathway state 33 cytosolic
+        maps_to: FGRN_Cell
+      - id: metabolic_pathway_state_34
+        label: Metabolic Pathway state 34
+        maps_to: P
+      - id: metabolic_pathway_state_35
+        label: Metabolic Pathway state 35
+        maps_to: mRNAP
+      - id: metabolic_pathway_state_36
+        label: Metabolic Pathway state 36
+        maps_to: mRNARP
+      - id: metabolic_pathway_state_37
+        label: Metabolic Pathway state 37
+        maps_to: Rp
+      - id: metabolic_pathway_state_38
+        label: Metabolic Pathway state 38
+        maps_to: PR
+      - id: metabolic_pathway_state_39
+        label: Metabolic Pathway state 39
+        maps_to: GR_HPA
+      - id: metabolic_pathway_state_40
+        label: Metabolic Pathway state 40
+        maps_to: FGR_HPA
+      - id: metabolic_pathway_state_41
+        label: Metabolic Pathway state 41
+        maps_to: FGRN_HPA
+  communication_step: 1.0
+runtime:
+  dependencies:
+    packages:
+    - PyYAML==6.0.2
+parameters:
+- name: integration_step
+  value: 1.0
+  min: 0.0
+  units: model_time
+  description: Sampling step for the visualisation model.
+io:
+  inputs:
+  - name: metabolism_sbml_bae2017_mathematical_analysis_of_circadian_disru_biomd0000001005_model_observable_values
+    description: Latest user-facing observable values from the core metabolism model.
+  - name: metabolism_sbml_bae2017_mathematical_analysis_of_circadian_disru_biomd0000001005_model_run_summary
+    description: Run summary from the core metabolism model.
+  - name: metabolism_sbml_bae2017_mathematical_analysis_of_circadian_disru_biomd0000001005_model_observable_labels
+    description: Display labels for user-facing observables.
+  outputs: []

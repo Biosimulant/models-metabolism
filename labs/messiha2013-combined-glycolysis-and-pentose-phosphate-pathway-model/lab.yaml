@@ -1,0 +1,81 @@
+schema_version: '2.0'
+title: Messiha2013 - combined glycolysis and pentose phosphate pathway model Lab
+description: Messiha2013 - combined glycolysis and pentose phosphate pathway model BIOMD0000000502
+  and MODEL1303260018 are combined to examine the response to oxidative stress. It can be
+  used to explore metabolic flux dynamics and compare pathway behavior across conditions.
+io:
+  inputs:
+  - name: initial_adp
+    maps_to: metabolism_sbml_messiha2013_combined_glycolysis_and_pentose_phos_biomd0000000503_model.initial_adp
+    default: 1.29
+    units: native SBML value
+    description: Initial condition for adp. Maps to bundled SBML symbol `ADP`. Applied before
+      the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_atp
+    maps_to: metabolism_sbml_messiha2013_combined_glycolysis_and_pentose_phos_biomd0000000503_model.initial_atp
+    default: 4.29
+    units: native SBML value
+    description: Initial condition for atp. Maps to bundled SBML symbol `ATP`. Applied before
+      the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_glycolysis_state_3
+    maps_to: metabolism_sbml_messiha2013_combined_glycolysis_and_pentose_phos_biomd0000000503_model.initial_glycolysis_state_3
+    default: 0.178140579850657
+    units: native SBML value
+    description: Initial condition for glycolysis state 3. Maps to bundled SBML symbol `AcAld`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_glycolysis_state_4
+    maps_to: metabolism_sbml_messiha2013_combined_glycolysis_and_pentose_phos_biomd0000000503_model.initial_glycolysis_state_4
+    default: 0.000736873499865602
+    units: native SBML value
+    description: Initial condition for glycolysis state 4. Maps to bundled SBML symbol `BPG`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_glycolysis_state_5
+    maps_to: metabolism_sbml_messiha2013_combined_glycolysis_and_pentose_phos_biomd0000000503_model.initial_glycolysis_state_5
+    default: 1.1613768527467
+    units: native SBML value
+    description: Initial condition for glycolysis state 5. Maps to bundled SBML symbol `DHAP`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: adp
+    maps_to: metabolism_sbml_messiha2013_combined_glycolysis_and_pentose_phos_biomd0000000503_model.adp
+  - name: atp
+    maps_to: metabolism_sbml_messiha2013_combined_glycolysis_and_pentose_phos_biomd0000000503_model.atp
+  - name: glycolysis_state_3
+    maps_to: metabolism_sbml_messiha2013_combined_glycolysis_and_pentose_phos_biomd0000000503_model.glycolysis_state_3
+  - name: glycolysis_state_4
+    maps_to: metabolism_sbml_messiha2013_combined_glycolysis_and_pentose_phos_biomd0000000503_model.glycolysis_state_4
+  - name: glycolysis_state_5
+    maps_to: metabolism_sbml_messiha2013_combined_glycolysis_and_pentose_phos_biomd0000000503_model.glycolysis_state_5
+  - name: observable_values
+    maps_to: metabolism_sbml_messiha2013_combined_glycolysis_and_pentose_phos_biomd0000000503_model.observable_values
+  - name: run_summary
+    maps_to: metabolism_sbml_messiha2013_combined_glycolysis_and_pentose_phos_biomd0000000503_model.run_summary
+  - name: observable_labels
+    maps_to: metabolism_sbml_messiha2013_combined_glycolysis_and_pentose_phos_biomd0000000503_model.observable_labels
+models:
+- alias: metabolism_sbml_messiha2013_combined_glycolysis_and_pentose_phos_biomd0000000503_model
+  path: models/core
+  parameters:
+    model_path: data/BIOMD0000000503.xml
+    integration_step: 0.1
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: metabolism_sbml_messiha2013_combined_glycolysis_and_pentose_phos_biomd0000000503_model.observable_values
+  to:
+  - visualisation.metabolism_sbml_messiha2013_combined_glycolysis_and_pentose_phos_biomd0000000503_model_observable_values
+- from: metabolism_sbml_messiha2013_combined_glycolysis_and_pentose_phos_biomd0000000503_model.run_summary
+  to:
+  - visualisation.metabolism_sbml_messiha2013_combined_glycolysis_and_pentose_phos_biomd0000000503_model_run_summary
+- from: metabolism_sbml_messiha2013_combined_glycolysis_and_pentose_phos_biomd0000000503_model.observable_labels
+  to:
+  - visualisation.metabolism_sbml_messiha2013_combined_glycolysis_and_pentose_phos_biomd0000000503_model_observable_labels
+runtime:
+  duration: 10.0
+  communication_step: 1.0
+  initial_inputs: {}

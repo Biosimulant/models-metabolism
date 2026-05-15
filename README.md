@@ -1,5 +1,8 @@
 # models-metabolism
 
+> Storage-only repo: each former root model now lives in `labs/<slug>/models/core/` and is wrapped by
+> `labs/<slug>/lab.yaml`. This repo has no repo-level import catalog and no composed labs at the root.
+
 Curated collection of **metabolism** simulation models for the **biosim** platform. This repository contains comprehensive computational models of metabolic pathways, genome-scale metabolic networks (GEMs), central carbon metabolism, energy production, biosynthesis, and organism-specific metabolic reconstructions across bacteria, fungi, plants, and mammals.
 
 ## What's Inside
@@ -98,7 +101,7 @@ Every model implements the `biosim.BioModule` interface:
 
 - **`inputs()`** — declares named input signals (e.g., nutrient availability, oxygen)
 - **`outputs()`** — declares named output signals (e.g., metabolite concentrations, growth rate)
-- **`advance_to(t)`** — advances the metabolic state to time `t`
+- **`advance_window(t)`** — advances the metabolic state to time `t`
 
 Genome-scale models typically use constraint-based methods (FBA, FVA) while pathway models use ODE-based kinetics.
 
@@ -126,7 +129,7 @@ pip install "biosim @ git+https://github.com/BioSimulant/biosim.git@main"
 
 ### Using Metabolism Models
 
-1. Reference models by `manifest_path` (e.g., `models/metabolism-sbml-achcar2012-glycolysis-in-bloodstream-form-t-bruc/model.yaml`)
+1. Reference models by `manifest_path` (e.g., `labs/metabolism-sbml-achcar2012-glycolysis-in-bloodstream-form-t-bruc/models/core/model.yaml`)
 2. Configure nutrient uptake rates and environmental conditions
 3. Simulate metabolic flux distributions and growth phenotypes
 4. Couple metabolism with gene regulation, signaling, or environmental models

@@ -1,0 +1,278 @@
+schema_version: '2.0'
+title: Bertram2004_PancreaticBetaCell_modelA Visualisation
+description: Dedicated presentation model for Bertram2004_PancreaticBetaCell_modelA.
+standard: other
+tags:
+- metabolism
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  entrypoint: src.metabolism_visualisation:MetabolismVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Bertram2004_PancreaticBetaCell_modelA Lab
+    question: Which pancreatic beta-cell metabolism observables show the strongest activity
+      in Bertram2004_PancreaticBetaCell_modelA?
+    answer_focus: pancreatic beta-cell metabolism
+    sources:
+    - alias: metabolism_sbml_bertram2004_pancreaticbetacell_modela_model1006230071_model
+      title: Bertram2004_PancreaticBetaCell_modelA
+      scope: pancreatic beta-cell metabolism
+      label_caveat: Values are native SBML quantities. Conservative pathway-state labels are
+        used where the bundled SBML does not encode exact metabolite identities.
+      observables:
+      - id: pancreatic_metabolism_state_1
+        label: Pancreatic Metabolism state 1
+        maps_to: V
+      - id: pancreatic_metabolism_state_2
+        label: Pancreatic Metabolism state 2
+        maps_to: n
+      - id: pancreatic_metabolism_state_3
+        label: Pancreatic Metabolism state 3
+        maps_to: c
+      - id: pancreatic_metabolism_state_4
+        label: Pancreatic Metabolism state 4
+        maps_to: cer
+      - id: fructose_bisphosphate
+        label: Fructose Bisphosphate
+        maps_to: fbp
+      - id: glucose_6_phosphate
+        label: Glucose 6 Phosphate
+        maps_to: g6p
+      - id: adp
+        label: ADP
+        maps_to: adp
+      - id: pancreatic_metabolism_state_8
+        label: Pancreatic Metabolism state 8
+        maps_to: IK
+      - id: pancreatic_metabolism_state_9
+        label: Pancreatic Metabolism state 9
+        maps_to: IKCa
+      - id: pancreatic_metabolism_state_10
+        label: Pancreatic Metabolism state 10
+        maps_to: ICa
+      - id: pancreatic_metabolism_state_11
+        label: Pancreatic Metabolism state 11
+        maps_to: minf
+      - id: pancreatic_metabolism_state_12
+        label: Pancreatic Metabolism state 12
+        maps_to: ninf
+      - id: pancreatic_metabolism_state_13
+        label: Pancreatic Metabolism state 13
+        maps_to: Jserca
+      - id: pancreatic_metabolism_state_14
+        label: Pancreatic Metabolism state 14
+        maps_to: Jleak
+      - id: pancreatic_metabolism_state_15
+        label: Pancreatic Metabolism state 15
+        maps_to: Jer
+      - id: pancreatic_metabolism_state_16
+        label: Pancreatic Metabolism state 16
+        maps_to: Jmem
+      - id: fructose_6_phosphate
+        label: Fructose 6 Phosphate
+        maps_to: f6p
+      - id: pancreatic_metabolism_state_18
+        label: Pancreatic Metabolism state 18
+        maps_to: rgpdh
+      - id: pancreatic_metabolism_state_19
+        label: Pancreatic Metabolism state 19
+        maps_to: rad
+      - id: atp
+        label: ATP
+        maps_to: atp
+      - id: amp
+        label: AMP
+        maps_to: amp
+      - id: pancreatic_metabolism_state_22
+        label: Pancreatic Metabolism state 22
+        maps_to: weight2
+      - id: pancreatic_metabolism_state_23
+        label: Pancreatic Metabolism state 23
+        maps_to: topa2
+      - id: pancreatic_metabolism_state_24
+        label: Pancreatic Metabolism state 24
+        maps_to: bottom2
+      - id: pancreatic_metabolism_state_25
+        label: Pancreatic Metabolism state 25
+        maps_to: weight3
+      - id: pancreatic_metabolism_state_26
+        label: Pancreatic Metabolism state 26
+        maps_to: topa3
+      - id: pancreatic_metabolism_state_27
+        label: Pancreatic Metabolism state 27
+        maps_to: bottom3
+      - id: pancreatic_metabolism_state_28
+        label: Pancreatic Metabolism state 28
+        maps_to: weight4
+      - id: pancreatic_metabolism_state_29
+        label: Pancreatic Metabolism state 29
+        maps_to: topa4
+      - id: pancreatic_metabolism_state_30
+        label: Pancreatic Metabolism state 30
+        maps_to: bottom4
+      - id: pancreatic_metabolism_state_31
+        label: Pancreatic Metabolism state 31
+        maps_to: weight5
+      - id: pancreatic_metabolism_state_32
+        label: Pancreatic Metabolism state 32
+        maps_to: topa5
+      - id: pancreatic_metabolism_state_33
+        label: Pancreatic Metabolism state 33
+        maps_to: bottom5
+      - id: pancreatic_metabolism_state_34
+        label: Pancreatic Metabolism state 34
+        maps_to: weight6
+      - id: pancreatic_metabolism_state_35
+        label: Pancreatic Metabolism state 35
+        maps_to: topa6
+      - id: pancreatic_metabolism_state_36
+        label: Pancreatic Metabolism state 36
+        maps_to: bottom6
+      - id: pancreatic_metabolism_state_37
+        label: Pancreatic Metabolism state 37
+        maps_to: weight7
+      - id: pancreatic_metabolism_state_38
+        label: Pancreatic Metabolism state 38
+        maps_to: topa7
+      - id: pancreatic_metabolism_state_39
+        label: Pancreatic Metabolism state 39
+        maps_to: bottom7
+      - id: pancreatic_metabolism_state_40
+        label: Pancreatic Metabolism state 40
+        maps_to: weight8
+      - id: pancreatic_metabolism_state_41
+        label: Pancreatic Metabolism state 41
+        maps_to: topa8
+      - id: pancreatic_metabolism_state_42
+        label: Pancreatic Metabolism state 42
+        maps_to: bottom8
+      - id: pancreatic_metabolism_state_43
+        label: Pancreatic Metabolism state 43
+        maps_to: weight9
+      - id: pancreatic_metabolism_state_44
+        label: Pancreatic Metabolism state 44
+        maps_to: topa9
+      - id: pancreatic_metabolism_state_45
+        label: Pancreatic Metabolism state 45
+        maps_to: bottom9
+      - id: pancreatic_metabolism_state_46
+        label: Pancreatic Metabolism state 46
+        maps_to: weight10
+      - id: pancreatic_metabolism_state_47
+        label: Pancreatic Metabolism state 47
+        maps_to: topa10
+      - id: pancreatic_metabolism_state_48
+        label: Pancreatic Metabolism state 48
+        maps_to: bottom10
+      - id: pancreatic_metabolism_state_49
+        label: Pancreatic Metabolism state 49
+        maps_to: weight11
+      - id: pancreatic_metabolism_state_50
+        label: Pancreatic Metabolism state 50
+        maps_to: topa11
+      - id: pancreatic_metabolism_state_51
+        label: Pancreatic Metabolism state 51
+        maps_to: bottom11
+      - id: pancreatic_metabolism_state_52
+        label: Pancreatic Metabolism state 52
+        maps_to: weight12
+      - id: pancreatic_metabolism_state_53
+        label: Pancreatic Metabolism state 53
+        maps_to: topa12
+      - id: pancreatic_metabolism_state_54
+        label: Pancreatic Metabolism state 54
+        maps_to: bottom12
+      - id: pancreatic_metabolism_state_55
+        label: Pancreatic Metabolism state 55
+        maps_to: weight13
+      - id: pancreatic_metabolism_state_56
+        label: Pancreatic Metabolism state 56
+        maps_to: topa13
+      - id: pancreatic_metabolism_state_57
+        label: Pancreatic Metabolism state 57
+        maps_to: bottom13
+      - id: pancreatic_metabolism_state_58
+        label: Pancreatic Metabolism state 58
+        maps_to: weight14
+      - id: pancreatic_metabolism_state_59
+        label: Pancreatic Metabolism state 59
+        maps_to: topa14
+      - id: pancreatic_metabolism_state_60
+        label: Pancreatic Metabolism state 60
+        maps_to: bottom14
+      - id: pancreatic_metabolism_state_61
+        label: Pancreatic Metabolism state 61
+        maps_to: weight15
+      - id: pancreatic_metabolism_state_62
+        label: Pancreatic Metabolism state 62
+        maps_to: topa15
+      - id: pancreatic_metabolism_state_63
+        label: Pancreatic Metabolism state 63
+        maps_to: bottom15
+      - id: pancreatic_metabolism_state_64
+        label: Pancreatic Metabolism state 64
+        maps_to: topb
+      - id: pancreatic_metabolism_state_65
+        label: Pancreatic Metabolism state 65
+        maps_to: weight16
+      - id: pancreatic_metabolism_state_66
+        label: Pancreatic Metabolism state 66
+        maps_to: topa16
+      - id: pancreatic_metabolism_state_67
+        label: Pancreatic Metabolism state 67
+        maps_to: bottom16
+      - id: pancreatic_metabolism_state_68
+        label: Pancreatic Metabolism state 68
+        maps_to: mgadp
+      - id: pancreatic_metabolism_state_69
+        label: Pancreatic Metabolism state 69
+        maps_to: adp3m
+      - id: pancreatic_metabolism_state_70
+        label: Pancreatic Metabolism state 70
+        maps_to: atp4m
+      - id: pancreatic_metabolism_state_71
+        label: Pancreatic Metabolism state 71
+        maps_to: topo
+      - id: pancreatic_metabolism_state_72
+        label: Pancreatic Metabolism state 72
+        maps_to: bottomo
+      - id: pancreatic_metabolism_state_73
+        label: Pancreatic Metabolism state 73
+        maps_to: katpo
+      - id: pancreatic_metabolism_state_74
+        label: Pancreatic Metabolism state 74
+        maps_to: IKATP
+      - id: pancreatic_metabolism_state_75
+        label: Pancreatic Metabolism state 75
+        maps_to: fback
+      - id: pancreatic_metabolism_state_76
+        label: Pancreatic Metabolism state 76
+        maps_to: y
+      - id: pancreatic_metabolism_state_77
+        label: Pancreatic Metabolism state 77
+        maps_to: ratio
+      - id: pancreatic_metabolism_state_78
+        label: Pancreatic Metabolism state 78
+        maps_to: pfk
+  communication_step: 1.0
+runtime:
+  dependencies:
+    packages:
+    - PyYAML==6.0.2
+parameters:
+- name: integration_step
+  value: 1.0
+  min: 0.0
+  units: model_time
+  description: Sampling step for the visualisation model.
+io:
+  inputs:
+  - name: metabolism_sbml_bertram2004_pancreaticbetacell_modela_model1006230071_model_observable_values
+    description: Latest user-facing observable values from the core metabolism model.
+  - name: metabolism_sbml_bertram2004_pancreaticbetacell_modela_model1006230071_model_run_summary
+    description: Run summary from the core metabolism model.
+  - name: metabolism_sbml_bertram2004_pancreaticbetacell_modela_model1006230071_model_observable_labels
+    description: Display labels for user-facing observables.
+  outputs: []

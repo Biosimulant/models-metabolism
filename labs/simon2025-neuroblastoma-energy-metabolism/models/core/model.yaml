@@ -1,0 +1,112 @@
+schema_version: '2.0'
+title: Simon2025 - Neuroblastoma energy metabolism
+description: Metabolism Simon2025Neuroblastoma Energy Metabolism Model2502190001Model models
+  core biological dynamics as a OTHER simulation curated from biomodels_ebi (biomodels_ebi:MODEL2502190001),
+  focused on metabolism. When you run it, you can track state over time and compare response
+  patterns across parameter settings.
+standard: sbml
+tags:
+- biomodels_ebi
+- faithful
+- metabolism
+- ode
+- sbml
+- tellurium
+authors:
+- Biosimulant Team
+- Mareike Simon
+- Uwe Benary
+- Katharina Baum
+- Alexander Schramm
+- Jana Wolf
+upstream:
+  id: biomodels_ebi:MODEL2502190001
+  source_db: biomodels_ebi
+  source_id: MODEL2502190001
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL2502190001
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2502190001?filename=Neuroblastoma_lowMYCN.xml
+  license: CC0
+biosim:
+  entrypoint: src.simon2025_neuroblastoma_energy_metabolism_model2502190001_model:Simon2025NeuroblastomaEnergyMetabolismModel2502190001Model
+  init_kwargs:
+    model_path: data/MODEL2502190001.xml
+    integration_step: 0.1
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_glucose
+    maps_to: glc
+    default: 2.72988078351158
+    units: native SBML value
+    description: Initial condition for glucose. Maps to bundled SBML symbol `glc`. Applied
+      before the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_adp
+    maps_to: adp
+    default: 4.79944686874058
+    units: native SBML value
+    description: Initial condition for adp. Maps to bundled SBML symbol `adp`. Applied before
+      the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_atp
+    maps_to: atp
+    default: 8.14466765495666
+    units: native SBML value
+    description: Initial condition for atp. Maps to bundled SBML symbol `atp`. Applied before
+      the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_metabolic_pathway_state_4
+    maps_to: glc6p
+    default: 0.601679350245062
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 4. Maps to bundled SBML symbol
+      `glc6p`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_fructose_6_phosphate
+    maps_to: fru6p
+    default: 0.0499563769212773
+    units: native SBML value
+    description: Initial condition for fructose 6 phosphate. Maps to bundled SBML symbol `fru6p`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: glucose
+    maps_to: glc
+    label: Glucose
+    description: Glucose. Maps to SBML symbol `glc`.
+  - name: adp
+    maps_to: adp
+    label: ADP
+    description: ADP. Maps to SBML symbol `adp`.
+  - name: atp
+    maps_to: atp
+    label: ATP
+    description: ATP. Maps to SBML symbol `atp`.
+  - name: metabolic_pathway_state_4
+    maps_to: glc6p
+    label: Metabolic Pathway state 4
+    description: Metabolic Pathway state 4; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `glc6p`. Exact metabolite identity is not encoded
+      in the bundled SBML metadata.
+  - name: fructose_6_phosphate
+    maps_to: fru6p
+    label: Fructose 6 Phosphate
+    description: Fructose 6 Phosphate. Maps to SBML symbol `fru6p`.
+  - name: observable_values
+    description: Latest user-facing observable values from the SBML run.
+  - name: run_summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: observable_labels
+    description: Mapping from user-facing observable ports to display labels.
+parameters:
+- name: integration_step
+  value: 0.1
+  min: 0.0
+  units: model_time
+  description: Internal sampling step for Tellurium output collection.

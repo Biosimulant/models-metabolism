@@ -1,0 +1,108 @@
+schema_version: '2.0'
+title: Curto1998 - purine metabolism
+description: Curto1998 - purine metabolism This is a purine metabolism model that is geared
+  toward studies of gout. It can be used to explore metabolic flux dynamics and compare pathway
+  behavior across conditions.
+standard: sbml
+tags:
+- biomodels_ebi
+- faithful
+- metabolism
+- ode
+- sbml
+- tellurium
+authors:
+- Biosimulant Team
+- R Curto
+- E O Voit
+- A Sorribas
+- M Cascante
+upstream:
+  id: biomodels_ebi:BIOMD0000000015
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000015
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000015
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000015?filename=BIOMD0000000015_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.curto1998_purine_metabolism_biomd0000000015_model:Curto1998PurineMetabolismBiomd0000000015Model
+  init_kwargs:
+    model_path: data/BIOMD0000000015.xml
+    integration_step: 0.1
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_phosphoribosylpyrophosphate
+    maps_to: PRPP
+    default: 5.01742
+    units: native SBML value
+    description: Initial condition for phosphoribosylpyrophosphate. Maps to bundled SBML symbol
+      `PRPP`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_inosine_monophosphate
+    maps_to: IMP
+    default: 98.2634
+    units: native SBML value
+    description: Initial condition for inosine monophosphate. Maps to bundled SBML symbol
+      `IMP`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_adenylosuccinate
+    maps_to: SAMP
+    default: 0.198189
+    units: native SBML value
+    description: Initial condition for adenylosuccinate. Maps to bundled SBML symbol `SAMP`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_atp
+    maps_to: ATP
+    default: 2475.35
+    units: native SBML value
+    description: Initial condition for atp. Maps to bundled SBML symbol `ATP`. Applied before
+      the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_s_adenosyl_l_methionine
+    maps_to: SAM
+    default: 3.99187
+    units: native SBML value
+    description: Initial condition for s adenosyl l methionine. Maps to bundled SBML symbol
+      `SAM`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: phosphoribosylpyrophosphate
+    maps_to: PRPP
+    label: Phosphoribosylpyrophosphate
+    description: Phosphoribosylpyrophosphate. Maps to SBML symbol `PRPP`.
+  - name: inosine_monophosphate
+    maps_to: IMP
+    label: Inosine Monophosphate
+    description: Inosine Monophosphate. Maps to SBML symbol `IMP`.
+  - name: adenylosuccinate
+    maps_to: SAMP
+    label: Adenylosuccinate
+    description: Adenylosuccinate. Maps to SBML symbol `SAMP`.
+  - name: atp
+    maps_to: ATP
+    label: ATP
+    description: ATP. Maps to SBML symbol `ATP`.
+  - name: s_adenosyl_l_methionine
+    maps_to: SAM
+    label: S Adenosyl L Methionine
+    description: S Adenosyl L Methionine. Maps to SBML symbol `SAM`.
+  - name: observable_values
+    description: Latest user-facing observable values from the SBML run.
+  - name: run_summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: observable_labels
+    description: Mapping from user-facing observable ports to display labels.
+parameters:
+- name: integration_step
+  value: 0.1
+  min: 0.0
+  units: model_time
+  description: Internal sampling step for Tellurium output collection.

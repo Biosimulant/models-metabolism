@@ -1,0 +1,92 @@
+schema_version: '2.0'
+title: Curto1998 - purine metabolism Visualisation
+description: Dedicated presentation model for Curto1998 - purine metabolism.
+standard: other
+tags:
+- metabolism
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  entrypoint: src.metabolism_visualisation:MetabolismVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Curto1998 - purine metabolism Lab
+    question: Which purine metabolism observables show the strongest activity in Curto1998
+      - purine metabolism?
+    answer_focus: purine metabolism
+    sources:
+    - alias: metabolism_sbml_curto1998_purine_metabolism_biomd0000000015_model
+      title: Curto1998 - purine metabolism
+      scope: purine metabolism
+      label_caveat: Values are native SBML quantities. Conservative pathway-state labels are
+        used where the bundled SBML does not encode exact metabolite identities.
+      observables:
+      - id: phosphoribosylpyrophosphate
+        label: Phosphoribosylpyrophosphate
+        maps_to: PRPP
+      - id: inosine_monophosphate
+        label: Inosine Monophosphate
+        maps_to: IMP
+      - id: adenylosuccinate
+        label: Adenylosuccinate
+        maps_to: SAMP
+      - id: atp
+        label: ATP
+        maps_to: ATP
+      - id: s_adenosyl_l_methionine
+        label: S Adenosyl L Methionine
+        maps_to: SAM
+      - id: purine_metabolism_state_6
+        label: Purine Metabolism state 6
+        maps_to: Ade
+      - id: xanthosine_monophosphate
+        label: Xanthosine Monophosphate
+        maps_to: XMP
+      - id: purine_metabolism_state_8
+        label: Purine Metabolism state 8
+        maps_to: GTP
+      - id: deoxy_atp
+        label: Deoxy ATP
+        maps_to: dATP
+      - id: purine_metabolism_state_10
+        label: Purine Metabolism state 10
+        maps_to: dGTP
+      - id: rna
+        label: RNA
+        maps_to: RNA
+      - id: dna
+        label: DNA
+        maps_to: DNA
+      - id: purine_metabolism_state_13
+        label: Purine Metabolism state 13
+        maps_to: HX
+      - id: purine_metabolism_state_14
+        label: Purine Metabolism state 14
+        maps_to: Xa
+      - id: purine_metabolism_state_15
+        label: Purine Metabolism state 15
+        maps_to: Gua
+      - id: purine_metabolism_state_16
+        label: Purine Metabolism state 16
+        maps_to: UA
+  communication_step: 1.0
+runtime:
+  dependencies:
+    packages:
+    - PyYAML==6.0.2
+parameters:
+- name: integration_step
+  value: 1.0
+  min: 0.0
+  units: model_time
+  description: Sampling step for the visualisation model.
+io:
+  inputs:
+  - name: metabolism_sbml_curto1998_purine_metabolism_biomd0000000015_model_observable_values
+    description: Latest user-facing observable values from the core metabolism model.
+  - name: metabolism_sbml_curto1998_purine_metabolism_biomd0000000015_model_run_summary
+    description: Run summary from the core metabolism model.
+  - name: metabolism_sbml_curto1998_purine_metabolism_biomd0000000015_model_observable_labels
+    description: Display labels for user-facing observables.
+  outputs: []

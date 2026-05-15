@@ -1,0 +1,110 @@
+schema_version: '2.0'
+title: Smallbone2013 - Glycolysis in S.cerevisiae - Iteration 12
+description: 'Smallbone2013 - Glycolysis in S.cerevisiae - Iteration 12 This model is described
+  in the article: A model of yeast glycolysis based on a consistent kinetic characterization
+  of all its enzymes Kieran S. It can be used to explore metabolic flux dynamics and compare
+  pathway behavior across conditions.'
+standard: sbml
+tags:
+- biomodels_ebi
+- faithful
+- metabolism
+- ode
+- sbml
+- tellurium
+authors:
+- Biosimulant Team
+- Kieran Smallbone
+- Hanan L Messiha
+- Kathleen M Carroll
+- Catherine L Winder
+- Naglis Malys
+upstream:
+  id: biomodels_ebi:MODEL1303260012
+  source_db: biomodels_ebi
+  source_id: MODEL1303260012
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1303260012
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1303260012?filename=MODEL1303260012_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.smallbone2013_glycolysis_in_s_cerevisiae_iterati_model1303260012_model:Smallbone2013GlycolysisInSCerevisiaeIteratiModel1303260012Model
+  init_kwargs:
+    model_path: data/MODEL1303260012.xml
+    integration_step: 0.1
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_adp
+    maps_to: ADP
+    default: 1.29
+    units: native SBML value
+    description: Initial condition for adp. Maps to bundled SBML symbol `ADP`. Applied before
+      the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_atp
+    maps_to: ATP
+    default: 4.29
+    units: native SBML value
+    description: Initial condition for atp. Maps to bundled SBML symbol `ATP`. Applied before
+      the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_acetaldehyde
+    maps_to: AcAld
+    default: 0.178140579850657
+    units: native SBML value
+    description: Initial condition for acetaldehyde. Maps to bundled SBML symbol `AcAld`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_observable_1_3_bisphosphoglycerate
+    maps_to: BPG
+    default: 0.000736873499865602
+    units: native SBML value
+    description: Initial condition for observable 1 3 bisphosphoglycerate. Maps to bundled
+      SBML symbol `BPG`. Applied before the Tellurium simulation starts; this does not change
+      kinetic parameters or equations. Default from bundled SBML initial value.
+  - name: initial_dihydroxyacetone_phosphate
+    maps_to: DHAP
+    default: 0.290344213186674
+    units: native SBML value
+    description: Initial condition for dihydroxyacetone phosphate. Maps to bundled SBML symbol
+      `DHAP`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: adp
+    maps_to: ADP
+    label: ADP
+    description: ADP. Maps to SBML symbol `ADP`.
+  - name: atp
+    maps_to: ATP
+    label: ATP
+    description: ATP. Maps to SBML symbol `ATP`.
+  - name: acetaldehyde
+    maps_to: AcAld
+    label: Acetaldehyde
+    description: Acetaldehyde. Maps to SBML symbol `AcAld`.
+  - name: observable_1_3_bisphosphoglycerate
+    maps_to: BPG
+    label: 1 3 Bisphosphoglycerate
+    description: 1 3 Bisphosphoglycerate. Maps to SBML symbol `BPG`.
+  - name: dihydroxyacetone_phosphate
+    maps_to: DHAP
+    label: Dihydroxyacetone Phosphate
+    description: Dihydroxyacetone Phosphate. Maps to SBML symbol `DHAP`.
+  - name: observable_values
+    description: Latest user-facing observable values from the SBML run.
+  - name: run_summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: observable_labels
+    description: Mapping from user-facing observable ports to display labels.
+parameters:
+- name: integration_step
+  value: 0.1
+  min: 0.0
+  units: model_time
+  description: Internal sampling step for Tellurium output collection.

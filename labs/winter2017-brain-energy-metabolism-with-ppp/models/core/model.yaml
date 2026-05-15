@@ -1,0 +1,112 @@
+schema_version: '2.0'
+title: Winter2017 - Brain Energy Metabolism with PPP
+description: 'Winter2017 - Brain Energy Metabolism with PPP This model is described in the
+  article: Mathematical analysis of the influence of brain metabolism on the BOLD signal in
+  Alzheimer''s disease Felix Winter1. It can be used to explore metabolic flux dynamics and
+  compare pathway behavior across conditions.'
+standard: sbml
+tags:
+- biomodels_ebi
+- faithful
+- metabolism
+- ode
+- sbml
+- tellurium
+authors:
+- Biosimulant Team
+- Felix Winter
+- Catrin Bludszuweit-Philipp
+- Olaf Wolkenhauer
+upstream:
+  id: biomodels_ebi:BIOMD0000000627
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000627
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000627
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000627?filename=BIOMD0000000627_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.winter2017_brain_energy_metabolism_with_ppp_biomd0000000627_model:Winter2017BrainEnergyMetabolismWithPppBiomd0000000627Model
+  init_kwargs:
+    model_path: data/BIOMD0000000627.xml
+    integration_step: 0.1
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_brain_energy_state_1
+    maps_to: species_23
+    default: 0.040323291746644
+    units: native SBML value
+    description: Initial condition for brain energy state 1. Maps to bundled SBML symbol `species_23`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_co2
+    maps_to: species_24
+    default: 0.0121467082533562
+    units: native SBML value
+    description: Initial condition for co2. Maps to bundled SBML symbol `species_24`. Applied
+      before the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_glucose
+    maps_to: species_25
+    default: 0.0253903826849856
+    units: native SBML value
+    description: Initial condition for glucose. Maps to bundled SBML symbol `species_25`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_lactate
+    maps_to: species_26
+    default: 0.00188912996259375
+    units: native SBML value
+    description: Initial condition for lactate. Maps to bundled SBML symbol `species_26`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_brain_energy_state_5
+    maps_to: dHb
+    default: 0.000262913971209081
+    units: native SBML value
+    description: Initial condition for brain energy state 5. Maps to bundled SBML symbol `dHb`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: brain_energy_state_1
+    maps_to: species_23
+    label: Brain Energy state 1
+    description: Brain Energy state 1; conservative display label for an abstract SBML state
+      variable. Maps to SBML symbol `species_23`. Exact metabolite identity is not encoded
+      in the bundled SBML metadata.
+  - name: co2
+    maps_to: species_24
+    label: CO2
+    description: CO2. Maps to SBML symbol `species_24`.
+  - name: glucose
+    maps_to: species_25
+    label: glucose
+    description: glucose. Maps to SBML symbol `species_25`.
+  - name: lactate
+    maps_to: species_26
+    label: lactate
+    description: lactate. Maps to SBML symbol `species_26`.
+  - name: brain_energy_state_5
+    maps_to: dHb
+    label: Brain Energy state 5
+    description: Brain Energy state 5; conservative display label for an abstract SBML state
+      variable. Maps to SBML symbol `dHb`. Exact metabolite identity is not encoded in the
+      bundled SBML metadata.
+  - name: observable_values
+    description: Latest user-facing observable values from the SBML run.
+  - name: run_summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: observable_labels
+    description: Mapping from user-facing observable ports to display labels.
+parameters:
+- name: integration_step
+  value: 0.1
+  min: 0.0
+  units: model_time
+  description: Internal sampling step for Tellurium output collection.

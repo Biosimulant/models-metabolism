@@ -1,0 +1,111 @@
+schema_version: '2.0'
+title: Curien2009_Aspartate_Metabolism
+description: 'This a model described in the article: Understanding the regulation of aspartate
+  metabolism using a model based on measured kinetic parameters. Curien G, Bastien O, Robert-Genthon
+  M, Cornish-Bowden A,.'
+standard: sbml
+tags:
+- biomodels_ebi
+- faithful
+- metabolism
+- ode
+- sbml
+- tellurium
+authors:
+- Biosimulant Team
+- Gilles Curien
+- Olivier Bastien
+- "Myl\xE8ne Robert-Genthon"
+- Athel Cornish-Bowden
+- "Mar\xEDa Luz C\xE1rdenas"
+upstream:
+  id: biomodels_ebi:BIOMD0000000212
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000212
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000212
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000212?filename=BIOMD0000000212_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.curien2009_aspartate_metabolism_biomd0000000212_model:Curien2009AspartateMetabolismBiomd0000000212Model
+  init_kwargs:
+    model_path: data/BIOMD0000000212.xml
+    integration_step: 0.1
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_metabolic_pathway_state_1
+    maps_to: Lys
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 1. Maps to bundled SBML symbol
+      `Lys`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_aspartyl_p
+    maps_to: AspP
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for aspartyl p. Maps to bundled SBML symbol `AspP`. Applied
+      before the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_threonine
+    maps_to: Thr
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for threonine. Maps to bundled SBML symbol `Thr`. Applied
+      before the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_aspartate_semialdehyde
+    maps_to: ASA
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for aspartate semialdehyde. Maps to bundled SBML symbol
+      `ASA`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_homoserine
+    maps_to: Hser
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for homoserine. Maps to bundled SBML symbol `Hser`. Applied
+      before the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  outputs:
+  - name: metabolic_pathway_state_1
+    maps_to: Lys
+    label: Metabolic Pathway state 1
+    description: Metabolic Pathway state 1; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `Lys`. Exact metabolite identity is not encoded
+      in the bundled SBML metadata.
+  - name: aspartyl_p
+    maps_to: AspP
+    label: Aspartyl P
+    description: Aspartyl P. Maps to SBML symbol `AspP`.
+  - name: threonine
+    maps_to: Thr
+    label: Threonine
+    description: Threonine. Maps to SBML symbol `Thr`.
+  - name: aspartate_semialdehyde
+    maps_to: ASA
+    label: Aspartate Semialdehyde
+    description: Aspartate Semialdehyde. Maps to SBML symbol `ASA`.
+  - name: homoserine
+    maps_to: Hser
+    label: Homoserine
+    description: Homoserine. Maps to SBML symbol `Hser`.
+  - name: observable_values
+    description: Latest user-facing observable values from the SBML run.
+  - name: run_summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: observable_labels
+    description: Mapping from user-facing observable ports to display labels.
+parameters:
+- name: integration_step
+  value: 0.1
+  min: 0.0
+  units: model_time
+  description: Internal sampling step for Tellurium output collection.

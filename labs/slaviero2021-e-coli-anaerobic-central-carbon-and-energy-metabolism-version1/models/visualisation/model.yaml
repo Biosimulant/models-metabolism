@@ -1,0 +1,127 @@
+schema_version: '2.0'
+title: Slaviero2021 - E. coli anaerobic central carbon and energy metabolism_Version1 Visualisation
+description: Dedicated presentation model for Slaviero2021 - E. coli anaerobic central carbon
+  and energy metabolism_Version1.
+standard: other
+tags:
+- metabolism
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  entrypoint: src.metabolism_visualisation:MetabolismVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Slaviero2021 - E. coli anaerobic central carbon and energy metabolism_Version1
+      Lab
+    question: Which central carbon and glycolytic metabolism observables show the strongest
+      activity in Slaviero2021 - E. coli anaerobic central carbon and energy metabolism_Version1?
+    answer_focus: central carbon and glycolytic metabolism
+    sources:
+    - alias: metabolism_sbml_slaviero2021_e_coli_anaerobic_central_carbon_and_model2202020001_model
+      title: Slaviero2021 - E. coli anaerobic central carbon and energy metabolism_Version1
+      scope: central carbon and glycolytic metabolism
+      label_caveat: Values are native SBML quantities. Conservative pathway-state labels are
+        used where the bundled SBML does not encode exact metabolite identities.
+      observables:
+      - id: glucose_6_phosphate
+        label: Glucose 6 Phosphate
+        maps_to: G6P
+      - id: fructose_bisphosphate
+        label: Fructose Bisphosphate
+        maps_to: FBP
+      - id: glyceraldehyde_3_phosphate
+        label: Glyceraldehyde 3 Phosphate
+        maps_to: GAP
+      - id: phosphoenolpyruvate
+        label: Phosphoenolpyruvate
+        maps_to: PEP
+      - id: pyruvate
+        label: Pyruvate
+        maps_to: PYR
+      - id: atp
+        label: ATP
+        maps_to: ATP
+      - id: adp
+        label: ADP
+        maps_to: ADP
+      - id: glycolysis_state_8
+        label: Glycolysis state 8
+        maps_to: Biomass
+      - id: fructose_6_phosphate
+        label: Fructose 6 Phosphate
+        maps_to: F6P
+      - id: glycolysis_state_10
+        label: Glycolysis state 10
+        maps_to: AcCoA
+      - id: glycolysis_state_11
+        label: Glycolysis state 11
+        maps_to: FOR
+      - id: lactate
+        label: Lactate
+        maps_to: LAC
+      - id: glycolysis_state_13
+        label: Glycolysis state 13
+        maps_to: OAA
+      - id: glycolysis_state_14
+        label: Glycolysis state 14
+        maps_to: AKG
+      - id: glycolysis_state_15
+        label: Glycolysis state 15
+        maps_to: SUCin
+      - id: glycolysis_state_16
+        label: Glycolysis state 16
+        maps_to: SUC
+      - id: nadh
+        label: NADH
+        maps_to: NADH
+      - id: ace
+        label: ACE
+        maps_to: ACE
+      - id: glycolysis_state_19
+        label: Glycolysis state 19
+        maps_to: ETH
+      - id: glycolysis_state_20
+        label: Glycolysis state 20
+        maps_to: D3PG
+      - id: glycolysis_state_21
+        label: Glycolysis state 21
+        maps_to: BPG
+      - id: intracellular_lactate
+        label: Intracellular Lactate
+        maps_to: LACin
+      - id: glycolysis_state_23
+        label: Glycolysis state 23
+        maps_to: FORin
+      - id: glycolysis_state_24
+        label: Glycolysis state 24
+        maps_to: ETHin
+      - id: intracellular_ace
+        label: Intracellular ACE
+        maps_to: ACEin
+      - id: glycolysis_state_26
+        label: Glycolysis state 26
+        maps_to: FUM
+      - id: glycolysis_state_27
+        label: Glycolysis state 27
+        maps_to: ACTLD
+  communication_step: 1.0
+runtime:
+  dependencies:
+    packages:
+    - PyYAML==6.0.2
+parameters:
+- name: integration_step
+  value: 1.0
+  min: 0.0
+  units: model_time
+  description: Sampling step for the visualisation model.
+io:
+  inputs:
+  - name: metabolism_sbml_slaviero2021_e_coli_anaerobic_central_carbon_and_model2202020001_model_observable_values
+    description: Latest user-facing observable values from the core metabolism model.
+  - name: metabolism_sbml_slaviero2021_e_coli_anaerobic_central_carbon_and_model2202020001_model_run_summary
+    description: Run summary from the core metabolism model.
+  - name: metabolism_sbml_slaviero2021_e_coli_anaerobic_central_carbon_and_model2202020001_model_observable_labels
+    description: Display labels for user-facing observables.
+  outputs: []

@@ -1,0 +1,170 @@
+schema_version: '2.0'
+title: McDougal2017 - Metabolism in ischemic cardiomyocytes Visualisation
+description: Dedicated presentation model for McDougal2017 - Metabolism in ischemic cardiomyocytes.
+standard: other
+tags:
+- metabolism
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  entrypoint: src.metabolism_visualisation:MetabolismVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: McDougal2017 - Metabolism in ischemic cardiomyocytes Lab
+    question: Which metabolic pathway dynamics observables show the strongest activity in
+      McDougal2017 - Metabolism in ischemic cardiomyocytes?
+    answer_focus: metabolic pathway dynamics
+    sources:
+    - alias: metabolism_sbml_mcdougal2017_metabolism_in_ischemic_cardiomyocyt_biomd0000000961_model
+      title: McDougal2017 - Metabolism in ischemic cardiomyocytes
+      scope: metabolic pathway dynamics
+      label_caveat: Values are native SBML quantities. Conservative pathway-state labels are
+        used where the bundled SBML does not encode exact metabolite identities.
+      observables:
+      - id: h_super_plus_endsuper_sub_i_endsub
+        label: H Super Plus Endsuper Sub I Endsub
+        maps_to: s1
+      - id: h_super_plus_endsuper_sub_o_endsub
+        label: H Super Plus Endsuper Sub O Endsub
+        maps_to: s2
+      - id: oh_super_minus_endsuper_sub_i_endsub
+        label: Oh Super Minus Endsuper Sub I Endsub
+        maps_to: s7
+      - id: oh_super_minus_endsuper_sub_o_endsub
+        label: Oh Super Minus Endsuper Sub O Endsub
+        maps_to: s8
+      - id: na_super_plus_endsuper_sub_i_endsub
+        label: Na Super Plus Endsuper Sub I Endsub
+        maps_to: s24
+      - id: na_super_plus_endsuper_sub_o_endsub
+        label: Na Super Plus Endsuper Sub O Endsub
+        maps_to: s25
+      - id: hco_sub_3_endsub_super_minus_endsuper_sub_i_endsub
+        label: Hco Sub 3 Endsub Super Minus Endsuper Sub I Endsub
+        maps_to: s26
+      - id: hco_sub_3_endsub_super_minus_endsuper_sub_o_endsub
+        label: Hco Sub 3 Endsub Super Minus Endsuper Sub O Endsub
+        maps_to: s27
+      - id: cl_super_minus_endsuper_sub_i_endsub
+        label: Cl Super Minus Endsuper Sub I Endsub
+        maps_to: s28
+      - id: cl_super_minus_endsuper_sub_o_endsub
+        label: Cl Super Minus Endsuper Sub O Endsub
+        maps_to: s29
+      - id: atp
+        label: ATP
+        maps_to: s30
+      - id: adp
+        label: ADP
+        maps_to: s31
+      - id: p_sub_i_endsub
+        label: P Sub I Endsub
+        maps_to: s32
+      - id: metabolic_pathway_state_14
+        label: Metabolic Pathway state 14
+        maps_to: s33
+      - id: metabolic_pathway_state_15
+        label: Metabolic Pathway state 15
+        maps_to: s34
+      - id: amp
+        label: AMP
+        maps_to: s35
+      - id: metabolic_pathway_state_17
+        label: Metabolic Pathway state 17
+        maps_to: s36
+      - id: l_super_minus_endsuper_sub_i_endsub
+        label: L Super Minus Endsuper Sub I Endsub
+        maps_to: s38
+      - id: lactic_acid
+        label: Lactic Acid
+        maps_to: s52
+      - id: glucose_6_phosphate
+        label: glucose 6 phosphate
+        maps_to: s57
+      - id: fructose_6_phosphate
+        label: fructose 6 phosphate
+        maps_to: s58
+      - id: glyceraldehyde_3_phosphate
+        label: glyceraldehyde 3 phosphate
+        maps_to: s59
+      - id: phosphoenolpyruvate
+        label: phosphoenolpyruvate
+        maps_to: s60
+      - id: co_sub_2_endsub
+        label: Co Sub 2 Endsub
+        maps_to: s64
+      - id: f16bp
+        label: F16bp
+        maps_to: s66
+      - id: metabolic_pathway_state_26
+        label: Metabolic Pathway state 26
+        maps_to: s67
+      - id: observable_13bpg
+        label: 13bpg
+        maps_to: s68
+      - id: observable_3pg
+        label: 3pg
+        maps_to: s69
+      - id: observable_2pg
+        label: 2pg
+        maps_to: s70
+      - id: h_sub_2_endsub_o
+        label: H Sub 2 Endsub O
+        maps_to: s71
+      - id: g1p
+        label: G1p
+        maps_to: s72
+      - id: metabolic_pathway_state_32
+        label: Metabolic Pathway state 32
+        maps_to: s73
+      - id: metabolic_pathway_state_33
+        label: Metabolic Pathway state 33
+        maps_to: s74
+      - id: metabolic_pathway_state_34
+        label: Metabolic Pathway state 34
+        maps_to: s75
+      - id: observable_6pgn
+        label: 6pgn
+        maps_to: s76
+      - id: glycerol_3_p
+        label: Glycerol 3 P
+        maps_to: s77
+      - id: pyruvate
+        label: pyruvate
+        maps_to: s61
+      - id: g16bp
+        label: G16bp
+        maps_to: s79
+      - id: o_sub_2_e_endsub
+        label: O Sub 2 E Endsub
+        maps_to: s82
+      - id: metabolic_pathway_state_40
+        label: Metabolic Pathway state 40
+        maps_to: s83
+      - id: metabolic_pathway_state_41
+        label: Metabolic Pathway state 41
+        maps_to: s84
+      - id: o_sub_2_endsub
+        label: O Sub 2 Endsub
+        maps_to: s65
+  communication_step: 1.0
+runtime:
+  dependencies:
+    packages:
+    - PyYAML==6.0.2
+parameters:
+- name: integration_step
+  value: 1.0
+  min: 0.0
+  units: model_time
+  description: Sampling step for the visualisation model.
+io:
+  inputs:
+  - name: metabolism_sbml_mcdougal2017_metabolism_in_ischemic_cardiomyocyt_biomd0000000961_model_observable_values
+    description: Latest user-facing observable values from the core metabolism model.
+  - name: metabolism_sbml_mcdougal2017_metabolism_in_ischemic_cardiomyocyt_biomd0000000961_model_run_summary
+    description: Run summary from the core metabolism model.
+  - name: metabolism_sbml_mcdougal2017_metabolism_in_ischemic_cardiomyocyt_biomd0000000961_model_observable_labels
+    description: Display labels for user-facing observables.
+  outputs: []

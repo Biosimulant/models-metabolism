@@ -1,0 +1,60 @@
+schema_version: '2.0'
+title: Saa2016 - Mammalian methionine cycle - approximate bayesian computation Visualisation
+description: Dedicated presentation model for Saa2016 - Mammalian methionine cycle - approximate
+  bayesian computation.
+standard: other
+tags:
+- metabolism
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  entrypoint: src.metabolism_visualisation:MetabolismVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Saa2016 - Mammalian methionine cycle - approximate bayesian computation Lab
+    question: Which methionine cycle metabolism observables show the strongest activity in
+      Saa2016 - Mammalian methionine cycle - approximate bayesian computation?
+    answer_focus: methionine cycle metabolism
+    sources:
+    - alias: metabolism_sbml_saa2016_mammalian_methionine_cycle_approximate_b_model1603150000_model
+      title: Saa2016 - Mammalian methionine cycle - approximate bayesian computation
+      scope: methionine cycle metabolism
+      label_caveat: Values are native SBML quantities. Conservative pathway-state labels are
+        used where the bundled SBML does not encode exact metabolite identities.
+      observables:
+      - id: methionine_cycle_state_1
+        label: Methionine Cycle state 1
+        maps_to: MET
+      - id: methionine_cycle_state_2
+        label: Methionine Cycle state 2
+        maps_to: ADOMET
+      - id: methionine_cycle_state_3
+        label: Methionine Cycle state 3
+        maps_to: ADOHCY
+      - id: methionine_cycle_state_4
+        label: Methionine Cycle state 4
+        maps_to: MTHF
+      - id: methionine_cycle_state_5
+        label: Methionine Cycle state 5
+        maps_to: HCY
+  communication_step: 1.0
+runtime:
+  dependencies:
+    packages:
+    - PyYAML==6.0.2
+parameters:
+- name: integration_step
+  value: 1.0
+  min: 0.0
+  units: model_time
+  description: Sampling step for the visualisation model.
+io:
+  inputs:
+  - name: metabolism_sbml_saa2016_mammalian_methionine_cycle_approximate_b_model1603150000_model_observable_values
+    description: Latest user-facing observable values from the core metabolism model.
+  - name: metabolism_sbml_saa2016_mammalian_methionine_cycle_approximate_b_model1603150000_model_run_summary
+    description: Run summary from the core metabolism model.
+  - name: metabolism_sbml_saa2016_mammalian_methionine_cycle_approximate_b_model1603150000_model_observable_labels
+    description: Display labels for user-facing observables.
+  outputs: []

@@ -1,0 +1,82 @@
+schema_version: '2.0'
+title: Tiago2010_FeMetabolism_FeAdequate Lab
+description: 'This a model from the article: Systems analysis of iron metabolism: the network
+  of iron pools and fluxes Tiago JS Lopes, Tatyana Luganskaja, Maja Vujic-Spasic, Matthias
+  W Hentze, Martina U Muckenthale. It can be used to explore metabolic flux dynamics and compare
+  pathway behavior across conditions.'
+io:
+  inputs:
+  - name: initial_iron_in_plasma
+    maps_to: metabolism_sbml_tiago2010_femetabolism_feadequate_biomd0000000260_model.initial_iron_in_plasma
+    default: 100.0
+    units: native SBML value
+    description: Initial condition for iron in plasma. Maps to bundled SBML symbol `s1`. Applied
+      before the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_iron_in_bone_marrow
+    maps_to: metabolism_sbml_tiago2010_femetabolism_feadequate_biomd0000000260_model.initial_iron_in_bone_marrow
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for iron in bone marrow. Maps to bundled SBML symbol `s2`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_iron_metabolism_state_3
+    maps_to: metabolism_sbml_tiago2010_femetabolism_feadequate_biomd0000000260_model.initial_iron_metabolism_state_3
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for iron metabolism state 3. Maps to bundled SBML symbol
+      `s3`. Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_iron_in_spleen
+    maps_to: metabolism_sbml_tiago2010_femetabolism_feadequate_biomd0000000260_model.initial_iron_in_spleen
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for iron in spleen. Maps to bundled SBML symbol `s4`. Applied
+      before the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_iron_in_liver
+    maps_to: metabolism_sbml_tiago2010_femetabolism_feadequate_biomd0000000260_model.initial_iron_in_liver
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for iron in liver. Maps to bundled SBML symbol `s5`. Applied
+      before the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  outputs:
+  - name: iron_in_plasma
+    maps_to: metabolism_sbml_tiago2010_femetabolism_feadequate_biomd0000000260_model.iron_in_plasma
+  - name: iron_in_bone_marrow
+    maps_to: metabolism_sbml_tiago2010_femetabolism_feadequate_biomd0000000260_model.iron_in_bone_marrow
+  - name: iron_metabolism_state_3
+    maps_to: metabolism_sbml_tiago2010_femetabolism_feadequate_biomd0000000260_model.iron_metabolism_state_3
+  - name: iron_in_spleen
+    maps_to: metabolism_sbml_tiago2010_femetabolism_feadequate_biomd0000000260_model.iron_in_spleen
+  - name: iron_in_liver
+    maps_to: metabolism_sbml_tiago2010_femetabolism_feadequate_biomd0000000260_model.iron_in_liver
+  - name: observable_values
+    maps_to: metabolism_sbml_tiago2010_femetabolism_feadequate_biomd0000000260_model.observable_values
+  - name: run_summary
+    maps_to: metabolism_sbml_tiago2010_femetabolism_feadequate_biomd0000000260_model.run_summary
+  - name: observable_labels
+    maps_to: metabolism_sbml_tiago2010_femetabolism_feadequate_biomd0000000260_model.observable_labels
+models:
+- alias: metabolism_sbml_tiago2010_femetabolism_feadequate_biomd0000000260_model
+  path: models/core
+  parameters:
+    model_path: data/BIOMD0000000260.xml
+    integration_step: 0.1
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: metabolism_sbml_tiago2010_femetabolism_feadequate_biomd0000000260_model.observable_values
+  to:
+  - visualisation.metabolism_sbml_tiago2010_femetabolism_feadequate_biomd0000000260_model_observable_values
+- from: metabolism_sbml_tiago2010_femetabolism_feadequate_biomd0000000260_model.run_summary
+  to:
+  - visualisation.metabolism_sbml_tiago2010_femetabolism_feadequate_biomd0000000260_model_run_summary
+- from: metabolism_sbml_tiago2010_femetabolism_feadequate_biomd0000000260_model.observable_labels
+  to:
+  - visualisation.metabolism_sbml_tiago2010_femetabolism_feadequate_biomd0000000260_model_observable_labels
+runtime:
+  duration: 10.0
+  communication_step: 1.0
+  initial_inputs: {}

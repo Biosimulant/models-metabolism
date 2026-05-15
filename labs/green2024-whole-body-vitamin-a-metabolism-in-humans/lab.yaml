@@ -1,0 +1,82 @@
+schema_version: '2.0'
+title: Green2024 - whole-body vitamin A metabolism in humans Lab
+description: Metabolism Green2024Whole Body Vitamin AMetabolism In Hum Model2411290001Model
+  models core biological dynamics as a OTHER simulation curated from biomodels_ebi (biomodels_ebi:MODEL2411290001),
+  focused on metabo. When you run it, you can track state over time and compare response patterns
+  across parameter settings.
+io:
+  inputs:
+  - name: initial_vitamin_a_metabolism_state_1
+    maps_to: metabolism_sbml_green2024_whole_body_vitamin_a_metabolism_in_hum_model2411290001_model.initial_vitamin_a_metabolism_state_1
+    default: 0.04343260815
+    units: native SBML value
+    description: Initial condition for vitamin a metabolism state 1. Maps to bundled SBML
+      symbol `M_1`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_vitamin_a_metabolism_state_2
+    maps_to: metabolism_sbml_green2024_whole_body_vitamin_a_metabolism_in_hum_model2411290001_model.initial_vitamin_a_metabolism_state_2
+    default: 0.04300258233
+    units: native SBML value
+    description: Initial condition for vitamin a metabolism state 2. Maps to bundled SBML
+      symbol `M_2`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_vitamin_a_metabolism_state_3
+    maps_to: metabolism_sbml_green2024_whole_body_vitamin_a_metabolism_in_hum_model2411290001_model.initial_vitamin_a_metabolism_state_3
+    default: 1.36312171
+    units: native SBML value
+    description: Initial condition for vitamin a metabolism state 3. Maps to bundled SBML
+      symbol `M_4`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_vitamin_a_metabolism_state_4
+    maps_to: metabolism_sbml_green2024_whole_body_vitamin_a_metabolism_in_hum_model2411290001_model.initial_vitamin_a_metabolism_state_4
+    default: 3.361993214
+    units: native SBML value
+    description: Initial condition for vitamin a metabolism state 4. Maps to bundled SBML
+      symbol `M_5`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_vitamin_a_metabolism_state_5
+    maps_to: metabolism_sbml_green2024_whole_body_vitamin_a_metabolism_in_hum_model2411290001_model.initial_vitamin_a_metabolism_state_5
+    default: 920.4583274
+    units: native SBML value
+    description: Initial condition for vitamin a metabolism state 5. Maps to bundled SBML
+      symbol `M_6`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: vitamin_a_metabolism_state_1
+    maps_to: metabolism_sbml_green2024_whole_body_vitamin_a_metabolism_in_hum_model2411290001_model.vitamin_a_metabolism_state_1
+  - name: vitamin_a_metabolism_state_2
+    maps_to: metabolism_sbml_green2024_whole_body_vitamin_a_metabolism_in_hum_model2411290001_model.vitamin_a_metabolism_state_2
+  - name: vitamin_a_metabolism_state_3
+    maps_to: metabolism_sbml_green2024_whole_body_vitamin_a_metabolism_in_hum_model2411290001_model.vitamin_a_metabolism_state_3
+  - name: vitamin_a_metabolism_state_4
+    maps_to: metabolism_sbml_green2024_whole_body_vitamin_a_metabolism_in_hum_model2411290001_model.vitamin_a_metabolism_state_4
+  - name: vitamin_a_metabolism_state_5
+    maps_to: metabolism_sbml_green2024_whole_body_vitamin_a_metabolism_in_hum_model2411290001_model.vitamin_a_metabolism_state_5
+  - name: observable_values
+    maps_to: metabolism_sbml_green2024_whole_body_vitamin_a_metabolism_in_hum_model2411290001_model.observable_values
+  - name: run_summary
+    maps_to: metabolism_sbml_green2024_whole_body_vitamin_a_metabolism_in_hum_model2411290001_model.run_summary
+  - name: observable_labels
+    maps_to: metabolism_sbml_green2024_whole_body_vitamin_a_metabolism_in_hum_model2411290001_model.observable_labels
+models:
+- alias: metabolism_sbml_green2024_whole_body_vitamin_a_metabolism_in_hum_model2411290001_model
+  path: models/core
+  parameters:
+    model_path: data/MODEL2411290001.xml
+    integration_step: 0.1
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: metabolism_sbml_green2024_whole_body_vitamin_a_metabolism_in_hum_model2411290001_model.observable_values
+  to:
+  - visualisation.metabolism_sbml_green2024_whole_body_vitamin_a_metabolism_in_hum_model2411290001_model_observable_values
+- from: metabolism_sbml_green2024_whole_body_vitamin_a_metabolism_in_hum_model2411290001_model.run_summary
+  to:
+  - visualisation.metabolism_sbml_green2024_whole_body_vitamin_a_metabolism_in_hum_model2411290001_model_run_summary
+- from: metabolism_sbml_green2024_whole_body_vitamin_a_metabolism_in_hum_model2411290001_model.observable_labels
+  to:
+  - visualisation.metabolism_sbml_green2024_whole_body_vitamin_a_metabolism_in_hum_model2411290001_model_observable_labels
+runtime:
+  duration: 10.0
+  communication_step: 1.0
+  initial_inputs: {}

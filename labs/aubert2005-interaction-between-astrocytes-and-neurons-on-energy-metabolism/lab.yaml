@@ -1,0 +1,81 @@
+schema_version: '2.0'
+title: Aubert2005 - Interaction between astrocytes and neurons on energy metabolism Lab
+description: 'Aubert2005 - Interaction between astrocytesand neurons on energy metabolism
+  Enocded non-curated model. Issues: - Confusing equations A.41 and A.42 - Missing values
+  for parameters Vv,0 and dHb,0 This m.'
+io:
+  inputs:
+  - name: initial_neuronal_adp
+    maps_to: metabolism_sbml_aubert2005_interaction_between_astrocytes_and_ne_model1411210000_model.initial_neuronal_adp
+    default: 0.0119296850858459
+    units: native SBML value
+    description: Initial condition for neuronal adp. Maps to bundled SBML symbol `ADPn`. Applied
+      before the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_neuronal_amp
+    maps_to: metabolism_sbml_aubert2005_interaction_between_astrocytes_and_ne_model1411210000_model.initial_neuronal_amp
+    default: 7.03149141538795e-05
+    units: native SBML value
+    description: Initial condition for neuronal amp. Maps to bundled SBML symbol `AMPn`. Applied
+      before the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_brain_energy_state_3
+    maps_to: metabolism_sbml_aubert2005_interaction_between_astrocytes_and_ne_model1411210000_model.initial_brain_energy_state_3
+    default: 0.0119296850858464
+    units: native SBML value
+    description: Initial condition for brain energy state 3. Maps to bundled SBML symbol `ADPg`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_brain_energy_state_4
+    maps_to: metabolism_sbml_aubert2005_interaction_between_astrocytes_and_ne_model1411210000_model.initial_brain_energy_state_4
+    default: 7.03149141538795e-05
+    units: native SBML value
+    description: Initial condition for brain energy state 4. Maps to bundled SBML symbol `AMPg`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_brain_energy_state_5
+    maps_to: metabolism_sbml_aubert2005_interaction_between_astrocytes_and_ne_model1411210000_model.initial_brain_energy_state_5
+    default: 0.0122222222222222
+    units: native SBML value
+    description: Initial condition for brain energy state 5. Maps to bundled SBML symbol `rcn`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: neuronal_adp
+    maps_to: metabolism_sbml_aubert2005_interaction_between_astrocytes_and_ne_model1411210000_model.neuronal_adp
+  - name: neuronal_amp
+    maps_to: metabolism_sbml_aubert2005_interaction_between_astrocytes_and_ne_model1411210000_model.neuronal_amp
+  - name: brain_energy_state_3
+    maps_to: metabolism_sbml_aubert2005_interaction_between_astrocytes_and_ne_model1411210000_model.brain_energy_state_3
+  - name: brain_energy_state_4
+    maps_to: metabolism_sbml_aubert2005_interaction_between_astrocytes_and_ne_model1411210000_model.brain_energy_state_4
+  - name: brain_energy_state_5
+    maps_to: metabolism_sbml_aubert2005_interaction_between_astrocytes_and_ne_model1411210000_model.brain_energy_state_5
+  - name: observable_values
+    maps_to: metabolism_sbml_aubert2005_interaction_between_astrocytes_and_ne_model1411210000_model.observable_values
+  - name: run_summary
+    maps_to: metabolism_sbml_aubert2005_interaction_between_astrocytes_and_ne_model1411210000_model.run_summary
+  - name: observable_labels
+    maps_to: metabolism_sbml_aubert2005_interaction_between_astrocytes_and_ne_model1411210000_model.observable_labels
+models:
+- alias: metabolism_sbml_aubert2005_interaction_between_astrocytes_and_ne_model1411210000_model
+  path: models/core
+  parameters:
+    model_path: data/MODEL1411210000.xml
+    integration_step: 0.1
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: metabolism_sbml_aubert2005_interaction_between_astrocytes_and_ne_model1411210000_model.observable_values
+  to:
+  - visualisation.metabolism_sbml_aubert2005_interaction_between_astrocytes_and_ne_model1411210000_model_observable_values
+- from: metabolism_sbml_aubert2005_interaction_between_astrocytes_and_ne_model1411210000_model.run_summary
+  to:
+  - visualisation.metabolism_sbml_aubert2005_interaction_between_astrocytes_and_ne_model1411210000_model_run_summary
+- from: metabolism_sbml_aubert2005_interaction_between_astrocytes_and_ne_model1411210000_model.observable_labels
+  to:
+  - visualisation.metabolism_sbml_aubert2005_interaction_between_astrocytes_and_ne_model1411210000_model_observable_labels
+runtime:
+  duration: 10.0
+  communication_step: 1.0
+  initial_inputs: {}

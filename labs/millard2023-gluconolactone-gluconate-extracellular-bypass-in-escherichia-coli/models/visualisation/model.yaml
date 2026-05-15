@@ -1,0 +1,79 @@
+schema_version: '2.0'
+title: Millard2023 - Gluconolactone-Gluconate extracellular bypass in Escherichia coli Visualisation
+description: Dedicated presentation model for Millard2023 - Gluconolactone-Gluconate extracellular
+  bypass in Escherichia coli.
+standard: other
+tags:
+- metabolism
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  entrypoint: src.metabolism_visualisation:MetabolismVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Millard2023 - Gluconolactone-Gluconate extracellular bypass in Escherichia
+      coli Lab
+    question: Which microbial metabolism observables show the strongest activity in Millard2023
+      - Gluconolactone-Gluconate extracellular bypass in Escherichia coli?
+    answer_focus: microbial metabolism
+    sources:
+    - alias: metabolism_sbml_millard2023_gluconolactone_gluconate_extracellul_model2310250001_model
+      title: Millard2023 - Gluconolactone-Gluconate extracellular bypass in Escherichia coli
+      scope: microbial metabolism
+      label_caveat: Values are native SBML quantities. Conservative pathway-state labels are
+        used where the bundled SBML does not encode exact metabolite identities.
+      observables:
+      - id: microbial_metabolism_state_1
+        label: Microbial Metabolism state 1
+        maps_to: G6P_0
+      - id: microbial_metabolism_state_2
+        label: Microbial Metabolism state 2
+        maps_to: GAP_0
+      - id: microbial_metabolism_state_3
+        label: Microbial Metabolism state 3
+        maps_to: PYR_0
+      - id: observable_6pgl_0
+        label: 6pgl 0
+        maps_to: _6PGL_0
+      - id: observable_6pg_0
+        label: 6pg 0
+        maps_to: _6PG_0
+      - id: microbial_metabolism_state_6
+        label: Microbial Metabolism state 6
+        maps_to: GAP_1
+      - id: microbial_metabolism_state_7
+        label: Microbial Metabolism state 7
+        maps_to: PYR_1
+      - id: observable_6pg_1
+        label: 6pg 1
+        maps_to: _6PG_1
+      - id: microbial_metabolism_state_9
+        label: Microbial Metabolism state 9
+        maps_to: X
+      - id: observable_6pgl_1
+        label: 6pgl 1
+        maps_to: _6PGL_1
+      - id: microbial_metabolism_state_11
+        label: Microbial Metabolism state 11
+        maps_to: G6P_1
+  communication_step: 1.0
+runtime:
+  dependencies:
+    packages:
+    - PyYAML==6.0.2
+parameters:
+- name: integration_step
+  value: 1.0
+  min: 0.0
+  units: model_time
+  description: Sampling step for the visualisation model.
+io:
+  inputs:
+  - name: metabolism_sbml_millard2023_gluconolactone_gluconate_extracellul_model2310250001_model_observable_values
+    description: Latest user-facing observable values from the core metabolism model.
+  - name: metabolism_sbml_millard2023_gluconolactone_gluconate_extracellul_model2310250001_model_run_summary
+    description: Run summary from the core metabolism model.
+  - name: metabolism_sbml_millard2023_gluconolactone_gluconate_extracellul_model2310250001_model_observable_labels
+    description: Display labels for user-facing observables.
+  outputs: []

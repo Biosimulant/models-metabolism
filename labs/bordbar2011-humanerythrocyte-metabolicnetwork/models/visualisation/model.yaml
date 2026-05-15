@@ -1,0 +1,1070 @@
+schema_version: '2.0'
+title: Bordbar2011_HumanErythrocyte_MetabolicNetwork Visualisation
+description: Dedicated presentation model for Bordbar2011_HumanErythrocyte_MetabolicNetwork.
+standard: other
+tags:
+- metabolism
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  entrypoint: src.metabolism_visualisation:MetabolismVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Bordbar2011_HumanErythrocyte_MetabolicNetwork Lab
+    question: Which metabolic pathway dynamics observables show the strongest activity in
+      Bordbar2011_HumanErythrocyte_MetabolicNetwork?
+    answer_focus: metabolic pathway dynamics
+    sources:
+    - alias: metabolism_sbml_bordbar2011_humanerythrocyte_metabolicnetwork_model1106080000_model
+      title: Bordbar2011_HumanErythrocyte_MetabolicNetwork
+      scope: metabolic pathway dynamics
+      label_caveat: Values are native SBML quantities. Conservative pathway-state labels are
+        used where the bundled SBML does not encode exact metabolite identities.
+      observables:
+      - id: observable_3_phospho_d_glyceroyl_phosphate
+        label: 3 Phospho D Glyceroyl Phosphate
+        maps_to: M_13dpg_c
+      - id: observable_2_3_disphospho_d_glycerate
+        label: 2 3 Disphospho D Glycerate
+        maps_to: M_23dpg_c
+      - id: observable_2_keto_4_methylthiobutyrate
+        label: 2 Keto 4 Methylthiobutyrate
+        maps_to: M_2kmb_c
+      - id: d_glycerate_2_phosphate
+        label: D Glycerate 2 Phosphate
+        maps_to: M_2pg_c
+      - id: observable_3_5_cyclic_gmp
+        label: 3 5 Cyclic Gmp
+        maps_to: M_35cgmp_c
+      - id: observable_3_dehydro_l_gulonate
+        label: 3 Dehydro L Gulonate
+        maps_to: M_3dhguln_c
+      - id: observable_3_methoxytyramine
+        label: 3 Methoxytyramine
+        maps_to: M_3moxtyr_c
+      - id: observable_3_phospho_d_glycerate
+        label: 3 Phospho D Glycerate
+        maps_to: M_3pg_c
+      - id: observable_4_pyridoxate
+        label: 4 Pyridoxate
+        maps_to: M_4pyrdx_c
+      - id: observable_5_amino_4_oxopentanoate
+        label: 5 Amino 4 Oxopentanoate
+        maps_to: M_5aop_c
+      - id: observable_5_methylthio_5_deoxy_d_ribose_1_phosphate
+        label: 5 Methylthio 5 Deoxy D Ribose 1 Phosphate
+        maps_to: M_5mdr1p_c
+      - id: observable_5_methylthio_5_deoxy_d_ribulose_1_phosphate
+        label: 5 Methylthio 5 Deoxy D Ribulose 1 Phosphate
+        maps_to: M_5mdru1p_c
+      - id: observable_5_methylthioadenosine
+        label: 5 Methylthioadenosine
+        maps_to: M_5mta_c
+      - id: observable_5_oxoproline
+        label: 5 Oxoproline
+        maps_to: M_5oxpro_c
+      - id: observable_6_phospho_d_gluconate
+        label: 6 Phospho D Gluconate
+        maps_to: M_6pgc_c
+      - id: observable_6_phospho_d_glucono_1_5_lactone
+        label: 6 Phospho D Glucono 1 5 Lactone
+        maps_to: M_6pgl_c
+      - id: metabolic_pathway_state_17
+        label: Metabolic Pathway state 17
+        maps_to: M_ac_c
+      - id: acetaldehyde
+        label: Acetaldehyde
+        maps_to: M_acald_c
+      - id: n_acetyl_d_glucosamine
+        label: N Acetyl D Glucosamine
+        maps_to: M_acgam_c
+      - id: n_acetyl_d_glucosamine_6_phosphate
+        label: N Acetyl D Glucosamine 6 Phosphate
+        maps_to: M_acgam6p_c
+      - id: n_acetyl_d_mannosamine
+        label: N Acetyl D Mannosamine
+        maps_to: M_acmana_c
+      - id: n_acetyl_d_mannosamine_6_phosphate
+        label: N Acetyl D Mannosamine 6 Phosphate
+        maps_to: M_acmanap_c
+      - id: n_acetylneuraminate
+        label: N Acetylneuraminate
+        maps_to: M_acnam_c
+      - id: n_acetylneuraminate_9_phosphate
+        label: N Acetylneuraminate 9 Phosphate
+        maps_to: M_acnamp_c
+      - id: metabolic_pathway_state_25
+        label: Metabolic Pathway state 25
+        maps_to: M_ade_c
+      - id: adenosine
+        label: Adenosine
+        maps_to: M_adn_c
+      - id: adp
+        label: ADP
+        maps_to: M_adp_c
+      - id: adpribose_2_phosphate
+        label: Adpribose 2 Phosphate
+        maps_to: M_adprbp_c
+      - id: adrenaline
+        label: Adrenaline
+        maps_to: M_adrnl_c
+      - id: s_adenosyl_l_homocysteine
+        label: S Adenosyl L Homocysteine
+        maps_to: M_ahcys_c
+      - id: observable_2_oxoglutarate
+        label: 2 Oxoglutarate
+        maps_to: M_akg_c
+      - id: l_alanine
+        label: L Alanine
+        maps_to: M_ala_DASH_L_c
+      - id: lysophosphatidic_acid_homo_sapiens_c16_0
+        label: Lysophosphatidic Acid Homo Sapiens C16 0
+        maps_to: M_alpa_hs_16_0_c
+      - id: lysophosphatidic_acid_homo_sapiens_c18_1
+        label: Lysophosphatidic Acid Homo Sapiens C18 1
+        maps_to: M_alpa_hs_18_1_c
+      - id: lysophosphatidic_acid_homo_sapiens_c18_2
+        label: Lysophosphatidic Acid Homo Sapiens C18 2
+        maps_to: M_alpa_hs_18_2_c
+      - id: s_adenosyl_l_methionine
+        label: S Adenosyl L Methionine
+        maps_to: M_amet_c
+      - id: s_adenosylmethioninamine
+        label: S Adenosylmethioninamine
+        maps_to: M_ametam_c
+      - id: amp
+        label: AMP
+        maps_to: M_amp_c
+      - id: metabolic_pathway_state_39
+        label: Metabolic Pathway state 39
+        maps_to: M_ap4a_c
+      - id: l_arginine
+        label: L Arginine
+        maps_to: M_arg_DASH_L_c
+      - id: l_ascorbate
+        label: L Ascorbate
+        maps_to: M_ascb_DASH_L_c
+      - id: atp
+        label: ATP
+        maps_to: M_atp_c
+      - id: band_membrane_protein_universal_erythrocyte_2_1_3_4_1
+        label: Band Membrane Protein Universal Erythrocyte 2 1 3 4 1
+        maps_to: M_band_c
+      - id: band_membrane_protein_methylated_universal_erythrocyte_2_1_3_4_1
+        label: Band Membrane Protein Methylated Universal Erythrocyte 2 1 3 4 1
+        maps_to: M_bandmt_c
+      - id: bilirubin_monoglucuronide
+        label: Bilirubin Monoglucuronide
+        maps_to: M_bilglcur_c
+      - id: bilirubin
+        label: Bilirubin
+        maps_to: M_bilirub_c
+      - id: biliverdin
+        label: Biliverdin
+        maps_to: M_biliverd_c
+      - id: metabolic_pathway_state_48
+        label: Metabolic Pathway state 48
+        maps_to: M_ca2_c
+      - id: metabolic_pathway_state_49
+        label: Metabolic Pathway state 49
+        maps_to: M_camp_c
+      - id: metabolic_pathway_state_50
+        label: Metabolic Pathway state 50
+        maps_to: M_cdp_c
+      - id: cdpcholine
+        label: Cdpcholine
+        maps_to: M_cdpchol_c
+      - id: cdp_diacylglycerol_homo_sapiens_c16_0_c16_0
+        label: Cdp Diacylglycerol Homo Sapiens C16 0 C16 0
+        maps_to: M_cdpdag_hs_16_0_16_0_c
+      - id: cdp_diacylglycerol_homo_sapiens_c16_0_c18_1
+        label: Cdp Diacylglycerol Homo Sapiens C16 0 C18 1
+        maps_to: M_cdpdag_hs_16_0_18_1_c
+      - id: cdp_diacylglycerol_homo_sapiens_c16_0_c18_2
+        label: Cdp Diacylglycerol Homo Sapiens C16 0 C18 2
+        maps_to: M_cdpdag_hs_16_0_18_2_c
+      - id: cdp_diacylglycerol_homo_sapiens_c18_1_c18_1
+        label: Cdp Diacylglycerol Homo Sapiens C18 1 C18 1
+        maps_to: M_cdpdag_hs_18_1_18_1_c
+      - id: cdp_diacylglycerol_homo_sapiens_c18_1_c18_2
+        label: Cdp Diacylglycerol Homo Sapiens C18 1 C18 2
+        maps_to: M_cdpdag_hs_18_1_18_2_c
+      - id: cdp_diacylglycerol_homo_sapiens_c18_2_c16_0
+        label: Cdp Diacylglycerol Homo Sapiens C18 2 C16 0
+        maps_to: M_cdpdag_hs_18_2_16_0_c
+      - id: cdp_diacylglycerol_homo_sapiens_c18_2_c18_1
+        label: Cdp Diacylglycerol Homo Sapiens C18 2 C18 1
+        maps_to: M_cdpdag_hs_18_2_18_1_c
+      - id: cdpethanolamine
+        label: Cdpethanolamine
+        maps_to: M_cdpea_c
+      - id: metabolic_pathway_state_60
+        label: Metabolic Pathway state 60
+        maps_to: M_chol_c
+      - id: choline_phosphate
+        label: Choline Phosphate
+        maps_to: M_cholp_c
+      - id: metabolic_pathway_state_62
+        label: Metabolic Pathway state 62
+        maps_to: M_cl_c
+      - id: metabolic_pathway_state_63
+        label: Metabolic Pathway state 63
+        maps_to: M_cmp_c
+      - id: carbon_monoxide
+        label: Carbon Monoxide
+        maps_to: M_co_c
+      - id: co2
+        label: CO2
+        maps_to: M_co2_c
+      - id: coenzyme_a
+        label: Coenzyme A
+        maps_to: M_coa_c
+      - id: coproporphyrinogen_iii
+        label: Coproporphyrinogen Iii
+        maps_to: M_cpppg3_c
+      - id: l_carnitine
+        label: L Carnitine
+        maps_to: M_crn_c
+      - id: metabolic_pathway_state_69
+        label: Metabolic Pathway state 69
+        maps_to: M_ctp_c
+      - id: l_cysteine
+        label: L Cysteine
+        maps_to: M_cys_DASH_L_c
+      - id: diacylglycerol_homo_sapiens_c16_0_c16_0
+        label: Diacylglycerol Homo Sapiens C16 0 C16 0
+        maps_to: M_dag_hs_16_0_16_0_c
+      - id: diacylglycerol_homo_sapiens_c16_0_c18_1
+        label: Diacylglycerol Homo Sapiens C16 0 C18 1
+        maps_to: M_dag_hs_16_0_18_1_c
+      - id: diacylglycerol_homo_sapiens_c16_0_c18_2
+        label: Diacylglycerol Homo Sapiens C16 0 C18 2
+        maps_to: M_dag_hs_16_0_18_2_c
+      - id: diacylglycerol_homo_sapiens_c18_1_c18_1
+        label: Diacylglycerol Homo Sapiens C18 1 C18 1
+        maps_to: M_dag_hs_18_1_18_1_c
+      - id: diacylglycerol_homo_sapiens_c18_1_c18_2
+        label: Diacylglycerol Homo Sapiens C18 1 C18 2
+        maps_to: M_dag_hs_18_1_18_2_c
+      - id: diacylglycerol_homo_sapiens_c18_2_c16_0
+        label: Diacylglycerol Homo Sapiens C18 2 C16 0
+        maps_to: M_dag_hs_18_2_16_0_c
+      - id: diacylglycerol_homo_sapiens_c18_2_c18_1
+        label: Diacylglycerol Homo Sapiens C18 2 C18 1
+        maps_to: M_dag_hs_18_2_18_1_c
+      - id: dihydroxyacetone_phosphate
+        label: Dihydroxyacetone Phosphate
+        maps_to: M_dhap_c
+      - id: dehydroascorbate
+        label: Dehydroascorbate
+        maps_to: M_dhdascb_c
+      - id: observable_1_2_dihydroxy_5_methylthio_pent_1_en_3_one
+        label: 1 2 Dihydroxy 5 Methylthio Pent 1 En 3 One
+        maps_to: M_dhmtp_c
+      - id: observable_2_3_diketo_5_methylthio_1_phosphopentane
+        label: 2 3 Diketo 5 Methylthio 1 Phosphopentane
+        maps_to: M_dkmpp_c
+      - id: deamino_nad
+        label: Deamino NAD
+        maps_to: M_dnad_c
+      - id: metabolic_pathway_state_83
+        label: Metabolic Pathway state 83
+        maps_to: M_dopa_c
+      - id: d_erythrose_4_phosphate
+        label: D Erythrose 4 Phosphate
+        maps_to: M_e4p_c
+      - id: ethanolamine
+        label: Ethanolamine
+        maps_to: M_etha_c
+      - id: ethanolamine_phosphate
+        label: Ethanolamine Phosphate
+        maps_to: M_ethamp_c
+      - id: d_fructose_2_6_bisphosphate
+        label: D Fructose 2 6 Bisphosphate
+        maps_to: M_f26bp_c
+      - id: d_fructose_6_phosphate
+        label: D Fructose 6 Phosphate
+        maps_to: M_f6p_c
+      - id: flavin_adenine_dinucleotide_oxidized
+        label: Flavin Adenine Dinucleotide Oxidized
+        maps_to: M_fad_c
+      - id: d_fructose_1_6_bisphosphate
+        label: D Fructose 1 6 Bisphosphate
+        maps_to: M_fdp_c
+      - id: fe2
+        label: Fe2
+        maps_to: M_fe2_c
+      - id: metabolic_pathway_state_92
+        label: Metabolic Pathway state 92
+        maps_to: M_fmn_c
+      - id: metabolic_pathway_state_93
+        label: Metabolic Pathway state 93
+        maps_to: M_for_c
+      - id: d_fructose
+        label: D Fructose
+        maps_to: M_fru_c
+      - id: metabolic_pathway_state_95
+        label: Metabolic Pathway state 95
+        maps_to: M_fum_c
+      - id: d_glucose_1_phosphate
+        label: D Glucose 1 Phosphate
+        maps_to: M_g1p_c
+      - id: glyceraldehyde_3_phosphate
+        label: Glyceraldehyde 3 Phosphate
+        maps_to: M_g3p_c
+      - id: sn_glycero_3_phosphocholine
+        label: Sn Glycero 3 Phosphocholine
+        maps_to: M_g3pc_c
+      - id: d_glucose_6_phosphate
+        label: D Glucose 6 Phosphate
+        maps_to: M_g6p_c
+      - id: d_galactose
+        label: D Galactose
+        maps_to: M_gal_c
+      - id: alpha_d_galactose_1_phosphate
+        label: Alpha D Galactose 1 Phosphate
+        maps_to: M_gal1p_c
+      - id: galactitol
+        label: Galactitol
+        maps_to: M_galt_c
+      - id: d_glucosamine
+        label: D Glucosamine
+        maps_to: M_gam_c
+      - id: d_glucosamine_6_phosphate
+        label: D Glucosamine 6 Phosphate
+        maps_to: M_gam6p_c
+      - id: metabolic_pathway_state_105
+        label: Metabolic Pathway state 105
+        maps_to: M_gdp_c
+      - id: d_glucose
+        label: D Glucose
+        maps_to: M_glc_DASH_D_c
+      - id: d_glucuronate
+        label: D Glucuronate
+        maps_to: M_glcur_c
+      - id: l_glutamine
+        label: L Glutamine
+        maps_to: M_gln_DASH_L_c
+      - id: l_glutamate
+        label: L Glutamate
+        maps_to: M_glu_DASH_L_c
+      - id: gamma_l_glutamyl_l_cysteine
+        label: Gamma L Glutamyl L Cysteine
+        maps_to: M_glucys_c
+      - id: metabolic_pathway_state_111
+        label: Metabolic Pathway state 111
+        maps_to: M_gly_c
+      - id: metabolic_pathway_state_112
+        label: Metabolic Pathway state 112
+        maps_to: M_glyc_c
+      - id: glycerol_3_phosphate
+        label: Glycerol 3 Phosphate
+        maps_to: M_glyc3p_c
+      - id: metabolic_pathway_state_114
+        label: Metabolic Pathway state 114
+        maps_to: M_gmp_c
+      - id: guanosine
+        label: Guanosine
+        maps_to: M_gsn_c
+      - id: oxidized_glutathione
+        label: Oxidized Glutathione
+        maps_to: M_gthox_c
+      - id: reduced_glutathione
+        label: Reduced Glutathione
+        maps_to: M_gthrd_c
+      - id: metabolic_pathway_state_118
+        label: Metabolic Pathway state 118
+        maps_to: M_gtp_c
+      - id: metabolic_pathway_state_119
+        label: Metabolic Pathway state 119
+        maps_to: M_gua_c
+      - id: l_gulonate
+        label: L Gulonate
+        maps_to: M_guln_c
+      - id: metabolic_pathway_state_121
+        label: Metabolic Pathway state 121
+        maps_to: M_h_c
+      - id: h2o
+        label: H2o
+        maps_to: M_h2o_c
+      - id: hydrogen_peroxide
+        label: Hydrogen Peroxide
+        maps_to: M_h2o2_c
+      - id: bicarbonate
+        label: Bicarbonate
+        maps_to: M_hco3_c
+      - id: l_homocysteine
+        label: L Homocysteine
+        maps_to: M_hcys_DASH_L_c
+      - id: hexadecanoate_n_c16_0
+        label: Hexadecanoate N C16 0
+        maps_to: M_hdca_c
+      - id: hydroxymethylbilane
+        label: Hydroxymethylbilane
+        maps_to: M_hmbil_c
+      - id: hypoxanthine
+        label: Hypoxanthine
+        maps_to: M_hxan_c
+      - id: isocitrate
+        label: Isocitrate
+        maps_to: M_icit_c
+      - id: metabolic_pathway_state_130
+        label: Metabolic Pathway state 130
+        maps_to: M_imp_c
+      - id: myo_inositol
+        label: Myo Inositol
+        maps_to: M_inost_c
+      - id: metabolic_pathway_state_132
+        label: Metabolic Pathway state 132
+        maps_to: M_ins_c
+      - id: potassium
+        label: Potassium
+        maps_to: M_k_c
+      - id: d_lactate
+        label: D Lactate
+        maps_to: M_lac_DASH_D_c
+      - id: l_lactate
+        label: L Lactate
+        maps_to: M_lac_DASH_L_c
+      - id: leukotriene_a4
+        label: Leukotriene A4
+        maps_to: M_leuktrA4_c
+      - id: leukotriene_b4
+        label: Leukotriene B4
+        maps_to: M_leuktrB4_c
+      - id: r_s_lactoylglutathione
+        label: R S Lactoylglutathione
+        maps_to: M_lgt_DASH_S_c
+      - id: linoleic_acid_all_cis_c18_2_n_6
+        label: Linoleic Acid All Cis C18 2 N 6
+        maps_to: M_lnlc_c
+      - id: linoleic_coenzyme_a
+        label: Linoleic Coenzyme A
+        maps_to: M_lnlccoa_c
+      - id: linoleyl_carnitine
+        label: Linoleyl Carnitine
+        maps_to: M_lnlccrn_c
+      - id: lysophosphatidylcholine_homo_sapiens_c16_0
+        label: Lysophosphatidylcholine Homo Sapiens C16 0
+        maps_to: M_lpchol_hs_16_0_c
+      - id: lysophosphatidylcholine_homo_sapiens_c18_1
+        label: Lysophosphatidylcholine Homo Sapiens C18 1
+        maps_to: M_lpchol_hs_18_1_c
+      - id: lysophosphatidylcholine_homo_sapiens_c18_2
+        label: Lysophosphatidylcholine Homo Sapiens C18 2
+        maps_to: M_lpchol_hs_18_2_c
+      - id: l_malate
+        label: L Malate
+        maps_to: M_mal_DASH_L_c
+      - id: d_mannose
+        label: D Mannose
+        maps_to: M_man_c
+      - id: d_mannose_1_phosphate
+        label: D Mannose 1 Phosphate
+        maps_to: M_man1p_c
+      - id: d_mannose_6_phosphate
+        label: D Mannose 6 Phosphate
+        maps_to: M_man6p_c
+      - id: metanephrine
+        label: Metanephrine
+        maps_to: M_mepi_c
+      - id: l_methionine
+        label: L Methionine
+        maps_to: M_met_DASH_L_c
+      - id: observable_1d_myo_inositol_1_3_4_5_tetrakisphosphate
+        label: 1d Myo Inositol 1 3 4 5 Tetrakisphosphate
+        maps_to: M_mi1345p_c
+      - id: observable_1d_myo_inositol_1_3_4_trisphosphate
+        label: 1d Myo Inositol 1 3 4 Trisphosphate
+        maps_to: M_mi134p_c
+      - id: observable_1d_myo_inositol_1_4_5_trisphosphate
+        label: 1d Myo Inositol 1 4 5 Trisphosphate
+        maps_to: M_mi145p_c
+      - id: observable_1d_myo_inositol_1_4_bisphosphate
+        label: 1d Myo Inositol 1 4 Bisphosphate
+        maps_to: M_mi14p_c
+      - id: observable_1d_myo_inositol_1_phosphate
+        label: 1d Myo Inositol 1 Phosphate
+        maps_to: M_mi1p_DASH_D_c
+      - id: methylglyoxal
+        label: Methylglyoxal
+        maps_to: M_mthgxl_c
+      - id: metabolic_pathway_state_157
+        label: Metabolic Pathway state 157
+        maps_to: M_na1_c
+      - id: nicotinate
+        label: Nicotinate
+        maps_to: M_nac_c
+      - id: nicotinamide_adenine_dinucleotide
+        label: Nicotinamide Adenine Dinucleotide
+        maps_to: M_nad_c
+      - id: nicotinamide_adenine_dinucleotide_reduced
+        label: Nicotinamide Adenine Dinucleotide Reduced
+        maps_to: M_nadh_c
+      - id: nicotinamide_adenine_dinucleotide_phosphate
+        label: Nicotinamide Adenine Dinucleotide Phosphate
+        maps_to: M_nadp_c
+      - id: nicotinamide_adenine_dinucleotide_phosphate_reduced
+        label: Nicotinamide Adenine Dinucleotide Phosphate Reduced
+        maps_to: M_nadph_c
+      - id: nicotinamide
+        label: Nicotinamide
+        maps_to: M_ncam_c
+      - id: metabolic_pathway_state_164
+        label: Metabolic Pathway state 164
+        maps_to: M_nh4_c
+      - id: nicotinate_d_ribonucleoside
+        label: Nicotinate D Ribonucleoside
+        maps_to: M_nicrns_c
+      - id: nicotinate_d_ribonucleotide
+        label: Nicotinate D Ribonucleotide
+        maps_to: M_nicrnt_c
+      - id: metabolic_pathway_state_167
+        label: Metabolic Pathway state 167
+        maps_to: M_nmn_c
+      - id: l_normetanephrine
+        label: L Normetanephrine
+        maps_to: M_normete_DASH_L_c
+      - id: norepinephrine
+        label: Norepinephrine
+        maps_to: M_nrpphr_c
+      - id: mitochondrial_cytosolic_o2
+        label: Mitochondrial Cytosolic O2
+        maps_to: M_o2_c
+      - id: oxaloacetate
+        label: Oxaloacetate
+        maps_to: M_oaa_c
+      - id: octadecenoate_n_c18_1
+        label: Octadecenoate N C18 1
+        maps_to: M_ocdcea_c
+      - id: metabolic_pathway_state_173
+        label: Metabolic Pathway state 173
+        maps_to: M_odecoa_c
+      - id: octadecenoyl_carnitine
+        label: Octadecenoyl Carnitine
+        maps_to: M_odecrn_c
+      - id: ornithine
+        label: Ornithine
+        maps_to: M_orn_c
+      - id: metabolic_pathway_state_176
+        label: Metabolic Pathway state 176
+        maps_to: M_orot_c
+      - id: orotidine_5_phosphate
+        label: Orotidine 5 Phosphate
+        maps_to: M_orot5p_c
+      - id: phosphatidic_acid_homo_sapiens_c16_0_c16_0
+        label: Phosphatidic Acid Homo Sapiens C16 0 C16 0
+        maps_to: M_pa_hs_16_0_16_0_c
+      - id: phosphatidic_acid_homo_sapiens_c16_0_c18_1
+        label: Phosphatidic Acid Homo Sapiens C16 0 C18 1
+        maps_to: M_pa_hs_16_0_18_1_c
+      - id: phosphatidic_acid_homo_sapiens_c16_0_c18_2
+        label: Phosphatidic Acid Homo Sapiens C16 0 C18 2
+        maps_to: M_pa_hs_16_0_18_2_c
+      - id: phosphatidic_acid_homo_sapiens_c18_1_c18_1
+        label: Phosphatidic Acid Homo Sapiens C18 1 C18 1
+        maps_to: M_pa_hs_18_1_18_1_c
+      - id: phosphatidic_acid_homo_sapiens_c18_1_c18_2
+        label: Phosphatidic Acid Homo Sapiens C18 1 C18 2
+        maps_to: M_pa_hs_18_1_18_2_c
+      - id: phosphatidic_acid_homo_sapiens_c18_2_c16_0
+        label: Phosphatidic Acid Homo Sapiens C18 2 C16 0
+        maps_to: M_pa_hs_18_2_16_0_c
+      - id: phosphatidic_acid_homo_sapiens_c18_2_c18_1
+        label: Phosphatidic Acid Homo Sapiens C18 2 C18 1
+        maps_to: M_pa_hs_18_2_18_1_c
+      - id: phosphatidylinositol_4_5_bisphosphate_homo_sapiens_c16_0_c16_0
+        label: Phosphatidylinositol 4 5 Bisphosphate Homo Sapiens C16 0 C16 0
+        maps_to: M_pail45p_hs_16_0_16_0_c
+      - id: phosphatidylinositol_4_5_bisphosphate_homo_sapiens_c16_0_c18_1
+        label: Phosphatidylinositol 4 5 Bisphosphate Homo Sapiens C16 0 C18 1
+        maps_to: M_pail45p_hs_16_0_18_1_c
+      - id: phosphatidylinositol_4_5_bisphosphate_homo_sapiens_c16_0_c18_2
+        label: Phosphatidylinositol 4 5 Bisphosphate Homo Sapiens C16 0 C18 2
+        maps_to: M_pail45p_hs_16_0_18_2_c
+      - id: phosphatidylinositol_4_5_bisphosphate_homo_sapiens_c18_1_c18_1
+        label: Phosphatidylinositol 4 5 Bisphosphate Homo Sapiens C18 1 C18 1
+        maps_to: M_pail45p_hs_18_1_18_1_c
+      - id: phosphatidylinositol_4_5_bisphosphate_homo_sapiens_c18_1_c18_2
+        label: Phosphatidylinositol 4 5 Bisphosphate Homo Sapiens C18 1 C18 2
+        maps_to: M_pail45p_hs_18_1_18_2_c
+      - id: phosphatidylinositol_4_5_bisphosphate_homo_sapiens_c18_2_c16_0
+        label: Phosphatidylinositol 4 5 Bisphosphate Homo Sapiens C18 2 C16 0
+        maps_to: M_pail45p_hs_18_2_16_0_c
+      - id: phosphatidylinositol_4_5_bisphosphate_homo_sapiens_c18_2_c18_1
+        label: Phosphatidylinositol 4 5 Bisphosphate Homo Sapiens C18 2 C18 1
+        maps_to: M_pail45p_hs_18_2_18_1_c
+      - id: observable_1_phosphatidyl_1d_myo_inositol_4_phosphate_homo_sapiens_c16_0_c16_0
+        label: 1 Phosphatidyl 1d Myo Inositol 4 Phosphate Homo Sapiens C16 0 C16 0
+        maps_to: M_pail4p_hs_16_0_16_0_c
+      - id: observable_1_phosphatidyl_1d_myo_inositol_4_phosphate_homo_sapiens_c16_0_c18_1
+        label: 1 Phosphatidyl 1d Myo Inositol 4 Phosphate Homo Sapiens C16 0 C18 1
+        maps_to: M_pail4p_hs_16_0_18_1_c
+      - id: observable_1_phosphatidyl_1d_myo_inositol_4_phosphate_homo_sapiens_c16_0_c18_2
+        label: 1 Phosphatidyl 1d Myo Inositol 4 Phosphate Homo Sapiens C16 0 C18 2
+        maps_to: M_pail4p_hs_16_0_18_2_c
+      - id: observable_1_phosphatidyl_1d_myo_inositol_4_phosphate_homo_sapiens_c18_1_c18_1
+        label: 1 Phosphatidyl 1d Myo Inositol 4 Phosphate Homo Sapiens C18 1 C18 1
+        maps_to: M_pail4p_hs_18_1_18_1_c
+      - id: observable_1_phosphatidyl_1d_myo_inositol_4_phosphate_homo_sapiens_c18_1_c18_2
+        label: 1 Phosphatidyl 1d Myo Inositol 4 Phosphate Homo Sapiens C18 1 C18 2
+        maps_to: M_pail4p_hs_18_1_18_2_c
+      - id: observable_1_phosphatidyl_1d_myo_inositol_4_phosphate_homo_sapiens_c18_2_c16_0
+        label: 1 Phosphatidyl 1d Myo Inositol 4 Phosphate Homo Sapiens C18 2 C16 0
+        maps_to: M_pail4p_hs_18_2_16_0_c
+      - id: observable_1_phosphatidyl_1d_myo_inositol_4_phosphate_homo_sapiens_c18_2_c18_1
+        label: 1 Phosphatidyl 1d Myo Inositol 4 Phosphate Homo Sapiens C18 2 C18 1
+        maps_to: M_pail4p_hs_18_2_18_1_c
+      - id: phosphatidylinositol_homo_sapiens_c16_0_c16_0
+        label: Phosphatidylinositol Homo Sapiens C16 0 C16 0
+        maps_to: M_pail_hs_16_0_16_0_c
+      - id: phosphatidylinositol_homo_sapiens_c16_0_c18_1
+        label: Phosphatidylinositol Homo Sapiens C16 0 C18 1
+        maps_to: M_pail_hs_16_0_18_1_c
+      - id: phosphatidylinositol_homo_sapiens_c16_0_c18_2
+        label: Phosphatidylinositol Homo Sapiens C16 0 C18 2
+        maps_to: M_pail_hs_16_0_18_2_c
+      - id: phosphatidylinositol_homo_sapiens_c18_1_c18_1
+        label: Phosphatidylinositol Homo Sapiens C18 1 C18 1
+        maps_to: M_pail_hs_18_1_18_1_c
+      - id: phosphatidylinositol_homo_sapiens_c18_1_c18_2
+        label: Phosphatidylinositol Homo Sapiens C18 1 C18 2
+        maps_to: M_pail_hs_18_1_18_2_c
+      - id: phosphatidylinositol_homo_sapiens_c18_2_c16_0
+        label: Phosphatidylinositol Homo Sapiens C18 2 C16 0
+        maps_to: M_pail_hs_18_2_16_0_c
+      - id: phosphatidylinositol_homo_sapiens_c18_2_c18_1
+        label: Phosphatidylinositol Homo Sapiens C18 2 C18 1
+        maps_to: M_pail_hs_18_2_18_1_c
+      - id: phosphatidylcholine_homo_sapiens_c16_0_c16_0
+        label: Phosphatidylcholine Homo Sapiens C16 0 C16 0
+        maps_to: M_pchol_hs_16_0_16_0_c
+      - id: phosphatidylcholine_homo_sapiens_c16_0_c18_1
+        label: Phosphatidylcholine Homo Sapiens C16 0 C18 1
+        maps_to: M_pchol_hs_16_0_18_1_c
+      - id: phosphatidylcholine_homo_sapiens_c16_0_c18_2
+        label: Phosphatidylcholine Homo Sapiens C16 0 C18 2
+        maps_to: M_pchol_hs_16_0_18_2_c
+      - id: phosphatidylcholine_homo_sapiens_c18_1_c18_1
+        label: Phosphatidylcholine Homo Sapiens C18 1 C18 1
+        maps_to: M_pchol_hs_18_1_18_1_c
+      - id: phosphatidylcholine_homo_sapiens_c18_1_c18_2
+        label: Phosphatidylcholine Homo Sapiens C18 1 C18 2
+        maps_to: M_pchol_hs_18_1_18_2_c
+      - id: phosphatidylcholine_homo_sapiens_c18_2_c16_0
+        label: Phosphatidylcholine Homo Sapiens C18 2 C16 0
+        maps_to: M_pchol_hs_18_2_16_0_c
+      - id: phosphatidylcholine_homo_sapiens_c18_2_c18_1
+        label: Phosphatidylcholine Homo Sapiens C18 2 C18 1
+        maps_to: M_pchol_hs_18_2_18_1_c
+      - id: pyridoxine_5_phosphate
+        label: Pyridoxine 5 Phosphate
+        maps_to: M_pdx5p_c
+      - id: phosphatidylethanolamine_homo_sapiens_c16_0_c16_0
+        label: Phosphatidylethanolamine Homo Sapiens C16 0 C16 0
+        maps_to: M_pe_hs_16_0_16_0_c
+      - id: phosphatidylethanolamine_homo_sapiens_c16_0_c18_1
+        label: Phosphatidylethanolamine Homo Sapiens C16 0 C18 1
+        maps_to: M_pe_hs_16_0_18_1_c
+      - id: phosphatidylethanolamine_homo_sapiens_c16_0_c18_2
+        label: Phosphatidylethanolamine Homo Sapiens C16 0 C18 2
+        maps_to: M_pe_hs_16_0_18_2_c
+      - id: phosphatidylethanolamine_homo_sapiens_c18_1_c18_1
+        label: Phosphatidylethanolamine Homo Sapiens C18 1 C18 1
+        maps_to: M_pe_hs_18_1_18_1_c
+      - id: phosphatidylethanolamine_homo_sapiens_c18_1_c18_2
+        label: Phosphatidylethanolamine Homo Sapiens C18 1 C18 2
+        maps_to: M_pe_hs_18_1_18_2_c
+      - id: phosphatidylethanolamine_homo_sapiens_c18_2_c16_0
+        label: Phosphatidylethanolamine Homo Sapiens C18 2 C16 0
+        maps_to: M_pe_hs_18_2_16_0_c
+      - id: phosphatidylethanolamine_homo_sapiens_c18_2_c18_1
+        label: Phosphatidylethanolamine Homo Sapiens C18 2 C18 1
+        maps_to: M_pe_hs_18_2_18_1_c
+      - id: phosphoenolpyruvate
+        label: Phosphoenolpyruvate
+        maps_to: M_pep_c
+      - id: l_phenylalanine
+        label: L Phenylalanine
+        maps_to: M_phe_DASH_L_c
+      - id: protoheme
+        label: Protoheme
+        maps_to: M_pheme_c
+      - id: phenylpyruvate
+        label: Phenylpyruvate
+        maps_to: M_phpyr_c
+      - id: phosphate
+        label: Phosphate
+        maps_to: M_pi_c
+      - id: metabolic_pathway_state_226
+        label: Metabolic Pathway state 226
+        maps_to: M_pmtcoa_c
+      - id: l_palmitoylcarnitine
+        label: L Palmitoylcarnitine
+        maps_to: M_pmtcrn_c
+      - id: porphobilinogen
+        label: Porphobilinogen
+        maps_to: M_ppbng_c
+      - id: diphosphate
+        label: Diphosphate
+        maps_to: M_ppi_c
+      - id: protoporphyrin
+        label: Protoporphyrin
+        maps_to: M_ppp9_c
+      - id: protoporphyrinogen_ix
+        label: Protoporphyrinogen Ix
+        maps_to: M_pppg9_c
+      - id: observable_5_phospho_alpha_d_ribose_1_diphosphate
+        label: 5 Phospho Alpha D Ribose 1 Diphosphate
+        maps_to: M_prpp_c
+      - id: putrescine
+        label: Putrescine
+        maps_to: M_ptrc_c
+      - id: pyridoxamine_5_phosphate
+        label: Pyridoxamine 5 Phosphate
+        maps_to: M_pyam5p_c
+      - id: pyridoxamine
+        label: Pyridoxamine
+        maps_to: M_pydam_c
+      - id: pyridoxal
+        label: Pyridoxal
+        maps_to: M_pydx_c
+      - id: pyridoxal_5_phosphate
+        label: Pyridoxal 5 Phosphate
+        maps_to: M_pydx5p_c
+      - id: pyridoxine
+        label: Pyridoxine
+        maps_to: M_pydxn_c
+      - id: mitochondrial_cytosolic_pyruvate
+        label: Mitochondrial Cytosolic Pyruvate
+        maps_to: M_pyr_c
+      - id: alpha_d_ribose_1_phosphate
+        label: Alpha D Ribose 1 Phosphate
+        maps_to: M_r1p_c
+      - id: alpha_d_ribose_5_phosphate
+        label: Alpha D Ribose 5 Phosphate
+        maps_to: M_r5p_c
+      - id: riboflavin
+        label: Riboflavin
+        maps_to: M_ribflv_c
+      - id: n_ribosylnicotinamide
+        label: N Ribosylnicotinamide
+        maps_to: M_rnam_c
+      - id: d_ribulose_5_phosphate
+        label: D Ribulose 5 Phosphate
+        maps_to: M_ru5p_DASH_D_c
+      - id: sedoheptulose_7_phosphate
+        label: Sedoheptulose 7 Phosphate
+        maps_to: M_s7p_c
+      - id: d_sorbitol
+        label: D Sorbitol
+        maps_to: M_sbt_DASH_D_c
+      - id: spermidine
+        label: Spermidine
+        maps_to: M_spmd_c
+      - id: metabolic_pathway_state_248
+        label: Metabolic Pathway state 248
+        maps_to: M_sprm_c
+      - id: metabolic_pathway_state_249
+        label: Metabolic Pathway state 249
+        maps_to: M_thm_c
+      - id: thiamin_monophosphate
+        label: Thiamin Monophosphate
+        maps_to: M_thmmp_c
+      - id: thiamine_diphosphate
+        label: Thiamine Diphosphate
+        maps_to: M_thmpp_c
+      - id: thiamin_triphosphate
+        label: Thiamin Triphosphate
+        maps_to: M_thmtp_c
+      - id: metabolic_pathway_state_253
+        label: Metabolic Pathway state 253
+        maps_to: M_udp_c
+      - id: udpglucose
+        label: Udpglucose
+        maps_to: M_udpg_c
+      - id: udpgalactose
+        label: Udpgalactose
+        maps_to: M_udpgal_c
+      - id: udp_d_glucuronate
+        label: Udp D Glucuronate
+        maps_to: M_udpglcur_c
+      - id: metabolic_pathway_state_257
+        label: Metabolic Pathway state 257
+        maps_to: M_ump_c
+      - id: uroporphyrinogen_iii
+        label: Uroporphyrinogen Iii
+        maps_to: M_uppg3_c
+      - id: metabolic_pathway_state_259
+        label: Metabolic Pathway state 259
+        maps_to: M_urea_c
+      - id: metabolic_pathway_state_260
+        label: Metabolic Pathway state 260
+        maps_to: M_uri_c
+      - id: metabolic_pathway_state_261
+        label: Metabolic Pathway state 261
+        maps_to: M_utp_c
+      - id: xanthosine_5_phosphate
+        label: Xanthosine 5 Phosphate
+        maps_to: M_xmp_c
+      - id: d_xylulose_5_phosphate
+        label: D Xylulose 5 Phosphate
+        maps_to: M_xu5p_DASH_D_c
+      - id: metabolic_pathway_state_264
+        label: Metabolic Pathway state 264
+        maps_to: M_xylt_c
+      - id: d_xylulose
+        label: D Xylulose
+        maps_to: M_xylu_DASH_D_c
+      - id: l_xylulose
+        label: L Xylulose
+        maps_to: M_xylu_DASH_L_c
+      - id: observable_3_5_cyclic_gmp_2
+        label: 3 5 Cyclic Gmp 2
+        maps_to: M_35cgmp_e
+      - id: observable_3_methoxytyramine_2
+        label: 3 Methoxytyramine 2
+        maps_to: M_3moxtyr_e
+      - id: observable_4_pyridoxate_2
+        label: 4 Pyridoxate 2
+        maps_to: M_4pyrdx_e
+      - id: observable_5_amino_4_oxopentanoate_2
+        label: 5 Amino 4 Oxopentanoate 2
+        maps_to: M_5aop_e
+      - id: metabolic_pathway_state_271
+        label: Metabolic Pathway state 271
+        maps_to: M_ac_e
+      - id: acetaldehyde_2
+        label: Acetaldehyde 2
+        maps_to: M_acald_e
+      - id: n_acetylneuraminate_2
+        label: N Acetylneuraminate 2
+        maps_to: M_acnam_e
+      - id: metabolic_pathway_state_274
+        label: Metabolic Pathway state 274
+        maps_to: M_ade_e
+      - id: adenosine_2
+        label: Adenosine 2
+        maps_to: M_adn_e
+      - id: adrenaline_2
+        label: Adrenaline 2
+        maps_to: M_adrnl_e
+      - id: l_alanine_2
+        label: L Alanine 2
+        maps_to: M_ala_DASH_L_e
+      - id: l_arginine_2
+        label: L Arginine 2
+        maps_to: M_arg_DASH_L_e
+      - id: l_ascorbate_2
+        label: L Ascorbate 2
+        maps_to: M_ascb_DASH_L_e
+      - id: bilirubin_monoglucuronide_2
+        label: Bilirubin Monoglucuronide 2
+        maps_to: M_bilglcur_e
+      - id: metabolic_pathway_state_281
+        label: Metabolic Pathway state 281
+        maps_to: M_ca2_e
+      - id: metabolic_pathway_state_282
+        label: Metabolic Pathway state 282
+        maps_to: M_camp_e
+      - id: metabolic_pathway_state_283
+        label: Metabolic Pathway state 283
+        maps_to: M_chol_e
+      - id: metabolic_pathway_state_284
+        label: Metabolic Pathway state 284
+        maps_to: M_cl_e
+      - id: carbon_monoxide_2
+        label: Carbon Monoxide 2
+        maps_to: M_co_e
+      - id: co2_2
+        label: CO2 2
+        maps_to: M_co2_e
+      - id: l_cysteine_2
+        label: L Cysteine 2
+        maps_to: M_cys_DASH_L_e
+      - id: dehydroascorbate_2
+        label: Dehydroascorbate 2
+        maps_to: M_dhdascb_e
+      - id: metabolic_pathway_state_289
+        label: Metabolic Pathway state 289
+        maps_to: M_dopa_e
+      - id: ethanolamine_2
+        label: Ethanolamine 2
+        maps_to: M_etha_e
+      - id: fe2_2
+        label: Fe2 2
+        maps_to: M_fe2_e
+      - id: d_fructose_2
+        label: D Fructose 2
+        maps_to: M_fru_e
+      - id: metabolic_pathway_state_293
+        label: Metabolic Pathway state 293
+        maps_to: M_fum_e
+      - id: d_galactose_2
+        label: D Galactose 2
+        maps_to: M_gal_e
+      - id: d_glucosamine_2
+        label: D Glucosamine 2
+        maps_to: M_gam_e
+      - id: d_glucose_2
+        label: D Glucose 2
+        maps_to: M_glc_DASH_D_e
+      - id: l_glutamine_2
+        label: L Glutamine 2
+        maps_to: M_gln_DASH_L_e
+      - id: observable_5_l_glutamyl_l_alanine
+        label: 5 L Glutamyl L Alanine
+        maps_to: M_gluala_e
+      - id: metabolic_pathway_state_299
+        label: Metabolic Pathway state 299
+        maps_to: M_gly_e
+      - id: metabolic_pathway_state_300
+        label: Metabolic Pathway state 300
+        maps_to: M_glyc_e
+      - id: oxidized_glutathione_2
+        label: Oxidized Glutathione 2
+        maps_to: M_gthox_e
+      - id: metabolic_pathway_state_302
+        label: Metabolic Pathway state 302
+        maps_to: M_h_e
+      - id: h2o_2
+        label: H2o 2
+        maps_to: M_h2o_e
+      - id: hydrogen_peroxide_2
+        label: Hydrogen Peroxide 2
+        maps_to: M_h2o2_e
+      - id: bicarbonate_2
+        label: Bicarbonate 2
+        maps_to: M_hco3_e
+      - id: l_homocysteine_2
+        label: L Homocysteine 2
+        maps_to: M_hcys_DASH_L_e
+      - id: hexadecanoate_n_c16_0_2
+        label: Hexadecanoate N C16 0 2
+        maps_to: M_hdca_e
+      - id: hypoxanthine_2
+        label: Hypoxanthine 2
+        maps_to: M_hxan_e
+      - id: metabolic_pathway_state_309
+        label: Metabolic Pathway state 309
+        maps_to: M_ins_e
+      - id: potassium_2
+        label: Potassium 2
+        maps_to: M_k_e
+      - id: d_lactate_2
+        label: D Lactate 2
+        maps_to: M_lac_DASH_D_e
+      - id: l_lactate_2
+        label: L Lactate 2
+        maps_to: M_lac_DASH_L_e
+      - id: leukotriene_a4_2
+        label: Leukotriene A4 2
+        maps_to: M_leuktrA4_e
+      - id: leukotriene_b4_2
+        label: Leukotriene B4 2
+        maps_to: M_leuktrB4_e
+      - id: linoleic_acid_all_cis_c18_2_n_6_2
+        label: Linoleic Acid All Cis C18 2 N 6 2
+        maps_to: M_lnlc_e
+      - id: l_malate_2
+        label: L Malate 2
+        maps_to: M_mal_DASH_L_e
+      - id: d_mannose_2
+        label: D Mannose 2
+        maps_to: M_man_e
+      - id: metanephrine_2
+        label: Metanephrine 2
+        maps_to: M_mepi_e
+      - id: l_methionine_2
+        label: L Methionine 2
+        maps_to: M_met_DASH_L_e
+      - id: metabolic_pathway_state_320
+        label: Metabolic Pathway state 320
+        maps_to: M_na1_e
+      - id: nicotinate_2
+        label: Nicotinate 2
+        maps_to: M_nac_e
+      - id: nicotinamide_2
+        label: Nicotinamide 2
+        maps_to: M_ncam_e
+      - id: metabolic_pathway_state_323
+        label: Metabolic Pathway state 323
+        maps_to: M_nh4_e
+      - id: l_normetanephrine_2
+        label: L Normetanephrine 2
+        maps_to: M_normete_DASH_L_e
+      - id: norepinephrine_2
+        label: Norepinephrine 2
+        maps_to: M_nrpphr_e
+      - id: mitochondrial_extracellular_o2
+        label: Mitochondrial Extracellular O2
+        maps_to: M_o2_e
+      - id: octadecenoate_n_c18_1_2
+        label: Octadecenoate N C18 1 2
+        maps_to: M_ocdcea_e
+      - id: metabolic_pathway_state_328
+        label: Metabolic Pathway state 328
+        maps_to: M_orot_e
+      - id: l_phenylalanine_2
+        label: L Phenylalanine 2
+        maps_to: M_phe_DASH_L_e
+      - id: phosphate_2
+        label: Phosphate 2
+        maps_to: M_pi_e
+      - id: putrescine_2
+        label: Putrescine 2
+        maps_to: M_ptrc_e
+      - id: pyridoxamine_2
+        label: Pyridoxamine 2
+        maps_to: M_pydam_e
+      - id: pyridoxal_2
+        label: Pyridoxal 2
+        maps_to: M_pydx_e
+      - id: pyridoxine_2
+        label: Pyridoxine 2
+        maps_to: M_pydxn_e
+      - id: mitochondrial_extracellular_pyruvate
+        label: Mitochondrial Extracellular Pyruvate
+        maps_to: M_pyr_e
+      - id: riboflavin_2
+        label: Riboflavin 2
+        maps_to: M_ribflv_e
+      - id: spermidine_2
+        label: Spermidine 2
+        maps_to: M_spmd_e
+      - id: metabolic_pathway_state_338
+        label: Metabolic Pathway state 338
+        maps_to: M_sprm_e
+      - id: metabolic_pathway_state_339
+        label: Metabolic Pathway state 339
+        maps_to: M_thm_e
+      - id: thiamin_monophosphate_2
+        label: Thiamin Monophosphate 2
+        maps_to: M_thmmp_e
+      - id: metabolic_pathway_state_341
+        label: Metabolic Pathway state 341
+        maps_to: M_urea_e
+      - id: metabolic_pathway_state_342
+        label: Metabolic Pathway state 342
+        maps_to: M_uri_e
+  communication_step: 1.0
+runtime:
+  dependencies:
+    packages:
+    - PyYAML==6.0.2
+parameters:
+- name: integration_step
+  value: 1.0
+  min: 0.0
+  units: model_time
+  description: Sampling step for the visualisation model.
+io:
+  inputs:
+  - name: metabolism_sbml_bordbar2011_humanerythrocyte_metabolicnetwork_model1106080000_model_observable_values
+    description: Latest user-facing observable values from the core metabolism model.
+  - name: metabolism_sbml_bordbar2011_humanerythrocyte_metabolicnetwork_model1106080000_model_run_summary
+    description: Run summary from the core metabolism model.
+  - name: metabolism_sbml_bordbar2011_humanerythrocyte_metabolicnetwork_model1106080000_model_observable_labels
+    description: Display labels for user-facing observables.
+  outputs: []

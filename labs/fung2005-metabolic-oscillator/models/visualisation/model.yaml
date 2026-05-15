@@ -1,0 +1,65 @@
+schema_version: '2.0'
+title: Fung2005_Metabolic_Oscillator Visualisation
+description: Dedicated presentation model for Fung2005_Metabolic_Oscillator.
+standard: other
+tags:
+- metabolism
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  entrypoint: src.metabolism_visualisation:MetabolismVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Fung2005_Metabolic_Oscillator Lab
+    question: Which metabolic pathway dynamics observables show the strongest activity in
+      Fung2005_Metabolic_Oscillator?
+    answer_focus: metabolic pathway dynamics
+    sources:
+    - alias: metabolism_sbml_fung2005_metabolic_oscillator_biomd0000000067_model
+      title: Fung2005_Metabolic_Oscillator
+      scope: metabolic pathway dynamics
+      label_caveat: Values are native SBML quantities. Conservative pathway-state labels are
+        used where the bundled SBML does not encode exact metabolite identities.
+      observables:
+      - id: metabolic_pathway_state_1
+        label: Metabolic Pathway state 1
+        maps_to: AcCoA
+      - id: acetyl_phosphate
+        label: Acetyl Phosphate
+        maps_to: AcP
+      - id: metabolic_pathway_state_3
+        label: Metabolic Pathway state 3
+        maps_to: OAc
+      - id: protonated_acetate
+        label: Protonated Acetate
+        maps_to: HOAc
+      - id: lactate_repressor
+        label: lactate Repressor
+        maps_to: LacI
+      - id: metabolic_pathway_state_6
+        label: Metabolic Pathway state 6
+        maps_to: Acs
+      - id: phosphate_acetyl_transferase
+        label: Phosphate Acetyl Transferase
+        maps_to: Pta
+  communication_step: 1.0
+runtime:
+  dependencies:
+    packages:
+    - PyYAML==6.0.2
+parameters:
+- name: integration_step
+  value: 1.0
+  min: 0.0
+  units: model_time
+  description: Sampling step for the visualisation model.
+io:
+  inputs:
+  - name: metabolism_sbml_fung2005_metabolic_oscillator_biomd0000000067_model_observable_values
+    description: Latest user-facing observable values from the core metabolism model.
+  - name: metabolism_sbml_fung2005_metabolic_oscillator_biomd0000000067_model_run_summary
+    description: Run summary from the core metabolism model.
+  - name: metabolism_sbml_fung2005_metabolic_oscillator_biomd0000000067_model_observable_labels
+    description: Display labels for user-facing observables.
+  outputs: []

@@ -1,0 +1,82 @@
+schema_version: '2.0'
+title: Reyes-Palomares2012 V1 Standalone Polyamine Sulfur Lab
+description: Reyes-Palomares2012 - a combined modelhepatic polyamine and sulfur aminoacid
+  metabolism - version1 Mammalian polyamine metabolism consists of a bi-cycle with two required
+  entrances, omithine and S-ade. It can be used to explore metabolic flux dynamics and compare
+  pathway behavior across conditions.
+io:
+  inputs:
+  - name: initial_b_glycine
+    maps_to: metabolism_sbml_reyes_palomares2012_a_combined_model_hepatic_pol_biomd0000000674_model.initial_b_glycine
+    default: 218.733171504338
+    units: native SBML value
+    description: Initial condition for b glycine. Maps to bundled SBML symbol `b_gly`. Applied
+      before the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_b_glutamate
+    maps_to: metabolism_sbml_reyes_palomares2012_a_combined_model_hepatic_pol_biomd0000000674_model.initial_b_glutamate
+    default: 60.4651616225031
+    units: native SBML value
+    description: Initial condition for b glutamate. Maps to bundled SBML symbol `b_glu`. Applied
+      before the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_b_cysteine
+    maps_to: metabolism_sbml_reyes_palomares2012_a_combined_model_hepatic_pol_biomd0000000674_model.initial_b_cysteine
+    default: 183.099466381356
+    units: native SBML value
+    description: Initial condition for b cysteine. Maps to bundled SBML symbol `b_cys`. Applied
+      before the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_metabolic_pathway_state_4
+    maps_to: metabolism_sbml_reyes_palomares2012_a_combined_model_hepatic_pol_biomd0000000674_model.initial_metabolic_pathway_state_4
+    default: 0.472632922783833
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 4. Maps to bundled SBML symbol
+      `b_gsg`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_blood_glutathione
+    maps_to: metabolism_sbml_reyes_palomares2012_a_combined_model_hepatic_pol_biomd0000000674_model.initial_blood_glutathione
+    default: 12.5470655822207
+    units: native SBML value
+    description: Initial condition for blood glutathione. Maps to bundled SBML symbol `b_gsh`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: b_glycine
+    maps_to: metabolism_sbml_reyes_palomares2012_a_combined_model_hepatic_pol_biomd0000000674_model.b_glycine
+  - name: b_glutamate
+    maps_to: metabolism_sbml_reyes_palomares2012_a_combined_model_hepatic_pol_biomd0000000674_model.b_glutamate
+  - name: b_cysteine
+    maps_to: metabolism_sbml_reyes_palomares2012_a_combined_model_hepatic_pol_biomd0000000674_model.b_cysteine
+  - name: metabolic_pathway_state_4
+    maps_to: metabolism_sbml_reyes_palomares2012_a_combined_model_hepatic_pol_biomd0000000674_model.metabolic_pathway_state_4
+  - name: blood_glutathione
+    maps_to: metabolism_sbml_reyes_palomares2012_a_combined_model_hepatic_pol_biomd0000000674_model.blood_glutathione
+  - name: observable_values
+    maps_to: metabolism_sbml_reyes_palomares2012_a_combined_model_hepatic_pol_biomd0000000674_model.observable_values
+  - name: run_summary
+    maps_to: metabolism_sbml_reyes_palomares2012_a_combined_model_hepatic_pol_biomd0000000674_model.run_summary
+  - name: observable_labels
+    maps_to: metabolism_sbml_reyes_palomares2012_a_combined_model_hepatic_pol_biomd0000000674_model.observable_labels
+models:
+- alias: metabolism_sbml_reyes_palomares2012_a_combined_model_hepatic_pol_biomd0000000674_model
+  path: models/core
+  parameters:
+    model_path: data/BIOMD0000000674.xml
+    integration_step: 0.1
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: metabolism_sbml_reyes_palomares2012_a_combined_model_hepatic_pol_biomd0000000674_model.observable_values
+  to:
+  - visualisation.metabolism_sbml_reyes_palomares2012_a_combined_model_hepatic_pol_biomd0000000674_model_observable_values
+- from: metabolism_sbml_reyes_palomares2012_a_combined_model_hepatic_pol_biomd0000000674_model.run_summary
+  to:
+  - visualisation.metabolism_sbml_reyes_palomares2012_a_combined_model_hepatic_pol_biomd0000000674_model_run_summary
+- from: metabolism_sbml_reyes_palomares2012_a_combined_model_hepatic_pol_biomd0000000674_model.observable_labels
+  to:
+  - visualisation.metabolism_sbml_reyes_palomares2012_a_combined_model_hepatic_pol_biomd0000000674_model_observable_labels
+runtime:
+  duration: 10.0
+  communication_step: 1.0
+  initial_inputs: {}

@@ -1,0 +1,82 @@
+schema_version: '2.0'
+title: Bruck2008_Glycolysis Lab
+description: 'Exploring the effect of variable enzyme concentrations in a kinetic model of
+  yeast glycolysis Jozsef Bruck, Wolfram Liebermeister, Edda Klipp, Genome Inform 2008 20:1-14
+  Abstract: Metabolism is one of. It can be used to explore metabolic flux dynamics and compare
+  pathway behavior across conditions.'
+io:
+  inputs:
+  - name: initial_intracellular_glucose
+    maps_to: metabolism_sbml_bruck2008_glycolysis_model1011010000_model.initial_intracellular_glucose
+    default: 0.087
+    units: native SBML value
+    description: Initial condition for intracellular glucose. Maps to bundled SBML symbol
+      `GLCi`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_glucose_6_phosphate
+    maps_to: metabolism_sbml_bruck2008_glycolysis_model1011010000_model.initial_glucose_6_phosphate
+    default: 1.39
+    units: native SBML value
+    description: Initial condition for glucose 6 phosphate. Maps to bundled SBML symbol `G6P`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_fructose_6_phosphate
+    maps_to: metabolism_sbml_bruck2008_glycolysis_model1011010000_model.initial_fructose_6_phosphate
+    default: 0.28
+    units: native SBML value
+    description: Initial condition for fructose 6 phosphate. Maps to bundled SBML symbol `F6P`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_fructose_1_6_bisphosphate
+    maps_to: metabolism_sbml_bruck2008_glycolysis_model1011010000_model.initial_fructose_1_6_bisphosphate
+    default: 0.1
+    units: native SBML value
+    description: Initial condition for fructose 1 6 bisphosphate. Maps to bundled SBML symbol
+      `F16P`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_triose_phosphate
+    maps_to: metabolism_sbml_bruck2008_glycolysis_model1011010000_model.initial_triose_phosphate
+    default: 5.17
+    units: native SBML value
+    description: Initial condition for triose phosphate. Maps to bundled SBML symbol `TRIO`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: intracellular_glucose
+    maps_to: metabolism_sbml_bruck2008_glycolysis_model1011010000_model.intracellular_glucose
+  - name: glucose_6_phosphate
+    maps_to: metabolism_sbml_bruck2008_glycolysis_model1011010000_model.glucose_6_phosphate
+  - name: fructose_6_phosphate
+    maps_to: metabolism_sbml_bruck2008_glycolysis_model1011010000_model.fructose_6_phosphate
+  - name: fructose_1_6_bisphosphate
+    maps_to: metabolism_sbml_bruck2008_glycolysis_model1011010000_model.fructose_1_6_bisphosphate
+  - name: triose_phosphate
+    maps_to: metabolism_sbml_bruck2008_glycolysis_model1011010000_model.triose_phosphate
+  - name: observable_values
+    maps_to: metabolism_sbml_bruck2008_glycolysis_model1011010000_model.observable_values
+  - name: run_summary
+    maps_to: metabolism_sbml_bruck2008_glycolysis_model1011010000_model.run_summary
+  - name: observable_labels
+    maps_to: metabolism_sbml_bruck2008_glycolysis_model1011010000_model.observable_labels
+models:
+- alias: metabolism_sbml_bruck2008_glycolysis_model1011010000_model
+  path: models/core
+  parameters:
+    model_path: data/MODEL1011010000.xml
+    integration_step: 0.1
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: metabolism_sbml_bruck2008_glycolysis_model1011010000_model.observable_values
+  to:
+  - visualisation.metabolism_sbml_bruck2008_glycolysis_model1011010000_model_observable_values
+- from: metabolism_sbml_bruck2008_glycolysis_model1011010000_model.run_summary
+  to:
+  - visualisation.metabolism_sbml_bruck2008_glycolysis_model1011010000_model_run_summary
+- from: metabolism_sbml_bruck2008_glycolysis_model1011010000_model.observable_labels
+  to:
+  - visualisation.metabolism_sbml_bruck2008_glycolysis_model1011010000_model_observable_labels
+runtime:
+  duration: 10.0
+  communication_step: 1.0
+  initial_inputs: {}

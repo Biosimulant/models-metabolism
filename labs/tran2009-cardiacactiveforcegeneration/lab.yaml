@@ -1,0 +1,85 @@
+schema_version: '2.0'
+title: Tran2009_CardiacActiveForceGeneration Lab
+description: 'This a model from the article: A metabolite-sensitive, thermodynamically constrained
+  model of cardiaccross-bridge cycling: implications for force development during ischemia.
+  It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions.'
+io:
+  inputs:
+  - name: initial_metabolic_pathway_state_1
+    maps_to: metabolism_sbml_tran2009_cardiacactiveforcegeneration_model1006230116_model.initial_metabolic_pathway_state_1
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 1. Maps to bundled SBML symbol
+      `Ca_sr`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_metabolic_pathway_state_2
+    maps_to: metabolism_sbml_tran2009_cardiacactiveforcegeneration_model1006230116_model.initial_metabolic_pathway_state_2
+    default: 0.00016666666666666666
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 2. Maps to bundled SBML symbol
+      `T_Cai`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from Tellurium setup-time value because no explicit
+      SBML initial value was available.
+  - name: initial_metabolic_pathway_state_3
+    maps_to: metabolism_sbml_tran2009_cardiacactiveforcegeneration_model1006230116_model.initial_metabolic_pathway_state_3
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 3. Maps to bundled SBML symbol
+      `T_Casr`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from Tellurium setup-time value because no explicit
+      SBML initial value was available.
+  - name: initial_metabolic_pathway_state_4
+    maps_to: metabolism_sbml_tran2009_cardiacactiveforcegeneration_model1006230116_model.initial_metabolic_pathway_state_4
+    default: 9.174311926605505
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 4. Maps to bundled SBML symbol
+      `T_H1`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from Tellurium setup-time value because no explicit
+      SBML initial value was available.
+  - name: initial_metabolic_pathway_state_5
+    maps_to: metabolism_sbml_tran2009_cardiacactiveforcegeneration_model1006230116_model.initial_metabolic_pathway_state_5
+    default: 2.824858757062147e-06
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 5. Maps to bundled SBML symbol
+      `T_Hi`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from Tellurium setup-time value because no explicit
+      SBML initial value was available.
+  outputs:
+  - name: metabolic_pathway_state_1
+    maps_to: metabolism_sbml_tran2009_cardiacactiveforcegeneration_model1006230116_model.metabolic_pathway_state_1
+  - name: metabolic_pathway_state_2
+    maps_to: metabolism_sbml_tran2009_cardiacactiveforcegeneration_model1006230116_model.metabolic_pathway_state_2
+  - name: metabolic_pathway_state_3
+    maps_to: metabolism_sbml_tran2009_cardiacactiveforcegeneration_model1006230116_model.metabolic_pathway_state_3
+  - name: metabolic_pathway_state_4
+    maps_to: metabolism_sbml_tran2009_cardiacactiveforcegeneration_model1006230116_model.metabolic_pathway_state_4
+  - name: metabolic_pathway_state_5
+    maps_to: metabolism_sbml_tran2009_cardiacactiveforcegeneration_model1006230116_model.metabolic_pathway_state_5
+  - name: observable_values
+    maps_to: metabolism_sbml_tran2009_cardiacactiveforcegeneration_model1006230116_model.observable_values
+  - name: run_summary
+    maps_to: metabolism_sbml_tran2009_cardiacactiveforcegeneration_model1006230116_model.run_summary
+  - name: observable_labels
+    maps_to: metabolism_sbml_tran2009_cardiacactiveforcegeneration_model1006230116_model.observable_labels
+models:
+- alias: metabolism_sbml_tran2009_cardiacactiveforcegeneration_model1006230116_model
+  path: models/core
+  parameters:
+    model_path: data/MODEL1006230116.xml
+    integration_step: 0.1
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: metabolism_sbml_tran2009_cardiacactiveforcegeneration_model1006230116_model.observable_values
+  to:
+  - visualisation.metabolism_sbml_tran2009_cardiacactiveforcegeneration_model1006230116_model_observable_values
+- from: metabolism_sbml_tran2009_cardiacactiveforcegeneration_model1006230116_model.run_summary
+  to:
+  - visualisation.metabolism_sbml_tran2009_cardiacactiveforcegeneration_model1006230116_model_run_summary
+- from: metabolism_sbml_tran2009_cardiacactiveforcegeneration_model1006230116_model.observable_labels
+  to:
+  - visualisation.metabolism_sbml_tran2009_cardiacactiveforcegeneration_model1006230116_model_observable_labels
+runtime:
+  duration: 10.0
+  communication_step: 1.0
+  initial_inputs: {}

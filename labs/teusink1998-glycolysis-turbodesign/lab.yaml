@@ -1,0 +1,63 @@
+schema_version: '2.0'
+title: Teusink1998_Glycolysis_TurboDesign Lab
+description: 'This is the model described in the article: The danger of metabolic pathways
+  with turbo design Teusink B, Walsh MC, van Dam K, Westerhoff HV Trends Biochem. It can be
+  used to explore metabolic flux dynamics and compare pathway behavior across conditions.'
+io:
+  inputs:
+  - name: initial_hexose_monophosphate
+    maps_to: metabolism_sbml_teusink1998_glycolysis_turbodesign_biomd0000000253_model.initial_hexose_monophosphate
+    default: 0.1
+    units: native SBML value
+    description: Initial condition for hexose monophosphate. Maps to bundled SBML symbol `HMP`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_fructose_1_6_bisphosphate
+    maps_to: metabolism_sbml_teusink1998_glycolysis_turbodesign_biomd0000000253_model.initial_fructose_1_6_bisphosphate
+    default: 1.0
+    units: native SBML value
+    description: Initial condition for fructose 1 6 bisphosphate. Maps to bundled SBML symbol
+      `Fru16P2`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_atp
+    maps_to: metabolism_sbml_teusink1998_glycolysis_turbodesign_biomd0000000253_model.initial_atp
+    default: 4.0
+    units: native SBML value
+    description: Initial condition for atp. Maps to bundled SBML symbol `ATP`. Applied before
+      the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  outputs:
+  - name: hexose_monophosphate
+    maps_to: metabolism_sbml_teusink1998_glycolysis_turbodesign_biomd0000000253_model.hexose_monophosphate
+  - name: fructose_1_6_bisphosphate
+    maps_to: metabolism_sbml_teusink1998_glycolysis_turbodesign_biomd0000000253_model.fructose_1_6_bisphosphate
+  - name: atp
+    maps_to: metabolism_sbml_teusink1998_glycolysis_turbodesign_biomd0000000253_model.atp
+  - name: observable_values
+    maps_to: metabolism_sbml_teusink1998_glycolysis_turbodesign_biomd0000000253_model.observable_values
+  - name: run_summary
+    maps_to: metabolism_sbml_teusink1998_glycolysis_turbodesign_biomd0000000253_model.run_summary
+  - name: observable_labels
+    maps_to: metabolism_sbml_teusink1998_glycolysis_turbodesign_biomd0000000253_model.observable_labels
+models:
+- alias: metabolism_sbml_teusink1998_glycolysis_turbodesign_biomd0000000253_model
+  path: models/core
+  parameters:
+    model_path: data/BIOMD0000000253.xml
+    integration_step: 0.1
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: metabolism_sbml_teusink1998_glycolysis_turbodesign_biomd0000000253_model.observable_values
+  to:
+  - visualisation.metabolism_sbml_teusink1998_glycolysis_turbodesign_biomd0000000253_model_observable_values
+- from: metabolism_sbml_teusink1998_glycolysis_turbodesign_biomd0000000253_model.run_summary
+  to:
+  - visualisation.metabolism_sbml_teusink1998_glycolysis_turbodesign_biomd0000000253_model_run_summary
+- from: metabolism_sbml_teusink1998_glycolysis_turbodesign_biomd0000000253_model.observable_labels
+  to:
+  - visualisation.metabolism_sbml_teusink1998_glycolysis_turbodesign_biomd0000000253_model_observable_labels
+runtime:
+  duration: 10.0
+  communication_step: 1.0
+  initial_inputs: {}

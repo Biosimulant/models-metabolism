@@ -1,0 +1,83 @@
+schema_version: '2.0'
+title: Nijhout2006_Hepatic_Folate_Metab Lab
+description: 'This is the model described in the article: In silico experimentation with a
+  model of hepatic mitochondrial folate metabolism. It can be used to explore metabolic flux
+  dynamics and compare pathway behavior across conditions.'
+io:
+  inputs:
+  - name: initial_cytosolic_tetrahydrofolate
+    maps_to: metabolism_sbml_nijhout2006_hepatic_folate_metab_model1007200000_model.initial_cytosolic_tetrahydrofolate
+    default: 13.333333333333334
+    units: native SBML value
+    description: Initial condition for cytosolic tetrahydrofolate. Maps to bundled SBML symbol
+      `c_thf`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from Tellurium setup-time value because no explicit
+      SBML initial value was available.
+  - name: initial_mitochondrial_tetrahydrofolate
+    maps_to: metabolism_sbml_nijhout2006_hepatic_folate_metab_model1007200000_model.initial_mitochondrial_tetrahydrofolate
+    default: 40.0
+    units: native SBML value
+    description: Initial condition for mitochondrial tetrahydrofolate. Maps to bundled SBML
+      symbol `m_thf`. Applied before the Tellurium simulation starts; this does not change
+      kinetic parameters or equations. Default from Tellurium setup-time value because no
+      explicit SBML initial value was available.
+  - name: initial_folate_metabolism_state_3
+    maps_to: metabolism_sbml_nijhout2006_hepatic_folate_metab_model1007200000_model.initial_folate_metabolism_state_3
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for folate metabolism state 3. Maps to bundled SBML symbol
+      `c_5mf`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_folate_metabolism_state_4
+    maps_to: metabolism_sbml_nijhout2006_hepatic_folate_metab_model1007200000_model.initial_folate_metabolism_state_4
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for folate metabolism state 4. Maps to bundled SBML symbol
+      `c_2cf`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_folate_metabolism_state_5
+    maps_to: metabolism_sbml_nijhout2006_hepatic_folate_metab_model1007200000_model.initial_folate_metabolism_state_5
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for folate metabolism state 5. Maps to bundled SBML symbol
+      `c_1cf`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: cytosolic_tetrahydrofolate
+    maps_to: metabolism_sbml_nijhout2006_hepatic_folate_metab_model1007200000_model.cytosolic_tetrahydrofolate
+  - name: mitochondrial_tetrahydrofolate
+    maps_to: metabolism_sbml_nijhout2006_hepatic_folate_metab_model1007200000_model.mitochondrial_tetrahydrofolate
+  - name: folate_metabolism_state_3
+    maps_to: metabolism_sbml_nijhout2006_hepatic_folate_metab_model1007200000_model.folate_metabolism_state_3
+  - name: folate_metabolism_state_4
+    maps_to: metabolism_sbml_nijhout2006_hepatic_folate_metab_model1007200000_model.folate_metabolism_state_4
+  - name: folate_metabolism_state_5
+    maps_to: metabolism_sbml_nijhout2006_hepatic_folate_metab_model1007200000_model.folate_metabolism_state_5
+  - name: observable_values
+    maps_to: metabolism_sbml_nijhout2006_hepatic_folate_metab_model1007200000_model.observable_values
+  - name: run_summary
+    maps_to: metabolism_sbml_nijhout2006_hepatic_folate_metab_model1007200000_model.run_summary
+  - name: observable_labels
+    maps_to: metabolism_sbml_nijhout2006_hepatic_folate_metab_model1007200000_model.observable_labels
+models:
+- alias: metabolism_sbml_nijhout2006_hepatic_folate_metab_model1007200000_model
+  path: models/core
+  parameters:
+    model_path: data/MODEL1007200000.xml
+    integration_step: 0.1
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: metabolism_sbml_nijhout2006_hepatic_folate_metab_model1007200000_model.observable_values
+  to:
+  - visualisation.metabolism_sbml_nijhout2006_hepatic_folate_metab_model1007200000_model_observable_values
+- from: metabolism_sbml_nijhout2006_hepatic_folate_metab_model1007200000_model.run_summary
+  to:
+  - visualisation.metabolism_sbml_nijhout2006_hepatic_folate_metab_model1007200000_model_run_summary
+- from: metabolism_sbml_nijhout2006_hepatic_folate_metab_model1007200000_model.observable_labels
+  to:
+  - visualisation.metabolism_sbml_nijhout2006_hepatic_folate_metab_model1007200000_model_observable_labels
+runtime:
+  duration: 10.0
+  communication_step: 1.0
+  initial_inputs: {}

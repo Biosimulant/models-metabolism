@@ -1,0 +1,120 @@
+schema_version: '2.0'
+title: Sips2015 - Glucose and non-esterified fatty acids (NEFA) metabolism
+description: 'This a model from the article: Model-Based Quantification of the Systemic Interplay
+  between Glucose and Fatty Acids in the Postprandial State. It can be used to explore metabolic
+  flux dynamics and compare pathway behavior across conditions.'
+standard: sbml
+tags:
+- biomodels_ebi
+- faithful
+- metabolism
+- ode
+- sbml
+- tellurium
+authors:
+- Biosimulant Team
+- Fianne L P Sips
+- Elin Nyman
+- Martin Adiels
+- Peter A J Hilbers
+- "Peter Str\xE5lfors"
+upstream:
+  id: biomodels_ebi:MODEL1806080001
+  source_db: biomodels_ebi
+  source_id: MODEL1806080001
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1806080001
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1806080001?filename=Sips2015
+    - GlcNEFA model.xml
+  license: CC0
+biosim:
+  entrypoint: src.sips2015_glucose_and_non_esterified_fatty_acids_model1806080001_model:Sips2015GlucoseAndNonEsterifiedFattyAcidsModel1806080001Model
+  init_kwargs:
+    model_path: data/MODEL1806080001.xml
+    integration_step: 0.1
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_glycolysis_state_1
+    maps_to: m_4
+    default: 0.0982882779338853
+    units: native SBML value
+    description: Initial condition for glycolysis state 1. Maps to bundled SBML symbol `m_4`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_glycolysis_state_2
+    maps_to: m_2
+    default: 0.245720694834713
+    units: native SBML value
+    description: Initial condition for glycolysis state 2. Maps to bundled SBML symbol `m_2`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_glycolysis_state_3
+    maps_to: m_6
+    default: 0.64712
+    units: native SBML value
+    description: Initial condition for glycolysis state 3. Maps to bundled SBML symbol `m_6`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_glycolysis_state_4
+    maps_to: S_b_minus
+    default: -1.55
+    units: native SBML value
+    description: Initial condition for glycolysis state 4. Maps to bundled SBML symbol `S_b_minus`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_glycolysis_state_5
+    maps_to: k_p1
+    default: 2.4642129350853
+    units: native SBML value
+    description: Initial condition for glycolysis state 5. Maps to bundled SBML symbol `k_p1`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: glycolysis_state_1
+    maps_to: m_4
+    label: Glycolysis state 1
+    description: Glycolysis state 1; conservative display label for an abstract SBML state
+      variable. Maps to SBML symbol `m_4`. Exact metabolite identity is not encoded in the
+      bundled SBML metadata.
+  - name: glycolysis_state_2
+    maps_to: m_2
+    label: Glycolysis state 2
+    description: Glycolysis state 2; conservative display label for an abstract SBML state
+      variable. Maps to SBML symbol `m_2`. Exact metabolite identity is not encoded in the
+      bundled SBML metadata.
+  - name: glycolysis_state_3
+    maps_to: m_6
+    label: Glycolysis state 3
+    description: Glycolysis state 3; conservative display label for an abstract SBML state
+      variable. Maps to SBML symbol `m_6`. Exact metabolite identity is not encoded in the
+      bundled SBML metadata.
+  - name: glycolysis_state_4
+    maps_to: S_b_minus
+    label: Glycolysis state 4
+    description: Glycolysis state 4; conservative display label for an abstract SBML state
+      variable. Maps to SBML symbol `S_b_minus`. Exact metabolite identity is not encoded
+      in the bundled SBML metadata.
+  - name: glycolysis_state_5
+    maps_to: k_p1
+    label: Glycolysis state 5
+    description: Glycolysis state 5; conservative display label for an abstract SBML state
+      variable. Maps to SBML symbol `k_p1`. Exact metabolite identity is not encoded in the
+      bundled SBML metadata.
+  - name: observable_values
+    description: Latest user-facing observable values from the SBML run.
+  - name: run_summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: observable_labels
+    description: Mapping from user-facing observable ports to display labels.
+parameters:
+- name: integration_step
+  value: 0.1
+  min: 0.0
+  units: model_time
+  description: Internal sampling step for Tellurium output collection.

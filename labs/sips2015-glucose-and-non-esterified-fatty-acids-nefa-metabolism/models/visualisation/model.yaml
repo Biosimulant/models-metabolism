@@ -1,0 +1,201 @@
+schema_version: '2.0'
+title: Sips2015 - Glucose and non-esterified fatty acids (NEFA) metabolism Visualisation
+description: Dedicated presentation model for Sips2015 - Glucose and non-esterified fatty
+  acids (NEFA) metabolism.
+standard: other
+tags:
+- metabolism
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  entrypoint: src.metabolism_visualisation:MetabolismVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Sips2015 - Glucose and non-esterified fatty acids (NEFA) metabolism Lab
+    question: Which central carbon and glycolytic metabolism observables show the strongest
+      activity in Sips2015 - Glucose and non-esterified fatty acids (NEFA) metabolism?
+    answer_focus: central carbon and glycolytic metabolism
+    sources:
+    - alias: metabolism_sbml_sips2015_glucose_and_non_esterified_fatty_acids_model1806080001_model
+      title: Sips2015 - Glucose and non-esterified fatty acids (NEFA) metabolism
+      scope: central carbon and glycolytic metabolism
+      label_caveat: Values are native SBML quantities. Conservative pathway-state labels are
+        used where the bundled SBML does not encode exact metabolite identities.
+      observables:
+      - id: glycolysis_state_1
+        label: Glycolysis state 1
+        maps_to: m_4
+      - id: glycolysis_state_2
+        label: Glycolysis state 2
+        maps_to: m_2
+      - id: glycolysis_state_3
+        label: Glycolysis state 3
+        maps_to: m_6
+      - id: glycolysis_state_4
+        label: Glycolysis state 4
+        maps_to: S_b_minus
+      - id: glycolysis_state_5
+        label: Glycolysis state 5
+        maps_to: k_p1
+      - id: glycolysis_state_6
+        label: Glycolysis state 6
+        maps_to: V_m0
+      - id: glycolysis_state_7
+        label: Glycolysis state 7
+        maps_to: aa
+      - id: glycolysis_state_8
+        label: Glycolysis state 8
+        maps_to: cc
+      - id: glycolysis_state_9
+        label: Glycolysis state 9
+        maps_to: EGP
+      - id: glycolysis_state_10
+        label: Glycolysis state 10
+        maps_to: V_mmax
+      - id: glycolysis_state_11
+        label: Glycolysis state 11
+        maps_to: E
+      - id: glycolysis_state_12
+        label: Glycolysis state 12
+        maps_to: S
+      - id: glycolysis_state_13
+        label: Glycolysis state 13
+        maps_to: I
+      - id: glycolysis_state_14
+        label: Glycolysis state 14
+        maps_to: G
+      - id: glycolysis_state_15
+        label: Glycolysis state 15
+        maps_to: HE
+      - id: glycolysis_state_16
+        label: Glycolysis state 16
+        maps_to: m_3
+      - id: glycolysis_state_17
+        label: Glycolysis state 17
+        maps_to: Q_sto
+      - id: glycolysis_state_18
+        label: Glycolysis state 18
+        maps_to: Ra
+      - id: glycolysis_state_19
+        label: Glycolysis state 19
+        maps_to: k_empt
+      - id: glycolysis_state_20
+        label: Glycolysis state 20
+        maps_to: U_idm
+      - id: glycolysis_state_21
+        label: Glycolysis state 21
+        maps_to: U_id
+      - id: glycolysis_state_22
+        label: Glycolysis state 22
+        maps_to: U
+      - id: glycolysis_state_23
+        label: Glycolysis state 23
+        maps_to: parameter_20
+      - id: glycolysis_state_24
+        label: Glycolysis state 24
+        maps_to: parameter_22
+      - id: glycolysis_state_25
+        label: Glycolysis state 25
+        maps_to: parameter_23
+      - id: glycolysis_state_26
+        label: Glycolysis state 26
+        maps_to: parameter_24
+      - id: glycolysis_state_27
+        label: Glycolysis state 27
+        maps_to: parameter_26
+      - id: triglyceride
+        label: triglyceride
+        maps_to: parameter_28
+      - id: glycolysis_state_29
+        label: Glycolysis state 29
+        maps_to: parameter_27
+      - id: glycolysis_state_30
+        label: Glycolysis state 30
+        maps_to: parameter_25
+      - id: glycolysis_state_31
+        label: Glycolysis state 31
+        maps_to: parameter_34
+      - id: glycolysis_state_32
+        label: Glycolysis state 32
+        maps_to: S_po
+      - id: plot1tot2
+        label: Plot1tot2
+        maps_to: parameter_35
+      - id: plot2togut
+        label: Plot2togut
+        maps_to: parameter_36
+      - id: glycolysis_state_35
+        label: Glycolysis state 35
+        maps_to: G_p
+      - id: glycolysis_state_36
+        label: Glycolysis state 36
+        maps_to: G_t
+      - id: glycolysis_state_37
+        label: Glycolysis state 37
+        maps_to: I_l
+      - id: glycolysis_state_38
+        label: Glycolysis state 38
+        maps_to: I_p
+      - id: glycolysis_state_39
+        label: Glycolysis state 39
+        maps_to: Q_sto1
+      - id: glycolysis_state_40
+        label: Glycolysis state 40
+        maps_to: Q_gut
+      - id: glycolysis_state_41
+        label: Glycolysis state 41
+        maps_to: I_1
+      - id: glycolysis_state_42
+        label: Glycolysis state 42
+        maps_to: I_d
+      - id: glycolysis_state_43
+        label: Glycolysis state 43
+        maps_to: X
+      - id: glycolysis_state_44
+        label: Glycolysis state 44
+        maps_to: I_po
+      - id: glycolysis_state_45
+        label: Glycolysis state 45
+        maps_to: Y
+      - id: glycolysis_state_46
+        label: Glycolysis state 46
+        maps_to: Q_sto2
+      - id: glycolysis_state_47
+        label: Glycolysis state 47
+        maps_to: species_1
+      - id: glycolysis_state_48
+        label: Glycolysis state 48
+        maps_to: species_2
+      - id: glycolysis_state_49
+        label: Glycolysis state 49
+        maps_to: species_3
+      - id: non_esterified_fatty_acids
+        label: non esterified fatty acids
+        maps_to: species_4
+      - id: glycolysis_state_51
+        label: Glycolysis state 51
+        maps_to: species_5
+      - id: glycolysis_state_52
+        label: Glycolysis state 52
+        maps_to: species_6
+  communication_step: 1.0
+runtime:
+  dependencies:
+    packages:
+    - PyYAML==6.0.2
+parameters:
+- name: integration_step
+  value: 1.0
+  min: 0.0
+  units: model_time
+  description: Sampling step for the visualisation model.
+io:
+  inputs:
+  - name: metabolism_sbml_sips2015_glucose_and_non_esterified_fatty_acids_model1806080001_model_observable_values
+    description: Latest user-facing observable values from the core metabolism model.
+  - name: metabolism_sbml_sips2015_glucose_and_non_esterified_fatty_acids_model1806080001_model_run_summary
+    description: Run summary from the core metabolism model.
+  - name: metabolism_sbml_sips2015_glucose_and_non_esterified_fatty_acids_model1806080001_model_observable_labels
+    description: Display labels for user-facing observables.
+  outputs: []

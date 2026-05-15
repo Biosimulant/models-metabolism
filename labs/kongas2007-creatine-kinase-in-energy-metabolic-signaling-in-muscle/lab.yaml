@@ -1,0 +1,82 @@
+schema_version: '2.0'
+title: Kongas2007 - Creatine Kinase in energy metabolic signaling in muscle Lab
+description: 'Kongas2007 - Creatine Kinase in energy metabolic signaling in muscle This model
+  is described in the article: Creatine kinase in energy metabolic signaling in muscle Olav
+  Kongas and Johannes H. It can be used to explore metabolic flux dynamics and compare pathway
+  behavior across conditions.'
+io:
+  inputs:
+  - name: initial_intracellular_adp
+    maps_to: metabolism_sbml_kongas2007_creatine_kinase_in_energy_metabolic_s_biomd0000000041_model.initial_intracellular_adp
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for intracellular adp. Maps to bundled SBML symbol `ADPi`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_intracellular_atp
+    maps_to: metabolism_sbml_kongas2007_creatine_kinase_in_energy_metabolic_s_biomd0000000041_model.initial_intracellular_atp
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for intracellular atp. Maps to bundled SBML symbol `ATPi`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_metabolic_pathway_state_3
+    maps_to: metabolism_sbml_kongas2007_creatine_kinase_in_energy_metabolic_s_biomd0000000041_model.initial_metabolic_pathway_state_3
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 3. Maps to bundled SBML symbol
+      `Cri`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_metabolic_pathway_state_4
+    maps_to: metabolism_sbml_kongas2007_creatine_kinase_in_energy_metabolic_s_biomd0000000041_model.initial_metabolic_pathway_state_4
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 4. Maps to bundled SBML symbol
+      `PCri`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_metabolic_pathway_state_5
+    maps_to: metabolism_sbml_kongas2007_creatine_kinase_in_energy_metabolic_s_biomd0000000041_model.initial_metabolic_pathway_state_5
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 5. Maps to bundled SBML symbol
+      `PCr`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: intracellular_adp
+    maps_to: metabolism_sbml_kongas2007_creatine_kinase_in_energy_metabolic_s_biomd0000000041_model.intracellular_adp
+  - name: intracellular_atp
+    maps_to: metabolism_sbml_kongas2007_creatine_kinase_in_energy_metabolic_s_biomd0000000041_model.intracellular_atp
+  - name: metabolic_pathway_state_3
+    maps_to: metabolism_sbml_kongas2007_creatine_kinase_in_energy_metabolic_s_biomd0000000041_model.metabolic_pathway_state_3
+  - name: metabolic_pathway_state_4
+    maps_to: metabolism_sbml_kongas2007_creatine_kinase_in_energy_metabolic_s_biomd0000000041_model.metabolic_pathway_state_4
+  - name: metabolic_pathway_state_5
+    maps_to: metabolism_sbml_kongas2007_creatine_kinase_in_energy_metabolic_s_biomd0000000041_model.metabolic_pathway_state_5
+  - name: observable_values
+    maps_to: metabolism_sbml_kongas2007_creatine_kinase_in_energy_metabolic_s_biomd0000000041_model.observable_values
+  - name: run_summary
+    maps_to: metabolism_sbml_kongas2007_creatine_kinase_in_energy_metabolic_s_biomd0000000041_model.run_summary
+  - name: observable_labels
+    maps_to: metabolism_sbml_kongas2007_creatine_kinase_in_energy_metabolic_s_biomd0000000041_model.observable_labels
+models:
+- alias: metabolism_sbml_kongas2007_creatine_kinase_in_energy_metabolic_s_biomd0000000041_model
+  path: models/core
+  parameters:
+    model_path: data/BIOMD0000000041.xml
+    integration_step: 0.1
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: metabolism_sbml_kongas2007_creatine_kinase_in_energy_metabolic_s_biomd0000000041_model.observable_values
+  to:
+  - visualisation.metabolism_sbml_kongas2007_creatine_kinase_in_energy_metabolic_s_biomd0000000041_model_observable_values
+- from: metabolism_sbml_kongas2007_creatine_kinase_in_energy_metabolic_s_biomd0000000041_model.run_summary
+  to:
+  - visualisation.metabolism_sbml_kongas2007_creatine_kinase_in_energy_metabolic_s_biomd0000000041_model_run_summary
+- from: metabolism_sbml_kongas2007_creatine_kinase_in_energy_metabolic_s_biomd0000000041_model.observable_labels
+  to:
+  - visualisation.metabolism_sbml_kongas2007_creatine_kinase_in_energy_metabolic_s_biomd0000000041_model_observable_labels
+runtime:
+  duration: 10.0
+  communication_step: 1.0
+  initial_inputs: {}

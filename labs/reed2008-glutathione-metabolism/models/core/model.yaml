@@ -1,0 +1,116 @@
+schema_version: '2.0'
+title: Reed2008_Glutathione_Metabolism
+description: 'This is the model described in the article: A mathematical model of glutathione
+  metabolism. Michael C Reed, Rachel L Thomas, Jovana Pavisic, S.'
+standard: sbml
+tags:
+- biomodels_ebi
+- faithful
+- metabolism
+- ode
+- sbml
+- tellurium
+authors:
+- Biosimulant Team
+- Michael C Reed
+- Rachel L Thomas
+- Jovana Pavisic
+- S Jill James
+- Cornelia M Ulrich
+upstream:
+  id: biomodels_ebi:BIOMD0000000268
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000268
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000268
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000268?filename=BIOMD0000000268_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.reed2008_glutathione_metabolism_biomd0000000268_model:Reed2008GlutathioneMetabolismBiomd0000000268Model
+  init_kwargs:
+    model_path: data/BIOMD0000000268.xml
+    integration_step: 0.1
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_cytosolic_tetrahydrofolate
+    maps_to: c_thf
+    default: 4.670919668857204
+    units: native SBML value
+    description: Initial condition for cytosolic tetrahydrofolate. Maps to bundled SBML symbol
+      `c_thf`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from Tellurium setup-time value because no explicit
+      SBML initial value was available.
+  - name: initial_mitochondrial_tetrahydrofolate
+    maps_to: m_thf
+    default: 21.075801087262693
+    units: native SBML value
+    description: Initial condition for mitochondrial tetrahydrofolate. Maps to bundled SBML
+      symbol `m_thf`. Applied before the Tellurium simulation starts; this does not change
+      kinetic parameters or equations. Default from Tellurium setup-time value because no
+      explicit SBML initial value was available.
+  - name: initial_metabolic_pathway_state_3
+    maps_to: c_5mf
+    default: 4.4965335653401
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 3. Maps to bundled SBML symbol
+      `c_5mf`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_metabolic_pathway_state_4
+    maps_to: c_2cf
+    default: 0.506278119133034
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 4. Maps to bundled SBML symbol
+      `c_2cf`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_metabolic_pathway_state_5
+    maps_to: c_1cf
+    default: 0.278602708139276
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 5. Maps to bundled SBML symbol
+      `c_1cf`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: cytosolic_tetrahydrofolate
+    maps_to: c_thf
+    label: Cytosolic Tetrahydrofolate
+    description: Cytosolic Tetrahydrofolate. Maps to SBML symbol `c_thf`.
+  - name: mitochondrial_tetrahydrofolate
+    maps_to: m_thf
+    label: Mitochondrial Tetrahydrofolate
+    description: Mitochondrial Tetrahydrofolate. Maps to SBML symbol `m_thf`.
+  - name: metabolic_pathway_state_3
+    maps_to: c_5mf
+    label: Metabolic Pathway state 3
+    description: Metabolic Pathway state 3; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `c_5mf`. Exact metabolite identity is not encoded
+      in the bundled SBML metadata.
+  - name: metabolic_pathway_state_4
+    maps_to: c_2cf
+    label: Metabolic Pathway state 4
+    description: Metabolic Pathway state 4; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `c_2cf`. Exact metabolite identity is not encoded
+      in the bundled SBML metadata.
+  - name: metabolic_pathway_state_5
+    maps_to: c_1cf
+    label: Metabolic Pathway state 5
+    description: Metabolic Pathway state 5; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `c_1cf`. Exact metabolite identity is not encoded
+      in the bundled SBML metadata.
+  - name: observable_values
+    description: Latest user-facing observable values from the SBML run.
+  - name: run_summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: observable_labels
+    description: Mapping from user-facing observable ports to display labels.
+parameters:
+- name: integration_step
+  value: 0.1
+  min: 0.0
+  units: model_time
+  description: Internal sampling step for Tellurium output collection.

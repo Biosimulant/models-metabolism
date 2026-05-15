@@ -1,0 +1,117 @@
+schema_version: '2.0'
+title: MacDonald2011_GeneticMetabolicDeterminants_BuchnereAphidicola
+description: 'This model is from the article: Genetic and metabolic determinants of nutritional
+  phenotype in an insect-bacterial symbiosis. It can be used to explore metabolic flux dynamics
+  and compare pathway behavior across conditions.'
+standard: sbml
+tags:
+- biomodels_ebi
+- faithful
+- metabolism
+- ode
+- sbml
+- tellurium
+authors:
+- Biosimulant Team
+- S J MacDonald
+- G H Thomas
+- A E Douglas
+upstream:
+  id: biomodels_ebi:MODEL1012300000
+  source_db: biomodels_ebi
+  source_id: MODEL1012300000
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1012300000
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1012300000?filename=MODEL1012300000_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.macdonald2011_geneticmetabolicdeterminants_buchn_model1012300000_model:Macdonald2011GeneticmetabolicdeterminantsBuchnModel1012300000Model
+  init_kwargs:
+    model_path: data/MODEL1012300000.xml
+    integration_step: 0.1
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_metabolic_pathway_state_1
+    maps_to: ser__45__L_c_
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 1. Maps to bundled SBML symbol
+      `ser__45__L_c_`. Applied before the Tellurium simulation starts; this does not change
+      kinetic parameters or equations. Default from Tellurium setup-time value because no
+      explicit SBML initial value was available.
+  - name: initial_tetrahydrofolate
+    maps_to: thf_c_
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for tetrahydrofolate. Maps to bundled SBML symbol `thf_c_`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from Tellurium setup-time value because no explicit SBML initial
+      value was available.
+  - name: initial_metabolic_pathway_state_3
+    maps_to: gly_c_
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 3. Maps to bundled SBML symbol
+      `gly_c_`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from Tellurium setup-time value because no explicit
+      SBML initial value was available.
+  - name: initial_h2o
+    maps_to: h2o_c_
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for h2o. Maps to bundled SBML symbol `h2o_c_`. Applied
+      before the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from Tellurium setup-time value because no explicit SBML initial value was available.
+  - name: initial_metabolic_pathway_state_5
+    maps_to: mlthf_c_
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 5. Maps to bundled SBML symbol
+      `mlthf_c_`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from Tellurium setup-time value because no explicit
+      SBML initial value was available.
+  outputs:
+  - name: metabolic_pathway_state_1
+    maps_to: ser__45__L_c_
+    label: Metabolic Pathway state 1
+    description: Metabolic Pathway state 1; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `ser__45__L_c_`. Exact metabolite identity is not
+      encoded in the bundled SBML metadata.
+  - name: tetrahydrofolate
+    maps_to: thf_c_
+    label: tetrahydrofolate
+    description: tetrahydrofolate. Maps to SBML symbol `thf_c_`.
+  - name: metabolic_pathway_state_3
+    maps_to: gly_c_
+    label: Metabolic Pathway state 3
+    description: Metabolic Pathway state 3; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `gly_c_`. Exact metabolite identity is not encoded
+      in the bundled SBML metadata.
+  - name: h2o
+    maps_to: h2o_c_
+    label: H2o
+    description: H2o. Maps to SBML symbol `h2o_c_`.
+  - name: metabolic_pathway_state_5
+    maps_to: mlthf_c_
+    label: Metabolic Pathway state 5
+    description: Metabolic Pathway state 5; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `mlthf_c_`. Exact metabolite identity is not encoded
+      in the bundled SBML metadata.
+  - name: observable_values
+    description: Latest user-facing observable values from the SBML run.
+  - name: run_summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: observable_labels
+    description: Mapping from user-facing observable ports to display labels.
+parameters:
+- name: integration_step
+  value: 0.1
+  min: 0.0
+  units: model_time
+  description: Internal sampling step for Tellurium output collection.

@@ -1,0 +1,112 @@
+schema_version: '2.0'
+title: Mitchell2013 - Liver Iron Metabolism
+description: 'Mitchell2013 - Liver Iron Metabolism The model includes the core regulatory
+  components of human liver iron metabolism. This model is described in the article: A computational
+  model of liver iron metab.'
+standard: sbml
+tags:
+- biomodels_ebi
+- faithful
+- metabolism
+- ode
+- sbml
+- tellurium
+authors:
+- Biosimulant Team
+- Simon Mitchell
+- Pedro Mendes
+upstream:
+  id: biomodels_ebi:BIOMD0000000498
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000498
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000498
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000498?filename=BIOMD0000000498_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.mitchell2013_liver_iron_metabolism_biomd0000000498_model:Mitchell2013LiverIronMetabolismBiomd0000000498Model
+  init_kwargs:
+    model_path: data/BIOMD0000000498.xml
+    integration_step: 0.1
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_iron_metabolism_state_1
+    maps_to: species_7
+    default: 5.0e-09
+    units: native SBML value
+    description: Initial condition for iron metabolism state 1. Maps to bundled SBML symbol
+      `species_7`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_iron_metabolism_state_2
+    maps_to: species_24
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for iron metabolism state 2. Maps to bundled SBML symbol
+      `species_24`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_ferritin
+    maps_to: species_25
+    default: 1.66e-10
+    units: native SBML value
+    description: Initial condition for ferritin. Maps to bundled SBML symbol `species_25`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_ft1
+    maps_to: species_26
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for ft1. Maps to bundled SBML symbol `species_26`. Applied
+      before the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_iron_metabolism_state_5
+    maps_to: species_1
+    default: 3.56e-11
+    units: native SBML value
+    description: Initial condition for iron metabolism state 5. Maps to bundled SBML symbol
+      `species_1`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: iron_metabolism_state_1
+    maps_to: species_7
+    label: Iron Metabolism state 1
+    description: Iron Metabolism state 1; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `species_7`. Exact metabolite identity is not encoded
+      in the bundled SBML metadata.
+  - name: iron_metabolism_state_2
+    maps_to: species_24
+    label: Iron Metabolism state 2
+    description: Iron Metabolism state 2; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `species_24`. Exact metabolite identity is not encoded
+      in the bundled SBML metadata.
+  - name: ferritin
+    maps_to: species_25
+    label: ferritin
+    description: ferritin. Maps to SBML symbol `species_25`.
+  - name: ft1
+    maps_to: species_26
+    label: Ft1
+    description: Ft1. Maps to SBML symbol `species_26`.
+  - name: iron_metabolism_state_5
+    maps_to: species_1
+    label: Iron Metabolism state 5
+    description: Iron Metabolism state 5; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `species_1`. Exact metabolite identity is not encoded
+      in the bundled SBML metadata.
+  - name: observable_values
+    description: Latest user-facing observable values from the SBML run.
+  - name: run_summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: observable_labels
+    description: Mapping from user-facing observable ports to display labels.
+parameters:
+- name: integration_step
+  value: 0.1
+  min: 0.0
+  units: model_time
+  description: Internal sampling step for Tellurium output collection.

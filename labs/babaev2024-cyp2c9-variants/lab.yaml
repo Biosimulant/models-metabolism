@@ -1,0 +1,81 @@
+schema_version: '2.0'
+title: Babaev2024 - CYP2C9 variants Lab
+description: Modified model of losartan metabolism (Karatza and Karalis, 2020) incorporating
+  different allelic variants of CYP2C9. It can be used to explore metabolic flux dynamics
+  and compare pathway behavior across conditions.
+io:
+  inputs:
+  - name: initial_drug_metabolite_e3174
+    maps_to: metabolism_sbml_babaev2024_cyp2c9_variants_model2412180002_model.initial_drug_metabolite_e3174
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for drug metabolite e3174. Maps to bundled SBML symbol
+      `E3174_out`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_drug_metabolite_e3174_2
+    maps_to: metabolism_sbml_babaev2024_cyp2c9_variants_model2412180002_model.initial_drug_metabolite_e3174_2
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for drug metabolite e3174 2. Maps to bundled SBML symbol
+      `E3174_cc`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_drug_metabolism_state_3
+    maps_to: metabolism_sbml_babaev2024_cyp2c9_variants_model2412180002_model.initial_drug_metabolism_state_3
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for drug metabolism state 3. Maps to bundled SBML symbol
+      `losartan_cc`. Applied before the Tellurium simulation starts; this does not change
+      kinetic parameters or equations. Default from bundled SBML initial value.
+  - name: initial_drug_metabolism_state_4
+    maps_to: metabolism_sbml_babaev2024_cyp2c9_variants_model2412180002_model.initial_drug_metabolism_state_4
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for drug metabolism state 4. Maps to bundled SBML symbol
+      `losartan_int`. Applied before the Tellurium simulation starts; this does not change
+      kinetic parameters or equations. Default from bundled SBML initial value.
+  - name: initial_drug_metabolism_state_5_extracellular
+    maps_to: metabolism_sbml_babaev2024_cyp2c9_variants_model2412180002_model.initial_drug_metabolism_state_5_extracellular
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for drug metabolism state 5 extracellular. Maps to bundled
+      SBML symbol `losartan_out`. Applied before the Tellurium simulation starts; this does
+      not change kinetic parameters or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: drug_metabolite_e3174
+    maps_to: metabolism_sbml_babaev2024_cyp2c9_variants_model2412180002_model.drug_metabolite_e3174
+  - name: drug_metabolite_e3174_2
+    maps_to: metabolism_sbml_babaev2024_cyp2c9_variants_model2412180002_model.drug_metabolite_e3174_2
+  - name: drug_metabolism_state_3
+    maps_to: metabolism_sbml_babaev2024_cyp2c9_variants_model2412180002_model.drug_metabolism_state_3
+  - name: drug_metabolism_state_4
+    maps_to: metabolism_sbml_babaev2024_cyp2c9_variants_model2412180002_model.drug_metabolism_state_4
+  - name: drug_metabolism_state_5_extracellular
+    maps_to: metabolism_sbml_babaev2024_cyp2c9_variants_model2412180002_model.drug_metabolism_state_5_extracellular
+  - name: observable_values
+    maps_to: metabolism_sbml_babaev2024_cyp2c9_variants_model2412180002_model.observable_values
+  - name: run_summary
+    maps_to: metabolism_sbml_babaev2024_cyp2c9_variants_model2412180002_model.run_summary
+  - name: observable_labels
+    maps_to: metabolism_sbml_babaev2024_cyp2c9_variants_model2412180002_model.observable_labels
+models:
+- alias: metabolism_sbml_babaev2024_cyp2c9_variants_model2412180002_model
+  path: models/core
+  parameters:
+    model_path: data/MODEL2412180002.xml
+    integration_step: 0.1
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: metabolism_sbml_babaev2024_cyp2c9_variants_model2412180002_model.observable_values
+  to:
+  - visualisation.metabolism_sbml_babaev2024_cyp2c9_variants_model2412180002_model_observable_values
+- from: metabolism_sbml_babaev2024_cyp2c9_variants_model2412180002_model.run_summary
+  to:
+  - visualisation.metabolism_sbml_babaev2024_cyp2c9_variants_model2412180002_model_run_summary
+- from: metabolism_sbml_babaev2024_cyp2c9_variants_model2412180002_model.observable_labels
+  to:
+  - visualisation.metabolism_sbml_babaev2024_cyp2c9_variants_model2412180002_model_observable_labels
+runtime:
+  duration: 10.0
+  communication_step: 1.0
+  initial_inputs: {}

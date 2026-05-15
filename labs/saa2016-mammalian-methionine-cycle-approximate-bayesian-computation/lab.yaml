@@ -1,0 +1,81 @@
+schema_version: '2.0'
+title: Saa2016 - Mammalian methionine cycle - approximate bayesian computation Lab
+description: 'Construction of feasible and accurate kinetic models of metabolism: A Bayesian
+  approachPedro A. It can be used to explore metabolic flux dynamics and compare pathway behavior
+  across conditions.'
+io:
+  inputs:
+  - name: initial_methionine_cycle_state_1
+    maps_to: metabolism_sbml_saa2016_mammalian_methionine_cycle_approximate_b_model1603150000_model.initial_methionine_cycle_state_1
+    default: 50.0
+    units: native SBML value
+    description: Initial condition for methionine cycle state 1. Maps to bundled SBML symbol
+      `MET`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_methionine_cycle_state_2
+    maps_to: metabolism_sbml_saa2016_mammalian_methionine_cycle_approximate_b_model1603150000_model.initial_methionine_cycle_state_2
+    default: 60.0
+    units: native SBML value
+    description: Initial condition for methionine cycle state 2. Maps to bundled SBML symbol
+      `ADOMET`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_methionine_cycle_state_3
+    maps_to: metabolism_sbml_saa2016_mammalian_methionine_cycle_approximate_b_model1603150000_model.initial_methionine_cycle_state_3
+    default: 35.0
+    units: native SBML value
+    description: Initial condition for methionine cycle state 3. Maps to bundled SBML symbol
+      `ADOHCY`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_methionine_cycle_state_4
+    maps_to: metabolism_sbml_saa2016_mammalian_methionine_cycle_approximate_b_model1603150000_model.initial_methionine_cycle_state_4
+    default: 1.7
+    units: native SBML value
+    description: Initial condition for methionine cycle state 4. Maps to bundled SBML symbol
+      `MTHF`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_methionine_cycle_state_5
+    maps_to: metabolism_sbml_saa2016_mammalian_methionine_cycle_approximate_b_model1603150000_model.initial_methionine_cycle_state_5
+    default: 3.5
+    units: native SBML value
+    description: Initial condition for methionine cycle state 5. Maps to bundled SBML symbol
+      `HCY`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: methionine_cycle_state_1
+    maps_to: metabolism_sbml_saa2016_mammalian_methionine_cycle_approximate_b_model1603150000_model.methionine_cycle_state_1
+  - name: methionine_cycle_state_2
+    maps_to: metabolism_sbml_saa2016_mammalian_methionine_cycle_approximate_b_model1603150000_model.methionine_cycle_state_2
+  - name: methionine_cycle_state_3
+    maps_to: metabolism_sbml_saa2016_mammalian_methionine_cycle_approximate_b_model1603150000_model.methionine_cycle_state_3
+  - name: methionine_cycle_state_4
+    maps_to: metabolism_sbml_saa2016_mammalian_methionine_cycle_approximate_b_model1603150000_model.methionine_cycle_state_4
+  - name: methionine_cycle_state_5
+    maps_to: metabolism_sbml_saa2016_mammalian_methionine_cycle_approximate_b_model1603150000_model.methionine_cycle_state_5
+  - name: observable_values
+    maps_to: metabolism_sbml_saa2016_mammalian_methionine_cycle_approximate_b_model1603150000_model.observable_values
+  - name: run_summary
+    maps_to: metabolism_sbml_saa2016_mammalian_methionine_cycle_approximate_b_model1603150000_model.run_summary
+  - name: observable_labels
+    maps_to: metabolism_sbml_saa2016_mammalian_methionine_cycle_approximate_b_model1603150000_model.observable_labels
+models:
+- alias: metabolism_sbml_saa2016_mammalian_methionine_cycle_approximate_b_model1603150000_model
+  path: models/core
+  parameters:
+    model_path: data/MODEL1603150000.xml
+    integration_step: 0.1
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: metabolism_sbml_saa2016_mammalian_methionine_cycle_approximate_b_model1603150000_model.observable_values
+  to:
+  - visualisation.metabolism_sbml_saa2016_mammalian_methionine_cycle_approximate_b_model1603150000_model_observable_values
+- from: metabolism_sbml_saa2016_mammalian_methionine_cycle_approximate_b_model1603150000_model.run_summary
+  to:
+  - visualisation.metabolism_sbml_saa2016_mammalian_methionine_cycle_approximate_b_model1603150000_model_run_summary
+- from: metabolism_sbml_saa2016_mammalian_methionine_cycle_approximate_b_model1603150000_model.observable_labels
+  to:
+  - visualisation.metabolism_sbml_saa2016_mammalian_methionine_cycle_approximate_b_model1603150000_model_observable_labels
+runtime:
+  duration: 10.0
+  communication_step: 1.0
+  initial_inputs: {}

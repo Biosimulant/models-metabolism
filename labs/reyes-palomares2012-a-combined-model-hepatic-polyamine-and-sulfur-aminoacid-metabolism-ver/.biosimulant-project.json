@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "ccf6bec3-1672-4a88-bc40-445375935b2a",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "f9188315-f9b7-49c8-9292-36e0b3d20d23",
+  "created_at": "2026-05-15T16:03:05.805838983+00:00",
+  "last_synced_at": "2026-05-15T20:01:09.495647+00:00",
+  "hub_manifest_hash": "ec08e8bcb9b913d9c20f97b6c76ca4e39e489ac9bc6d9fc29f8657b52b07a58f",
+  "package_name": "reyes2012-v2-polyamine-lab"
+}

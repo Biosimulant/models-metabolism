@@ -1,0 +1,114 @@
+schema_version: '2.0'
+title: Babaev2025 - CYP2C9 and ABCB1 losartan metabolism model
+description: The model can simultaneously predict the profiles of both losartan and its active
+  metabolite, E-3174, based on a given patient's CYP2C9 and ABCB1 genotypes.The CYP2C9 alleles
+  considered are CYP2C9*1 a. It can be used to explore metabolic flux dynamics and compare
+  pathway behavior across conditions.
+standard: sbml
+tags:
+- biomodels_ebi
+- faithful
+- metabolism
+- ode
+- sbml
+- tellurium
+authors:
+- Biosimulant Team
+- Dmitry Babaev
+- Elena Kutumova
+- Fedor Kolpakov
+upstream:
+  id: biomodels_ebi:MODEL2504020001
+  source_db: biomodels_ebi
+  source_id: MODEL2504020001
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL2504020001
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2504020001?filename=Babaev2025-CYP2C9-and-ABCB1-losartan-metabolism-model.xml
+  license: CC0
+biosim:
+  entrypoint: src.babaev2025_cyp2c9_and_abcb1_losartan_metabolism_model2504020001_model:Babaev2025Cyp2c9AndAbcb1LosartanMetabolismModel2504020001Model
+  init_kwargs:
+    model_path: data/MODEL2504020001.xml
+    integration_step: 0.1
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_losartan_metabolite_e3174
+    maps_to: E3174_out
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for losartan metabolite e3174. Maps to bundled SBML symbol
+      `E3174_out`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_losartan_metabolite_e3174_2
+    maps_to: E3174_cc
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for losartan metabolite e3174 2. Maps to bundled SBML symbol
+      `E3174_cc`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_drug_metabolism_state_3
+    maps_to: losartan_cc
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for drug metabolism state 3. Maps to bundled SBML symbol
+      `losartan_cc`. Applied before the Tellurium simulation starts; this does not change
+      kinetic parameters or equations. Default from bundled SBML initial value.
+  - name: initial_drug_metabolism_state_4
+    maps_to: losartan_ent
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for drug metabolism state 4. Maps to bundled SBML symbol
+      `losartan_ent`. Applied before the Tellurium simulation starts; this does not change
+      kinetic parameters or equations. Default from bundled SBML initial value.
+  - name: initial_drug_metabolism_state_5
+    maps_to: losartan_int
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for drug metabolism state 5. Maps to bundled SBML symbol
+      `losartan_int`. Applied before the Tellurium simulation starts; this does not change
+      kinetic parameters or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: losartan_metabolite_e3174
+    maps_to: E3174_out
+    label: Losartan metabolite E3174
+    description: Losartan metabolite E3174. Maps to SBML symbol `E3174_out`.
+  - name: losartan_metabolite_e3174_2
+    maps_to: E3174_cc
+    label: Losartan metabolite E3174 2
+    description: Losartan metabolite E3174 2. Maps to SBML symbol `E3174_cc`.
+  - name: drug_metabolism_state_3
+    maps_to: losartan_cc
+    label: Drug Metabolism state 3
+    description: Drug Metabolism state 3; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `losartan_cc`. Exact metabolite identity is not
+      encoded in the bundled SBML metadata.
+  - name: drug_metabolism_state_4
+    maps_to: losartan_ent
+    label: Drug Metabolism state 4
+    description: Drug Metabolism state 4; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `losartan_ent`. Exact metabolite identity is not
+      encoded in the bundled SBML metadata.
+  - name: drug_metabolism_state_5
+    maps_to: losartan_int
+    label: Drug Metabolism state 5
+    description: Drug Metabolism state 5; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `losartan_int`. Exact metabolite identity is not
+      encoded in the bundled SBML metadata.
+  - name: observable_values
+    description: Latest user-facing observable values from the SBML run.
+  - name: run_summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: observable_labels
+    description: Mapping from user-facing observable ports to display labels.
+parameters:
+- name: integration_step
+  value: 0.1
+  min: 0.0
+  units: model_time
+  description: Internal sampling step for Tellurium output collection.

@@ -1,0 +1,184 @@
+schema_version: '2.0'
+title: Kotte2010_Ecoli_Metabolic_Adaption Visualisation
+description: Dedicated presentation model for Kotte2010_Ecoli_Metabolic_Adaption.
+standard: other
+tags:
+- metabolism
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  entrypoint: src.metabolism_visualisation:MetabolismVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Kotte2010_Ecoli_Metabolic_Adaption Lab
+    question: Which microbial metabolism observables show the strongest activity in Kotte2010_Ecoli_Metabolic_Adaption?
+    answer_focus: microbial metabolism
+    sources:
+    - alias: metabolism_sbml_kotte2010_ecoli_metabolic_adaption_biomd0000000244_model
+      title: Kotte2010_Ecoli_Metabolic_Adaption
+      scope: microbial metabolism
+      label_caveat: Values are native SBML quantities. Conservative pathway-state labels are
+        used where the bundled SBML does not encode exact metabolite identities.
+      observables:
+      - id: microbial_metabolism_state_1
+        label: Microbial Metabolism state 1
+        maps_to: BM
+      - id: microbial_metabolism_state_2
+        label: Microbial Metabolism state 2
+        maps_to: ACT
+      - id: glucose
+        label: Glucose
+        maps_to: GLC
+      - id: microbial_metabolism_state_4
+        label: Microbial Metabolism state 4
+        maps_to: ACoA
+      - id: microbial_metabolism_state_5
+        label: Microbial Metabolism state 5
+        maps_to: AKG
+      - id: cytosolic_amp
+        label: Cytosolic AMP
+        maps_to: cAMP
+      - id: fructose_bisphosphate
+        label: Fructose Bisphosphate
+        maps_to: FBP
+      - id: glucose_6_phosphate
+        label: Glucose 6 Phosphate
+        maps_to: G6P
+      - id: microbial_metabolism_state_9
+        label: Microbial Metabolism state 9
+        maps_to: GLX
+      - id: microbial_metabolism_state_10
+        label: Microbial Metabolism state 10
+        maps_to: ICT
+      - id: microbial_metabolism_state_11
+        label: Microbial Metabolism state 11
+        maps_to: MAL
+      - id: microbial_metabolism_state_12
+        label: Microbial Metabolism state 12
+        maps_to: OAA
+      - id: phosphoenolpyruvate
+        label: Phosphoenolpyruvate
+        maps_to: PEP
+      - id: microbial_metabolism_state_14
+        label: Microbial Metabolism state 14
+        maps_to: PG3
+      - id: pyruvate
+        label: Pyruvate
+        maps_to: PYR
+      - id: microbial_metabolism_state_16
+        label: Microbial Metabolism state 16
+        maps_to: AceA
+      - id: blood_ace
+        label: Blood ACE
+        maps_to: AceB
+      - id: microbial_metabolism_state_18
+        label: Microbial Metabolism state 18
+        maps_to: AceK
+      - id: microbial_metabolism_state_19
+        label: Microbial Metabolism state 19
+        maps_to: Acoa2act
+      - id: microbial_metabolism_state_20
+        label: Microbial Metabolism state 20
+        maps_to: Acs
+      - id: microbial_metabolism_state_21
+        label: Microbial Metabolism state 21
+        maps_to: Akg2mal
+      - id: microbial_metabolism_state_22
+        label: Microbial Metabolism state 22
+        maps_to: CAMPdegr
+      - id: microbial_metabolism_state_23
+        label: Microbial Metabolism state 23
+        maps_to: Cya
+      - id: microbial_metabolism_state_24
+        label: Microbial Metabolism state 24
+        maps_to: Emp
+      - id: microbial_metabolism_state_25
+        label: Microbial Metabolism state 25
+        maps_to: Eno
+      - id: microbial_metabolism_state_26
+        label: Microbial Metabolism state 26
+        maps_to: Fdp
+      - id: microbial_metabolism_state_27
+        label: Microbial Metabolism state 27
+        maps_to: GltA
+      - id: microbial_metabolism_state_28
+        label: Microbial Metabolism state 28
+        maps_to: Icd
+      - id: microbial_metabolism_state_29
+        label: Microbial Metabolism state 29
+        maps_to: Icd_P
+      - id: microbial_metabolism_state_30
+        label: Microbial Metabolism state 30
+        maps_to: Mdh
+      - id: microbial_metabolism_state_31
+        label: Microbial Metabolism state 31
+        maps_to: Me
+      - id: microbial_metabolism_state_32
+        label: Microbial Metabolism state 32
+        maps_to: PckA
+      - id: microbial_metabolism_state_33
+        label: Microbial Metabolism state 33
+        maps_to: Pdh
+      - id: microbial_metabolism_state_34
+        label: Microbial Metabolism state 34
+        maps_to: PfkA
+      - id: microbial_metabolism_state_35
+        label: Microbial Metabolism state 35
+        maps_to: Ppc
+      - id: microbial_metabolism_state_36
+        label: Microbial Metabolism state 36
+        maps_to: PpsA
+      - id: microbial_metabolism_state_37
+        label: Microbial Metabolism state 37
+        maps_to: PykF
+      - id: microbial_metabolism_state_38
+        label: Microbial Metabolism state 38
+        maps_to: Cra
+      - id: microbial_metabolism_state_39
+        label: Microbial Metabolism state 39
+        maps_to: CraFBP
+      - id: microbial_metabolism_state_40
+        label: Microbial Metabolism state 40
+        maps_to: Crp
+      - id: microbial_metabolism_state_41
+        label: Microbial Metabolism state 41
+        maps_to: CrpcAMP
+      - id: microbial_metabolism_state_42
+        label: Microbial Metabolism state 42
+        maps_to: IclR
+      - id: microbial_metabolism_state_43
+        label: Microbial Metabolism state 43
+        maps_to: PdhR
+      - id: microbial_metabolism_state_44
+        label: Microbial Metabolism state 44
+        maps_to: PdhRPYR
+      - id: microbial_metabolism_state_45
+        label: Microbial Metabolism state 45
+        maps_to: EIIA
+      - id: microbial_metabolism_state_46
+        label: Microbial Metabolism state 46
+        maps_to: EIIA_P
+      - id: microbial_metabolism_state_47
+        label: Microbial Metabolism state 47
+        maps_to: EIICB
+  communication_step: 1.0
+runtime:
+  dependencies:
+    packages:
+    - PyYAML==6.0.2
+parameters:
+- name: integration_step
+  value: 1.0
+  min: 0.0
+  units: model_time
+  description: Sampling step for the visualisation model.
+io:
+  inputs:
+  - name: metabolism_sbml_kotte2010_ecoli_metabolic_adaption_biomd0000000244_model_observable_values
+    description: Latest user-facing observable values from the core metabolism model.
+  - name: metabolism_sbml_kotte2010_ecoli_metabolic_adaption_biomd0000000244_model_run_summary
+    description: Run summary from the core metabolism model.
+  - name: metabolism_sbml_kotte2010_ecoli_metabolic_adaption_biomd0000000244_model_observable_labels
+    description: Display labels for user-facing observables.
+  outputs: []

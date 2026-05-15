@@ -1,0 +1,285 @@
+schema_version: '2.0'
+title: Haiman2020 - Full Kinase Regulatory Model of Erythrocyte Glycolysis Visualisation
+description: Dedicated presentation model for Haiman2020 - Full Kinase Regulatory Model of
+  Erythrocyte Glycolysis.
+standard: other
+tags:
+- metabolism
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  entrypoint: src.metabolism_visualisation:MetabolismVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Haiman2020 - Full Kinase Regulatory Model of Erythrocyte Glycolysis Lab
+    question: Which central carbon and glycolytic metabolism observables show the strongest
+      activity in Haiman2020 - Full Kinase Regulatory Model of Erythrocyte Glycolysis?
+    answer_focus: central carbon and glycolytic metabolism
+    sources:
+    - alias: metabolism_sbml_haiman2020_full_kinase_regulatory_model_of_eryth_model2012150001_model
+      title: Haiman2020 - Full Kinase Regulatory Model of Erythrocyte Glycolysis
+      scope: central carbon and glycolytic metabolism
+      label_caveat: Values are native SBML quantities. Conservative pathway-state labels are
+        used where the bundled SBML does not encode exact metabolite identities.
+      observables:
+      - id: d_glucose
+        label: D Glucose
+        maps_to: M_glc__D_c
+      - id: d_glucose_6_phosphate
+        label: D Glucose 6 Phosphate
+        maps_to: M_g6p_c
+      - id: d_fructose_6_phosphate
+        label: D Fructose 6 Phosphate
+        maps_to: M_f6p_c
+      - id: d_fructose_1_6_bisphosphate
+        label: D Fructose 1 6 Bisphosphate
+        maps_to: M_fdp_c
+      - id: dihydroxyacetone_phosphate
+        label: Dihydroxyacetone Phosphate
+        maps_to: M_dhap_c
+      - id: glyceraldehyde_3_phosphate
+        label: Glyceraldehyde 3 Phosphate
+        maps_to: M_g3p_c
+      - id: observable_3_phospho_d_glyceroyl_phosphate
+        label: 3 Phospho D Glyceroyl Phosphate
+        maps_to: M__13dpg_c
+      - id: observable_3_phospho_d_glycerate
+        label: 3 Phospho D Glycerate
+        maps_to: M__3pg_c
+      - id: d_glycerate_2_phosphate
+        label: D Glycerate 2 Phosphate
+        maps_to: M__2pg_c
+      - id: phosphoenolpyruvate
+        label: Phosphoenolpyruvate
+        maps_to: M_pep_c
+      - id: mitochondrial_cytosolic_pyruvate
+        label: Mitochondrial Cytosolic Pyruvate
+        maps_to: M_pyr_c
+      - id: l_lactate
+        label: L Lactate
+        maps_to: M_lac__L_c
+      - id: nicotinamide_adenine_dinucleotide
+        label: Nicotinamide Adenine Dinucleotide
+        maps_to: M_nad_c
+      - id: nicotinamide_adenine_dinucleotide_reduced
+        label: Nicotinamide Adenine Dinucleotide Reduced
+        maps_to: M_nadh_c
+      - id: amp
+        label: AMP
+        maps_to: M_amp_c
+      - id: adp
+        label: ADP
+        maps_to: M_adp_c
+      - id: atp
+        label: ATP
+        maps_to: M_atp_c
+      - id: phosphate
+        label: Phosphate
+        maps_to: M_pi_c
+      - id: glycolysis_state_19
+        label: Glycolysis state 19
+        maps_to: M_h_c
+      - id: h2o
+        label: H2o
+        maps_to: M_h2o_c
+      - id: observable_2_3_disphospho_d_glycerate
+        label: 2 3 Disphospho D Glycerate
+        maps_to: M__23dpg_c
+      - id: oxyhemoglobin_1
+        label: Oxyhemoglobin 1
+        maps_to: M_hb_1o2_c
+      - id: hemoglobin
+        label: Hemoglobin
+        maps_to: M_hb_c
+      - id: mitochondrial_cytosolic_o2
+        label: Mitochondrial Cytosolic O2
+        maps_to: M_o2_c
+      - id: oxyhemoglobin_2
+        label: Oxyhemoglobin 2
+        maps_to: M_hb_2o2_c
+      - id: oxyhemoglobin_3
+        label: Oxyhemoglobin 3
+        maps_to: M_hb_3o2_c
+      - id: oxyhemoglobin_4
+        label: Oxyhemoglobin 4
+        maps_to: M_hb_4o2_c
+      - id: deoxyhemoglobin
+        label: Deoxyhemoglobin
+        maps_to: M_dhb_c
+      - id: hex1_adp_complex
+        label: Hex1 ADP Complex
+        maps_to: M_hex1_A_PI_c
+      - id: hex1
+        label: Hex1
+        maps_to: M_hex1_c
+      - id: hex1_glucose_6_phosphate_complex
+        label: Hex1 glucose 6 phosphate Complex
+        maps_to: M_hex1_G_PI_c
+      - id: hex1_glucose_d_complex
+        label: Hex1 glucose D Complex
+        maps_to: M_hex1_G_c
+      - id: hex1_atp_complex
+        label: Hex1 ATP Complex
+        maps_to: M_hex1_A_c
+      - id: hex1_glucose_d_23dpg_complex
+        label: Hex1 glucose D 23dpg Complex
+        maps_to: M_hex1_G_CI_c
+      - id: hex1_glucose_d_atp_complex
+        label: Hex1 glucose D ATP Complex
+        maps_to: M_hex1_AG_c
+      - id: pfk_atp_complex
+        label: Pfk ATP Complex
+        maps_to: M_pfk_R0_A_c
+      - id: glycolysis_state_37
+        label: Glycolysis state 37
+        maps_to: M_pfk_R0_c
+      - id: pfk_atp_fructose_6_phosphate_complex
+        label: Pfk ATP fructose 6 phosphate Complex
+        maps_to: M_pfk_R0_AF_c
+      - id: pfk_amp_complex
+        label: Pfk AMP Complex
+        maps_to: M_pfk_R1_c
+      - id: pfk_atp_amp_complex
+        label: Pfk ATP AMP Complex
+        maps_to: M_pfk_R1_A_c
+      - id: pfk_atp_fructose_6_phosphate_amp_complex
+        label: Pfk ATP fructose 6 phosphate AMP Complex
+        maps_to: M_pfk_R1_AF_c
+      - id: pfk_amp_complex_2
+        label: Pfk AMP Complex 2
+        maps_to: M_pfk_R2_c
+      - id: pfk_atp_amp_complex_2
+        label: Pfk ATP AMP Complex 2
+        maps_to: M_pfk_R2_A_c
+      - id: pfk_atp_fructose_6_phosphate_amp_complex_2
+        label: Pfk ATP fructose 6 phosphate AMP Complex 2
+        maps_to: M_pfk_R2_AF_c
+      - id: pfk_amp_complex_3
+        label: Pfk AMP Complex 3
+        maps_to: M_pfk_R3_c
+      - id: pfk_atp_amp_complex_3
+        label: Pfk ATP AMP Complex 3
+        maps_to: M_pfk_R3_A_c
+      - id: pfk_atp_fructose_6_phosphate_amp_complex_3
+        label: Pfk ATP fructose 6 phosphate AMP Complex 3
+        maps_to: M_pfk_R3_AF_c
+      - id: pfk_amp_complex_4
+        label: Pfk AMP Complex 4
+        maps_to: M_pfk_R4_c
+      - id: pfk_atp_amp_complex_4
+        label: Pfk ATP AMP Complex 4
+        maps_to: M_pfk_R4_A_c
+      - id: pfk_atp_fructose_6_phosphate_amp_complex_4
+        label: Pfk ATP fructose 6 phosphate AMP Complex 4
+        maps_to: M_pfk_R4_AF_c
+      - id: glycolysis_state_51
+        label: Glycolysis state 51
+        maps_to: M_pfk_T0_c
+      - id: pfk_atp_complex_2
+        label: Pfk ATP Complex 2
+        maps_to: M_pfk_T1_c
+      - id: pfk_atp_complex_3
+        label: Pfk ATP Complex 3
+        maps_to: M_pfk_T2_c
+      - id: pfk_atp_complex_4
+        label: Pfk ATP Complex 4
+        maps_to: M_pfk_T3_c
+      - id: pfk_atp_complex_5
+        label: Pfk ATP Complex 5
+        maps_to: M_pfk_T4_c
+      - id: pyk_phosphoenolpyruvate_complex
+        label: Pyk phosphoenolpyruvate Complex
+        maps_to: M_pyk_R0_P_c
+      - id: glycolysis_state_57
+        label: Glycolysis state 57
+        maps_to: M_pyk_R0_c
+      - id: pyk_adp_complex
+        label: Pyk ADP Complex
+        maps_to: M_pyk_R0_A_c
+      - id: pyk_adp_phosphoenolpyruvate_complex
+        label: Pyk ADP phosphoenolpyruvate Complex
+        maps_to: M_pyk_R0_AP_c
+      - id: pyk_fdp_complex
+        label: Pyk Fdp Complex
+        maps_to: M_pyk_R1_c
+      - id: pyk_phosphoenolpyruvate_fdp_complex
+        label: Pyk phosphoenolpyruvate Fdp Complex
+        maps_to: M_pyk_R1_P_c
+      - id: pyk_adp_fdp_complex
+        label: Pyk ADP Fdp Complex
+        maps_to: M_pyk_R1_A_c
+      - id: pyk_adp_phosphoenolpyruvate_fdp_complex
+        label: Pyk ADP phosphoenolpyruvate Fdp Complex
+        maps_to: M_pyk_R1_AP_c
+      - id: pyk_fdp_complex_2
+        label: Pyk Fdp Complex 2
+        maps_to: M_pyk_R2_c
+      - id: pyk_phosphoenolpyruvate_fdp_complex_2
+        label: Pyk phosphoenolpyruvate Fdp Complex 2
+        maps_to: M_pyk_R2_P_c
+      - id: pyk_adp_fdp_complex_2
+        label: Pyk ADP Fdp Complex 2
+        maps_to: M_pyk_R2_A_c
+      - id: pyk_adp_phosphoenolpyruvate_fdp_complex_2
+        label: Pyk ADP phosphoenolpyruvate Fdp Complex 2
+        maps_to: M_pyk_R2_AP_c
+      - id: pyk_fdp_complex_3
+        label: Pyk Fdp Complex 3
+        maps_to: M_pyk_R3_c
+      - id: pyk_phosphoenolpyruvate_fdp_complex_3
+        label: Pyk phosphoenolpyruvate Fdp Complex 3
+        maps_to: M_pyk_R3_P_c
+      - id: pyk_adp_fdp_complex_3
+        label: Pyk ADP Fdp Complex 3
+        maps_to: M_pyk_R3_A_c
+      - id: pyk_adp_phosphoenolpyruvate_fdp_complex_3
+        label: Pyk ADP phosphoenolpyruvate Fdp Complex 3
+        maps_to: M_pyk_R3_AP_c
+      - id: pyk_fdp_complex_4
+        label: Pyk Fdp Complex 4
+        maps_to: M_pyk_R4_c
+      - id: pyk_phosphoenolpyruvate_fdp_complex_4
+        label: Pyk phosphoenolpyruvate Fdp Complex 4
+        maps_to: M_pyk_R4_P_c
+      - id: pyk_adp_fdp_complex_4
+        label: Pyk ADP Fdp Complex 4
+        maps_to: M_pyk_R4_A_c
+      - id: pyk_adp_phosphoenolpyruvate_fdp_complex_4
+        label: Pyk ADP phosphoenolpyruvate Fdp Complex 4
+        maps_to: M_pyk_R4_AP_c
+      - id: glycolysis_state_76
+        label: Glycolysis state 76
+        maps_to: M_pyk_T0_c
+      - id: pyk_atp_complex
+        label: Pyk ATP Complex
+        maps_to: M_pyk_T1_c
+      - id: pyk_atp_complex_2
+        label: Pyk ATP Complex 2
+        maps_to: M_pyk_T2_c
+      - id: pyk_atp_complex_3
+        label: Pyk ATP Complex 3
+        maps_to: M_pyk_T3_c
+      - id: pyk_atp_complex_4
+        label: Pyk ATP Complex 4
+        maps_to: M_pyk_T4_c
+  communication_step: 1.0
+runtime:
+  dependencies:
+    packages:
+    - PyYAML==6.0.2
+parameters:
+- name: integration_step
+  value: 1.0
+  min: 0.0
+  units: model_time
+  description: Sampling step for the visualisation model.
+io:
+  inputs:
+  - name: metabolism_sbml_haiman2020_full_kinase_regulatory_model_of_eryth_model2012150001_model_observable_values
+    description: Latest user-facing observable values from the core metabolism model.
+  - name: metabolism_sbml_haiman2020_full_kinase_regulatory_model_of_eryth_model2012150001_model_run_summary
+    description: Run summary from the core metabolism model.
+  - name: metabolism_sbml_haiman2020_full_kinase_regulatory_model_of_eryth_model2012150001_model_observable_labels
+    description: Display labels for user-facing observables.
+  outputs: []

@@ -1,0 +1,115 @@
+schema_version: '2.0'
+title: Chedere2022 - NAD Biosynthesis in Human Liver
+description: This SBML (L2V4) file is a well-annotated ODE-based model created to capture
+  NAD biosynthesis in the human liver. This model contains 26 reactions with 29 genes, 31
+  metabolites and 138 parameters.
+standard: sbml
+tags:
+- biomodels_ebi
+- faithful
+- metabolism
+- ode
+- sbml
+- tellurium
+authors:
+- Biosimulant Team
+- Adithya Chedere
+- Madhulika Mishra
+- Omkar Kulkarni
+- Shrisruti Sriraman
+- Nagasuma Chandra
+upstream:
+  id: biomodels_ebi:MODEL2205250001
+  source_db: biomodels_ebi
+  source_id: MODEL2205250001
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL2205250001
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2205250001?filename=Normal_Liver_NAD_Biosynthesis_Base_model_L2V4.xml
+  license: CC0
+biosim:
+  entrypoint: src.chedere2022_nad_biosynthesis_in_human_liver_model2205250001_model:Chedere2022NadBiosynthesisInHumanLiverModel2205250001Model
+  init_kwargs:
+    model_path: data/MODEL2205250001.xml
+    integration_step: 0.1
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_l_formyl_kyneurenine
+    maps_to: L_formyl_kyn
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for l formyl kyneurenine. Maps to bundled SBML symbol `L_formyl_kyn`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_hydroxykynurenine
+    maps_to: Hydroxyurenine
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for hydroxykynurenine. Maps to bundled SBML symbol `Hydroxyurenine`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_nad_metabolism_state_3
+    maps_to: Hydroxyanthranilate
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for nad metabolism state 3. Maps to bundled SBML symbol
+      `Hydroxyanthranilate`. Applied before the Tellurium simulation starts; this does not
+      change kinetic parameters or equations. Default from bundled SBML initial value.
+  - name: initial_nad_metabolism_state_4
+    maps_to: Quinolinate
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for nad metabolism state 4. Maps to bundled SBML symbol
+      `Quinolinate`. Applied before the Tellurium simulation starts; this does not change
+      kinetic parameters or equations. Default from bundled SBML initial value.
+  - name: initial_nad_metabolism_state_5
+    maps_to: NaMN
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for nad metabolism state 5. Maps to bundled SBML symbol
+      `NaMN`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: l_formyl_kyneurenine
+    maps_to: L_formyl_kyn
+    label: L Formyl Kyneurenine
+    description: L Formyl Kyneurenine. Maps to SBML symbol `L_formyl_kyn`.
+  - name: hydroxykynurenine
+    maps_to: Hydroxyurenine
+    label: Hydroxykynurenine
+    description: Hydroxykynurenine. Maps to SBML symbol `Hydroxyurenine`.
+  - name: nad_metabolism_state_3
+    maps_to: Hydroxyanthranilate
+    label: NAD Metabolism state 3
+    description: NAD Metabolism state 3; conservative display label for an abstract SBML state
+      variable. Maps to SBML symbol `Hydroxyanthranilate`. Exact metabolite identity is not
+      encoded in the bundled SBML metadata.
+  - name: nad_metabolism_state_4
+    maps_to: Quinolinate
+    label: NAD Metabolism state 4
+    description: NAD Metabolism state 4; conservative display label for an abstract SBML state
+      variable. Maps to SBML symbol `Quinolinate`. Exact metabolite identity is not encoded
+      in the bundled SBML metadata.
+  - name: nad_metabolism_state_5
+    maps_to: NaMN
+    label: NAD Metabolism state 5
+    description: NAD Metabolism state 5; conservative display label for an abstract SBML state
+      variable. Maps to SBML symbol `NaMN`. Exact metabolite identity is not encoded in the
+      bundled SBML metadata.
+  - name: observable_values
+    description: Latest user-facing observable values from the SBML run.
+  - name: run_summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: observable_labels
+    description: Mapping from user-facing observable ports to display labels.
+parameters:
+- name: integration_step
+  value: 0.1
+  min: 0.0
+  units: model_time
+  description: Internal sampling step for Tellurium output collection.

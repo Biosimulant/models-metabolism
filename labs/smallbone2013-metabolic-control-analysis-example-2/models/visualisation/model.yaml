@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: Smallbone2013 - Metabolic Control Analysis - Example 2 Visualisation
+description: Dedicated presentation model for Smallbone2013 - Metabolic Control Analysis -
+  Example 2.
+standard: other
+tags:
+- metabolism
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  entrypoint: src.metabolism_visualisation:MetabolismVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Smallbone2013 - Metabolic Control Analysis - Example 2 Lab
+    question: Which metabolic pathway dynamics observables show the strongest activity in
+      Smallbone2013 - Metabolic Control Analysis - Example 2?
+    answer_focus: metabolic pathway dynamics
+    sources:
+    - alias: metabolism_sbml_smallbone2013_metabolic_control_analysis_example_biomd0000000455_model
+      title: Smallbone2013 - Metabolic Control Analysis - Example 2
+      scope: metabolic pathway dynamics
+      label_caveat: Values are native SBML quantities. Conservative pathway-state labels are
+        used where the bundled SBML does not encode exact metabolite identities.
+      observables:
+      - id: metabolic_pathway_state_1
+        label: Metabolic Pathway state 1
+        maps_to: x1
+      - id: metabolic_pathway_state_2
+        label: Metabolic Pathway state 2
+        maps_to: x2
+      - id: metabolic_pathway_state_3
+        label: Metabolic Pathway state 3
+        maps_to: x3
+  communication_step: 1.0
+runtime:
+  dependencies:
+    packages:
+    - PyYAML==6.0.2
+parameters:
+- name: integration_step
+  value: 1.0
+  min: 0.0
+  units: model_time
+  description: Sampling step for the visualisation model.
+io:
+  inputs:
+  - name: metabolism_sbml_smallbone2013_metabolic_control_analysis_example_biomd0000000455_model_observable_values
+    description: Latest user-facing observable values from the core metabolism model.
+  - name: metabolism_sbml_smallbone2013_metabolic_control_analysis_example_biomd0000000455_model_run_summary
+    description: Run summary from the core metabolism model.
+  - name: metabolism_sbml_smallbone2013_metabolic_control_analysis_example_biomd0000000455_model_observable_labels
+    description: Display labels for user-facing observables.
+  outputs: []

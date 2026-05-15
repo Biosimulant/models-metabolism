@@ -1,0 +1,108 @@
+schema_version: '2.0'
+title: Olsen2003_neutrophil_oscillatory_metabolism
+description: 'Olsen2003_neutrophil_oscillatory_metabolism This model is described in the article:
+  A model of the oscillatory metabolism of activated neutrophils. Olsen LF, Kummer U, Kindzelskii
+  AL, Petty HR.'
+standard: sbml
+tags:
+- biomodels_ebi
+- faithful
+- metabolism
+- ode
+- sbml
+- tellurium
+authors:
+- Biosimulant Team
+- L F Olsen
+- Ursula Kummer
+- Andrei L Kindzelskii
+- Howard R Petty
+upstream:
+  id: biomodels_ebi:BIOMD0000000143
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000143
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000143
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000143?filename=BIOMD0000000143_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.olsen2003_neutrophil_oscillatory_metabolism_biomd0000000143_model:Olsen2003NeutrophilOscillatoryMetabolismBiomd0000000143Model
+  init_kwargs:
+    model_path: data/BIOMD0000000143.xml
+    integration_step: 0.1
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_h2o2
+    maps_to: H2O2_p
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for h2o2. Maps to bundled SBML symbol `H2O2_p`. Applied
+      before the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_ferric_peroxidase
+    maps_to: per3_p
+    default: 300.0
+    units: native SBML value
+    description: Initial condition for ferric peroxidase. Maps to bundled SBML symbol `per3_p`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_compound_i
+    maps_to: coI_p
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for compound i. Maps to bundled SBML symbol `coI_p`. Applied
+      before the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_melatonin
+    maps_to: MLTH_p
+    default: 300.0
+    units: native SBML value
+    description: Initial condition for melatonin. Maps to bundled SBML symbol `MLTH_p`. Applied
+      before the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_compound_ii
+    maps_to: coII_p
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for compound ii. Maps to bundled SBML symbol `coII_p`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: h2o2
+    maps_to: H2O2_p
+    label: H2o2
+    description: H2o2. Maps to SBML symbol `H2O2_p`.
+  - name: ferric_peroxidase
+    maps_to: per3_p
+    label: Ferric Peroxidase
+    description: Ferric Peroxidase. Maps to SBML symbol `per3_p`.
+  - name: compound_i
+    maps_to: coI_p
+    label: Compound I
+    description: Compound I. Maps to SBML symbol `coI_p`.
+  - name: melatonin
+    maps_to: MLTH_p
+    label: Melatonin
+    description: Melatonin. Maps to SBML symbol `MLTH_p`.
+  - name: compound_ii
+    maps_to: coII_p
+    label: Compound Ii
+    description: Compound Ii. Maps to SBML symbol `coII_p`.
+  - name: observable_values
+    description: Latest user-facing observable values from the SBML run.
+  - name: run_summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: observable_labels
+    description: Mapping from user-facing observable ports to display labels.
+parameters:
+- name: integration_step
+  value: 0.1
+  min: 0.0
+  units: model_time
+  description: Internal sampling step for Tellurium output collection.

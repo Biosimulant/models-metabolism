@@ -1,0 +1,81 @@
+schema_version: '2.0'
+title: Noguchi2013 - Insulin dependent glucose metabolism Lab
+description: Rei Noguchi, Hiroyuki Kubota, Katsuyuki Yugi, Yu Toyoshima, Yasunori Komori,
+  Tomoyoshi Soga & Shinya Kuroda. The selective control of glycolysis, gluconeogenesis and
+  glycogenesis by temporal insulin p.
+io:
+  inputs:
+  - name: initial_glycolysis_state_1
+    maps_to: metabolism_sbml_noguchi2013_insulin_dependent_glucose_metabolism_biomd0000000482_model.initial_glycolysis_state_1
+    default: 0.4726
+    units: native SBML value
+    description: Initial condition for glycolysis state 1. Maps to bundled SBML symbol `GP`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_glycolysis_state_2
+    maps_to: metabolism_sbml_noguchi2013_insulin_dependent_glucose_metabolism_biomd0000000482_model.initial_glycolysis_state_2
+    default: 0.1723
+    units: native SBML value
+    description: Initial condition for glycolysis state 2. Maps to bundled SBML symbol `pGP`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_mitochondrial_rna
+    maps_to: metabolism_sbml_noguchi2013_insulin_dependent_glucose_metabolism_biomd0000000482_model.initial_mitochondrial_rna
+    default: 2.905
+    units: native SBML value
+    description: Initial condition for mitochondrial rna. Maps to bundled SBML symbol `mRNA`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_glycolysis_state_4
+    maps_to: metabolism_sbml_noguchi2013_insulin_dependent_glucose_metabolism_biomd0000000482_model.initial_glycolysis_state_4
+    default: 0.7686
+    units: native SBML value
+    description: Initial condition for glycolysis state 4. Maps to bundled SBML symbol `PEPCK`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_glycolysis_state_5
+    maps_to: metabolism_sbml_noguchi2013_insulin_dependent_glucose_metabolism_biomd0000000482_model.initial_glycolysis_state_5
+    default: 888.77
+    units: native SBML value
+    description: Initial condition for glycolysis state 5. Maps to bundled SBML symbol `IRS`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: glycolysis_state_1
+    maps_to: metabolism_sbml_noguchi2013_insulin_dependent_glucose_metabolism_biomd0000000482_model.glycolysis_state_1
+  - name: glycolysis_state_2
+    maps_to: metabolism_sbml_noguchi2013_insulin_dependent_glucose_metabolism_biomd0000000482_model.glycolysis_state_2
+  - name: mitochondrial_rna
+    maps_to: metabolism_sbml_noguchi2013_insulin_dependent_glucose_metabolism_biomd0000000482_model.mitochondrial_rna
+  - name: glycolysis_state_4
+    maps_to: metabolism_sbml_noguchi2013_insulin_dependent_glucose_metabolism_biomd0000000482_model.glycolysis_state_4
+  - name: glycolysis_state_5
+    maps_to: metabolism_sbml_noguchi2013_insulin_dependent_glucose_metabolism_biomd0000000482_model.glycolysis_state_5
+  - name: observable_values
+    maps_to: metabolism_sbml_noguchi2013_insulin_dependent_glucose_metabolism_biomd0000000482_model.observable_values
+  - name: run_summary
+    maps_to: metabolism_sbml_noguchi2013_insulin_dependent_glucose_metabolism_biomd0000000482_model.run_summary
+  - name: observable_labels
+    maps_to: metabolism_sbml_noguchi2013_insulin_dependent_glucose_metabolism_biomd0000000482_model.observable_labels
+models:
+- alias: metabolism_sbml_noguchi2013_insulin_dependent_glucose_metabolism_biomd0000000482_model
+  path: models/core
+  parameters:
+    model_path: data/BIOMD0000000482.xml
+    integration_step: 0.1
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: metabolism_sbml_noguchi2013_insulin_dependent_glucose_metabolism_biomd0000000482_model.observable_values
+  to:
+  - visualisation.metabolism_sbml_noguchi2013_insulin_dependent_glucose_metabolism_biomd0000000482_model_observable_values
+- from: metabolism_sbml_noguchi2013_insulin_dependent_glucose_metabolism_biomd0000000482_model.run_summary
+  to:
+  - visualisation.metabolism_sbml_noguchi2013_insulin_dependent_glucose_metabolism_biomd0000000482_model_run_summary
+- from: metabolism_sbml_noguchi2013_insulin_dependent_glucose_metabolism_biomd0000000482_model.observable_labels
+  to:
+  - visualisation.metabolism_sbml_noguchi2013_insulin_dependent_glucose_metabolism_biomd0000000482_model_observable_labels
+runtime:
+  duration: 10.0
+  communication_step: 1.0
+  initial_inputs: {}

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "2dface52-8b3e-4a56-a7c1-52e837c14c47",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "6fe6681f-3f37-46e1-b676-4a92e45b06ee",
+  "created_at": "2026-05-15T16:03:11.590784480+00:00",
+  "last_synced_at": "2026-05-15T18:41:18.220469+00:00",
+  "hub_manifest_hash": "91088e2f7863c290ade081ffedcf7a540c7b5f9c547a74313240cbb900df7337",
+  "package_name": "tran2009-cardiacactiveforcegeneration-lab"
+}

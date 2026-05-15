@@ -1,0 +1,109 @@
+schema_version: '2.0'
+title: Smallbone2015 - Multi-scale model of E. coli metabolism
+description: Metabolism Smallbone2015Multi Scale Model Of EColi Metabo Model1503050000Model
+  captures core biological behavior in the context of metabolism, sbml, biomodels_ebi using
+  a biomodels_ebi-sourced OTHER model. When you run it, you can observe state and evaluate
+  how the modeled system changes across runs.
+standard: sbml
+tags:
+- biomodels_ebi
+- faithful
+- metabolism
+- ode
+- sbml
+- tellurium
+authors:
+- Biosimulant Team
+- Smallbone K.1
+- Millard P.2
+upstream:
+  id: biomodels_ebi:MODEL1503050000
+  source_db: biomodels_ebi
+  source_id: MODEL1503050000
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1503050000
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1503050000?filename=MODEL1503050000_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.smallbone2015_multi_scale_model_of_e_coli_metabo_model1503050000_model:Smallbone2015MultiScaleModelOfEColiMetaboModel1503050000Model
+  init_kwargs:
+    model_path: data/MODEL1503050000.xml
+    integration_step: 0.1
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_phosphoenolpyruvate
+    maps_to: PEP
+    default: 2.67
+    units: native SBML value
+    description: Initial condition for phosphoenolpyruvate. Maps to bundled SBML symbol `PEP`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_glucose_6_phosphate
+    maps_to: G6P
+    default: 3.48
+    units: native SBML value
+    description: Initial condition for glucose 6 phosphate. Maps to bundled SBML symbol `G6P`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_pyruvate
+    maps_to: PYR
+    default: 2.67
+    units: native SBML value
+    description: Initial condition for pyruvate. Maps to bundled SBML symbol `PYR`. Applied
+      before the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_fructose_6_phosphate
+    maps_to: F6P
+    default: 0.6
+    units: native SBML value
+    description: Initial condition for fructose 6 phosphate. Maps to bundled SBML symbol `F6P`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_microbial_metabolism_state_5
+    maps_to: G1P
+    default: 0.653
+    units: native SBML value
+    description: Initial condition for microbial metabolism state 5. Maps to bundled SBML
+      symbol `G1P`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: phosphoenolpyruvate
+    maps_to: PEP
+    label: Phosphoenolpyruvate
+    description: Phosphoenolpyruvate. Maps to SBML symbol `PEP`.
+  - name: glucose_6_phosphate
+    maps_to: G6P
+    label: Glucose 6 Phosphate
+    description: Glucose 6 Phosphate. Maps to SBML symbol `G6P`.
+  - name: pyruvate
+    maps_to: PYR
+    label: Pyruvate
+    description: Pyruvate. Maps to SBML symbol `PYR`.
+  - name: fructose_6_phosphate
+    maps_to: F6P
+    label: Fructose 6 Phosphate
+    description: Fructose 6 Phosphate. Maps to SBML symbol `F6P`.
+  - name: microbial_metabolism_state_5
+    maps_to: G1P
+    label: Microbial Metabolism state 5
+    description: Microbial Metabolism state 5; conservative display label for an abstract
+      SBML state variable. Maps to SBML symbol `G1P`. Exact metabolite identity is not encoded
+      in the bundled SBML metadata.
+  - name: observable_values
+    description: Latest user-facing observable values from the SBML run.
+  - name: run_summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: observable_labels
+    description: Mapping from user-facing observable ports to display labels.
+parameters:
+- name: integration_step
+  value: 0.1
+  min: 0.0
+  units: model_time
+  description: Internal sampling step for Tellurium output collection.

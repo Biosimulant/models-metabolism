@@ -1,0 +1,106 @@
+schema_version: '2.0'
+title: Pritchard2002_glycolysis
+description: 'from: Schemes of fluc control in a model of Saccharomyces cerevisiae glycolysis
+  Pritchard, L and Kell, DB Eur. It can be used to explore metabolic flux dynamics and compare
+  pathway behavior across conditions.'
+standard: sbml
+tags:
+- biomodels_ebi
+- faithful
+- metabolism
+- ode
+- sbml
+- tellurium
+authors:
+- Biosimulant Team
+- Leighton Pritchard
+- Douglas B Kell
+upstream:
+  id: biomodels_ebi:BIOMD0000000172
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000172
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000172
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000172?filename=BIOMD0000000172_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.pritchard2002_glycolysis_biomd0000000172_model:Pritchard2002GlycolysisBiomd0000000172Model
+  init_kwargs:
+    model_path: data/BIOMD0000000172.xml
+    integration_step: 0.1
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_intracellular_glucose
+    maps_to: GLCi
+    default: 0.097652231064563
+    units: native SBML value
+    description: Initial condition for intracellular glucose. Maps to bundled SBML symbol
+      `GLCi`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_atp
+    maps_to: ATP
+    default: 2.52512746499271
+    units: native SBML value
+    description: Initial condition for atp. Maps to bundled SBML symbol `ATP`. Applied before
+      the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_glucose_6_phosphate
+    maps_to: G6P
+    default: 2.67504014044787
+    units: native SBML value
+    description: Initial condition for glucose 6 phosphate. Maps to bundled SBML symbol `G6P`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_adp
+    maps_to: ADP
+    default: 1.28198768168719
+    units: native SBML value
+    description: Initial condition for adp. Maps to bundled SBML symbol `ADP`. Applied before
+      the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_fructose_6_phosphate
+    maps_to: F6P
+    default: 0.624976405532373
+    units: native SBML value
+    description: Initial condition for fructose 6 phosphate. Maps to bundled SBML symbol `F6P`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: intracellular_glucose
+    maps_to: GLCi
+    label: Intracellular Glucose
+    description: Intracellular Glucose. Maps to SBML symbol `GLCi`.
+  - name: atp
+    maps_to: ATP
+    label: ATP
+    description: ATP. Maps to SBML symbol `ATP`.
+  - name: glucose_6_phosphate
+    maps_to: G6P
+    label: glucose 6 phosphate
+    description: glucose 6 phosphate. Maps to SBML symbol `G6P`.
+  - name: adp
+    maps_to: ADP
+    label: ADP
+    description: ADP. Maps to SBML symbol `ADP`.
+  - name: fructose_6_phosphate
+    maps_to: F6P
+    label: Fructose 6 Phosphate
+    description: Fructose 6 Phosphate. Maps to SBML symbol `F6P`.
+  - name: observable_values
+    description: Latest user-facing observable values from the SBML run.
+  - name: run_summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: observable_labels
+    description: Mapping from user-facing observable ports to display labels.
+parameters:
+- name: integration_step
+  value: 0.1
+  min: 0.0
+  units: model_time
+  description: Internal sampling step for Tellurium output collection.

@@ -1,0 +1,119 @@
+schema_version: '2.0'
+title: Kerkhoven2013 - Glycolysis in T.brucei - MODEL A
+description: Kerkhoven2013 - Glycolysis in T.brucei - MODEL A There are six models (Model
+  A, B, C, C-fruc, D, D-fruc) described in the paper. Model A ( BIOMD0000000513 ) is the model
+  developed originally by Achar.
+standard: sbml
+tags:
+- biomodels_ebi
+- faithful
+- metabolism
+- ode
+- sbml
+- tellurium
+authors:
+- Biosimulant Team
+- Eduard J Kerkhoven
+- Fiona Achcar
+- Vincent P Alibu
+- Richard J Burchmore
+- Ian H Gilbert
+upstream:
+  id: biomodels_ebi:BIOMD0000000513
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000513
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000513
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000513?filename=BIOMD0000000513_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.kerkhoven2013_glycolysis_in_t_brucei_model_a_biomd0000000513_model:Kerkhoven2013GlycolysisInTBruceiModelABiomd0000000513Model
+  init_kwargs:
+    model_path: data/BIOMD0000000513.xml
+    integration_step: 0.1
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_glycolysis_state_1
+    maps_to: _2PGA_c
+    default: 0.1
+    units: native SBML value
+    description: Initial condition for glycolysis state 1. Maps to bundled SBML symbol `_2PGA_c`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_glycolysis_state_2
+    maps_to: DHAP_c
+    default: 2.23132912
+    units: native SBML value
+    description: Initial condition for glycolysis state 2. Maps to bundled SBML symbol `DHAP_c`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_glycolysis_state_3
+    maps_to: ATP_g
+    default: 0.2405
+    units: native SBML value
+    description: Initial condition for glycolysis state 3. Maps to bundled SBML symbol `ATP_g`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_glycolysis_state_4
+    maps_to: DHAP_g
+    default: 8.483130623
+    units: native SBML value
+    description: Initial condition for glycolysis state 4. Maps to bundled SBML symbol `DHAP_g`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_glycolysis_state_5
+    maps_to: ADP_g
+    default: 1.519
+    units: native SBML value
+    description: Initial condition for glycolysis state 5. Maps to bundled SBML symbol `ADP_g`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: glycolysis_state_1
+    maps_to: _2PGA_c
+    label: Glycolysis state 1
+    description: Glycolysis state 1; conservative display label for an abstract SBML state
+      variable. Maps to SBML symbol `_2PGA_c`. Exact metabolite identity is not encoded in
+      the bundled SBML metadata.
+  - name: glycolysis_state_2
+    maps_to: DHAP_c
+    label: Glycolysis state 2
+    description: Glycolysis state 2; conservative display label for an abstract SBML state
+      variable. Maps to SBML symbol `DHAP_c`. Exact metabolite identity is not encoded in
+      the bundled SBML metadata.
+  - name: glycolysis_state_3
+    maps_to: ATP_g
+    label: Glycolysis state 3
+    description: Glycolysis state 3; conservative display label for an abstract SBML state
+      variable. Maps to SBML symbol `ATP_g`. Exact metabolite identity is not encoded in the
+      bundled SBML metadata.
+  - name: glycolysis_state_4
+    maps_to: DHAP_g
+    label: Glycolysis state 4
+    description: Glycolysis state 4; conservative display label for an abstract SBML state
+      variable. Maps to SBML symbol `DHAP_g`. Exact metabolite identity is not encoded in
+      the bundled SBML metadata.
+  - name: glycolysis_state_5
+    maps_to: ADP_g
+    label: Glycolysis state 5
+    description: Glycolysis state 5; conservative display label for an abstract SBML state
+      variable. Maps to SBML symbol `ADP_g`. Exact metabolite identity is not encoded in the
+      bundled SBML metadata.
+  - name: observable_values
+    description: Latest user-facing observable values from the SBML run.
+  - name: run_summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: observable_labels
+    description: Mapping from user-facing observable ports to display labels.
+parameters:
+- name: integration_step
+  value: 0.1
+  min: 0.0
+  units: model_time
+  description: Internal sampling step for Tellurium output collection.

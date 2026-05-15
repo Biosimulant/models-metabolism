@@ -1,0 +1,90 @@
+schema_version: '2.0'
+title: Hofmeyr1996 - metabolic control analysis
+description: Hofmeyr1996 - metabolic control analysis Understanding of genetic mechanisms
+  would not be possible by studying the properties of individual components. To better understand
+  the system as a whole, it i.
+standard: sbml
+tags:
+- biomodels_ebi
+- faithful
+- metabolism
+- ode
+- sbml
+- tellurium
+authors:
+- Biosimulant Team
+- J H Hofmeyr
+- Athel Cornish-Bowden
+upstream:
+  id: biomodels_ebi:MODEL1304300000
+  source_db: biomodels_ebi
+  source_id: MODEL1304300000
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1304300000
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1304300000?filename=MODEL1304300000_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.hofmeyr1996_metabolic_control_analysis_model1304300000_model:Hofmeyr1996MetabolicControlAnalysisModel1304300000Model
+  init_kwargs:
+    model_path: data/MODEL1304300000.xml
+    integration_step: 0.1
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_metabolic_pathway_state_1
+    maps_to: s1
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 1. Maps to bundled SBML symbol
+      `s1`. Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_metabolic_pathway_state_2
+    maps_to: s2
+    default: 2.5
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 2. Maps to bundled SBML symbol
+      `s2`. Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_metabolic_pathway_state_3
+    maps_to: s3
+    default: 2.5
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 3. Maps to bundled SBML symbol
+      `s3`. Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: metabolic_pathway_state_1
+    maps_to: s1
+    label: Metabolic Pathway state 1
+    description: Metabolic Pathway state 1; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `s1`. Exact metabolite identity is not encoded in
+      the bundled SBML metadata.
+  - name: metabolic_pathway_state_2
+    maps_to: s2
+    label: Metabolic Pathway state 2
+    description: Metabolic Pathway state 2; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `s2`. Exact metabolite identity is not encoded in
+      the bundled SBML metadata.
+  - name: metabolic_pathway_state_3
+    maps_to: s3
+    label: Metabolic Pathway state 3
+    description: Metabolic Pathway state 3; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `s3`. Exact metabolite identity is not encoded in
+      the bundled SBML metadata.
+  - name: observable_values
+    description: Latest user-facing observable values from the SBML run.
+  - name: run_summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: observable_labels
+    description: Mapping from user-facing observable ports to display labels.
+parameters:
+- name: integration_step
+  value: 0.1
+  min: 0.0
+  units: model_time
+  description: Internal sampling step for Tellurium output collection.

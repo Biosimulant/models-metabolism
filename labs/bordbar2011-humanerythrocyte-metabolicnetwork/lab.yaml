@@ -1,0 +1,87 @@
+schema_version: '2.0'
+title: Bordbar2011_HumanErythrocyte_MetabolicNetwork Lab
+description: 'This model is from the article: iAB-RBC-283: A proteomically derived knowledge-base
+  of erythrocyte metabolism that can be used to simulate its physiological and patho-physiological
+  states. It can be used to explore metabolic flux dynamics and compare pathway behavior across
+  conditions.'
+io:
+  inputs:
+  - name: initial_observable_3_phospho_d_glyceroyl_phosphate
+    maps_to: metabolism_sbml_bordbar2011_humanerythrocyte_metabolicnetwork_model1106080000_model.initial_observable_3_phospho_d_glyceroyl_phosphate
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for observable 3 phospho d glyceroyl phosphate. Maps to
+      bundled SBML symbol `M_13dpg_c`. Applied before the Tellurium simulation starts; this
+      does not change kinetic parameters or equations. Default from Tellurium setup-time value
+      because no explicit SBML initial value was available.
+  - name: initial_observable_2_3_disphospho_d_glycerate
+    maps_to: metabolism_sbml_bordbar2011_humanerythrocyte_metabolicnetwork_model1106080000_model.initial_observable_2_3_disphospho_d_glycerate
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for observable 2 3 disphospho d glycerate. Maps to bundled
+      SBML symbol `M_23dpg_c`. Applied before the Tellurium simulation starts; this does not
+      change kinetic parameters or equations. Default from Tellurium setup-time value because
+      no explicit SBML initial value was available.
+  - name: initial_observable_2_keto_4_methylthiobutyrate
+    maps_to: metabolism_sbml_bordbar2011_humanerythrocyte_metabolicnetwork_model1106080000_model.initial_observable_2_keto_4_methylthiobutyrate
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for observable 2 keto 4 methylthiobutyrate. Maps to bundled
+      SBML symbol `M_2kmb_c`. Applied before the Tellurium simulation starts; this does not
+      change kinetic parameters or equations. Default from Tellurium setup-time value because
+      no explicit SBML initial value was available.
+  - name: initial_d_glycerate_2_phosphate
+    maps_to: metabolism_sbml_bordbar2011_humanerythrocyte_metabolicnetwork_model1106080000_model.initial_d_glycerate_2_phosphate
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for d glycerate 2 phosphate. Maps to bundled SBML symbol
+      `M_2pg_c`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from Tellurium setup-time value because no explicit
+      SBML initial value was available.
+  - name: initial_observable_3_5_cyclic_gmp
+    maps_to: metabolism_sbml_bordbar2011_humanerythrocyte_metabolicnetwork_model1106080000_model.initial_observable_3_5_cyclic_gmp
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for observable 3 5 cyclic gmp. Maps to bundled SBML symbol
+      `M_35cgmp_c`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from Tellurium setup-time value because no explicit
+      SBML initial value was available.
+  outputs:
+  - name: observable_3_phospho_d_glyceroyl_phosphate
+    maps_to: metabolism_sbml_bordbar2011_humanerythrocyte_metabolicnetwork_model1106080000_model.observable_3_phospho_d_glyceroyl_phosphate
+  - name: observable_2_3_disphospho_d_glycerate
+    maps_to: metabolism_sbml_bordbar2011_humanerythrocyte_metabolicnetwork_model1106080000_model.observable_2_3_disphospho_d_glycerate
+  - name: observable_2_keto_4_methylthiobutyrate
+    maps_to: metabolism_sbml_bordbar2011_humanerythrocyte_metabolicnetwork_model1106080000_model.observable_2_keto_4_methylthiobutyrate
+  - name: d_glycerate_2_phosphate
+    maps_to: metabolism_sbml_bordbar2011_humanerythrocyte_metabolicnetwork_model1106080000_model.d_glycerate_2_phosphate
+  - name: observable_3_5_cyclic_gmp
+    maps_to: metabolism_sbml_bordbar2011_humanerythrocyte_metabolicnetwork_model1106080000_model.observable_3_5_cyclic_gmp
+  - name: observable_values
+    maps_to: metabolism_sbml_bordbar2011_humanerythrocyte_metabolicnetwork_model1106080000_model.observable_values
+  - name: run_summary
+    maps_to: metabolism_sbml_bordbar2011_humanerythrocyte_metabolicnetwork_model1106080000_model.run_summary
+  - name: observable_labels
+    maps_to: metabolism_sbml_bordbar2011_humanerythrocyte_metabolicnetwork_model1106080000_model.observable_labels
+models:
+- alias: metabolism_sbml_bordbar2011_humanerythrocyte_metabolicnetwork_model1106080000_model
+  path: models/core
+  parameters:
+    model_path: data/MODEL1106080000.xml
+    integration_step: 0.1
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: metabolism_sbml_bordbar2011_humanerythrocyte_metabolicnetwork_model1106080000_model.observable_values
+  to:
+  - visualisation.metabolism_sbml_bordbar2011_humanerythrocyte_metabolicnetwork_model1106080000_model_observable_values
+- from: metabolism_sbml_bordbar2011_humanerythrocyte_metabolicnetwork_model1106080000_model.run_summary
+  to:
+  - visualisation.metabolism_sbml_bordbar2011_humanerythrocyte_metabolicnetwork_model1106080000_model_run_summary
+- from: metabolism_sbml_bordbar2011_humanerythrocyte_metabolicnetwork_model1106080000_model.observable_labels
+  to:
+  - visualisation.metabolism_sbml_bordbar2011_humanerythrocyte_metabolicnetwork_model1106080000_model_observable_labels
+runtime:
+  duration: 10.0
+  communication_step: 1.0
+  initial_inputs: {}

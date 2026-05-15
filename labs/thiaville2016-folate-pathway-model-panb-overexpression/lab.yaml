@@ -1,0 +1,82 @@
+schema_version: '2.0'
+title: Thiaville2016 - Folate pathway model (PanB overexpression) Lab
+description: 'Henry2016 Folate pathway model with inducedPanB reaction This model is described
+  in the article: Experimental and Metabolic Modeling Evidence for a Folate-Cleaving Side-Activity
+  of Ketopantoate Hydrox. It can be used to explore metabolic flux dynamics and compare pathway
+  behavior across conditions.'
+io:
+  inputs:
+  - name: initial_folate_metabolism_state_1
+    maps_to: metabolism_sbml_thiaville2016_folate_pathway_model_panb_overexpr_biomd0000000689_model.initial_folate_metabolism_state_1
+    default: 3.315e-06
+    units: native SBML value
+    description: Initial condition for folate metabolism state 1. Maps to bundled SBML symbol
+      `H2_HMPt`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_folate_metabolism_state_2
+    maps_to: metabolism_sbml_thiaville2016_folate_pathway_model_panb_overexpr_biomd0000000689_model.initial_folate_metabolism_state_2
+    default: 1.0e-05
+    units: native SBML value
+    description: Initial condition for folate metabolism state 2. Maps to bundled SBML symbol
+      `H2_HMPterinPP`. Applied before the Tellurium simulation starts; this does not change
+      kinetic parameters or equations. Default from bundled SBML initial value.
+  - name: initial_para_aminobenzoate
+    maps_to: metabolism_sbml_thiaville2016_folate_pathway_model_panb_overexpr_biomd0000000689_model.initial_para_aminobenzoate
+    default: 1.0e-05
+    units: native SBML value
+    description: Initial condition for para aminobenzoate. Maps to bundled SBML symbol `p_ABA`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_folate_metabolism_state_4
+    maps_to: metabolism_sbml_thiaville2016_folate_pathway_model_panb_overexpr_biomd0000000689_model.initial_folate_metabolism_state_4
+    default: 1.0e-05
+    units: native SBML value
+    description: Initial condition for folate metabolism state 4. Maps to bundled SBML symbol
+      `H2_Pteroate`. Applied before the Tellurium simulation starts; this does not change
+      kinetic parameters or equations. Default from bundled SBML initial value.
+  - name: initial_dihydrofolate
+    maps_to: metabolism_sbml_thiaville2016_folate_pathway_model_panb_overexpr_biomd0000000689_model.initial_dihydrofolate
+    default: 1.0e-05
+    units: native SBML value
+    description: Initial condition for dihydrofolate. Maps to bundled SBML symbol `DHF`. Applied
+      before the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  outputs:
+  - name: folate_metabolism_state_1
+    maps_to: metabolism_sbml_thiaville2016_folate_pathway_model_panb_overexpr_biomd0000000689_model.folate_metabolism_state_1
+  - name: folate_metabolism_state_2
+    maps_to: metabolism_sbml_thiaville2016_folate_pathway_model_panb_overexpr_biomd0000000689_model.folate_metabolism_state_2
+  - name: para_aminobenzoate
+    maps_to: metabolism_sbml_thiaville2016_folate_pathway_model_panb_overexpr_biomd0000000689_model.para_aminobenzoate
+  - name: folate_metabolism_state_4
+    maps_to: metabolism_sbml_thiaville2016_folate_pathway_model_panb_overexpr_biomd0000000689_model.folate_metabolism_state_4
+  - name: dihydrofolate
+    maps_to: metabolism_sbml_thiaville2016_folate_pathway_model_panb_overexpr_biomd0000000689_model.dihydrofolate
+  - name: observable_values
+    maps_to: metabolism_sbml_thiaville2016_folate_pathway_model_panb_overexpr_biomd0000000689_model.observable_values
+  - name: run_summary
+    maps_to: metabolism_sbml_thiaville2016_folate_pathway_model_panb_overexpr_biomd0000000689_model.run_summary
+  - name: observable_labels
+    maps_to: metabolism_sbml_thiaville2016_folate_pathway_model_panb_overexpr_biomd0000000689_model.observable_labels
+models:
+- alias: metabolism_sbml_thiaville2016_folate_pathway_model_panb_overexpr_biomd0000000689_model
+  path: models/core
+  parameters:
+    model_path: data/BIOMD0000000689.xml
+    integration_step: 0.1
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: metabolism_sbml_thiaville2016_folate_pathway_model_panb_overexpr_biomd0000000689_model.observable_values
+  to:
+  - visualisation.metabolism_sbml_thiaville2016_folate_pathway_model_panb_overexpr_biomd0000000689_model_observable_values
+- from: metabolism_sbml_thiaville2016_folate_pathway_model_panb_overexpr_biomd0000000689_model.run_summary
+  to:
+  - visualisation.metabolism_sbml_thiaville2016_folate_pathway_model_panb_overexpr_biomd0000000689_model_run_summary
+- from: metabolism_sbml_thiaville2016_folate_pathway_model_panb_overexpr_biomd0000000689_model.observable_labels
+  to:
+  - visualisation.metabolism_sbml_thiaville2016_folate_pathway_model_panb_overexpr_biomd0000000689_model_observable_labels
+runtime:
+  duration: 10.0
+  communication_step: 1.0
+  initial_inputs: {}

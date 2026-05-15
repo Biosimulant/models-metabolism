@@ -1,0 +1,81 @@
+schema_version: '2.0'
+title: Costa2014 - Computational Model of L. lactis Metabolism Lab
+description: 'Costa2014 - Computational Model of L. lactisMetabolism This model is described
+  in the article: An extended dynamic model of Lactococcus lactis metabolism for mannitol
+  and 2,3-butanediol production.'
+io:
+  inputs:
+  - name: initial_glucose_6_phosphate
+    maps_to: metabolism_sbml_costa2014_computational_model_of_l_lactis_metabo_biomd0000000572_model.initial_glucose_6_phosphate
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for glucose 6 phosphate. Maps to bundled SBML symbol `G6P`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_atp
+    maps_to: metabolism_sbml_costa2014_computational_model_of_l_lactis_metabo_biomd0000000572_model.initial_atp
+    default: 4.88632508879394
+    units: native SBML value
+    description: Initial condition for atp. Maps to bundled SBML symbol `ATP`. Applied before
+      the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_adp
+    maps_to: metabolism_sbml_costa2014_computational_model_of_l_lactis_metabo_biomd0000000572_model.initial_adp
+    default: 20.3856905308319
+    units: native SBML value
+    description: Initial condition for adp. Maps to bundled SBML symbol `ADP`. Applied before
+      the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_inorganic_phosphate
+    maps_to: metabolism_sbml_costa2014_computational_model_of_l_lactis_metabo_biomd0000000572_model.initial_inorganic_phosphate
+    default: 38.26
+    units: native SBML value
+    description: Initial condition for inorganic phosphate. Maps to bundled SBML symbol `Pint`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_fructose_6_phosphate
+    maps_to: metabolism_sbml_costa2014_computational_model_of_l_lactis_metabo_biomd0000000572_model.initial_fructose_6_phosphate
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for fructose 6 phosphate. Maps to bundled SBML symbol `F6P`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: glucose_6_phosphate
+    maps_to: metabolism_sbml_costa2014_computational_model_of_l_lactis_metabo_biomd0000000572_model.glucose_6_phosphate
+  - name: atp
+    maps_to: metabolism_sbml_costa2014_computational_model_of_l_lactis_metabo_biomd0000000572_model.atp
+  - name: adp
+    maps_to: metabolism_sbml_costa2014_computational_model_of_l_lactis_metabo_biomd0000000572_model.adp
+  - name: inorganic_phosphate
+    maps_to: metabolism_sbml_costa2014_computational_model_of_l_lactis_metabo_biomd0000000572_model.inorganic_phosphate
+  - name: fructose_6_phosphate
+    maps_to: metabolism_sbml_costa2014_computational_model_of_l_lactis_metabo_biomd0000000572_model.fructose_6_phosphate
+  - name: observable_values
+    maps_to: metabolism_sbml_costa2014_computational_model_of_l_lactis_metabo_biomd0000000572_model.observable_values
+  - name: run_summary
+    maps_to: metabolism_sbml_costa2014_computational_model_of_l_lactis_metabo_biomd0000000572_model.run_summary
+  - name: observable_labels
+    maps_to: metabolism_sbml_costa2014_computational_model_of_l_lactis_metabo_biomd0000000572_model.observable_labels
+models:
+- alias: metabolism_sbml_costa2014_computational_model_of_l_lactis_metabo_biomd0000000572_model
+  path: models/core
+  parameters:
+    model_path: data/BIOMD0000000572.xml
+    integration_step: 0.1
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: metabolism_sbml_costa2014_computational_model_of_l_lactis_metabo_biomd0000000572_model.observable_values
+  to:
+  - visualisation.metabolism_sbml_costa2014_computational_model_of_l_lactis_metabo_biomd0000000572_model_observable_values
+- from: metabolism_sbml_costa2014_computational_model_of_l_lactis_metabo_biomd0000000572_model.run_summary
+  to:
+  - visualisation.metabolism_sbml_costa2014_computational_model_of_l_lactis_metabo_biomd0000000572_model_run_summary
+- from: metabolism_sbml_costa2014_computational_model_of_l_lactis_metabo_biomd0000000572_model.observable_labels
+  to:
+  - visualisation.metabolism_sbml_costa2014_computational_model_of_l_lactis_metabo_biomd0000000572_model_observable_labels
+runtime:
+  duration: 10.0
+  communication_step: 1.0
+  initial_inputs: {}

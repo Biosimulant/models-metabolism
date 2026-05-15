@@ -1,0 +1,81 @@
+schema_version: '2.0'
+title: Gupta2009 - Eicosanoid Metabolism Lab
+description: 'Gupta2009 - Eicosanoid Metabolism Integrated model of eicosanoid metabolism
+  and signaling based on lipidomics flux analysis. This model is described in the article:
+  An integrated model of eicosanoid m.'
+io:
+  inputs:
+  - name: initial_lipid_metabolism_state_1
+    maps_to: metabolism_sbml_gupta2009_eicosanoid_metabolism_biomd0000000436_model.initial_lipid_metabolism_state_1
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for lipid metabolism state 1. Maps to bundled SBML symbol
+      `HETE`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_lipid_metabolism_state_2
+    maps_to: metabolism_sbml_gupta2009_eicosanoid_metabolism_biomd0000000436_model.initial_lipid_metabolism_state_2
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for lipid metabolism state 2. Maps to bundled SBML symbol
+      `PGH2`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_lipid_metabolism_state_3
+    maps_to: metabolism_sbml_gupta2009_eicosanoid_metabolism_biomd0000000436_model.initial_lipid_metabolism_state_3
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for lipid metabolism state 3. Maps to bundled SBML symbol
+      `PGE2`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_lipid_metabolism_state_4
+    maps_to: metabolism_sbml_gupta2009_eicosanoid_metabolism_biomd0000000436_model.initial_lipid_metabolism_state_4
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for lipid metabolism state 4. Maps to bundled SBML symbol
+      `PGF2a`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_lipid_metabolism_state_5
+    maps_to: metabolism_sbml_gupta2009_eicosanoid_metabolism_biomd0000000436_model.initial_lipid_metabolism_state_5
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for lipid metabolism state 5. Maps to bundled SBML symbol
+      `PGD2`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: lipid_metabolism_state_1
+    maps_to: metabolism_sbml_gupta2009_eicosanoid_metabolism_biomd0000000436_model.lipid_metabolism_state_1
+  - name: lipid_metabolism_state_2
+    maps_to: metabolism_sbml_gupta2009_eicosanoid_metabolism_biomd0000000436_model.lipid_metabolism_state_2
+  - name: lipid_metabolism_state_3
+    maps_to: metabolism_sbml_gupta2009_eicosanoid_metabolism_biomd0000000436_model.lipid_metabolism_state_3
+  - name: lipid_metabolism_state_4
+    maps_to: metabolism_sbml_gupta2009_eicosanoid_metabolism_biomd0000000436_model.lipid_metabolism_state_4
+  - name: lipid_metabolism_state_5
+    maps_to: metabolism_sbml_gupta2009_eicosanoid_metabolism_biomd0000000436_model.lipid_metabolism_state_5
+  - name: observable_values
+    maps_to: metabolism_sbml_gupta2009_eicosanoid_metabolism_biomd0000000436_model.observable_values
+  - name: run_summary
+    maps_to: metabolism_sbml_gupta2009_eicosanoid_metabolism_biomd0000000436_model.run_summary
+  - name: observable_labels
+    maps_to: metabolism_sbml_gupta2009_eicosanoid_metabolism_biomd0000000436_model.observable_labels
+models:
+- alias: metabolism_sbml_gupta2009_eicosanoid_metabolism_biomd0000000436_model
+  path: models/core
+  parameters:
+    model_path: data/BIOMD0000000436.xml
+    integration_step: 0.1
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: metabolism_sbml_gupta2009_eicosanoid_metabolism_biomd0000000436_model.observable_values
+  to:
+  - visualisation.metabolism_sbml_gupta2009_eicosanoid_metabolism_biomd0000000436_model_observable_values
+- from: metabolism_sbml_gupta2009_eicosanoid_metabolism_biomd0000000436_model.run_summary
+  to:
+  - visualisation.metabolism_sbml_gupta2009_eicosanoid_metabolism_biomd0000000436_model_run_summary
+- from: metabolism_sbml_gupta2009_eicosanoid_metabolism_biomd0000000436_model.observable_labels
+  to:
+  - visualisation.metabolism_sbml_gupta2009_eicosanoid_metabolism_biomd0000000436_model_observable_labels
+runtime:
+  duration: 10.0
+  communication_step: 1.0
+  initial_inputs: {}

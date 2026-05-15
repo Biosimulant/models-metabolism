@@ -1,0 +1,98 @@
+schema_version: '2.0'
+title: Poolman2004_CalvinCycle Visualisation
+description: Dedicated presentation model for Poolman2004_CalvinCycle.
+standard: other
+tags:
+- metabolism
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  entrypoint: src.metabolism_visualisation:MetabolismVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Poolman2004_CalvinCycle Lab
+    question: Which metabolic pathway dynamics observables show the strongest activity in
+      Poolman2004_CalvinCycle?
+    answer_focus: metabolic pathway dynamics
+    sources:
+    - alias: metabolism_sbml_poolman2004_calvincycle_biomd0000000013_model
+      title: Poolman2004_CalvinCycle
+      scope: metabolic pathway dynamics
+      label_caveat: Values are native SBML quantities. Conservative pathway-state labels are
+        used where the bundled SBML does not encode exact metabolite identities.
+      observables:
+      - id: metabolic_pathway_state_1
+        label: Metabolic Pathway state 1
+        maps_to: RuBP_ch
+      - id: metabolic_pathway_state_2
+        label: Metabolic Pathway state 2
+        maps_to: PGA_ch
+      - id: metabolic_pathway_state_3
+        label: Metabolic Pathway state 3
+        maps_to: ATP_ch
+      - id: metabolic_pathway_state_4
+        label: Metabolic Pathway state 4
+        maps_to: BPGA_ch
+      - id: metabolic_pathway_state_5
+        label: Metabolic Pathway state 5
+        maps_to: GAP_ch
+      - id: metabolic_pathway_state_6
+        label: Metabolic Pathway state 6
+        maps_to: Pi_ch
+      - id: metabolic_pathway_state_7
+        label: Metabolic Pathway state 7
+        maps_to: DHAP_ch
+      - id: metabolic_pathway_state_8
+        label: Metabolic Pathway state 8
+        maps_to: FBP_ch
+      - id: metabolic_pathway_state_9
+        label: Metabolic Pathway state 9
+        maps_to: F6P_ch
+      - id: metabolic_pathway_state_10
+        label: Metabolic Pathway state 10
+        maps_to: E4P_ch
+      - id: metabolic_pathway_state_11
+        label: Metabolic Pathway state 11
+        maps_to: X5P_ch
+      - id: metabolic_pathway_state_12
+        label: Metabolic Pathway state 12
+        maps_to: SBP_ch
+      - id: metabolic_pathway_state_13
+        label: Metabolic Pathway state 13
+        maps_to: S7P_ch
+      - id: metabolic_pathway_state_14
+        label: Metabolic Pathway state 14
+        maps_to: R5P_ch
+      - id: metabolic_pathway_state_15
+        label: Metabolic Pathway state 15
+        maps_to: Ru5P_ch
+      - id: metabolic_pathway_state_16
+        label: Metabolic Pathway state 16
+        maps_to: G6P_ch
+      - id: metabolic_pathway_state_17
+        label: Metabolic Pathway state 17
+        maps_to: ADP_ch
+      - id: metabolic_pathway_state_18
+        label: Metabolic Pathway state 18
+        maps_to: G1P_ch
+  communication_step: 1.0
+runtime:
+  dependencies:
+    packages:
+    - PyYAML==6.0.2
+parameters:
+- name: integration_step
+  value: 1.0
+  min: 0.0
+  units: model_time
+  description: Sampling step for the visualisation model.
+io:
+  inputs:
+  - name: metabolism_sbml_poolman2004_calvincycle_biomd0000000013_model_observable_values
+    description: Latest user-facing observable values from the core metabolism model.
+  - name: metabolism_sbml_poolman2004_calvincycle_biomd0000000013_model_run_summary
+    description: Run summary from the core metabolism model.
+  - name: metabolism_sbml_poolman2004_calvincycle_biomd0000000013_model_observable_labels
+    description: Display labels for user-facing observables.
+  outputs: []

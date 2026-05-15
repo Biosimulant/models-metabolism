@@ -1,0 +1,477 @@
+schema_version: '2.0'
+title: Smallbone2015 - Multi-scale model of E. coli metabolism Visualisation
+description: Dedicated presentation model for Smallbone2015 - Multi-scale model of E. coli
+  metabolism.
+standard: other
+tags:
+- metabolism
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  entrypoint: src.metabolism_visualisation:MetabolismVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Smallbone2015 - Multi-scale model of E. coli metabolism Lab
+    question: Which microbial metabolism observables show the strongest activity in Smallbone2015
+      - Multi-scale model of E. coli metabolism?
+    answer_focus: microbial metabolism
+    sources:
+    - alias: metabolism_sbml_smallbone2015_multi_scale_model_of_e_coli_metabo_model1503050000_model
+      title: Smallbone2015 - Multi-scale model of E. coli metabolism
+      scope: microbial metabolism
+      label_caveat: Values are native SBML quantities. Conservative pathway-state labels are
+        used where the bundled SBML does not encode exact metabolite identities.
+      observables:
+      - id: phosphoenolpyruvate
+        label: Phosphoenolpyruvate
+        maps_to: PEP
+      - id: glucose_6_phosphate
+        label: Glucose 6 Phosphate
+        maps_to: G6P
+      - id: pyruvate
+        label: Pyruvate
+        maps_to: PYR
+      - id: fructose_6_phosphate
+        label: Fructose 6 Phosphate
+        maps_to: F6P
+      - id: microbial_metabolism_state_5
+        label: Microbial Metabolism state 5
+        maps_to: G1P
+      - id: microbial_metabolism_state_6
+        label: Microbial Metabolism state 6
+        maps_to: PG
+      - id: microbial_metabolism_state_7
+        label: Microbial Metabolism state 7
+        maps_to: FDP
+      - id: microbial_metabolism_state_8
+        label: Microbial Metabolism state 8
+        maps_to: SED7P
+      - id: microbial_metabolism_state_9
+        label: Microbial Metabolism state 9
+        maps_to: G3P
+      - id: microbial_metabolism_state_10
+        label: Microbial Metabolism state 10
+        maps_to: E4P
+      - id: microbial_metabolism_state_11
+        label: Microbial Metabolism state 11
+        maps_to: XYL5P
+      - id: microbial_metabolism_state_12
+        label: Microbial Metabolism state 12
+        maps_to: RIB5P
+      - id: microbial_metabolism_state_13
+        label: Microbial Metabolism state 13
+        maps_to: DHAP
+      - id: microbial_metabolism_state_14
+        label: Microbial Metabolism state 14
+        maps_to: PGP
+      - id: microbial_metabolism_state_15
+        label: Microbial Metabolism state 15
+        maps_to: PG3
+      - id: microbial_metabolism_state_16
+        label: Microbial Metabolism state 16
+        maps_to: PG2
+      - id: microbial_metabolism_state_17
+        label: Microbial Metabolism state 17
+        maps_to: RIBU5P
+      - id: atp
+        label: ATP
+        maps_to: ATP
+      - id: adp
+        label: ADP
+        maps_to: ADP
+      - id: amp
+        label: AMP
+        maps_to: AMP
+      - id: nadp
+        label: NADP
+        maps_to: NADP
+      - id: nadph
+        label: NADPH
+        maps_to: NADPH
+      - id: nad
+        label: NAD
+        maps_to: NAD
+      - id: nadh
+        label: NADH
+        maps_to: NADH
+      - id: cytosolic_amp
+        label: Cytosolic AMP
+        maps_to: cAMP
+      - id: microbial_metabolism_state_26
+        label: Microbial Metabolism state 26
+        maps_to: EI
+      - id: microbial_metabolism_state_27
+        label: Microbial Metabolism state 27
+        maps_to: EI_P
+      - id: microbial_metabolism_state_28
+        label: Microbial Metabolism state 28
+        maps_to: HPr
+      - id: microbial_metabolism_state_29
+        label: Microbial Metabolism state 29
+        maps_to: HPr_P
+      - id: microbial_metabolism_state_30
+        label: Microbial Metabolism state 30
+        maps_to: IIA
+      - id: microbial_metabolism_state_31
+        label: Microbial Metabolism state 31
+        maps_to: IIA_P
+      - id: microbial_metabolism_state_32
+        label: Microbial Metabolism state 32
+        maps_to: IICB
+      - id: microbial_metabolism_state_33
+        label: Microbial Metabolism state 33
+        maps_to: IICB_P
+      - id: microbial_metabolism_state_34
+        label: Microbial Metabolism state 34
+        maps_to: Cya
+      - id: microbial_metabolism_state_35
+        label: Microbial Metabolism state 35
+        maps_to: IIA_P_Cya
+      - id: microbial_metabolism_state_36
+        label: Microbial Metabolism state 36
+        maps_to: Crp
+      - id: microbial_metabolism_state_37
+        label: Microbial Metabolism state 37
+        maps_to: CrpSiteI_crp
+      - id: microbial_metabolism_state_38
+        label: Microbial Metabolism state 38
+        maps_to: CrpSiteII_crp
+      - id: microbial_metabolism_state_39
+        label: Microbial Metabolism state 39
+        maps_to: CrpSite_cyaA
+      - id: microbial_metabolism_state_40
+        label: Microbial Metabolism state 40
+        maps_to: CrpSite_genome
+      - id: microbial_metabolism_state_41
+        label: Microbial Metabolism state 41
+        maps_to: CrpSite_ptsGp1
+      - id: microbial_metabolism_state_42
+        label: Microbial Metabolism state 42
+        maps_to: CrpSite_ptsGp2
+      - id: microbial_metabolism_state_43
+        label: Microbial Metabolism state 43
+        maps_to: CrpSite_ptsHp0
+      - id: microbial_metabolism_state_44
+        label: Microbial Metabolism state 44
+        maps_to: CrpSite_ptsHp1
+      - id: microbial_metabolism_state_45
+        label: Microbial Metabolism state 45
+        maps_to: CrpSite_ptsIp0
+      - id: microbial_metabolism_state_46
+        label: Microbial Metabolism state 46
+        maps_to: CrpSite_ptsIp1
+      - id: microbial_metabolism_state_47
+        label: Microbial Metabolism state 47
+        maps_to: CrpSite_mlcp1
+      - id: microbial_metabolism_state_48
+        label: Microbial Metabolism state 48
+        maps_to: CrpSite_mlcp2
+      - id: microbial_metabolism_state_49
+        label: Microbial Metabolism state 49
+        maps_to: Mlc
+      - id: microbial_metabolism_state_50
+        label: Microbial Metabolism state 50
+        maps_to: MlcSite_mlcp1
+      - id: microbial_metabolism_state_51
+        label: Microbial Metabolism state 51
+        maps_to: MlcSite_mlcp2
+      - id: microbial_metabolism_state_52
+        label: Microbial Metabolism state 52
+        maps_to: MlcSite_ptsGp1
+      - id: microbial_metabolism_state_53
+        label: Microbial Metabolism state 53
+        maps_to: MlcSite_ptsGp2
+      - id: microbial_metabolism_state_54
+        label: Microbial Metabolism state 54
+        maps_to: MlcSite_ptsHp0
+      - id: microbial_metabolism_state_55
+        label: Microbial Metabolism state 55
+        maps_to: MlcSite_ptsIp0
+      - id: microbial_metabolism_state_56
+        label: Microbial Metabolism state 56
+        maps_to: Crp_cAMP
+      - id: microbial_metabolism_state_57
+        label: Microbial Metabolism state 57
+        maps_to: Crp_cAMP_CrpSiteI_crp
+      - id: microbial_metabolism_state_58
+        label: Microbial Metabolism state 58
+        maps_to: Crp_cAMP_CrpSiteII_crp
+      - id: microbial_metabolism_state_59
+        label: Microbial Metabolism state 59
+        maps_to: Crp_cAMP_CrpSite_cyaA
+      - id: microbial_metabolism_state_60
+        label: Microbial Metabolism state 60
+        maps_to: Crp_cAMP_CrpSite_genome
+      - id: microbial_metabolism_state_61
+        label: Microbial Metabolism state 61
+        maps_to: Crp_cAMP_CrpSite_ptsGp1
+      - id: microbial_metabolism_state_62
+        label: Microbial Metabolism state 62
+        maps_to: Crp_cAMP_CrpSite_ptsGp2
+      - id: microbial_metabolism_state_63
+        label: Microbial Metabolism state 63
+        maps_to: Crp_cAMP_CrpSite_ptsHp0
+      - id: microbial_metabolism_state_64
+        label: Microbial Metabolism state 64
+        maps_to: Crp_cAMP_CrpSite_ptsHp1
+      - id: microbial_metabolism_state_65
+        label: Microbial Metabolism state 65
+        maps_to: Crp_cAMP_CrpSite_ptsIp0
+      - id: microbial_metabolism_state_66
+        label: Microbial Metabolism state 66
+        maps_to: Crp_cAMP_CrpSite_ptsIp1
+      - id: microbial_metabolism_state_67
+        label: Microbial Metabolism state 67
+        maps_to: Crp_cAMP_CrpSite_mlcp1
+      - id: microbial_metabolism_state_68
+        label: Microbial Metabolism state 68
+        maps_to: Crp_cAMP_CrpSite_mlcp2
+      - id: microbial_metabolism_state_69
+        label: Microbial Metabolism state 69
+        maps_to: Mlc_MlcSite_ptsGp1
+      - id: microbial_metabolism_state_70
+        label: Microbial Metabolism state 70
+        maps_to: Mlc_MlcSite_ptsGp2
+      - id: microbial_metabolism_state_71
+        label: Microbial Metabolism state 71
+        maps_to: Mlc_MlcSite_ptsIp0
+      - id: microbial_metabolism_state_72
+        label: Microbial Metabolism state 72
+        maps_to: Mlc_MlcSite_ptsHp0
+      - id: microbial_metabolism_state_73
+        label: Microbial Metabolism state 73
+        maps_to: Mlc_MlcSite_mlcp1
+      - id: microbial_metabolism_state_74
+        label: Microbial Metabolism state 74
+        maps_to: Mlc_MlcSite_mlcp2
+      - id: microbial_metabolism_state_75
+        label: Microbial Metabolism state 75
+        maps_to: IICB_Mlc
+      - id: microbial_metabolism_state_76
+        label: Microbial Metabolism state 76
+        maps_to: mRNA_cyaA
+      - id: microbial_metabolism_state_77
+        label: Microbial Metabolism state 77
+        maps_to: mRNA_crp
+      - id: microbial_metabolism_state_78
+        label: Microbial Metabolism state 78
+        maps_to: mRNA_ptsG
+      - id: microbial_metabolism_state_79
+        label: Microbial Metabolism state 79
+        maps_to: mRNA_ptsH
+      - id: microbial_metabolism_state_80
+        label: Microbial Metabolism state 80
+        maps_to: mRNA_ptsI
+      - id: microbial_metabolism_state_81
+        label: Microbial Metabolism state 81
+        maps_to: mRNA_crr
+      - id: microbial_metabolism_state_82
+        label: Microbial Metabolism state 82
+        maps_to: mRNA_mlc
+      - id: microbial_metabolism_state_83
+        label: Microbial Metabolism state 83
+        maps_to: mRNA_pgi
+      - id: microbial_metabolism_state_84
+        label: Microbial Metabolism state 84
+        maps_to: Pgi
+      - id: microbial_metabolism_state_85
+        label: Microbial Metabolism state 85
+        maps_to: mRNA_pgm
+      - id: microbial_metabolism_state_86
+        label: Microbial Metabolism state 86
+        maps_to: Pgm
+      - id: microbial_metabolism_state_87
+        label: Microbial Metabolism state 87
+        maps_to: mRNA_zwf
+      - id: microbial_metabolism_state_88
+        label: Microbial Metabolism state 88
+        maps_to: Zwf
+      - id: microbial_metabolism_state_89
+        label: Microbial Metabolism state 89
+        maps_to: mRNA_pfk
+      - id: microbial_metabolism_state_90
+        label: Microbial Metabolism state 90
+        maps_to: Pfk
+      - id: microbial_metabolism_state_91
+        label: Microbial Metabolism state 91
+        maps_to: mRNA_tal
+      - id: microbial_metabolism_state_92
+        label: Microbial Metabolism state 92
+        maps_to: Tal
+      - id: microbial_metabolism_state_93
+        label: Microbial Metabolism state 93
+        maps_to: mRNA_tkt
+      - id: microbial_metabolism_state_94
+        label: Microbial Metabolism state 94
+        maps_to: Tkt
+      - id: microbial_metabolism_state_95
+        label: Microbial Metabolism state 95
+        maps_to: mRNA_fba
+      - id: microbial_metabolism_state_96
+        label: Microbial Metabolism state 96
+        maps_to: Fba
+      - id: mitochondrial_rna_glyceraldehyde_3_phosphate
+        label: Mitochondrial RNA Glyceraldehyde 3 Phosphate
+        maps_to: mRNA_gap
+      - id: glyceraldehyde_3_phosphate
+        label: Glyceraldehyde 3 Phosphate
+        maps_to: Gap
+      - id: microbial_metabolism_state_99
+        label: Microbial Metabolism state 99
+        maps_to: mRNA_tpi
+      - id: microbial_metabolism_state_100
+        label: Microbial Metabolism state 100
+        maps_to: Tpi
+      - id: microbial_metabolism_state_101
+        label: Microbial Metabolism state 101
+        maps_to: mRNA_pgk
+      - id: microbial_metabolism_state_102
+        label: Microbial Metabolism state 102
+        maps_to: Pgk
+      - id: microbial_metabolism_state_103
+        label: Microbial Metabolism state 103
+        maps_to: mRNA_gpm
+      - id: microbial_metabolism_state_104
+        label: Microbial Metabolism state 104
+        maps_to: Gpm
+      - id: microbial_metabolism_state_105
+        label: Microbial Metabolism state 105
+        maps_to: mRNA_eno
+      - id: microbial_metabolism_state_106
+        label: Microbial Metabolism state 106
+        maps_to: Eno
+      - id: microbial_metabolism_state_107
+        label: Microbial Metabolism state 107
+        maps_to: mRNA_pyk
+      - id: microbial_metabolism_state_108
+        label: Microbial Metabolism state 108
+        maps_to: Pyk
+      - id: microbial_metabolism_state_109
+        label: Microbial Metabolism state 109
+        maps_to: mRNA_ppc
+      - id: microbial_metabolism_state_110
+        label: Microbial Metabolism state 110
+        maps_to: Ppc
+      - id: microbial_metabolism_state_111
+        label: Microbial Metabolism state 111
+        maps_to: mRNA_pdh
+      - id: microbial_metabolism_state_112
+        label: Microbial Metabolism state 112
+        maps_to: Pdh
+      - id: microbial_metabolism_state_113
+        label: Microbial Metabolism state 113
+        maps_to: mRNA_gnd
+      - id: microbial_metabolism_state_114
+        label: Microbial Metabolism state 114
+        maps_to: Gnd
+      - id: microbial_metabolism_state_115
+        label: Microbial Metabolism state 115
+        maps_to: mRNA_rpi
+      - id: microbial_metabolism_state_116
+        label: Microbial Metabolism state 116
+        maps_to: Rpi
+      - id: microbial_metabolism_state_117
+        label: Microbial Metabolism state 117
+        maps_to: mRNA_rpe
+      - id: microbial_metabolism_state_118
+        label: Microbial Metabolism state 118
+        maps_to: Rpe
+      - id: microbial_metabolism_state_119
+        label: Microbial Metabolism state 119
+        maps_to: mRNA_glg
+      - id: microbial_metabolism_state_120
+        label: Microbial Metabolism state 120
+        maps_to: Glg
+      - id: microbial_metabolism_state_121
+        label: Microbial Metabolism state 121
+        maps_to: mRNA_adk
+      - id: microbial_metabolism_state_122
+        label: Microbial Metabolism state 122
+        maps_to: Adk
+      - id: microbial_metabolism_state_123
+        label: Microbial Metabolism state 123
+        maps_to: mRNA_cra
+      - id: microbial_metabolism_state_124
+        label: Microbial Metabolism state 124
+        maps_to: Cra
+      - id: microbial_metabolism_state_125
+        label: Microbial Metabolism state 125
+        maps_to: mRNA_pdhR
+      - id: microbial_metabolism_state_126
+        label: Microbial Metabolism state 126
+        maps_to: PdhR
+      - id: microbial_metabolism_state_127
+        label: Microbial Metabolism state 127
+        maps_to: Cra_FDP
+      - id: microbial_metabolism_state_128
+        label: Microbial Metabolism state 128
+        maps_to: PdhR_PYR
+      - id: microbial_metabolism_state_129
+        label: Microbial Metabolism state 129
+        maps_to: CrpSite_pdh
+      - id: microbial_metabolism_state_130
+        label: Microbial Metabolism state 130
+        maps_to: Crp_cAMP_CrpSite_pdh
+      - id: microbial_metabolism_state_131
+        label: Microbial Metabolism state 131
+        maps_to: CraSite_zwf
+      - id: microbial_metabolism_state_132
+        label: Microbial Metabolism state 132
+        maps_to: Cra_CraSite_zwf
+      - id: microbial_metabolism_state_133
+        label: Microbial Metabolism state 133
+        maps_to: CraSite_ptsHp1
+      - id: microbial_metabolism_state_134
+        label: Microbial Metabolism state 134
+        maps_to: Cra_CraSite_ptsHp1
+      - id: microbial_metabolism_state_135
+        label: Microbial Metabolism state 135
+        maps_to: CraSite_tpi
+      - id: microbial_metabolism_state_136
+        label: Microbial Metabolism state 136
+        maps_to: Cra_CraSite_tpi
+      - id: microbial_metabolism_state_137
+        label: Microbial Metabolism state 137
+        maps_to: CraSite_pfk
+      - id: microbial_metabolism_state_138
+        label: Microbial Metabolism state 138
+        maps_to: Cra_CraSite_pfk
+      - id: microbial_metabolism_state_139
+        label: Microbial Metabolism state 139
+        maps_to: CraSite_ppc
+      - id: microbial_metabolism_state_140
+        label: Microbial Metabolism state 140
+        maps_to: Cra_CraSite_ppc
+      - id: microbial_metabolism_state_141
+        label: Microbial Metabolism state 141
+        maps_to: CraSite_pyk
+      - id: microbial_metabolism_state_142
+        label: Microbial Metabolism state 142
+        maps_to: Cra_CraSite_pyk
+      - id: microbial_metabolism_state_143
+        label: Microbial Metabolism state 143
+        maps_to: PdhRSite_pdh
+      - id: microbial_metabolism_state_144
+        label: Microbial Metabolism state 144
+        maps_to: PdhR_PdhRSite_pdh
+  communication_step: 1.0
+runtime:
+  dependencies:
+    packages:
+    - PyYAML==6.0.2
+parameters:
+- name: integration_step
+  value: 1.0
+  min: 0.0
+  units: model_time
+  description: Sampling step for the visualisation model.
+io:
+  inputs:
+  - name: metabolism_sbml_smallbone2015_multi_scale_model_of_e_coli_metabo_model1503050000_model_observable_values
+    description: Latest user-facing observable values from the core metabolism model.
+  - name: metabolism_sbml_smallbone2015_multi_scale_model_of_e_coli_metabo_model1503050000_model_run_summary
+    description: Run summary from the core metabolism model.
+  - name: metabolism_sbml_smallbone2015_multi_scale_model_of_e_coli_metabo_model1503050000_model_observable_labels
+    description: Display labels for user-facing observables.
+  outputs: []

@@ -1,0 +1,86 @@
+schema_version: '2.0'
+title: Chedere2022 - NAD Biosynthesis in Human Liver Visualisation
+description: Dedicated presentation model for Chedere2022 - NAD Biosynthesis in Human Liver.
+standard: other
+tags:
+- metabolism
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  entrypoint: src.metabolism_visualisation:MetabolismVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Chedere2022 - NAD Biosynthesis in Human Liver Lab
+    question: Which NAD metabolism observables show the strongest activity in Chedere2022
+      - NAD Biosynthesis in Human Liver?
+    answer_focus: NAD metabolism
+    sources:
+    - alias: metabolism_sbml_chedere2022_nad_biosynthesis_in_human_liver_model2205250001_model
+      title: Chedere2022 - NAD Biosynthesis in Human Liver
+      scope: NAD metabolism
+      label_caveat: Values are native SBML quantities. Conservative pathway-state labels are
+        used where the bundled SBML does not encode exact metabolite identities.
+      observables:
+      - id: l_formyl_kyneurenine
+        label: L Formyl Kyneurenine
+        maps_to: L_formyl_kyn
+      - id: hydroxykynurenine
+        label: Hydroxykynurenine
+        maps_to: Hydroxyurenine
+      - id: nad_metabolism_state_3
+        label: NAD Metabolism state 3
+        maps_to: Hydroxyanthranilate
+      - id: nad_metabolism_state_4
+        label: NAD Metabolism state 4
+        maps_to: Quinolinate
+      - id: nad_metabolism_state_5
+        label: NAD Metabolism state 5
+        maps_to: NaMN
+      - id: nad_metabolism_state_6
+        label: NAD Metabolism state 6
+        maps_to: NaAD
+      - id: nad
+        label: NAD
+        maps_to: NAD
+      - id: nad_metabolism_state_8
+        label: NAD Metabolism state 8
+        maps_to: NMN
+      - id: nadp
+        label: NADP
+        maps_to: NADP
+      - id: nad_metabolism_state_10
+        label: NAD Metabolism state 10
+        maps_to: Nam
+      - id: nad_metabolism_state_11
+        label: NAD Metabolism state 11
+        maps_to: ADPribose
+      - id: nad_metabolism_state_12
+        label: NAD Metabolism state 12
+        maps_to: ADPriboseP
+      - id: nad_metabolism_state_13
+        label: NAD Metabolism state 13
+        maps_to: L_kyneurenine
+      - id: nad_metabolism_state_14
+        label: NAD Metabolism state 14
+        maps_to: NR
+  communication_step: 1.0
+runtime:
+  dependencies:
+    packages:
+    - PyYAML==6.0.2
+parameters:
+- name: integration_step
+  value: 1.0
+  min: 0.0
+  units: model_time
+  description: Sampling step for the visualisation model.
+io:
+  inputs:
+  - name: metabolism_sbml_chedere2022_nad_biosynthesis_in_human_liver_model2205250001_model_observable_values
+    description: Latest user-facing observable values from the core metabolism model.
+  - name: metabolism_sbml_chedere2022_nad_biosynthesis_in_human_liver_model2205250001_model_run_summary
+    description: Run summary from the core metabolism model.
+  - name: metabolism_sbml_chedere2022_nad_biosynthesis_in_human_liver_model2205250001_model_observable_labels
+    description: Display labels for user-facing observables.
+  outputs: []

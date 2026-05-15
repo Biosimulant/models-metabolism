@@ -1,0 +1,104 @@
+schema_version: '2.0'
+title: Olsen2003_neutrophil_oscillatory_metabolism Visualisation
+description: Dedicated presentation model for Olsen2003_neutrophil_oscillatory_metabolism.
+standard: other
+tags:
+- metabolism
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  entrypoint: src.metabolism_visualisation:MetabolismVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Olsen2003_neutrophil_oscillatory_metabolism Lab
+    question: Which metabolic pathway dynamics observables show the strongest activity in
+      Olsen2003_neutrophil_oscillatory_metabolism?
+    answer_focus: metabolic pathway dynamics
+    sources:
+    - alias: metabolism_sbml_olsen2003_neutrophil_oscillatory_metabolism_biomd0000000143_model
+      title: Olsen2003_neutrophil_oscillatory_metabolism
+      scope: metabolic pathway dynamics
+      label_caveat: Values are native SBML quantities. Conservative pathway-state labels are
+        used where the bundled SBML does not encode exact metabolite identities.
+      observables:
+      - id: h2o2
+        label: H2o2
+        maps_to: H2O2_p
+      - id: ferric_peroxidase
+        label: Ferric Peroxidase
+        maps_to: per3_p
+      - id: compound_i
+        label: Compound I
+        maps_to: coI_p
+      - id: melatonin
+        label: Melatonin
+        maps_to: MLTH_p
+      - id: compound_ii
+        label: Compound Ii
+        maps_to: coII_p
+      - id: melatonin_free_radical
+        label: Melatonin Free Radical
+        maps_to: MLT_p
+      - id: superoxide
+        label: Superoxide
+        maps_to: O2minus_p
+      - id: metabolic_pathway_state_8
+        label: Metabolic Pathway state 8
+        maps_to: H_p
+      - id: metabolic_pathway_state_9
+        label: Metabolic Pathway state 9
+        maps_to: O2_p
+      - id: nadph
+        label: NADPH
+        maps_to: NADPH_c
+      - id: cytosolic_o2
+        label: Cytosolic O2
+        maps_to: O2_c
+      - id: nadp
+        label: NADP
+        maps_to: NADPplus_c
+      - id: h2o2_2
+        label: H2o2 2
+        maps_to: H2O2_c
+      - id: nadp_2
+        label: NADP 2
+        maps_to: NADP_c
+      - id: superoxide_2
+        label: Superoxide 2
+        maps_to: O2minus_c
+      - id: metabolic_pathway_state_16
+        label: Metabolic Pathway state 16
+        maps_to: H_c
+      - id: melatonin_free_radical_2
+        label: Melatonin Free Radical 2
+        maps_to: MLT_c
+      - id: melatonin_2
+        label: Melatonin 2
+        maps_to: MLTH_c
+      - id: compound_iii
+        label: Compound Iii
+        maps_to: coIII_p
+      - id: nadp2
+        label: Nadp2
+        maps_to: NADP2_c
+  communication_step: 1.0
+runtime:
+  dependencies:
+    packages:
+    - PyYAML==6.0.2
+parameters:
+- name: integration_step
+  value: 1.0
+  min: 0.0
+  units: model_time
+  description: Sampling step for the visualisation model.
+io:
+  inputs:
+  - name: metabolism_sbml_olsen2003_neutrophil_oscillatory_metabolism_biomd0000000143_model_observable_values
+    description: Latest user-facing observable values from the core metabolism model.
+  - name: metabolism_sbml_olsen2003_neutrophil_oscillatory_metabolism_biomd0000000143_model_run_summary
+    description: Run summary from the core metabolism model.
+  - name: metabolism_sbml_olsen2003_neutrophil_oscillatory_metabolism_biomd0000000143_model_observable_labels
+    description: Display labels for user-facing observables.
+  outputs: []

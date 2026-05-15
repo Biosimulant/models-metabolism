@@ -1,0 +1,108 @@
+schema_version: '2.0'
+title: Mosca2012 - Central Carbon Metabolism Regulated by AKT Visualisation
+description: Dedicated presentation model for Mosca2012 - Central Carbon Metabolism Regulated
+  by AKT.
+standard: other
+tags:
+- metabolism
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  entrypoint: src.metabolism_visualisation:MetabolismVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Mosca2012 - Central Carbon Metabolism Regulated by AKT Lab
+    question: Which central carbon and glycolytic metabolism observables show the strongest
+      activity in Mosca2012 - Central Carbon Metabolism Regulated by AKT?
+    answer_focus: central carbon and glycolytic metabolism
+    sources:
+    - alias: metabolism_sbml_mosca2012_central_carbon_metabolism_regulated_by_biomd0000000426_model
+      title: Mosca2012 - Central Carbon Metabolism Regulated by AKT
+      scope: central carbon and glycolytic metabolism
+      label_caveat: Values are native SBML quantities. Conservative pathway-state labels are
+        used where the bundled SBML does not encode exact metabolite identities.
+      observables:
+      - id: glucose
+        label: glucose
+        maps_to: species_1
+      - id: glucose_6_phosphate
+        label: glucose 6 phosphate
+        maps_to: species_2
+      - id: atp
+        label: ATP
+        maps_to: species_4
+      - id: fructose_6_phosphate
+        label: fructose 6 phosphate
+        maps_to: species_5
+      - id: fructose_1_6_bisphosphate
+        label: fructose 1 6 bisphosphate
+        maps_to: species_6
+      - id: e4p
+        label: E4p
+        maps_to: species_7
+      - id: glycolysis_state_7
+        label: Glycolysis state 7
+        maps_to: species_8
+      - id: nadph
+        label: NADPH
+        maps_to: species_11
+      - id: glycolysis_state_9
+        label: Glycolysis state 9
+        maps_to: species_12
+      - id: ru5p
+        label: Ru5p
+        maps_to: species_13
+      - id: x5p
+        label: X5p
+        maps_to: species_14
+      - id: r5p
+        label: R5p
+        maps_to: species_15
+      - id: glyceraldehyde_3_phosphate
+        label: glyceraldehyde 3 phosphate
+        maps_to: species_16
+      - id: s7p
+        label: S7p
+        maps_to: species_17
+      - id: nad
+        label: NAD
+        maps_to: species_19
+      - id: g1p
+        label: G1p
+        maps_to: species_22
+      - id: glycolysis_state_17
+        label: Glycolysis state 17
+        maps_to: species_27
+      - id: pg3
+        label: Pg3
+        maps_to: species_28
+      - id: pg2
+        label: Pg2
+        maps_to: species_29
+      - id: phosphoenolpyruvate
+        label: phosphoenolpyruvate
+        maps_to: species_30
+      - id: pyruvate
+        label: pyruvate
+        maps_to: species_31
+  communication_step: 1.0
+runtime:
+  dependencies:
+    packages:
+    - PyYAML==6.0.2
+parameters:
+- name: integration_step
+  value: 1.0
+  min: 0.0
+  units: model_time
+  description: Sampling step for the visualisation model.
+io:
+  inputs:
+  - name: metabolism_sbml_mosca2012_central_carbon_metabolism_regulated_by_biomd0000000426_model_observable_values
+    description: Latest user-facing observable values from the core metabolism model.
+  - name: metabolism_sbml_mosca2012_central_carbon_metabolism_regulated_by_biomd0000000426_model_run_summary
+    description: Run summary from the core metabolism model.
+  - name: metabolism_sbml_mosca2012_central_carbon_metabolism_regulated_by_biomd0000000426_model_observable_labels
+    description: Display labels for user-facing observables.
+  outputs: []

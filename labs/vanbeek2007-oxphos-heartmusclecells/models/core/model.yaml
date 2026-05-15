@@ -1,0 +1,111 @@
+schema_version: '2.0'
+title: vanBeek2007_OxPhos_HeartMuscleCells
+description: 'This a model from the article: Adenine nucleotide-creatine-phosphate module
+  in myocardial metabolic systemexplains fast phase of dynamic regulation of oxidative phosphorylation.
+  It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions.'
+standard: sbml
+tags:
+- biomodels_ebi
+- faithful
+- metabolism
+- ode
+- sbml
+- tellurium
+authors:
+- Biosimulant Team
+- Johannes H G M van Beek
+upstream:
+  id: biomodels_ebi:MODEL1006230027
+  source_db: biomodels_ebi
+  source_id: MODEL1006230027
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1006230027
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1006230027?filename=MODEL1006230027_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.vanbeek2007_oxphos_heartmusclecells_model1006230027_model:Vanbeek2007OxphosHeartmusclecellsModel1006230027Model
+  init_kwargs:
+    model_path: data/MODEL1006230027.xml
+    integration_step: 0.1
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_cytosolic_atp
+    maps_to: ATP_cyt
+    default: 5912.77
+    units: native SBML value
+    description: Initial condition for cytosolic atp. Maps to bundled SBML symbol `ATP_cyt`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_cytosolic_adp
+    maps_to: ADP_cyt
+    default: 64.0
+    units: native SBML value
+    description: Initial condition for cytosolic adp. Maps to bundled SBML symbol `ADP_cyt`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_mitochondrial_energy_state_3_cytosolic
+    maps_to: PCr_cyt
+    default: 5000.0
+    units: native SBML value
+    description: Initial condition for mitochondrial energy state 3 cytosolic. Maps to bundled
+      SBML symbol `PCr_cyt`. Applied before the Tellurium simulation starts; this does not
+      change kinetic parameters or equations. Default from bundled SBML initial value.
+  - name: initial_mitochondrial_energy_state_4_cytosolic
+    maps_to: Cr_cyt
+    default: 10500.0
+    units: native SBML value
+    description: Initial condition for mitochondrial energy state 4 cytosolic. Maps to bundled
+      SBML symbol `Cr_cyt`. Applied before the Tellurium simulation starts; this does not
+      change kinetic parameters or equations. Default from bundled SBML initial value.
+  - name: initial_mitochondrial_energy_state_5_cytosolic
+    maps_to: Pi_cyt
+    default: 913.0
+    units: native SBML value
+    description: Initial condition for mitochondrial energy state 5 cytosolic. Maps to bundled
+      SBML symbol `Pi_cyt`. Applied before the Tellurium simulation starts; this does not
+      change kinetic parameters or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: cytosolic_atp
+    maps_to: ATP_cyt
+    label: Cytosolic ATP
+    description: Cytosolic ATP. Maps to SBML symbol `ATP_cyt`.
+  - name: cytosolic_adp
+    maps_to: ADP_cyt
+    label: Cytosolic ADP
+    description: Cytosolic ADP. Maps to SBML symbol `ADP_cyt`.
+  - name: mitochondrial_energy_state_3_cytosolic
+    maps_to: PCr_cyt
+    label: Mitochondrial Energy state 3 cytosolic
+    description: Mitochondrial Energy state 3 cytosolic; conservative display label for an
+      abstract SBML state variable. Maps to SBML symbol `PCr_cyt`. Exact metabolite identity
+      is not encoded in the bundled SBML metadata.
+  - name: mitochondrial_energy_state_4_cytosolic
+    maps_to: Cr_cyt
+    label: Mitochondrial Energy state 4 cytosolic
+    description: Mitochondrial Energy state 4 cytosolic; conservative display label for an
+      abstract SBML state variable. Maps to SBML symbol `Cr_cyt`. Exact metabolite identity
+      is not encoded in the bundled SBML metadata.
+  - name: mitochondrial_energy_state_5_cytosolic
+    maps_to: Pi_cyt
+    label: Mitochondrial Energy state 5 cytosolic
+    description: Mitochondrial Energy state 5 cytosolic; conservative display label for an
+      abstract SBML state variable. Maps to SBML symbol `Pi_cyt`. Exact metabolite identity
+      is not encoded in the bundled SBML metadata.
+  - name: observable_values
+    description: Latest user-facing observable values from the SBML run.
+  - name: run_summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: observable_labels
+    description: Mapping from user-facing observable ports to display labels.
+parameters:
+- name: integration_step
+  value: 0.1
+  min: 0.0
+  units: model_time
+  description: Internal sampling step for Tellurium output collection.

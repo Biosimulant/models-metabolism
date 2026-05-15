@@ -1,0 +1,82 @@
+schema_version: '2.0'
+title: Sluka2016 - Acetaminophen metabolism Lab
+description: 'Sluka2016 - Acetaminophen metabolism Liver metabolism of Acetaminophen: Acetaminophen
+  (APAP) ismetabolized in the liver in both Phase I and Phase II reactions.Phase II reactions
+  convert APAP to APAP-g. It can be used to explore metabolic flux dynamics and compare pathway
+  behavior across conditions.'
+io:
+  inputs:
+  - name: initial_drug_metabolism_state_1
+    maps_to: metabolism_sbml_sluka2016_acetaminophen_metabolism_biomd0000000624_model.initial_drug_metabolism_state_1
+    default: 0.1
+    units: native SBML value
+    description: Initial condition for drug metabolism state 1. Maps to bundled SBML symbol
+      `APAP`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_drug_metabolism_state_2
+    maps_to: metabolism_sbml_sluka2016_acetaminophen_metabolism_biomd0000000624_model.initial_drug_metabolism_state_2
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for drug metabolism state 2. Maps to bundled SBML symbol
+      `NAPQI`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_glutathione
+    maps_to: metabolism_sbml_sluka2016_acetaminophen_metabolism_biomd0000000624_model.initial_glutathione
+    default: 10.0
+    units: native SBML value
+    description: Initial condition for glutathione. Maps to bundled SBML symbol `GSH`. Applied
+      before the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_drug_metabolism_state_4
+    maps_to: metabolism_sbml_sluka2016_acetaminophen_metabolism_biomd0000000624_model.initial_drug_metabolism_state_4
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for drug metabolism state 4. Maps to bundled SBML symbol
+      `NAPQIGSH`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_drug_metabolism_state_5
+    maps_to: metabolism_sbml_sluka2016_acetaminophen_metabolism_biomd0000000624_model.initial_drug_metabolism_state_5
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for drug metabolism state 5. Maps to bundled SBML symbol
+      `APAPconj_Glu`. Applied before the Tellurium simulation starts; this does not change
+      kinetic parameters or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: drug_metabolism_state_1
+    maps_to: metabolism_sbml_sluka2016_acetaminophen_metabolism_biomd0000000624_model.drug_metabolism_state_1
+  - name: drug_metabolism_state_2
+    maps_to: metabolism_sbml_sluka2016_acetaminophen_metabolism_biomd0000000624_model.drug_metabolism_state_2
+  - name: glutathione
+    maps_to: metabolism_sbml_sluka2016_acetaminophen_metabolism_biomd0000000624_model.glutathione
+  - name: drug_metabolism_state_4
+    maps_to: metabolism_sbml_sluka2016_acetaminophen_metabolism_biomd0000000624_model.drug_metabolism_state_4
+  - name: drug_metabolism_state_5
+    maps_to: metabolism_sbml_sluka2016_acetaminophen_metabolism_biomd0000000624_model.drug_metabolism_state_5
+  - name: observable_values
+    maps_to: metabolism_sbml_sluka2016_acetaminophen_metabolism_biomd0000000624_model.observable_values
+  - name: run_summary
+    maps_to: metabolism_sbml_sluka2016_acetaminophen_metabolism_biomd0000000624_model.run_summary
+  - name: observable_labels
+    maps_to: metabolism_sbml_sluka2016_acetaminophen_metabolism_biomd0000000624_model.observable_labels
+models:
+- alias: metabolism_sbml_sluka2016_acetaminophen_metabolism_biomd0000000624_model
+  path: models/core
+  parameters:
+    model_path: data/BIOMD0000000624.xml
+    integration_step: 0.1
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: metabolism_sbml_sluka2016_acetaminophen_metabolism_biomd0000000624_model.observable_values
+  to:
+  - visualisation.metabolism_sbml_sluka2016_acetaminophen_metabolism_biomd0000000624_model_observable_values
+- from: metabolism_sbml_sluka2016_acetaminophen_metabolism_biomd0000000624_model.run_summary
+  to:
+  - visualisation.metabolism_sbml_sluka2016_acetaminophen_metabolism_biomd0000000624_model_run_summary
+- from: metabolism_sbml_sluka2016_acetaminophen_metabolism_biomd0000000624_model.observable_labels
+  to:
+  - visualisation.metabolism_sbml_sluka2016_acetaminophen_metabolism_biomd0000000624_model_observable_labels
+runtime:
+  duration: 10.0
+  communication_step: 1.0
+  initial_inputs: {}

@@ -1,0 +1,104 @@
+schema_version: '2.0'
+title: Garde2020-Minimal model describing metabolic oscillations in Bacillus subtilis biofilms
+description: Biofilms offer an excellent example of ecological interaction among bacteria.
+  Temporal and spatial oscillations in biofilms are an emerging topic.
+standard: sbml
+tags:
+- biomodels_ebi
+- faithful
+- metabolism
+- ode
+- sbml
+- tellurium
+authors:
+- Biosimulant Team
+- Ravindra Garde
+- Bashar Ibrahim
+- "\xC1kos T Kov\xE1cs"
+- Stefan Schuster
+upstream:
+  id: biomodels_ebi:BIOMD0000000932
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000932
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000932
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000932?filename=Garde2020.xml
+  license: CC0
+biosim:
+  entrypoint: src.garde2020_minimal_model_describing_metabolic_osc_biomd0000000932_model:Garde2020MinimalModelDescribingMetabolicOscBiomd0000000932Model
+  init_kwargs:
+    model_path: data/BIOMD0000000932.xml
+    integration_step: 0.1
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_metabolic_pathway_state_1
+    maps_to: Gp
+    default: 1.0
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 1. Maps to bundled SBML symbol
+      `Gp`. Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_metabolic_pathway_state_2
+    maps_to: Gi
+    default: 1.0
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 2. Maps to bundled SBML symbol
+      `Gi`. Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_metabolic_pathway_state_3
+    maps_to: A
+    default: 1.0
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 3. Maps to bundled SBML symbol
+      `A`. Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_metabolic_pathway_state_4
+    maps_to: B
+    default: 100000000000.0
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 4. Maps to bundled SBML symbol
+      `B`. Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: metabolic_pathway_state_1
+    maps_to: Gp
+    label: Metabolic Pathway state 1
+    description: Metabolic Pathway state 1; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `Gp`. Exact metabolite identity is not encoded in
+      the bundled SBML metadata.
+  - name: metabolic_pathway_state_2
+    maps_to: Gi
+    label: Metabolic Pathway state 2
+    description: Metabolic Pathway state 2; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `Gi`. Exact metabolite identity is not encoded in
+      the bundled SBML metadata.
+  - name: metabolic_pathway_state_3
+    maps_to: A
+    label: Metabolic Pathway state 3
+    description: Metabolic Pathway state 3; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `A`. Exact metabolite identity is not encoded in
+      the bundled SBML metadata.
+  - name: metabolic_pathway_state_4
+    maps_to: B
+    label: Metabolic Pathway state 4
+    description: Metabolic Pathway state 4; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `B`. Exact metabolite identity is not encoded in
+      the bundled SBML metadata.
+  - name: observable_values
+    description: Latest user-facing observable values from the SBML run.
+  - name: run_summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: observable_labels
+    description: Mapping from user-facing observable ports to display labels.
+parameters:
+- name: integration_step
+  value: 0.1
+  min: 0.0
+  units: model_time
+  description: Internal sampling step for Tellurium output collection.

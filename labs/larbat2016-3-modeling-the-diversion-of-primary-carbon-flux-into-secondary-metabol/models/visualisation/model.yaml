@@ -1,0 +1,90 @@
+schema_version: '2.0'
+title: Larbat2016.3 - Modeling the diversion of primary carbon flux into secondary metabolism
+  under variable nitrate and light or dark conditions (Light Dark Cycles with Minimum Starch
+  Adaption) Visualisation
+description: Dedicated presentation model for Larbat2016.3 - Modeling the diversion of primary
+  carbon flux into secondary metabolism under variable nitrate and light or dark conditions
+  (Light Dark Cycles with Minimum Starch Adaption).
+standard: other
+tags:
+- metabolism
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  entrypoint: src.metabolism_visualisation:MetabolismVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Larbat2016.3 - Modeling the diversion of primary carbon flux into secondary
+      metabolism under variable nitrate and light or dark conditions (Light Dark Cycles with
+      Minimum Starch Adaption) Lab
+    question: Which metabolic pathway dynamics observables show the strongest activity in
+      Larbat2016.3 - Modeling the diversion of primary carbon flux into secondary metabolism
+      under variable nitrate and light or dark conditions (Light Dark Cycles with Minimum
+      Starch Adaption)?
+    answer_focus: metabolic pathway dynamics
+    sources:
+    - alias: metabolism_sbml_larbat2016_3_modeling_the_diversion_of_primary_c_biomd0000000859_model
+      title: Larbat2016.3 - Modeling the diversion of primary carbon flux into secondary metabolism
+        under variable nitrate and light or dark conditions (Light Dark Cycles with Minimum
+        Starch Adaption)
+      scope: metabolic pathway dynamics
+      label_caveat: Values are native SBML quantities. Conservative pathway-state labels are
+        used where the bundled SBML does not encode exact metabolite identities.
+      observables:
+      - id: metabolic_pathway_state_1
+        label: Metabolic Pathway state 1
+        maps_to: sucr
+      - id: metabolic_pathway_state_2
+        label: Metabolic Pathway state 2
+        maps_to: EtrioseP
+      - id: metabolic_pathway_state_3
+        label: Metabolic Pathway state 3
+        maps_to: Ephe
+      - id: metabolic_pathway_state_4
+        label: Metabolic Pathway state 4
+        maps_to: N
+      - id: metabolic_pathway_state_5
+        label: Metabolic Pathway state 5
+        maps_to: starch
+      - id: metabolic_pathway_state_6
+        label: Metabolic Pathway state 6
+        maps_to: Enitrate
+      - id: metabolic_pathway_state_7
+        label: Metabolic Pathway state 7
+        maps_to: trioseP
+      - id: metabolic_pathway_state_8
+        label: Metabolic Pathway state 8
+        maps_to: ECO2
+      - id: metabolic_pathway_state_9
+        label: Metabolic Pathway state 9
+        maps_to: Estarch
+      - id: metabolic_pathway_state_10
+        label: Metabolic Pathway state 10
+        maps_to: ETP
+      - id: metabolic_pathway_state_11
+        label: Metabolic Pathway state 11
+        maps_to: M1
+      - id: metabolic_pathway_state_12
+        label: Metabolic Pathway state 12
+        maps_to: M2
+  communication_step: 1.0
+runtime:
+  dependencies:
+    packages:
+    - PyYAML==6.0.2
+parameters:
+- name: integration_step
+  value: 1.0
+  min: 0.0
+  units: model_time
+  description: Sampling step for the visualisation model.
+io:
+  inputs:
+  - name: metabolism_sbml_larbat2016_3_modeling_the_diversion_of_primary_c_biomd0000000859_model_observable_values
+    description: Latest user-facing observable values from the core metabolism model.
+  - name: metabolism_sbml_larbat2016_3_modeling_the_diversion_of_primary_c_biomd0000000859_model_run_summary
+    description: Run summary from the core metabolism model.
+  - name: metabolism_sbml_larbat2016_3_modeling_the_diversion_of_primary_c_biomd0000000859_model_observable_labels
+    description: Display labels for user-facing observables.
+  outputs: []

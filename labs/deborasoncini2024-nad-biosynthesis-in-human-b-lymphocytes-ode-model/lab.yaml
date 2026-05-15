@@ -1,0 +1,80 @@
+schema_version: '2.0'
+title: DeboraSoncini2024 - NAD_Biosynthesis_in Human_B_Lymphocytes,ODE model Lab
+description: This SBML file was created to capture NAD biosynthesis in human B-cells. This
+  model contains 27 reactions with 42 enzymes, 31 metabolites and 157 parameters.
+io:
+  inputs:
+  - name: initial_nad_metabolism_state_1
+    maps_to: metabolism_sbml_deborasoncini2024_nad_biosynthesis_in_human_b_ly_model2311140001_model.initial_nad_metabolism_state_1
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for nad metabolism state 1. Maps to bundled SBML symbol
+      `Hydroxykynurenine`. Applied before the Tellurium simulation starts; this does not change
+      kinetic parameters or equations. Default from bundled SBML initial value.
+  - name: initial_nad_metabolism_state_2
+    maps_to: metabolism_sbml_deborasoncini2024_nad_biosynthesis_in_human_b_ly_model2311140001_model.initial_nad_metabolism_state_2
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for nad metabolism state 2. Maps to bundled SBML symbol
+      `Hydroxyanthranilate`. Applied before the Tellurium simulation starts; this does not
+      change kinetic parameters or equations. Default from bundled SBML initial value.
+  - name: initial_nad_metabolism_state_3
+    maps_to: metabolism_sbml_deborasoncini2024_nad_biosynthesis_in_human_b_ly_model2311140001_model.initial_nad_metabolism_state_3
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for nad metabolism state 3. Maps to bundled SBML symbol
+      `Quinolinate`. Applied before the Tellurium simulation starts; this does not change
+      kinetic parameters or equations. Default from bundled SBML initial value.
+  - name: initial_nad_metabolism_state_4
+    maps_to: metabolism_sbml_deborasoncini2024_nad_biosynthesis_in_human_b_ly_model2311140001_model.initial_nad_metabolism_state_4
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for nad metabolism state 4. Maps to bundled SBML symbol
+      `NaMN`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_nad_metabolism_state_5
+    maps_to: metabolism_sbml_deborasoncini2024_nad_biosynthesis_in_human_b_ly_model2311140001_model.initial_nad_metabolism_state_5
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for nad metabolism state 5. Maps to bundled SBML symbol
+      `PPi`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: nad_metabolism_state_1
+    maps_to: metabolism_sbml_deborasoncini2024_nad_biosynthesis_in_human_b_ly_model2311140001_model.nad_metabolism_state_1
+  - name: nad_metabolism_state_2
+    maps_to: metabolism_sbml_deborasoncini2024_nad_biosynthesis_in_human_b_ly_model2311140001_model.nad_metabolism_state_2
+  - name: nad_metabolism_state_3
+    maps_to: metabolism_sbml_deborasoncini2024_nad_biosynthesis_in_human_b_ly_model2311140001_model.nad_metabolism_state_3
+  - name: nad_metabolism_state_4
+    maps_to: metabolism_sbml_deborasoncini2024_nad_biosynthesis_in_human_b_ly_model2311140001_model.nad_metabolism_state_4
+  - name: nad_metabolism_state_5
+    maps_to: metabolism_sbml_deborasoncini2024_nad_biosynthesis_in_human_b_ly_model2311140001_model.nad_metabolism_state_5
+  - name: observable_values
+    maps_to: metabolism_sbml_deborasoncini2024_nad_biosynthesis_in_human_b_ly_model2311140001_model.observable_values
+  - name: run_summary
+    maps_to: metabolism_sbml_deborasoncini2024_nad_biosynthesis_in_human_b_ly_model2311140001_model.run_summary
+  - name: observable_labels
+    maps_to: metabolism_sbml_deborasoncini2024_nad_biosynthesis_in_human_b_ly_model2311140001_model.observable_labels
+models:
+- alias: metabolism_sbml_deborasoncini2024_nad_biosynthesis_in_human_b_ly_model2311140001_model
+  path: models/core
+  parameters:
+    model_path: data/MODEL2311140001.xml
+    integration_step: 0.1
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: metabolism_sbml_deborasoncini2024_nad_biosynthesis_in_human_b_ly_model2311140001_model.observable_values
+  to:
+  - visualisation.metabolism_sbml_deborasoncini2024_nad_biosynthesis_in_human_b_ly_model2311140001_model_observable_values
+- from: metabolism_sbml_deborasoncini2024_nad_biosynthesis_in_human_b_ly_model2311140001_model.run_summary
+  to:
+  - visualisation.metabolism_sbml_deborasoncini2024_nad_biosynthesis_in_human_b_ly_model2311140001_model_run_summary
+- from: metabolism_sbml_deborasoncini2024_nad_biosynthesis_in_human_b_ly_model2311140001_model.observable_labels
+  to:
+  - visualisation.metabolism_sbml_deborasoncini2024_nad_biosynthesis_in_human_b_ly_model2311140001_model_observable_labels
+runtime:
+  duration: 10.0
+  communication_step: 1.0
+  initial_inputs: {}

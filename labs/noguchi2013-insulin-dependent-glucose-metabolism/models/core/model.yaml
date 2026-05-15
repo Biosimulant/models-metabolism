@@ -1,0 +1,117 @@
+schema_version: '2.0'
+title: Noguchi2013 - Insulin dependent glucose metabolism
+description: Rei Noguchi, Hiroyuki Kubota, Katsuyuki Yugi, Yu Toyoshima, Yasunori Komori,
+  Tomoyoshi Soga & Shinya Kuroda. The selective control of glycolysis, gluconeogenesis and
+  glycogenesis by temporal insulin p.
+standard: sbml
+tags:
+- biomodels_ebi
+- faithful
+- metabolism
+- ode
+- sbml
+- tellurium
+authors:
+- Biosimulant Team
+- Rei Noguchi
+- Rei Noguchi
+- Hiroyuki Kubota
+- Katsuyuki Yugi
+- Yu Toyoshima
+upstream:
+  id: biomodels_ebi:BIOMD0000000482
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000482
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000482
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000482?filename=BIOMD0000000482_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.noguchi2013_insulin_dependent_glucose_metabolism_biomd0000000482_model:Noguchi2013InsulinDependentGlucoseMetabolismBiomd0000000482Model
+  init_kwargs:
+    model_path: data/BIOMD0000000482.xml
+    integration_step: 0.1
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_glycolysis_state_1
+    maps_to: GP
+    default: 0.4726
+    units: native SBML value
+    description: Initial condition for glycolysis state 1. Maps to bundled SBML symbol `GP`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_glycolysis_state_2
+    maps_to: pGP
+    default: 0.1723
+    units: native SBML value
+    description: Initial condition for glycolysis state 2. Maps to bundled SBML symbol `pGP`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_mitochondrial_rna
+    maps_to: mRNA
+    default: 2.905
+    units: native SBML value
+    description: Initial condition for mitochondrial rna. Maps to bundled SBML symbol `mRNA`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_glycolysis_state_4
+    maps_to: PEPCK
+    default: 0.7686
+    units: native SBML value
+    description: Initial condition for glycolysis state 4. Maps to bundled SBML symbol `PEPCK`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_glycolysis_state_5
+    maps_to: IRS
+    default: 888.77
+    units: native SBML value
+    description: Initial condition for glycolysis state 5. Maps to bundled SBML symbol `IRS`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: glycolysis_state_1
+    maps_to: GP
+    label: Glycolysis state 1
+    description: Glycolysis state 1; conservative display label for an abstract SBML state
+      variable. Maps to SBML symbol `GP`. Exact metabolite identity is not encoded in the
+      bundled SBML metadata.
+  - name: glycolysis_state_2
+    maps_to: pGP
+    label: Glycolysis state 2
+    description: Glycolysis state 2; conservative display label for an abstract SBML state
+      variable. Maps to SBML symbol `pGP`. Exact metabolite identity is not encoded in the
+      bundled SBML metadata.
+  - name: mitochondrial_rna
+    maps_to: mRNA
+    label: Mitochondrial RNA
+    description: Mitochondrial RNA. Maps to SBML symbol `mRNA`.
+  - name: glycolysis_state_4
+    maps_to: PEPCK
+    label: Glycolysis state 4
+    description: Glycolysis state 4; conservative display label for an abstract SBML state
+      variable. Maps to SBML symbol `PEPCK`. Exact metabolite identity is not encoded in the
+      bundled SBML metadata.
+  - name: glycolysis_state_5
+    maps_to: IRS
+    label: Glycolysis state 5
+    description: Glycolysis state 5; conservative display label for an abstract SBML state
+      variable. Maps to SBML symbol `IRS`. Exact metabolite identity is not encoded in the
+      bundled SBML metadata.
+  - name: observable_values
+    description: Latest user-facing observable values from the SBML run.
+  - name: run_summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: observable_labels
+    description: Mapping from user-facing observable ports to display labels.
+parameters:
+- name: integration_step
+  value: 0.1
+  min: 0.0
+  units: model_time
+  description: Internal sampling step for Tellurium output collection.

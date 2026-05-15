@@ -1,0 +1,65 @@
+schema_version: '2.0'
+title: Thiaville2016 - Folate pathway model (PanB overexpression) Visualisation
+description: Dedicated presentation model for Thiaville2016 - Folate pathway model (PanB overexpression).
+standard: other
+tags:
+- metabolism
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  entrypoint: src.metabolism_visualisation:MetabolismVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Thiaville2016 - Folate pathway model (PanB overexpression) Lab
+    question: Which folate metabolism observables show the strongest activity in Thiaville2016
+      - Folate pathway model (PanB overexpression)?
+    answer_focus: folate metabolism
+    sources:
+    - alias: metabolism_sbml_thiaville2016_folate_pathway_model_panb_overexpr_biomd0000000689_model
+      title: Thiaville2016 - Folate pathway model (PanB overexpression)
+      scope: folate metabolism
+      label_caveat: Values are native SBML quantities. Conservative pathway-state labels are
+        used where the bundled SBML does not encode exact metabolite identities.
+      observables:
+      - id: folate_metabolism_state_1
+        label: Folate Metabolism state 1
+        maps_to: H2_HMPt
+      - id: folate_metabolism_state_2
+        label: Folate Metabolism state 2
+        maps_to: H2_HMPterinPP
+      - id: para_aminobenzoate
+        label: Para Aminobenzoate
+        maps_to: p_ABA
+      - id: folate_metabolism_state_4
+        label: Folate Metabolism state 4
+        maps_to: H2_Pteroate
+      - id: dihydrofolate
+        label: Dihydrofolate
+        maps_to: DHF
+      - id: tetrahydrofolate
+        label: Tetrahydrofolate
+        maps_to: THF
+      - id: folate_metabolism_state_7
+        label: Folate Metabolism state 7
+        maps_to: CH2_THF
+  communication_step: 1.0
+runtime:
+  dependencies:
+    packages:
+    - PyYAML==6.0.2
+parameters:
+- name: integration_step
+  value: 1.0
+  min: 0.0
+  units: model_time
+  description: Sampling step for the visualisation model.
+io:
+  inputs:
+  - name: metabolism_sbml_thiaville2016_folate_pathway_model_panb_overexpr_biomd0000000689_model_observable_values
+    description: Latest user-facing observable values from the core metabolism model.
+  - name: metabolism_sbml_thiaville2016_folate_pathway_model_panb_overexpr_biomd0000000689_model_run_summary
+    description: Run summary from the core metabolism model.
+  - name: metabolism_sbml_thiaville2016_folate_pathway_model_panb_overexpr_biomd0000000689_model_observable_labels
+    description: Display labels for user-facing observables.
+  outputs: []

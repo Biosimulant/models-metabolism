@@ -1,0 +1,58 @@
+schema_version: '2.0'
+title: Adams2019 - The regulatory role of shikimate in plant phenylalanine metabolism Visualisation
+description: Dedicated presentation model for Adams2019 - The regulatory role of shikimate
+  in plant phenylalanine metabolism.
+standard: other
+tags:
+- metabolism
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  entrypoint: src.metabolism_visualisation:MetabolismVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Adams2019 - The regulatory role of shikimate in plant phenylalanine metabolism
+      Lab
+    question: Which phenylalanine and shikimate pathway dynamics observables show the strongest
+      activity in Adams2019 - The regulatory role of shikimate in plant phenylalanine metabolism?
+    answer_focus: phenylalanine and shikimate pathway dynamics
+    sources:
+    - alias: metabolism_sbml_adams2019_the_regulatory_role_of_shikimate_in_pl_biomd0000000847_model
+      title: Adams2019 - The regulatory role of shikimate in plant phenylalanine metabolism
+      scope: phenylalanine and shikimate pathway dynamics
+      label_caveat: Values are native SBML quantities. Conservative pathway-state labels are
+        used where the bundled SBML does not encode exact metabolite identities.
+      observables:
+      - id: phenylalanine_pathway_state_1
+        label: Phenylalanine Pathway state 1
+        maps_to: X_1
+      - id: phenylalanine_pathway_state_2
+        label: Phenylalanine Pathway state 2
+        maps_to: X_2
+      - id: phenylalanine_pathway_state_3
+        label: Phenylalanine Pathway state 3
+        maps_to: X_3
+      - id: phenylalanine_pathway_state_4
+        label: Phenylalanine Pathway state 4
+        maps_to: X_4
+  communication_step: 1.0
+runtime:
+  dependencies:
+    packages:
+    - PyYAML==6.0.2
+parameters:
+- name: integration_step
+  value: 1.0
+  min: 0.0
+  units: model_time
+  description: Sampling step for the visualisation model.
+io:
+  inputs:
+  - name: metabolism_sbml_adams2019_the_regulatory_role_of_shikimate_in_pl_biomd0000000847_model_observable_values
+    description: Latest user-facing observable values from the core metabolism model.
+  - name: metabolism_sbml_adams2019_the_regulatory_role_of_shikimate_in_pl_biomd0000000847_model_run_summary
+    description: Run summary from the core metabolism model.
+  - name: metabolism_sbml_adams2019_the_regulatory_role_of_shikimate_in_pl_biomd0000000847_model_observable_labels
+    description: Display labels for user-facing observables.
+  outputs: []

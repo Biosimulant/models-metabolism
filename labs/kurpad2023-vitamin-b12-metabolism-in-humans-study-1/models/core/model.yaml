@@ -1,0 +1,94 @@
+schema_version: '2.0'
+title: Kurpad 2023 - vitamin B12 metabolism in humans [study 1]
+description: Metabolism Kurpad2023Vitamin B12Metabolism In Humans Stu Model2503310002Model
+  captures core biological behavior in the context of metabolism, sbml, biomodels_ebi using
+  a biomodels_ebi-sourced OTHER model. When you run it, you can observe state and evaluate
+  how the modeled system changes across runs.
+standard: sbml
+tags:
+- biomodels_ebi
+- faithful
+- metabolism
+- ode
+- sbml
+- tellurium
+authors:
+- Biosimulant Team
+- Anura V Kurpad
+- Roshni M Pasanna
+- Shalini G Hegde
+- Mallikarjun Patil
+- Arpita Mukhopadhyay
+upstream:
+  id: biomodels_ebi:MODEL2503310002
+  source_db: biomodels_ebi
+  source_id: MODEL2503310002
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL2503310002
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2503310002?filename=kurpad23_study1.xml
+  license: CC0
+biosim:
+  entrypoint: src.kurpad_2023_vitamin_b12_metabolism_in_humans_stu_model2503310002_model:Kurpad2023VitaminB12MetabolismInHumansStuModel2503310002Model
+  init_kwargs:
+    model_path: data/MODEL2503310002.xml
+    integration_step: 0.1
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_metabolic_pathway_state_1
+    maps_to: C_0
+    default: 1738.3
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 1. Maps to bundled SBML symbol
+      `C_0`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_metabolic_pathway_state_2
+    maps_to: C_1
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 2. Maps to bundled SBML symbol
+      `C_1`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_metabolic_pathway_state_3
+    maps_to: C_2
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 3. Maps to bundled SBML symbol
+      `C_2`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: metabolic_pathway_state_1
+    maps_to: C_0
+    label: Metabolic Pathway state 1
+    description: Metabolic Pathway state 1; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `C_0`. Exact metabolite identity is not encoded
+      in the bundled SBML metadata.
+  - name: metabolic_pathway_state_2
+    maps_to: C_1
+    label: Metabolic Pathway state 2
+    description: Metabolic Pathway state 2; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `C_1`. Exact metabolite identity is not encoded
+      in the bundled SBML metadata.
+  - name: metabolic_pathway_state_3
+    maps_to: C_2
+    label: Metabolic Pathway state 3
+    description: Metabolic Pathway state 3; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `C_2`. Exact metabolite identity is not encoded
+      in the bundled SBML metadata.
+  - name: observable_values
+    description: Latest user-facing observable values from the SBML run.
+  - name: run_summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: observable_labels
+    description: Mapping from user-facing observable ports to display labels.
+parameters:
+- name: integration_step
+  value: 0.1
+  min: 0.0
+  units: model_time
+  description: Internal sampling step for Tellurium output collection.

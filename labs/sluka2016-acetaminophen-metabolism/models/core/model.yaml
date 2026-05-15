@@ -1,0 +1,118 @@
+schema_version: '2.0'
+title: Sluka2016 - Acetaminophen metabolism
+description: 'Sluka2016 - Acetaminophen metabolism Liver metabolism of Acetaminophen: Acetaminophen
+  (APAP) ismetabolized in the liver in both Phase I and Phase II reactions.Phase II reactions
+  convert APAP to APAP-g. It can be used to explore metabolic flux dynamics and compare pathway
+  behavior across conditions.'
+standard: sbml
+tags:
+- biomodels_ebi
+- faithful
+- metabolism
+- ode
+- sbml
+- tellurium
+authors:
+- Biosimulant Team
+- James P Sluka
+- Xiao Fu
+- Maciej Swat
+- Julio M Belmonte
+- Alin Cosmanescu
+upstream:
+  id: biomodels_ebi:BIOMD0000000624
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000624
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000624
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000624?filename=BIOMD0000000624_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.sluka2016_acetaminophen_metabolism_biomd0000000624_model:Sluka2016AcetaminophenMetabolismBiomd0000000624Model
+  init_kwargs:
+    model_path: data/BIOMD0000000624.xml
+    integration_step: 0.1
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_drug_metabolism_state_1
+    maps_to: APAP
+    default: 0.1
+    units: native SBML value
+    description: Initial condition for drug metabolism state 1. Maps to bundled SBML symbol
+      `APAP`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_drug_metabolism_state_2
+    maps_to: NAPQI
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for drug metabolism state 2. Maps to bundled SBML symbol
+      `NAPQI`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_glutathione
+    maps_to: GSH
+    default: 10.0
+    units: native SBML value
+    description: Initial condition for glutathione. Maps to bundled SBML symbol `GSH`. Applied
+      before the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_drug_metabolism_state_4
+    maps_to: NAPQIGSH
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for drug metabolism state 4. Maps to bundled SBML symbol
+      `NAPQIGSH`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_drug_metabolism_state_5
+    maps_to: APAPconj_Glu
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for drug metabolism state 5. Maps to bundled SBML symbol
+      `APAPconj_Glu`. Applied before the Tellurium simulation starts; this does not change
+      kinetic parameters or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: drug_metabolism_state_1
+    maps_to: APAP
+    label: Drug Metabolism state 1
+    description: Drug Metabolism state 1; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `APAP`. Exact metabolite identity is not encoded
+      in the bundled SBML metadata.
+  - name: drug_metabolism_state_2
+    maps_to: NAPQI
+    label: Drug Metabolism state 2
+    description: Drug Metabolism state 2; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `NAPQI`. Exact metabolite identity is not encoded
+      in the bundled SBML metadata.
+  - name: glutathione
+    maps_to: GSH
+    label: Glutathione
+    description: Glutathione. Maps to SBML symbol `GSH`.
+  - name: drug_metabolism_state_4
+    maps_to: NAPQIGSH
+    label: Drug Metabolism state 4
+    description: Drug Metabolism state 4; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `NAPQIGSH`. Exact metabolite identity is not encoded
+      in the bundled SBML metadata.
+  - name: drug_metabolism_state_5
+    maps_to: APAPconj_Glu
+    label: Drug Metabolism state 5
+    description: Drug Metabolism state 5; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `APAPconj_Glu`. Exact metabolite identity is not
+      encoded in the bundled SBML metadata.
+  - name: observable_values
+    description: Latest user-facing observable values from the SBML run.
+  - name: run_summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: observable_labels
+    description: Mapping from user-facing observable ports to display labels.
+parameters:
+- name: integration_step
+  value: 0.1
+  min: 0.0
+  units: model_time
+  description: Internal sampling step for Tellurium output collection.

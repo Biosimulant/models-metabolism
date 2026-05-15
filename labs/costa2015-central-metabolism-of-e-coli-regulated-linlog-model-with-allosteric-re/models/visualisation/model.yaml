@@ -1,0 +1,102 @@
+schema_version: '2.0'
+title: Costa2015 - Central metabolism of E. coli, regulated linlog model (with allosteric
+  regulations) Visualisation
+description: Dedicated presentation model for Costa2015 - Central metabolism of E. coli, regulated
+  linlog model (with allosteric regulations).
+standard: other
+tags:
+- metabolism
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  entrypoint: src.metabolism_visualisation:MetabolismVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Costa2015 - Central metabolism of E. coli, regulated linlog model (with allosteric
+      regulations) Lab
+    question: Which microbial metabolism observables show the strongest activity in Costa2015
+      - Central metabolism of E. coli, regulated linlog model (with allosteric regulations)?
+    answer_focus: microbial metabolism
+    sources:
+    - alias: metabolism_sbml_costa2015_central_metabolism_of_e_coli_regulated_model1504080004_model
+      title: Costa2015 - Central metabolism of E. coli, regulated linlog model (with allosteric
+        regulations)
+      scope: microbial metabolism
+      label_caveat: Values are native SBML quantities. Conservative pathway-state labels are
+        used where the bundled SBML does not encode exact metabolite identities.
+      observables:
+      - id: phosphoenol_pyruvate
+        label: Phosphoenol Pyruvate
+        maps_to: cpep
+      - id: extracellular_glucose
+        label: Extracellular Glucose
+        maps_to: cglcex
+      - id: glucose_6_phosphate
+        label: Glucose 6 Phosphate
+        maps_to: cg6p
+      - id: microbial_metabolism_state_4
+        label: Microbial Metabolism state 4
+        maps_to: cpyr
+      - id: fructose_6_phosphate
+        label: Fructose 6 Phosphate
+        maps_to: cf6p
+      - id: glucose_1_phosphate
+        label: Glucose 1 Phosphate
+        maps_to: cg1p
+      - id: observable_6_phosphogluconate
+        label: 6 Phosphogluconate
+        maps_to: cpg
+      - id: fructose_1_6_bisphosphate
+        label: Fructose 1 6 Bisphosphate
+        maps_to: cfdp
+      - id: sedoheptulose_7_phosphate
+        label: Sedoheptulose 7 Phosphate
+        maps_to: csed7p
+      - id: glyceraldehyde_3_phosphate
+        label: Glyceraldehyde 3 Phosphate
+        maps_to: cgap
+      - id: erythrose_4_phosphate
+        label: Erythrose 4 Phosphate
+        maps_to: ce4p
+      - id: xylulose_5_phosphate
+        label: Xylulose 5 Phosphate
+        maps_to: cxyl5p
+      - id: ribose_5_phosphate
+        label: Ribose 5 Phosphate
+        maps_to: crib5p
+      - id: dihydroxyacetonephosphate
+        label: Dihydroxyacetonephosphate
+        maps_to: cdhap
+      - id: observable_1_3_diphosphosphoglycerate
+        label: 1 3 Diphosphosphoglycerate
+        maps_to: cpgp
+      - id: observable_3_phosphoglycerate
+        label: 3 Phosphoglycerate
+        maps_to: cpg3
+      - id: observable_2_phosphoglycerate
+        label: 2 Phosphoglycerate
+        maps_to: cpg2
+      - id: ribulose_5_phosphate
+        label: Ribulose 5 Phosphate
+        maps_to: cribu5p
+  communication_step: 1.0
+runtime:
+  dependencies:
+    packages:
+    - PyYAML==6.0.2
+parameters:
+- name: integration_step
+  value: 1.0
+  min: 0.0
+  units: model_time
+  description: Sampling step for the visualisation model.
+io:
+  inputs:
+  - name: metabolism_sbml_costa2015_central_metabolism_of_e_coli_regulated_model1504080004_model_observable_values
+    description: Latest user-facing observable values from the core metabolism model.
+  - name: metabolism_sbml_costa2015_central_metabolism_of_e_coli_regulated_model1504080004_model_run_summary
+    description: Run summary from the core metabolism model.
+  - name: metabolism_sbml_costa2015_central_metabolism_of_e_coli_regulated_model1504080004_model_observable_labels
+    description: Display labels for user-facing observables.
+  outputs: []

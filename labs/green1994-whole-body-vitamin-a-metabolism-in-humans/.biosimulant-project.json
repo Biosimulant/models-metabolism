@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "6645516f-aa87-4b29-b1a6-3646bc33744d",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "2dfb5875-11b0-4442-b133-17ea75695876",
+  "created_at": "2026-05-15T16:03:01.859892569+00:00",
+  "last_synced_at": "2026-05-15T19:05:26.602720+00:00",
+  "hub_manifest_hash": "dcf033c360d315e38a0861dfb53b0d5c4c1488425251c294a2ff4ceb0071b225",
+  "package_name": "green1994-whole-body-vitamin-a-metabolism-in-humans-lab"
+}

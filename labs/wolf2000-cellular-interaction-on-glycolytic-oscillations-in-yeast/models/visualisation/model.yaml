@@ -1,0 +1,84 @@
+schema_version: '2.0'
+title: Wolf2000 - Cellular interaction on glycolytic oscillations in yeast Visualisation
+description: Dedicated presentation model for Wolf2000 - Cellular interaction on glycolytic
+  oscillations in yeast.
+standard: other
+tags:
+- metabolism
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  entrypoint: src.metabolism_visualisation:MetabolismVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Wolf2000 - Cellular interaction on glycolytic oscillations in yeast Lab
+    question: Which central carbon and glycolytic metabolism observables show the strongest
+      activity in Wolf2000 - Cellular interaction on glycolytic oscillations in yeast?
+    answer_focus: central carbon and glycolytic metabolism
+    sources:
+    - alias: metabolism_sbml_wolf2000_cellular_interaction_on_glycolytic_osci_biomd0000000691_model
+      title: Wolf2000 - Cellular interaction on glycolytic oscillations in yeast
+      scope: central carbon and glycolytic metabolism
+      label_caveat: Values are native SBML quantities. Conservative pathway-state labels are
+        used where the bundled SBML does not encode exact metabolite identities.
+      observables:
+      - id: glycolysis_state_1
+        label: Glycolysis state 1
+        maps_to: S1__Cell_1_
+      - id: glycolysis_state_2
+        label: Glycolysis state 2
+        maps_to: S1__Cell_2_
+      - id: glycolysis_state_3
+        label: Glycolysis state 3
+        maps_to: S2__Cell_1_
+      - id: glycolysis_state_4
+        label: Glycolysis state 4
+        maps_to: S2__Cell_2_
+      - id: glycolysis_state_5
+        label: Glycolysis state 5
+        maps_to: S3__Cell_1_
+      - id: glycolysis_state_6
+        label: Glycolysis state 6
+        maps_to: S3__Cell_2_
+      - id: glycolysis_state_7
+        label: Glycolysis state 7
+        maps_to: S4__Cell_1_
+      - id: glycolysis_state_8
+        label: Glycolysis state 8
+        maps_to: S4__Cell_2_
+      - id: glycolysis_state_9
+        label: Glycolysis state 9
+        maps_to: N2__Cell_1_
+      - id: glycolysis_state_10
+        label: Glycolysis state 10
+        maps_to: N2__Cell_2_
+      - id: glycolysis_state_11
+        label: Glycolysis state 11
+        maps_to: A3__Cell_1_
+      - id: glycolysis_state_12
+        label: Glycolysis state 12
+        maps_to: A3__Cell_2_
+      - id: glycolysis_state_13
+        label: Glycolysis state 13
+        maps_to: S4_ex
+  communication_step: 1.0
+runtime:
+  dependencies:
+    packages:
+    - PyYAML==6.0.2
+parameters:
+- name: integration_step
+  value: 1.0
+  min: 0.0
+  units: model_time
+  description: Sampling step for the visualisation model.
+io:
+  inputs:
+  - name: metabolism_sbml_wolf2000_cellular_interaction_on_glycolytic_osci_biomd0000000691_model_observable_values
+    description: Latest user-facing observable values from the core metabolism model.
+  - name: metabolism_sbml_wolf2000_cellular_interaction_on_glycolytic_osci_biomd0000000691_model_run_summary
+    description: Run summary from the core metabolism model.
+  - name: metabolism_sbml_wolf2000_cellular_interaction_on_glycolytic_osci_biomd0000000691_model_observable_labels
+    description: Display labels for user-facing observables.
+  outputs: []

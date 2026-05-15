@@ -1,0 +1,112 @@
+schema_version: '2.0'
+title: Aubert2005 - Interaction between astrocytes and neurons on energy metabolism
+description: 'Aubert2005 - Interaction between astrocytesand neurons on energy metabolism
+  Enocded non-curated model. Issues: - Confusing equations A.41 and A.42 - Missing values
+  for parameters Vv,0 and dHb,0 This m.'
+standard: sbml
+tags:
+- biomodels_ebi
+- faithful
+- metabolism
+- ode
+- sbml
+- tellurium
+authors:
+- Biosimulant Team
+- "Agn\xE8s Aubert"
+- Robert Costalat
+upstream:
+  id: biomodels_ebi:MODEL1411210000
+  source_db: biomodels_ebi
+  source_id: MODEL1411210000
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1411210000
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1411210000?filename=MODEL1411210000_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.aubert2005_interaction_between_astrocytes_and_ne_model1411210000_model:Aubert2005InteractionBetweenAstrocytesAndNeModel1411210000Model
+  init_kwargs:
+    model_path: data/MODEL1411210000.xml
+    integration_step: 0.1
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_neuronal_adp
+    maps_to: ADPn
+    default: 0.0119296850858459
+    units: native SBML value
+    description: Initial condition for neuronal adp. Maps to bundled SBML symbol `ADPn`. Applied
+      before the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_neuronal_amp
+    maps_to: AMPn
+    default: 7.03149141538795e-05
+    units: native SBML value
+    description: Initial condition for neuronal amp. Maps to bundled SBML symbol `AMPn`. Applied
+      before the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_brain_energy_state_3
+    maps_to: ADPg
+    default: 0.0119296850858464
+    units: native SBML value
+    description: Initial condition for brain energy state 3. Maps to bundled SBML symbol `ADPg`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_brain_energy_state_4
+    maps_to: AMPg
+    default: 7.03149141538795e-05
+    units: native SBML value
+    description: Initial condition for brain energy state 4. Maps to bundled SBML symbol `AMPg`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_brain_energy_state_5
+    maps_to: rcn
+    default: 0.0122222222222222
+    units: native SBML value
+    description: Initial condition for brain energy state 5. Maps to bundled SBML symbol `rcn`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: neuronal_adp
+    maps_to: ADPn
+    label: Neuronal ADP
+    description: Neuronal ADP. Maps to SBML symbol `ADPn`.
+  - name: neuronal_amp
+    maps_to: AMPn
+    label: Neuronal AMP
+    description: Neuronal AMP. Maps to SBML symbol `AMPn`.
+  - name: brain_energy_state_3
+    maps_to: ADPg
+    label: Brain Energy state 3
+    description: Brain Energy state 3; conservative display label for an abstract SBML state
+      variable. Maps to SBML symbol `ADPg`. Exact metabolite identity is not encoded in the
+      bundled SBML metadata.
+  - name: brain_energy_state_4
+    maps_to: AMPg
+    label: Brain Energy state 4
+    description: Brain Energy state 4; conservative display label for an abstract SBML state
+      variable. Maps to SBML symbol `AMPg`. Exact metabolite identity is not encoded in the
+      bundled SBML metadata.
+  - name: brain_energy_state_5
+    maps_to: rcn
+    label: Brain Energy state 5
+    description: Brain Energy state 5; conservative display label for an abstract SBML state
+      variable. Maps to SBML symbol `rcn`. Exact metabolite identity is not encoded in the
+      bundled SBML metadata.
+  - name: observable_values
+    description: Latest user-facing observable values from the SBML run.
+  - name: run_summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: observable_labels
+    description: Mapping from user-facing observable ports to display labels.
+parameters:
+- name: integration_step
+  value: 0.1
+  min: 0.0
+  units: model_time
+  description: Internal sampling step for Tellurium output collection.

@@ -1,0 +1,118 @@
+schema_version: '2.0'
+title: Jallet2024 - Isotopic model of ethanolamine metabolism in E. coli
+description: Isotopic model of ethanolamine metabolism in E. It can be used to explore metabolic
+  flux dynamics and compare pathway behavior across conditions.
+standard: sbml
+tags:
+- biomodels_ebi
+- faithful
+- metabolism
+- ode
+- sbml
+- tellurium
+authors:
+- Biosimulant Team
+- Denis Jallet
+- Vanessa Soldan
+- Ramteen Shayan
+- Alexandre Stella
+- Nour Ismail
+upstream:
+  id: biomodels_ebi:MODEL2403010002
+  source_db: biomodels_ebi
+  source_id: MODEL2403010002
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL2403010002
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2403010002?filename=model_WT.xml
+  license: CC0
+biosim:
+  entrypoint: src.jallet2024_isotopic_model_of_ethanolamine_metabo_model2403010002_model:Jallet2024IsotopicModelOfEthanolamineMetaboModel2403010002Model
+  init_kwargs:
+    model_path: data/MODEL2403010002.xml
+    integration_step: 0.1
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_microbial_metabolism_state_1
+    maps_to: EA_c
+    default: 1.0
+    units: native SBML value
+    description: Initial condition for microbial metabolism state 1. Maps to bundled SBML
+      symbol `EA_c`. Applied before the Tellurium simulation starts; this does not change
+      kinetic parameters or equations. Default from bundled SBML initial value.
+  - name: initial_microbial_metabolism_state_2
+    maps_to: EA_eut
+    default: 1.0
+    units: native SBML value
+    description: Initial condition for microbial metabolism state 2. Maps to bundled SBML
+      symbol `EA_eut`. Applied before the Tellurium simulation starts; this does not change
+      kinetic parameters or equations. Default from bundled SBML initial value.
+  - name: initial_microbial_metabolism_state_3
+    maps_to: AAL_eut
+    default: 1.0
+    units: native SBML value
+    description: Initial condition for microbial metabolism state 3. Maps to bundled SBML
+      symbol `AAL_eut`. Applied before the Tellurium simulation starts; this does not change
+      kinetic parameters or equations. Default from bundled SBML initial value.
+  - name: initial_microbial_metabolism_state_4
+    maps_to: NH4_eut
+    default: 1.0
+    units: native SBML value
+    description: Initial condition for microbial metabolism state 4. Maps to bundled SBML
+      symbol `NH4_eut`. Applied before the Tellurium simulation starts; this does not change
+      kinetic parameters or equations. Default from bundled SBML initial value.
+  - name: initial_microbial_metabolism_state_5
+    maps_to: EtOH_eut
+    default: 1.0
+    units: native SBML value
+    description: Initial condition for microbial metabolism state 5. Maps to bundled SBML
+      symbol `EtOH_eut`. Applied before the Tellurium simulation starts; this does not change
+      kinetic parameters or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: microbial_metabolism_state_1
+    maps_to: EA_c
+    label: Microbial Metabolism state 1
+    description: Microbial Metabolism state 1; conservative display label for an abstract
+      SBML state variable. Maps to SBML symbol `EA_c`. Exact metabolite identity is not encoded
+      in the bundled SBML metadata.
+  - name: microbial_metabolism_state_2
+    maps_to: EA_eut
+    label: Microbial Metabolism state 2
+    description: Microbial Metabolism state 2; conservative display label for an abstract
+      SBML state variable. Maps to SBML symbol `EA_eut`. Exact metabolite identity is not
+      encoded in the bundled SBML metadata.
+  - name: microbial_metabolism_state_3
+    maps_to: AAL_eut
+    label: Microbial Metabolism state 3
+    description: Microbial Metabolism state 3; conservative display label for an abstract
+      SBML state variable. Maps to SBML symbol `AAL_eut`. Exact metabolite identity is not
+      encoded in the bundled SBML metadata.
+  - name: microbial_metabolism_state_4
+    maps_to: NH4_eut
+    label: Microbial Metabolism state 4
+    description: Microbial Metabolism state 4; conservative display label for an abstract
+      SBML state variable. Maps to SBML symbol `NH4_eut`. Exact metabolite identity is not
+      encoded in the bundled SBML metadata.
+  - name: microbial_metabolism_state_5
+    maps_to: EtOH_eut
+    label: Microbial Metabolism state 5
+    description: Microbial Metabolism state 5; conservative display label for an abstract
+      SBML state variable. Maps to SBML symbol `EtOH_eut`. Exact metabolite identity is not
+      encoded in the bundled SBML metadata.
+  - name: observable_values
+    description: Latest user-facing observable values from the SBML run.
+  - name: run_summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: observable_labels
+    description: Mapping from user-facing observable ports to display labels.
+parameters:
+- name: integration_step
+  value: 0.1
+  min: 0.0
+  units: model_time
+  description: Internal sampling step for Tellurium output collection.

@@ -1,0 +1,86 @@
+schema_version: '2.0'
+title: Aubert2002 - Coupling between Brain electrical activity, Metabolism and Hemodynamics
+  Visualisation
+description: Dedicated presentation model for Aubert2002 - Coupling between Brain electrical
+  activity, Metabolism and Hemodynamics.
+standard: other
+tags:
+- metabolism
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  entrypoint: src.metabolism_visualisation:MetabolismVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Aubert2002 - Coupling between Brain electrical activity, Metabolism and Hemodynamics
+      Lab
+    question: Which brain energy metabolism observables show the strongest activity in Aubert2002
+      - Coupling between Brain electrical activity, Metabolism and Hemodynamics?
+    answer_focus: brain energy metabolism
+    sources:
+    - alias: metabolism_sbml_aubert2002_coupling_between_brain_electrical_act_biomd0000000570_model
+      title: Aubert2002 - Coupling between Brain electrical activity, Metabolism and Hemodynamics
+      scope: brain energy metabolism
+      label_caveat: Values are native SBML quantities. Conservative pathway-state labels are
+        used where the bundled SBML does not encode exact metabolite identities.
+      observables:
+      - id: brain_energy_state_1
+        label: Brain Energy state 1
+        maps_to: species_1
+      - id: glucose
+        label: glucose
+        maps_to: species_4
+      - id: glyceraldehyde_3_phosphate
+        label: glyceraldehyde 3 phosphate
+        maps_to: species_5
+      - id: nadh
+        label: NADH
+        maps_to: species_7
+      - id: pyruvate
+        label: pyruvate
+        maps_to: species_8
+      - id: phosphoenolpyruvate
+        label: phosphoenolpyruvate
+        maps_to: species_9
+      - id: lactate
+        label: lactate
+        maps_to: species_10
+      - id: brain_energy_state_8
+        label: Brain Energy state 8
+        maps_to: species_11
+      - id: brain_energy_state_9
+        label: Brain Energy state 9
+        maps_to: species_13
+      - id: glucose_2
+        label: glucose 2
+        maps_to: species_17
+      - id: lactate_2
+        label: lactate 2
+        maps_to: species_18
+      - id: brain_energy_state_12
+        label: Brain Energy state 12
+        maps_to: species_19
+      - id: brain_energy_state_13
+        label: Brain Energy state 13
+        maps_to: dHb
+  communication_step: 1.0
+runtime:
+  dependencies:
+    packages:
+    - PyYAML==6.0.2
+parameters:
+- name: integration_step
+  value: 1.0
+  min: 0.0
+  units: model_time
+  description: Sampling step for the visualisation model.
+io:
+  inputs:
+  - name: metabolism_sbml_aubert2002_coupling_between_brain_electrical_act_biomd0000000570_model_observable_values
+    description: Latest user-facing observable values from the core metabolism model.
+  - name: metabolism_sbml_aubert2002_coupling_between_brain_electrical_act_biomd0000000570_model_run_summary
+    description: Run summary from the core metabolism model.
+  - name: metabolism_sbml_aubert2002_coupling_between_brain_electrical_act_biomd0000000570_model_observable_labels
+    description: Display labels for user-facing observables.
+  outputs: []

@@ -1,0 +1,80 @@
+schema_version: '2.0'
+title: Jeon2018 - Enzyme clustering in Glucose metabolism Lab
+description: Miji Jeon, Hye-Won Kang & Songon An. A Mathematical Model for Enzyme Clustering
+  in Glucose Metabolism.
+io:
+  inputs:
+  - name: initial_glycolysis_state_1
+    maps_to: metabolism_sbml_jeon2018_enzyme_clustering_in_glucose_metabolism_biomd0000001055_model.initial_glycolysis_state_1
+    default: 0.01
+    units: native SBML value
+    description: Initial condition for glycolysis state 1. Maps to bundled SBML symbol `Glucose`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_fructose_6_phosphate
+    maps_to: metabolism_sbml_jeon2018_enzyme_clustering_in_glucose_metabolism_biomd0000001055_model.initial_fructose_6_phosphate
+    default: 0.01
+    units: native SBML value
+    description: Initial condition for fructose 6 phosphate. Maps to bundled SBML symbol `Fructose_6_Phosphate`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_fructose_1_6_bisphosphate
+    maps_to: metabolism_sbml_jeon2018_enzyme_clustering_in_glucose_metabolism_biomd0000001055_model.initial_fructose_1_6_bisphosphate
+    default: 0.01
+    units: native SBML value
+    description: Initial condition for fructose 1 6 bisphosphate. Maps to bundled SBML symbol
+      `Fructose_1_6_Bisphosphate`. Applied before the Tellurium simulation starts; this does
+      not change kinetic parameters or equations. Default from bundled SBML initial value.
+  - name: initial_observable_3_phosphoglycerate
+    maps_to: metabolism_sbml_jeon2018_enzyme_clustering_in_glucose_metabolism_biomd0000001055_model.initial_observable_3_phosphoglycerate
+    default: 0.01
+    units: native SBML value
+    description: Initial condition for observable 3 phosphoglycerate. Maps to bundled SBML
+      symbol `_3_Phosphoglycerate`. Applied before the Tellurium simulation starts; this does
+      not change kinetic parameters or equations. Default from bundled SBML initial value.
+  - name: initial_glycolysis_state_5
+    maps_to: metabolism_sbml_jeon2018_enzyme_clustering_in_glucose_metabolism_biomd0000001055_model.initial_glycolysis_state_5
+    default: 0.01
+    units: native SBML value
+    description: Initial condition for glycolysis state 5. Maps to bundled SBML symbol `Phosphoenolpyruvate`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: glycolysis_state_1
+    maps_to: metabolism_sbml_jeon2018_enzyme_clustering_in_glucose_metabolism_biomd0000001055_model.glycolysis_state_1
+  - name: fructose_6_phosphate
+    maps_to: metabolism_sbml_jeon2018_enzyme_clustering_in_glucose_metabolism_biomd0000001055_model.fructose_6_phosphate
+  - name: fructose_1_6_bisphosphate
+    maps_to: metabolism_sbml_jeon2018_enzyme_clustering_in_glucose_metabolism_biomd0000001055_model.fructose_1_6_bisphosphate
+  - name: observable_3_phosphoglycerate
+    maps_to: metabolism_sbml_jeon2018_enzyme_clustering_in_glucose_metabolism_biomd0000001055_model.observable_3_phosphoglycerate
+  - name: glycolysis_state_5
+    maps_to: metabolism_sbml_jeon2018_enzyme_clustering_in_glucose_metabolism_biomd0000001055_model.glycolysis_state_5
+  - name: observable_values
+    maps_to: metabolism_sbml_jeon2018_enzyme_clustering_in_glucose_metabolism_biomd0000001055_model.observable_values
+  - name: run_summary
+    maps_to: metabolism_sbml_jeon2018_enzyme_clustering_in_glucose_metabolism_biomd0000001055_model.run_summary
+  - name: observable_labels
+    maps_to: metabolism_sbml_jeon2018_enzyme_clustering_in_glucose_metabolism_biomd0000001055_model.observable_labels
+models:
+- alias: metabolism_sbml_jeon2018_enzyme_clustering_in_glucose_metabolism_biomd0000001055_model
+  path: models/core
+  parameters:
+    model_path: data/BIOMD0000001055.xml
+    integration_step: 0.1
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: metabolism_sbml_jeon2018_enzyme_clustering_in_glucose_metabolism_biomd0000001055_model.observable_values
+  to:
+  - visualisation.metabolism_sbml_jeon2018_enzyme_clustering_in_glucose_metabolism_biomd0000001055_model_observable_values
+- from: metabolism_sbml_jeon2018_enzyme_clustering_in_glucose_metabolism_biomd0000001055_model.run_summary
+  to:
+  - visualisation.metabolism_sbml_jeon2018_enzyme_clustering_in_glucose_metabolism_biomd0000001055_model_run_summary
+- from: metabolism_sbml_jeon2018_enzyme_clustering_in_glucose_metabolism_biomd0000001055_model.observable_labels
+  to:
+  - visualisation.metabolism_sbml_jeon2018_enzyme_clustering_in_glucose_metabolism_biomd0000001055_model_observable_labels
+runtime:
+  duration: 10.0
+  communication_step: 1.0
+  initial_inputs: {}

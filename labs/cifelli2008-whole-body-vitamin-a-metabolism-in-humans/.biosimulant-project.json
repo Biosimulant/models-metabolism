@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "3a87c78d-e8a3-4238-b6a8-ac6672a0b1aa",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "8f24729f-9fd1-48ac-9655-dfdcef35a5c3",
+  "created_at": "2026-05-15T16:02:58.620230800+00:00",
+  "last_synced_at": "2026-05-15T17:51:13.734192+00:00",
+  "hub_manifest_hash": "fe0c81ba943273a723e1accafae1749163f526f81ee8d1e808fd361ff3d4dd76",
+  "package_name": "cifelli2008-whole-body-vitamin-a-metabolism-in-humans-lab"
+}

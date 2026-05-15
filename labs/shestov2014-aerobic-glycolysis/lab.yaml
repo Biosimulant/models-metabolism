@@ -1,0 +1,82 @@
+schema_version: '2.0'
+title: Shestov2014 - aerobic glycolysis Lab
+description: Metabolism Shestov2014Aerobic Glycolysis Model1504010000Model models metabolism
+  shestov2014 aerobic glycolysis model1504010000 dynamics as a OTHER simulation curated from
+  biomodels_ebi (biomodels_ebi:MODEL15040. When you run it, you can track state over time
+  and compare response patterns across parameter settings.
+io:
+  inputs:
+  - name: initial_glycolysis_state_1
+    maps_to: metabolism_sbml_shestov2014_aerobic_glycolysis_model1504010000_model.initial_glycolysis_state_1
+    default: 2.5909
+    units: native SBML value
+    description: Initial condition for glycolysis state 1. Maps to bundled SBML symbol `GLU`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_glucose_6_phosphate
+    maps_to: metabolism_sbml_shestov2014_aerobic_glycolysis_model1504010000_model.initial_glucose_6_phosphate
+    default: 0.2263
+    units: native SBML value
+    description: Initial condition for glucose 6 phosphate. Maps to bundled SBML symbol `G6P`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_fructose_6_phosphate
+    maps_to: metabolism_sbml_shestov2014_aerobic_glycolysis_model1504010000_model.initial_fructose_6_phosphate
+    default: 0.0701
+    units: native SBML value
+    description: Initial condition for fructose 6 phosphate. Maps to bundled SBML symbol `F6P`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_fructose_bisphosphate
+    maps_to: metabolism_sbml_shestov2014_aerobic_glycolysis_model1504010000_model.initial_fructose_bisphosphate
+    default: 0.45
+    units: native SBML value
+    description: Initial condition for fructose bisphosphate. Maps to bundled SBML symbol
+      `FBP`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_glycolysis_state_5
+    maps_to: metabolism_sbml_shestov2014_aerobic_glycolysis_model1504010000_model.initial_glycolysis_state_5
+    default: 0.0244
+    units: native SBML value
+    description: Initial condition for glycolysis state 5. Maps to bundled SBML symbol `DHAP`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: glycolysis_state_1
+    maps_to: metabolism_sbml_shestov2014_aerobic_glycolysis_model1504010000_model.glycolysis_state_1
+  - name: glucose_6_phosphate
+    maps_to: metabolism_sbml_shestov2014_aerobic_glycolysis_model1504010000_model.glucose_6_phosphate
+  - name: fructose_6_phosphate
+    maps_to: metabolism_sbml_shestov2014_aerobic_glycolysis_model1504010000_model.fructose_6_phosphate
+  - name: fructose_bisphosphate
+    maps_to: metabolism_sbml_shestov2014_aerobic_glycolysis_model1504010000_model.fructose_bisphosphate
+  - name: glycolysis_state_5
+    maps_to: metabolism_sbml_shestov2014_aerobic_glycolysis_model1504010000_model.glycolysis_state_5
+  - name: observable_values
+    maps_to: metabolism_sbml_shestov2014_aerobic_glycolysis_model1504010000_model.observable_values
+  - name: run_summary
+    maps_to: metabolism_sbml_shestov2014_aerobic_glycolysis_model1504010000_model.run_summary
+  - name: observable_labels
+    maps_to: metabolism_sbml_shestov2014_aerobic_glycolysis_model1504010000_model.observable_labels
+models:
+- alias: metabolism_sbml_shestov2014_aerobic_glycolysis_model1504010000_model
+  path: models/core
+  parameters:
+    model_path: data/MODEL1504010000.xml
+    integration_step: 0.1
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: metabolism_sbml_shestov2014_aerobic_glycolysis_model1504010000_model.observable_values
+  to:
+  - visualisation.metabolism_sbml_shestov2014_aerobic_glycolysis_model1504010000_model_observable_values
+- from: metabolism_sbml_shestov2014_aerobic_glycolysis_model1504010000_model.run_summary
+  to:
+  - visualisation.metabolism_sbml_shestov2014_aerobic_glycolysis_model1504010000_model_run_summary
+- from: metabolism_sbml_shestov2014_aerobic_glycolysis_model1504010000_model.observable_labels
+  to:
+  - visualisation.metabolism_sbml_shestov2014_aerobic_glycolysis_model1504010000_model_observable_labels
+runtime:
+  duration: 10.0
+  communication_step: 1.0
+  initial_inputs: {}

@@ -1,0 +1,109 @@
+schema_version: '2.0'
+title: Teusink2000_Glycolysis
+description: Can yeast glycolysis be understood in terms of in vitro kinetics of the constituent
+  enzymes? It can be used to explore metabolic flux dynamics and compare pathway behavior
+  across conditions.
+standard: sbml
+tags:
+- biomodels_ebi
+- faithful
+- metabolism
+- ode
+- sbml
+- tellurium
+authors:
+- Biosimulant Team
+- B Teusink
+- J Passarge
+- C A Reijenga
+- E Esgalhado
+- C C van der Weijden
+upstream:
+  id: biomodels_ebi:BIOMD0000000064
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000064
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000064
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000064?filename=BIOMD0000000064_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.teusink2000_glycolysis_biomd0000000064_model:Teusink2000GlycolysisBiomd0000000064Model
+  init_kwargs:
+    model_path: data/BIOMD0000000064.xml
+    integration_step: 0.1
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_glucose_in_cytosol
+    maps_to: GLCi
+    default: 0.087
+    units: native SBML value
+    description: Initial condition for glucose in cytosol. Maps to bundled SBML symbol `GLCi`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_glucose_6_phosphate
+    maps_to: G6P
+    default: 2.45
+    units: native SBML value
+    description: Initial condition for glucose 6 phosphate. Maps to bundled SBML symbol `G6P`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_fructose_6_phosphate
+    maps_to: F6P
+    default: 0.62
+    units: native SBML value
+    description: Initial condition for fructose 6 phosphate. Maps to bundled SBML symbol `F6P`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_fructose_1_6_bisphosphate
+    maps_to: F16P
+    default: 5.51
+    units: native SBML value
+    description: Initial condition for fructose 1 6 bisphosphate. Maps to bundled SBML symbol
+      `F16P`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_triose_phosphate
+    maps_to: TRIO
+    default: 0.96
+    units: native SBML value
+    description: Initial condition for triose phosphate. Maps to bundled SBML symbol `TRIO`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: glucose_in_cytosol
+    maps_to: GLCi
+    label: Glucose In Cytosol
+    description: Glucose In Cytosol. Maps to SBML symbol `GLCi`.
+  - name: glucose_6_phosphate
+    maps_to: G6P
+    label: Glucose 6 Phosphate
+    description: Glucose 6 Phosphate. Maps to SBML symbol `G6P`.
+  - name: fructose_6_phosphate
+    maps_to: F6P
+    label: Fructose 6 Phosphate
+    description: Fructose 6 Phosphate. Maps to SBML symbol `F6P`.
+  - name: fructose_1_6_bisphosphate
+    maps_to: F16P
+    label: Fructose 1 6 Bisphosphate
+    description: Fructose 1 6 Bisphosphate. Maps to SBML symbol `F16P`.
+  - name: triose_phosphate
+    maps_to: TRIO
+    label: Triose Phosphate
+    description: Triose Phosphate. Maps to SBML symbol `TRIO`.
+  - name: observable_values
+    description: Latest user-facing observable values from the SBML run.
+  - name: run_summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: observable_labels
+    description: Mapping from user-facing observable ports to display labels.
+parameters:
+- name: integration_step
+  value: 0.1
+  min: 0.0
+  units: model_time
+  description: Internal sampling step for Tellurium output collection.

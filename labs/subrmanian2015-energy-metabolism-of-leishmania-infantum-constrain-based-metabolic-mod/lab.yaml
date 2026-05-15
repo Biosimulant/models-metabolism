@@ -1,0 +1,87 @@
+schema_version: '2.0'
+title: Subrmanian2015 - Energy metabolism of Leishmania infantum, constrain-based metabolic
+  model Lab
+description: 'The uploaded model is linked to the PLoS ONE article: Subramanian A, Jhawar
+  J, Sarkar RR (2015) Dissecting Leishmania infantum Energy Metabolism - A Systems Perspective.
+  It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions.'
+io:
+  inputs:
+  - name: initial_observable_3_phospho_d_glyceroyl_phosphate
+    maps_to: metabolism_sbml_subrmanian2015_energy_metabolism_of_leishmania_i_model2010130002_model.initial_observable_3_phospho_d_glyceroyl_phosphate
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for observable 3 phospho d glyceroyl phosphate. Maps to
+      bundled SBML symbol `M_13dpg_c`. Applied before the Tellurium simulation starts; this
+      does not change kinetic parameters or equations. Default from Tellurium setup-time value
+      because no explicit SBML initial value was available.
+  - name: initial_observable_3_phospho_d_glyceroyl_phosphate_2
+    maps_to: metabolism_sbml_subrmanian2015_energy_metabolism_of_leishmania_i_model2010130002_model.initial_observable_3_phospho_d_glyceroyl_phosphate_2
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for observable 3 phospho d glyceroyl phosphate 2. Maps
+      to bundled SBML symbol `M_13dpg_x`. Applied before the Tellurium simulation starts;
+      this does not change kinetic parameters or equations. Default from Tellurium setup-time
+      value because no explicit SBML initial value was available.
+  - name: initial_observable_3_phospho_d_glycerate
+    maps_to: metabolism_sbml_subrmanian2015_energy_metabolism_of_leishmania_i_model2010130002_model.initial_observable_3_phospho_d_glycerate
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for observable 3 phospho d glycerate. Maps to bundled SBML
+      symbol `M_3pg_x`. Applied before the Tellurium simulation starts; this does not change
+      kinetic parameters or equations. Default from Tellurium setup-time value because no
+      explicit SBML initial value was available.
+  - name: initial_observable_3_phospho_d_glycerate_2
+    maps_to: metabolism_sbml_subrmanian2015_energy_metabolism_of_leishmania_i_model2010130002_model.initial_observable_3_phospho_d_glycerate_2
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for observable 3 phospho d glycerate 2. Maps to bundled
+      SBML symbol `M_3pg_c`. Applied before the Tellurium simulation starts; this does not
+      change kinetic parameters or equations. Default from Tellurium setup-time value because
+      no explicit SBML initial value was available.
+  - name: initial_observable_6_phospho_d_gluconate
+    maps_to: metabolism_sbml_subrmanian2015_energy_metabolism_of_leishmania_i_model2010130002_model.initial_observable_6_phospho_d_gluconate
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for observable 6 phospho d gluconate. Maps to bundled SBML
+      symbol `M_6pgc_c`. Applied before the Tellurium simulation starts; this does not change
+      kinetic parameters or equations. Default from Tellurium setup-time value because no
+      explicit SBML initial value was available.
+  outputs:
+  - name: observable_3_phospho_d_glyceroyl_phosphate
+    maps_to: metabolism_sbml_subrmanian2015_energy_metabolism_of_leishmania_i_model2010130002_model.observable_3_phospho_d_glyceroyl_phosphate
+  - name: observable_3_phospho_d_glyceroyl_phosphate_2
+    maps_to: metabolism_sbml_subrmanian2015_energy_metabolism_of_leishmania_i_model2010130002_model.observable_3_phospho_d_glyceroyl_phosphate_2
+  - name: observable_3_phospho_d_glycerate
+    maps_to: metabolism_sbml_subrmanian2015_energy_metabolism_of_leishmania_i_model2010130002_model.observable_3_phospho_d_glycerate
+  - name: observable_3_phospho_d_glycerate_2
+    maps_to: metabolism_sbml_subrmanian2015_energy_metabolism_of_leishmania_i_model2010130002_model.observable_3_phospho_d_glycerate_2
+  - name: observable_6_phospho_d_gluconate
+    maps_to: metabolism_sbml_subrmanian2015_energy_metabolism_of_leishmania_i_model2010130002_model.observable_6_phospho_d_gluconate
+  - name: observable_values
+    maps_to: metabolism_sbml_subrmanian2015_energy_metabolism_of_leishmania_i_model2010130002_model.observable_values
+  - name: run_summary
+    maps_to: metabolism_sbml_subrmanian2015_energy_metabolism_of_leishmania_i_model2010130002_model.run_summary
+  - name: observable_labels
+    maps_to: metabolism_sbml_subrmanian2015_energy_metabolism_of_leishmania_i_model2010130002_model.observable_labels
+models:
+- alias: metabolism_sbml_subrmanian2015_energy_metabolism_of_leishmania_i_model2010130002_model
+  path: models/core
+  parameters:
+    model_path: data/MODEL2010130002.xml
+    integration_step: 0.1
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: metabolism_sbml_subrmanian2015_energy_metabolism_of_leishmania_i_model2010130002_model.observable_values
+  to:
+  - visualisation.metabolism_sbml_subrmanian2015_energy_metabolism_of_leishmania_i_model2010130002_model_observable_values
+- from: metabolism_sbml_subrmanian2015_energy_metabolism_of_leishmania_i_model2010130002_model.run_summary
+  to:
+  - visualisation.metabolism_sbml_subrmanian2015_energy_metabolism_of_leishmania_i_model2010130002_model_run_summary
+- from: metabolism_sbml_subrmanian2015_energy_metabolism_of_leishmania_i_model2010130002_model.observable_labels
+  to:
+  - visualisation.metabolism_sbml_subrmanian2015_energy_metabolism_of_leishmania_i_model2010130002_model_observable_labels
+runtime:
+  duration: 10.0
+  communication_step: 1.0
+  initial_inputs: {}

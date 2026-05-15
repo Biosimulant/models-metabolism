@@ -1,0 +1,62 @@
+schema_version: '2.0'
+title: Sluka2016 - Acetaminophen metabolism Visualisation
+description: Dedicated presentation model for Sluka2016 - Acetaminophen metabolism.
+standard: other
+tags:
+- metabolism
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  entrypoint: src.metabolism_visualisation:MetabolismVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Sluka2016 - Acetaminophen metabolism Lab
+    question: Which drug and xenobiotic metabolism observables show the strongest activity
+      in Sluka2016 - Acetaminophen metabolism?
+    answer_focus: drug and xenobiotic metabolism
+    sources:
+    - alias: metabolism_sbml_sluka2016_acetaminophen_metabolism_biomd0000000624_model
+      title: Sluka2016 - Acetaminophen metabolism
+      scope: drug and xenobiotic metabolism
+      label_caveat: Values are native SBML quantities. Conservative pathway-state labels are
+        used where the bundled SBML does not encode exact metabolite identities.
+      observables:
+      - id: drug_metabolism_state_1
+        label: Drug Metabolism state 1
+        maps_to: APAP
+      - id: drug_metabolism_state_2
+        label: Drug Metabolism state 2
+        maps_to: NAPQI
+      - id: glutathione
+        label: Glutathione
+        maps_to: GSH
+      - id: drug_metabolism_state_4
+        label: Drug Metabolism state 4
+        maps_to: NAPQIGSH
+      - id: drug_metabolism_state_5
+        label: Drug Metabolism state 5
+        maps_to: APAPconj_Glu
+      - id: drug_metabolism_state_6
+        label: Drug Metabolism state 6
+        maps_to: APAPconj_Sul
+  communication_step: 1.0
+runtime:
+  dependencies:
+    packages:
+    - PyYAML==6.0.2
+parameters:
+- name: integration_step
+  value: 1.0
+  min: 0.0
+  units: model_time
+  description: Sampling step for the visualisation model.
+io:
+  inputs:
+  - name: metabolism_sbml_sluka2016_acetaminophen_metabolism_biomd0000000624_model_observable_values
+    description: Latest user-facing observable values from the core metabolism model.
+  - name: metabolism_sbml_sluka2016_acetaminophen_metabolism_biomd0000000624_model_run_summary
+    description: Run summary from the core metabolism model.
+  - name: metabolism_sbml_sluka2016_acetaminophen_metabolism_biomd0000000624_model_observable_labels
+    description: Display labels for user-facing observables.
+  outputs: []

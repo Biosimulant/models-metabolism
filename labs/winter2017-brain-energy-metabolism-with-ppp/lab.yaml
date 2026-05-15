@@ -1,0 +1,82 @@
+schema_version: '2.0'
+title: Winter2017 - Brain Energy Metabolism with PPP Lab
+description: 'Winter2017 - Brain Energy Metabolism with PPP This model is described in the
+  article: Mathematical analysis of the influence of brain metabolism on the BOLD signal in
+  Alzheimer''s disease Felix Winter1. It can be used to explore metabolic flux dynamics and
+  compare pathway behavior across conditions.'
+io:
+  inputs:
+  - name: initial_brain_energy_state_1
+    maps_to: metabolism_sbml_winter2017_brain_energy_metabolism_with_ppp_biomd0000000627_model.initial_brain_energy_state_1
+    default: 0.040323291746644
+    units: native SBML value
+    description: Initial condition for brain energy state 1. Maps to bundled SBML symbol `species_23`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_co2
+    maps_to: metabolism_sbml_winter2017_brain_energy_metabolism_with_ppp_biomd0000000627_model.initial_co2
+    default: 0.0121467082533562
+    units: native SBML value
+    description: Initial condition for co2. Maps to bundled SBML symbol `species_24`. Applied
+      before the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_glucose
+    maps_to: metabolism_sbml_winter2017_brain_energy_metabolism_with_ppp_biomd0000000627_model.initial_glucose
+    default: 0.0253903826849856
+    units: native SBML value
+    description: Initial condition for glucose. Maps to bundled SBML symbol `species_25`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_lactate
+    maps_to: metabolism_sbml_winter2017_brain_energy_metabolism_with_ppp_biomd0000000627_model.initial_lactate
+    default: 0.00188912996259375
+    units: native SBML value
+    description: Initial condition for lactate. Maps to bundled SBML symbol `species_26`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_brain_energy_state_5
+    maps_to: metabolism_sbml_winter2017_brain_energy_metabolism_with_ppp_biomd0000000627_model.initial_brain_energy_state_5
+    default: 0.000262913971209081
+    units: native SBML value
+    description: Initial condition for brain energy state 5. Maps to bundled SBML symbol `dHb`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: brain_energy_state_1
+    maps_to: metabolism_sbml_winter2017_brain_energy_metabolism_with_ppp_biomd0000000627_model.brain_energy_state_1
+  - name: co2
+    maps_to: metabolism_sbml_winter2017_brain_energy_metabolism_with_ppp_biomd0000000627_model.co2
+  - name: glucose
+    maps_to: metabolism_sbml_winter2017_brain_energy_metabolism_with_ppp_biomd0000000627_model.glucose
+  - name: lactate
+    maps_to: metabolism_sbml_winter2017_brain_energy_metabolism_with_ppp_biomd0000000627_model.lactate
+  - name: brain_energy_state_5
+    maps_to: metabolism_sbml_winter2017_brain_energy_metabolism_with_ppp_biomd0000000627_model.brain_energy_state_5
+  - name: observable_values
+    maps_to: metabolism_sbml_winter2017_brain_energy_metabolism_with_ppp_biomd0000000627_model.observable_values
+  - name: run_summary
+    maps_to: metabolism_sbml_winter2017_brain_energy_metabolism_with_ppp_biomd0000000627_model.run_summary
+  - name: observable_labels
+    maps_to: metabolism_sbml_winter2017_brain_energy_metabolism_with_ppp_biomd0000000627_model.observable_labels
+models:
+- alias: metabolism_sbml_winter2017_brain_energy_metabolism_with_ppp_biomd0000000627_model
+  path: models/core
+  parameters:
+    model_path: data/BIOMD0000000627.xml
+    integration_step: 0.1
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: metabolism_sbml_winter2017_brain_energy_metabolism_with_ppp_biomd0000000627_model.observable_values
+  to:
+  - visualisation.metabolism_sbml_winter2017_brain_energy_metabolism_with_ppp_biomd0000000627_model_observable_values
+- from: metabolism_sbml_winter2017_brain_energy_metabolism_with_ppp_biomd0000000627_model.run_summary
+  to:
+  - visualisation.metabolism_sbml_winter2017_brain_energy_metabolism_with_ppp_biomd0000000627_model_run_summary
+- from: metabolism_sbml_winter2017_brain_energy_metabolism_with_ppp_biomd0000000627_model.observable_labels
+  to:
+  - visualisation.metabolism_sbml_winter2017_brain_energy_metabolism_with_ppp_biomd0000000627_model_observable_labels
+runtime:
+  duration: 10.0
+  communication_step: 1.0
+  initial_inputs: {}

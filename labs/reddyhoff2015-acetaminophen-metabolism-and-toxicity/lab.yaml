@@ -1,0 +1,81 @@
+schema_version: '2.0'
+title: Reddyhoff2015 - Acetaminophen metabolism and toxicity Lab
+description: Reddyhoff2015 - Acetaminophen metabolism and toxicity This model examines acetaminophen
+  metabolism and related hepatotoxicity. Multiple pathways associated with APAP metabolism
+  has been included in th.
+io:
+  inputs:
+  - name: initial_sulphate_paps
+    maps_to: metabolism_sbml_reddyhoff2015_acetaminophen_metabolism_and_toxic_biomd0000000609_model.initial_sulphate_paps
+    default: 1.325e-14
+    units: native SBML value
+    description: Initial condition for sulphate paps. Maps to bundled SBML symbol `Sulphate__PAPS`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_glutathione
+    maps_to: metabolism_sbml_reddyhoff2015_acetaminophen_metabolism_and_toxic_biomd0000000609_model.initial_glutathione
+    default: 6.87e-15
+    units: native SBML value
+    description: Initial condition for glutathione. Maps to bundled SBML symbol `GSH`. Applied
+      before the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_drug_metabolism_state_3
+    maps_to: metabolism_sbml_reddyhoff2015_acetaminophen_metabolism_and_toxic_biomd0000000609_model.initial_drug_metabolism_state_3
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for drug metabolism state 3. Maps to bundled SBML symbol
+      `NAPQI`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_drug_metabolism_state_4
+    maps_to: metabolism_sbml_reddyhoff2015_acetaminophen_metabolism_and_toxic_biomd0000000609_model.initial_drug_metabolism_state_4
+    default: 1.32e-13
+    units: native SBML value
+    description: Initial condition for drug metabolism state 4. Maps to bundled SBML symbol
+      `Paracetamol_APAP`. Applied before the Tellurium simulation starts; this does not change
+      kinetic parameters or equations. Default from bundled SBML initial value.
+  - name: initial_drug_metabolism_state_5
+    maps_to: metabolism_sbml_reddyhoff2015_acetaminophen_metabolism_and_toxic_biomd0000000609_model.initial_drug_metabolism_state_5
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for drug metabolism state 5. Maps to bundled SBML symbol
+      `Protein_adducts`. Applied before the Tellurium simulation starts; this does not change
+      kinetic parameters or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: sulphate_paps
+    maps_to: metabolism_sbml_reddyhoff2015_acetaminophen_metabolism_and_toxic_biomd0000000609_model.sulphate_paps
+  - name: glutathione
+    maps_to: metabolism_sbml_reddyhoff2015_acetaminophen_metabolism_and_toxic_biomd0000000609_model.glutathione
+  - name: drug_metabolism_state_3
+    maps_to: metabolism_sbml_reddyhoff2015_acetaminophen_metabolism_and_toxic_biomd0000000609_model.drug_metabolism_state_3
+  - name: drug_metabolism_state_4
+    maps_to: metabolism_sbml_reddyhoff2015_acetaminophen_metabolism_and_toxic_biomd0000000609_model.drug_metabolism_state_4
+  - name: drug_metabolism_state_5
+    maps_to: metabolism_sbml_reddyhoff2015_acetaminophen_metabolism_and_toxic_biomd0000000609_model.drug_metabolism_state_5
+  - name: observable_values
+    maps_to: metabolism_sbml_reddyhoff2015_acetaminophen_metabolism_and_toxic_biomd0000000609_model.observable_values
+  - name: run_summary
+    maps_to: metabolism_sbml_reddyhoff2015_acetaminophen_metabolism_and_toxic_biomd0000000609_model.run_summary
+  - name: observable_labels
+    maps_to: metabolism_sbml_reddyhoff2015_acetaminophen_metabolism_and_toxic_biomd0000000609_model.observable_labels
+models:
+- alias: metabolism_sbml_reddyhoff2015_acetaminophen_metabolism_and_toxic_biomd0000000609_model
+  path: models/core
+  parameters:
+    model_path: data/BIOMD0000000609.xml
+    integration_step: 0.1
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: metabolism_sbml_reddyhoff2015_acetaminophen_metabolism_and_toxic_biomd0000000609_model.observable_values
+  to:
+  - visualisation.metabolism_sbml_reddyhoff2015_acetaminophen_metabolism_and_toxic_biomd0000000609_model_observable_values
+- from: metabolism_sbml_reddyhoff2015_acetaminophen_metabolism_and_toxic_biomd0000000609_model.run_summary
+  to:
+  - visualisation.metabolism_sbml_reddyhoff2015_acetaminophen_metabolism_and_toxic_biomd0000000609_model_run_summary
+- from: metabolism_sbml_reddyhoff2015_acetaminophen_metabolism_and_toxic_biomd0000000609_model.observable_labels
+  to:
+  - visualisation.metabolism_sbml_reddyhoff2015_acetaminophen_metabolism_and_toxic_biomd0000000609_model_observable_labels
+runtime:
+  duration: 10.0
+  communication_step: 1.0
+  initial_inputs: {}

@@ -1,0 +1,65 @@
+schema_version: '2.0'
+title: Tiveci2005 - Calcium dynamics in brain energy metabolism and Alzheimer's disease
+description: "Tiveci2005 - Calcium dynamics in brain energymetabolism and Alzheimer's disease\
+  \ Encoded non-curated model. Issues: - Missing values: dHb,0 ; \u03B1 ; V ; \u03B3 ; Volume\
+  \ ; rc ;V leak,mem,Ca ; V Ca,Pump,ER ; V c."
+standard: sbml
+tags:
+- biomodels_ebi
+- faithful
+- metabolism
+- ode
+- sbml
+- tellurium
+authors:
+- Biosimulant Team
+- S Tiveci
+- A Akin
+- T Cakir
+- "H Sayba\u015Fili"
+- Kutlu O Ulgen
+upstream:
+  id: biomodels_ebi:MODEL1409240003
+  source_db: biomodels_ebi
+  source_id: MODEL1409240003
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1409240003
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1409240003?filename=MODEL1409240003_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.tiveci2005_calcium_dynamics_in_brain_energy_meta_model1409240003_model:Tiveci2005CalciumDynamicsInBrainEnergyMetaModel1409240003Model
+  init_kwargs:
+    model_path: data/MODEL1409240003.xml
+    integration_step: 0.1
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_nad
+    maps_to: NAD
+    default: 1.0
+    units: native SBML value
+    description: Initial condition for nad. Maps to bundled SBML symbol `NAD`. Applied before
+      the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  outputs:
+  - name: nad
+    maps_to: NAD
+    label: NAD
+    description: NAD. Maps to SBML symbol `NAD`.
+  - name: observable_values
+    description: Latest user-facing observable values from the SBML run.
+  - name: run_summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: observable_labels
+    description: Mapping from user-facing observable ports to display labels.
+parameters:
+- name: integration_step
+  value: 0.1
+  min: 0.0
+  units: model_time
+  description: Internal sampling step for Tellurium output collection.

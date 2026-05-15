@@ -1,0 +1,82 @@
+schema_version: '2.0'
+title: Smallbone2013 - Glycolysis in S.cerevisiae - Iteration 03 Lab
+description: 'Smallbone2013 - Glycolysis in S.cerevisiae - Iteration 03 This model is described
+  in the article: A model of yeast glycolysis based on a consistent kinetic characterization
+  of all its enzymes Kieran S. It can be used to explore metabolic flux dynamics and compare
+  pathway behavior across conditions.'
+io:
+  inputs:
+  - name: initial_adp
+    maps_to: metabolism_sbml_smallbone2013_glycolysis_in_s_cerevisiae_iterati_model1303260003_model.initial_adp
+    default: 1.29
+    units: native SBML value
+    description: Initial condition for adp. Maps to bundled SBML symbol `ADP`. Applied before
+      the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_atp
+    maps_to: metabolism_sbml_smallbone2013_glycolysis_in_s_cerevisiae_iterati_model1303260003_model.initial_atp
+    default: 4.29
+    units: native SBML value
+    description: Initial condition for atp. Maps to bundled SBML symbol `ATP`. Applied before
+      the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_acetaldehyde
+    maps_to: metabolism_sbml_smallbone2013_glycolysis_in_s_cerevisiae_iterati_model1303260003_model.initial_acetaldehyde
+    default: 0.178140579850657
+    units: native SBML value
+    description: Initial condition for acetaldehyde. Maps to bundled SBML symbol `AcAld`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_observable_1_3_bisphosphoglycerate
+    maps_to: metabolism_sbml_smallbone2013_glycolysis_in_s_cerevisiae_iterati_model1303260003_model.initial_observable_1_3_bisphosphoglycerate
+    default: 0.000736873499865602
+    units: native SBML value
+    description: Initial condition for observable 1 3 bisphosphoglycerate. Maps to bundled
+      SBML symbol `BPG`. Applied before the Tellurium simulation starts; this does not change
+      kinetic parameters or equations. Default from bundled SBML initial value.
+  - name: initial_dihydroxyacetone_phosphate
+    maps_to: metabolism_sbml_smallbone2013_glycolysis_in_s_cerevisiae_iterati_model1303260003_model.initial_dihydroxyacetone_phosphate
+    default: 0.290344213186674
+    units: native SBML value
+    description: Initial condition for dihydroxyacetone phosphate. Maps to bundled SBML symbol
+      `DHAP`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: adp
+    maps_to: metabolism_sbml_smallbone2013_glycolysis_in_s_cerevisiae_iterati_model1303260003_model.adp
+  - name: atp
+    maps_to: metabolism_sbml_smallbone2013_glycolysis_in_s_cerevisiae_iterati_model1303260003_model.atp
+  - name: acetaldehyde
+    maps_to: metabolism_sbml_smallbone2013_glycolysis_in_s_cerevisiae_iterati_model1303260003_model.acetaldehyde
+  - name: observable_1_3_bisphosphoglycerate
+    maps_to: metabolism_sbml_smallbone2013_glycolysis_in_s_cerevisiae_iterati_model1303260003_model.observable_1_3_bisphosphoglycerate
+  - name: dihydroxyacetone_phosphate
+    maps_to: metabolism_sbml_smallbone2013_glycolysis_in_s_cerevisiae_iterati_model1303260003_model.dihydroxyacetone_phosphate
+  - name: observable_values
+    maps_to: metabolism_sbml_smallbone2013_glycolysis_in_s_cerevisiae_iterati_model1303260003_model.observable_values
+  - name: run_summary
+    maps_to: metabolism_sbml_smallbone2013_glycolysis_in_s_cerevisiae_iterati_model1303260003_model.run_summary
+  - name: observable_labels
+    maps_to: metabolism_sbml_smallbone2013_glycolysis_in_s_cerevisiae_iterati_model1303260003_model.observable_labels
+models:
+- alias: metabolism_sbml_smallbone2013_glycolysis_in_s_cerevisiae_iterati_model1303260003_model
+  path: models/core
+  parameters:
+    model_path: data/MODEL1303260003.xml
+    integration_step: 0.1
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: metabolism_sbml_smallbone2013_glycolysis_in_s_cerevisiae_iterati_model1303260003_model.observable_values
+  to:
+  - visualisation.metabolism_sbml_smallbone2013_glycolysis_in_s_cerevisiae_iterati_model1303260003_model_observable_values
+- from: metabolism_sbml_smallbone2013_glycolysis_in_s_cerevisiae_iterati_model1303260003_model.run_summary
+  to:
+  - visualisation.metabolism_sbml_smallbone2013_glycolysis_in_s_cerevisiae_iterati_model1303260003_model_run_summary
+- from: metabolism_sbml_smallbone2013_glycolysis_in_s_cerevisiae_iterati_model1303260003_model.observable_labels
+  to:
+  - visualisation.metabolism_sbml_smallbone2013_glycolysis_in_s_cerevisiae_iterati_model1303260003_model_observable_labels
+runtime:
+  duration: 10.0
+  communication_step: 1.0
+  initial_inputs: {}

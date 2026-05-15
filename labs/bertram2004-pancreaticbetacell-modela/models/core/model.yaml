@@ -1,0 +1,116 @@
+schema_version: '2.0'
+title: Bertram2004_PancreaticBetaCell_modelA
+description: 'This a model from the article: Calcium and glycolysis mediate multiple bursting
+  modes in pancreatic islets. Bertram R, Satin L, Zhang M, Smolen P, Sherman A.'
+standard: sbml
+tags:
+- biomodels_ebi
+- faithful
+- metabolism
+- ode
+- sbml
+- tellurium
+authors:
+- Biosimulant Team
+- Richard Bertram
+- Leslie Satin
+- Min Zhang
+- Paul Smolen
+- Arthur Sherman
+upstream:
+  id: biomodels_ebi:MODEL1006230071
+  source_db: biomodels_ebi
+  source_id: MODEL1006230071
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1006230071
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1006230071?filename=MODEL1006230071_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.bertram2004_pancreaticbetacell_modela_model1006230071_model:Bertram2004PancreaticbetacellModelaModel1006230071Model
+  init_kwargs:
+    model_path: data/MODEL1006230071.xml
+    integration_step: 0.1
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_pancreatic_metabolism_state_1
+    maps_to: V
+    default: -60.0
+    units: native SBML value
+    description: Initial condition for pancreatic metabolism state 1. Maps to bundled SBML
+      symbol `V`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_pancreatic_metabolism_state_2
+    maps_to: n
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for pancreatic metabolism state 2. Maps to bundled SBML
+      symbol `n`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_pancreatic_metabolism_state_3
+    maps_to: c
+    default: 0.1
+    units: native SBML value
+    description: Initial condition for pancreatic metabolism state 3. Maps to bundled SBML
+      symbol `c`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_pancreatic_metabolism_state_4
+    maps_to: cer
+    default: 185.0
+    units: native SBML value
+    description: Initial condition for pancreatic metabolism state 4. Maps to bundled SBML
+      symbol `cer`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_fructose_bisphosphate
+    maps_to: fbp
+    default: 40.0
+    units: native SBML value
+    description: Initial condition for fructose bisphosphate. Maps to bundled SBML symbol
+      `fbp`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: pancreatic_metabolism_state_1
+    maps_to: V
+    label: Pancreatic Metabolism state 1
+    description: Pancreatic Metabolism state 1; conservative display label for an abstract
+      SBML state variable. Maps to SBML symbol `V`. Exact metabolite identity is not encoded
+      in the bundled SBML metadata.
+  - name: pancreatic_metabolism_state_2
+    maps_to: n
+    label: Pancreatic Metabolism state 2
+    description: Pancreatic Metabolism state 2; conservative display label for an abstract
+      SBML state variable. Maps to SBML symbol `n`. Exact metabolite identity is not encoded
+      in the bundled SBML metadata.
+  - name: pancreatic_metabolism_state_3
+    maps_to: c
+    label: Pancreatic Metabolism state 3
+    description: Pancreatic Metabolism state 3; conservative display label for an abstract
+      SBML state variable. Maps to SBML symbol `c`. Exact metabolite identity is not encoded
+      in the bundled SBML metadata.
+  - name: pancreatic_metabolism_state_4
+    maps_to: cer
+    label: Pancreatic Metabolism state 4
+    description: Pancreatic Metabolism state 4; conservative display label for an abstract
+      SBML state variable. Maps to SBML symbol `cer`. Exact metabolite identity is not encoded
+      in the bundled SBML metadata.
+  - name: fructose_bisphosphate
+    maps_to: fbp
+    label: Fructose Bisphosphate
+    description: Fructose Bisphosphate. Maps to SBML symbol `fbp`.
+  - name: observable_values
+    description: Latest user-facing observable values from the SBML run.
+  - name: run_summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: observable_labels
+    description: Mapping from user-facing observable ports to display labels.
+parameters:
+- name: integration_step
+  value: 0.1
+  min: 0.0
+  units: model_time
+  description: Internal sampling step for Tellurium output collection.

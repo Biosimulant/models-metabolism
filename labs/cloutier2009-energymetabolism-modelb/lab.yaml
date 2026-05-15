@@ -1,0 +1,80 @@
+schema_version: '2.0'
+title: Cloutier2009_EnergyMetabolism_ModelB Lab
+description: 'This a model from the article: The control systems structures of energy metabolism.
+  It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions.'
+io:
+  inputs:
+  - name: initial_fructose_6_phosphate
+    maps_to: metabolism_sbml_cloutier2009_energymetabolism_modelb_model1006230016_model.initial_fructose_6_phosphate
+    default: 0.2
+    units: native SBML value
+    description: Initial condition for fructose 6 phosphate. Maps to bundled SBML symbol `F6P`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_fructose_2_6_bisphosphate
+    maps_to: metabolism_sbml_cloutier2009_energymetabolism_modelb_model1006230016_model.initial_fructose_2_6_bisphosphate
+    default: 0.001
+    units: native SBML value
+    description: Initial condition for fructose 2 6 bisphosphate. Maps to bundled SBML symbol
+      `F26P`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_glyceraldehyde_3_phosphate
+    maps_to: metabolism_sbml_cloutier2009_energymetabolism_modelb_model1006230016_model.initial_glyceraldehyde_3_phosphate
+    default: 0.0405
+    units: native SBML value
+    description: Initial condition for glyceraldehyde 3 phosphate. Maps to bundled SBML symbol
+      `GAP`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_pyruvate
+    maps_to: metabolism_sbml_cloutier2009_energymetabolism_modelb_model1006230016_model.initial_pyruvate
+    default: 0.1
+    units: native SBML value
+    description: Initial condition for pyruvate. Maps to bundled SBML symbol `PYR`. Applied
+      before the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_lactate
+    maps_to: metabolism_sbml_cloutier2009_energymetabolism_modelb_model1006230016_model.initial_lactate
+    default: 0.5
+    units: native SBML value
+    description: Initial condition for lactate. Maps to bundled SBML symbol `LAC`. Applied
+      before the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  outputs:
+  - name: fructose_6_phosphate
+    maps_to: metabolism_sbml_cloutier2009_energymetabolism_modelb_model1006230016_model.fructose_6_phosphate
+  - name: fructose_2_6_bisphosphate
+    maps_to: metabolism_sbml_cloutier2009_energymetabolism_modelb_model1006230016_model.fructose_2_6_bisphosphate
+  - name: glyceraldehyde_3_phosphate
+    maps_to: metabolism_sbml_cloutier2009_energymetabolism_modelb_model1006230016_model.glyceraldehyde_3_phosphate
+  - name: pyruvate
+    maps_to: metabolism_sbml_cloutier2009_energymetabolism_modelb_model1006230016_model.pyruvate
+  - name: lactate
+    maps_to: metabolism_sbml_cloutier2009_energymetabolism_modelb_model1006230016_model.lactate
+  - name: observable_values
+    maps_to: metabolism_sbml_cloutier2009_energymetabolism_modelb_model1006230016_model.observable_values
+  - name: run_summary
+    maps_to: metabolism_sbml_cloutier2009_energymetabolism_modelb_model1006230016_model.run_summary
+  - name: observable_labels
+    maps_to: metabolism_sbml_cloutier2009_energymetabolism_modelb_model1006230016_model.observable_labels
+models:
+- alias: metabolism_sbml_cloutier2009_energymetabolism_modelb_model1006230016_model
+  path: models/core
+  parameters:
+    model_path: data/MODEL1006230016.xml
+    integration_step: 0.1
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: metabolism_sbml_cloutier2009_energymetabolism_modelb_model1006230016_model.observable_values
+  to:
+  - visualisation.metabolism_sbml_cloutier2009_energymetabolism_modelb_model1006230016_model_observable_values
+- from: metabolism_sbml_cloutier2009_energymetabolism_modelb_model1006230016_model.run_summary
+  to:
+  - visualisation.metabolism_sbml_cloutier2009_energymetabolism_modelb_model1006230016_model_run_summary
+- from: metabolism_sbml_cloutier2009_energymetabolism_modelb_model1006230016_model.observable_labels
+  to:
+  - visualisation.metabolism_sbml_cloutier2009_energymetabolism_modelb_model1006230016_model_observable_labels
+runtime:
+  duration: 10.0
+  communication_step: 1.0
+  initial_inputs: {}

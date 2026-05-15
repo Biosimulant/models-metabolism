@@ -1,0 +1,224 @@
+schema_version: '2.0'
+title: Winter2017 - Brain Energy Metabolism with PPP Visualisation
+description: Dedicated presentation model for Winter2017 - Brain Energy Metabolism with PPP.
+standard: other
+tags:
+- metabolism
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  entrypoint: src.metabolism_visualisation:MetabolismVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Winter2017 - Brain Energy Metabolism with PPP Lab
+    question: Which brain energy metabolism observables show the strongest activity in Winter2017
+      - Brain Energy Metabolism with PPP?
+    answer_focus: brain energy metabolism
+    sources:
+    - alias: metabolism_sbml_winter2017_brain_energy_metabolism_with_ppp_biomd0000000627_model
+      title: Winter2017 - Brain Energy Metabolism with PPP
+      scope: brain energy metabolism
+      label_caveat: Values are native SBML quantities. Conservative pathway-state labels are
+        used where the bundled SBML does not encode exact metabolite identities.
+      observables:
+      - id: brain_energy_state_1
+        label: Brain Energy state 1
+        maps_to: species_23
+      - id: co2
+        label: CO2
+        maps_to: species_24
+      - id: glucose
+        label: glucose
+        maps_to: species_25
+      - id: lactate
+        label: lactate
+        maps_to: species_26
+      - id: brain_energy_state_5
+        label: Brain Energy state 5
+        maps_to: dHb
+      - id: glucose_2
+        label: glucose 2
+        maps_to: species_1
+      - id: glucose_6_phosphate
+        label: glucose 6 phosphate
+        maps_to: species_2
+      - id: atp
+        label: ATP
+        maps_to: species_3
+      - id: fructose_6_phosphate
+        label: fructose 6 phosphate
+        maps_to: species_7
+      - id: glyceraldehyde_3_phosphate
+        label: glyceraldehyde 3 phosphate
+        maps_to: species_9
+      - id: nadh
+        label: NADH
+        maps_to: species_11
+      - id: phosphoenolpyruvate
+        label: phosphoenolpyruvate
+        maps_to: species_12
+      - id: pyruvate
+        label: pyruvate
+        maps_to: species_15
+      - id: lactate_2
+        label: lactate 2
+        maps_to: species_18
+      - id: brain_energy_state_15
+        label: Brain Energy state 15
+        maps_to: species_16
+      - id: brain_energy_state_16
+        label: Brain Energy state 16
+        maps_to: species_21
+      - id: brain_energy_state_17
+        label: Brain Energy state 17
+        maps_to: Na__neurons
+      - id: brain_energy_state_18
+        label: Brain Energy state 18
+        maps_to: GLU_neurons
+      - id: adp
+        label: ADP
+        maps_to: ADP_neurons
+      - id: amp
+        label: AMP
+        maps_to: AMP_neurons
+      - id: brain_energy_state_21
+        label: Brain Energy state 21
+        maps_to: Cr_neurons
+      - id: nad
+        label: NAD
+        maps_to: NAD_neurons
+      - id: g6l
+        label: G6l
+        maps_to: G6L_neurons
+      - id: p6g
+        label: P6g
+        maps_to: P6G_neurons
+      - id: ru5p
+        label: Ru5p
+        maps_to: Ru5P_neurons
+      - id: x5p
+        label: X5p
+        maps_to: X5P_neurons
+      - id: r5p
+        label: R5p
+        maps_to: R5P_neurons
+      - id: s7p
+        label: S7p
+        maps_to: S7P_neurons
+      - id: e4p
+        label: E4p
+        maps_to: E4P_neurons
+      - id: nadph
+        label: NADPH
+        maps_to: NADPH_neurons
+      - id: nadp
+        label: NADP
+        maps_to: NADP_neurons
+      - id: glucose_3
+        label: glucose 3
+        maps_to: species_4
+      - id: atp_2
+        label: ATP 2
+        maps_to: species_5
+      - id: glucose_6_phosphate_2
+        label: glucose 6 phosphate 2
+        maps_to: species_6
+      - id: fructose_6_phosphate_2
+        label: fructose 6 phosphate 2
+        maps_to: species_8
+      - id: glyceraldehyde_3_phosphate_2
+        label: glyceraldehyde 3 phosphate 2
+        maps_to: species_10
+      - id: nadh_2
+        label: NADH 2
+        maps_to: species_13
+      - id: phosphoenolpyruvate_2
+        label: phosphoenolpyruvate 2
+        maps_to: species_14
+      - id: pyruvate_2
+        label: pyruvate 2
+        maps_to: species_17
+      - id: lactate_3
+        label: lactate 3
+        maps_to: species_19
+      - id: brain_energy_state_41
+        label: Brain Energy state 41
+        maps_to: species_20
+      - id: brain_energy_state_42
+        label: Brain Energy state 42
+        maps_to: species_22
+      - id: brain_energy_state_43
+        label: Brain Energy state 43
+        maps_to: Na__astrocytes
+      - id: brain_energy_state_44
+        label: Brain Energy state 44
+        maps_to: GLU_astrocytes
+      - id: adp_2
+        label: ADP 2
+        maps_to: ADP_astrocytes
+      - id: amp_2
+        label: AMP 2
+        maps_to: AMP_astrocytes
+      - id: brain_energy_state_47
+        label: Brain Energy state 47
+        maps_to: Cr_astrocytes
+      - id: nad_2
+        label: NAD 2
+        maps_to: NAD_astrocytes
+      - id: g6l_2
+        label: G6l 2
+        maps_to: G6L_astrocytes
+      - id: p6g_2
+        label: P6g 2
+        maps_to: P6G_astrocytes
+      - id: ru5p_2
+        label: Ru5p 2
+        maps_to: Ru5P_astrocytes
+      - id: x5p_2
+        label: X5p 2
+        maps_to: X5P_astrocytes
+      - id: r5p_2
+        label: R5p 2
+        maps_to: R5P_astrocytes
+      - id: s7p_2
+        label: S7p 2
+        maps_to: S7P_astrocytes
+      - id: e4p_2
+        label: E4p 2
+        maps_to: E4P_astrocytes
+      - id: nadp_2
+        label: NADP 2
+        maps_to: NADP_astrocytes
+      - id: nadph_2
+        label: NADPH 2
+        maps_to: NADPH_astrocytes
+      - id: glucose_4
+        label: glucose 4
+        maps_to: species_27
+      - id: lactate_4
+        label: lactate 4
+        maps_to: species_28
+      - id: brain_energy_state_60
+        label: Brain Energy state 60
+        maps_to: GLU_extracellular_space
+  communication_step: 1.0
+runtime:
+  dependencies:
+    packages:
+    - PyYAML==6.0.2
+parameters:
+- name: integration_step
+  value: 1.0
+  min: 0.0
+  units: model_time
+  description: Sampling step for the visualisation model.
+io:
+  inputs:
+  - name: metabolism_sbml_winter2017_brain_energy_metabolism_with_ppp_biomd0000000627_model_observable_values
+    description: Latest user-facing observable values from the core metabolism model.
+  - name: metabolism_sbml_winter2017_brain_energy_metabolism_with_ppp_biomd0000000627_model_run_summary
+    description: Run summary from the core metabolism model.
+  - name: metabolism_sbml_winter2017_brain_energy_metabolism_with_ppp_biomd0000000627_model_observable_labels
+    description: Display labels for user-facing observables.
+  outputs: []

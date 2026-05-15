@@ -1,0 +1,53 @@
+schema_version: '2.0'
+title: Teusink1998_Glycolysis_TurboDesign Visualisation
+description: Dedicated presentation model for Teusink1998_Glycolysis_TurboDesign.
+standard: other
+tags:
+- metabolism
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  entrypoint: src.metabolism_visualisation:MetabolismVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Teusink1998_Glycolysis_TurboDesign Lab
+    question: Which central carbon and glycolytic metabolism observables show the strongest
+      activity in Teusink1998_Glycolysis_TurboDesign?
+    answer_focus: central carbon and glycolytic metabolism
+    sources:
+    - alias: metabolism_sbml_teusink1998_glycolysis_turbodesign_biomd0000000253_model
+      title: Teusink1998_Glycolysis_TurboDesign
+      scope: central carbon and glycolytic metabolism
+      label_caveat: Values are native SBML quantities. The bundled SBML is executed directly
+        and equations were not rewritten.
+      observables:
+      - id: hexose_monophosphate
+        label: Hexose Monophosphate
+        maps_to: HMP
+      - id: fructose_1_6_bisphosphate
+        label: Fructose 1 6 Bisphosphate
+        maps_to: Fru16P2
+      - id: atp
+        label: ATP
+        maps_to: ATP
+  communication_step: 1.0
+runtime:
+  dependencies:
+    packages:
+    - PyYAML==6.0.2
+parameters:
+- name: integration_step
+  value: 1.0
+  min: 0.0
+  units: model_time
+  description: Sampling step for the visualisation model.
+io:
+  inputs:
+  - name: metabolism_sbml_teusink1998_glycolysis_turbodesign_biomd0000000253_model_observable_values
+    description: Latest user-facing observable values from the core metabolism model.
+  - name: metabolism_sbml_teusink1998_glycolysis_turbodesign_biomd0000000253_model_run_summary
+    description: Run summary from the core metabolism model.
+  - name: metabolism_sbml_teusink1998_glycolysis_turbodesign_biomd0000000253_model_observable_labels
+    description: Display labels for user-facing observables.
+  outputs: []

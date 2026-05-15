@@ -1,0 +1,74 @@
+schema_version: '2.0'
+title: Nitin2023- Kinetic model of cellular metabolism Visualisation
+description: Dedicated presentation model for Nitin2023- Kinetic model of cellular metabolism.
+standard: other
+tags:
+- metabolism
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  entrypoint: src.metabolism_visualisation:MetabolismVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Nitin2023- Kinetic model of cellular metabolism Lab
+    question: Which metabolic pathway dynamics observables show the strongest activity in
+      Nitin2023- Kinetic model of cellular metabolism?
+    answer_focus: metabolic pathway dynamics
+    sources:
+    - alias: metabolism_sbml_nitin2023_kinetic_model_of_cellular_metabolism_model2312220001_model
+      title: Nitin2023- Kinetic model of cellular metabolism
+      scope: metabolic pathway dynamics
+      label_caveat: Values are native SBML quantities. Conservative pathway-state labels are
+        used where the bundled SBML does not encode exact metabolite identities.
+      observables:
+      - id: metabolic_pathway_state_1
+        label: Metabolic Pathway state 1
+        maps_to: mw3a3264af_63ed_4289_a17a_a14fb9d67eff
+      - id: metabolic_pathway_state_2
+        label: Metabolic Pathway state 2
+        maps_to: mw76465d1e_cf23_4b01_8554_20dd288edbd4
+      - id: metabolic_pathway_state_3
+        label: Metabolic Pathway state 3
+        maps_to: mwf28b5b41_dded_4f05_85a9_31b845b5a48d
+      - id: observable_2dg
+        label: 2dg
+        maps_to: mw74dc94dc_3350_40dc_8283_cf793630d973
+      - id: metabolic_pathway_state_5
+        label: Metabolic Pathway state 5
+        maps_to: mwb94475cd_d488_489d_b1fc_5b2ae6fb2aca
+      - id: pyruvate
+        label: pyruvate
+        maps_to: mwb7c043de_2d90_4ac3_a930_e270f276eaed
+      - id: lactate
+        label: lactate
+        maps_to: mwe356ca0b_cefd_47be_b766_6622e329dacf
+      - id: metabolic_pathway_state_8
+        label: Metabolic Pathway state 8
+        maps_to: mw7ca0a4aa_496a_48e2_b6e1_3d91d1d32180
+      - id: metabolic_pathway_state_9
+        label: Metabolic Pathway state 9
+        maps_to: mw509c3dcf_ce86_4d27_b3a4_80e5a27d1015
+      - id: metabolic_pathway_state_10
+        label: Metabolic Pathway state 10
+        maps_to: mw4df8e99a_bf7a_420c_b5b1_725efd98e423
+  communication_step: 1.0
+runtime:
+  dependencies:
+    packages:
+    - PyYAML==6.0.2
+parameters:
+- name: integration_step
+  value: 1.0
+  min: 0.0
+  units: model_time
+  description: Sampling step for the visualisation model.
+io:
+  inputs:
+  - name: metabolism_sbml_nitin2023_kinetic_model_of_cellular_metabolism_model2312220001_model_observable_values
+    description: Latest user-facing observable values from the core metabolism model.
+  - name: metabolism_sbml_nitin2023_kinetic_model_of_cellular_metabolism_model2312220001_model_run_summary
+    description: Run summary from the core metabolism model.
+  - name: metabolism_sbml_nitin2023_kinetic_model_of_cellular_metabolism_model2312220001_model_observable_labels
+    description: Display labels for user-facing observables.
+  outputs: []

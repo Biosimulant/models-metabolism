@@ -1,0 +1,109 @@
+schema_version: '2.0'
+title: Aubert2002 - Coupling between Brain electrical activity, Metabolism and Hemodynamics
+description: 'Aubert2002 - Coupling between Brainelectrical activity, Metabolism and Hemodynamics
+  Felix Winter encoded this model in SBMLas part of his work at ASD GmbH This model is described
+  in the article: A mod. It can be used to explore metabolic flux dynamics and compare pathway
+  behavior across conditions.'
+standard: sbml
+tags:
+- biomodels_ebi
+- faithful
+- metabolism
+- ode
+- sbml
+- tellurium
+authors:
+- Biosimulant Team
+- "Agn\xE8s Aubert"
+- Robert Costalat
+upstream:
+  id: biomodels_ebi:BIOMD0000000570
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000570
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000570
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000570?filename=BIOMD0000000570_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.aubert2002_coupling_between_brain_electrical_act_biomd0000000570_model:Aubert2002CouplingBetweenBrainElectricalActBiomd0000000570Model
+  init_kwargs:
+    model_path: data/BIOMD0000000570.xml
+    integration_step: 0.1
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_brain_energy_state_1
+    maps_to: species_1
+    default: 15.0
+    units: native SBML value
+    description: Initial condition for brain energy state 1. Maps to bundled SBML symbol `species_1`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_glucose
+    maps_to: species_4
+    default: 1.2
+    units: native SBML value
+    description: Initial condition for glucose. Maps to bundled SBML symbol `species_4`. Applied
+      before the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_glyceraldehyde_3_phosphate
+    maps_to: species_5
+    default: 0.0057
+    units: native SBML value
+    description: Initial condition for glyceraldehyde 3 phosphate. Maps to bundled SBML symbol
+      `species_5`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_nadh
+    maps_to: species_7
+    default: 0.026
+    units: native SBML value
+    description: Initial condition for nadh. Maps to bundled SBML symbol `species_7`. Applied
+      before the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_pyruvate
+    maps_to: species_8
+    default: 0.16
+    units: native SBML value
+    description: Initial condition for pyruvate. Maps to bundled SBML symbol `species_8`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: brain_energy_state_1
+    maps_to: species_1
+    label: Brain Energy state 1
+    description: Brain Energy state 1; conservative display label for an abstract SBML state
+      variable. Maps to SBML symbol `species_1`. Exact metabolite identity is not encoded
+      in the bundled SBML metadata.
+  - name: glucose
+    maps_to: species_4
+    label: glucose
+    description: glucose. Maps to SBML symbol `species_4`.
+  - name: glyceraldehyde_3_phosphate
+    maps_to: species_5
+    label: glyceraldehyde 3 phosphate
+    description: glyceraldehyde 3 phosphate. Maps to SBML symbol `species_5`.
+  - name: nadh
+    maps_to: species_7
+    label: NADH
+    description: NADH. Maps to SBML symbol `species_7`.
+  - name: pyruvate
+    maps_to: species_8
+    label: pyruvate
+    description: pyruvate. Maps to SBML symbol `species_8`.
+  - name: observable_values
+    description: Latest user-facing observable values from the SBML run.
+  - name: run_summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: observable_labels
+    description: Mapping from user-facing observable ports to display labels.
+parameters:
+- name: integration_step
+  value: 0.1
+  min: 0.0
+  units: model_time
+  description: Internal sampling step for Tellurium output collection.

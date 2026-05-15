@@ -1,0 +1,81 @@
+schema_version: '2.0'
+title: Galazzo1990_FermentationPathwayKinetics Lab
+description: 'This a model from the article: Fermentation pathway kinetics and metabolic flux
+  control in suspended and immobilized Saccharomyces cerevisiae Jorge L. It can be used to
+  explore metabolic flux dynamics and compare pathway behavior across conditions.'
+io:
+  inputs:
+  - name: initial_glucose_inside_the_cell
+    maps_to: metabolism_sbml_galazzo1990_fermentationpathwaykinetics_biomd0000000063_model.initial_glucose_inside_the_cell
+    default: 0.0345
+    units: native SBML value
+    description: Initial condition for glucose inside the cell. Maps to bundled SBML symbol
+      `Glci`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_atp
+    maps_to: metabolism_sbml_galazzo1990_fermentationpathwaykinetics_biomd0000000063_model.initial_atp
+    default: 1.19
+    units: native SBML value
+    description: Initial condition for atp. Maps to bundled SBML symbol `ATP`. Applied before
+      the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_glucose_6_phosphate
+    maps_to: metabolism_sbml_galazzo1990_fermentationpathwaykinetics_biomd0000000063_model.initial_glucose_6_phosphate
+    default: 1.011
+    units: native SBML value
+    description: Initial condition for glucose 6 phosphate. Maps to bundled SBML symbol `G6P`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_fructose_1_6_phosphate
+    maps_to: metabolism_sbml_galazzo1990_fermentationpathwaykinetics_biomd0000000063_model.initial_fructose_1_6_phosphate
+    default: 9.144
+    units: native SBML value
+    description: Initial condition for fructose 1 6 phosphate. Maps to bundled SBML symbol
+      `FDP`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_phosphoenol_pyruvate
+    maps_to: metabolism_sbml_galazzo1990_fermentationpathwaykinetics_biomd0000000063_model.initial_phosphoenol_pyruvate
+    default: 0.0095
+    units: native SBML value
+    description: Initial condition for phosphoenol pyruvate. Maps to bundled SBML symbol `PEP`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: glucose_inside_the_cell
+    maps_to: metabolism_sbml_galazzo1990_fermentationpathwaykinetics_biomd0000000063_model.glucose_inside_the_cell
+  - name: atp
+    maps_to: metabolism_sbml_galazzo1990_fermentationpathwaykinetics_biomd0000000063_model.atp
+  - name: glucose_6_phosphate
+    maps_to: metabolism_sbml_galazzo1990_fermentationpathwaykinetics_biomd0000000063_model.glucose_6_phosphate
+  - name: fructose_1_6_phosphate
+    maps_to: metabolism_sbml_galazzo1990_fermentationpathwaykinetics_biomd0000000063_model.fructose_1_6_phosphate
+  - name: phosphoenol_pyruvate
+    maps_to: metabolism_sbml_galazzo1990_fermentationpathwaykinetics_biomd0000000063_model.phosphoenol_pyruvate
+  - name: observable_values
+    maps_to: metabolism_sbml_galazzo1990_fermentationpathwaykinetics_biomd0000000063_model.observable_values
+  - name: run_summary
+    maps_to: metabolism_sbml_galazzo1990_fermentationpathwaykinetics_biomd0000000063_model.run_summary
+  - name: observable_labels
+    maps_to: metabolism_sbml_galazzo1990_fermentationpathwaykinetics_biomd0000000063_model.observable_labels
+models:
+- alias: metabolism_sbml_galazzo1990_fermentationpathwaykinetics_biomd0000000063_model
+  path: models/core
+  parameters:
+    model_path: data/BIOMD0000000063.xml
+    integration_step: 0.1
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: metabolism_sbml_galazzo1990_fermentationpathwaykinetics_biomd0000000063_model.observable_values
+  to:
+  - visualisation.metabolism_sbml_galazzo1990_fermentationpathwaykinetics_biomd0000000063_model_observable_values
+- from: metabolism_sbml_galazzo1990_fermentationpathwaykinetics_biomd0000000063_model.run_summary
+  to:
+  - visualisation.metabolism_sbml_galazzo1990_fermentationpathwaykinetics_biomd0000000063_model_run_summary
+- from: metabolism_sbml_galazzo1990_fermentationpathwaykinetics_biomd0000000063_model.observable_labels
+  to:
+  - visualisation.metabolism_sbml_galazzo1990_fermentationpathwaykinetics_biomd0000000063_model_observable_labels
+runtime:
+  duration: 10.0
+  communication_step: 1.0
+  initial_inputs: {}

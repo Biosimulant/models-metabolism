@@ -1,0 +1,111 @@
+schema_version: '2.0'
+title: Smith2011_HumanHeartMitochondrian_MetabolicModel
+description: 'This model is from the article: A metabolic model of the mitochondrion and its
+  use in modelling diseases of the tricarboxylic acid cycle. It can be used to explore metabolic
+  flux dynamics and compare pathway behavior across conditions.'
+standard: sbml
+tags:
+- biomodels_ebi
+- faithful
+- metabolism
+- ode
+- sbml
+- tellurium
+authors:
+- Biosimulant Team
+- Anthony C Smith
+- Alan J Robinson
+upstream:
+  id: biomodels_ebi:MODEL1106160000
+  source_db: biomodels_ebi
+  source_id: MODEL1106160000
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1106160000
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1106160000?filename=MODEL1106160000_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.smith2011_humanheartmitochondrian_metabolicmodel_model1106160000_model:Smith2011HumanheartmitochondrianMetabolicmodelModel1106160000Model
+  init_kwargs:
+    model_path: data/MODEL1106160000.xml
+    integration_step: 0.1
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_c00000cyto_biomass
+    maps_to: C00000Cyto
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for c00000cyto biomass. Maps to bundled SBML symbol `C00000Cyto`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from Tellurium setup-time value because no explicit SBML initial
+      value was available.
+  - name: initial_c00001cyto_h2o
+    maps_to: C00001Cyto
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for c00001cyto h2o. Maps to bundled SBML symbol `C00001Cyto`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from Tellurium setup-time value because no explicit SBML initial
+      value was available.
+  - name: initial_c00002cyto_atp
+    maps_to: C00002Cyto
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for c00002cyto atp. Maps to bundled SBML symbol `C00002Cyto`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from Tellurium setup-time value because no explicit SBML initial
+      value was available.
+  - name: initial_c00003cyto_nad
+    maps_to: C00003Cyto
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for c00003cyto nad. Maps to bundled SBML symbol `C00003Cyto`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from Tellurium setup-time value because no explicit SBML initial
+      value was available.
+  - name: initial_c00004cyto_nadh
+    maps_to: C00004Cyto
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for c00004cyto nadh. Maps to bundled SBML symbol `C00004Cyto`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from Tellurium setup-time value because no explicit SBML initial
+      value was available.
+  outputs:
+  - name: c00000cyto_biomass
+    maps_to: C00000Cyto
+    label: C00000cyto Biomass
+    description: C00000cyto Biomass. Maps to SBML symbol `C00000Cyto`.
+  - name: c00001cyto_h2o
+    maps_to: C00001Cyto
+    label: C00001cyto H2o
+    description: C00001cyto H2o. Maps to SBML symbol `C00001Cyto`.
+  - name: c00002cyto_atp
+    maps_to: C00002Cyto
+    label: C00002cyto ATP
+    description: C00002cyto ATP. Maps to SBML symbol `C00002Cyto`.
+  - name: c00003cyto_nad
+    maps_to: C00003Cyto
+    label: C00003cyto NAD
+    description: C00003cyto NAD. Maps to SBML symbol `C00003Cyto`.
+  - name: c00004cyto_nadh
+    maps_to: C00004Cyto
+    label: C00004cyto NADH
+    description: C00004cyto NADH. Maps to SBML symbol `C00004Cyto`.
+  - name: observable_values
+    description: Latest user-facing observable values from the SBML run.
+  - name: run_summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: observable_labels
+    description: Mapping from user-facing observable ports to display labels.
+parameters:
+- name: integration_step
+  value: 0.1
+  min: 0.0
+  units: model_time
+  description: Internal sampling step for Tellurium output collection.

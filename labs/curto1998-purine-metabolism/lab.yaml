@@ -1,0 +1,81 @@
+schema_version: '2.0'
+title: Curto1998 - purine metabolism Lab
+description: Curto1998 - purine metabolism This is a purine metabolism model that is geared
+  toward studies of gout. It can be used to explore metabolic flux dynamics and compare pathway
+  behavior across conditions.
+io:
+  inputs:
+  - name: initial_phosphoribosylpyrophosphate
+    maps_to: metabolism_sbml_curto1998_purine_metabolism_biomd0000000015_model.initial_phosphoribosylpyrophosphate
+    default: 5.01742
+    units: native SBML value
+    description: Initial condition for phosphoribosylpyrophosphate. Maps to bundled SBML symbol
+      `PRPP`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_inosine_monophosphate
+    maps_to: metabolism_sbml_curto1998_purine_metabolism_biomd0000000015_model.initial_inosine_monophosphate
+    default: 98.2634
+    units: native SBML value
+    description: Initial condition for inosine monophosphate. Maps to bundled SBML symbol
+      `IMP`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_adenylosuccinate
+    maps_to: metabolism_sbml_curto1998_purine_metabolism_biomd0000000015_model.initial_adenylosuccinate
+    default: 0.198189
+    units: native SBML value
+    description: Initial condition for adenylosuccinate. Maps to bundled SBML symbol `SAMP`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_atp
+    maps_to: metabolism_sbml_curto1998_purine_metabolism_biomd0000000015_model.initial_atp
+    default: 2475.35
+    units: native SBML value
+    description: Initial condition for atp. Maps to bundled SBML symbol `ATP`. Applied before
+      the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_s_adenosyl_l_methionine
+    maps_to: metabolism_sbml_curto1998_purine_metabolism_biomd0000000015_model.initial_s_adenosyl_l_methionine
+    default: 3.99187
+    units: native SBML value
+    description: Initial condition for s adenosyl l methionine. Maps to bundled SBML symbol
+      `SAM`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: phosphoribosylpyrophosphate
+    maps_to: metabolism_sbml_curto1998_purine_metabolism_biomd0000000015_model.phosphoribosylpyrophosphate
+  - name: inosine_monophosphate
+    maps_to: metabolism_sbml_curto1998_purine_metabolism_biomd0000000015_model.inosine_monophosphate
+  - name: adenylosuccinate
+    maps_to: metabolism_sbml_curto1998_purine_metabolism_biomd0000000015_model.adenylosuccinate
+  - name: atp
+    maps_to: metabolism_sbml_curto1998_purine_metabolism_biomd0000000015_model.atp
+  - name: s_adenosyl_l_methionine
+    maps_to: metabolism_sbml_curto1998_purine_metabolism_biomd0000000015_model.s_adenosyl_l_methionine
+  - name: observable_values
+    maps_to: metabolism_sbml_curto1998_purine_metabolism_biomd0000000015_model.observable_values
+  - name: run_summary
+    maps_to: metabolism_sbml_curto1998_purine_metabolism_biomd0000000015_model.run_summary
+  - name: observable_labels
+    maps_to: metabolism_sbml_curto1998_purine_metabolism_biomd0000000015_model.observable_labels
+models:
+- alias: metabolism_sbml_curto1998_purine_metabolism_biomd0000000015_model
+  path: models/core
+  parameters:
+    model_path: data/BIOMD0000000015.xml
+    integration_step: 0.1
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: metabolism_sbml_curto1998_purine_metabolism_biomd0000000015_model.observable_values
+  to:
+  - visualisation.metabolism_sbml_curto1998_purine_metabolism_biomd0000000015_model_observable_values
+- from: metabolism_sbml_curto1998_purine_metabolism_biomd0000000015_model.run_summary
+  to:
+  - visualisation.metabolism_sbml_curto1998_purine_metabolism_biomd0000000015_model_run_summary
+- from: metabolism_sbml_curto1998_purine_metabolism_biomd0000000015_model.observable_labels
+  to:
+  - visualisation.metabolism_sbml_curto1998_purine_metabolism_biomd0000000015_model_observable_labels
+runtime:
+  duration: 10.0
+  communication_step: 1.0
+  initial_inputs: {}

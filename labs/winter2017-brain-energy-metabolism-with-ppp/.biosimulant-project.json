@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "bc32923f-883b-4d78-8ab2-3e2d1af3fedc",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "0dd2715d-d034-409b-a13f-57015c5776c4",
+  "created_at": "2026-05-15T16:03:11.956544535+00:00",
+  "last_synced_at": "2026-05-15T18:43:34.732837+00:00",
+  "hub_manifest_hash": "90acfc2cf64caea7c2cc9fe039f682170d6f752c1fe8c61e3e7079aeb89b9f42",
+  "package_name": "winter2017-brain-energy-metabolism-with-ppp-lab"
+}

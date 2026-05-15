@@ -1,0 +1,114 @@
+schema_version: '2.0'
+title: Kamminga2017 - Metabolic model of Mycoplasma hyopneumoniae growth
+description: 'Kamminga2017 - Metabolic model of Mycoplasma hyopneumoniae growth This model
+  is described in the article: Metabolic modeling of energy balances in Mycoplasma hyopneumoniae
+  shows that pyruvate addition. It can be used to explore metabolic flux dynamics and compare
+  pathway behavior across conditions.'
+standard: sbml
+tags:
+- biomodels_ebi
+- faithful
+- metabolism
+- ode
+- sbml
+- tellurium
+authors:
+- Biosimulant Team
+- Tjerko Kamminga
+- Simen-Jan Slagman
+- Jetta J E Bijlsma
+- "V\xEDtor A P Martins dos Santos"
+- Maria Suarez-Diez
+upstream:
+  id: biomodels_ebi:MODEL1704250001
+  source_db: biomodels_ebi
+  source_id: MODEL1704250001
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1704250001
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1704250001?filename=MODEL1704250001_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.kamminga2017_metabolic_model_of_mycoplasma_hyopn_model1704250001_model:Kamminga2017MetabolicModelOfMycoplasmaHyopnModel1704250001Model
+  init_kwargs:
+    model_path: data/MODEL1704250001.xml
+    integration_step: 0.1
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_metabolic_pathway_state_1
+    maps_to: M_AMMONIUM_c
+    default: 1.0
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 1. Maps to bundled SBML symbol
+      `M_AMMONIUM_c`. Applied before the Tellurium simulation starts; this does not change
+      kinetic parameters or equations. Default from bundled SBML initial value.
+  - name: initial_lipoyl_adenylate
+    maps_to: M_LIPOYLAMP_c
+    default: 1.0
+    units: native SBML value
+    description: Initial condition for lipoyl adenylate. Maps to bundled SBML symbol `M_LIPOYLAMP_c`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_metabolic_pathway_state_3
+    maps_to: M_ACET_c
+    default: 1.0
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 3. Maps to bundled SBML symbol
+      `M_ACET_c`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_l_ribulose_5_phosphate
+    maps_to: M_LRIBULOSE5P_c
+    default: 1.0
+    units: native SBML value
+    description: Initial condition for l ribulose 5 phosphate. Maps to bundled SBML symbol
+      `M_LRIBULOSE5P_c`. Applied before the Tellurium simulation starts; this does not change
+      kinetic parameters or equations. Default from bundled SBML initial value.
+  - name: initial_l_valine
+    maps_to: M_VAL_c
+    default: 1.0
+    units: native SBML value
+    description: Initial condition for l valine. Maps to bundled SBML symbol `M_VAL_c`. Applied
+      before the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  outputs:
+  - name: metabolic_pathway_state_1
+    maps_to: M_AMMONIUM_c
+    label: Metabolic Pathway state 1
+    description: Metabolic Pathway state 1; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `M_AMMONIUM_c`. Exact metabolite identity is not
+      encoded in the bundled SBML metadata.
+  - name: lipoyl_adenylate
+    maps_to: M_LIPOYLAMP_c
+    label: Lipoyl Adenylate
+    description: Lipoyl Adenylate. Maps to SBML symbol `M_LIPOYLAMP_c`.
+  - name: metabolic_pathway_state_3
+    maps_to: M_ACET_c
+    label: Metabolic Pathway state 3
+    description: Metabolic Pathway state 3; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `M_ACET_c`. Exact metabolite identity is not encoded
+      in the bundled SBML metadata.
+  - name: l_ribulose_5_phosphate
+    maps_to: M_LRIBULOSE5P_c
+    label: L Ribulose 5 Phosphate
+    description: L Ribulose 5 Phosphate. Maps to SBML symbol `M_LRIBULOSE5P_c`.
+  - name: l_valine
+    maps_to: M_VAL_c
+    label: L Valine
+    description: L Valine. Maps to SBML symbol `M_VAL_c`.
+  - name: observable_values
+    description: Latest user-facing observable values from the SBML run.
+  - name: run_summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: observable_labels
+    description: Mapping from user-facing observable ports to display labels.
+parameters:
+- name: integration_step
+  value: 0.1
+  min: 0.0
+  units: model_time
+  description: Internal sampling step for Tellurium output collection.

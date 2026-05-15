@@ -1,0 +1,116 @@
+schema_version: '2.0'
+title: Saa2016 - Mammalian methionine cycle - approximate bayesian computation
+description: 'Construction of feasible and accurate kinetic models of metabolism: A Bayesian
+  approachPedro A. It can be used to explore metabolic flux dynamics and compare pathway behavior
+  across conditions.'
+standard: sbml
+tags:
+- biomodels_ebi
+- faithful
+- metabolism
+- ode
+- sbml
+- tellurium
+authors:
+- Biosimulant Team
+- Pedro Saa
+- Lars K Nielsen
+upstream:
+  id: biomodels_ebi:MODEL1603150000
+  source_db: biomodels_ebi
+  source_id: MODEL1603150000
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1603150000
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1603150000?filename=MODEL1603150000_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.saa2016_mammalian_methionine_cycle_approximate_b_model1603150000_model:Saa2016MammalianMethionineCycleApproximateBModel1603150000Model
+  init_kwargs:
+    model_path: data/MODEL1603150000.xml
+    integration_step: 0.1
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_methionine_cycle_state_1
+    maps_to: MET
+    default: 50.0
+    units: native SBML value
+    description: Initial condition for methionine cycle state 1. Maps to bundled SBML symbol
+      `MET`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_methionine_cycle_state_2
+    maps_to: ADOMET
+    default: 60.0
+    units: native SBML value
+    description: Initial condition for methionine cycle state 2. Maps to bundled SBML symbol
+      `ADOMET`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_methionine_cycle_state_3
+    maps_to: ADOHCY
+    default: 35.0
+    units: native SBML value
+    description: Initial condition for methionine cycle state 3. Maps to bundled SBML symbol
+      `ADOHCY`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_methionine_cycle_state_4
+    maps_to: MTHF
+    default: 1.7
+    units: native SBML value
+    description: Initial condition for methionine cycle state 4. Maps to bundled SBML symbol
+      `MTHF`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_methionine_cycle_state_5
+    maps_to: HCY
+    default: 3.5
+    units: native SBML value
+    description: Initial condition for methionine cycle state 5. Maps to bundled SBML symbol
+      `HCY`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: methionine_cycle_state_1
+    maps_to: MET
+    label: Methionine Cycle state 1
+    description: Methionine Cycle state 1; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `MET`. Exact metabolite identity is not encoded
+      in the bundled SBML metadata.
+  - name: methionine_cycle_state_2
+    maps_to: ADOMET
+    label: Methionine Cycle state 2
+    description: Methionine Cycle state 2; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `ADOMET`. Exact metabolite identity is not encoded
+      in the bundled SBML metadata.
+  - name: methionine_cycle_state_3
+    maps_to: ADOHCY
+    label: Methionine Cycle state 3
+    description: Methionine Cycle state 3; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `ADOHCY`. Exact metabolite identity is not encoded
+      in the bundled SBML metadata.
+  - name: methionine_cycle_state_4
+    maps_to: MTHF
+    label: Methionine Cycle state 4
+    description: Methionine Cycle state 4; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `MTHF`. Exact metabolite identity is not encoded
+      in the bundled SBML metadata.
+  - name: methionine_cycle_state_5
+    maps_to: HCY
+    label: Methionine Cycle state 5
+    description: Methionine Cycle state 5; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `HCY`. Exact metabolite identity is not encoded
+      in the bundled SBML metadata.
+  - name: observable_values
+    description: Latest user-facing observable values from the SBML run.
+  - name: run_summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: observable_labels
+    description: Mapping from user-facing observable ports to display labels.
+parameters:
+- name: integration_step
+  value: 0.1
+  min: 0.0
+  units: model_time
+  description: Internal sampling step for Tellurium output collection.

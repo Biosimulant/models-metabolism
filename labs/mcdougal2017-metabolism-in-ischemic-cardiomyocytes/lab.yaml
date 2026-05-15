@@ -1,0 +1,81 @@
+schema_version: '2.0'
+title: McDougal2017 - Metabolism in ischemic cardiomyocytes Lab
+description: Heart disease remains the leading cause of death globally. Although reperfusion
+  following myocardial ischemia can prevent death by restoring nutrient flow, ischemia/reperfusion
+  injury can cause signif.
+io:
+  inputs:
+  - name: initial_h_super_plus_endsuper_sub_i_endsub
+    maps_to: metabolism_sbml_mcdougal2017_metabolism_in_ischemic_cardiomyocyt_biomd0000000961_model.initial_h_super_plus_endsuper_sub_i_endsub
+    default: 7.94e-05
+    units: native SBML value
+    description: Initial condition for h super plus endsuper sub i endsub. Maps to bundled
+      SBML symbol `s1`. Applied before the Tellurium simulation starts; this does not change
+      kinetic parameters or equations. Default from bundled SBML initial value.
+  - name: initial_h_super_plus_endsuper_sub_o_endsub
+    maps_to: metabolism_sbml_mcdougal2017_metabolism_in_ischemic_cardiomyocyt_biomd0000000961_model.initial_h_super_plus_endsuper_sub_o_endsub
+    default: 1.0e-12
+    units: native SBML value
+    description: Initial condition for h super plus endsuper sub o endsub. Maps to bundled
+      SBML symbol `s2`. Applied before the Tellurium simulation starts; this does not change
+      kinetic parameters or equations. Default from bundled SBML initial value.
+  - name: initial_oh_super_minus_endsuper_sub_i_endsub
+    maps_to: metabolism_sbml_mcdougal2017_metabolism_in_ischemic_cardiomyocyt_biomd0000000961_model.initial_oh_super_minus_endsuper_sub_i_endsub
+    default: 1.0e-12
+    units: native SBML value
+    description: Initial condition for oh super minus endsuper sub i endsub. Maps to bundled
+      SBML symbol `s7`. Applied before the Tellurium simulation starts; this does not change
+      kinetic parameters or equations. Default from bundled SBML initial value.
+  - name: initial_oh_super_minus_endsuper_sub_o_endsub
+    maps_to: metabolism_sbml_mcdougal2017_metabolism_in_ischemic_cardiomyocyt_biomd0000000961_model.initial_oh_super_minus_endsuper_sub_o_endsub
+    default: 1.0e-12
+    units: native SBML value
+    description: Initial condition for oh super minus endsuper sub o endsub. Maps to bundled
+      SBML symbol `s8`. Applied before the Tellurium simulation starts; this does not change
+      kinetic parameters or equations. Default from bundled SBML initial value.
+  - name: initial_na_super_plus_endsuper_sub_i_endsub
+    maps_to: metabolism_sbml_mcdougal2017_metabolism_in_ischemic_cardiomyocyt_biomd0000000961_model.initial_na_super_plus_endsuper_sub_i_endsub
+    default: 5.0
+    units: native SBML value
+    description: Initial condition for na super plus endsuper sub i endsub. Maps to bundled
+      SBML symbol `s24`. Applied before the Tellurium simulation starts; this does not change
+      kinetic parameters or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: h_super_plus_endsuper_sub_i_endsub
+    maps_to: metabolism_sbml_mcdougal2017_metabolism_in_ischemic_cardiomyocyt_biomd0000000961_model.h_super_plus_endsuper_sub_i_endsub
+  - name: h_super_plus_endsuper_sub_o_endsub
+    maps_to: metabolism_sbml_mcdougal2017_metabolism_in_ischemic_cardiomyocyt_biomd0000000961_model.h_super_plus_endsuper_sub_o_endsub
+  - name: oh_super_minus_endsuper_sub_i_endsub
+    maps_to: metabolism_sbml_mcdougal2017_metabolism_in_ischemic_cardiomyocyt_biomd0000000961_model.oh_super_minus_endsuper_sub_i_endsub
+  - name: oh_super_minus_endsuper_sub_o_endsub
+    maps_to: metabolism_sbml_mcdougal2017_metabolism_in_ischemic_cardiomyocyt_biomd0000000961_model.oh_super_minus_endsuper_sub_o_endsub
+  - name: na_super_plus_endsuper_sub_i_endsub
+    maps_to: metabolism_sbml_mcdougal2017_metabolism_in_ischemic_cardiomyocyt_biomd0000000961_model.na_super_plus_endsuper_sub_i_endsub
+  - name: observable_values
+    maps_to: metabolism_sbml_mcdougal2017_metabolism_in_ischemic_cardiomyocyt_biomd0000000961_model.observable_values
+  - name: run_summary
+    maps_to: metabolism_sbml_mcdougal2017_metabolism_in_ischemic_cardiomyocyt_biomd0000000961_model.run_summary
+  - name: observable_labels
+    maps_to: metabolism_sbml_mcdougal2017_metabolism_in_ischemic_cardiomyocyt_biomd0000000961_model.observable_labels
+models:
+- alias: metabolism_sbml_mcdougal2017_metabolism_in_ischemic_cardiomyocyt_biomd0000000961_model
+  path: models/core
+  parameters:
+    model_path: data/BIOMD0000000961.xml
+    integration_step: 0.1
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: metabolism_sbml_mcdougal2017_metabolism_in_ischemic_cardiomyocyt_biomd0000000961_model.observable_values
+  to:
+  - visualisation.metabolism_sbml_mcdougal2017_metabolism_in_ischemic_cardiomyocyt_biomd0000000961_model_observable_values
+- from: metabolism_sbml_mcdougal2017_metabolism_in_ischemic_cardiomyocyt_biomd0000000961_model.run_summary
+  to:
+  - visualisation.metabolism_sbml_mcdougal2017_metabolism_in_ischemic_cardiomyocyt_biomd0000000961_model_run_summary
+- from: metabolism_sbml_mcdougal2017_metabolism_in_ischemic_cardiomyocyt_biomd0000000961_model.observable_labels
+  to:
+  - visualisation.metabolism_sbml_mcdougal2017_metabolism_in_ischemic_cardiomyocyt_biomd0000000961_model_observable_labels
+runtime:
+  duration: 10.0
+  communication_step: 1.0
+  initial_inputs: {}

@@ -1,0 +1,82 @@
+schema_version: '2.0'
+title: Smallbone2015 - Multi-scale model of E. coli metabolism Lab
+description: Metabolism Smallbone2015Multi Scale Model Of EColi Metabo Model1503050000Model
+  captures core biological behavior in the context of metabolism, sbml, biomodels_ebi using
+  a biomodels_ebi-sourced OTHER model. When you run it, you can observe state and evaluate
+  how the modeled system changes across runs.
+io:
+  inputs:
+  - name: initial_phosphoenolpyruvate
+    maps_to: metabolism_sbml_smallbone2015_multi_scale_model_of_e_coli_metabo_model1503050000_model.initial_phosphoenolpyruvate
+    default: 2.67
+    units: native SBML value
+    description: Initial condition for phosphoenolpyruvate. Maps to bundled SBML symbol `PEP`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_glucose_6_phosphate
+    maps_to: metabolism_sbml_smallbone2015_multi_scale_model_of_e_coli_metabo_model1503050000_model.initial_glucose_6_phosphate
+    default: 3.48
+    units: native SBML value
+    description: Initial condition for glucose 6 phosphate. Maps to bundled SBML symbol `G6P`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_pyruvate
+    maps_to: metabolism_sbml_smallbone2015_multi_scale_model_of_e_coli_metabo_model1503050000_model.initial_pyruvate
+    default: 2.67
+    units: native SBML value
+    description: Initial condition for pyruvate. Maps to bundled SBML symbol `PYR`. Applied
+      before the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_fructose_6_phosphate
+    maps_to: metabolism_sbml_smallbone2015_multi_scale_model_of_e_coli_metabo_model1503050000_model.initial_fructose_6_phosphate
+    default: 0.6
+    units: native SBML value
+    description: Initial condition for fructose 6 phosphate. Maps to bundled SBML symbol `F6P`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_microbial_metabolism_state_5
+    maps_to: metabolism_sbml_smallbone2015_multi_scale_model_of_e_coli_metabo_model1503050000_model.initial_microbial_metabolism_state_5
+    default: 0.653
+    units: native SBML value
+    description: Initial condition for microbial metabolism state 5. Maps to bundled SBML
+      symbol `G1P`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: phosphoenolpyruvate
+    maps_to: metabolism_sbml_smallbone2015_multi_scale_model_of_e_coli_metabo_model1503050000_model.phosphoenolpyruvate
+  - name: glucose_6_phosphate
+    maps_to: metabolism_sbml_smallbone2015_multi_scale_model_of_e_coli_metabo_model1503050000_model.glucose_6_phosphate
+  - name: pyruvate
+    maps_to: metabolism_sbml_smallbone2015_multi_scale_model_of_e_coli_metabo_model1503050000_model.pyruvate
+  - name: fructose_6_phosphate
+    maps_to: metabolism_sbml_smallbone2015_multi_scale_model_of_e_coli_metabo_model1503050000_model.fructose_6_phosphate
+  - name: microbial_metabolism_state_5
+    maps_to: metabolism_sbml_smallbone2015_multi_scale_model_of_e_coli_metabo_model1503050000_model.microbial_metabolism_state_5
+  - name: observable_values
+    maps_to: metabolism_sbml_smallbone2015_multi_scale_model_of_e_coli_metabo_model1503050000_model.observable_values
+  - name: run_summary
+    maps_to: metabolism_sbml_smallbone2015_multi_scale_model_of_e_coli_metabo_model1503050000_model.run_summary
+  - name: observable_labels
+    maps_to: metabolism_sbml_smallbone2015_multi_scale_model_of_e_coli_metabo_model1503050000_model.observable_labels
+models:
+- alias: metabolism_sbml_smallbone2015_multi_scale_model_of_e_coli_metabo_model1503050000_model
+  path: models/core
+  parameters:
+    model_path: data/MODEL1503050000.xml
+    integration_step: 0.1
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: metabolism_sbml_smallbone2015_multi_scale_model_of_e_coli_metabo_model1503050000_model.observable_values
+  to:
+  - visualisation.metabolism_sbml_smallbone2015_multi_scale_model_of_e_coli_metabo_model1503050000_model_observable_values
+- from: metabolism_sbml_smallbone2015_multi_scale_model_of_e_coli_metabo_model1503050000_model.run_summary
+  to:
+  - visualisation.metabolism_sbml_smallbone2015_multi_scale_model_of_e_coli_metabo_model1503050000_model_run_summary
+- from: metabolism_sbml_smallbone2015_multi_scale_model_of_e_coli_metabo_model1503050000_model.observable_labels
+  to:
+  - visualisation.metabolism_sbml_smallbone2015_multi_scale_model_of_e_coli_metabo_model1503050000_model_observable_labels
+runtime:
+  duration: 10.0
+  communication_step: 1.0
+  initial_inputs: {}

@@ -1,0 +1,182 @@
+schema_version: '2.0'
+title: Sier2017_E2_combined Visualisation
+description: Dedicated presentation model for Sier2017_E2_combined.
+standard: other
+tags:
+- metabolism
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  entrypoint: src.metabolism_visualisation:MetabolismVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Sier2017_E2_combined Lab
+    question: Which metabolic pathway dynamics observables show the strongest activity in
+      Sier2017_E2_combined?
+    answer_focus: metabolic pathway dynamics
+    sources:
+    - alias: metabolism_sbml_sier2017_e2_combined_model1711210002_model
+      title: Sier2017_E2_combined
+      scope: metabolic pathway dynamics
+      label_caveat: Values are native SBML quantities. Conservative pathway-state labels are
+        used where the bundled SBML does not encode exact metabolite identities.
+      observables:
+      - id: metabolic_pathway_state_1
+        label: Metabolic Pathway state 1
+        maps_to: Faeces
+      - id: metabolic_pathway_state_2
+        label: Metabolic Pathway state 2
+        maps_to: count
+      - id: metabolic_pathway_state_3
+        label: Metabolic Pathway state 3
+        maps_to: default_0
+      - id: metabolic_pathway_state_4
+        label: Metabolic Pathway state 4
+        maps_to: s16
+      - id: metabolic_pathway_state_5
+        label: Metabolic Pathway state 5
+        maps_to: s18
+      - id: metabolic_pathway_state_6
+        label: Metabolic Pathway state 6
+        maps_to: s19
+      - id: metabolic_pathway_state_7
+        label: Metabolic Pathway state 7
+        maps_to: s32
+      - id: metabolic_pathway_state_8
+        label: Metabolic Pathway state 8
+        maps_to: s33
+      - id: metabolic_pathway_state_9
+        label: Metabolic Pathway state 9
+        maps_to: s15
+      - id: metabolic_pathway_state_10
+        label: Metabolic Pathway state 10
+        maps_to: s17
+      - id: metabolic_pathway_state_11
+        label: Metabolic Pathway state 11
+        maps_to: s20
+      - id: metabolic_pathway_state_12
+        label: Metabolic Pathway state 12
+        maps_to: s21
+      - id: metabolic_pathway_state_13
+        label: Metabolic Pathway state 13
+        maps_to: s29
+      - id: metabolic_pathway_state_14
+        label: Metabolic Pathway state 14
+        maps_to: s1
+      - id: metabolic_pathway_state_15
+        label: Metabolic Pathway state 15
+        maps_to: s3
+      - id: metabolic_pathway_state_16
+        label: Metabolic Pathway state 16
+        maps_to: s5
+      - id: metabolic_pathway_state_17
+        label: Metabolic Pathway state 17
+        maps_to: s8
+      - id: metabolic_pathway_state_18
+        label: Metabolic Pathway state 18
+        maps_to: s9
+      - id: metabolic_pathway_state_19
+        label: Metabolic Pathway state 19
+        maps_to: s10
+      - id: metabolic_pathway_state_20
+        label: Metabolic Pathway state 20
+        maps_to: s11
+      - id: metabolic_pathway_state_21
+        label: Metabolic Pathway state 21
+        maps_to: s12
+      - id: metabolic_pathway_state_22
+        label: Metabolic Pathway state 22
+        maps_to: s13
+      - id: metabolic_pathway_state_23
+        label: Metabolic Pathway state 23
+        maps_to: E2_Rest_of_body
+      - id: metabolic_pathway_state_24
+        label: Metabolic Pathway state 24
+        maps_to: E2_Liver_cells
+      - id: metabolic_pathway_state_25
+        label: Metabolic Pathway state 25
+        maps_to: ER_Liver_cells
+      - id: metabolic_pathway_state_26
+        label: Metabolic Pathway state 26
+        maps_to: ER_E2_Liver_cells
+      - id: e13s
+        label: E13s
+        maps_to: E13S_Liver_cells
+      - id: e217bg
+        label: E217bg
+        maps_to: E217BG_Liver_cells
+      - id: metabolic_pathway_state_29
+        label: Metabolic Pathway state 29
+        maps_to: E2_NSB
+      - id: metabolic_pathway_state_30
+        label: Metabolic Pathway state 30
+        maps_to: NSB
+      - id: observable_4ohe2
+        label: 4ohe2
+        maps_to: _4OHE2
+      - id: observable_2ohe2
+        label: 2ohe2
+        maps_to: _2OHE2
+      - id: metabolic_pathway_state_33
+        label: Metabolic Pathway state 33
+        maps_to: E1
+      - id: observable_4ohe1
+        label: 4ohe1
+        maps_to: _4OHE1
+      - id: observable_2ohe1
+        label: 2ohe1
+        maps_to: _2OHE1
+      - id: metabolic_pathway_state_36
+        label: Metabolic Pathway state 36
+        maps_to: E2_Brain
+      - id: metabolic_pathway_state_37
+        label: Metabolic Pathway state 37
+        maps_to: E2_Gonads_cells
+      - id: metabolic_pathway_state_38
+        label: Metabolic Pathway state 38
+        maps_to: ER_Gonads_cells
+      - id: metabolic_pathway_state_39
+        label: Metabolic Pathway state 39
+        maps_to: ER_E2_Gonads_cells
+      - id: metabolic_pathway_state_40
+        label: Metabolic Pathway state 40
+        maps_to: E2_Skin
+      - id: metabolic_pathway_state_41
+        label: Metabolic Pathway state 41
+        maps_to: E2_Muscle
+      - id: metabolic_pathway_state_42
+        label: Metabolic Pathway state 42
+        maps_to: E2_Adipose
+      - id: metabolic_pathway_state_43
+        label: Metabolic Pathway state 43
+        maps_to: E2_Dose_IV
+      - id: metabolic_pathway_state_44
+        label: Metabolic Pathway state 44
+        maps_to: E2_Pancreas
+      - id: metabolic_pathway_state_45
+        label: Metabolic Pathway state 45
+        maps_to: E2_Dose_oral
+      - id: metabolic_pathway_state_46
+        label: Metabolic Pathway state 46
+        maps_to: E2_Gonads_blood
+  communication_step: 1.0
+runtime:
+  dependencies:
+    packages:
+    - PyYAML==6.0.2
+parameters:
+- name: integration_step
+  value: 1.0
+  min: 0.0
+  units: model_time
+  description: Sampling step for the visualisation model.
+io:
+  inputs:
+  - name: metabolism_sbml_sier2017_e2_combined_model1711210002_model_observable_values
+    description: Latest user-facing observable values from the core metabolism model.
+  - name: metabolism_sbml_sier2017_e2_combined_model1711210002_model_run_summary
+    description: Run summary from the core metabolism model.
+  - name: metabolism_sbml_sier2017_e2_combined_model1711210002_model_observable_labels
+    description: Display labels for user-facing observables.
+  outputs: []

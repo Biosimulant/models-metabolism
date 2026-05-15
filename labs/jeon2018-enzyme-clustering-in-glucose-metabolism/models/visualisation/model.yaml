@@ -1,0 +1,101 @@
+schema_version: '2.0'
+title: Jeon2018 - Enzyme clustering in Glucose metabolism Visualisation
+description: Dedicated presentation model for Jeon2018 - Enzyme clustering in Glucose metabolism.
+standard: other
+tags:
+- metabolism
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  entrypoint: src.metabolism_visualisation:MetabolismVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Jeon2018 - Enzyme clustering in Glucose metabolism Lab
+    question: Which central carbon and glycolytic metabolism observables show the strongest
+      activity in Jeon2018 - Enzyme clustering in Glucose metabolism?
+    answer_focus: central carbon and glycolytic metabolism
+    sources:
+    - alias: metabolism_sbml_jeon2018_enzyme_clustering_in_glucose_metabolism_biomd0000001055_model
+      title: Jeon2018 - Enzyme clustering in Glucose metabolism
+      scope: central carbon and glycolytic metabolism
+      label_caveat: Values are native SBML quantities. Conservative pathway-state labels are
+        used where the bundled SBML does not encode exact metabolite identities.
+      observables:
+      - id: glycolysis_state_1
+        label: Glycolysis state 1
+        maps_to: Glucose
+      - id: fructose_6_phosphate
+        label: Fructose 6 Phosphate
+        maps_to: Fructose_6_Phosphate
+      - id: fructose_1_6_bisphosphate
+        label: Fructose 1 6 Bisphosphate
+        maps_to: Fructose_1_6_Bisphosphate
+      - id: observable_3_phosphoglycerate
+        label: 3 Phosphoglycerate
+        maps_to: _3_Phosphoglycerate
+      - id: glycolysis_state_5
+        label: Glycolysis state 5
+        maps_to: Phosphoenolpyruvate
+      - id: glycolysis_state_6
+        label: Glycolysis state 6
+        maps_to: Pyruvate
+      - id: glycolysis_state_7
+        label: Glycolysis state 7
+        maps_to: Oxaloacetate
+      - id: metabolic_outcome_of_pentose_phosphate_shunt
+        label: Metabolic Outcome Of Pentose Phosphate Shunt
+        maps_to: Metabolic_outcome_of_Pentose_Phosphate_Shunt
+      - id: metabolic_outcome_of_serine_biosynthesis_flux
+        label: Metabolic Outcome Of Serine Biosynthesis Flux
+        maps_to: Metabolic_outcome_of_Serine_Biosynthesis_Flux
+      - id: metabolic_outcome_of_glycolytic_flux
+        label: Metabolic Outcome Of Glycolytic Flux
+        maps_to: Metabolic_outcome_of_Glycolytic_Flux
+      - id: phosphofructokinase_1
+        label: Phosphofructokinase 1
+        maps_to: Phosphofructokinase_1
+      - id: fructose_1_6_bisphosphatase
+        label: Fructose 1 6 Bisphosphatase
+        maps_to: Fructose_1_6_Bisphosphatase
+      - id: large_sized_enzyme_clusters
+        label: Large Sized Enzyme Clusters
+        maps_to: Large_sized_enzyme_clusters
+      - id: medium_sized_enzyme_clusters
+        label: Medium Sized Enzyme Clusters
+        maps_to: Medium_sized_enzyme_clusters
+      - id: small_sized_enzyme_clusters
+        label: Small Sized Enzyme Clusters
+        maps_to: Small_sized_enzyme_clusters
+      - id: pyruvate_kinase_m2_dimers
+        label: Pyruvate Kinase M2 Dimers
+        maps_to: Pyruvate_Kinase_M2_dimers
+      - id: phosphoenolpyruvate_carboxykinase_1
+        label: Phosphoenolpyruvate Carboxykinase 1
+        maps_to: Phosphoenolpyruvate_Carboxykinase_1
+      - id: glycosylated_phosphofructokinase
+        label: Glycosylated Phosphofructokinase
+        maps_to: Glycosylated_Phosphofructokinase
+      - id: pyruvate_kinase_m2_tetramers
+        label: Pyruvate Kinase M2 Tetramers
+        maps_to: Pyruvate_Kinase_M2_tetramers
+  communication_step: 1.0
+runtime:
+  dependencies:
+    packages:
+    - PyYAML==6.0.2
+parameters:
+- name: integration_step
+  value: 1.0
+  min: 0.0
+  units: model_time
+  description: Sampling step for the visualisation model.
+io:
+  inputs:
+  - name: metabolism_sbml_jeon2018_enzyme_clustering_in_glucose_metabolism_biomd0000001055_model_observable_values
+    description: Latest user-facing observable values from the core metabolism model.
+  - name: metabolism_sbml_jeon2018_enzyme_clustering_in_glucose_metabolism_biomd0000001055_model_run_summary
+    description: Run summary from the core metabolism model.
+  - name: metabolism_sbml_jeon2018_enzyme_clustering_in_glucose_metabolism_biomd0000001055_model_observable_labels
+    description: Display labels for user-facing observables.
+  outputs: []

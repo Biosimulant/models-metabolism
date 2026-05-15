@@ -1,0 +1,117 @@
+schema_version: '2.0'
+title: Poolman2004_CalvinCycle
+description: 'This a model from the article: Applications of metabolic modelling to plant
+  metabolism. It can be used to explore metabolic flux dynamics and compare pathway behavior
+  across conditions.'
+standard: sbml
+tags:
+- biomodels_ebi
+- faithful
+- metabolism
+- ode
+- sbml
+- tellurium
+authors:
+- Biosimulant Team
+- M G Poolman
+- H E Assmus
+- D A Fell
+upstream:
+  id: biomodels_ebi:BIOMD0000000013
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000013
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000013
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000013?filename=BIOMD0000000013_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.poolman2004_calvincycle_biomd0000000013_model:Poolman2004CalvincycleBiomd0000000013Model
+  init_kwargs:
+    model_path: data/BIOMD0000000013.xml
+    integration_step: 0.1
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_metabolic_pathway_state_1
+    maps_to: RuBP_ch
+    default: 0.33644
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 1. Maps to bundled SBML symbol
+      `RuBP_ch`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_metabolic_pathway_state_2
+    maps_to: PGA_ch
+    default: 3.35479
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 2. Maps to bundled SBML symbol
+      `PGA_ch`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_metabolic_pathway_state_3
+    maps_to: ATP_ch
+    default: 0.49806
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 3. Maps to bundled SBML symbol
+      `ATP_ch`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_metabolic_pathway_state_4
+    maps_to: BPGA_ch
+    default: 0.14825
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 4. Maps to bundled SBML symbol
+      `BPGA_ch`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_metabolic_pathway_state_5
+    maps_to: GAP_ch
+    default: 0.01334
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 5. Maps to bundled SBML symbol
+      `GAP_ch`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: metabolic_pathway_state_1
+    maps_to: RuBP_ch
+    label: Metabolic Pathway state 1
+    description: Metabolic Pathway state 1; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `RuBP_ch`. Exact metabolite identity is not encoded
+      in the bundled SBML metadata.
+  - name: metabolic_pathway_state_2
+    maps_to: PGA_ch
+    label: Metabolic Pathway state 2
+    description: Metabolic Pathway state 2; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `PGA_ch`. Exact metabolite identity is not encoded
+      in the bundled SBML metadata.
+  - name: metabolic_pathway_state_3
+    maps_to: ATP_ch
+    label: Metabolic Pathway state 3
+    description: Metabolic Pathway state 3; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `ATP_ch`. Exact metabolite identity is not encoded
+      in the bundled SBML metadata.
+  - name: metabolic_pathway_state_4
+    maps_to: BPGA_ch
+    label: Metabolic Pathway state 4
+    description: Metabolic Pathway state 4; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `BPGA_ch`. Exact metabolite identity is not encoded
+      in the bundled SBML metadata.
+  - name: metabolic_pathway_state_5
+    maps_to: GAP_ch
+    label: Metabolic Pathway state 5
+    description: Metabolic Pathway state 5; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `GAP_ch`. Exact metabolite identity is not encoded
+      in the bundled SBML metadata.
+  - name: observable_values
+    description: Latest user-facing observable values from the SBML run.
+  - name: run_summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: observable_labels
+    description: Mapping from user-facing observable ports to display labels.
+parameters:
+- name: integration_step
+  value: 0.1
+  min: 0.0
+  units: model_time
+  description: Internal sampling step for Tellurium output collection.

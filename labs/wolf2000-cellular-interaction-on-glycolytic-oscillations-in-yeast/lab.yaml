@@ -1,0 +1,81 @@
+schema_version: '2.0'
+title: Wolf2000 - Cellular interaction on glycolytic oscillations in yeast Lab
+description: Wolf2000 - Cellular interaction on glycolyticoscillations in yeast A two-cell
+  model of glycolysis. It can be used to explore metabolic flux dynamics and compare pathway
+  behavior across conditions.
+io:
+  inputs:
+  - name: initial_glycolysis_state_1
+    maps_to: metabolism_sbml_wolf2000_cellular_interaction_on_glycolytic_osci_biomd0000000691_model.initial_glycolysis_state_1
+    default: 5.8
+    units: native SBML value
+    description: Initial condition for glycolysis state 1. Maps to bundled SBML symbol `S1__Cell_1_`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_glycolysis_state_2
+    maps_to: metabolism_sbml_wolf2000_cellular_interaction_on_glycolytic_osci_biomd0000000691_model.initial_glycolysis_state_2
+    default: 2.9
+    units: native SBML value
+    description: Initial condition for glycolysis state 2. Maps to bundled SBML symbol `S1__Cell_2_`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_glycolysis_state_3
+    maps_to: metabolism_sbml_wolf2000_cellular_interaction_on_glycolytic_osci_biomd0000000691_model.initial_glycolysis_state_3
+    default: 0.9
+    units: native SBML value
+    description: Initial condition for glycolysis state 3. Maps to bundled SBML symbol `S2__Cell_1_`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_glycolysis_state_4
+    maps_to: metabolism_sbml_wolf2000_cellular_interaction_on_glycolytic_osci_biomd0000000691_model.initial_glycolysis_state_4
+    default: 0.45
+    units: native SBML value
+    description: Initial condition for glycolysis state 4. Maps to bundled SBML symbol `S2__Cell_2_`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_glycolysis_state_5
+    maps_to: metabolism_sbml_wolf2000_cellular_interaction_on_glycolytic_osci_biomd0000000691_model.initial_glycolysis_state_5
+    default: 0.2
+    units: native SBML value
+    description: Initial condition for glycolysis state 5. Maps to bundled SBML symbol `S3__Cell_1_`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: glycolysis_state_1
+    maps_to: metabolism_sbml_wolf2000_cellular_interaction_on_glycolytic_osci_biomd0000000691_model.glycolysis_state_1
+  - name: glycolysis_state_2
+    maps_to: metabolism_sbml_wolf2000_cellular_interaction_on_glycolytic_osci_biomd0000000691_model.glycolysis_state_2
+  - name: glycolysis_state_3
+    maps_to: metabolism_sbml_wolf2000_cellular_interaction_on_glycolytic_osci_biomd0000000691_model.glycolysis_state_3
+  - name: glycolysis_state_4
+    maps_to: metabolism_sbml_wolf2000_cellular_interaction_on_glycolytic_osci_biomd0000000691_model.glycolysis_state_4
+  - name: glycolysis_state_5
+    maps_to: metabolism_sbml_wolf2000_cellular_interaction_on_glycolytic_osci_biomd0000000691_model.glycolysis_state_5
+  - name: observable_values
+    maps_to: metabolism_sbml_wolf2000_cellular_interaction_on_glycolytic_osci_biomd0000000691_model.observable_values
+  - name: run_summary
+    maps_to: metabolism_sbml_wolf2000_cellular_interaction_on_glycolytic_osci_biomd0000000691_model.run_summary
+  - name: observable_labels
+    maps_to: metabolism_sbml_wolf2000_cellular_interaction_on_glycolytic_osci_biomd0000000691_model.observable_labels
+models:
+- alias: metabolism_sbml_wolf2000_cellular_interaction_on_glycolytic_osci_biomd0000000691_model
+  path: models/core
+  parameters:
+    model_path: data/BIOMD0000000691.xml
+    integration_step: 0.1
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: metabolism_sbml_wolf2000_cellular_interaction_on_glycolytic_osci_biomd0000000691_model.observable_values
+  to:
+  - visualisation.metabolism_sbml_wolf2000_cellular_interaction_on_glycolytic_osci_biomd0000000691_model_observable_values
+- from: metabolism_sbml_wolf2000_cellular_interaction_on_glycolytic_osci_biomd0000000691_model.run_summary
+  to:
+  - visualisation.metabolism_sbml_wolf2000_cellular_interaction_on_glycolytic_osci_biomd0000000691_model_run_summary
+- from: metabolism_sbml_wolf2000_cellular_interaction_on_glycolytic_osci_biomd0000000691_model.observable_labels
+  to:
+  - visualisation.metabolism_sbml_wolf2000_cellular_interaction_on_glycolytic_osci_biomd0000000691_model_observable_labels
+runtime:
+  duration: 10.0
+  communication_step: 1.0
+  initial_inputs: {}

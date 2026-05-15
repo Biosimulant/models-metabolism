@@ -1,0 +1,109 @@
+schema_version: '2.0'
+title: vanEunen2012 - Yeast Glycolysis (glucose upshift)
+description: 'This is corresponding to the model of yeast glycolysis ''glucose upshift'' condition
+  described in the paper ''Testing Biochemistry Revisited: How In Vivo Metabolism Can Be Understood
+  from In Vitro Enzyme. It can be used to explore metabolic flux dynamics and compare pathway
+  behavior across conditions.'
+standard: sbml
+tags:
+- biomodels_ebi
+- faithful
+- metabolism
+- ode
+- sbml
+- tellurium
+authors:
+- Biosimulant Team
+- Karen van Eunen
+- "Jos\xE9 A L Kiewiet"
+- Hans V Westerhoff
+- Barbara M Bakker
+upstream:
+  id: biomodels_ebi:MODEL1403250001
+  source_db: biomodels_ebi
+  source_id: MODEL1403250001
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1403250001
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1403250001?filename=MODEL1403250001_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.vaneunen2012_yeast_glycolysis_glucose_upshift_model1403250001_model:Vaneunen2012YeastGlycolysisGlucoseUpshiftModel1403250001Model
+  init_kwargs:
+    model_path: data/MODEL1403250001.xml
+    integration_step: 0.1
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_intracellular_glucose
+    maps_to: species_1
+    default: 0.0576023
+    units: native SBML value
+    description: Initial condition for intracellular glucose. Maps to bundled SBML symbol
+      `species_1`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_glucose_6_phosphate
+    maps_to: species_2
+    default: 0.121566
+    units: native SBML value
+    description: Initial condition for glucose 6 phosphate. Maps to bundled SBML symbol `species_2`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_fructose_6_phosphate
+    maps_to: species_3
+    default: 0.0263653
+    units: native SBML value
+    description: Initial condition for fructose 6 phosphate. Maps to bundled SBML symbol `species_3`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_fructose_1_6_bisphosphate
+    maps_to: species_4
+    default: 0.0928847
+    units: native SBML value
+    description: Initial condition for fructose 1 6 bisphosphate. Maps to bundled SBML symbol
+      `species_4`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_triose_phosphate
+    maps_to: species_5
+    default: 0.336706
+    units: native SBML value
+    description: Initial condition for triose phosphate. Maps to bundled SBML symbol `species_5`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: intracellular_glucose
+    maps_to: species_1
+    label: intracellular glucose
+    description: intracellular glucose. Maps to SBML symbol `species_1`.
+  - name: glucose_6_phosphate
+    maps_to: species_2
+    label: glucose 6 phosphate
+    description: glucose 6 phosphate. Maps to SBML symbol `species_2`.
+  - name: fructose_6_phosphate
+    maps_to: species_3
+    label: fructose 6 phosphate
+    description: fructose 6 phosphate. Maps to SBML symbol `species_3`.
+  - name: fructose_1_6_bisphosphate
+    maps_to: species_4
+    label: fructose 1 6 bisphosphate
+    description: fructose 1 6 bisphosphate. Maps to SBML symbol `species_4`.
+  - name: triose_phosphate
+    maps_to: species_5
+    label: triose phosphate
+    description: triose phosphate. Maps to SBML symbol `species_5`.
+  - name: observable_values
+    description: Latest user-facing observable values from the SBML run.
+  - name: run_summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: observable_labels
+    description: Mapping from user-facing observable ports to display labels.
+parameters:
+- name: integration_step
+  value: 0.1
+  min: 0.0
+  units: model_time
+  description: Internal sampling step for Tellurium output collection.

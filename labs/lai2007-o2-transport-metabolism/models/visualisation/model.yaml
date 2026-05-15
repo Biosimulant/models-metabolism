@@ -1,0 +1,65 @@
+schema_version: '2.0'
+title: Lai2007_O2_Transport_Metabolism Visualisation
+description: Dedicated presentation model for Lai2007_O2_Transport_Metabolism.
+standard: other
+tags:
+- metabolism
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  entrypoint: src.metabolism_visualisation:MetabolismVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Lai2007_O2_Transport_Metabolism Lab
+    question: Which metabolic pathway dynamics observables show the strongest activity in
+      Lai2007_O2_Transport_Metabolism?
+    answer_focus: metabolic pathway dynamics
+    sources:
+    - alias: metabolism_sbml_lai2007_o2_transport_metabolism_biomd0000000248_model
+      title: Lai2007_O2_Transport_Metabolism
+      scope: metabolic pathway dynamics
+      label_caveat: Values are native SBML quantities. Conservative pathway-state labels are
+        used where the bundled SBML does not encode exact metabolite identities.
+      observables:
+      - id: atp
+        label: ATP
+        maps_to: ATP
+      - id: metabolic_pathway_state_2
+        label: Metabolic Pathway state 2
+        maps_to: PCr
+      - id: adp
+        label: ADP
+        maps_to: ADP
+      - id: metabolic_pathway_state_4
+        label: Metabolic Pathway state 4
+        maps_to: Cr
+      - id: metabolic_pathway_state_5
+        label: Metabolic Pathway state 5
+        maps_to: Pi
+      - id: metabolic_pathway_state_6
+        label: Metabolic Pathway state 6
+        maps_to: CTcap
+      - id: metabolic_pathway_state_7
+        label: Metabolic Pathway state 7
+        maps_to: CTtis
+  communication_step: 1.0
+runtime:
+  dependencies:
+    packages:
+    - PyYAML==6.0.2
+parameters:
+- name: integration_step
+  value: 1.0
+  min: 0.0
+  units: model_time
+  description: Sampling step for the visualisation model.
+io:
+  inputs:
+  - name: metabolism_sbml_lai2007_o2_transport_metabolism_biomd0000000248_model_observable_values
+    description: Latest user-facing observable values from the core metabolism model.
+  - name: metabolism_sbml_lai2007_o2_transport_metabolism_biomd0000000248_model_run_summary
+    description: Run summary from the core metabolism model.
+  - name: metabolism_sbml_lai2007_o2_transport_metabolism_biomd0000000248_model_observable_labels
+    description: Display labels for user-facing observables.
+  outputs: []

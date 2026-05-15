@@ -1,0 +1,113 @@
+schema_version: '2.0'
+title: Bertram2007_IsletCell_Oscillations
+description: 'This is the model described in the article: Interaction of glycolysis and mitochondrial
+  respiration in metabolic oscillations of pancreatic islets. Bertram R, Satin LS, Pedersen
+  MG, Luciani DS, Sherma.'
+standard: sbml
+tags:
+- biomodels_ebi
+- faithful
+- metabolism
+- ode
+- sbml
+- tellurium
+authors:
+- Biosimulant Team
+- Richard Bertram
+- Leslie S Satin
+- Morten Gram Pedersen
+- Dan S Luciani
+- Arthur Sherman
+upstream:
+  id: biomodels_ebi:BIOMD0000000376
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000376
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000376
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000376?filename=BIOMD0000000376_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.bertram2007_isletcell_oscillations_biomd0000000376_model:Bertram2007IsletcellOscillationsBiomd0000000376Model
+  init_kwargs:
+    model_path: data/BIOMD0000000376.xml
+    integration_step: 0.1
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_pancreatic_metabolism_state_1
+    maps_to: Vm
+    default: -60.0
+    units: native SBML value
+    description: Initial condition for pancreatic metabolism state 1. Maps to bundled SBML
+      symbol `Vm`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_pancreatic_metabolism_state_2
+    maps_to: n
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for pancreatic metabolism state 2. Maps to bundled SBML
+      symbol `n`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_glucose_6_phosphate
+    maps_to: G6P
+    default: 301.0
+    units: native SBML value
+    description: Initial condition for glucose 6 phosphate. Maps to bundled SBML symbol `G6P`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_fructose_bisphosphate
+    maps_to: FBP
+    default: 2.16
+    units: native SBML value
+    description: Initial condition for fructose bisphosphate. Maps to bundled SBML symbol
+      `FBP`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_mitochondrial_nadh
+    maps_to: NADHm
+    default: 0.4
+    units: native SBML value
+    description: Initial condition for mitochondrial nadh. Maps to bundled SBML symbol `NADHm`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: pancreatic_metabolism_state_1
+    maps_to: Vm
+    label: Pancreatic Metabolism state 1
+    description: Pancreatic Metabolism state 1; conservative display label for an abstract
+      SBML state variable. Maps to SBML symbol `Vm`. Exact metabolite identity is not encoded
+      in the bundled SBML metadata.
+  - name: pancreatic_metabolism_state_2
+    maps_to: n
+    label: Pancreatic Metabolism state 2
+    description: Pancreatic Metabolism state 2; conservative display label for an abstract
+      SBML state variable. Maps to SBML symbol `n`. Exact metabolite identity is not encoded
+      in the bundled SBML metadata.
+  - name: glucose_6_phosphate
+    maps_to: G6P
+    label: Glucose 6 Phosphate
+    description: Glucose 6 Phosphate. Maps to SBML symbol `G6P`.
+  - name: fructose_bisphosphate
+    maps_to: FBP
+    label: Fructose Bisphosphate
+    description: Fructose Bisphosphate. Maps to SBML symbol `FBP`.
+  - name: mitochondrial_nadh
+    maps_to: NADHm
+    label: Mitochondrial NADH
+    description: Mitochondrial NADH. Maps to SBML symbol `NADHm`.
+  - name: observable_values
+    description: Latest user-facing observable values from the SBML run.
+  - name: run_summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: observable_labels
+    description: Mapping from user-facing observable ports to display labels.
+parameters:
+- name: integration_step
+  value: 0.1
+  min: 0.0
+  units: model_time
+  description: Internal sampling step for Tellurium output collection.

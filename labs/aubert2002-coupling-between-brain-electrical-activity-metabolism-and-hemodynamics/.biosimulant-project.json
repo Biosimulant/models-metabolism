@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "aaa63aec-85c8-40a9-88c5-5d2b83f07424",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "1b5abd86-465a-4e82-9b05-d472798702f8",
+  "created_at": "2026-05-15T16:02:44.900927326+00:00",
+  "last_synced_at": "2026-05-15T17:45:44.802310+00:00",
+  "hub_manifest_hash": "0f99f9d292050868684474e336337c09e99f85d5c11a989d0e3e102b7e4fde26",
+  "package_name": "aubert2002-coupling-between-brain-electrical-activity-metabolism"
+}

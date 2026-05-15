@@ -1,0 +1,82 @@
+schema_version: '2.0'
+title: Fung2005_Metabolic_Oscillator Lab
+description: 'A Synthetic Gene-Metabolic Oscillator Reference: Fung et al; Nature (2005) 435:118-122
+  Name of kinetic law Reaction Glycolytic flux, V_gly: nil -&gt; AcCoA; Flux to TCA cycle/ETOH,
+  V_TCA: AcCoA -&gt;. It can be used to explore metabolic flux dynamics and compare pathway
+  behavior across conditions.'
+io:
+  inputs:
+  - name: initial_metabolic_pathway_state_1
+    maps_to: metabolism_sbml_fung2005_metabolic_oscillator_biomd0000000067_model.initial_metabolic_pathway_state_1
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 1. Maps to bundled SBML symbol
+      `AcCoA`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_acetyl_phosphate
+    maps_to: metabolism_sbml_fung2005_metabolic_oscillator_biomd0000000067_model.initial_acetyl_phosphate
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for acetyl phosphate. Maps to bundled SBML symbol `AcP`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_metabolic_pathway_state_3
+    maps_to: metabolism_sbml_fung2005_metabolic_oscillator_biomd0000000067_model.initial_metabolic_pathway_state_3
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 3. Maps to bundled SBML symbol
+      `OAc`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_protonated_acetate
+    maps_to: metabolism_sbml_fung2005_metabolic_oscillator_biomd0000000067_model.initial_protonated_acetate
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for protonated acetate. Maps to bundled SBML symbol `HOAc`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_lactate_repressor
+    maps_to: metabolism_sbml_fung2005_metabolic_oscillator_biomd0000000067_model.initial_lactate_repressor
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for lactate repressor. Maps to bundled SBML symbol `LacI`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: metabolic_pathway_state_1
+    maps_to: metabolism_sbml_fung2005_metabolic_oscillator_biomd0000000067_model.metabolic_pathway_state_1
+  - name: acetyl_phosphate
+    maps_to: metabolism_sbml_fung2005_metabolic_oscillator_biomd0000000067_model.acetyl_phosphate
+  - name: metabolic_pathway_state_3
+    maps_to: metabolism_sbml_fung2005_metabolic_oscillator_biomd0000000067_model.metabolic_pathway_state_3
+  - name: protonated_acetate
+    maps_to: metabolism_sbml_fung2005_metabolic_oscillator_biomd0000000067_model.protonated_acetate
+  - name: lactate_repressor
+    maps_to: metabolism_sbml_fung2005_metabolic_oscillator_biomd0000000067_model.lactate_repressor
+  - name: observable_values
+    maps_to: metabolism_sbml_fung2005_metabolic_oscillator_biomd0000000067_model.observable_values
+  - name: run_summary
+    maps_to: metabolism_sbml_fung2005_metabolic_oscillator_biomd0000000067_model.run_summary
+  - name: observable_labels
+    maps_to: metabolism_sbml_fung2005_metabolic_oscillator_biomd0000000067_model.observable_labels
+models:
+- alias: metabolism_sbml_fung2005_metabolic_oscillator_biomd0000000067_model
+  path: models/core
+  parameters:
+    model_path: data/BIOMD0000000067.xml
+    integration_step: 0.1
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: metabolism_sbml_fung2005_metabolic_oscillator_biomd0000000067_model.observable_values
+  to:
+  - visualisation.metabolism_sbml_fung2005_metabolic_oscillator_biomd0000000067_model_observable_values
+- from: metabolism_sbml_fung2005_metabolic_oscillator_biomd0000000067_model.run_summary
+  to:
+  - visualisation.metabolism_sbml_fung2005_metabolic_oscillator_biomd0000000067_model_run_summary
+- from: metabolism_sbml_fung2005_metabolic_oscillator_biomd0000000067_model.observable_labels
+  to:
+  - visualisation.metabolism_sbml_fung2005_metabolic_oscillator_biomd0000000067_model_observable_labels
+runtime:
+  duration: 10.0
+  communication_step: 1.0
+  initial_inputs: {}

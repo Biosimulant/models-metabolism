@@ -1,0 +1,465 @@
+schema_version: '2.0'
+title: Morgan2016 - Dynamics of cholesterol metabolism and ageing Visualisation
+description: Dedicated presentation model for Morgan2016 - Dynamics of cholesterol metabolism
+  and ageing.
+standard: other
+tags:
+- metabolism
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  entrypoint: src.metabolism_visualisation:MetabolismVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Morgan2016 - Dynamics of cholesterol metabolism and ageing Lab
+    question: Which lipid metabolism observables show the strongest activity in Morgan2016
+      - Dynamics of cholesterol metabolism and ageing?
+    answer_focus: lipid metabolism
+    sources:
+    - alias: metabolism_sbml_morgan2016_dynamics_of_cholesterol_metabolism_an_model1508170000_model
+      title: Morgan2016 - Dynamics of cholesterol metabolism and ageing
+      scope: lipid metabolism
+      label_caveat: Values are native SBML quantities. Conservative pathway-state labels are
+        used where the bundled SBML does not encode exact metabolite identities.
+      observables:
+      - id: lipid_metabolism_state_1
+        label: Lipid Metabolism state 1
+        maps_to: LFC
+      - id: lipid_metabolism_state_2
+        label: Lipid Metabolism state 2
+        maps_to: LCE
+      - id: lipid_metabolism_state_3
+        label: Lipid Metabolism state 3
+        maps_to: counter4
+      - id: lipid_metabolism_state_4
+        label: Lipid Metabolism state 4
+        maps_to: LCBA
+      - id: lipid_metabolism_state_5
+        label: Lipid Metabolism state 5
+        maps_to: LUBA
+      - id: lipid_metabolism_state_6
+        label: Lipid Metabolism state 6
+        maps_to: NPC1L1D
+      - id: lipid_metabolism_state_7
+        label: Lipid Metabolism state 7
+        maps_to: JIPP
+      - id: lipid_metabolism_state_8
+        label: Lipid Metabolism state 8
+        maps_to: JACoA
+      - id: lipid_metabolism_state_9
+        label: Lipid Metabolism state 9
+        maps_to: JCoASH
+      - id: lipid_metabolism_state_10
+        label: Lipid Metabolism state 10
+        maps_to: JDES
+      - id: lipid_metabolism_state_11
+        label: Lipid Metabolism state 11
+        maps_to: JACoAS
+      - id: lipid_metabolism_state_12
+        label: Lipid Metabolism state 12
+        maps_to: JMV
+      - id: lipid_metabolism_state_13
+        label: Lipid Metabolism state 13
+        maps_to: JAACoA
+      - id: lipid_metabolism_state_14
+        label: Lipid Metabolism state 14
+        maps_to: JMV5PP
+      - id: lipid_metabolism_state_15
+        label: Lipid Metabolism state 15
+        maps_to: JDMAPP
+      - id: lipid_metabolism_state_16
+        label: Lipid Metabolism state 16
+        maps_to: JHMGCoA
+      - id: lipid_metabolism_state_17
+        label: Lipid Metabolism state 17
+        maps_to: JSQ
+      - id: lipid_metabolism_state_18
+        label: Lipid Metabolism state 18
+        maps_to: JGPP
+      - id: lipid_metabolism_state_19
+        label: Lipid Metabolism state 19
+        maps_to: JSQE
+      - id: lipid_metabolism_state_20
+        label: Lipid Metabolism state 20
+        maps_to: J7DHDES
+      - id: lipid_metabolism_state_21
+        label: Lipid Metabolism state 21
+        maps_to: JFPP
+      - id: lipid_metabolism_state_22
+        label: Lipid Metabolism state 22
+        maps_to: J7DHC
+      - id: lipid_metabolism_state_23
+        label: Lipid Metabolism state 23
+        maps_to: JLAN
+      - id: lipid_metabolism_state_24
+        label: Lipid Metabolism state 24
+        maps_to: JCE
+      - id: lipid_metabolism_state_25
+        label: Lipid Metabolism state 25
+        maps_to: JFC
+      - id: lipid_metabolism_state_26
+        label: Lipid Metabolism state 26
+        maps_to: NPC1L1S
+      - id: lipid_metabolism_state_27
+        label: Lipid Metabolism state 27
+        maps_to: NPC1L1
+      - id: lipid_metabolism_state_28
+        label: Lipid Metabolism state 28
+        maps_to: IAPOAIS
+      - id: lipid_metabolism_state_29
+        label: Lipid Metabolism state 29
+        maps_to: IUBA
+      - id: lipid_metabolism_state_30
+        label: Lipid Metabolism state 30
+        maps_to: ICBA
+      - id: lipid_metabolism_state_31
+        label: Lipid Metabolism state 31
+        maps_to: OST
+      - id: lipid_metabolism_state_32
+        label: Lipid Metabolism state 32
+        maps_to: ASBTS
+      - id: lipid_metabolism_state_33
+        label: Lipid Metabolism state 33
+        maps_to: OSTD
+      - id: lipid_metabolism_state_34
+        label: Lipid Metabolism state 34
+        maps_to: OSTS
+      - id: lipid_metabolism_state_35
+        label: Lipid Metabolism state 35
+        maps_to: ASBTD
+      - id: lipid_metabolism_state_36
+        label: Lipid Metabolism state 36
+        maps_to: ASBT
+      - id: lipid_metabolism_state_37
+        label: Lipid Metabolism state 37
+        maps_to: JMV5P
+      - id: lipid_metabolism_state_38
+        label: Lipid Metabolism state 38
+        maps_to: JCH
+      - id: lipid_metabolism_state_39
+        label: Lipid Metabolism state 39
+        maps_to: HCH
+      - id: lipid_metabolism_state_40
+        label: Lipid Metabolism state 40
+        maps_to: LRP
+      - id: lipid_metabolism_state_41
+        label: Lipid Metabolism state 41
+        maps_to: HLDLR
+      - id: lipid_metabolism_state_42
+        label: Lipid Metabolism state 42
+        maps_to: HFC
+      - id: lipid_metabolism_state_43
+        label: Lipid Metabolism state 43
+        maps_to: HCE
+      - id: lipid_metabolism_state_44
+        label: Lipid Metabolism state 44
+        maps_to: HAPOAIS
+      - id: lipid_metabolism_state_45
+        label: Lipid Metabolism state 45
+        maps_to: HUBA
+      - id: lipid_metabolism_state_46
+        label: Lipid Metabolism state 46
+        maps_to: NTCP
+      - id: lipid_metabolism_state_47
+        label: Lipid Metabolism state 47
+        maps_to: LRPD
+      - id: lipid_metabolism_state_48
+        label: Lipid Metabolism state 48
+        maps_to: LRPS
+      - id: lipid_metabolism_state_49
+        label: Lipid Metabolism state 49
+        maps_to: HLDLRD
+      - id: lipid_metabolism_state_50
+        label: Lipid Metabolism state 50
+        maps_to: HLDLRS
+      - id: lipid_metabolism_state_51
+        label: Lipid Metabolism state 51
+        maps_to: HSRB1
+      - id: lipid_metabolism_state_52
+        label: Lipid Metabolism state 52
+        maps_to: HSRB1D
+      - id: lipid_metabolism_state_53
+        label: Lipid Metabolism state 53
+        maps_to: HSRB1S
+      - id: lipid_metabolism_state_54
+        label: Lipid Metabolism state 54
+        maps_to: ABCG5G8D
+      - id: lipid_metabolism_state_55
+        label: Lipid Metabolism state 55
+        maps_to: ABCG5G8S
+      - id: lipid_metabolism_state_56
+        label: Lipid Metabolism state 56
+        maps_to: ABCG5G8
+      - id: lipid_metabolism_state_57
+        label: Lipid Metabolism state 57
+        maps_to: NTCPS
+      - id: lipid_metabolism_state_58
+        label: Lipid Metabolism state 58
+        maps_to: NTCPD
+      - id: lipid_metabolism_state_59
+        label: Lipid Metabolism state 59
+        maps_to: BSEPD
+      - id: lipid_metabolism_state_60
+        label: Lipid Metabolism state 60
+        maps_to: BSEPS
+      - id: lipid_metabolism_state_61
+        label: Lipid Metabolism state 61
+        maps_to: BSEP
+      - id: lipid_metabolism_state_62
+        label: Lipid Metabolism state 62
+        maps_to: HACoAS
+      - id: lipid_metabolism_state_63
+        label: Lipid Metabolism state 63
+        maps_to: HACoA
+      - id: lipid_metabolism_state_64
+        label: Lipid Metabolism state 64
+        maps_to: HAACoA
+      - id: lipid_metabolism_state_65
+        label: Lipid Metabolism state 65
+        maps_to: HHMGCoA
+      - id: lipid_metabolism_state_66
+        label: Lipid Metabolism state 66
+        maps_to: HMV
+      - id: lipid_metabolism_state_67
+        label: Lipid Metabolism state 67
+        maps_to: HMV5PP
+      - id: lipid_metabolism_state_68
+        label: Lipid Metabolism state 68
+        maps_to: HMV5P
+      - id: lipid_metabolism_state_69
+        label: Lipid Metabolism state 69
+        maps_to: HIPP
+      - id: lipid_metabolism_state_70
+        label: Lipid Metabolism state 70
+        maps_to: HDMAPP
+      - id: lipid_metabolism_state_71
+        label: Lipid Metabolism state 71
+        maps_to: HFPP
+      - id: lipid_metabolism_state_72
+        label: Lipid Metabolism state 72
+        maps_to: HGPP
+      - id: lipid_metabolism_state_73
+        label: Lipid Metabolism state 73
+        maps_to: HSQ
+      - id: lipid_metabolism_state_74
+        label: Lipid Metabolism state 74
+        maps_to: H7DHDES
+      - id: lipid_metabolism_state_75
+        label: Lipid Metabolism state 75
+        maps_to: H7DHC
+      - id: lipid_metabolism_state_76
+        label: Lipid Metabolism state 76
+        maps_to: HDES
+      - id: lipid_metabolism_state_77
+        label: Lipid Metabolism state 77
+        maps_to: HLAN
+      - id: lipid_metabolism_state_78
+        label: Lipid Metabolism state 78
+        maps_to: HSQE
+      - id: lipid_metabolism_state_79
+        label: Lipid Metabolism state 79
+        maps_to: HCBA
+      - id: lipid_metabolism_state_80
+        label: Lipid Metabolism state 80
+        maps_to: HCoASH
+      - id: lipid_metabolism_state_81
+        label: Lipid Metabolism state 81
+        maps_to: C3
+      - id: lipid_metabolism_state_82
+        label: Lipid Metabolism state 82
+        maps_to: C1
+      - id: lipid_metabolism_state_83
+        label: Lipid Metabolism state 83
+        maps_to: C5
+      - id: lipid_metabolism_state_84
+        label: Lipid Metabolism state 84
+        maps_to: C2
+      - id: lipid_metabolism_state_85
+        label: Lipid Metabolism state 85
+        maps_to: C6
+      - id: lipid_metabolism_state_86
+        label: Lipid Metabolism state 86
+        maps_to: C4
+      - id: lipid_metabolism_state_87
+        label: Lipid Metabolism state 87
+        maps_to: C9
+      - id: lipid_metabolism_state_88
+        label: Lipid Metabolism state 88
+        maps_to: C7
+      - id: lipid_metabolism_state_89
+        label: Lipid Metabolism state 89
+        maps_to: C10
+      - id: lipid_metabolism_state_90
+        label: Lipid Metabolism state 90
+        maps_to: C8
+      - id: lipid_metabolism_state_91
+        label: Lipid Metabolism state 91
+        maps_to: HUBACoA
+      - id: lipid_metabolism_state_92
+        label: Lipid Metabolism state 92
+        maps_to: DFC
+      - id: lipid_metabolism_state_93
+        label: Lipid Metabolism state 93
+        maps_to: counter2
+      - id: lipid_metabolism_state_94
+        label: Lipid Metabolism state 94
+        maps_to: DCE
+      - id: lipid_metabolism_state_95
+        label: Lipid Metabolism state 95
+        maps_to: VLDLC
+      - id: lipid_metabolism_state_96
+        label: Lipid Metabolism state 96
+        maps_to: LPL
+      - id: lipid_metabolism_state_97
+        label: Lipid Metabolism state 97
+        maps_to: IDLC
+      - id: lipid_metabolism_state_98
+        label: Lipid Metabolism state 98
+        maps_to: LDLC
+      - id: lipid_metabolism_state_99
+        label: Lipid Metabolism state 99
+        maps_to: HSL
+      - id: lipid_metabolism_state_100
+        label: Lipid Metabolism state 100
+        maps_to: LCAT
+      - id: lipid_metabolism_state_101
+        label: Lipid Metabolism state 101
+        maps_to: HDL2
+      - id: lipid_metabolism_state_102
+        label: Lipid Metabolism state 102
+        maps_to: HDL3
+      - id: lipid_metabolism_state_103
+        label: Lipid Metabolism state 103
+        maps_to: PLS
+      - id: lipid_metabolism_state_104
+        label: Lipid Metabolism state 104
+        maps_to: BCBA
+      - id: lipid_metabolism_state_105
+        label: Lipid Metabolism state 105
+        maps_to: BUBA
+      - id: lipid_metabolism_state_106
+        label: Lipid Metabolism state 106
+        maps_to: CETP
+      - id: lipid_metabolism_state_107
+        label: Lipid Metabolism state 107
+        maps_to: ndHDL
+      - id: lipid_metabolism_state_108
+        label: Lipid Metabolism state 108
+        maps_to: ndHDLC
+      - id: lipid_metabolism_state_109
+        label: Lipid Metabolism state 109
+        maps_to: PCE
+      - id: lipid_metabolism_state_110
+        label: Lipid Metabolism state 110
+        maps_to: PLDLR
+      - id: lipid_metabolism_state_111
+        label: Lipid Metabolism state 111
+        maps_to: PFC
+      - id: lipid_metabolism_state_112
+        label: Lipid Metabolism state 112
+        maps_to: ABCA1
+      - id: lipid_metabolism_state_113
+        label: Lipid Metabolism state 113
+        maps_to: PSS
+      - id: lipid_metabolism_state_114
+        label: Lipid Metabolism state 114
+        maps_to: ABCA1S
+      - id: lipid_metabolism_state_115
+        label: Lipid Metabolism state 115
+        maps_to: PSRB1
+      - id: lipid_metabolism_state_116
+        label: Lipid Metabolism state 116
+        maps_to: PSRB1D
+      - id: lipid_metabolism_state_117
+        label: Lipid Metabolism state 117
+        maps_to: PSRB1S
+      - id: lipid_metabolism_state_118
+        label: Lipid Metabolism state 118
+        maps_to: PLDLRD
+      - id: lipid_metabolism_state_119
+        label: Lipid Metabolism state 119
+        maps_to: PLDLRS
+      - id: lipid_metabolism_state_120
+        label: Lipid Metabolism state 120
+        maps_to: ABCA1D
+      - id: lipid_metabolism_state_121
+        label: Lipid Metabolism state 121
+        maps_to: P7DHC
+      - id: lipid_metabolism_state_122
+        label: Lipid Metabolism state 122
+        maps_to: P7DHDES
+      - id: lipid_metabolism_state_123
+        label: Lipid Metabolism state 123
+        maps_to: PDES
+      - id: lipid_metabolism_state_124
+        label: Lipid Metabolism state 124
+        maps_to: PAACoA
+      - id: lipid_metabolism_state_125
+        label: Lipid Metabolism state 125
+        maps_to: PCoASH
+      - id: lipid_metabolism_state_126
+        label: Lipid Metabolism state 126
+        maps_to: PACoA
+      - id: lipid_metabolism_state_127
+        label: Lipid Metabolism state 127
+        maps_to: PACoAS
+      - id: lipid_metabolism_state_128
+        label: Lipid Metabolism state 128
+        maps_to: PFPP
+      - id: lipid_metabolism_state_129
+        label: Lipid Metabolism state 129
+        maps_to: PGPP
+      - id: lipid_metabolism_state_130
+        label: Lipid Metabolism state 130
+        maps_to: PHMGCoA
+      - id: lipid_metabolism_state_131
+        label: Lipid Metabolism state 131
+        maps_to: PIPP
+      - id: lipid_metabolism_state_132
+        label: Lipid Metabolism state 132
+        maps_to: PDMAPP
+      - id: lipid_metabolism_state_133
+        label: Lipid Metabolism state 133
+        maps_to: PMV
+      - id: lipid_metabolism_state_134
+        label: Lipid Metabolism state 134
+        maps_to: PMV5PP
+      - id: lipid_metabolism_state_135
+        label: Lipid Metabolism state 135
+        maps_to: PMV5P
+      - id: lipid_metabolism_state_136
+        label: Lipid Metabolism state 136
+        maps_to: PSQE
+      - id: lipid_metabolism_state_137
+        label: Lipid Metabolism state 137
+        maps_to: PSQ
+      - id: lipid_metabolism_state_138
+        label: Lipid Metabolism state 138
+        maps_to: PLAN
+      - id: lipid_metabolism_state_139
+        label: Lipid Metabolism state 139
+        maps_to: EFC
+      - id: lipid_metabolism_state_140
+        label: Lipid Metabolism state 140
+        maps_to: EUBA
+  communication_step: 1.0
+runtime:
+  dependencies:
+    packages:
+    - PyYAML==6.0.2
+parameters:
+- name: integration_step
+  value: 1.0
+  min: 0.0
+  units: model_time
+  description: Sampling step for the visualisation model.
+io:
+  inputs:
+  - name: metabolism_sbml_morgan2016_dynamics_of_cholesterol_metabolism_an_model1508170000_model_observable_values
+    description: Latest user-facing observable values from the core metabolism model.
+  - name: metabolism_sbml_morgan2016_dynamics_of_cholesterol_metabolism_an_model1508170000_model_run_summary
+    description: Run summary from the core metabolism model.
+  - name: metabolism_sbml_morgan2016_dynamics_of_cholesterol_metabolism_an_model1508170000_model_observable_labels
+    description: Display labels for user-facing observables.
+  outputs: []

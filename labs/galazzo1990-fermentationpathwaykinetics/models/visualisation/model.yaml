@@ -1,0 +1,59 @@
+schema_version: '2.0'
+title: Galazzo1990_FermentationPathwayKinetics Visualisation
+description: Dedicated presentation model for Galazzo1990_FermentationPathwayKinetics.
+standard: other
+tags:
+- metabolism
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  entrypoint: src.metabolism_visualisation:MetabolismVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Galazzo1990_FermentationPathwayKinetics Lab
+    question: Which metabolic pathway dynamics observables show the strongest activity in
+      Galazzo1990_FermentationPathwayKinetics?
+    answer_focus: metabolic pathway dynamics
+    sources:
+    - alias: metabolism_sbml_galazzo1990_fermentationpathwaykinetics_biomd0000000063_model
+      title: Galazzo1990_FermentationPathwayKinetics
+      scope: metabolic pathway dynamics
+      label_caveat: Values are native SBML quantities. The bundled SBML is executed directly
+        and equations were not rewritten.
+      observables:
+      - id: glucose_inside_the_cell
+        label: Glucose Inside The Cell
+        maps_to: Glci
+      - id: atp
+        label: ATP
+        maps_to: ATP
+      - id: glucose_6_phosphate
+        label: Glucose 6 Phosphate
+        maps_to: G6P
+      - id: fructose_1_6_phosphate
+        label: Fructose 1 6 Phosphate
+        maps_to: FDP
+      - id: phosphoenol_pyruvate
+        label: Phosphoenol Pyruvate
+        maps_to: PEP
+  communication_step: 1.0
+runtime:
+  dependencies:
+    packages:
+    - PyYAML==6.0.2
+parameters:
+- name: integration_step
+  value: 1.0
+  min: 0.0
+  units: model_time
+  description: Sampling step for the visualisation model.
+io:
+  inputs:
+  - name: metabolism_sbml_galazzo1990_fermentationpathwaykinetics_biomd0000000063_model_observable_values
+    description: Latest user-facing observable values from the core metabolism model.
+  - name: metabolism_sbml_galazzo1990_fermentationpathwaykinetics_biomd0000000063_model_run_summary
+    description: Run summary from the core metabolism model.
+  - name: metabolism_sbml_galazzo1990_fermentationpathwaykinetics_biomd0000000063_model_observable_labels
+    description: Display labels for user-facing observables.
+  outputs: []

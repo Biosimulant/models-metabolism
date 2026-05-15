@@ -1,0 +1,81 @@
+schema_version: '2.0'
+title: Slaviero2021 - E. coli anaerobic central carbon and energy metabolism_Version1 Lab
+description: 'This model describes the central carbon and energy metabolism of E. coli growing
+  under anaerobic conditions.For complete information about the model see: ''Deciphering the
+  physiological response of Esc.'
+io:
+  inputs:
+  - name: initial_glucose_6_phosphate
+    maps_to: metabolism_sbml_slaviero2021_e_coli_anaerobic_central_carbon_and_model2202020001_model.initial_glucose_6_phosphate
+    default: 2.0
+    units: native SBML value
+    description: Initial condition for glucose 6 phosphate. Maps to bundled SBML symbol `G6P`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_fructose_bisphosphate
+    maps_to: metabolism_sbml_slaviero2021_e_coli_anaerobic_central_carbon_and_model2202020001_model.initial_fructose_bisphosphate
+    default: 3.0
+    units: native SBML value
+    description: Initial condition for fructose bisphosphate. Maps to bundled SBML symbol
+      `FBP`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_glyceraldehyde_3_phosphate
+    maps_to: metabolism_sbml_slaviero2021_e_coli_anaerobic_central_carbon_and_model2202020001_model.initial_glyceraldehyde_3_phosphate
+    default: 0.5
+    units: native SBML value
+    description: Initial condition for glyceraldehyde 3 phosphate. Maps to bundled SBML symbol
+      `GAP`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_phosphoenolpyruvate
+    maps_to: metabolism_sbml_slaviero2021_e_coli_anaerobic_central_carbon_and_model2202020001_model.initial_phosphoenolpyruvate
+    default: 1.0
+    units: native SBML value
+    description: Initial condition for phosphoenolpyruvate. Maps to bundled SBML symbol `PEP`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_pyruvate
+    maps_to: metabolism_sbml_slaviero2021_e_coli_anaerobic_central_carbon_and_model2202020001_model.initial_pyruvate
+    default: 1.0
+    units: native SBML value
+    description: Initial condition for pyruvate. Maps to bundled SBML symbol `PYR`. Applied
+      before the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  outputs:
+  - name: glucose_6_phosphate
+    maps_to: metabolism_sbml_slaviero2021_e_coli_anaerobic_central_carbon_and_model2202020001_model.glucose_6_phosphate
+  - name: fructose_bisphosphate
+    maps_to: metabolism_sbml_slaviero2021_e_coli_anaerobic_central_carbon_and_model2202020001_model.fructose_bisphosphate
+  - name: glyceraldehyde_3_phosphate
+    maps_to: metabolism_sbml_slaviero2021_e_coli_anaerobic_central_carbon_and_model2202020001_model.glyceraldehyde_3_phosphate
+  - name: phosphoenolpyruvate
+    maps_to: metabolism_sbml_slaviero2021_e_coli_anaerobic_central_carbon_and_model2202020001_model.phosphoenolpyruvate
+  - name: pyruvate
+    maps_to: metabolism_sbml_slaviero2021_e_coli_anaerobic_central_carbon_and_model2202020001_model.pyruvate
+  - name: observable_values
+    maps_to: metabolism_sbml_slaviero2021_e_coli_anaerobic_central_carbon_and_model2202020001_model.observable_values
+  - name: run_summary
+    maps_to: metabolism_sbml_slaviero2021_e_coli_anaerobic_central_carbon_and_model2202020001_model.run_summary
+  - name: observable_labels
+    maps_to: metabolism_sbml_slaviero2021_e_coli_anaerobic_central_carbon_and_model2202020001_model.observable_labels
+models:
+- alias: metabolism_sbml_slaviero2021_e_coli_anaerobic_central_carbon_and_model2202020001_model
+  path: models/core
+  parameters:
+    model_path: data/MODEL2202020001.xml
+    integration_step: 0.1
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: metabolism_sbml_slaviero2021_e_coli_anaerobic_central_carbon_and_model2202020001_model.observable_values
+  to:
+  - visualisation.metabolism_sbml_slaviero2021_e_coli_anaerobic_central_carbon_and_model2202020001_model_observable_values
+- from: metabolism_sbml_slaviero2021_e_coli_anaerobic_central_carbon_and_model2202020001_model.run_summary
+  to:
+  - visualisation.metabolism_sbml_slaviero2021_e_coli_anaerobic_central_carbon_and_model2202020001_model_run_summary
+- from: metabolism_sbml_slaviero2021_e_coli_anaerobic_central_carbon_and_model2202020001_model.observable_labels
+  to:
+  - visualisation.metabolism_sbml_slaviero2021_e_coli_anaerobic_central_carbon_and_model2202020001_model_observable_labels
+runtime:
+  duration: 10.0
+  communication_step: 1.0
+  initial_inputs: {}

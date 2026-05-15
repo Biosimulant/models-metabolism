@@ -1,0 +1,82 @@
+schema_version: '2.0'
+title: Simon2025 - Neuroblastoma energy metabolism Lab
+description: Metabolism Simon2025Neuroblastoma Energy Metabolism Model2502190001Model models
+  core biological dynamics as a OTHER simulation curated from biomodels_ebi (biomodels_ebi:MODEL2502190001),
+  focused on metabolism. When you run it, you can track state over time and compare response
+  patterns across parameter settings.
+io:
+  inputs:
+  - name: initial_glucose
+    maps_to: metabolism_sbml_simon2025_neuroblastoma_energy_metabolism_model2502190001_model.initial_glucose
+    default: 2.72988078351158
+    units: native SBML value
+    description: Initial condition for glucose. Maps to bundled SBML symbol `glc`. Applied
+      before the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_adp
+    maps_to: metabolism_sbml_simon2025_neuroblastoma_energy_metabolism_model2502190001_model.initial_adp
+    default: 4.79944686874058
+    units: native SBML value
+    description: Initial condition for adp. Maps to bundled SBML symbol `adp`. Applied before
+      the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_atp
+    maps_to: metabolism_sbml_simon2025_neuroblastoma_energy_metabolism_model2502190001_model.initial_atp
+    default: 8.14466765495666
+    units: native SBML value
+    description: Initial condition for atp. Maps to bundled SBML symbol `atp`. Applied before
+      the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_metabolic_pathway_state_4
+    maps_to: metabolism_sbml_simon2025_neuroblastoma_energy_metabolism_model2502190001_model.initial_metabolic_pathway_state_4
+    default: 0.601679350245062
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 4. Maps to bundled SBML symbol
+      `glc6p`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_fructose_6_phosphate
+    maps_to: metabolism_sbml_simon2025_neuroblastoma_energy_metabolism_model2502190001_model.initial_fructose_6_phosphate
+    default: 0.0499563769212773
+    units: native SBML value
+    description: Initial condition for fructose 6 phosphate. Maps to bundled SBML symbol `fru6p`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: glucose
+    maps_to: metabolism_sbml_simon2025_neuroblastoma_energy_metabolism_model2502190001_model.glucose
+  - name: adp
+    maps_to: metabolism_sbml_simon2025_neuroblastoma_energy_metabolism_model2502190001_model.adp
+  - name: atp
+    maps_to: metabolism_sbml_simon2025_neuroblastoma_energy_metabolism_model2502190001_model.atp
+  - name: metabolic_pathway_state_4
+    maps_to: metabolism_sbml_simon2025_neuroblastoma_energy_metabolism_model2502190001_model.metabolic_pathway_state_4
+  - name: fructose_6_phosphate
+    maps_to: metabolism_sbml_simon2025_neuroblastoma_energy_metabolism_model2502190001_model.fructose_6_phosphate
+  - name: observable_values
+    maps_to: metabolism_sbml_simon2025_neuroblastoma_energy_metabolism_model2502190001_model.observable_values
+  - name: run_summary
+    maps_to: metabolism_sbml_simon2025_neuroblastoma_energy_metabolism_model2502190001_model.run_summary
+  - name: observable_labels
+    maps_to: metabolism_sbml_simon2025_neuroblastoma_energy_metabolism_model2502190001_model.observable_labels
+models:
+- alias: metabolism_sbml_simon2025_neuroblastoma_energy_metabolism_model2502190001_model
+  path: models/core
+  parameters:
+    model_path: data/MODEL2502190001.xml
+    integration_step: 0.1
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: metabolism_sbml_simon2025_neuroblastoma_energy_metabolism_model2502190001_model.observable_values
+  to:
+  - visualisation.metabolism_sbml_simon2025_neuroblastoma_energy_metabolism_model2502190001_model_observable_values
+- from: metabolism_sbml_simon2025_neuroblastoma_energy_metabolism_model2502190001_model.run_summary
+  to:
+  - visualisation.metabolism_sbml_simon2025_neuroblastoma_energy_metabolism_model2502190001_model_run_summary
+- from: metabolism_sbml_simon2025_neuroblastoma_energy_metabolism_model2502190001_model.observable_labels
+  to:
+  - visualisation.metabolism_sbml_simon2025_neuroblastoma_energy_metabolism_model2502190001_model_observable_labels
+runtime:
+  duration: 10.0
+  communication_step: 1.0
+  initial_inputs: {}

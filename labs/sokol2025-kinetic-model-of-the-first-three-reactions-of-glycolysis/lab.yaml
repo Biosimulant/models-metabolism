@@ -1,0 +1,80 @@
+schema_version: '2.0'
+title: Sokol2025 - Kinetic model of the first three reactions of glycolysis Lab
+description: Kinetic model of the first three reactions of glycolysis. It can be used to explore
+  metabolic flux dynamics and compare pathway behavior across conditions.
+io:
+  inputs:
+  - name: initial_adp
+    maps_to: metabolism_sbml_sokol2025_kinetic_model_of_the_first_three_react_model2502210002_model.initial_adp
+    default: 1.02876420481711e-06
+    units: native SBML value
+    description: Initial condition for adp. Maps to bundled SBML symbol `ADP`. Applied before
+      the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_atp
+    maps_to: metabolism_sbml_sokol2025_kinetic_model_of_the_first_three_react_model2502210002_model.initial_atp
+    default: 24.9999838070557
+    units: native SBML value
+    description: Initial condition for atp. Maps to bundled SBML symbol `ATP`. Applied before
+      the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_glucose_6_phosphate
+    maps_to: metabolism_sbml_sokol2025_kinetic_model_of_the_first_three_react_model2502210002_model.initial_glucose_6_phosphate
+    default: 0.125387382474129
+    units: native SBML value
+    description: Initial condition for glucose 6 phosphate. Maps to bundled SBML symbol `G6P`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_glucose
+    maps_to: metabolism_sbml_sokol2025_kinetic_model_of_the_first_three_react_model2502210002_model.initial_glucose
+    default: 5.1381410880857
+    units: native SBML value
+    description: Initial condition for glucose. Maps to bundled SBML symbol `GLC`. Applied
+      before the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_fructose_6_phosphate
+    maps_to: metabolism_sbml_sokol2025_kinetic_model_of_the_first_three_react_model2502210002_model.initial_fructose_6_phosphate
+    default: 0.999998114992648
+    units: native SBML value
+    description: Initial condition for fructose 6 phosphate. Maps to bundled SBML symbol `F6P`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: adp
+    maps_to: metabolism_sbml_sokol2025_kinetic_model_of_the_first_three_react_model2502210002_model.adp
+  - name: atp
+    maps_to: metabolism_sbml_sokol2025_kinetic_model_of_the_first_three_react_model2502210002_model.atp
+  - name: glucose_6_phosphate
+    maps_to: metabolism_sbml_sokol2025_kinetic_model_of_the_first_three_react_model2502210002_model.glucose_6_phosphate
+  - name: glucose
+    maps_to: metabolism_sbml_sokol2025_kinetic_model_of_the_first_three_react_model2502210002_model.glucose
+  - name: fructose_6_phosphate
+    maps_to: metabolism_sbml_sokol2025_kinetic_model_of_the_first_three_react_model2502210002_model.fructose_6_phosphate
+  - name: observable_values
+    maps_to: metabolism_sbml_sokol2025_kinetic_model_of_the_first_three_react_model2502210002_model.observable_values
+  - name: run_summary
+    maps_to: metabolism_sbml_sokol2025_kinetic_model_of_the_first_three_react_model2502210002_model.run_summary
+  - name: observable_labels
+    maps_to: metabolism_sbml_sokol2025_kinetic_model_of_the_first_three_react_model2502210002_model.observable_labels
+models:
+- alias: metabolism_sbml_sokol2025_kinetic_model_of_the_first_three_react_model2502210002_model
+  path: models/core
+  parameters:
+    model_path: data/MODEL2502210002.xml
+    integration_step: 0.1
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: metabolism_sbml_sokol2025_kinetic_model_of_the_first_three_react_model2502210002_model.observable_values
+  to:
+  - visualisation.metabolism_sbml_sokol2025_kinetic_model_of_the_first_three_react_model2502210002_model_observable_values
+- from: metabolism_sbml_sokol2025_kinetic_model_of_the_first_three_react_model2502210002_model.run_summary
+  to:
+  - visualisation.metabolism_sbml_sokol2025_kinetic_model_of_the_first_three_react_model2502210002_model_run_summary
+- from: metabolism_sbml_sokol2025_kinetic_model_of_the_first_three_react_model2502210002_model.observable_labels
+  to:
+  - visualisation.metabolism_sbml_sokol2025_kinetic_model_of_the_first_three_react_model2502210002_model_observable_labels
+runtime:
+  duration: 10.0
+  communication_step: 1.0
+  initial_inputs: {}

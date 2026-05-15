@@ -1,0 +1,81 @@
+schema_version: '2.0'
+title: Lee2017 - Paracetamol first-pass metabolism PK model Lab
+description: Authors developed a microfluidic gut-liver co-culture chip that aims to reproduce
+  the first-pass metabolism of oral drugs. The study suggests the possibility of reproducing
+  the human PK profile on a c.
+io:
+  inputs:
+  - name: initial_drug_metabolism_state_1
+    maps_to: metabolism_sbml_lee2017_paracetamol_first_pass_metabolism_pk_mod_biomd0000000947_model.initial_drug_metabolism_state_1
+    default: 500.0
+    units: native SBML value
+    description: Initial condition for drug metabolism state 1. Maps to bundled SBML symbol
+      `V_api`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_drug_metabolism_state_2
+    maps_to: metabolism_sbml_lee2017_paracetamol_first_pass_metabolism_pk_mod_biomd0000000947_model.initial_drug_metabolism_state_2
+    default: 0.33
+    units: native SBML value
+    description: Initial condition for drug metabolism state 2. Maps to bundled SBML symbol
+      `V_caco`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_drug_metabolism_state_3
+    maps_to: metabolism_sbml_lee2017_paracetamol_first_pass_metabolism_pk_mod_biomd0000000947_model.initial_drug_metabolism_state_3
+    default: 380.0
+    units: native SBML value
+    description: Initial condition for drug metabolism state 3. Maps to bundled SBML symbol
+      `V_basol`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_drug_metabolism_state_4
+    maps_to: metabolism_sbml_lee2017_paracetamol_first_pass_metabolism_pk_mod_biomd0000000947_model.initial_drug_metabolism_state_4
+    default: 2500.0
+    units: native SBML value
+    description: Initial condition for drug metabolism state 4. Maps to bundled SBML symbol
+      `C_para_Apical`. Applied before the Tellurium simulation starts; this does not change
+      kinetic parameters or equations. Default from bundled SBML initial value.
+  - name: initial_drug_metabolism_state_5
+    maps_to: metabolism_sbml_lee2017_paracetamol_first_pass_metabolism_pk_mod_biomd0000000947_model.initial_drug_metabolism_state_5
+    default: 1.0e-15
+    units: native SBML value
+    description: Initial condition for drug metabolism state 5. Maps to bundled SBML symbol
+      `C_para_Caco_2`. Applied before the Tellurium simulation starts; this does not change
+      kinetic parameters or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: drug_metabolism_state_1
+    maps_to: metabolism_sbml_lee2017_paracetamol_first_pass_metabolism_pk_mod_biomd0000000947_model.drug_metabolism_state_1
+  - name: drug_metabolism_state_2
+    maps_to: metabolism_sbml_lee2017_paracetamol_first_pass_metabolism_pk_mod_biomd0000000947_model.drug_metabolism_state_2
+  - name: drug_metabolism_state_3
+    maps_to: metabolism_sbml_lee2017_paracetamol_first_pass_metabolism_pk_mod_biomd0000000947_model.drug_metabolism_state_3
+  - name: drug_metabolism_state_4
+    maps_to: metabolism_sbml_lee2017_paracetamol_first_pass_metabolism_pk_mod_biomd0000000947_model.drug_metabolism_state_4
+  - name: drug_metabolism_state_5
+    maps_to: metabolism_sbml_lee2017_paracetamol_first_pass_metabolism_pk_mod_biomd0000000947_model.drug_metabolism_state_5
+  - name: observable_values
+    maps_to: metabolism_sbml_lee2017_paracetamol_first_pass_metabolism_pk_mod_biomd0000000947_model.observable_values
+  - name: run_summary
+    maps_to: metabolism_sbml_lee2017_paracetamol_first_pass_metabolism_pk_mod_biomd0000000947_model.run_summary
+  - name: observable_labels
+    maps_to: metabolism_sbml_lee2017_paracetamol_first_pass_metabolism_pk_mod_biomd0000000947_model.observable_labels
+models:
+- alias: metabolism_sbml_lee2017_paracetamol_first_pass_metabolism_pk_mod_biomd0000000947_model
+  path: models/core
+  parameters:
+    model_path: data/BIOMD0000000947.xml
+    integration_step: 0.1
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: metabolism_sbml_lee2017_paracetamol_first_pass_metabolism_pk_mod_biomd0000000947_model.observable_values
+  to:
+  - visualisation.metabolism_sbml_lee2017_paracetamol_first_pass_metabolism_pk_mod_biomd0000000947_model_observable_values
+- from: metabolism_sbml_lee2017_paracetamol_first_pass_metabolism_pk_mod_biomd0000000947_model.run_summary
+  to:
+  - visualisation.metabolism_sbml_lee2017_paracetamol_first_pass_metabolism_pk_mod_biomd0000000947_model_run_summary
+- from: metabolism_sbml_lee2017_paracetamol_first_pass_metabolism_pk_mod_biomd0000000947_model.observable_labels
+  to:
+  - visualisation.metabolism_sbml_lee2017_paracetamol_first_pass_metabolism_pk_mod_biomd0000000947_model_observable_labels
+runtime:
+  duration: 10.0
+  communication_step: 1.0
+  initial_inputs: {}

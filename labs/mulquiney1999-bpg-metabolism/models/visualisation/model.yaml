@@ -1,0 +1,212 @@
+schema_version: '2.0'
+title: Mulquiney1999_BPG_metabolism Visualisation
+description: Dedicated presentation model for Mulquiney1999_BPG_metabolism.
+standard: other
+tags:
+- metabolism
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  entrypoint: src.metabolism_visualisation:MetabolismVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Mulquiney1999_BPG_metabolism Lab
+    question: Which metabolic pathway dynamics observables show the strongest activity in
+      Mulquiney1999_BPG_metabolism?
+    answer_focus: metabolic pathway dynamics
+    sources:
+    - alias: metabolism_sbml_mulquiney1999_bpg_metabolism_model5950552398_model
+      title: Mulquiney1999_BPG_metabolism
+      scope: metabolic pathway dynamics
+      label_caveat: Values are native SBML quantities. Conservative pathway-state labels are
+        used where the bundled SBML does not encode exact metabolite identities.
+      observables:
+      - id: metabolic_pathway_state_1
+        label: Metabolic Pathway state 1
+        maps_to: MgATP
+      - id: metabolic_pathway_state_2
+        label: Metabolic Pathway state 2
+        maps_to: Glc6P
+      - id: metabolic_pathway_state_3
+        label: Metabolic Pathway state 3
+        maps_to: MgADP
+      - id: metabolic_pathway_state_4
+        label: Metabolic Pathway state 4
+        maps_to: B23PG
+      - id: metabolic_pathway_state_5
+        label: Metabolic Pathway state 5
+        maps_to: Glc16P2
+      - id: glutathione
+        label: Glutathione
+        maps_to: GSH
+      - id: fructose_6_phosphate
+        label: Fructose 6 Phosphate
+        maps_to: Fru6P
+      - id: metabolic_pathway_state_8
+        label: Metabolic Pathway state 8
+        maps_to: Fru16P2
+      - id: atp
+        label: ATP
+        maps_to: ATP
+      - id: metabolic_pathway_state_10
+        label: Metabolic Pathway state 10
+        maps_to: Mg
+      - id: amp
+        label: AMP
+        maps_to: AMP
+      - id: metabolic_pathway_state_12
+        label: Metabolic Pathway state 12
+        maps_to: Phos
+      - id: metabolic_pathway_state_13
+        label: Metabolic Pathway state 13
+        maps_to: GrnP
+      - id: metabolic_pathway_state_14
+        label: Metabolic Pathway state 14
+        maps_to: GraP
+      - id: metabolic_pathway_state_15
+        label: Metabolic Pathway state 15
+        maps_to: MgB23PG
+      - id: nad
+        label: NAD
+        maps_to: NAD
+      - id: metabolic_pathway_state_17
+        label: Metabolic Pathway state 17
+        maps_to: B13PG
+      - id: nadh
+        label: NADH
+        maps_to: NADH
+      - id: metabolic_pathway_state_19
+        label: Metabolic Pathway state 19
+        maps_to: P3GA
+      - id: metabolic_pathway_state_20
+        label: Metabolic Pathway state 20
+        maps_to: P2GA
+      - id: phosphoenolpyruvate
+        label: Phosphoenolpyruvate
+        maps_to: PEP
+      - id: pyruvate
+        label: Pyruvate
+        maps_to: Pyr
+      - id: lactate
+        label: Lactate
+        maps_to: Lac
+      - id: nadph
+        label: NADPH
+        maps_to: NADPH
+      - id: nadp
+        label: NADP
+        maps_to: NADP
+      - id: metabolic_pathway_state_26
+        label: Metabolic Pathway state 26
+        maps_to: BPGSP
+      - id: metabolic_pathway_state_27
+        label: Metabolic Pathway state 27
+        maps_to: BPGSPB13PG
+      - id: metabolic_pathway_state_28
+        label: Metabolic Pathway state 28
+        maps_to: BPGSPP
+      - id: metabolic_pathway_state_29
+        label: Metabolic Pathway state 29
+        maps_to: BPGSPPP3GA
+      - id: metabolic_pathway_state_30
+        label: Metabolic Pathway state 30
+        maps_to: BPGSPPP2GA
+      - id: metabolic_pathway_state_31
+        label: Metabolic Pathway state 31
+        maps_to: BPGSPB23PG
+      - id: metabolic_pathway_state_32
+        label: Metabolic Pathway state 32
+        maps_to: BPGSPPPhos
+      - id: metabolic_pathway_state_33
+        label: Metabolic Pathway state 33
+        maps_to: P6GL
+      - id: metabolic_pathway_state_34
+        label: Metabolic Pathway state 34
+        maps_to: P6G
+      - id: metabolic_pathway_state_35
+        label: Metabolic Pathway state 35
+        maps_to: Ru5P
+      - id: oxidized_glutathione
+        label: Oxidized Glutathione
+        maps_to: GSSG
+      - id: metabolic_pathway_state_37
+        label: Metabolic Pathway state 37
+        maps_to: Xu5P
+      - id: metabolic_pathway_state_38
+        label: Metabolic Pathway state 38
+        maps_to: Rib5P
+      - id: metabolic_pathway_state_39
+        label: Metabolic Pathway state 39
+        maps_to: TK
+      - id: metabolic_pathway_state_40
+        label: Metabolic Pathway state 40
+        maps_to: TKXu5P
+      - id: metabolic_pathway_state_41
+        label: Metabolic Pathway state 41
+        maps_to: TKG
+      - id: metabolic_pathway_state_42
+        label: Metabolic Pathway state 42
+        maps_to: TKGRib5P
+      - id: metabolic_pathway_state_43
+        label: Metabolic Pathway state 43
+        maps_to: Sed7P
+      - id: metabolic_pathway_state_44
+        label: Metabolic Pathway state 44
+        maps_to: Ery4P
+      - id: metabolic_pathway_state_45
+        label: Metabolic Pathway state 45
+        maps_to: TKGEry4P
+      - id: adp
+        label: ADP
+        maps_to: ADP
+      - id: metabolic_pathway_state_47
+        label: Metabolic Pathway state 47
+        maps_to: MgB13PG
+      - id: metabolic_pathway_state_48
+        label: Metabolic Pathway state 48
+        maps_to: MgFru16P2
+      - id: metabolic_pathway_state_49
+        label: Metabolic Pathway state 49
+        maps_to: MgGlc16P2
+      - id: metabolic_pathway_state_50
+        label: Metabolic Pathway state 50
+        maps_to: MgPhos
+      - id: metabolic_pathway_state_51
+        label: Metabolic Pathway state 51
+        maps_to: Hb
+      - id: metabolic_pathway_state_52
+        label: Metabolic Pathway state 52
+        maps_to: HbMgATP
+      - id: metabolic_pathway_state_53
+        label: Metabolic Pathway state 53
+        maps_to: HbATP
+      - id: metabolic_pathway_state_54
+        label: Metabolic Pathway state 54
+        maps_to: HbADP
+      - id: metabolic_pathway_state_55
+        label: Metabolic Pathway state 55
+        maps_to: HbB23PG
+      - id: metabolic_pathway_state_56
+        label: Metabolic Pathway state 56
+        maps_to: HbB13PG
+  communication_step: 1.0
+runtime:
+  dependencies:
+    packages:
+    - PyYAML==6.0.2
+parameters:
+- name: integration_step
+  value: 1.0
+  min: 0.0
+  units: model_time
+  description: Sampling step for the visualisation model.
+io:
+  inputs:
+  - name: metabolism_sbml_mulquiney1999_bpg_metabolism_model5950552398_model_observable_values
+    description: Latest user-facing observable values from the core metabolism model.
+  - name: metabolism_sbml_mulquiney1999_bpg_metabolism_model5950552398_model_run_summary
+    description: Run summary from the core metabolism model.
+  - name: metabolism_sbml_mulquiney1999_bpg_metabolism_model5950552398_model_observable_labels
+    description: Display labels for user-facing observables.
+  outputs: []

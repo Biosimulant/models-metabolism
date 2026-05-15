@@ -1,0 +1,121 @@
+schema_version: '2.0'
+title: "ODea2007 - A homeostatic model of I\u03BAB metabolism to control constitutive NF-\u03BA\
+  B activity Visualisation"
+description: "Dedicated presentation model for ODea2007 - A homeostatic model of I\u03BAB\
+  \ metabolism to control constitutive NF-\u03BAB activity."
+standard: other
+tags:
+- metabolism
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  entrypoint: src.metabolism_visualisation:MetabolismVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: "ODea2007 - A homeostatic model of I\u03BAB metabolism to control constitutive\
+      \ NF-\u03BAB activity Lab"
+    question: "Which metabolic pathway dynamics observables show the strongest activity in\
+      \ ODea2007 - A homeostatic model of I\u03BAB metabolism to control constitutive NF-\u03BA\
+      B activity?"
+    answer_focus: metabolic pathway dynamics
+    sources:
+    - alias: metabolism_sbml_odea2007_a_homeostatic_model_of_i_b_metabolism_t_model1908270002_model
+      title: "ODea2007 - A homeostatic model of I\u03BAB metabolism to control constitutive\
+        \ NF-\u03BAB activity"
+      scope: metabolic pathway dynamics
+      label_caveat: Values are native SBML quantities. Conservative pathway-state labels are
+        used where the bundled SBML does not encode exact metabolite identities.
+      observables:
+      - id: metabolic_pathway_state_1
+        label: Metabolic Pathway state 1
+        maps_to: IkBa_mRNA
+      - id: metabolic_pathway_state_2
+        label: Metabolic Pathway state 2
+        maps_to: IkBa_cytoplasm
+      - id: metabolic_pathway_state_3
+        label: Metabolic Pathway state 3
+        maps_to: IkBa_nucleus
+      - id: metabolic_pathway_state_4
+        label: Metabolic Pathway state 4
+        maps_to: IkBaIKK
+      - id: metabolic_pathway_state_5
+        label: Metabolic Pathway state 5
+        maps_to: IkBaNFkB_cytoplasm
+      - id: metabolic_pathway_state_6
+        label: Metabolic Pathway state 6
+        maps_to: IkBaNFkB_nucleus
+      - id: metabolic_pathway_state_7
+        label: Metabolic Pathway state 7
+        maps_to: IkBaIKKNFkB
+      - id: metabolic_pathway_state_8
+        label: Metabolic Pathway state 8
+        maps_to: NFkB_cytoplasm
+      - id: metabolic_pathway_state_9
+        label: Metabolic Pathway state 9
+        maps_to: IKK
+      - id: metabolic_pathway_state_10
+        label: Metabolic Pathway state 10
+        maps_to: NFkB_nucleus
+      - id: metabolic_pathway_state_11
+        label: Metabolic Pathway state 11
+        maps_to: IkBbIKK
+      - id: metabolic_pathway_state_12
+        label: Metabolic Pathway state 12
+        maps_to: IkBbIKKNFkB
+      - id: metabolic_pathway_state_13
+        label: Metabolic Pathway state 13
+        maps_to: IkBbNFkB_nucleus
+      - id: metabolic_pathway_state_14
+        label: Metabolic Pathway state 14
+        maps_to: IkBbNFkB_cytoplasm
+      - id: metabolic_pathway_state_15
+        label: Metabolic Pathway state 15
+        maps_to: IkBb_nucleus
+      - id: metabolic_pathway_state_16
+        label: Metabolic Pathway state 16
+        maps_to: IkBb_cytoplasm
+      - id: metabolic_pathway_state_17
+        label: Metabolic Pathway state 17
+        maps_to: IkBb_mRNA
+      - id: metabolic_pathway_state_18
+        label: Metabolic Pathway state 18
+        maps_to: IkBe_mRNA
+      - id: metabolic_pathway_state_19
+        label: Metabolic Pathway state 19
+        maps_to: IkBe_cytoplasm
+      - id: metabolic_pathway_state_20
+        label: Metabolic Pathway state 20
+        maps_to: IkBe_nucleus
+      - id: metabolic_pathway_state_21
+        label: Metabolic Pathway state 21
+        maps_to: IkBeNFkB_cytoplasm
+      - id: metabolic_pathway_state_22
+        label: Metabolic Pathway state 22
+        maps_to: IkBeNFkB_nucleus
+      - id: metabolic_pathway_state_23
+        label: Metabolic Pathway state 23
+        maps_to: IkBeIKKNFkB
+      - id: metabolic_pathway_state_24
+        label: Metabolic Pathway state 24
+        maps_to: IkBeIKK
+  communication_step: 1.0
+runtime:
+  dependencies:
+    packages:
+    - PyYAML==6.0.2
+parameters:
+- name: integration_step
+  value: 1.0
+  min: 0.0
+  units: model_time
+  description: Sampling step for the visualisation model.
+io:
+  inputs:
+  - name: metabolism_sbml_odea2007_a_homeostatic_model_of_i_b_metabolism_t_model1908270002_model_observable_values
+    description: Latest user-facing observable values from the core metabolism model.
+  - name: metabolism_sbml_odea2007_a_homeostatic_model_of_i_b_metabolism_t_model1908270002_model_run_summary
+    description: Run summary from the core metabolism model.
+  - name: metabolism_sbml_odea2007_a_homeostatic_model_of_i_b_metabolism_t_model1908270002_model_observable_labels
+    description: Display labels for user-facing observables.
+  outputs: []

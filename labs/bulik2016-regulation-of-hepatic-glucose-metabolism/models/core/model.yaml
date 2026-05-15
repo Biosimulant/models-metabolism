@@ -1,0 +1,112 @@
+schema_version: '2.0'
+title: Bulik2016 - Regulation of hepatic glucose metabolism
+description: 'Bulik2016 - Regulation of hepatic glucosemetabolism This model is described
+  in the article: The relative importance of kinetic mechanisms and variable enzyme abundances
+  for the regulation of hepatic g. It can be used to explore metabolic flux dynamics and compare
+  pathway behavior across conditions.'
+standard: sbml
+tags:
+- biomodels_ebi
+- faithful
+- metabolism
+- ode
+- sbml
+- tellurium
+authors:
+- Biosimulant Team
+- Sascha Bulik
+- "Hermann-Georg Holzh\xFCtter"
+- Nikolaus Berndt
+upstream:
+  id: biomodels_ebi:BIOMD0000000633
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000633
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000633
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000633?filename=BIOMD0000000633_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.bulik2016_regulation_of_hepatic_glucose_metaboli_biomd0000000633_model:Bulik2016RegulationOfHepaticGlucoseMetaboliBiomd0000000633Model
+  init_kwargs:
+    model_path: data/BIOMD0000000633.xml
+    integration_step: 0.1
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_extracellular_glucose
+    maps_to: glc_ext
+    default: 4.0
+    units: native SBML value
+    description: Initial condition for extracellular glucose. Maps to bundled SBML symbol
+      `glc_ext`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_extracellular_lactate
+    maps_to: lac_ext
+    default: 1.0
+    units: native SBML value
+    description: Initial condition for extracellular lactate. Maps to bundled SBML symbol
+      `lac_ext`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_glucose
+    maps_to: glc
+    default: 4.92256221964406
+    units: native SBML value
+    description: Initial condition for glucose. Maps to bundled SBML symbol `glc`. Applied
+      before the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_glycolysis_state_4
+    maps_to: glc6p
+    default: 0.189929897759633
+    units: native SBML value
+    description: Initial condition for glycolysis state 4. Maps to bundled SBML symbol `glc6p`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_glycolysis_state_5
+    maps_to: glc1p
+    default: 0.0117240677629403
+    units: native SBML value
+    description: Initial condition for glycolysis state 5. Maps to bundled SBML symbol `glc1p`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: extracellular_glucose
+    maps_to: glc_ext
+    label: Extracellular Glucose
+    description: Extracellular Glucose. Maps to SBML symbol `glc_ext`.
+  - name: extracellular_lactate
+    maps_to: lac_ext
+    label: Extracellular Lactate
+    description: Extracellular Lactate. Maps to SBML symbol `lac_ext`.
+  - name: glucose
+    maps_to: glc
+    label: Glucose
+    description: Glucose. Maps to SBML symbol `glc`.
+  - name: glycolysis_state_4
+    maps_to: glc6p
+    label: Glycolysis state 4
+    description: Glycolysis state 4; conservative display label for an abstract SBML state
+      variable. Maps to SBML symbol `glc6p`. Exact metabolite identity is not encoded in the
+      bundled SBML metadata.
+  - name: glycolysis_state_5
+    maps_to: glc1p
+    label: Glycolysis state 5
+    description: Glycolysis state 5; conservative display label for an abstract SBML state
+      variable. Maps to SBML symbol `glc1p`. Exact metabolite identity is not encoded in the
+      bundled SBML metadata.
+  - name: observable_values
+    description: Latest user-facing observable values from the SBML run.
+  - name: run_summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: observable_labels
+    description: Mapping from user-facing observable ports to display labels.
+parameters:
+- name: integration_step
+  value: 0.1
+  min: 0.0
+  units: model_time
+  description: Internal sampling step for Tellurium output collection.

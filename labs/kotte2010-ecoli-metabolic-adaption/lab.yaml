@@ -1,0 +1,82 @@
+schema_version: '2.0'
+title: Kotte2010_Ecoli_Metabolic_Adaption Lab
+description: 'This is the model described in: Bacterial adaptation through distributed sensing
+  of metabolic fluxes Oliver Kotte, Judith B Zaugg and Matthias Heinemann; Mol Sys Biol 2010;
+  6 :355. It can be used to explore metabolic flux dynamics and compare pathway behavior across
+  conditions.'
+io:
+  inputs:
+  - name: initial_microbial_metabolism_state_1
+    maps_to: metabolism_sbml_kotte2010_ecoli_metabolic_adaption_biomd0000000244_model.initial_microbial_metabolism_state_1
+    default: 0.03
+    units: native SBML value
+    description: Initial condition for microbial metabolism state 1. Maps to bundled SBML
+      symbol `BM`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_microbial_metabolism_state_2
+    maps_to: metabolism_sbml_kotte2010_ecoli_metabolic_adaption_biomd0000000244_model.initial_microbial_metabolism_state_2
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for microbial metabolism state 2. Maps to bundled SBML
+      symbol `ACT`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_glucose
+    maps_to: metabolism_sbml_kotte2010_ecoli_metabolic_adaption_biomd0000000244_model.initial_glucose
+    default: 4.8
+    units: native SBML value
+    description: Initial condition for glucose. Maps to bundled SBML symbol `GLC`. Applied
+      before the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_microbial_metabolism_state_4
+    maps_to: metabolism_sbml_kotte2010_ecoli_metabolic_adaption_biomd0000000244_model.initial_microbial_metabolism_state_4
+    default: 0.351972298
+    units: native SBML value
+    description: Initial condition for microbial metabolism state 4. Maps to bundled SBML
+      symbol `ACoA`. Applied before the Tellurium simulation starts; this does not change
+      kinetic parameters or equations. Default from bundled SBML initial value.
+  - name: initial_microbial_metabolism_state_5
+    maps_to: metabolism_sbml_kotte2010_ecoli_metabolic_adaption_biomd0000000244_model.initial_microbial_metabolism_state_5
+    default: 0.191190619
+    units: native SBML value
+    description: Initial condition for microbial metabolism state 5. Maps to bundled SBML
+      symbol `AKG`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: microbial_metabolism_state_1
+    maps_to: metabolism_sbml_kotte2010_ecoli_metabolic_adaption_biomd0000000244_model.microbial_metabolism_state_1
+  - name: microbial_metabolism_state_2
+    maps_to: metabolism_sbml_kotte2010_ecoli_metabolic_adaption_biomd0000000244_model.microbial_metabolism_state_2
+  - name: glucose
+    maps_to: metabolism_sbml_kotte2010_ecoli_metabolic_adaption_biomd0000000244_model.glucose
+  - name: microbial_metabolism_state_4
+    maps_to: metabolism_sbml_kotte2010_ecoli_metabolic_adaption_biomd0000000244_model.microbial_metabolism_state_4
+  - name: microbial_metabolism_state_5
+    maps_to: metabolism_sbml_kotte2010_ecoli_metabolic_adaption_biomd0000000244_model.microbial_metabolism_state_5
+  - name: observable_values
+    maps_to: metabolism_sbml_kotte2010_ecoli_metabolic_adaption_biomd0000000244_model.observable_values
+  - name: run_summary
+    maps_to: metabolism_sbml_kotte2010_ecoli_metabolic_adaption_biomd0000000244_model.run_summary
+  - name: observable_labels
+    maps_to: metabolism_sbml_kotte2010_ecoli_metabolic_adaption_biomd0000000244_model.observable_labels
+models:
+- alias: metabolism_sbml_kotte2010_ecoli_metabolic_adaption_biomd0000000244_model
+  path: models/core
+  parameters:
+    model_path: data/BIOMD0000000244.xml
+    integration_step: 0.1
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: metabolism_sbml_kotte2010_ecoli_metabolic_adaption_biomd0000000244_model.observable_values
+  to:
+  - visualisation.metabolism_sbml_kotte2010_ecoli_metabolic_adaption_biomd0000000244_model_observable_values
+- from: metabolism_sbml_kotte2010_ecoli_metabolic_adaption_biomd0000000244_model.run_summary
+  to:
+  - visualisation.metabolism_sbml_kotte2010_ecoli_metabolic_adaption_biomd0000000244_model_run_summary
+- from: metabolism_sbml_kotte2010_ecoli_metabolic_adaption_biomd0000000244_model.observable_labels
+  to:
+  - visualisation.metabolism_sbml_kotte2010_ecoli_metabolic_adaption_biomd0000000244_model_observable_labels
+runtime:
+  duration: 10.0
+  communication_step: 1.0
+  initial_inputs: {}

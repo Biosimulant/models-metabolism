@@ -1,0 +1,122 @@
+schema_version: '2.0'
+title: Cloutier2009_EnergyMetabolism_ModelF Visualisation
+description: Dedicated presentation model for Cloutier2009_EnergyMetabolism_ModelF.
+standard: other
+tags:
+- metabolism
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  entrypoint: src.metabolism_visualisation:MetabolismVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Cloutier2009_EnergyMetabolism_ModelF Lab
+    question: Which metabolic pathway dynamics observables show the strongest activity in
+      Cloutier2009_EnergyMetabolism_ModelF?
+    answer_focus: metabolic pathway dynamics
+    sources:
+    - alias: metabolism_sbml_cloutier2009_energymetabolism_modelf_model1006230096_model
+      title: Cloutier2009_EnergyMetabolism_ModelF
+      scope: metabolic pathway dynamics
+      label_caveat: Values are native SBML quantities. Conservative pathway-state labels are
+        used where the bundled SBML does not encode exact metabolite identities.
+      observables:
+      - id: fructose_6_phosphate
+        label: Fructose 6 Phosphate
+        maps_to: F6P
+      - id: fructose_2_6_bisphosphate
+        label: Fructose 2 6 Bisphosphate
+        maps_to: F26P
+      - id: glyceraldehyde_3_phosphate
+        label: Glyceraldehyde 3 Phosphate
+        maps_to: GAP
+      - id: pyruvate
+        label: Pyruvate
+        maps_to: PYR
+      - id: lactate
+        label: Lactate
+        maps_to: LAC
+      - id: atp
+        label: ATP
+        maps_to: ATP
+      - id: metabolic_pathway_state_7
+        label: Metabolic Pathway state 7
+        maps_to: PCr
+      - id: metabolic_pathway_state_8
+        label: Metabolic Pathway state 8
+        maps_to: V_hk
+      - id: metabolic_pathway_state_9
+        label: Metabolic Pathway state 9
+        maps_to: V_op
+      - id: metabolic_pathway_state_10
+        label: Metabolic Pathway state 10
+        maps_to: V_ldh
+      - id: metabolic_pathway_state_11
+        label: Metabolic Pathway state 11
+        maps_to: V_ck
+      - id: metabolic_pathway_state_12
+        label: Metabolic Pathway state 12
+        maps_to: Cr
+      - id: adp
+        label: ADP
+        maps_to: ADP
+      - id: metabolic_pathway_state_14
+        label: Metabolic Pathway state 14
+        maps_to: u
+      - id: deoxy_deoxy_amp_atp
+        label: Deoxy Deoxy AMP ATP
+        maps_to: dAMP_dATP
+      - id: amp
+        label: AMP
+        maps_to: AMP
+      - id: metabolic_pathway_state_17
+        label: Metabolic Pathway state 17
+        maps_to: ATP_inh
+      - id: metabolic_pathway_state_18
+        label: Metabolic Pathway state 18
+        maps_to: V_pfk
+      - id: metabolic_pathway_state_19
+        label: Metabolic Pathway state 19
+        maps_to: V_pfk2
+      - id: metabolic_pathway_state_20
+        label: Metabolic Pathway state 20
+        maps_to: V_pk
+      - id: metabolic_pathway_state_21
+        label: Metabolic Pathway state 21
+        maps_to: AMP_act
+      - id: metabolic_pathway_state_22
+        label: Metabolic Pathway state 22
+        maps_to: v_stim
+      - id: metabolic_pathway_state_23
+        label: Metabolic Pathway state 23
+        maps_to: V_ATPase
+      - id: metabolic_pathway_state_24
+        label: Metabolic Pathway state 24
+        maps_to: V_lac
+      - id: metabolic_pathway_state_25
+        label: Metabolic Pathway state 25
+        maps_to: unitpulseSB
+      - id: metabolic_pathway_state_26
+        label: Metabolic Pathway state 26
+        maps_to: AMP_pfk2
+  communication_step: 1.0
+runtime:
+  dependencies:
+    packages:
+    - PyYAML==6.0.2
+parameters:
+- name: integration_step
+  value: 1.0
+  min: 0.0
+  units: model_time
+  description: Sampling step for the visualisation model.
+io:
+  inputs:
+  - name: metabolism_sbml_cloutier2009_energymetabolism_modelf_model1006230096_model_observable_values
+    description: Latest user-facing observable values from the core metabolism model.
+  - name: metabolism_sbml_cloutier2009_energymetabolism_modelf_model1006230096_model_run_summary
+    description: Run summary from the core metabolism model.
+  - name: metabolism_sbml_cloutier2009_energymetabolism_modelf_model1006230096_model_observable_labels
+    description: Display labels for user-facing observables.
+  outputs: []

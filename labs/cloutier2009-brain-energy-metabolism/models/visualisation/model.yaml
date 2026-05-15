@@ -1,0 +1,344 @@
+schema_version: '2.0'
+title: Cloutier2009 - Brain Energy Metabolism Visualisation
+description: Dedicated presentation model for Cloutier2009 - Brain Energy Metabolism.
+standard: other
+tags:
+- metabolism
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  entrypoint: src.metabolism_visualisation:MetabolismVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Cloutier2009 - Brain Energy Metabolism Lab
+    question: Which brain energy metabolism observables show the strongest activity in Cloutier2009
+      - Brain Energy Metabolism?
+    answer_focus: brain energy metabolism
+    sources:
+    - alias: metabolism_sbml_cloutier2009_brain_energy_metabolism_biomd0000000554_model
+      title: Cloutier2009 - Brain Energy Metabolism
+      scope: brain energy metabolism
+      label_caveat: Values are native SBML quantities. Conservative pathway-state labels are
+        used where the bundled SBML does not encode exact metabolite identities.
+      observables:
+      - id: brain_energy_state_1
+        label: Brain Energy state 1
+        maps_to: V_en_GLC
+      - id: brain_energy_state_2
+        label: Brain Energy state 2
+        maps_to: Vn_hk
+      - id: brain_energy_state_3
+        label: Brain Energy state 3
+        maps_to: Vn_pgi
+      - id: brain_energy_state_4
+        label: Brain Energy state 4
+        maps_to: NADg
+      - id: brain_energy_state_5
+        label: Brain Energy state 5
+        maps_to: ADPg
+      - id: brain_energy_state_6
+        label: Brain Energy state 6
+        maps_to: CRg
+      - id: brain_energy_state_7
+        label: Brain Energy state 7
+        maps_to: AMPg
+      - id: brain_energy_state_8
+        label: Brain Energy state 8
+        maps_to: Vg_ck
+      - id: neuronal_adp
+        label: Neuronal ADP
+        maps_to: ADPn
+      - id: brain_energy_state_10
+        label: Brain Energy state 10
+        maps_to: CRn
+      - id: neuronal_nad
+        label: Neuronal NAD
+        maps_to: NADn
+      - id: neuronal_amp
+        label: Neuronal AMP
+        maps_to: AMPn
+      - id: brain_energy_state_13
+        label: Brain Energy state 13
+        maps_to: u_n
+      - id: brain_energy_state_14
+        label: Brain Energy state 14
+        maps_to: u_g
+      - id: brain_energy_state_15
+        label: Brain Energy state 15
+        maps_to: dAMP_dATPn
+      - id: brain_energy_state_16
+        label: Brain Energy state 16
+        maps_to: dAMP_dATPg
+      - id: brain_energy_state_17
+        label: Brain Energy state 17
+        maps_to: Vn_leak_Na
+      - id: brain_energy_state_18
+        label: Brain Energy state 18
+        maps_to: Vn_pump
+      - id: brain_energy_state_19
+        label: Brain Energy state 19
+        maps_to: Vn_pfk
+      - id: brain_energy_state_20
+        label: Brain Energy state 20
+        maps_to: Vn_pgk
+      - id: brain_energy_state_21
+        label: Brain Energy state 21
+        maps_to: Vn_pk
+      - id: brain_energy_state_22
+        label: Brain Energy state 22
+        maps_to: Vn_ldh
+      - id: brain_energy_state_23
+        label: Brain Energy state 23
+        maps_to: Vn_mito
+      - id: brain_energy_state_24
+        label: Brain Energy state 24
+        maps_to: Vne_LAC
+      - id: brain_energy_state_25
+        label: Brain Energy state 25
+        maps_to: Vn_ATPase
+      - id: brain_energy_state_26
+        label: Brain Energy state 26
+        maps_to: Vge_LAC
+      - id: brain_energy_state_27
+        label: Brain Energy state 27
+        maps_to: Vn_ck
+      - id: brain_energy_state_28
+        label: Brain Energy state 28
+        maps_to: Vcn_O2
+      - id: brain_energy_state_29
+        label: Brain Energy state 29
+        maps_to: Vg_leak_Na
+      - id: brain_energy_state_30
+        label: Brain Energy state 30
+        maps_to: Vg_pump
+      - id: brain_energy_state_31
+        label: Brain Energy state 31
+        maps_to: Veg_GLC
+      - id: brain_energy_state_32
+        label: Brain Energy state 32
+        maps_to: Vcg_GLC
+      - id: brain_energy_state_33
+        label: Brain Energy state 33
+        maps_to: Vg_hk
+      - id: brain_energy_state_34
+        label: Brain Energy state 34
+        maps_to: Vg_pgi
+      - id: brain_energy_state_35
+        label: Brain Energy state 35
+        maps_to: Vg_pfk
+      - id: brain_energy_state_36
+        label: Brain Energy state 36
+        maps_to: Vg_pgk
+      - id: brain_energy_state_37
+        label: Brain Energy state 37
+        maps_to: Vg_pk
+      - id: brain_energy_state_38
+        label: Brain Energy state 38
+        maps_to: Vg_ldh
+      - id: brain_energy_state_39
+        label: Brain Energy state 39
+        maps_to: Vg_mito
+      - id: brain_energy_state_40
+        label: Brain Energy state 40
+        maps_to: Vgc_LAC
+      - id: brain_energy_state_41
+        label: Brain Energy state 41
+        maps_to: Vg_ATPase
+      - id: brain_energy_state_42
+        label: Brain Energy state 42
+        maps_to: Vcg_O2
+      - id: brain_energy_state_43
+        label: Brain Energy state 43
+        maps_to: Vce_GLC
+      - id: brain_energy_state_44
+        label: Brain Energy state 44
+        maps_to: Vec_LAC
+      - id: brain_energy_state_45
+        label: Brain Energy state 45
+        maps_to: Vnc_CO2
+      - id: brain_energy_state_46
+        label: Brain Energy state 46
+        maps_to: Vgc_CO2
+      - id: brain_energy_state_47
+        label: Brain Energy state 47
+        maps_to: Vg_gs
+      - id: brain_energy_state_48
+        label: Brain Energy state 48
+        maps_to: Veg_GLU
+      - id: brain_energy_state_49
+        label: Brain Energy state 49
+        maps_to: Vg_glys
+      - id: brain_energy_state_50
+        label: Brain Energy state 50
+        maps_to: Fin_t
+      - id: brain_energy_state_51
+        label: Brain Energy state 51
+        maps_to: Vc_O2
+      - id: brain_energy_state_52
+        label: Brain Energy state 52
+        maps_to: Vc_GLC
+      - id: brain_energy_state_53
+        label: Brain Energy state 53
+        maps_to: Vc_LAC
+      - id: brain_energy_state_54
+        label: Brain Energy state 54
+        maps_to: Vc_CO2
+      - id: brain_energy_state_55
+        label: Brain Energy state 55
+        maps_to: Fout_t
+      - id: brain_energy_state_56
+        label: Brain Energy state 56
+        maps_to: BOLD
+      - id: brain_energy_state_57
+        label: Brain Energy state 57
+        maps_to: unitpulseSB
+      - id: brain_energy_state_58
+        label: Brain Energy state 58
+        maps_to: v_stim
+      - id: brain_energy_state_59
+        label: Brain Energy state 59
+        maps_to: Vn_stim
+      - id: brain_energy_state_60
+        label: Brain Energy state 60
+        maps_to: Vn_stim_GLU
+      - id: brain_energy_state_61
+        label: Brain Energy state 61
+        maps_to: unitstepSB
+      - id: brain_energy_state_62
+        label: Brain Energy state 62
+        maps_to: unitstepSB2
+      - id: brain_energy_state_63
+        label: Brain Energy state 63
+        maps_to: deltaVt_GLY
+      - id: brain_energy_state_64
+        label: Brain Energy state 64
+        maps_to: Vg_glyp
+      - id: brain_energy_state_65
+        label: Brain Energy state 65
+        maps_to: NAg
+      - id: brain_energy_state_66
+        label: Brain Energy state 66
+        maps_to: GLCg
+      - id: brain_energy_state_67
+        label: Brain Energy state 67
+        maps_to: G6Pg
+      - id: brain_energy_state_68
+        label: Brain Energy state 68
+        maps_to: F6Pg
+      - id: brain_energy_state_69
+        label: Brain Energy state 69
+        maps_to: GAPg
+      - id: brain_energy_state_70
+        label: Brain Energy state 70
+        maps_to: PEPg
+      - id: brain_energy_state_71
+        label: Brain Energy state 71
+        maps_to: PYRg
+      - id: brain_energy_state_72
+        label: Brain Energy state 72
+        maps_to: LACg
+      - id: brain_energy_state_73
+        label: Brain Energy state 73
+        maps_to: NADHg
+      - id: brain_energy_state_74
+        label: Brain Energy state 74
+        maps_to: ATPg
+      - id: brain_energy_state_75
+        label: Brain Energy state 75
+        maps_to: PCrg
+      - id: brain_energy_state_76
+        label: Brain Energy state 76
+        maps_to: O2g
+      - id: brain_energy_state_77
+        label: Brain Energy state 77
+        maps_to: GLYg
+      - id: brain_energy_state_78
+        label: Brain Energy state 78
+        maps_to: GLUg
+      - id: cytosolic_o2
+        label: Cytosolic O2
+        maps_to: O2c
+      - id: cytosolic_glucose
+        label: Cytosolic Glucose
+        maps_to: GLCc
+      - id: cytosolic_lactate
+        label: Cytosolic Lactate
+        maps_to: LACc
+      - id: cytosolic_co2
+        label: Cytosolic CO2
+        maps_to: CO2c
+      - id: extracellular_glucose
+        label: Extracellular Glucose
+        maps_to: GLCe
+      - id: extracellular_lactate
+        label: Extracellular Lactate
+        maps_to: LACe
+      - id: brain_energy_state_85
+        label: Brain Energy state 85
+        maps_to: GLUe
+      - id: brain_energy_state_86
+        label: Brain Energy state 86
+        maps_to: NAn
+      - id: neuronal_glucose
+        label: Neuronal Glucose
+        maps_to: GLCn
+      - id: neuronal_glucose_6_phosphate
+        label: Neuronal Glucose 6 Phosphate
+        maps_to: G6Pn
+      - id: neuronal_fructose_6_phosphate
+        label: Neuronal Fructose 6 Phosphate
+        maps_to: F6Pn
+      - id: neuronal_glyceraldehyde_3_phosphate
+        label: Neuronal Glyceraldehyde 3 Phosphate
+        maps_to: GAPn
+      - id: neuronal_phosphoenolpyruvate
+        label: Neuronal Phosphoenolpyruvate
+        maps_to: PEPn
+      - id: neuronal_pyruvate
+        label: Neuronal Pyruvate
+        maps_to: PYRn
+      - id: neuronal_lactate
+        label: Neuronal Lactate
+        maps_to: LACn
+      - id: neuronal_nadh
+        label: Neuronal NADH
+        maps_to: NADHn
+      - id: neuronal_atp
+        label: Neuronal ATP
+        maps_to: ATPn
+      - id: brain_energy_state_96
+        label: Brain Energy state 96
+        maps_to: PCrn
+      - id: neuronal_o2
+        label: Neuronal O2
+        maps_to: O2n
+      - id: brain_energy_state_98
+        label: Brain Energy state 98
+        maps_to: GLUn
+      - id: brain_energy_state_99
+        label: Brain Energy state 99
+        maps_to: Vv
+      - id: brain_energy_state_100
+        label: Brain Energy state 100
+        maps_to: dHb
+  communication_step: 1.0
+runtime:
+  dependencies:
+    packages:
+    - PyYAML==6.0.2
+parameters:
+- name: integration_step
+  value: 1.0
+  min: 0.0
+  units: model_time
+  description: Sampling step for the visualisation model.
+io:
+  inputs:
+  - name: metabolism_sbml_cloutier2009_brain_energy_metabolism_biomd0000000554_model_observable_values
+    description: Latest user-facing observable values from the core metabolism model.
+  - name: metabolism_sbml_cloutier2009_brain_energy_metabolism_biomd0000000554_model_run_summary
+    description: Run summary from the core metabolism model.
+  - name: metabolism_sbml_cloutier2009_brain_energy_metabolism_biomd0000000554_model_observable_labels
+    description: Display labels for user-facing observables.
+  outputs: []

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "c81c2998-e63c-4a1c-85ce-23e33d0fa254",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "448287dc-bddd-4701-b63b-2b46ba05990a",
+  "created_at": "2026-05-15T16:03:11.018263306+00:00",
+  "last_synced_at": "2026-05-15T18:37:36.280973+00:00",
+  "hub_manifest_hash": "90210c1f2435ef490ba6d966a361b4726e971fb64a1ed94a9a59f725a683a325",
+  "package_name": "teusink1998-glycolysis-turbodesign-lab"
+}

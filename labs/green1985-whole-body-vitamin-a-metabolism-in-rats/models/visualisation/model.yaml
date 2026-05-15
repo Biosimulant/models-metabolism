@@ -1,0 +1,99 @@
+schema_version: '2.0'
+title: Green1985 - whole-body vitamin A metabolism in rats Visualisation
+description: Dedicated presentation model for Green1985 - whole-body vitamin A metabolism
+  in rats.
+standard: other
+tags:
+- metabolism
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  entrypoint: src.metabolism_visualisation:MetabolismVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Green1985 - whole-body vitamin A metabolism in rats Lab
+    question: Which vitamin A metabolism observables show the strongest activity in Green1985
+      - whole-body vitamin A metabolism in rats?
+    answer_focus: vitamin A metabolism
+    sources:
+    - alias: metabolism_sbml_green1985_whole_body_vitamin_a_metabolism_in_rat_model2311220001_model
+      title: Green1985 - whole-body vitamin A metabolism in rats
+      scope: vitamin A metabolism
+      label_caveat: Values are native SBML quantities. Conservative pathway-state labels are
+        used where the bundled SBML does not encode exact metabolite identities.
+      observables:
+      - id: vitamin_a_metabolism_state_1
+        label: Vitamin A Metabolism state 1
+        maps_to: M_11
+      - id: vitamin_a_metabolism_state_2
+        label: Vitamin A Metabolism state 2
+        maps_to: M_21
+      - id: vitamin_a_metabolism_state_3
+        label: Vitamin A Metabolism state 3
+        maps_to: M_2
+      - id: vitamin_a_metabolism_state_4
+        label: Vitamin A Metabolism state 4
+        maps_to: M_3
+      - id: vitamin_a_metabolism_state_5
+        label: Vitamin A Metabolism state 5
+        maps_to: M_5
+      - id: vitamin_a_metabolism_state_6
+        label: Vitamin A Metabolism state 6
+        maps_to: M_13
+      - id: vitamin_a_metabolism_state_7
+        label: Vitamin A Metabolism state 7
+        maps_to: M_14
+      - id: vitamin_a_metabolism_state_8
+        label: Vitamin A Metabolism state 8
+        maps_to: M_16
+      - id: vitamin_a_metabolism_state_9
+        label: Vitamin A Metabolism state 9
+        maps_to: M_17
+      - id: vitamin_a_metabolism_state_10
+        label: Vitamin A Metabolism state 10
+        maps_to: M_11_0
+      - id: vitamin_a_metabolism_state_11
+        label: Vitamin A Metabolism state 11
+        maps_to: M_21_0
+      - id: vitamin_a_metabolism_state_12
+        label: Vitamin A Metabolism state 12
+        maps_to: M_2_0
+      - id: vitamin_a_metabolism_state_13
+        label: Vitamin A Metabolism state 13
+        maps_to: M_3_0
+      - id: vitamin_a_metabolism_state_14
+        label: Vitamin A Metabolism state 14
+        maps_to: M_5_0
+      - id: vitamin_a_metabolism_state_15
+        label: Vitamin A Metabolism state 15
+        maps_to: M_13_0
+      - id: vitamin_a_metabolism_state_16
+        label: Vitamin A Metabolism state 16
+        maps_to: M_14_0
+      - id: vitamin_a_metabolism_state_17
+        label: Vitamin A Metabolism state 17
+        maps_to: M_16_0
+      - id: vitamin_a_metabolism_state_18
+        label: Vitamin A Metabolism state 18
+        maps_to: M_17_0
+  communication_step: 1.0
+runtime:
+  dependencies:
+    packages:
+    - PyYAML==6.0.2
+parameters:
+- name: integration_step
+  value: 1.0
+  min: 0.0
+  units: model_time
+  description: Sampling step for the visualisation model.
+io:
+  inputs:
+  - name: metabolism_sbml_green1985_whole_body_vitamin_a_metabolism_in_rat_model2311220001_model_observable_values
+    description: Latest user-facing observable values from the core metabolism model.
+  - name: metabolism_sbml_green1985_whole_body_vitamin_a_metabolism_in_rat_model2311220001_model_run_summary
+    description: Run summary from the core metabolism model.
+  - name: metabolism_sbml_green1985_whole_body_vitamin_a_metabolism_in_rat_model2311220001_model_observable_labels
+    description: Display labels for user-facing observables.
+  outputs: []

@@ -1,0 +1,115 @@
+schema_version: '2.0'
+title: Messiha2013 - combined glycolysis and pentose phosphate pathway model
+description: Messiha2013 - combined glycolysis and pentose phosphate pathway model BIOMD0000000502
+  and MODEL1303260018 are combined to examine the response to oxidative stress. It can be
+  used to explore metabolic flux dynamics and compare pathway behavior across conditions.
+standard: sbml
+tags:
+- biomodels_ebi
+- faithful
+- metabolism
+- ode
+- sbml
+- tellurium
+authors:
+- Biosimulant Team
+- Messiha HL
+- Kent E
+- Malys N
+- Carroll KM
+- Mendes P
+upstream:
+  id: biomodels_ebi:BIOMD0000000503
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000503
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000503
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000503?filename=BIOMD0000000503_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.messiha2013_combined_glycolysis_and_pentose_phos_biomd0000000503_model:Messiha2013CombinedGlycolysisAndPentosePhosBiomd0000000503Model
+  init_kwargs:
+    model_path: data/BIOMD0000000503.xml
+    integration_step: 0.1
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_adp
+    maps_to: ADP
+    default: 1.29
+    units: native SBML value
+    description: Initial condition for adp. Maps to bundled SBML symbol `ADP`. Applied before
+      the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_atp
+    maps_to: ATP
+    default: 4.29
+    units: native SBML value
+    description: Initial condition for atp. Maps to bundled SBML symbol `ATP`. Applied before
+      the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_glycolysis_state_3
+    maps_to: AcAld
+    default: 0.178140579850657
+    units: native SBML value
+    description: Initial condition for glycolysis state 3. Maps to bundled SBML symbol `AcAld`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_glycolysis_state_4
+    maps_to: BPG
+    default: 0.000736873499865602
+    units: native SBML value
+    description: Initial condition for glycolysis state 4. Maps to bundled SBML symbol `BPG`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_glycolysis_state_5
+    maps_to: DHAP
+    default: 1.1613768527467
+    units: native SBML value
+    description: Initial condition for glycolysis state 5. Maps to bundled SBML symbol `DHAP`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: adp
+    maps_to: ADP
+    label: ADP
+    description: ADP. Maps to SBML symbol `ADP`.
+  - name: atp
+    maps_to: ATP
+    label: ATP
+    description: ATP. Maps to SBML symbol `ATP`.
+  - name: glycolysis_state_3
+    maps_to: AcAld
+    label: Glycolysis state 3
+    description: Glycolysis state 3; conservative display label for an abstract SBML state
+      variable. Maps to SBML symbol `AcAld`. Exact metabolite identity is not encoded in the
+      bundled SBML metadata.
+  - name: glycolysis_state_4
+    maps_to: BPG
+    label: Glycolysis state 4
+    description: Glycolysis state 4; conservative display label for an abstract SBML state
+      variable. Maps to SBML symbol `BPG`. Exact metabolite identity is not encoded in the
+      bundled SBML metadata.
+  - name: glycolysis_state_5
+    maps_to: DHAP
+    label: Glycolysis state 5
+    description: Glycolysis state 5; conservative display label for an abstract SBML state
+      variable. Maps to SBML symbol `DHAP`. Exact metabolite identity is not encoded in the
+      bundled SBML metadata.
+  - name: observable_values
+    description: Latest user-facing observable values from the SBML run.
+  - name: run_summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: observable_labels
+    description: Mapping from user-facing observable ports to display labels.
+parameters:
+- name: integration_step
+  value: 0.1
+  min: 0.0
+  units: model_time
+  description: Internal sampling step for Tellurium output collection.

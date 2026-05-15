@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "e352d8c0-ea11-4394-bbae-4154717fc5a9",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "334171f5-2bc8-4f8c-a2e0-4ca57cb7e2f1",
+  "created_at": "2026-05-15T16:03:02.398830695+00:00",
+  "last_synced_at": "2026-05-15T19:59:22.491016+00:00",
+  "hub_manifest_hash": "5f6939e9073aade2f1402bf7f730ab50e1cdbe0d0f1be18ab516f4d2f34db922",
+  "package_name": "k2013-cgluc-glycolysis-lab"
+}

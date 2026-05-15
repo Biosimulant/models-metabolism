@@ -1,0 +1,111 @@
+schema_version: '2.0'
+title: Jeon2018 - Enzyme clustering in Glucose metabolism
+description: Miji Jeon, Hye-Won Kang & Songon An. A Mathematical Model for Enzyme Clustering
+  in Glucose Metabolism.
+standard: sbml
+tags:
+- biomodels_ebi
+- faithful
+- metabolism
+- ode
+- sbml
+- tellurium
+authors:
+- Biosimulant Team
+- Jeon M
+- Kang HW
+- An S
+upstream:
+  id: biomodels_ebi:BIOMD0000001055
+  source_db: biomodels_ebi
+  source_id: BIOMD0000001055
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000001055
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000001055?filename=Enzyme_clustering_in
+    glucose_metabolism.xml
+  license: CC0
+biosim:
+  entrypoint: src.jeon2018_enzyme_clustering_in_glucose_metabolism_biomd0000001055_model:Jeon2018EnzymeClusteringInGlucoseMetabolismBiomd0000001055Model
+  init_kwargs:
+    model_path: data/BIOMD0000001055.xml
+    integration_step: 0.1
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_glycolysis_state_1
+    maps_to: Glucose
+    default: 0.01
+    units: native SBML value
+    description: Initial condition for glycolysis state 1. Maps to bundled SBML symbol `Glucose`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_fructose_6_phosphate
+    maps_to: Fructose_6_Phosphate
+    default: 0.01
+    units: native SBML value
+    description: Initial condition for fructose 6 phosphate. Maps to bundled SBML symbol `Fructose_6_Phosphate`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_fructose_1_6_bisphosphate
+    maps_to: Fructose_1_6_Bisphosphate
+    default: 0.01
+    units: native SBML value
+    description: Initial condition for fructose 1 6 bisphosphate. Maps to bundled SBML symbol
+      `Fructose_1_6_Bisphosphate`. Applied before the Tellurium simulation starts; this does
+      not change kinetic parameters or equations. Default from bundled SBML initial value.
+  - name: initial_observable_3_phosphoglycerate
+    maps_to: _3_Phosphoglycerate
+    default: 0.01
+    units: native SBML value
+    description: Initial condition for observable 3 phosphoglycerate. Maps to bundled SBML
+      symbol `_3_Phosphoglycerate`. Applied before the Tellurium simulation starts; this does
+      not change kinetic parameters or equations. Default from bundled SBML initial value.
+  - name: initial_glycolysis_state_5
+    maps_to: Phosphoenolpyruvate
+    default: 0.01
+    units: native SBML value
+    description: Initial condition for glycolysis state 5. Maps to bundled SBML symbol `Phosphoenolpyruvate`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: glycolysis_state_1
+    maps_to: Glucose
+    label: Glycolysis state 1
+    description: Glycolysis state 1; conservative display label for an abstract SBML state
+      variable. Maps to SBML symbol `Glucose`. Exact metabolite identity is not encoded in
+      the bundled SBML metadata.
+  - name: fructose_6_phosphate
+    maps_to: Fructose_6_Phosphate
+    label: Fructose 6 Phosphate
+    description: Fructose 6 Phosphate. Maps to SBML symbol `Fructose_6_Phosphate`.
+  - name: fructose_1_6_bisphosphate
+    maps_to: Fructose_1_6_Bisphosphate
+    label: Fructose 1 6 Bisphosphate
+    description: Fructose 1 6 Bisphosphate. Maps to SBML symbol `Fructose_1_6_Bisphosphate`.
+  - name: observable_3_phosphoglycerate
+    maps_to: _3_Phosphoglycerate
+    label: 3 Phosphoglycerate
+    description: 3 Phosphoglycerate. Maps to SBML symbol `_3_Phosphoglycerate`.
+  - name: glycolysis_state_5
+    maps_to: Phosphoenolpyruvate
+    label: Glycolysis state 5
+    description: Glycolysis state 5; conservative display label for an abstract SBML state
+      variable. Maps to SBML symbol `Phosphoenolpyruvate`. Exact metabolite identity is not
+      encoded in the bundled SBML metadata.
+  - name: observable_values
+    description: Latest user-facing observable values from the SBML run.
+  - name: run_summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: observable_labels
+    description: Mapping from user-facing observable ports to display labels.
+parameters:
+- name: integration_step
+  value: 0.1
+  min: 0.0
+  units: model_time
+  description: Internal sampling step for Tellurium output collection.

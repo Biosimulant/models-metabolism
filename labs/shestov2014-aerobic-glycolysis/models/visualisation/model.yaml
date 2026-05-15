@@ -1,0 +1,107 @@
+schema_version: '2.0'
+title: Shestov2014 - aerobic glycolysis Visualisation
+description: Dedicated presentation model for Shestov2014 - aerobic glycolysis.
+standard: other
+tags:
+- metabolism
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  entrypoint: src.metabolism_visualisation:MetabolismVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Shestov2014 - aerobic glycolysis Lab
+    question: Which central carbon and glycolytic metabolism observables show the strongest
+      activity in Shestov2014 - aerobic glycolysis?
+    answer_focus: central carbon and glycolytic metabolism
+    sources:
+    - alias: metabolism_sbml_shestov2014_aerobic_glycolysis_model1504010000_model
+      title: Shestov2014 - aerobic glycolysis
+      scope: central carbon and glycolytic metabolism
+      label_caveat: Values are native SBML quantities. Conservative pathway-state labels are
+        used where the bundled SBML does not encode exact metabolite identities.
+      observables:
+      - id: glycolysis_state_1
+        label: Glycolysis state 1
+        maps_to: GLU
+      - id: glucose_6_phosphate
+        label: Glucose 6 Phosphate
+        maps_to: G6P
+      - id: fructose_6_phosphate
+        label: Fructose 6 Phosphate
+        maps_to: F6P
+      - id: fructose_bisphosphate
+        label: Fructose Bisphosphate
+        maps_to: FBP
+      - id: glycolysis_state_5
+        label: Glycolysis state 5
+        maps_to: DHAP
+      - id: glyceraldehyde_3_phosphate
+        label: Glyceraldehyde 3 Phosphate
+        maps_to: GAP
+      - id: glycolysis_state_7
+        label: Glycolysis state 7
+        maps_to: BPG
+      - id: glycolysis_state_8
+        label: Glycolysis state 8
+        maps_to: _3PG
+      - id: glycolysis_state_9
+        label: Glycolysis state 9
+        maps_to: _2PG
+      - id: phosphoenolpyruvate
+        label: Phosphoenolpyruvate
+        maps_to: PEP
+      - id: pyruvate
+        label: Pyruvate
+        maps_to: PYR
+      - id: lactate
+        label: Lactate
+        maps_to: LAC
+      - id: atp
+        label: ATP
+        maps_to: ATP
+      - id: adp
+        label: ADP
+        maps_to: ADP
+      - id: amp
+        label: AMP
+        maps_to: AMP
+      - id: glycolysis_state_16
+        label: Glycolysis state 16
+        maps_to: P
+      - id: nadh
+        label: NADH
+        maps_to: NADH
+      - id: nad
+        label: NAD
+        maps_to: NAD
+      - id: glycolysis_state_19
+        label: Glycolysis state 19
+        maps_to: PCR
+      - id: glycolysis_state_20
+        label: Glycolysis state 20
+        maps_to: CR
+      - id: glycolysis_state_21
+        label: O2
+        maps_to: O2
+  communication_step: 1.0
+runtime:
+  dependencies:
+    packages:
+    - PyYAML==6.0.2
+parameters:
+- name: integration_step
+  value: 1.0
+  min: 0.0
+  units: model_time
+  description: Sampling step for the visualisation model.
+io:
+  inputs:
+  - name: metabolism_sbml_shestov2014_aerobic_glycolysis_model1504010000_model_observable_values
+    description: Latest user-facing observable values from the core metabolism model.
+  - name: metabolism_sbml_shestov2014_aerobic_glycolysis_model1504010000_model_run_summary
+    description: Run summary from the core metabolism model.
+  - name: metabolism_sbml_shestov2014_aerobic_glycolysis_model1504010000_model_observable_labels
+    description: Display labels for user-facing observables.
+  outputs: []

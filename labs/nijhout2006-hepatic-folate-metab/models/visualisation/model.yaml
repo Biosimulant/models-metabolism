@@ -1,0 +1,112 @@
+schema_version: '2.0'
+title: Nijhout2006_Hepatic_Folate_Metab Visualisation
+description: Dedicated presentation model for Nijhout2006_Hepatic_Folate_Metab.
+standard: other
+tags:
+- metabolism
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  entrypoint: src.metabolism_visualisation:MetabolismVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Nijhout2006_Hepatic_Folate_Metab Lab
+    question: Which folate metabolism observables show the strongest activity in Nijhout2006_Hepatic_Folate_Metab?
+    answer_focus: folate metabolism
+    sources:
+    - alias: metabolism_sbml_nijhout2006_hepatic_folate_metab_model1007200000_model
+      title: Nijhout2006_Hepatic_Folate_Metab
+      scope: folate metabolism
+      label_caveat: Values are native SBML quantities. Conservative pathway-state labels are
+        used where the bundled SBML does not encode exact metabolite identities.
+      observables:
+      - id: cytosolic_tetrahydrofolate
+        label: Cytosolic Tetrahydrofolate
+        maps_to: c_thf
+      - id: mitochondrial_tetrahydrofolate
+        label: Mitochondrial Tetrahydrofolate
+        maps_to: m_thf
+      - id: folate_metabolism_state_3
+        label: Folate Metabolism state 3
+        maps_to: c_5mf
+      - id: folate_metabolism_state_4
+        label: Folate Metabolism state 4
+        maps_to: c_2cf
+      - id: folate_metabolism_state_5
+        label: Folate Metabolism state 5
+        maps_to: c_1cf
+      - id: folate_metabolism_state_6
+        label: Folate Metabolism state 6
+        maps_to: c_10f
+      - id: dihydrofolate
+        label: Dihydrofolate
+        maps_to: dhf
+      - id: folate_metabolism_state_8
+        label: Folate Metabolism state 8
+        maps_to: m_2cf
+      - id: folate_metabolism_state_9
+        label: Folate Metabolism state 9
+        maps_to: m_1cf
+      - id: folate_metabolism_state_10
+        label: Folate Metabolism state 10
+        maps_to: m_10f
+      - id: folate_metabolism_state_11
+        label: Folate Metabolism state 11
+        maps_to: aic
+      - id: c_glycine
+        label: C Glycine
+        maps_to: c_gly
+      - id: homocysteine
+        label: Homocysteine
+        maps_to: hcy
+      - id: cytosolic_serine
+        label: Cytosolic Serine
+        maps_to: c_ser
+      - id: s_adenosylhomocysteine
+        label: S Adenosylhomocysteine
+        maps_to: sah
+      - id: s_adenosylmethionine
+        label: S Adenosylmethionine
+        maps_to: sam
+      - id: methionine
+        label: Methionine
+        maps_to: met
+      - id: c_formate
+        label: C Formate
+        maps_to: c_coo
+      - id: m_serine
+        label: M Serine
+        maps_to: m_ser
+      - id: mit_glycine
+        label: Mit Glycine
+        maps_to: m_gly
+      - id: m_formate
+        label: M Formate
+        maps_to: m_coo
+      - id: sarcosine
+        label: Sarcosine
+        maps_to: src
+      - id: dimethylglycine
+        label: Dimethylglycine
+        maps_to: dmg
+  communication_step: 1.0
+runtime:
+  dependencies:
+    packages:
+    - PyYAML==6.0.2
+parameters:
+- name: integration_step
+  value: 1.0
+  min: 0.0
+  units: model_time
+  description: Sampling step for the visualisation model.
+io:
+  inputs:
+  - name: metabolism_sbml_nijhout2006_hepatic_folate_metab_model1007200000_model_observable_values
+    description: Latest user-facing observable values from the core metabolism model.
+  - name: metabolism_sbml_nijhout2006_hepatic_folate_metab_model1007200000_model_run_summary
+    description: Run summary from the core metabolism model.
+  - name: metabolism_sbml_nijhout2006_hepatic_folate_metab_model1007200000_model_observable_labels
+    description: Display labels for user-facing observables.
+  outputs: []

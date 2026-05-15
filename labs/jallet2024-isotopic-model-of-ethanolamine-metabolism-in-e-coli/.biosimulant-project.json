@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "bd3b41a3-f981-4e64-a779-56fc983a5847",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "f2893b8f-71f3-4808-9c18-9557e8ee2d64",
+  "created_at": "2026-05-15T16:03:02.136871170+00:00",
+  "last_synced_at": "2026-05-15T18:04:06.225195+00:00",
+  "hub_manifest_hash": "302c0cfa07ce061d841812021dffe47fd2652e85473c7dd60064333ab2cfe6de",
+  "package_name": "jallet2024-isotopic-model-of-ethanolamine-metabolism-in-e-coli-l"
+}

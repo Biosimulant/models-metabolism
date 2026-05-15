@@ -1,0 +1,123 @@
+schema_version: '2.0'
+title: Costa2014 - Computational Model of L. lactis Metabolism Visualisation
+description: Dedicated presentation model for Costa2014 - Computational Model of L. lactis
+  Metabolism.
+standard: other
+tags:
+- metabolism
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  entrypoint: src.metabolism_visualisation:MetabolismVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Costa2014 - Computational Model of L. lactis Metabolism Lab
+    question: Which microbial metabolism observables show the strongest activity in Costa2014
+      - Computational Model of L. lactis Metabolism?
+    answer_focus: microbial metabolism
+    sources:
+    - alias: metabolism_sbml_costa2014_computational_model_of_l_lactis_metabo_biomd0000000572_model
+      title: Costa2014 - Computational Model of L. lactis Metabolism
+      scope: microbial metabolism
+      label_caveat: Values are native SBML quantities. Conservative pathway-state labels are
+        used where the bundled SBML does not encode exact metabolite identities.
+      observables:
+      - id: glucose_6_phosphate
+        label: Glucose 6 Phosphate
+        maps_to: G6P
+      - id: atp
+        label: ATP
+        maps_to: ATP
+      - id: adp
+        label: ADP
+        maps_to: ADP
+      - id: inorganic_phosphate
+        label: Inorganic Phosphate
+        maps_to: Pint
+      - id: fructose_6_phosphate
+        label: Fructose 6 Phosphate
+        maps_to: F6P
+      - id: fructose_bisphosphate
+        label: Fructose Bisphosphate
+        maps_to: FBP
+      - id: microbial_metabolism_state_7
+        label: Microbial Metabolism state 7
+        maps_to: G3P
+      - id: microbial_metabolism_state_8
+        label: Microbial Metabolism state 8
+        maps_to: BPG
+      - id: phosphoenolpyruvate
+        label: Phosphoenolpyruvate
+        maps_to: PEP
+      - id: nad
+        label: NAD
+        maps_to: NAD
+      - id: nadh
+        label: NADH
+        maps_to: NADH
+      - id: pyruvate
+        label: Pyruvate
+        maps_to: PYR
+      - id: microbial_metabolism_state_13
+        label: Microbial Metabolism state 13
+        maps_to: AcetCoA
+      - id: microbial_metabolism_state_14
+        label: Microbial Metabolism state 14
+        maps_to: Acetoin
+      - id: microbial_metabolism_state_15
+        label: Microbial Metabolism state 15
+        maps_to: Mannitol
+      - id: microbial_metabolism_state_16
+        label: Microbial Metabolism state 16
+        maps_to: Mannitol1Phosphate
+      - id: coa
+        label: CoA
+        maps_to: CoA
+      - id: microbial_metabolism_state_18
+        label: Microbial Metabolism state 18
+        maps_to: Pext
+      - id: microbial_metabolism_state_19
+        label: Microbial Metabolism state 19
+        maps_to: Lactate
+      - id: microbial_metabolism_state_20
+        label: Microbial Metabolism state 20
+        maps_to: Ethanol
+      - id: microbial_metabolism_state_21
+        label: Microbial Metabolism state 21
+        maps_to: Acetate
+      - id: microbial_metabolism_state_22
+        label: Microbial Metabolism state 22
+        maps_to: Butanediol
+      - id: microbial_metabolism_state_23
+        label: Microbial Metabolism state 23
+        maps_to: Glucose
+      - id: microbial_metabolism_state_24_extracellular
+        label: Microbial Metabolism state 24 extracellular
+        maps_to: Acetoin_Ext
+      - id: microbial_metabolism_state_25_extracellular
+        label: Microbial Metabolism state 25 extracellular
+        maps_to: Mannitol_Ext
+      - id: microbial_metabolism_state_26
+        label: Microbial Metabolism state 26
+        maps_to: Formate
+  communication_step: 1.0
+runtime:
+  dependencies:
+    packages:
+    - PyYAML==6.0.2
+parameters:
+- name: integration_step
+  value: 1.0
+  min: 0.0
+  units: model_time
+  description: Sampling step for the visualisation model.
+io:
+  inputs:
+  - name: metabolism_sbml_costa2014_computational_model_of_l_lactis_metabo_biomd0000000572_model_observable_values
+    description: Latest user-facing observable values from the core metabolism model.
+  - name: metabolism_sbml_costa2014_computational_model_of_l_lactis_metabo_biomd0000000572_model_run_summary
+    description: Run summary from the core metabolism model.
+  - name: metabolism_sbml_costa2014_computational_model_of_l_lactis_metabo_biomd0000000572_model_observable_labels
+    description: Display labels for user-facing observables.
+  outputs: []

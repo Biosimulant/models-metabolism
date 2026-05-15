@@ -1,0 +1,80 @@
+schema_version: '2.0'
+title: Hynne2001_Glycolysis Lab
+description: The model reproduces Fig 6 of the paper. It can be used to explore metabolic
+  flux dynamics and compare pathway behavior across conditions.
+io:
+  inputs:
+  - name: initial_extracellular_glucose
+    maps_to: metabolism_sbml_hynne2001_glycolysis_biomd0000000061_model.initial_extracellular_glucose
+    default: 6.7
+    units: native SBML value
+    description: Initial condition for extracellular glucose. Maps to bundled SBML symbol
+      `GlcX`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_cytosolic_glucose
+    maps_to: metabolism_sbml_hynne2001_glycolysis_biomd0000000061_model.initial_cytosolic_glucose
+    default: 0.573074
+    units: native SBML value
+    description: Initial condition for cytosolic glucose. Maps to bundled SBML symbol `Glc`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_atp
+    maps_to: metabolism_sbml_hynne2001_glycolysis_biomd0000000061_model.initial_atp
+    default: 2.1
+    units: native SBML value
+    description: Initial condition for atp. Maps to bundled SBML symbol `ATP`. Applied before
+      the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_glucose_6_phosphate
+    maps_to: metabolism_sbml_hynne2001_glycolysis_biomd0000000061_model.initial_glucose_6_phosphate
+    default: 4.2
+    units: native SBML value
+    description: Initial condition for glucose 6 phosphate. Maps to bundled SBML symbol `G6P`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_adp
+    maps_to: metabolism_sbml_hynne2001_glycolysis_biomd0000000061_model.initial_adp
+    default: 1.5
+    units: native SBML value
+    description: Initial condition for adp. Maps to bundled SBML symbol `ADP`. Applied before
+      the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  outputs:
+  - name: extracellular_glucose
+    maps_to: metabolism_sbml_hynne2001_glycolysis_biomd0000000061_model.extracellular_glucose
+  - name: cytosolic_glucose
+    maps_to: metabolism_sbml_hynne2001_glycolysis_biomd0000000061_model.cytosolic_glucose
+  - name: atp
+    maps_to: metabolism_sbml_hynne2001_glycolysis_biomd0000000061_model.atp
+  - name: glucose_6_phosphate
+    maps_to: metabolism_sbml_hynne2001_glycolysis_biomd0000000061_model.glucose_6_phosphate
+  - name: adp
+    maps_to: metabolism_sbml_hynne2001_glycolysis_biomd0000000061_model.adp
+  - name: observable_values
+    maps_to: metabolism_sbml_hynne2001_glycolysis_biomd0000000061_model.observable_values
+  - name: run_summary
+    maps_to: metabolism_sbml_hynne2001_glycolysis_biomd0000000061_model.run_summary
+  - name: observable_labels
+    maps_to: metabolism_sbml_hynne2001_glycolysis_biomd0000000061_model.observable_labels
+models:
+- alias: metabolism_sbml_hynne2001_glycolysis_biomd0000000061_model
+  path: models/core
+  parameters:
+    model_path: data/BIOMD0000000061.xml
+    integration_step: 0.1
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: metabolism_sbml_hynne2001_glycolysis_biomd0000000061_model.observable_values
+  to:
+  - visualisation.metabolism_sbml_hynne2001_glycolysis_biomd0000000061_model_observable_values
+- from: metabolism_sbml_hynne2001_glycolysis_biomd0000000061_model.run_summary
+  to:
+  - visualisation.metabolism_sbml_hynne2001_glycolysis_biomd0000000061_model_run_summary
+- from: metabolism_sbml_hynne2001_glycolysis_biomd0000000061_model.observable_labels
+  to:
+  - visualisation.metabolism_sbml_hynne2001_glycolysis_biomd0000000061_model_observable_labels
+runtime:
+  duration: 10.0
+  communication_step: 1.0
+  initial_inputs: {}

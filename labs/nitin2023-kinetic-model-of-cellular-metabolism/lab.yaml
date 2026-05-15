@@ -1,0 +1,86 @@
+schema_version: '2.0'
+title: Nitin2023- Kinetic model of cellular metabolism Lab
+description: A simplistic numerical model designed to simulate and augment the commercially
+  available real-time, in-vitro, end-point kinetic glycolysis assay with and without pathway-modulating
+  drugs to extend the. It can be used to explore metabolic flux dynamics and compare pathway
+  behavior across conditions.
+io:
+  inputs:
+  - name: initial_metabolic_pathway_state_1
+    maps_to: metabolism_sbml_nitin2023_kinetic_model_of_cellular_metabolism_model2312220001_model.initial_metabolic_pathway_state_1
+    default: 20000.0
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 1. Maps to bundled SBML symbol
+      `mw3a3264af_63ed_4289_a17a_a14fb9d67eff`. Applied before the Tellurium simulation starts;
+      this does not change kinetic parameters or equations. Default from bundled SBML initial
+      value.
+  - name: initial_metabolic_pathway_state_2
+    maps_to: metabolism_sbml_nitin2023_kinetic_model_of_cellular_metabolism_model2312220001_model.initial_metabolic_pathway_state_2
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 2. Maps to bundled SBML symbol
+      `mw76465d1e_cf23_4b01_8554_20dd288edbd4`. Applied before the Tellurium simulation starts;
+      this does not change kinetic parameters or equations. Default from bundled SBML initial
+      value.
+  - name: initial_metabolic_pathway_state_3
+    maps_to: metabolism_sbml_nitin2023_kinetic_model_of_cellular_metabolism_model2312220001_model.initial_metabolic_pathway_state_3
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 3. Maps to bundled SBML symbol
+      `mwf28b5b41_dded_4f05_85a9_31b845b5a48d`. Applied before the Tellurium simulation starts;
+      this does not change kinetic parameters or equations. Default from bundled SBML initial
+      value.
+  - name: initial_observable_2dg
+    maps_to: metabolism_sbml_nitin2023_kinetic_model_of_cellular_metabolism_model2312220001_model.initial_observable_2dg
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for observable 2dg. Maps to bundled SBML symbol `mw74dc94dc_3350_40dc_8283_cf793630d973`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_metabolic_pathway_state_5
+    maps_to: metabolism_sbml_nitin2023_kinetic_model_of_cellular_metabolism_model2312220001_model.initial_metabolic_pathway_state_5
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 5. Maps to bundled SBML symbol
+      `mwb94475cd_d488_489d_b1fc_5b2ae6fb2aca`. Applied before the Tellurium simulation starts;
+      this does not change kinetic parameters or equations. Default from bundled SBML initial
+      value.
+  outputs:
+  - name: metabolic_pathway_state_1
+    maps_to: metabolism_sbml_nitin2023_kinetic_model_of_cellular_metabolism_model2312220001_model.metabolic_pathway_state_1
+  - name: metabolic_pathway_state_2
+    maps_to: metabolism_sbml_nitin2023_kinetic_model_of_cellular_metabolism_model2312220001_model.metabolic_pathway_state_2
+  - name: metabolic_pathway_state_3
+    maps_to: metabolism_sbml_nitin2023_kinetic_model_of_cellular_metabolism_model2312220001_model.metabolic_pathway_state_3
+  - name: observable_2dg
+    maps_to: metabolism_sbml_nitin2023_kinetic_model_of_cellular_metabolism_model2312220001_model.observable_2dg
+  - name: metabolic_pathway_state_5
+    maps_to: metabolism_sbml_nitin2023_kinetic_model_of_cellular_metabolism_model2312220001_model.metabolic_pathway_state_5
+  - name: observable_values
+    maps_to: metabolism_sbml_nitin2023_kinetic_model_of_cellular_metabolism_model2312220001_model.observable_values
+  - name: run_summary
+    maps_to: metabolism_sbml_nitin2023_kinetic_model_of_cellular_metabolism_model2312220001_model.run_summary
+  - name: observable_labels
+    maps_to: metabolism_sbml_nitin2023_kinetic_model_of_cellular_metabolism_model2312220001_model.observable_labels
+models:
+- alias: metabolism_sbml_nitin2023_kinetic_model_of_cellular_metabolism_model2312220001_model
+  path: models/core
+  parameters:
+    model_path: data/MODEL2312220001.sbml
+    integration_step: 0.1
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: metabolism_sbml_nitin2023_kinetic_model_of_cellular_metabolism_model2312220001_model.observable_values
+  to:
+  - visualisation.metabolism_sbml_nitin2023_kinetic_model_of_cellular_metabolism_model2312220001_model_observable_values
+- from: metabolism_sbml_nitin2023_kinetic_model_of_cellular_metabolism_model2312220001_model.run_summary
+  to:
+  - visualisation.metabolism_sbml_nitin2023_kinetic_model_of_cellular_metabolism_model2312220001_model_run_summary
+- from: metabolism_sbml_nitin2023_kinetic_model_of_cellular_metabolism_model2312220001_model.observable_labels
+  to:
+  - visualisation.metabolism_sbml_nitin2023_kinetic_model_of_cellular_metabolism_model2312220001_model_observable_labels
+runtime:
+  duration: 10.0
+  communication_step: 1.0
+  initial_inputs: {}

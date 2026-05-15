@@ -1,0 +1,110 @@
+schema_version: '2.0'
+title: Costa2015 - Central metabolism of E. coli, non-regulated linlog model (without allosteric
+  regulations)
+description: Metabolism Costa2015Central Metabolism Of EColi Non Regul Model1504080005Model
+  captures core biological behavior in the context of metabolism, sbml, biomodels_ebi using
+  a biomodels_ebi-sourced OTHER model. When you run it, you can observe state and evaluate
+  how the modeled system changes across runs.
+standard: sbml
+tags:
+- biomodels_ebi
+- faithful
+- metabolism
+- ode
+- sbml
+- tellurium
+authors:
+- Biosimulant Team
+- Rafael S. Costa
+- Susana Vinga
+upstream:
+  id: biomodels_ebi:MODEL1504080005
+  source_db: biomodels_ebi
+  source_id: MODEL1504080005
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1504080005
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1504080005?filename=MODEL1504080005_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.costa2015_central_metabolism_of_e_coli_non_regul_model1504080005_model:Costa2015CentralMetabolismOfEColiNonRegulModel1504080005Model
+  init_kwargs:
+    model_path: data/MODEL1504080005.xml
+    integration_step: 0.1
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_phosphoenol_pyruvate
+    maps_to: cpep
+    default: 2.67
+    units: native SBML value
+    description: Initial condition for phosphoenol pyruvate. Maps to bundled SBML symbol `cpep`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_extracellular_glucose
+    maps_to: cglcex
+    default: 0.0556
+    units: native SBML value
+    description: Initial condition for extracellular glucose. Maps to bundled SBML symbol
+      `cglcex`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_glucose_6_phosphate
+    maps_to: cg6p
+    default: 3.48
+    units: native SBML value
+    description: Initial condition for glucose 6 phosphate. Maps to bundled SBML symbol `cg6p`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_microbial_metabolism_state_4
+    maps_to: cpyr
+    default: 2.67
+    units: native SBML value
+    description: Initial condition for microbial metabolism state 4. Maps to bundled SBML
+      symbol `cpyr`. Applied before the Tellurium simulation starts; this does not change
+      kinetic parameters or equations. Default from bundled SBML initial value.
+  - name: initial_fructose_6_phosphate
+    maps_to: cf6p
+    default: 0.6
+    units: native SBML value
+    description: Initial condition for fructose 6 phosphate. Maps to bundled SBML symbol `cf6p`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: phosphoenol_pyruvate
+    maps_to: cpep
+    label: Phosphoenol Pyruvate
+    description: Phosphoenol Pyruvate. Maps to SBML symbol `cpep`.
+  - name: extracellular_glucose
+    maps_to: cglcex
+    label: Extracellular Glucose
+    description: Extracellular Glucose. Maps to SBML symbol `cglcex`.
+  - name: glucose_6_phosphate
+    maps_to: cg6p
+    label: Glucose 6 Phosphate
+    description: Glucose 6 Phosphate. Maps to SBML symbol `cg6p`.
+  - name: microbial_metabolism_state_4
+    maps_to: cpyr
+    label: Microbial Metabolism state 4
+    description: Microbial Metabolism state 4; conservative display label for an abstract
+      SBML state variable. Maps to SBML symbol `cpyr`. Exact metabolite identity is not encoded
+      in the bundled SBML metadata.
+  - name: fructose_6_phosphate
+    maps_to: cf6p
+    label: Fructose 6 Phosphate
+    description: Fructose 6 Phosphate. Maps to SBML symbol `cf6p`.
+  - name: observable_values
+    description: Latest user-facing observable values from the SBML run.
+  - name: run_summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: observable_labels
+    description: Mapping from user-facing observable ports to display labels.
+parameters:
+- name: integration_step
+  value: 0.1
+  min: 0.0
+  units: model_time
+  description: Internal sampling step for Tellurium output collection.

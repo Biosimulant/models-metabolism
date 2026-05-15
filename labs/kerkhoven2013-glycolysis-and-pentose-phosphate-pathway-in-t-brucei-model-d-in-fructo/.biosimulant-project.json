@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "89060dab-c777-4935-b3d4-2bb82f9e5c7b",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "90041f58-4676-425d-9fd1-3ac0d819628a",
+  "created_at": "2026-05-15T16:03:02.443116482+00:00",
+  "last_synced_at": "2026-05-15T20:00:01.014797+00:00",
+  "hub_manifest_hash": "18faea3a8f86e768959aac594673914f7bd8662cb445e0c232848db7928d065b",
+  "package_name": "k2013-dfruc-glycolysis-lab"
+}

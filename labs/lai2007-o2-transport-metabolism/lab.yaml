@@ -1,0 +1,82 @@
+schema_version: '2.0'
+title: Lai2007_O2_Transport_Metabolism Lab
+description: 'This file describes the SBML version of the mathematical model in the following
+  journal article: Linking Pulmonary Oxygen Uptake, Muscle Oxygen Utilization and Cellular
+  Metabolism during Exercise, Ann. It can be used to explore metabolic flux dynamics and compare
+  pathway behavior across conditions.'
+io:
+  inputs:
+  - name: initial_atp
+    maps_to: metabolism_sbml_lai2007_o2_transport_metabolism_biomd0000000248_model.initial_atp
+    default: 8.198857
+    units: native SBML value
+    description: Initial condition for atp. Maps to bundled SBML symbol `ATP`. Applied before
+      the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_metabolic_pathway_state_2
+    maps_to: metabolism_sbml_lai2007_o2_transport_metabolism_biomd0000000248_model.initial_metabolic_pathway_state_2
+    default: 40.98942
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 2. Maps to bundled SBML symbol
+      `PCr`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_adp
+    maps_to: metabolism_sbml_lai2007_o2_transport_metabolism_biomd0000000248_model.initial_adp
+    default: 0.001142
+    units: native SBML value
+    description: Initial condition for adp. Maps to bundled SBML symbol `ADP`. Applied before
+      the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_metabolic_pathway_state_4
+    maps_to: metabolism_sbml_lai2007_o2_transport_metabolism_biomd0000000248_model.initial_metabolic_pathway_state_4
+    default: 1.01056
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 4. Maps to bundled SBML symbol
+      `Cr`. Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_metabolic_pathway_state_5
+    maps_to: metabolism_sbml_lai2007_o2_transport_metabolism_biomd0000000248_model.initial_metabolic_pathway_state_5
+    default: 0.5
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 5. Maps to bundled SBML symbol
+      `Pi`. Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: atp
+    maps_to: metabolism_sbml_lai2007_o2_transport_metabolism_biomd0000000248_model.atp
+  - name: metabolic_pathway_state_2
+    maps_to: metabolism_sbml_lai2007_o2_transport_metabolism_biomd0000000248_model.metabolic_pathway_state_2
+  - name: adp
+    maps_to: metabolism_sbml_lai2007_o2_transport_metabolism_biomd0000000248_model.adp
+  - name: metabolic_pathway_state_4
+    maps_to: metabolism_sbml_lai2007_o2_transport_metabolism_biomd0000000248_model.metabolic_pathway_state_4
+  - name: metabolic_pathway_state_5
+    maps_to: metabolism_sbml_lai2007_o2_transport_metabolism_biomd0000000248_model.metabolic_pathway_state_5
+  - name: observable_values
+    maps_to: metabolism_sbml_lai2007_o2_transport_metabolism_biomd0000000248_model.observable_values
+  - name: run_summary
+    maps_to: metabolism_sbml_lai2007_o2_transport_metabolism_biomd0000000248_model.run_summary
+  - name: observable_labels
+    maps_to: metabolism_sbml_lai2007_o2_transport_metabolism_biomd0000000248_model.observable_labels
+models:
+- alias: metabolism_sbml_lai2007_o2_transport_metabolism_biomd0000000248_model
+  path: models/core
+  parameters:
+    model_path: data/BIOMD0000000248.xml
+    integration_step: 0.1
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: metabolism_sbml_lai2007_o2_transport_metabolism_biomd0000000248_model.observable_values
+  to:
+  - visualisation.metabolism_sbml_lai2007_o2_transport_metabolism_biomd0000000248_model_observable_values
+- from: metabolism_sbml_lai2007_o2_transport_metabolism_biomd0000000248_model.run_summary
+  to:
+  - visualisation.metabolism_sbml_lai2007_o2_transport_metabolism_biomd0000000248_model_run_summary
+- from: metabolism_sbml_lai2007_o2_transport_metabolism_biomd0000000248_model.observable_labels
+  to:
+  - visualisation.metabolism_sbml_lai2007_o2_transport_metabolism_biomd0000000248_model_observable_labels
+runtime:
+  duration: 10.0
+  communication_step: 1.0
+  initial_inputs: {}

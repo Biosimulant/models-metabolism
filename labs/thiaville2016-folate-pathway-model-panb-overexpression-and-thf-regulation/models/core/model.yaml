@@ -1,0 +1,116 @@
+schema_version: '2.0'
+title: Thiaville2016 - Folate pathway model (PanB overexpression and THF regulation)
+description: 'Henry2016 Folate pathway model with inducedPanB reaction This model is described
+  in the article: Experimental and Metabolic Modeling Evidence for a Folate-Cleaving Side-Activity
+  of Ketopantoate Hydrox. It can be used to explore metabolic flux dynamics and compare pathway
+  behavior across conditions.'
+standard: sbml
+tags:
+- biomodels_ebi
+- faithful
+- metabolism
+- ode
+- sbml
+- tellurium
+authors:
+- Biosimulant Team
+- Jennifer J Thiaville
+- "Oc\xE9ane Frelin"
+- "Carolina Garc\xEDa-Salinas"
+- Katherine Harrison
+- Ghulam Hasnain
+upstream:
+  id: biomodels_ebi:BIOMD0000000690
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000690
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000690
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000690?filename=BIOMD0000000690_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.thiaville2016_folate_pathway_model_panb_overexpr_biomd0000000690_model:Thiaville2016FolatePathwayModelPanbOverexprBiomd0000000690Model
+  init_kwargs:
+    model_path: data/BIOMD0000000690.xml
+    integration_step: 0.1
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_folate_metabolism_state_1
+    maps_to: H2_HMPt
+    default: 3.315e-06
+    units: native SBML value
+    description: Initial condition for folate metabolism state 1. Maps to bundled SBML symbol
+      `H2_HMPt`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_folate_metabolism_state_2
+    maps_to: H2_HMPterinPP
+    default: 1.0e-05
+    units: native SBML value
+    description: Initial condition for folate metabolism state 2. Maps to bundled SBML symbol
+      `H2_HMPterinPP`. Applied before the Tellurium simulation starts; this does not change
+      kinetic parameters or equations. Default from bundled SBML initial value.
+  - name: initial_para_aminobenzoate
+    maps_to: p_ABA
+    default: 1.0e-05
+    units: native SBML value
+    description: Initial condition for para aminobenzoate. Maps to bundled SBML symbol `p_ABA`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_folate_metabolism_state_4
+    maps_to: H2_Pteroate
+    default: 1.0e-05
+    units: native SBML value
+    description: Initial condition for folate metabolism state 4. Maps to bundled SBML symbol
+      `H2_Pteroate`. Applied before the Tellurium simulation starts; this does not change
+      kinetic parameters or equations. Default from bundled SBML initial value.
+  - name: initial_dihydrofolate
+    maps_to: DHF
+    default: 1.0e-05
+    units: native SBML value
+    description: Initial condition for dihydrofolate. Maps to bundled SBML symbol `DHF`. Applied
+      before the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  outputs:
+  - name: folate_metabolism_state_1
+    maps_to: H2_HMPt
+    label: Folate Metabolism state 1
+    description: Folate Metabolism state 1; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `H2_HMPt`. Exact metabolite identity is not encoded
+      in the bundled SBML metadata.
+  - name: folate_metabolism_state_2
+    maps_to: H2_HMPterinPP
+    label: Folate Metabolism state 2
+    description: Folate Metabolism state 2; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `H2_HMPterinPP`. Exact metabolite identity is not
+      encoded in the bundled SBML metadata.
+  - name: para_aminobenzoate
+    maps_to: p_ABA
+    label: Para Aminobenzoate
+    description: Para Aminobenzoate. Maps to SBML symbol `p_ABA`.
+  - name: folate_metabolism_state_4
+    maps_to: H2_Pteroate
+    label: Folate Metabolism state 4
+    description: Folate Metabolism state 4; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `H2_Pteroate`. Exact metabolite identity is not
+      encoded in the bundled SBML metadata.
+  - name: dihydrofolate
+    maps_to: DHF
+    label: Dihydrofolate
+    description: Dihydrofolate. Maps to SBML symbol `DHF`.
+  - name: observable_values
+    description: Latest user-facing observable values from the SBML run.
+  - name: run_summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: observable_labels
+    description: Mapping from user-facing observable ports to display labels.
+parameters:
+- name: integration_step
+  value: 0.1
+  min: 0.0
+  units: model_time
+  description: Internal sampling step for Tellurium output collection.

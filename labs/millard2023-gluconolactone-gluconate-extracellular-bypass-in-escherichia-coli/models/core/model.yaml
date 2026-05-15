@@ -1,0 +1,115 @@
+schema_version: '2.0'
+title: Millard2023 - Gluconolactone-Gluconate extracellular bypass in Escherichia coli
+description: This model was used for instationary 13C metabolic flux analysis of the extracellular
+  GL-GNT by-pass of E. It can be used to explore metabolic flux dynamics and compare pathway
+  behavior across conditions.
+standard: sbml
+tags:
+- biomodels_ebi
+- faithful
+- metabolism
+- ode
+- sbml
+- tellurium
+authors:
+- Biosimulant Team
+- "Ph\xE9gnon"
+- "P\xE9rochon"
+- Uttenweiler-Joseph
+- Cahoreau
+- Millard
+upstream:
+  id: biomodels_ebi:MODEL2310250001
+  source_db: biomodels_ebi
+  source_id: MODEL2310250001
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL2310250001
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2310250001?filename=model_GL-GNT-bypass_13Cflux.xml
+  license: CC0
+biosim:
+  entrypoint: src.millard2023_gluconolactone_gluconate_extracellul_model2310250001_model:Millard2023GluconolactoneGluconateExtracellulModel2310250001Model
+  init_kwargs:
+    model_path: data/MODEL2310250001.xml
+    integration_step: 0.1
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_microbial_metabolism_state_1
+    maps_to: G6P_0
+    default: 1.0
+    units: native SBML value
+    description: Initial condition for microbial metabolism state 1. Maps to bundled SBML
+      symbol `G6P_0`. Applied before the Tellurium simulation starts; this does not change
+      kinetic parameters or equations. Default from bundled SBML initial value.
+  - name: initial_microbial_metabolism_state_2
+    maps_to: GAP_0
+    default: 1.0
+    units: native SBML value
+    description: Initial condition for microbial metabolism state 2. Maps to bundled SBML
+      symbol `GAP_0`. Applied before the Tellurium simulation starts; this does not change
+      kinetic parameters or equations. Default from bundled SBML initial value.
+  - name: initial_microbial_metabolism_state_3
+    maps_to: PYR_0
+    default: 1.0
+    units: native SBML value
+    description: Initial condition for microbial metabolism state 3. Maps to bundled SBML
+      symbol `PYR_0`. Applied before the Tellurium simulation starts; this does not change
+      kinetic parameters or equations. Default from bundled SBML initial value.
+  - name: initial_observable_6pgl_0
+    maps_to: _6PGL_0
+    default: 1.0
+    units: native SBML value
+    description: Initial condition for observable 6pgl 0. Maps to bundled SBML symbol `_6PGL_0`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_observable_6pg_0
+    maps_to: _6PG_0
+    default: 1.0
+    units: native SBML value
+    description: Initial condition for observable 6pg 0. Maps to bundled SBML symbol `_6PG_0`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: microbial_metabolism_state_1
+    maps_to: G6P_0
+    label: Microbial Metabolism state 1
+    description: Microbial Metabolism state 1; conservative display label for an abstract
+      SBML state variable. Maps to SBML symbol `G6P_0`. Exact metabolite identity is not encoded
+      in the bundled SBML metadata.
+  - name: microbial_metabolism_state_2
+    maps_to: GAP_0
+    label: Microbial Metabolism state 2
+    description: Microbial Metabolism state 2; conservative display label for an abstract
+      SBML state variable. Maps to SBML symbol `GAP_0`. Exact metabolite identity is not encoded
+      in the bundled SBML metadata.
+  - name: microbial_metabolism_state_3
+    maps_to: PYR_0
+    label: Microbial Metabolism state 3
+    description: Microbial Metabolism state 3; conservative display label for an abstract
+      SBML state variable. Maps to SBML symbol `PYR_0`. Exact metabolite identity is not encoded
+      in the bundled SBML metadata.
+  - name: observable_6pgl_0
+    maps_to: _6PGL_0
+    label: 6pgl 0
+    description: 6pgl 0. Maps to SBML symbol `_6PGL_0`.
+  - name: observable_6pg_0
+    maps_to: _6PG_0
+    label: 6pg 0
+    description: 6pg 0. Maps to SBML symbol `_6PG_0`.
+  - name: observable_values
+    description: Latest user-facing observable values from the SBML run.
+  - name: run_summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: observable_labels
+    description: Mapping from user-facing observable ports to display labels.
+parameters:
+- name: integration_step
+  value: 0.1
+  min: 0.0
+  units: model_time
+  description: Internal sampling step for Tellurium output collection.

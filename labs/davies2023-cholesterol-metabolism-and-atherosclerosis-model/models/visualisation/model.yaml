@@ -1,0 +1,132 @@
+schema_version: '2.0'
+title: Davies2023 - Cholesterol Metabolism and Atherosclerosis Model Visualisation
+description: Dedicated presentation model for Davies2023 - Cholesterol Metabolism and Atherosclerosis
+  Model.
+standard: other
+tags:
+- metabolism
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  entrypoint: src.metabolism_visualisation:MetabolismVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Davies2023 - Cholesterol Metabolism and Atherosclerosis Model Lab
+    question: Which lipid metabolism observables show the strongest activity in Davies2023
+      - Cholesterol Metabolism and Atherosclerosis Model?
+    answer_focus: lipid metabolism
+    sources:
+    - alias: metabolism_sbml_davies2023_cholesterol_metabolism_and_atheroscle_model2306300001_model
+      title: Davies2023 - Cholesterol Metabolism and Atherosclerosis Model
+      scope: lipid metabolism
+      label_caveat: Values are native SBML quantities. Conservative pathway-state labels are
+        used where the bundled SBML does not encode exact metabolite identities.
+      observables:
+      - id: lipid_metabolism_state_1
+        label: Lipid Metabolism state 1
+        maps_to: species_2
+      - id: lipid_metabolism_state_2
+        label: Lipid Metabolism state 2
+        maps_to: species_4
+      - id: lipid_metabolism_state_3
+        label: Lipid Metabolism state 3
+        maps_to: species_5
+      - id: lipid_metabolism_state_4
+        label: Lipid Metabolism state 4
+        maps_to: species_7
+      - id: lipid_metabolism_state_5
+        label: Lipid Metabolism state 5
+        maps_to: species_10
+      - id: lipid_metabolism_state_6
+        label: Lipid Metabolism state 6
+        maps_to: species_11
+      - id: lipid_metabolism_state_7
+        label: Lipid Metabolism state 7
+        maps_to: species_13
+      - id: lipid_metabolism_state_8
+        label: Lipid Metabolism state 8
+        maps_to: species_14
+      - id: lipid_metabolism_state_9
+        label: Lipid Metabolism state 9
+        maps_to: species_15
+      - id: lipid_metabolism_state_10
+        label: Lipid Metabolism state 10
+        maps_to: species_17
+      - id: lipid_metabolism_state_11
+        label: Lipid Metabolism state 11
+        maps_to: species_18
+      - id: lipid_metabolism_state_12
+        label: Lipid Metabolism state 12
+        maps_to: species_21
+      - id: lipid_metabolism_state_13
+        label: Lipid Metabolism state 13
+        maps_to: species_22
+      - id: lipid_metabolism_state_14
+        label: Lipid Metabolism state 14
+        maps_to: species_23
+      - id: lipid_metabolism_state_15
+        label: Lipid Metabolism state 15
+        maps_to: species_24
+      - id: lipid_metabolism_state_16
+        label: Lipid Metabolism state 16
+        maps_to: species_25
+      - id: lipid_metabolism_state_17
+        label: Lipid Metabolism state 17
+        maps_to: species_28
+      - id: lipid_metabolism_state_18
+        label: Lipid Metabolism state 18
+        maps_to: species_30
+      - id: lipid_metabolism_state_19
+        label: Lipid Metabolism state 19
+        maps_to: species_31
+      - id: lipid_metabolism_state_20
+        label: Lipid Metabolism state 20
+        maps_to: species_33
+      - id: srb1
+        label: Srb1
+        maps_to: species_34
+      - id: lipid_metabolism_state_22
+        label: Lipid Metabolism state 22
+        maps_to: LDL
+      - id: lipid_metabolism_state_23
+        label: Lipid Metabolism state 23
+        maps_to: oxLDL
+      - id: lipid_metabolism_state_24
+        label: Lipid Metabolism state 24
+        maps_to: TINF
+      - id: lipid_metabolism_state_25
+        label: Lipid Metabolism state 25
+        maps_to: TAINF
+      - id: lipid_metabolism_state_26
+        label: Lipid Metabolism state 26
+        maps_to: MP
+      - id: lipid_metabolism_state_27
+        label: Lipid Metabolism state 27
+        maps_to: PLAQUE
+      - id: lipid_metabolism_state_28
+        label: Lipid Metabolism state 28
+        maps_to: Bcells
+      - id: lipid_metabolism_state_29
+        label: Lipid Metabolism state 29
+        maps_to: HDL
+  communication_step: 1.0
+runtime:
+  dependencies:
+    packages:
+    - PyYAML==6.0.2
+parameters:
+- name: integration_step
+  value: 1.0
+  min: 0.0
+  units: model_time
+  description: Sampling step for the visualisation model.
+io:
+  inputs:
+  - name: metabolism_sbml_davies2023_cholesterol_metabolism_and_atheroscle_model2306300001_model_observable_values
+    description: Latest user-facing observable values from the core metabolism model.
+  - name: metabolism_sbml_davies2023_cholesterol_metabolism_and_atheroscle_model2306300001_model_run_summary
+    description: Run summary from the core metabolism model.
+  - name: metabolism_sbml_davies2023_cholesterol_metabolism_and_atheroscle_model2306300001_model_observable_labels
+    description: Display labels for user-facing observables.
+  outputs: []

@@ -1,0 +1,116 @@
+schema_version: '2.0'
+title: Kotte2010_Ecoli_Metabolic_Adaption
+description: 'This is the model described in: Bacterial adaptation through distributed sensing
+  of metabolic fluxes Oliver Kotte, Judith B Zaugg and Matthias Heinemann; Mol Sys Biol 2010;
+  6 :355. It can be used to explore metabolic flux dynamics and compare pathway behavior across
+  conditions.'
+standard: sbml
+tags:
+- biomodels_ebi
+- faithful
+- metabolism
+- ode
+- sbml
+- tellurium
+authors:
+- Biosimulant Team
+- Oliver Kotte
+- Judith B Zaugg
+- Matthias Heinemann
+upstream:
+  id: biomodels_ebi:BIOMD0000000244
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000244
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000244
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000244?filename=BIOMD0000000244_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.kotte2010_ecoli_metabolic_adaption_biomd0000000244_model:Kotte2010EcoliMetabolicAdaptionBiomd0000000244Model
+  init_kwargs:
+    model_path: data/BIOMD0000000244.xml
+    integration_step: 0.1
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_microbial_metabolism_state_1
+    maps_to: BM
+    default: 0.03
+    units: native SBML value
+    description: Initial condition for microbial metabolism state 1. Maps to bundled SBML
+      symbol `BM`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_microbial_metabolism_state_2
+    maps_to: ACT
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for microbial metabolism state 2. Maps to bundled SBML
+      symbol `ACT`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_glucose
+    maps_to: GLC
+    default: 4.8
+    units: native SBML value
+    description: Initial condition for glucose. Maps to bundled SBML symbol `GLC`. Applied
+      before the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_microbial_metabolism_state_4
+    maps_to: ACoA
+    default: 0.351972298
+    units: native SBML value
+    description: Initial condition for microbial metabolism state 4. Maps to bundled SBML
+      symbol `ACoA`. Applied before the Tellurium simulation starts; this does not change
+      kinetic parameters or equations. Default from bundled SBML initial value.
+  - name: initial_microbial_metabolism_state_5
+    maps_to: AKG
+    default: 0.191190619
+    units: native SBML value
+    description: Initial condition for microbial metabolism state 5. Maps to bundled SBML
+      symbol `AKG`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: microbial_metabolism_state_1
+    maps_to: BM
+    label: Microbial Metabolism state 1
+    description: Microbial Metabolism state 1; conservative display label for an abstract
+      SBML state variable. Maps to SBML symbol `BM`. Exact metabolite identity is not encoded
+      in the bundled SBML metadata.
+  - name: microbial_metabolism_state_2
+    maps_to: ACT
+    label: Microbial Metabolism state 2
+    description: Microbial Metabolism state 2; conservative display label for an abstract
+      SBML state variable. Maps to SBML symbol `ACT`. Exact metabolite identity is not encoded
+      in the bundled SBML metadata.
+  - name: glucose
+    maps_to: GLC
+    label: Glucose
+    description: Glucose. Maps to SBML symbol `GLC`.
+  - name: microbial_metabolism_state_4
+    maps_to: ACoA
+    label: Microbial Metabolism state 4
+    description: Microbial Metabolism state 4; conservative display label for an abstract
+      SBML state variable. Maps to SBML symbol `ACoA`. Exact metabolite identity is not encoded
+      in the bundled SBML metadata.
+  - name: microbial_metabolism_state_5
+    maps_to: AKG
+    label: Microbial Metabolism state 5
+    description: Microbial Metabolism state 5; conservative display label for an abstract
+      SBML state variable. Maps to SBML symbol `AKG`. Exact metabolite identity is not encoded
+      in the bundled SBML metadata.
+  - name: observable_values
+    description: Latest user-facing observable values from the SBML run.
+  - name: run_summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: observable_labels
+    description: Mapping from user-facing observable ports to display labels.
+parameters:
+- name: integration_step
+  value: 0.1
+  min: 0.0
+  units: model_time
+  description: Internal sampling step for Tellurium output collection.

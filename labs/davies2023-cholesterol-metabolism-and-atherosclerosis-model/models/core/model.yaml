@@ -1,0 +1,118 @@
+schema_version: '2.0'
+title: Davies2023 - Cholesterol Metabolism and Atherosclerosis Model
+description: Merged model of whole body cholesterol metabolism (BIOMD0000000434) and atherosclerosis
+  (MODEL1002160000). It can be used to explore metabolic flux dynamics and compare pathway
+  behavior across conditions.
+standard: sbml
+tags:
+- biomodels_ebi
+- faithful
+- metabolism
+- ode
+- sbml
+- tellurium
+authors:
+- Biosimulant Team
+- Callum Davies
+- Amy E. Morgan
+- Mark T. Mc Auley
+upstream:
+  id: biomodels_ebi:MODEL2306300001
+  source_db: biomodels_ebi
+  source_id: MODEL2306300001
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL2306300001
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL2306300001?filename=Merged
+    model SBML.xml
+  license: CC0
+biosim:
+  entrypoint: src.davies2023_cholesterol_metabolism_and_atheroscle_model2306300001_model:Davies2023CholesterolMetabolismAndAtheroscleModel2306300001Model
+  init_kwargs:
+    model_path: data/MODEL2306300001.xml
+    integration_step: 0.1
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_lipid_metabolism_state_1
+    maps_to: species_2
+    default: 3150.0
+    units: native SBML value
+    description: Initial condition for lipid metabolism state 1. Maps to bundled SBML symbol
+      `species_2`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_lipid_metabolism_state_2
+    maps_to: species_4
+    default: 400.0
+    units: native SBML value
+    description: Initial condition for lipid metabolism state 2. Maps to bundled SBML symbol
+      `species_4`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_lipid_metabolism_state_3
+    maps_to: species_5
+    default: 467.0
+    units: native SBML value
+    description: Initial condition for lipid metabolism state 3. Maps to bundled SBML symbol
+      `species_5`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_lipid_metabolism_state_4
+    maps_to: species_7
+    default: 60000.0
+    units: native SBML value
+    description: Initial condition for lipid metabolism state 4. Maps to bundled SBML symbol
+      `species_7`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_lipid_metabolism_state_5
+    maps_to: species_10
+    default: 100.0
+    units: native SBML value
+    description: Initial condition for lipid metabolism state 5. Maps to bundled SBML symbol
+      `species_10`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: lipid_metabolism_state_1
+    maps_to: species_2
+    label: Lipid Metabolism state 1
+    description: Lipid Metabolism state 1; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `species_2`. Exact metabolite identity is not encoded
+      in the bundled SBML metadata.
+  - name: lipid_metabolism_state_2
+    maps_to: species_4
+    label: Lipid Metabolism state 2
+    description: Lipid Metabolism state 2; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `species_4`. Exact metabolite identity is not encoded
+      in the bundled SBML metadata.
+  - name: lipid_metabolism_state_3
+    maps_to: species_5
+    label: Lipid Metabolism state 3
+    description: Lipid Metabolism state 3; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `species_5`. Exact metabolite identity is not encoded
+      in the bundled SBML metadata.
+  - name: lipid_metabolism_state_4
+    maps_to: species_7
+    label: Lipid Metabolism state 4
+    description: Lipid Metabolism state 4; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `species_7`. Exact metabolite identity is not encoded
+      in the bundled SBML metadata.
+  - name: lipid_metabolism_state_5
+    maps_to: species_10
+    label: Lipid Metabolism state 5
+    description: Lipid Metabolism state 5; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `species_10`. Exact metabolite identity is not encoded
+      in the bundled SBML metadata.
+  - name: observable_values
+    description: Latest user-facing observable values from the SBML run.
+  - name: run_summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: observable_labels
+    description: Mapping from user-facing observable ports to display labels.
+parameters:
+- name: integration_step
+  value: 0.1
+  min: 0.0
+  units: model_time
+  description: Internal sampling step for Tellurium output collection.

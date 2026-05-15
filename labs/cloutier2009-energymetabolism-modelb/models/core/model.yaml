@@ -1,0 +1,105 @@
+schema_version: '2.0'
+title: Cloutier2009_EnergyMetabolism_ModelB
+description: 'This a model from the article: The control systems structures of energy metabolism.
+  It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions.'
+standard: sbml
+tags:
+- biomodels_ebi
+- faithful
+- metabolism
+- ode
+- sbml
+- tellurium
+authors:
+- Biosimulant Team
+- Mathieu Cloutier
+- Peter Wellstead
+upstream:
+  id: biomodels_ebi:MODEL1006230016
+  source_db: biomodels_ebi
+  source_id: MODEL1006230016
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1006230016
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1006230016?filename=MODEL1006230016_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.cloutier2009_energymetabolism_modelb_model1006230016_model:Cloutier2009EnergymetabolismModelbModel1006230016Model
+  init_kwargs:
+    model_path: data/MODEL1006230016.xml
+    integration_step: 0.1
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_fructose_6_phosphate
+    maps_to: F6P
+    default: 0.2
+    units: native SBML value
+    description: Initial condition for fructose 6 phosphate. Maps to bundled SBML symbol `F6P`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_fructose_2_6_bisphosphate
+    maps_to: F26P
+    default: 0.001
+    units: native SBML value
+    description: Initial condition for fructose 2 6 bisphosphate. Maps to bundled SBML symbol
+      `F26P`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_glyceraldehyde_3_phosphate
+    maps_to: GAP
+    default: 0.0405
+    units: native SBML value
+    description: Initial condition for glyceraldehyde 3 phosphate. Maps to bundled SBML symbol
+      `GAP`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_pyruvate
+    maps_to: PYR
+    default: 0.1
+    units: native SBML value
+    description: Initial condition for pyruvate. Maps to bundled SBML symbol `PYR`. Applied
+      before the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_lactate
+    maps_to: LAC
+    default: 0.5
+    units: native SBML value
+    description: Initial condition for lactate. Maps to bundled SBML symbol `LAC`. Applied
+      before the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  outputs:
+  - name: fructose_6_phosphate
+    maps_to: F6P
+    label: Fructose 6 Phosphate
+    description: Fructose 6 Phosphate. Maps to SBML symbol `F6P`.
+  - name: fructose_2_6_bisphosphate
+    maps_to: F26P
+    label: Fructose 2 6 Bisphosphate
+    description: Fructose 2 6 Bisphosphate. Maps to SBML symbol `F26P`.
+  - name: glyceraldehyde_3_phosphate
+    maps_to: GAP
+    label: Glyceraldehyde 3 Phosphate
+    description: Glyceraldehyde 3 Phosphate. Maps to SBML symbol `GAP`.
+  - name: pyruvate
+    maps_to: PYR
+    label: Pyruvate
+    description: Pyruvate. Maps to SBML symbol `PYR`.
+  - name: lactate
+    maps_to: LAC
+    label: Lactate
+    description: Lactate. Maps to SBML symbol `LAC`.
+  - name: observable_values
+    description: Latest user-facing observable values from the SBML run.
+  - name: run_summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: observable_labels
+    description: Mapping from user-facing observable ports to display labels.
+parameters:
+- name: integration_step
+  value: 0.1
+  min: 0.0
+  units: model_time
+  description: Internal sampling step for Tellurium output collection.

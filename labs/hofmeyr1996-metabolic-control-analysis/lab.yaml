@@ -1,0 +1,63 @@
+schema_version: '2.0'
+title: Hofmeyr1996 - metabolic control analysis Lab
+description: Hofmeyr1996 - metabolic control analysis Understanding of genetic mechanisms
+  would not be possible by studying the properties of individual components. To better understand
+  the system as a whole, it i.
+io:
+  inputs:
+  - name: initial_metabolic_pathway_state_1
+    maps_to: metabolism_sbml_hofmeyr1996_metabolic_control_analysis_model1304300000_model.initial_metabolic_pathway_state_1
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 1. Maps to bundled SBML symbol
+      `s1`. Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_metabolic_pathway_state_2
+    maps_to: metabolism_sbml_hofmeyr1996_metabolic_control_analysis_model1304300000_model.initial_metabolic_pathway_state_2
+    default: 2.5
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 2. Maps to bundled SBML symbol
+      `s2`. Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_metabolic_pathway_state_3
+    maps_to: metabolism_sbml_hofmeyr1996_metabolic_control_analysis_model1304300000_model.initial_metabolic_pathway_state_3
+    default: 2.5
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 3. Maps to bundled SBML symbol
+      `s3`. Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: metabolic_pathway_state_1
+    maps_to: metabolism_sbml_hofmeyr1996_metabolic_control_analysis_model1304300000_model.metabolic_pathway_state_1
+  - name: metabolic_pathway_state_2
+    maps_to: metabolism_sbml_hofmeyr1996_metabolic_control_analysis_model1304300000_model.metabolic_pathway_state_2
+  - name: metabolic_pathway_state_3
+    maps_to: metabolism_sbml_hofmeyr1996_metabolic_control_analysis_model1304300000_model.metabolic_pathway_state_3
+  - name: observable_values
+    maps_to: metabolism_sbml_hofmeyr1996_metabolic_control_analysis_model1304300000_model.observable_values
+  - name: run_summary
+    maps_to: metabolism_sbml_hofmeyr1996_metabolic_control_analysis_model1304300000_model.run_summary
+  - name: observable_labels
+    maps_to: metabolism_sbml_hofmeyr1996_metabolic_control_analysis_model1304300000_model.observable_labels
+models:
+- alias: metabolism_sbml_hofmeyr1996_metabolic_control_analysis_model1304300000_model
+  path: models/core
+  parameters:
+    model_path: data/MODEL1304300000.xml
+    integration_step: 0.1
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: metabolism_sbml_hofmeyr1996_metabolic_control_analysis_model1304300000_model.observable_values
+  to:
+  - visualisation.metabolism_sbml_hofmeyr1996_metabolic_control_analysis_model1304300000_model_observable_values
+- from: metabolism_sbml_hofmeyr1996_metabolic_control_analysis_model1304300000_model.run_summary
+  to:
+  - visualisation.metabolism_sbml_hofmeyr1996_metabolic_control_analysis_model1304300000_model_run_summary
+- from: metabolism_sbml_hofmeyr1996_metabolic_control_analysis_model1304300000_model.observable_labels
+  to:
+  - visualisation.metabolism_sbml_hofmeyr1996_metabolic_control_analysis_model1304300000_model_observable_labels
+runtime:
+  duration: 10.0
+  communication_step: 1.0
+  initial_inputs: {}

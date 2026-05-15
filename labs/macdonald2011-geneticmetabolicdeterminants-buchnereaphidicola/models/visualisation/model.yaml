@@ -1,0 +1,809 @@
+schema_version: '2.0'
+title: MacDonald2011_GeneticMetabolicDeterminants_BuchnereAphidicola Visualisation
+description: Dedicated presentation model for MacDonald2011_GeneticMetabolicDeterminants_BuchnereAphidicola.
+standard: other
+tags:
+- metabolism
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  entrypoint: src.metabolism_visualisation:MetabolismVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: MacDonald2011_GeneticMetabolicDeterminants_BuchnereAphidicola Lab
+    question: Which metabolic pathway dynamics observables show the strongest activity in
+      MacDonald2011_GeneticMetabolicDeterminants_BuchnereAphidicola?
+    answer_focus: metabolic pathway dynamics
+    sources:
+    - alias: metabolism_sbml_macdonald2011_geneticmetabolicdeterminants_buchn_model1012300000_model
+      title: MacDonald2011_GeneticMetabolicDeterminants_BuchnereAphidicola
+      scope: metabolic pathway dynamics
+      label_caveat: Values are native SBML quantities. Conservative pathway-state labels are
+        used where the bundled SBML does not encode exact metabolite identities.
+      observables:
+      - id: metabolic_pathway_state_1
+        label: Metabolic Pathway state 1
+        maps_to: ser__45__L_c_
+      - id: tetrahydrofolate
+        label: tetrahydrofolate
+        maps_to: thf_c_
+      - id: metabolic_pathway_state_3
+        label: Metabolic Pathway state 3
+        maps_to: gly_c_
+      - id: h2o
+        label: H2o
+        maps_to: h2o_c_
+      - id: metabolic_pathway_state_5
+        label: Metabolic Pathway state 5
+        maps_to: mlthf_c_
+      - id: glucose_6_phosphate
+        label: glucose 6 phosphate
+        maps_to: g6p_c_
+      - id: nadp
+        label: NADP
+        maps_to: nadp_c_
+      - id: observable_6pgl
+        label: 6pgl
+        maps_to: _6pgl_c_
+      - id: metabolic_pathway_state_9
+        label: Metabolic Pathway state 9
+        maps_to: h_c_
+      - id: nadph
+        label: NADPH
+        maps_to: nadph_c_
+      - id: observable_5aprbu
+        label: 5aprbu
+        maps_to: _5aprbu_c_
+      - id: observable_4r5au
+        label: 4r5au
+        maps_to: _4r5au_c_
+      - id: metabolic_pathway_state_13
+        label: Metabolic Pathway state 13
+        maps_to: pi_c_
+      - id: observable_3c2hmp
+        label: 3c2hmp
+        maps_to: _3c2hmp_c_
+      - id: nad
+        label: NAD
+        maps_to: nad_c_
+      - id: observable_3c4mop
+        label: 3c4mop
+        maps_to: _3c4mop_c_
+      - id: nadh
+        label: NADH
+        maps_to: nadh_c_
+      - id: metabolic_pathway_state_18
+        label: Metabolic Pathway state 18
+        maps_to: cys__45__L_c_
+      - id: metabolic_pathway_state_19
+        label: Metabolic Pathway state 19
+        maps_to: fmn_c_
+      - id: fmnh2
+        label: Fmnh2
+        maps_to: fmnh2_c_
+      - id: metabolic_pathway_state_21
+        label: Metabolic Pathway state 21
+        maps_to: prbatp_c_
+      - id: metabolic_pathway_state_22
+        label: Metabolic Pathway state 22
+        maps_to: ppi_c_
+      - id: metabolic_pathway_state_23
+        label: Metabolic Pathway state 23
+        maps_to: prbamp_c_
+      - id: metabolic_pathway_state_24
+        label: Metabolic Pathway state 24
+        maps_to: gua_c_
+      - id: metabolic_pathway_state_25
+        label: Metabolic Pathway state 25
+        maps_to: prpp_c_
+      - id: metabolic_pathway_state_26
+        label: Metabolic Pathway state 26
+        maps_to: gmp_c_
+      - id: atp
+        label: ATP
+        maps_to: atp_c_
+      - id: metabolic_pathway_state_28
+        label: Metabolic Pathway state 28
+        maps_to: glu__45__D_c_
+      - id: metabolic_pathway_state_29
+        label: Metabolic Pathway state 29
+        maps_to: uama_c_
+      - id: adp
+        label: ADP
+        maps_to: adp_c_
+      - id: metabolic_pathway_state_31
+        label: Metabolic Pathway state 31
+        maps_to: uamag_c_
+      - id: metabolic_pathway_state_32
+        label: Metabolic Pathway state 32
+        maps_to: pran_c_
+      - id: observable_2cpr5p
+        label: 2cpr5p
+        maps_to: _2cpr5p_c_
+      - id: metabolic_pathway_state_34
+        label: Metabolic Pathway state 34
+        maps_to: paps_c_
+      - id: metabolic_pathway_state_35
+        label: Metabolic Pathway state 35
+        maps_to: trdrd_c_
+      - id: metabolic_pathway_state_36
+        label: Metabolic Pathway state 36
+        maps_to: pap_c_
+      - id: so3
+        label: So3
+        maps_to: so3_c_
+      - id: metabolic_pathway_state_38
+        label: Metabolic Pathway state 38
+        maps_to: trdox_c_
+      - id: fructose_6_phosphate
+        label: fructose 6 phosphate
+        maps_to: f6p_c_
+      - id: metabolic_pathway_state_40
+        label: Metabolic Pathway state 40
+        maps_to: nac_c_
+      - id: metabolic_pathway_state_41
+        label: Metabolic Pathway state 41
+        maps_to: nicrnt_c_
+      - id: e4p
+        label: E4p
+        maps_to: e4p_c_
+      - id: phosphoenolpyruvate
+        label: phosphoenolpyruvate
+        maps_to: pep_c_
+      - id: observable_2dda7p
+        label: 2dda7p
+        maps_to: _2dda7p_c_
+      - id: metabolic_pathway_state_45
+        label: Metabolic Pathway state 45
+        maps_to: his__45__L_c_
+      - id: metabolic_pathway_state_46
+        label: Metabolic Pathway state 46
+        maps_to: akg_c_
+      - id: coa
+        label: CoA
+        maps_to: coa_c_
+      - id: co2
+        label: CO2
+        maps_to: co2_c_
+      - id: metabolic_pathway_state_49
+        label: Metabolic Pathway state 49
+        maps_to: succoa_c_
+      - id: observable_23dhdp
+        label: 23dhdp
+        maps_to: _23dhdp_c_
+      - id: metabolic_pathway_state_51
+        label: Metabolic Pathway state 51
+        maps_to: thdp_c_
+      - id: observable_10fthf
+        label: 10fthf
+        maps_to: _10fthf_c_
+      - id: metabolic_pathway_state_53
+        label: Metabolic Pathway state 53
+        maps_to: aicar_c_
+      - id: metabolic_pathway_state_54
+        label: Metabolic Pathway state 54
+        maps_to: fprica_c_
+      - id: metabolic_pathway_state_55
+        label: Metabolic Pathway state 55
+        maps_to: for_c_
+      - id: observable_2p4c2me
+        label: 2p4c2me
+        maps_to: _2p4c2me_c_
+      - id: observable_2mecdp
+        label: 2mecdp
+        maps_to: _2mecdp_c_
+      - id: metabolic_pathway_state_58
+        label: Metabolic Pathway state 58
+        maps_to: cmp_c_
+      - id: metabolic_pathway_state_59
+        label: Metabolic Pathway state 59
+        maps_to: amet_c_
+      - id: uppg3
+        label: Uppg3
+        maps_to: uppg3_c_
+      - id: metabolic_pathway_state_61
+        label: Metabolic Pathway state 61
+        maps_to: ahcys_c_
+      - id: metabolic_pathway_state_62
+        label: Metabolic Pathway state 62
+        maps_to: dscl_c_
+      - id: metabolic_pathway_state_63
+        label: Metabolic Pathway state 63
+        maps_to: hom__45__L_c_
+      - id: metabolic_pathway_state_64
+        label: Metabolic Pathway state 64
+        maps_to: phom_c_
+      - id: h2mb4p
+        label: H2mb4p
+        maps_to: h2mb4p_c_
+      - id: metabolic_pathway_state_66
+        label: Metabolic Pathway state 66
+        maps_to: ipdp_c_
+      - id: observable_2me4p
+        label: 2me4p
+        maps_to: _2me4p_c_
+      - id: metabolic_pathway_state_68
+        label: Metabolic Pathway state 68
+        maps_to: ctp_c_
+      - id: observable_4c2me
+        label: 4c2me
+        maps_to: _4c2me_c_
+      - id: acg5sa
+        label: Acg5sa
+        maps_to: acg5sa_c_
+      - id: metabolic_pathway_state_71
+        label: Metabolic Pathway state 71
+        maps_to: glu__45__L_c_
+      - id: metabolic_pathway_state_72
+        label: Metabolic Pathway state 72
+        maps_to: acorn_c_
+      - id: metabolic_pathway_state_73
+        label: Metabolic Pathway state 73
+        maps_to: dmlz_c_
+      - id: metabolic_pathway_state_74
+        label: Metabolic Pathway state 74
+        maps_to: ribflv_c_
+      - id: metabolic_pathway_state_75
+        label: Metabolic Pathway state 75
+        maps_to: imp_c_
+      - id: db4p
+        label: Db4p
+        maps_to: db4p_c_
+      - id: metabolic_pathway_state_77
+        label: Metabolic Pathway state 77
+        maps_to: met__45__L_c_
+      - id: metabolic_pathway_state_78
+        label: Metabolic Pathway state 78
+        maps_to: methf_c_
+      - id: metabolic_pathway_state_79
+        label: Metabolic Pathway state 79
+        maps_to: succ_c_
+      - id: metabolic_pathway_state_80
+        label: Metabolic Pathway state 80
+        maps_to: asp__45__L_c_
+      - id: metabolic_pathway_state_81
+        label: Metabolic Pathway state 81
+        maps_to: ru5p__45__D_c_
+      - id: metabolic_pathway_state_82
+        label: Metabolic Pathway state 82
+        maps_to: xu5p__45__D_c_
+      - id: metabolic_pathway_state_83
+        label: Metabolic Pathway state 83
+        maps_to: phe__45__L_c_
+      - id: metabolic_pathway_state_84
+        label: Metabolic Pathway state 84
+        maps_to: phpyr_c_
+      - id: metabolic_pathway_state_85
+        label: Metabolic Pathway state 85
+        maps_to: imacp_c_
+      - id: metabolic_pathway_state_86
+        label: Metabolic Pathway state 86
+        maps_to: hisp_c_
+      - id: metabolic_pathway_state_87
+        label: Metabolic Pathway state 87
+        maps_to: thr__45__L_c_
+      - id: metabolic_pathway_state_88
+        label: Metabolic Pathway state 88
+        maps_to: fum_c_
+      - id: metabolic_pathway_state_89
+        label: Metabolic Pathway state 89
+        maps_to: alaala_c_
+      - id: pan4p
+        label: Pan4p
+        maps_to: pan4p_c_
+      - id: g3p
+        label: G3p
+        maps_to: g3p_c_
+      - id: observable_13dpg
+        label: 13dpg
+        maps_to: _13dpg_c_
+      - id: metabolic_pathway_state_93
+        label: Metabolic Pathway state 93
+        maps_to: val__45__L_c_
+      - id: metabolic_pathway_state_94
+        label: Metabolic Pathway state 94
+        maps_to: accoa_c_
+      - id: gam1p
+        label: Gam1p
+        maps_to: gam1p_c_
+      - id: acgam1p
+        label: Acgam1p
+        maps_to: acgam1p_c_
+      - id: metabolic_pathway_state_97
+        label: Metabolic Pathway state 97
+        maps_to: ile__45__L_c_
+      - id: metabolic_pathway_state_98
+        label: Metabolic Pathway state 98
+        maps_to: dpcoa_c_
+      - id: r5p
+        label: R5p
+        maps_to: r5p_c_
+      - id: nh4
+        label: Nh4
+        maps_to: nh4_c_
+      - id: metabolic_pathway_state_101
+        label: Metabolic Pathway state 101
+        maps_to: gln__45__L_c_
+      - id: metabolic_pathway_state_102
+        label: Metabolic Pathway state 102
+        maps_to: prlp_c_
+      - id: eig3p
+        label: Eig3p
+        maps_to: eig3p_c_
+      - id: metabolic_pathway_state_104
+        label: Metabolic Pathway state 104
+        maps_to: ade_c_
+      - id: metabolic_pathway_state_105
+        label: Metabolic Pathway state 105
+        maps_to: rhcys_c_
+      - id: metabolic_pathway_state_106
+        label: Metabolic Pathway state 106
+        maps_to: ala__45__B_c_
+      - id: metabolic_pathway_state_107
+        label: Metabolic Pathway state 107
+        maps_to: pant__45__R_c_
+      - id: amp
+        label: AMP
+        maps_to: amp_c_
+      - id: metabolic_pathway_state_109
+        label: Metabolic Pathway state 109
+        maps_to: pnto__45__R_c_
+      - id: metabolic_pathway_state_110
+        label: Metabolic Pathway state 110
+        maps_to: dnad_c_
+      - id: metabolic_pathway_state_111
+        label: Metabolic Pathway state 111
+        maps_to: frdp_c_
+      - id: metabolic_pathway_state_112
+        label: Metabolic Pathway state 112
+        maps_to: udcpdp_c_
+      - id: observable_26dap_m
+        label: 26dap M
+        maps_to: _26dap__45__M_c_
+      - id: metabolic_pathway_state_114
+        label: Metabolic Pathway state 114
+        maps_to: lys__45__L_c_
+      - id: s7p
+        label: S7p
+        maps_to: s7p_c_
+      - id: metabolic_pathway_state_116
+        label: Metabolic Pathway state 116
+        maps_to: glc__45__D_p_
+      - id: pyruvate
+        label: pyruvate
+        maps_to: pyr_c_
+      - id: skm5p
+        label: Skm5p
+        maps_to: skm5p_c_
+      - id: observable_3psme
+        label: 3psme
+        maps_to: _3psme_c_
+      - id: sl2a6o
+        label: Sl2a6o
+        maps_to: sl2a6o_c_
+      - id: metabolic_pathway_state_121
+        label: Metabolic Pathway state 121
+        maps_to: alac__45__S_c_
+      - id: metabolic_pathway_state_122
+        label: Metabolic Pathway state 122
+        maps_to: cdp_c_
+      - id: metabolic_pathway_state_123
+        label: Metabolic Pathway state 123
+        maps_to: dcdp_c_
+      - id: metabolic_pathway_state_124
+        label: Metabolic Pathway state 124
+        maps_to: gdp_c_
+      - id: metabolic_pathway_state_125
+        label: Metabolic Pathway state 125
+        maps_to: dgdp_c_
+      - id: metabolic_pathway_state_126
+        label: Metabolic Pathway state 126
+        maps_to: dadp_c_
+      - id: metabolic_pathway_state_127
+        label: Metabolic Pathway state 127
+        maps_to: cbp_c_
+      - id: metabolic_pathway_state_128
+        label: Metabolic Pathway state 128
+        maps_to: cbasp_c_
+      - id: gmhep7p
+        label: Gmhep7p
+        maps_to: gmhep7p_c_
+      - id: metabolic_pathway_state_130
+        label: Metabolic Pathway state 130
+        maps_to: h_p_
+      - id: metabolic_pathway_state_131
+        label: Metabolic Pathway state 131
+        maps_to: dhap_c_
+      - id: observable_25drapp
+        label: 25drapp
+        maps_to: _25drapp_c_
+      - id: observable_5apru
+        label: 5apru
+        maps_to: _5apru_c_
+      - id: metabolic_pathway_state_134
+        label: Metabolic Pathway state 134
+        maps_to: ac_c_
+      - id: metabolic_pathway_state_135
+        label: Metabolic Pathway state 135
+        maps_to: orn_c_
+      - id: observable_3dhq
+        label: 3dhq
+        maps_to: _3dhq_c_
+      - id: observable_5mthf
+        label: 5mthf
+        maps_to: _5mthf_c_
+      - id: metabolic_pathway_state_138
+        label: Metabolic Pathway state 138
+        maps_to: hcys__45__L_c_
+      - id: metabolic_pathway_state_139
+        label: Metabolic Pathway state 139
+        maps_to: acglu_c_
+      - id: metabolic_pathway_state_140
+        label: Metabolic Pathway state 140
+        maps_to: acser_c_
+      - id: fe2
+        label: Fe2
+        maps_to: fe2_c_
+      - id: observable_5mta
+        label: 5mta
+        maps_to: _5mta_c_
+      - id: observable_5mtr
+        label: 5mtr
+        maps_to: _5mtr_c_
+      - id: dxyl5p
+        label: Dxyl5p
+        maps_to: dxyl5p_c_
+      - id: observable_3dhsk
+        label: 3dhsk
+        maps_to: _3dhsk_c_
+      - id: acg5p
+        label: Acg5p
+        maps_to: acg5p_c_
+      - id: metabolic_pathway_state_147
+        label: Metabolic Pathway state 147
+        maps_to: prfp_c_
+      - id: observable_26dap_ll
+        label: 26dap Ll
+        maps_to: _26dap__45__LL_c_
+      - id: metabolic_pathway_state_149
+        label: Metabolic Pathway state 149
+        maps_to: mnl_p_
+      - id: mnl1p
+        label: Mnl1p
+        maps_to: mnl1p_c_
+      - id: metabolic_pathway_state_151
+        label: Metabolic Pathway state 151
+        maps_to: dann_c_
+      - id: metabolic_pathway_state_152
+        label: Metabolic Pathway state 152
+        maps_to: dtbt_c_
+      - id: metabolic_pathway_state_153
+        label: Metabolic Pathway state 153
+        maps_to: uaccg_c_
+      - id: metabolic_pathway_state_154
+        label: Metabolic Pathway state 154
+        maps_to: uamr_c_
+      - id: metabolic_pathway_state_155
+        label: Metabolic Pathway state 155
+        maps_to: dctp_c_
+      - id: metabolic_pathway_state_156
+        label: Metabolic Pathway state 156
+        maps_to: dutp_c_
+      - id: observable_23dhmb
+        label: 23dhmb
+        maps_to: _23dhmb_c_
+      - id: observable_2ahbut
+        label: 2ahbut
+        maps_to: _2ahbut_c_
+      - id: observable_23dhmp
+        label: 23dhmp
+        maps_to: _23dhmp_c_
+      - id: metabolic_pathway_state_160
+        label: Metabolic Pathway state 160
+        maps_to: pg_EC_c_
+      - id: observable_3mop
+        label: 3mop
+        maps_to: _3mop_c_
+      - id: metabolic_pathway_state_162
+        label: Metabolic Pathway state 162
+        maps_to: fad_c_
+      - id: so4
+        label: So4
+        maps_to: so4_c_
+      - id: metabolic_pathway_state_164
+        label: Metabolic Pathway state 164
+        maps_to: pheme_c_
+      - id: metabolic_pathway_state_165
+        label: Metabolic Pathway state 165
+        maps_to: ametam_c_
+      - id: metabolic_pathway_state_166
+        label: Metabolic Pathway state 166
+        maps_to: ptrc_c_
+      - id: metabolic_pathway_state_167
+        label: Metabolic Pathway state 167
+        maps_to: spmd_c_
+      - id: metabolic_pathway_state_168
+        label: Metabolic Pathway state 168
+        maps_to: arg__45__L_c_
+      - id: metabolic_pathway_state_169
+        label: Metabolic Pathway state 169
+        maps_to: skm_c_
+      - id: observable_25aics
+        label: 25aics
+        maps_to: _25aics_c_
+      - id: observable_2pg
+        label: 2pg
+        maps_to: _2pg_c_
+      - id: gmhep17bp
+        label: Gmhep17bp
+        maps_to: gmhep17bp_c_
+      - id: metabolic_pathway_state_173
+        label: Metabolic Pathway state 173
+        maps_to: grdp_c_
+      - id: observable_2obut
+        label: 2obut
+        maps_to: _2obut_c_
+      - id: metabolic_pathway_state_175
+        label: Metabolic Pathway state 175
+        maps_to: uacgam_c_
+      - id: metabolic_pathway_state_176
+        label: Metabolic Pathway state 176
+        maps_to: uagmda_c_
+      - id: metabolic_pathway_state_177
+        label: Metabolic Pathway state 177
+        maps_to: uaagmda_c_
+      - id: metabolic_pathway_state_178
+        label: Metabolic Pathway state 178
+        maps_to: udp_c_
+      - id: metabolic_pathway_state_179
+        label: Metabolic Pathway state 179
+        maps_to: apoACP_c_
+      - id: metabolic_pathway_state_180
+        label: Metabolic Pathway state 180
+        maps_to: ACP_c_
+      - id: observable_2ippm
+        label: 2ippm
+        maps_to: _2ippm_c_
+      - id: metabolic_pathway_state_182
+        label: Metabolic Pathway state 182
+        maps_to: leu__45__L_c_
+      - id: metabolic_pathway_state_183
+        label: Metabolic Pathway state 183
+        maps_to: thmmp_c_
+      - id: metabolic_pathway_state_184
+        label: Metabolic Pathway state 184
+        maps_to: thmpp_c_
+      - id: metabolic_pathway_state_185
+        label: Metabolic Pathway state 185
+        maps_to: udcpp_c_
+      - id: metabolic_pathway_state_186
+        label: Metabolic Pathway state 186
+        maps_to: ugmda_c_
+      - id: metabolic_pathway_state_187
+        label: Metabolic Pathway state 187
+        maps_to: ump_c_
+      - id: metabolic_pathway_state_188
+        label: Metabolic Pathway state 188
+        maps_to: chor_c_
+      - id: metabolic_pathway_state_189
+        label: Metabolic Pathway state 189
+        maps_to: pphn_c_
+      - id: metabolic_pathway_state_190
+        label: Metabolic Pathway state 190
+        maps_to: scl_c_
+      - id: metabolic_pathway_state_191
+        label: Metabolic Pathway state 191
+        maps_to: sheme_c_
+      - id: metabolic_pathway_state_192
+        label: Metabolic Pathway state 192
+        maps_to: dmpp_c_
+      - id: metabolic_pathway_state_193
+        label: Metabolic Pathway state 193
+        maps_to: dudp_c_
+      - id: metabolic_pathway_state_194
+        label: Metabolic Pathway state 194
+        maps_to: glucys_c_
+      - id: metabolic_pathway_state_195
+        label: Metabolic Pathway state 195
+        maps_to: gthrd_c_
+      - id: metabolic_pathway_state_196
+        label: Metabolic Pathway state 196
+        maps_to: anth_c_
+      - id: hco3
+        label: Hco3
+        maps_to: hco3_c_
+      - id: observable_4mop
+        label: 4mop
+        maps_to: _4mop_c_
+      - id: metabolic_pathway_state_199
+        label: Metabolic Pathway state 199
+        maps_to: gtp_c_
+      - id: metabolic_pathway_state_200
+        label: Metabolic Pathway state 200
+        maps_to: dcamp_c_
+      - id: metabolic_pathway_state_201
+        label: Metabolic Pathway state 201
+        maps_to: pi_p_
+      - id: observable_3ig3p
+        label: 3ig3p
+        maps_to: _3ig3p_c_
+      - id: metabolic_pathway_state_203
+        label: Metabolic Pathway state 203
+        maps_to: aps_c_
+      - id: sl26da
+        label: Sl26da
+        maps_to: sl26da_c_
+      - id: metabolic_pathway_state_205
+        label: Metabolic Pathway state 205
+        maps_to: argsuc_c_
+      - id: metabolic_pathway_state_206
+        label: Metabolic Pathway state 206
+        maps_to: utp_c_
+      - id: observable_8aonn
+        label: 8aonn
+        maps_to: _8aonn_c_
+      - id: observable_4pasp
+        label: 4pasp
+        maps_to: _4pasp_c_
+      - id: metabolic_pathway_state_209
+        label: Metabolic Pathway state 209
+        maps_to: actp_c_
+      - id: metabolic_pathway_state_210
+        label: Metabolic Pathway state 210
+        maps_to: ala__45__L_c_
+      - id: metabolic_pathway_state_211
+        label: Metabolic Pathway state 211
+        maps_to: citr__45__L_c_
+      - id: gam6p
+        label: Gam6p
+        maps_to: gam6p_c_
+      - id: observable_3mob
+        label: 3mob
+        maps_to: _3mob_c_
+      - id: observable_2dhp
+        label: 2dhp
+        maps_to: _2dhp_c_
+      - id: metabolic_pathway_state_215
+        label: Metabolic Pathway state 215
+        maps_to: histd_c_
+      - id: metabolic_pathway_state_216
+        label: Metabolic Pathway state 216
+        maps_to: aspsa_c_
+      - id: murein5p5p
+        label: Murein5p5p
+        maps_to: murein5p5p_p_
+      - id: metabolic_pathway_state_218
+        label: Metabolic Pathway state 218
+        maps_to: dump_c_
+      - id: dihydrofolate
+        label: dihydrofolate
+        maps_to: dhf_c_
+      - id: metabolic_pathway_state_220
+        label: Metabolic Pathway state 220
+        maps_to: dtmp_c_
+      - id: cytosolic_o2
+        label: Cytosolic O2
+        maps_to: o2_c_
+      - id: metabolic_pathway_state_222
+        label: Metabolic Pathway state 222
+        maps_to: ugmd_c_
+      - id: metabolic_pathway_state_223
+        label: Metabolic Pathway state 223
+        maps_to: trp__45__L_c_
+      - id: metabolic_pathway_state_224
+        label: Metabolic Pathway state 224
+        maps_to: dgsn_c_
+      - id: observable_2dr1p
+        label: 2dr1p
+        maps_to: _2dr1p_c_
+      - id: metabolic_pathway_state_226
+        label: Metabolic Pathway state 226
+        maps_to: ins_c_
+      - id: metabolic_pathway_state_227
+        label: Metabolic Pathway state 227
+        maps_to: hxan_c_
+      - id: r1p
+        label: R1p
+        maps_to: r1p_c_
+      - id: metabolic_pathway_state_229
+        label: Metabolic Pathway state 229
+        maps_to: din_c_
+      - id: metabolic_pathway_state_230
+        label: Metabolic Pathway state 230
+        maps_to: adn_c_
+      - id: metabolic_pathway_state_231
+        label: Metabolic Pathway state 231
+        maps_to: dad__45__2_c_
+      - id: metabolic_pathway_state_232
+        label: Metabolic Pathway state 232
+        maps_to: gsn_c_
+      - id: metabolic_pathway_state_233
+        label: Metabolic Pathway state 233
+        maps_to: fdp_c_
+      - id: orot5p
+        label: Orot5p
+        maps_to: orot5p_c_
+      - id: metabolic_pathway_state_235
+        label: Metabolic Pathway state 235
+        maps_to: glyc_c_
+      - id: metabolic_pathway_state_236
+        label: Metabolic Pathway state 236
+        maps_to: dhpt_c_
+      - id: metabolic_pathway_state_237
+        label: Metabolic Pathway state 237
+        maps_to: amob_c_
+      - id: observable_6pgc
+        label: 6pgc
+        maps_to: _6pgc_c_
+      - id: metabolic_pathway_state_239
+        label: Metabolic Pathway state 239
+        maps_to: dhor__45__S_c_
+      - id: metabolic_pathway_state_240
+        label: Metabolic Pathway state 240
+        maps_to: clpn_EC_c_
+      - id: metabolic_pathway_state_241
+        label: Metabolic Pathway state 241
+        maps_to: btn_c_
+      - id: metabolic_pathway_state_242
+        label: Metabolic Pathway state 242
+        maps_to: hemeO_c_
+      - id: metabolic_pathway_state_243
+        label: Metabolic Pathway state 243
+        maps_to: dgtp_c_
+      - id: metabolic_pathway_state_244
+        label: Metabolic Pathway state 244
+        maps_to: dttp_c_
+      - id: metabolic_pathway_state_245
+        label: Metabolic Pathway state 245
+        maps_to: datp_c_
+      - id: metabolic_pathway_state_246
+        label: Metabolic Pathway state 246
+        maps_to: Biomass_c_
+      - id: observable_3pg
+        label: 3pg
+        maps_to: _3pg_c_
+      - id: q8h2
+        label: Q8h2
+        maps_to: q8h2_c_
+      - id: metabolic_pathway_state_249
+        label: Metabolic Pathway state 249
+        maps_to: q8_c_
+      - id: metabolic_pathway_state_250
+        label: Metabolic Pathway state 250
+        maps_to: dtdp_c_
+      - id: observable_3c3hmp
+        label: 3c3hmp
+        maps_to: _3c3hmp_c_
+      - id: gmhep1p
+        label: Gmhep1p
+        maps_to: gmhep1p_c_
+      - id: adphep_d_d
+        label: Adphep D D
+        maps_to: adphep__45__D__44__D_c_
+      - id: metabolic_pathway_state_254
+        label: Metabolic Pathway state 254
+        maps_to: orot_c_
+      - id: h2s
+        label: H2s
+        maps_to: h2s_c_
+  communication_step: 1.0
+runtime:
+  dependencies:
+    packages:
+    - PyYAML==6.0.2
+parameters:
+- name: integration_step
+  value: 1.0
+  min: 0.0
+  units: model_time
+  description: Sampling step for the visualisation model.
+io:
+  inputs:
+  - name: metabolism_sbml_macdonald2011_geneticmetabolicdeterminants_buchn_model1012300000_model_observable_values
+    description: Latest user-facing observable values from the core metabolism model.
+  - name: metabolism_sbml_macdonald2011_geneticmetabolicdeterminants_buchn_model1012300000_model_run_summary
+    description: Run summary from the core metabolism model.
+  - name: metabolism_sbml_macdonald2011_geneticmetabolicdeterminants_buchn_model1012300000_model_observable_labels
+    description: Display labels for user-facing observables.
+  outputs: []

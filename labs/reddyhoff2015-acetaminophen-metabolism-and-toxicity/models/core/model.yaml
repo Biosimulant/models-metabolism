@@ -1,0 +1,115 @@
+schema_version: '2.0'
+title: Reddyhoff2015 - Acetaminophen metabolism and toxicity
+description: Reddyhoff2015 - Acetaminophen metabolism and toxicity This model examines acetaminophen
+  metabolism and related hepatotoxicity. Multiple pathways associated with APAP metabolism
+  has been included in th.
+standard: sbml
+tags:
+- biomodels_ebi
+- faithful
+- metabolism
+- ode
+- sbml
+- tellurium
+authors:
+- Biosimulant Team
+- Dennis Reddyhoff
+- John Ward
+- Dominic Williams
+- Sophie Regan
+- Steven Webb
+upstream:
+  id: biomodels_ebi:BIOMD0000000609
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000609
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000609
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000609?filename=BIOMD0000000609_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.reddyhoff2015_acetaminophen_metabolism_and_toxic_biomd0000000609_model:Reddyhoff2015AcetaminophenMetabolismAndToxicBiomd0000000609Model
+  init_kwargs:
+    model_path: data/BIOMD0000000609.xml
+    integration_step: 0.1
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_sulphate_paps
+    maps_to: Sulphate__PAPS
+    default: 1.325e-14
+    units: native SBML value
+    description: Initial condition for sulphate paps. Maps to bundled SBML symbol `Sulphate__PAPS`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_glutathione
+    maps_to: GSH
+    default: 6.87e-15
+    units: native SBML value
+    description: Initial condition for glutathione. Maps to bundled SBML symbol `GSH`. Applied
+      before the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_drug_metabolism_state_3
+    maps_to: NAPQI
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for drug metabolism state 3. Maps to bundled SBML symbol
+      `NAPQI`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_drug_metabolism_state_4
+    maps_to: Paracetamol_APAP
+    default: 1.32e-13
+    units: native SBML value
+    description: Initial condition for drug metabolism state 4. Maps to bundled SBML symbol
+      `Paracetamol_APAP`. Applied before the Tellurium simulation starts; this does not change
+      kinetic parameters or equations. Default from bundled SBML initial value.
+  - name: initial_drug_metabolism_state_5
+    maps_to: Protein_adducts
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for drug metabolism state 5. Maps to bundled SBML symbol
+      `Protein_adducts`. Applied before the Tellurium simulation starts; this does not change
+      kinetic parameters or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: sulphate_paps
+    maps_to: Sulphate__PAPS
+    label: Sulphate Paps
+    description: Sulphate Paps. Maps to SBML symbol `Sulphate__PAPS`.
+  - name: glutathione
+    maps_to: GSH
+    label: Glutathione
+    description: Glutathione. Maps to SBML symbol `GSH`.
+  - name: drug_metabolism_state_3
+    maps_to: NAPQI
+    label: Drug Metabolism state 3
+    description: Drug Metabolism state 3; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `NAPQI`. Exact metabolite identity is not encoded
+      in the bundled SBML metadata.
+  - name: drug_metabolism_state_4
+    maps_to: Paracetamol_APAP
+    label: Drug Metabolism state 4
+    description: Drug Metabolism state 4; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `Paracetamol_APAP`. Exact metabolite identity is
+      not encoded in the bundled SBML metadata.
+  - name: drug_metabolism_state_5
+    maps_to: Protein_adducts
+    label: Drug Metabolism state 5
+    description: Drug Metabolism state 5; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `Protein_adducts`. Exact metabolite identity is
+      not encoded in the bundled SBML metadata.
+  - name: observable_values
+    description: Latest user-facing observable values from the SBML run.
+  - name: run_summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: observable_labels
+    description: Mapping from user-facing observable ports to display labels.
+parameters:
+- name: integration_step
+  value: 0.1
+  min: 0.0
+  units: model_time
+  description: Internal sampling step for Tellurium output collection.

@@ -1,0 +1,81 @@
+schema_version: '2.0'
+title: Cloutier2009 - Brain Energy Metabolism Lab
+description: Cloutier2009 - Brain Energy Metabolism This model was taken from the CellMLrepository
+  andautomatically converted to SBML. Following thesubmission the parameters are manually
+  encoded and annotated assp.
+io:
+  inputs:
+  - name: initial_brain_energy_state_1
+    maps_to: metabolism_sbml_cloutier2009_brain_energy_metabolism_biomd0000000554_model.initial_brain_energy_state_1
+    default: 0.00599865999248041
+    units: native SBML value
+    description: Initial condition for brain energy state 1. Maps to bundled SBML symbol `V_en_GLC`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_brain_energy_state_2
+    maps_to: metabolism_sbml_cloutier2009_brain_energy_metabolism_biomd0000000554_model.initial_brain_energy_state_2
+    default: 0.00600093047858717
+    units: native SBML value
+    description: Initial condition for brain energy state 2. Maps to bundled SBML symbol `Vn_hk`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_brain_energy_state_3
+    maps_to: metabolism_sbml_cloutier2009_brain_energy_metabolism_biomd0000000554_model.initial_brain_energy_state_3
+    default: 0.00600284722882977
+    units: native SBML value
+    description: Initial condition for brain energy state 3. Maps to bundled SBML symbol `Vn_pgi`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_brain_energy_state_4
+    maps_to: metabolism_sbml_cloutier2009_brain_energy_metabolism_biomd0000000554_model.initial_brain_energy_state_4
+    default: 0.1755
+    units: native SBML value
+    description: Initial condition for brain energy state 4. Maps to bundled SBML symbol `NADg`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_brain_energy_state_5
+    maps_to: metabolism_sbml_cloutier2009_brain_energy_metabolism_biomd0000000554_model.initial_brain_energy_state_5
+    default: 0.13070953832961
+    units: native SBML value
+    description: Initial condition for brain energy state 5. Maps to bundled SBML symbol `ADPg`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: brain_energy_state_1
+    maps_to: metabolism_sbml_cloutier2009_brain_energy_metabolism_biomd0000000554_model.brain_energy_state_1
+  - name: brain_energy_state_2
+    maps_to: metabolism_sbml_cloutier2009_brain_energy_metabolism_biomd0000000554_model.brain_energy_state_2
+  - name: brain_energy_state_3
+    maps_to: metabolism_sbml_cloutier2009_brain_energy_metabolism_biomd0000000554_model.brain_energy_state_3
+  - name: brain_energy_state_4
+    maps_to: metabolism_sbml_cloutier2009_brain_energy_metabolism_biomd0000000554_model.brain_energy_state_4
+  - name: brain_energy_state_5
+    maps_to: metabolism_sbml_cloutier2009_brain_energy_metabolism_biomd0000000554_model.brain_energy_state_5
+  - name: observable_values
+    maps_to: metabolism_sbml_cloutier2009_brain_energy_metabolism_biomd0000000554_model.observable_values
+  - name: run_summary
+    maps_to: metabolism_sbml_cloutier2009_brain_energy_metabolism_biomd0000000554_model.run_summary
+  - name: observable_labels
+    maps_to: metabolism_sbml_cloutier2009_brain_energy_metabolism_biomd0000000554_model.observable_labels
+models:
+- alias: metabolism_sbml_cloutier2009_brain_energy_metabolism_biomd0000000554_model
+  path: models/core
+  parameters:
+    model_path: data/BIOMD0000000554.xml
+    integration_step: 0.1
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: metabolism_sbml_cloutier2009_brain_energy_metabolism_biomd0000000554_model.observable_values
+  to:
+  - visualisation.metabolism_sbml_cloutier2009_brain_energy_metabolism_biomd0000000554_model_observable_values
+- from: metabolism_sbml_cloutier2009_brain_energy_metabolism_biomd0000000554_model.run_summary
+  to:
+  - visualisation.metabolism_sbml_cloutier2009_brain_energy_metabolism_biomd0000000554_model_run_summary
+- from: metabolism_sbml_cloutier2009_brain_energy_metabolism_biomd0000000554_model.observable_labels
+  to:
+  - visualisation.metabolism_sbml_cloutier2009_brain_energy_metabolism_biomd0000000554_model_observable_labels
+runtime:
+  duration: 10.0
+  communication_step: 1.0
+  initial_inputs: {}

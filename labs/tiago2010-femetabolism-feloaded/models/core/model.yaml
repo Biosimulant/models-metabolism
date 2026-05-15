@@ -1,0 +1,112 @@
+schema_version: '2.0'
+title: Tiago2010_FeMetabolism_FeLoaded
+description: 'This a model from the article: Systems analysis of iron metabolism: the network
+  of iron pools and fluxes Tiago JS Lopes, Tatyana Luganskaja, Maja Vujic-Spasic, Matthias
+  W Hentze, Martina U Muckenthale. It can be used to explore metabolic flux dynamics and compare
+  pathway behavior across conditions.'
+standard: sbml
+tags:
+- biomodels_ebi
+- faithful
+- metabolism
+- ode
+- sbml
+- tellurium
+authors:
+- Biosimulant Team
+- Tiago J S Lopes
+- Tatyana Luganskaja
+- "Maja Vuji\u0107 Spasi\u0107"
+- Matthias W Hentze
+- Martina U Muckenthaler
+upstream:
+  id: biomodels_ebi:BIOMD0000000261
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000261
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000261
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000261?filename=BIOMD0000000261_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.tiago2010_femetabolism_feloaded_biomd0000000261_model:Tiago2010FemetabolismFeloadedBiomd0000000261Model
+  init_kwargs:
+    model_path: data/BIOMD0000000261.xml
+    integration_step: 0.1
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_iron_in_plasma
+    maps_to: s1
+    default: 100.0
+    units: native SBML value
+    description: Initial condition for iron in plasma. Maps to bundled SBML symbol `s1`. Applied
+      before the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_iron_in_bone_marrow
+    maps_to: s2
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for iron in bone marrow. Maps to bundled SBML symbol `s2`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_iron_metabolism_state_3
+    maps_to: s3
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for iron metabolism state 3. Maps to bundled SBML symbol
+      `s3`. Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_iron_in_spleen
+    maps_to: s4
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for iron in spleen. Maps to bundled SBML symbol `s4`. Applied
+      before the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_iron_in_liver
+    maps_to: s5
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for iron in liver. Maps to bundled SBML symbol `s5`. Applied
+      before the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  outputs:
+  - name: iron_in_plasma
+    maps_to: s1
+    label: Iron In Plasma
+    description: Iron In Plasma. Maps to SBML symbol `s1`.
+  - name: iron_in_bone_marrow
+    maps_to: s2
+    label: Iron In Bone Marrow
+    description: Iron In Bone Marrow. Maps to SBML symbol `s2`.
+  - name: iron_metabolism_state_3
+    maps_to: s3
+    label: Iron Metabolism state 3
+    description: Iron Metabolism state 3; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `s3`. Exact metabolite identity is not encoded in
+      the bundled SBML metadata.
+  - name: iron_in_spleen
+    maps_to: s4
+    label: Iron In Spleen
+    description: Iron In Spleen. Maps to SBML symbol `s4`.
+  - name: iron_in_liver
+    maps_to: s5
+    label: Iron In Liver
+    description: Iron In Liver. Maps to SBML symbol `s5`.
+  - name: observable_values
+    description: Latest user-facing observable values from the SBML run.
+  - name: run_summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: observable_labels
+    description: Mapping from user-facing observable ports to display labels.
+parameters:
+- name: integration_step
+  value: 0.1
+  min: 0.0
+  units: model_time
+  description: Internal sampling step for Tellurium output collection.

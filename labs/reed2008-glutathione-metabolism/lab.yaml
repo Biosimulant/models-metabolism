@@ -1,0 +1,82 @@
+schema_version: '2.0'
+title: Reed2008_Glutathione_Metabolism Lab
+description: 'This is the model described in the article: A mathematical model of glutathione
+  metabolism. Michael C Reed, Rachel L Thomas, Jovana Pavisic, S.'
+io:
+  inputs:
+  - name: initial_cytosolic_tetrahydrofolate
+    maps_to: metabolism_sbml_reed2008_glutathione_metabolism_biomd0000000268_model.initial_cytosolic_tetrahydrofolate
+    default: 4.670919668857204
+    units: native SBML value
+    description: Initial condition for cytosolic tetrahydrofolate. Maps to bundled SBML symbol
+      `c_thf`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from Tellurium setup-time value because no explicit
+      SBML initial value was available.
+  - name: initial_mitochondrial_tetrahydrofolate
+    maps_to: metabolism_sbml_reed2008_glutathione_metabolism_biomd0000000268_model.initial_mitochondrial_tetrahydrofolate
+    default: 21.075801087262693
+    units: native SBML value
+    description: Initial condition for mitochondrial tetrahydrofolate. Maps to bundled SBML
+      symbol `m_thf`. Applied before the Tellurium simulation starts; this does not change
+      kinetic parameters or equations. Default from Tellurium setup-time value because no
+      explicit SBML initial value was available.
+  - name: initial_metabolic_pathway_state_3
+    maps_to: metabolism_sbml_reed2008_glutathione_metabolism_biomd0000000268_model.initial_metabolic_pathway_state_3
+    default: 4.4965335653401
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 3. Maps to bundled SBML symbol
+      `c_5mf`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_metabolic_pathway_state_4
+    maps_to: metabolism_sbml_reed2008_glutathione_metabolism_biomd0000000268_model.initial_metabolic_pathway_state_4
+    default: 0.506278119133034
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 4. Maps to bundled SBML symbol
+      `c_2cf`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_metabolic_pathway_state_5
+    maps_to: metabolism_sbml_reed2008_glutathione_metabolism_biomd0000000268_model.initial_metabolic_pathway_state_5
+    default: 0.278602708139276
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 5. Maps to bundled SBML symbol
+      `c_1cf`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: cytosolic_tetrahydrofolate
+    maps_to: metabolism_sbml_reed2008_glutathione_metabolism_biomd0000000268_model.cytosolic_tetrahydrofolate
+  - name: mitochondrial_tetrahydrofolate
+    maps_to: metabolism_sbml_reed2008_glutathione_metabolism_biomd0000000268_model.mitochondrial_tetrahydrofolate
+  - name: metabolic_pathway_state_3
+    maps_to: metabolism_sbml_reed2008_glutathione_metabolism_biomd0000000268_model.metabolic_pathway_state_3
+  - name: metabolic_pathway_state_4
+    maps_to: metabolism_sbml_reed2008_glutathione_metabolism_biomd0000000268_model.metabolic_pathway_state_4
+  - name: metabolic_pathway_state_5
+    maps_to: metabolism_sbml_reed2008_glutathione_metabolism_biomd0000000268_model.metabolic_pathway_state_5
+  - name: observable_values
+    maps_to: metabolism_sbml_reed2008_glutathione_metabolism_biomd0000000268_model.observable_values
+  - name: run_summary
+    maps_to: metabolism_sbml_reed2008_glutathione_metabolism_biomd0000000268_model.run_summary
+  - name: observable_labels
+    maps_to: metabolism_sbml_reed2008_glutathione_metabolism_biomd0000000268_model.observable_labels
+models:
+- alias: metabolism_sbml_reed2008_glutathione_metabolism_biomd0000000268_model
+  path: models/core
+  parameters:
+    model_path: data/BIOMD0000000268.xml
+    integration_step: 0.1
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: metabolism_sbml_reed2008_glutathione_metabolism_biomd0000000268_model.observable_values
+  to:
+  - visualisation.metabolism_sbml_reed2008_glutathione_metabolism_biomd0000000268_model_observable_values
+- from: metabolism_sbml_reed2008_glutathione_metabolism_biomd0000000268_model.run_summary
+  to:
+  - visualisation.metabolism_sbml_reed2008_glutathione_metabolism_biomd0000000268_model_run_summary
+- from: metabolism_sbml_reed2008_glutathione_metabolism_biomd0000000268_model.observable_labels
+  to:
+  - visualisation.metabolism_sbml_reed2008_glutathione_metabolism_biomd0000000268_model_observable_labels
+runtime:
+  duration: 10.0
+  communication_step: 1.0
+  initial_inputs: {}

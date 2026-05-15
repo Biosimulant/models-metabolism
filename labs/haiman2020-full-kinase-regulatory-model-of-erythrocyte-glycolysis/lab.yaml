@@ -1,0 +1,81 @@
+schema_version: '2.0'
+title: Haiman2020 - Full Kinase Regulatory Model of Erythrocyte Glycolysis Lab
+description: Dynamic model utilizing mass action kinetics to elucidate network-level effects
+  of allosteric regulation in erythrocyte metabolism. The full kinase regulatory model includes
+  the glycolytic pathway, th.
+io:
+  inputs:
+  - name: initial_d_glucose
+    maps_to: metabolism_sbml_haiman2020_full_kinase_regulatory_model_of_eryth_model2012150001_model.initial_d_glucose
+    default: 1.05022808997895
+    units: native SBML value
+    description: Initial condition for d glucose. Maps to bundled SBML symbol `M_glc__D_c`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_d_glucose_6_phosphate
+    maps_to: metabolism_sbml_haiman2020_full_kinase_regulatory_model_of_eryth_model2012150001_model.initial_d_glucose_6_phosphate
+    default: 0.323536985432573
+    units: native SBML value
+    description: Initial condition for d glucose 6 phosphate. Maps to bundled SBML symbol
+      `M_g6p_c`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_d_fructose_6_phosphate
+    maps_to: metabolism_sbml_haiman2020_full_kinase_regulatory_model_of_eryth_model2012150001_model.initial_d_fructose_6_phosphate
+    default: 0.132524163873696
+    units: native SBML value
+    description: Initial condition for d fructose 6 phosphate. Maps to bundled SBML symbol
+      `M_f6p_c`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_d_fructose_1_6_bisphosphate
+    maps_to: metabolism_sbml_haiman2020_full_kinase_regulatory_model_of_eryth_model2012150001_model.initial_d_fructose_1_6_bisphosphate
+    default: 0.0114713270708866
+    units: native SBML value
+    description: Initial condition for d fructose 1 6 bisphosphate. Maps to bundled SBML symbol
+      `M_fdp_c`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_dihydroxyacetone_phosphate
+    maps_to: metabolism_sbml_haiman2020_full_kinase_regulatory_model_of_eryth_model2012150001_model.initial_dihydroxyacetone_phosphate
+    default: 0.143422132952572
+    units: native SBML value
+    description: Initial condition for dihydroxyacetone phosphate. Maps to bundled SBML symbol
+      `M_dhap_c`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: d_glucose
+    maps_to: metabolism_sbml_haiman2020_full_kinase_regulatory_model_of_eryth_model2012150001_model.d_glucose
+  - name: d_glucose_6_phosphate
+    maps_to: metabolism_sbml_haiman2020_full_kinase_regulatory_model_of_eryth_model2012150001_model.d_glucose_6_phosphate
+  - name: d_fructose_6_phosphate
+    maps_to: metabolism_sbml_haiman2020_full_kinase_regulatory_model_of_eryth_model2012150001_model.d_fructose_6_phosphate
+  - name: d_fructose_1_6_bisphosphate
+    maps_to: metabolism_sbml_haiman2020_full_kinase_regulatory_model_of_eryth_model2012150001_model.d_fructose_1_6_bisphosphate
+  - name: dihydroxyacetone_phosphate
+    maps_to: metabolism_sbml_haiman2020_full_kinase_regulatory_model_of_eryth_model2012150001_model.dihydroxyacetone_phosphate
+  - name: observable_values
+    maps_to: metabolism_sbml_haiman2020_full_kinase_regulatory_model_of_eryth_model2012150001_model.observable_values
+  - name: run_summary
+    maps_to: metabolism_sbml_haiman2020_full_kinase_regulatory_model_of_eryth_model2012150001_model.run_summary
+  - name: observable_labels
+    maps_to: metabolism_sbml_haiman2020_full_kinase_regulatory_model_of_eryth_model2012150001_model.observable_labels
+models:
+- alias: metabolism_sbml_haiman2020_full_kinase_regulatory_model_of_eryth_model2012150001_model
+  path: models/core
+  parameters:
+    model_path: data/MODEL2012150001.xml
+    integration_step: 0.1
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: metabolism_sbml_haiman2020_full_kinase_regulatory_model_of_eryth_model2012150001_model.observable_values
+  to:
+  - visualisation.metabolism_sbml_haiman2020_full_kinase_regulatory_model_of_eryth_model2012150001_model_observable_values
+- from: metabolism_sbml_haiman2020_full_kinase_regulatory_model_of_eryth_model2012150001_model.run_summary
+  to:
+  - visualisation.metabolism_sbml_haiman2020_full_kinase_regulatory_model_of_eryth_model2012150001_model_run_summary
+- from: metabolism_sbml_haiman2020_full_kinase_regulatory_model_of_eryth_model2012150001_model.observable_labels
+  to:
+  - visualisation.metabolism_sbml_haiman2020_full_kinase_regulatory_model_of_eryth_model2012150001_model_observable_labels
+runtime:
+  duration: 10.0
+  communication_step: 1.0
+  initial_inputs: {}

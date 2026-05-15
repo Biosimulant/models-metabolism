@@ -1,0 +1,81 @@
+schema_version: '2.0'
+title: Masison2022 - Liver Iron Metabolism with updated ferritin Lab
+description: This is a new version of a liver iron model (original from Mitchell 2013 BIOMD0000000498)
+  with updated kinetics of ferritin iron storage. It uses MODEL2211030001 as a substitute
+  for the original ferri.
+io:
+  inputs:
+  - name: initial_iron_metabolism_state_1
+    maps_to: metabolism_sbml_masison2022_liver_iron_metabolism_with_updated_f_model2211030002_model.initial_iron_metabolism_state_1
+    default: 1.13750420250257e-08
+    units: native SBML value
+    description: Initial condition for iron metabolism state 1. Maps to bundled SBML symbol
+      `species_7`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_iron_metabolism_state_2
+    maps_to: metabolism_sbml_masison2022_liver_iron_metabolism_with_updated_f_model2211030002_model.initial_iron_metabolism_state_2
+    default: 5.53114277751551e-11
+    units: native SBML value
+    description: Initial condition for iron metabolism state 2. Maps to bundled SBML symbol
+      `species_1`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_iron_metabolism_state_3
+    maps_to: metabolism_sbml_masison2022_liver_iron_metabolism_with_updated_f_model2211030002_model.initial_iron_metabolism_state_3
+    default: 4.81985997445553e-09
+    units: native SBML value
+    description: Initial condition for iron metabolism state 3. Maps to bundled SBML symbol
+      `species_5`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_iron_metabolism_state_4
+    maps_to: metabolism_sbml_masison2022_liver_iron_metabolism_with_updated_f_model2211030002_model.initial_iron_metabolism_state_4
+    default: 4.91004767574587e-06
+    units: native SBML value
+    description: Initial condition for iron metabolism state 4. Maps to bundled SBML symbol
+      `species_2`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_iron_metabolism_state_5
+    maps_to: metabolism_sbml_masison2022_liver_iron_metabolism_with_updated_f_model2211030002_model.initial_iron_metabolism_state_5
+    default: 4.04747006186017e-06
+    units: native SBML value
+    description: Initial condition for iron metabolism state 5. Maps to bundled SBML symbol
+      `species_4`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: iron_metabolism_state_1
+    maps_to: metabolism_sbml_masison2022_liver_iron_metabolism_with_updated_f_model2211030002_model.iron_metabolism_state_1
+  - name: iron_metabolism_state_2
+    maps_to: metabolism_sbml_masison2022_liver_iron_metabolism_with_updated_f_model2211030002_model.iron_metabolism_state_2
+  - name: iron_metabolism_state_3
+    maps_to: metabolism_sbml_masison2022_liver_iron_metabolism_with_updated_f_model2211030002_model.iron_metabolism_state_3
+  - name: iron_metabolism_state_4
+    maps_to: metabolism_sbml_masison2022_liver_iron_metabolism_with_updated_f_model2211030002_model.iron_metabolism_state_4
+  - name: iron_metabolism_state_5
+    maps_to: metabolism_sbml_masison2022_liver_iron_metabolism_with_updated_f_model2211030002_model.iron_metabolism_state_5
+  - name: observable_values
+    maps_to: metabolism_sbml_masison2022_liver_iron_metabolism_with_updated_f_model2211030002_model.observable_values
+  - name: run_summary
+    maps_to: metabolism_sbml_masison2022_liver_iron_metabolism_with_updated_f_model2211030002_model.run_summary
+  - name: observable_labels
+    maps_to: metabolism_sbml_masison2022_liver_iron_metabolism_with_updated_f_model2211030002_model.observable_labels
+models:
+- alias: metabolism_sbml_masison2022_liver_iron_metabolism_with_updated_f_model2211030002_model
+  path: models/core
+  parameters:
+    model_path: data/MODEL2211030002.xml
+    integration_step: 0.1
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: metabolism_sbml_masison2022_liver_iron_metabolism_with_updated_f_model2211030002_model.observable_values
+  to:
+  - visualisation.metabolism_sbml_masison2022_liver_iron_metabolism_with_updated_f_model2211030002_model_observable_values
+- from: metabolism_sbml_masison2022_liver_iron_metabolism_with_updated_f_model2211030002_model.run_summary
+  to:
+  - visualisation.metabolism_sbml_masison2022_liver_iron_metabolism_with_updated_f_model2211030002_model_run_summary
+- from: metabolism_sbml_masison2022_liver_iron_metabolism_with_updated_f_model2211030002_model.observable_labels
+  to:
+  - visualisation.metabolism_sbml_masison2022_liver_iron_metabolism_with_updated_f_model2211030002_model_observable_labels
+runtime:
+  duration: 10.0
+  communication_step: 1.0
+  initial_inputs: {}

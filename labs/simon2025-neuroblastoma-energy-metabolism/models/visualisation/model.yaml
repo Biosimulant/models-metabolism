@@ -1,0 +1,101 @@
+schema_version: '2.0'
+title: Simon2025 - Neuroblastoma energy metabolism Visualisation
+description: Dedicated presentation model for Simon2025 - Neuroblastoma energy metabolism.
+standard: other
+tags:
+- metabolism
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  entrypoint: src.metabolism_visualisation:MetabolismVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Simon2025 - Neuroblastoma energy metabolism Lab
+    question: Which metabolic pathway dynamics observables show the strongest activity in
+      Simon2025 - Neuroblastoma energy metabolism?
+    answer_focus: metabolic pathway dynamics
+    sources:
+    - alias: metabolism_sbml_simon2025_neuroblastoma_energy_metabolism_model2502190001_model
+      title: Simon2025 - Neuroblastoma energy metabolism
+      scope: metabolic pathway dynamics
+      label_caveat: Values are native SBML quantities. Conservative pathway-state labels are
+        used where the bundled SBML does not encode exact metabolite identities.
+      observables:
+      - id: glucose
+        label: Glucose
+        maps_to: glc
+      - id: adp
+        label: ADP
+        maps_to: adp
+      - id: atp
+        label: ATP
+        maps_to: atp
+      - id: metabolic_pathway_state_4
+        label: Metabolic Pathway state 4
+        maps_to: glc6p
+      - id: fructose_6_phosphate
+        label: Fructose 6 Phosphate
+        maps_to: fru6p
+      - id: metabolic_pathway_state_6
+        label: Metabolic Pathway state 6
+        maps_to: dhap
+      - id: metabolic_pathway_state_7
+        label: Metabolic Pathway state 7
+        maps_to: fru16bp
+      - id: glyceraldehyde_3_phosphate
+        label: Glyceraldehyde 3 Phosphate
+        maps_to: gap
+      - id: metabolic_pathway_state_9
+        label: Metabolic Pathway state 9
+        maps_to: bpg
+      - id: nad
+        label: NAD
+        maps_to: nad
+      - id: nadh
+        label: NADH
+        maps_to: nadh
+      - id: metabolic_pathway_state_12
+        label: Metabolic Pathway state 12
+        maps_to: p_i
+      - id: metabolic_pathway_state_13
+        label: Metabolic Pathway state 13
+        maps_to: pg3
+      - id: metabolic_pathway_state_14
+        label: Metabolic Pathway state 14
+        maps_to: pg2
+      - id: phosphoenolpyruvate
+        label: Phosphoenolpyruvate
+        maps_to: pep
+      - id: pyruvate
+        label: Pyruvate
+        maps_to: pyr
+      - id: lactate
+        label: Lactate
+        maps_to: lac
+      - id: metabolic_pathway_state_18
+        label: Metabolic Pathway state 18
+        maps_to: acoa
+      - id: metabolic_pathway_state_19
+        label: O2
+        maps_to: o2
+  communication_step: 1.0
+runtime:
+  dependencies:
+    packages:
+    - PyYAML==6.0.2
+parameters:
+- name: integration_step
+  value: 1.0
+  min: 0.0
+  units: model_time
+  description: Sampling step for the visualisation model.
+io:
+  inputs:
+  - name: metabolism_sbml_simon2025_neuroblastoma_energy_metabolism_model2502190001_model_observable_values
+    description: Latest user-facing observable values from the core metabolism model.
+  - name: metabolism_sbml_simon2025_neuroblastoma_energy_metabolism_model2502190001_model_run_summary
+    description: Run summary from the core metabolism model.
+  - name: metabolism_sbml_simon2025_neuroblastoma_energy_metabolism_model2502190001_model_observable_labels
+    description: Display labels for user-facing observables.
+  outputs: []

@@ -1,0 +1,159 @@
+schema_version: '2.0'
+title: Kerkhoven2013 - Glycolysis and Pentose Phosphate Pathway in T.brucei - MODEL B Visualisation
+description: Dedicated presentation model for Kerkhoven2013 - Glycolysis and Pentose Phosphate
+  Pathway in T.brucei - MODEL B.
+standard: other
+tags:
+- metabolism
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  entrypoint: src.metabolism_visualisation:MetabolismVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Kerkhoven2013 - Glycolysis and Pentose Phosphate Pathway in T.brucei - MODEL
+      B Lab
+    question: Which central carbon and glycolytic metabolism observables show the strongest
+      activity in Kerkhoven2013 - Glycolysis and Pentose Phosphate Pathway in T.brucei - MODEL
+      B?
+    answer_focus: central carbon and glycolytic metabolism
+    sources:
+    - alias: metabolism_sbml_kerkhoven2013_glycolysis_and_pentose_phosphate_p_biomd0000000514_model
+      title: Kerkhoven2013 - Glycolysis and Pentose Phosphate Pathway in T.brucei - MODEL
+        B
+      scope: central carbon and glycolytic metabolism
+      label_caveat: Values are native SBML quantities. Conservative pathway-state labels are
+        used where the bundled SBML does not encode exact metabolite identities.
+      observables:
+      - id: glycolysis_state_1
+        label: Glycolysis state 1
+        maps_to: _2PGA_c
+      - id: glycolysis_state_2
+        label: Glycolysis state 2
+        maps_to: DHAP_c
+      - id: glycolysis_state_3
+        label: Glycolysis state 3
+        maps_to: ATP_g
+      - id: glycolysis_state_4
+        label: Glycolysis state 4
+        maps_to: DHAP_g
+      - id: glycolysis_state_5
+        label: Glycolysis state 5
+        maps_to: ADP_g
+      - id: glycolysis_state_6
+        label: Glycolysis state 6
+        maps_to: Glc6P_g
+      - id: cytosolic_adp
+        label: Cytosolic ADP
+        maps_to: ADP_c
+      - id: glycolysis_state_8
+        label: Glycolysis state 8
+        maps_to: _3PGA_c
+      - id: glycolysis_state_9
+        label: Glycolysis state 9
+        maps_to: Fru6P_g
+      - id: cytosolic_nadp
+        label: Cytosolic NADP
+        maps_to: NADP_c
+      - id: cytosolic_atp
+        label: Cytosolic ATP
+        maps_to: ATP_c
+      - id: glycolysis_state_12
+        label: Glycolysis state 12
+        maps_to: NADP_g
+      - id: glycolysis_state_13
+        label: Glycolysis state 13
+        maps_to: _6PG_g
+      - id: glycolysis_state_14
+        label: Glycolysis state 14
+        maps_to: Rul5P_c
+      - id: glycolysis_state_15
+        label: Glycolysis state 15
+        maps_to: _6PG_c
+      - id: glycolysis_state_16
+        label: Glycolysis state 16
+        maps_to: Rul5P_g
+      - id: glycolysis_state_17
+        label: Glycolysis state 17
+        maps_to: Glc6P_c
+      - id: glycolysis_state_18
+        label: Glycolysis state 18
+        maps_to: _13BPGA_g
+      - id: cytosolic_glucose
+        label: Cytosolic Glucose
+        maps_to: Glc_c
+      - id: glycolysis_state_20
+        label: Glycolysis state 20
+        maps_to: Glc_g
+      - id: glycolysis_state_21
+        label: Glycolysis state 21
+        maps_to: NADPH_g
+      - id: cytosolic_nadph
+        label: Cytosolic NADPH
+        maps_to: NADPH_c
+      - id: cytosolic_pyruvate
+        label: Cytosolic Pyruvate
+        maps_to: Pyr_c
+      - id: glycolysis_state_24
+        label: Glycolysis state 24
+        maps_to: NAD_g
+      - id: glycolysis_state_25
+        label: Glycolysis state 25
+        maps_to: Fru16BP_g
+      - id: glycolysis_state_26
+        label: Glycolysis state 26
+        maps_to: GA3P_g
+      - id: glycolysis_state_27
+        label: Glycolysis state 27
+        maps_to: TSH2_c
+      - id: glycolysis_state_28
+        label: Glycolysis state 28
+        maps_to: Gly3P_c
+      - id: glycolysis_state_29
+        label: Glycolysis state 29
+        maps_to: Gly3P_g
+      - id: glycolysis_state_30
+        label: Glycolysis state 30
+        maps_to: _6PGL_c
+      - id: glycolysis_state_31
+        label: Glycolysis state 31
+        maps_to: TS2_c
+      - id: glycolysis_state_32
+        label: Glycolysis state 32
+        maps_to: _6PGL_g
+      - id: cytosolic_phosphoenolpyruvate
+        label: Cytosolic Phosphoenolpyruvate
+        maps_to: PEP_c
+      - id: glycolysis_state_34
+        label: Glycolysis state 34
+        maps_to: AMP_g
+      - id: glycolysis_state_35
+        label: Glycolysis state 35
+        maps_to: _3PGA_g
+      - id: cytosolic_amp
+        label: Cytosolic AMP
+        maps_to: AMP_c
+      - id: glycolysis_state_37
+        label: Glycolysis state 37
+        maps_to: NADH_g
+  communication_step: 1.0
+runtime:
+  dependencies:
+    packages:
+    - PyYAML==6.0.2
+parameters:
+- name: integration_step
+  value: 1.0
+  min: 0.0
+  units: model_time
+  description: Sampling step for the visualisation model.
+io:
+  inputs:
+  - name: metabolism_sbml_kerkhoven2013_glycolysis_and_pentose_phosphate_p_biomd0000000514_model_observable_values
+    description: Latest user-facing observable values from the core metabolism model.
+  - name: metabolism_sbml_kerkhoven2013_glycolysis_and_pentose_phosphate_p_biomd0000000514_model_run_summary
+    description: Run summary from the core metabolism model.
+  - name: metabolism_sbml_kerkhoven2013_glycolysis_and_pentose_phosphate_p_biomd0000000514_model_observable_labels
+    description: Display labels for user-facing observables.
+  outputs: []

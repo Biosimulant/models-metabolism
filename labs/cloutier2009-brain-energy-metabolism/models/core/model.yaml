@@ -1,0 +1,118 @@
+schema_version: '2.0'
+title: Cloutier2009 - Brain Energy Metabolism
+description: Cloutier2009 - Brain Energy Metabolism This model was taken from the CellMLrepository
+  andautomatically converted to SBML. Following thesubmission the parameters are manually
+  encoded and annotated assp.
+standard: sbml
+tags:
+- biomodels_ebi
+- faithful
+- metabolism
+- ode
+- sbml
+- tellurium
+authors:
+- Biosimulant Team
+- Mathieu Cloutier
+- Fiachra B Bolger
+- John P Lowry
+- Peter Wellstead
+upstream:
+  id: biomodels_ebi:BIOMD0000000554
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000554
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000554
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000554?filename=BIOMD0000000554_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.cloutier2009_brain_energy_metabolism_biomd0000000554_model:Cloutier2009BrainEnergyMetabolismBiomd0000000554Model
+  init_kwargs:
+    model_path: data/BIOMD0000000554.xml
+    integration_step: 0.1
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_brain_energy_state_1
+    maps_to: V_en_GLC
+    default: 0.00599865999248041
+    units: native SBML value
+    description: Initial condition for brain energy state 1. Maps to bundled SBML symbol `V_en_GLC`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_brain_energy_state_2
+    maps_to: Vn_hk
+    default: 0.00600093047858717
+    units: native SBML value
+    description: Initial condition for brain energy state 2. Maps to bundled SBML symbol `Vn_hk`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_brain_energy_state_3
+    maps_to: Vn_pgi
+    default: 0.00600284722882977
+    units: native SBML value
+    description: Initial condition for brain energy state 3. Maps to bundled SBML symbol `Vn_pgi`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_brain_energy_state_4
+    maps_to: NADg
+    default: 0.1755
+    units: native SBML value
+    description: Initial condition for brain energy state 4. Maps to bundled SBML symbol `NADg`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_brain_energy_state_5
+    maps_to: ADPg
+    default: 0.13070953832961
+    units: native SBML value
+    description: Initial condition for brain energy state 5. Maps to bundled SBML symbol `ADPg`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: brain_energy_state_1
+    maps_to: V_en_GLC
+    label: Brain Energy state 1
+    description: Brain Energy state 1; conservative display label for an abstract SBML state
+      variable. Maps to SBML symbol `V_en_GLC`. Exact metabolite identity is not encoded in
+      the bundled SBML metadata.
+  - name: brain_energy_state_2
+    maps_to: Vn_hk
+    label: Brain Energy state 2
+    description: Brain Energy state 2; conservative display label for an abstract SBML state
+      variable. Maps to SBML symbol `Vn_hk`. Exact metabolite identity is not encoded in the
+      bundled SBML metadata.
+  - name: brain_energy_state_3
+    maps_to: Vn_pgi
+    label: Brain Energy state 3
+    description: Brain Energy state 3; conservative display label for an abstract SBML state
+      variable. Maps to SBML symbol `Vn_pgi`. Exact metabolite identity is not encoded in
+      the bundled SBML metadata.
+  - name: brain_energy_state_4
+    maps_to: NADg
+    label: Brain Energy state 4
+    description: Brain Energy state 4; conservative display label for an abstract SBML state
+      variable. Maps to SBML symbol `NADg`. Exact metabolite identity is not encoded in the
+      bundled SBML metadata.
+  - name: brain_energy_state_5
+    maps_to: ADPg
+    label: Brain Energy state 5
+    description: Brain Energy state 5; conservative display label for an abstract SBML state
+      variable. Maps to SBML symbol `ADPg`. Exact metabolite identity is not encoded in the
+      bundled SBML metadata.
+  - name: observable_values
+    description: Latest user-facing observable values from the SBML run.
+  - name: run_summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: observable_labels
+    description: Mapping from user-facing observable ports to display labels.
+parameters:
+- name: integration_step
+  value: 0.1
+  min: 0.0
+  units: model_time
+  description: Internal sampling step for Tellurium output collection.

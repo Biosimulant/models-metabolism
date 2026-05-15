@@ -1,0 +1,183 @@
+schema_version: '2.0'
+title: "vanEunen2013 - Network dynamics of fatty acid \u03B2-oxidation (steady-state model)\
+  \ Visualisation"
+description: "Dedicated presentation model for vanEunen2013 - Network dynamics of fatty acid\
+  \ \u03B2-oxidation (steady-state model)."
+standard: other
+tags:
+- metabolism
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  entrypoint: src.metabolism_visualisation:MetabolismVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: "vanEunen2013 - Network dynamics of fatty acid \u03B2-oxidation (steady-state\
+      \ model) Lab"
+    question: "Which lipid metabolism observables show the strongest activity in vanEunen2013\
+      \ - Network dynamics of fatty acid \u03B2-oxidation (steady-state model)?"
+    answer_focus: lipid metabolism
+    sources:
+    - alias: metabolism_sbml_vaneunen2013_network_dynamics_of_fatty_acid_oxid_biomd0000000505_model
+      title: "vanEunen2013 - Network dynamics of fatty acid \u03B2-oxidation (steady-state\
+        \ model)"
+      scope: lipid metabolism
+      label_caveat: Values are native SBML quantities. Conservative pathway-state labels are
+        used where the bundled SBML does not encode exact metabolite identities.
+      observables:
+      - id: lipid_metabolism_state_1_cytosolic
+        label: Lipid Metabolism state 1 cytosolic
+        maps_to: C16AcylCarCYT
+      - id: lipid_metabolism_state_2_mitochondrial
+        label: Lipid Metabolism state 2 mitochondrial
+        maps_to: C16AcylCarMAT
+      - id: lipid_metabolism_state_3
+        label: Lipid Metabolism state 3
+        maps_to: C16AcylCoAMAT
+      - id: lipid_metabolism_state_4
+        label: Lipid Metabolism state 4
+        maps_to: C16EnoylCoAMAT
+      - id: lipid_metabolism_state_5
+        label: Lipid Metabolism state 5
+        maps_to: C16HydroxyacylCoAMAT
+      - id: lipid_metabolism_state_6
+        label: Lipid Metabolism state 6
+        maps_to: C16KetoacylCoAMAT
+      - id: lipid_metabolism_state_7_cytosolic
+        label: Lipid Metabolism state 7 cytosolic
+        maps_to: C14AcylCarCYT
+      - id: lipid_metabolism_state_8_mitochondrial
+        label: Lipid Metabolism state 8 mitochondrial
+        maps_to: C14AcylCarMAT
+      - id: lipid_metabolism_state_9
+        label: Lipid Metabolism state 9
+        maps_to: C14AcylCoAMAT
+      - id: lipid_metabolism_state_10
+        label: Lipid Metabolism state 10
+        maps_to: C14EnoylCoAMAT
+      - id: lipid_metabolism_state_11
+        label: Lipid Metabolism state 11
+        maps_to: C14HydroxyacylCoAMAT
+      - id: lipid_metabolism_state_12
+        label: Lipid Metabolism state 12
+        maps_to: C14KetoacylCoAMAT
+      - id: lipid_metabolism_state_13_cytosolic
+        label: Lipid Metabolism state 13 cytosolic
+        maps_to: C12AcylCarCYT
+      - id: lipid_metabolism_state_14_mitochondrial
+        label: Lipid Metabolism state 14 mitochondrial
+        maps_to: C12AcylCarMAT
+      - id: lipid_metabolism_state_15
+        label: Lipid Metabolism state 15
+        maps_to: C12AcylCoAMAT
+      - id: lipid_metabolism_state_16
+        label: Lipid Metabolism state 16
+        maps_to: C12EnoylCoAMAT
+      - id: lipid_metabolism_state_17
+        label: Lipid Metabolism state 17
+        maps_to: C12HydroxyacylCoAMAT
+      - id: lipid_metabolism_state_18
+        label: Lipid Metabolism state 18
+        maps_to: C12KetoacylCoAMAT
+      - id: lipid_metabolism_state_19_cytosolic
+        label: Lipid Metabolism state 19 cytosolic
+        maps_to: C10AcylCarCYT
+      - id: lipid_metabolism_state_20_mitochondrial
+        label: Lipid Metabolism state 20 mitochondrial
+        maps_to: C10AcylCarMAT
+      - id: lipid_metabolism_state_21
+        label: Lipid Metabolism state 21
+        maps_to: C10AcylCoAMAT
+      - id: lipid_metabolism_state_22
+        label: Lipid Metabolism state 22
+        maps_to: C10EnoylCoAMAT
+      - id: lipid_metabolism_state_23
+        label: Lipid Metabolism state 23
+        maps_to: C10HydroxyacylCoAMAT
+      - id: lipid_metabolism_state_24
+        label: Lipid Metabolism state 24
+        maps_to: C10KetoacylCoAMAT
+      - id: lipid_metabolism_state_25_cytosolic
+        label: Lipid Metabolism state 25 cytosolic
+        maps_to: C8AcylCarCYT
+      - id: lipid_metabolism_state_26_mitochondrial
+        label: Lipid Metabolism state 26 mitochondrial
+        maps_to: C8AcylCarMAT
+      - id: lipid_metabolism_state_27
+        label: Lipid Metabolism state 27
+        maps_to: C8AcylCoAMAT
+      - id: lipid_metabolism_state_28
+        label: Lipid Metabolism state 28
+        maps_to: C8EnoylCoAMAT
+      - id: lipid_metabolism_state_29
+        label: Lipid Metabolism state 29
+        maps_to: C8HydroxyacylCoAMAT
+      - id: lipid_metabolism_state_30
+        label: Lipid Metabolism state 30
+        maps_to: C8KetoacylCoAMAT
+      - id: lipid_metabolism_state_31_cytosolic
+        label: Lipid Metabolism state 31 cytosolic
+        maps_to: C6AcylCarCYT
+      - id: lipid_metabolism_state_32_mitochondrial
+        label: Lipid Metabolism state 32 mitochondrial
+        maps_to: C6AcylCarMAT
+      - id: lipid_metabolism_state_33
+        label: Lipid Metabolism state 33
+        maps_to: C6AcylCoAMAT
+      - id: lipid_metabolism_state_34
+        label: Lipid Metabolism state 34
+        maps_to: C6EnoylCoAMAT
+      - id: lipid_metabolism_state_35
+        label: Lipid Metabolism state 35
+        maps_to: C6HydroxyacylCoAMAT
+      - id: lipid_metabolism_state_36
+        label: Lipid Metabolism state 36
+        maps_to: C6KetoacylCoAMAT
+      - id: lipid_metabolism_state_37_cytosolic
+        label: Lipid Metabolism state 37 cytosolic
+        maps_to: C4AcylCarCYT
+      - id: lipid_metabolism_state_38_mitochondrial
+        label: Lipid Metabolism state 38 mitochondrial
+        maps_to: C4AcylCarMAT
+      - id: lipid_metabolism_state_39
+        label: Lipid Metabolism state 39
+        maps_to: C4AcylCoAMAT
+      - id: lipid_metabolism_state_40
+        label: Lipid Metabolism state 40
+        maps_to: C4EnoylCoAMAT
+      - id: lipid_metabolism_state_41
+        label: Lipid Metabolism state 41
+        maps_to: C4HydroxyacylCoAMAT
+      - id: lipid_metabolism_state_42
+        label: Lipid Metabolism state 42
+        maps_to: C4AcetoacylCoAMAT
+      - id: lipid_metabolism_state_43
+        label: Lipid Metabolism state 43
+        maps_to: AcetylCoAMAT
+      - id: lipid_metabolism_state_44
+        label: Lipid Metabolism state 44
+        maps_to: FADHMAT
+      - id: lipid_metabolism_state_45
+        label: Lipid Metabolism state 45
+        maps_to: NADHMAT
+  communication_step: 1.0
+runtime:
+  dependencies:
+    packages:
+    - PyYAML==6.0.2
+parameters:
+- name: integration_step
+  value: 1.0
+  min: 0.0
+  units: model_time
+  description: Sampling step for the visualisation model.
+io:
+  inputs:
+  - name: metabolism_sbml_vaneunen2013_network_dynamics_of_fatty_acid_oxid_biomd0000000505_model_observable_values
+    description: Latest user-facing observable values from the core metabolism model.
+  - name: metabolism_sbml_vaneunen2013_network_dynamics_of_fatty_acid_oxid_biomd0000000505_model_run_summary
+    description: Run summary from the core metabolism model.
+  - name: metabolism_sbml_vaneunen2013_network_dynamics_of_fatty_acid_oxid_biomd0000000505_model_observable_labels
+    description: Display labels for user-facing observables.
+  outputs: []

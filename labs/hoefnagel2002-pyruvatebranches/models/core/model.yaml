@@ -1,0 +1,111 @@
+schema_version: '2.0'
+title: Hoefnagel2002_PyruvateBranches
+description: 'This a model from the article: Metabolic engineering of lactic acid bacteria,
+  the combined approach: kinetic modelling, metabolic control and experimental analysis. It
+  can be used to explore metabolic flux dynamics and compare pathway behavior across conditions.'
+standard: sbml
+tags:
+- biomodels_ebi
+- faithful
+- metabolism
+- ode
+- sbml
+- tellurium
+authors:
+- Biosimulant Team
+- Marcel H N Hoefnagel
+- Marjo J C Starrenburg
+- Dirk E Martens
+- Jeroen Hugenholtz
+- Michiel Kleerebezem
+upstream:
+  id: biomodels_ebi:BIOMD0000000017
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000017
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000017
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000017?filename=BIOMD0000000017_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.hoefnagel2002_pyruvatebranches_biomd0000000017_model:Hoefnagel2002PyruvatebranchesBiomd0000000017Model
+  init_kwargs:
+    model_path: data/BIOMD0000000017.xml
+    integration_step: 0.1
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_adp
+    maps_to: ADP
+    default: 4.9
+    units: native SBML value
+    description: Initial condition for adp. Maps to bundled SBML symbol `ADP`. Applied before
+      the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_nad
+    maps_to: NAD
+    default: 6.33
+    units: native SBML value
+    description: Initial condition for nad. Maps to bundled SBML symbol `NAD`. Applied before
+      the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_atp
+    maps_to: ATP
+    default: 0.1
+    units: native SBML value
+    description: Initial condition for atp. Maps to bundled SBML symbol `ATP`. Applied before
+      the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_nadh
+    maps_to: NADH
+    default: 3.67
+    units: native SBML value
+    description: Initial condition for nadh. Maps to bundled SBML symbol `NADH`. Applied before
+      the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_metabolic_pathway_state_5
+    maps_to: pyruvate
+    default: 1.0
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 5. Maps to bundled SBML symbol
+      `pyruvate`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: adp
+    maps_to: ADP
+    label: ADP
+    description: ADP. Maps to SBML symbol `ADP`.
+  - name: nad
+    maps_to: NAD
+    label: NAD
+    description: NAD. Maps to SBML symbol `NAD`.
+  - name: atp
+    maps_to: ATP
+    label: ATP
+    description: ATP. Maps to SBML symbol `ATP`.
+  - name: nadh
+    maps_to: NADH
+    label: NADH
+    description: NADH. Maps to SBML symbol `NADH`.
+  - name: metabolic_pathway_state_5
+    maps_to: pyruvate
+    label: Metabolic Pathway state 5
+    description: Metabolic Pathway state 5; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `pyruvate`. Exact metabolite identity is not encoded
+      in the bundled SBML metadata.
+  - name: observable_values
+    description: Latest user-facing observable values from the SBML run.
+  - name: run_summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: observable_labels
+    description: Mapping from user-facing observable ports to display labels.
+parameters:
+- name: integration_step
+  value: 0.1
+  min: 0.0
+  units: model_time
+  description: Internal sampling step for Tellurium output collection.

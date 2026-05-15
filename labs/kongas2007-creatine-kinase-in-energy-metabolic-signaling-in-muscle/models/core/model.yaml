@@ -1,0 +1,113 @@
+schema_version: '2.0'
+title: Kongas2007 - Creatine Kinase in energy metabolic signaling in muscle
+description: 'Kongas2007 - Creatine Kinase in energy metabolic signaling in muscle This model
+  is described in the article: Creatine kinase in energy metabolic signaling in muscle Olav
+  Kongas and Johannes H. It can be used to explore metabolic flux dynamics and compare pathway
+  behavior across conditions.'
+standard: sbml
+tags:
+- biomodels_ebi
+- faithful
+- metabolism
+- ode
+- sbml
+- tellurium
+authors:
+- Biosimulant Team
+- Kongas O
+- van Beek JHGM
+upstream:
+  id: biomodels_ebi:BIOMD0000000041
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000041
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000041
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000041?filename=BIOMD0000000041_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.kongas2007_creatine_kinase_in_energy_metabolic_s_biomd0000000041_model:Kongas2007CreatineKinaseInEnergyMetabolicSBiomd0000000041Model
+  init_kwargs:
+    model_path: data/BIOMD0000000041.xml
+    integration_step: 0.1
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_intracellular_adp
+    maps_to: ADPi
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for intracellular adp. Maps to bundled SBML symbol `ADPi`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_intracellular_atp
+    maps_to: ATPi
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for intracellular atp. Maps to bundled SBML symbol `ATPi`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_metabolic_pathway_state_3
+    maps_to: Cri
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 3. Maps to bundled SBML symbol
+      `Cri`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_metabolic_pathway_state_4
+    maps_to: PCri
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 4. Maps to bundled SBML symbol
+      `PCri`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_metabolic_pathway_state_5
+    maps_to: PCr
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 5. Maps to bundled SBML symbol
+      `PCr`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: intracellular_adp
+    maps_to: ADPi
+    label: Intracellular ADP
+    description: Intracellular ADP. Maps to SBML symbol `ADPi`.
+  - name: intracellular_atp
+    maps_to: ATPi
+    label: Intracellular ATP
+    description: Intracellular ATP. Maps to SBML symbol `ATPi`.
+  - name: metabolic_pathway_state_3
+    maps_to: Cri
+    label: Metabolic Pathway state 3
+    description: Metabolic Pathway state 3; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `Cri`. Exact metabolite identity is not encoded
+      in the bundled SBML metadata.
+  - name: metabolic_pathway_state_4
+    maps_to: PCri
+    label: Metabolic Pathway state 4
+    description: Metabolic Pathway state 4; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `PCri`. Exact metabolite identity is not encoded
+      in the bundled SBML metadata.
+  - name: metabolic_pathway_state_5
+    maps_to: PCr
+    label: Metabolic Pathway state 5
+    description: Metabolic Pathway state 5; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `PCr`. Exact metabolite identity is not encoded
+      in the bundled SBML metadata.
+  - name: observable_values
+    description: Latest user-facing observable values from the SBML run.
+  - name: run_summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: observable_labels
+    description: Mapping from user-facing observable ports to display labels.
+parameters:
+- name: integration_step
+  value: 0.1
+  min: 0.0
+  units: model_time
+  description: Internal sampling step for Tellurium output collection.

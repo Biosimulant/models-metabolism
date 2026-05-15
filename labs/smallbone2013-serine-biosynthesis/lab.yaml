@@ -1,0 +1,54 @@
+schema_version: '2.0'
+title: Smallbone2013 - Serine biosynthesis Lab
+description: 'Smallbone2013 - Serine biosynthesis Kinetic modelling of metabolic pathways
+  in application to Serine biosynthesis. This model is described in the article: Kinetic Modeling
+  of Metabolic Pathways: Appli.'
+io:
+  inputs:
+  - name: initial_phosphohydroxypyruvate
+    maps_to: metabolism_sbml_smallbone2013_serine_biosynthesis_biomd0000000458_model.initial_phosphohydroxypyruvate
+    default: 0.6
+    units: native SBML value
+    description: Initial condition for phosphohydroxypyruvate. Maps to bundled SBML symbol
+      `php`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_phosphoserine
+    maps_to: metabolism_sbml_smallbone2013_serine_biosynthesis_biomd0000000458_model.initial_phosphoserine
+    default: 0.09
+    units: native SBML value
+    description: Initial condition for phosphoserine. Maps to bundled SBML symbol `pser`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: phosphohydroxypyruvate
+    maps_to: metabolism_sbml_smallbone2013_serine_biosynthesis_biomd0000000458_model.phosphohydroxypyruvate
+  - name: phosphoserine
+    maps_to: metabolism_sbml_smallbone2013_serine_biosynthesis_biomd0000000458_model.phosphoserine
+  - name: observable_values
+    maps_to: metabolism_sbml_smallbone2013_serine_biosynthesis_biomd0000000458_model.observable_values
+  - name: run_summary
+    maps_to: metabolism_sbml_smallbone2013_serine_biosynthesis_biomd0000000458_model.run_summary
+  - name: observable_labels
+    maps_to: metabolism_sbml_smallbone2013_serine_biosynthesis_biomd0000000458_model.observable_labels
+models:
+- alias: metabolism_sbml_smallbone2013_serine_biosynthesis_biomd0000000458_model
+  path: models/core
+  parameters:
+    model_path: data/BIOMD0000000458.xml
+    integration_step: 0.1
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: metabolism_sbml_smallbone2013_serine_biosynthesis_biomd0000000458_model.observable_values
+  to:
+  - visualisation.metabolism_sbml_smallbone2013_serine_biosynthesis_biomd0000000458_model_observable_values
+- from: metabolism_sbml_smallbone2013_serine_biosynthesis_biomd0000000458_model.run_summary
+  to:
+  - visualisation.metabolism_sbml_smallbone2013_serine_biosynthesis_biomd0000000458_model_run_summary
+- from: metabolism_sbml_smallbone2013_serine_biosynthesis_biomd0000000458_model.observable_labels
+  to:
+  - visualisation.metabolism_sbml_smallbone2013_serine_biosynthesis_biomd0000000458_model_observable_labels
+runtime:
+  duration: 10.0
+  communication_step: 1.0
+  initial_inputs: {}

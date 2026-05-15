@@ -1,0 +1,83 @@
+schema_version: '2.0'
+title: Aubert2002 - Coupling between Brain electrical activity, Metabolism and Hemodynamics
+  Lab
+description: 'Aubert2002 - Coupling between Brainelectrical activity, Metabolism and Hemodynamics
+  Felix Winter encoded this model in SBMLas part of his work at ASD GmbH This model is described
+  in the article: A mod. It can be used to explore metabolic flux dynamics and compare pathway
+  behavior across conditions.'
+io:
+  inputs:
+  - name: initial_brain_energy_state_1
+    maps_to: metabolism_sbml_aubert2002_coupling_between_brain_electrical_act_biomd0000000570_model.initial_brain_energy_state_1
+    default: 15.0
+    units: native SBML value
+    description: Initial condition for brain energy state 1. Maps to bundled SBML symbol `species_1`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_glucose
+    maps_to: metabolism_sbml_aubert2002_coupling_between_brain_electrical_act_biomd0000000570_model.initial_glucose
+    default: 1.2
+    units: native SBML value
+    description: Initial condition for glucose. Maps to bundled SBML symbol `species_4`. Applied
+      before the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_glyceraldehyde_3_phosphate
+    maps_to: metabolism_sbml_aubert2002_coupling_between_brain_electrical_act_biomd0000000570_model.initial_glyceraldehyde_3_phosphate
+    default: 0.0057
+    units: native SBML value
+    description: Initial condition for glyceraldehyde 3 phosphate. Maps to bundled SBML symbol
+      `species_5`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_nadh
+    maps_to: metabolism_sbml_aubert2002_coupling_between_brain_electrical_act_biomd0000000570_model.initial_nadh
+    default: 0.026
+    units: native SBML value
+    description: Initial condition for nadh. Maps to bundled SBML symbol `species_7`. Applied
+      before the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_pyruvate
+    maps_to: metabolism_sbml_aubert2002_coupling_between_brain_electrical_act_biomd0000000570_model.initial_pyruvate
+    default: 0.16
+    units: native SBML value
+    description: Initial condition for pyruvate. Maps to bundled SBML symbol `species_8`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: brain_energy_state_1
+    maps_to: metabolism_sbml_aubert2002_coupling_between_brain_electrical_act_biomd0000000570_model.brain_energy_state_1
+  - name: glucose
+    maps_to: metabolism_sbml_aubert2002_coupling_between_brain_electrical_act_biomd0000000570_model.glucose
+  - name: glyceraldehyde_3_phosphate
+    maps_to: metabolism_sbml_aubert2002_coupling_between_brain_electrical_act_biomd0000000570_model.glyceraldehyde_3_phosphate
+  - name: nadh
+    maps_to: metabolism_sbml_aubert2002_coupling_between_brain_electrical_act_biomd0000000570_model.nadh
+  - name: pyruvate
+    maps_to: metabolism_sbml_aubert2002_coupling_between_brain_electrical_act_biomd0000000570_model.pyruvate
+  - name: observable_values
+    maps_to: metabolism_sbml_aubert2002_coupling_between_brain_electrical_act_biomd0000000570_model.observable_values
+  - name: run_summary
+    maps_to: metabolism_sbml_aubert2002_coupling_between_brain_electrical_act_biomd0000000570_model.run_summary
+  - name: observable_labels
+    maps_to: metabolism_sbml_aubert2002_coupling_between_brain_electrical_act_biomd0000000570_model.observable_labels
+models:
+- alias: metabolism_sbml_aubert2002_coupling_between_brain_electrical_act_biomd0000000570_model
+  path: models/core
+  parameters:
+    model_path: data/BIOMD0000000570.xml
+    integration_step: 0.1
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: metabolism_sbml_aubert2002_coupling_between_brain_electrical_act_biomd0000000570_model.observable_values
+  to:
+  - visualisation.metabolism_sbml_aubert2002_coupling_between_brain_electrical_act_biomd0000000570_model_observable_values
+- from: metabolism_sbml_aubert2002_coupling_between_brain_electrical_act_biomd0000000570_model.run_summary
+  to:
+  - visualisation.metabolism_sbml_aubert2002_coupling_between_brain_electrical_act_biomd0000000570_model_run_summary
+- from: metabolism_sbml_aubert2002_coupling_between_brain_electrical_act_biomd0000000570_model.observable_labels
+  to:
+  - visualisation.metabolism_sbml_aubert2002_coupling_between_brain_electrical_act_biomd0000000570_model_observable_labels
+runtime:
+  duration: 10.0
+  communication_step: 1.0
+  initial_inputs: {}

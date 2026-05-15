@@ -1,0 +1,117 @@
+schema_version: '2.0'
+title: Nijhout2006_Hepatic_Folate_Metab
+description: 'This is the model described in the article: In silico experimentation with a
+  model of hepatic mitochondrial folate metabolism. It can be used to explore metabolic flux
+  dynamics and compare pathway behavior across conditions.'
+standard: sbml
+tags:
+- biomodels_ebi
+- faithful
+- metabolism
+- ode
+- sbml
+- tellurium
+authors:
+- Biosimulant Team
+- H Frederik Nijhout
+- Michael C Reed
+- Shi-Ling Lam
+- Barry Shane
+- Jesse F Gregory
+upstream:
+  id: biomodels_ebi:MODEL1007200000
+  source_db: biomodels_ebi
+  source_id: MODEL1007200000
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1007200000
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1007200000?filename=MODEL1007200000_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.nijhout2006_hepatic_folate_metab_model1007200000_model:Nijhout2006HepaticFolateMetabModel1007200000Model
+  init_kwargs:
+    model_path: data/MODEL1007200000.xml
+    integration_step: 0.1
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_cytosolic_tetrahydrofolate
+    maps_to: c_thf
+    default: 13.333333333333334
+    units: native SBML value
+    description: Initial condition for cytosolic tetrahydrofolate. Maps to bundled SBML symbol
+      `c_thf`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from Tellurium setup-time value because no explicit
+      SBML initial value was available.
+  - name: initial_mitochondrial_tetrahydrofolate
+    maps_to: m_thf
+    default: 40.0
+    units: native SBML value
+    description: Initial condition for mitochondrial tetrahydrofolate. Maps to bundled SBML
+      symbol `m_thf`. Applied before the Tellurium simulation starts; this does not change
+      kinetic parameters or equations. Default from Tellurium setup-time value because no
+      explicit SBML initial value was available.
+  - name: initial_folate_metabolism_state_3
+    maps_to: c_5mf
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for folate metabolism state 3. Maps to bundled SBML symbol
+      `c_5mf`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_folate_metabolism_state_4
+    maps_to: c_2cf
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for folate metabolism state 4. Maps to bundled SBML symbol
+      `c_2cf`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_folate_metabolism_state_5
+    maps_to: c_1cf
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for folate metabolism state 5. Maps to bundled SBML symbol
+      `c_1cf`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: cytosolic_tetrahydrofolate
+    maps_to: c_thf
+    label: Cytosolic Tetrahydrofolate
+    description: Cytosolic Tetrahydrofolate. Maps to SBML symbol `c_thf`.
+  - name: mitochondrial_tetrahydrofolate
+    maps_to: m_thf
+    label: Mitochondrial Tetrahydrofolate
+    description: Mitochondrial Tetrahydrofolate. Maps to SBML symbol `m_thf`.
+  - name: folate_metabolism_state_3
+    maps_to: c_5mf
+    label: Folate Metabolism state 3
+    description: Folate Metabolism state 3; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `c_5mf`. Exact metabolite identity is not encoded
+      in the bundled SBML metadata.
+  - name: folate_metabolism_state_4
+    maps_to: c_2cf
+    label: Folate Metabolism state 4
+    description: Folate Metabolism state 4; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `c_2cf`. Exact metabolite identity is not encoded
+      in the bundled SBML metadata.
+  - name: folate_metabolism_state_5
+    maps_to: c_1cf
+    label: Folate Metabolism state 5
+    description: Folate Metabolism state 5; conservative display label for an abstract SBML
+      state variable. Maps to SBML symbol `c_1cf`. Exact metabolite identity is not encoded
+      in the bundled SBML metadata.
+  - name: observable_values
+    description: Latest user-facing observable values from the SBML run.
+  - name: run_summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: observable_labels
+    description: Mapping from user-facing observable ports to display labels.
+parameters:
+- name: integration_step
+  value: 0.1
+  min: 0.0
+  units: model_time
+  description: Internal sampling step for Tellurium output collection.

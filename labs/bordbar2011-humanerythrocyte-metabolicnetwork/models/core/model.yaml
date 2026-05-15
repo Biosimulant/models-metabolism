@@ -1,0 +1,113 @@
+schema_version: '2.0'
+title: Bordbar2011_HumanErythrocyte_MetabolicNetwork
+description: 'This model is from the article: iAB-RBC-283: A proteomically derived knowledge-base
+  of erythrocyte metabolism that can be used to simulate its physiological and patho-physiological
+  states. It can be used to explore metabolic flux dynamics and compare pathway behavior across
+  conditions.'
+standard: sbml
+tags:
+- biomodels_ebi
+- faithful
+- metabolism
+- ode
+- sbml
+- tellurium
+authors:
+- Biosimulant Team
+- Aarash Bordbar
+- Neema Jamshidi
+- Bernhard O Palsson
+upstream:
+  id: biomodels_ebi:MODEL1106080000
+  source_db: biomodels_ebi
+  source_id: MODEL1106080000
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/MODEL1106080000
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/MODEL1106080000?filename=MODEL1106080000_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.bordbar2011_humanerythrocyte_metabolicnetwork_model1106080000_model:Bordbar2011HumanerythrocyteMetabolicnetworkModel1106080000Model
+  init_kwargs:
+    model_path: data/MODEL1106080000.xml
+    integration_step: 0.1
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_observable_3_phospho_d_glyceroyl_phosphate
+    maps_to: M_13dpg_c
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for observable 3 phospho d glyceroyl phosphate. Maps to
+      bundled SBML symbol `M_13dpg_c`. Applied before the Tellurium simulation starts; this
+      does not change kinetic parameters or equations. Default from Tellurium setup-time value
+      because no explicit SBML initial value was available.
+  - name: initial_observable_2_3_disphospho_d_glycerate
+    maps_to: M_23dpg_c
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for observable 2 3 disphospho d glycerate. Maps to bundled
+      SBML symbol `M_23dpg_c`. Applied before the Tellurium simulation starts; this does not
+      change kinetic parameters or equations. Default from Tellurium setup-time value because
+      no explicit SBML initial value was available.
+  - name: initial_observable_2_keto_4_methylthiobutyrate
+    maps_to: M_2kmb_c
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for observable 2 keto 4 methylthiobutyrate. Maps to bundled
+      SBML symbol `M_2kmb_c`. Applied before the Tellurium simulation starts; this does not
+      change kinetic parameters or equations. Default from Tellurium setup-time value because
+      no explicit SBML initial value was available.
+  - name: initial_d_glycerate_2_phosphate
+    maps_to: M_2pg_c
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for d glycerate 2 phosphate. Maps to bundled SBML symbol
+      `M_2pg_c`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from Tellurium setup-time value because no explicit
+      SBML initial value was available.
+  - name: initial_observable_3_5_cyclic_gmp
+    maps_to: M_35cgmp_c
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for observable 3 5 cyclic gmp. Maps to bundled SBML symbol
+      `M_35cgmp_c`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from Tellurium setup-time value because no explicit
+      SBML initial value was available.
+  outputs:
+  - name: observable_3_phospho_d_glyceroyl_phosphate
+    maps_to: M_13dpg_c
+    label: 3 Phospho D Glyceroyl Phosphate
+    description: 3 Phospho D Glyceroyl Phosphate. Maps to SBML symbol `M_13dpg_c`.
+  - name: observable_2_3_disphospho_d_glycerate
+    maps_to: M_23dpg_c
+    label: 2 3 Disphospho D Glycerate
+    description: 2 3 Disphospho D Glycerate. Maps to SBML symbol `M_23dpg_c`.
+  - name: observable_2_keto_4_methylthiobutyrate
+    maps_to: M_2kmb_c
+    label: 2 Keto 4 Methylthiobutyrate
+    description: 2 Keto 4 Methylthiobutyrate. Maps to SBML symbol `M_2kmb_c`.
+  - name: d_glycerate_2_phosphate
+    maps_to: M_2pg_c
+    label: D Glycerate 2 Phosphate
+    description: D Glycerate 2 Phosphate. Maps to SBML symbol `M_2pg_c`.
+  - name: observable_3_5_cyclic_gmp
+    maps_to: M_35cgmp_c
+    label: 3 5 Cyclic Gmp
+    description: 3 5 Cyclic Gmp. Maps to SBML symbol `M_35cgmp_c`.
+  - name: observable_values
+    description: Latest user-facing observable values from the SBML run.
+  - name: run_summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: observable_labels
+    description: Mapping from user-facing observable ports to display labels.
+parameters:
+- name: integration_step
+  value: 0.1
+  min: 0.0
+  units: model_time
+  description: Internal sampling step for Tellurium output collection.

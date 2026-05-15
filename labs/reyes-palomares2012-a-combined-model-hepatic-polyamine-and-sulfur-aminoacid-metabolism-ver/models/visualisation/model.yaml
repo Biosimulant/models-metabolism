@@ -1,0 +1,175 @@
+schema_version: '2.0'
+title: Reyes-Palomares2012 - a combined model hepatic polyamine and sulfur aminoacid metabolism
+  - version2 Visualisation
+description: Dedicated presentation model for Reyes-Palomares2012 - a combined model hepatic
+  polyamine and sulfur aminoacid metabolism - version2.
+standard: other
+tags:
+- metabolism
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  entrypoint: src.metabolism_visualisation:MetabolismVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Reyes-Palomares2012 - a combined model hepatic polyamine and sulfur aminoacid
+      metabolism - version2 Lab
+    question: Which metabolic pathway dynamics observables show the strongest activity in
+      Reyes-Palomares2012 - a combined model hepatic polyamine and sulfur aminoacid metabolism
+      - version2?
+    answer_focus: metabolic pathway dynamics
+    sources:
+    - alias: metabolism_sbml_reyes_palomares2012_a_combined_model_hepatic_pol_biomd0000000450_model
+      title: Reyes-Palomares2012 - a combined model hepatic polyamine and sulfur aminoacid
+        metabolism - version2
+      scope: metabolic pathway dynamics
+      label_caveat: Values are native SBML quantities. Conservative pathway-state labels are
+        used where the bundled SBML does not encode exact metabolite identities.
+      observables:
+      - id: b_glycine
+        label: B Glycine
+        maps_to: b_gly
+      - id: b_glutamate
+        label: B Glutamate
+        maps_to: b_glu
+      - id: b_cysteine
+        label: B Cysteine
+        maps_to: b_cys
+      - id: metabolic_pathway_state_4
+        label: Metabolic Pathway state 4
+        maps_to: b_gsg
+      - id: blood_glutathione
+        label: Blood Glutathione
+        maps_to: b_gsh
+      - id: cytosolic_tetrahydrofolate
+        label: Cytosolic Tetrahydrofolate
+        maps_to: c_thf
+      - id: metabolic_pathway_state_7
+        label: Metabolic Pathway state 7
+        maps_to: c_5mf
+      - id: metabolic_pathway_state_8
+        label: Metabolic Pathway state 8
+        maps_to: c_2cf
+      - id: metabolic_pathway_state_9
+        label: Metabolic Pathway state 9
+        maps_to: c_1cf
+      - id: metabolic_pathway_state_10
+        label: Metabolic Pathway state 10
+        maps_to: c_10f
+      - id: cytosolic_dihydrofolate
+        label: Cytosolic Dihydrofolate
+        maps_to: c_dhf
+      - id: metabolic_pathway_state_12
+        label: Metabolic Pathway state 12
+        maps_to: aic
+      - id: c_glutamate
+        label: C Glutamate
+        maps_to: c_glu
+      - id: c_cysteine
+        label: C Cysteine
+        maps_to: c_cys
+      - id: glutamyl_cysteine
+        label: Glutamyl Cysteine
+        maps_to: glc
+      - id: c_glycine
+        label: C Glycine
+        maps_to: c_gly
+      - id: metabolic_pathway_state_17
+        label: Metabolic Pathway state 17
+        maps_to: c_gsg
+      - id: cytosolic_glutathione
+        label: Cytosolic Glutathione
+        maps_to: c_gsh
+      - id: cystathionine
+        label: Cystathionine
+        maps_to: cyt
+      - id: homocysteine
+        label: Homocysteine
+        maps_to: hcy
+      - id: c_serine
+        label: C Serine
+        maps_to: c_ser
+      - id: s_adenosylhomocysteine
+        label: S adenosylhomocysteine
+        maps_to: sah
+      - id: s_adenosylmethionine
+        label: S adenosylmethionine
+        maps_to: sam
+      - id: c_methionine
+        label: C Methionine
+        maps_to: met
+      - id: c_formate
+        label: C Formate
+        maps_to: c_coo
+      - id: metabolic_pathway_state_26
+        label: Metabolic Pathway state 26
+        maps_to: species_1
+      - id: putrescine
+        label: Putrescine
+        maps_to: species_2
+      - id: metabolic_pathway_state_28
+        label: Metabolic Pathway state 28
+        maps_to: species_3
+      - id: spermidine
+        label: Spermidine
+        maps_to: species_4
+      - id: acetylspermine
+        label: Acetylspermine
+        maps_to: species_5
+      - id: acetylspermidine
+        label: Acetylspermidine
+        maps_to: species_6
+      - id: metabolic_pathway_state_32
+        label: Metabolic Pathway state 32
+        maps_to: species_8
+      - id: coa
+        label: CoA
+        maps_to: species_9
+      - id: mitochondrial_tetrahydrofolate
+        label: Mitochondrial Tetrahydrofolate
+        maps_to: m_thf
+      - id: metabolic_pathway_state_35
+        label: Metabolic Pathway state 35
+        maps_to: m_2cf
+      - id: metabolic_pathway_state_36
+        label: Metabolic Pathway state 36
+        maps_to: m_1cf
+      - id: metabolic_pathway_state_37
+        label: Metabolic Pathway state 37
+        maps_to: m_10f
+      - id: m_serine
+        label: M Serine
+        maps_to: m_ser
+      - id: m_glycine
+        label: M Glycine
+        maps_to: m_gly
+      - id: m_formate
+        label: M Formate
+        maps_to: m_coo
+      - id: sarcosine
+        label: Sarcosine
+        maps_to: src
+      - id: dimethylglycine
+        label: Dimethylglycine
+        maps_to: dmg
+  communication_step: 1.0
+runtime:
+  dependencies:
+    packages:
+    - PyYAML==6.0.2
+parameters:
+- name: integration_step
+  value: 1.0
+  min: 0.0
+  units: model_time
+  description: Sampling step for the visualisation model.
+io:
+  inputs:
+  - name: metabolism_sbml_reyes_palomares2012_a_combined_model_hepatic_pol_biomd0000000450_model_observable_values
+    description: Latest user-facing observable values from the core metabolism model.
+  - name: metabolism_sbml_reyes_palomares2012_a_combined_model_hepatic_pol_biomd0000000450_model_run_summary
+    description: Run summary from the core metabolism model.
+  - name: metabolism_sbml_reyes_palomares2012_a_combined_model_hepatic_pol_biomd0000000450_model_observable_labels
+    description: Display labels for user-facing observables.
+  outputs: []

@@ -1,0 +1,68 @@
+schema_version: '2.0'
+title: Curien2009_Aspartate_Metabolism Visualisation
+description: Dedicated presentation model for Curien2009_Aspartate_Metabolism.
+standard: other
+tags:
+- metabolism
+- visualisation
+authors:
+- Biosimulant Team
+biosim:
+  entrypoint: src.metabolism_visualisation:MetabolismVisualisationModel
+  init_kwargs:
+    integration_step: 1.0
+    lab_title: Curien2009_Aspartate_Metabolism Lab
+    question: Which metabolic pathway dynamics observables show the strongest activity in
+      Curien2009_Aspartate_Metabolism?
+    answer_focus: metabolic pathway dynamics
+    sources:
+    - alias: metabolism_sbml_curien2009_aspartate_metabolism_biomd0000000212_model
+      title: Curien2009_Aspartate_Metabolism
+      scope: metabolic pathway dynamics
+      label_caveat: Values are native SBML quantities. Conservative pathway-state labels are
+        used where the bundled SBML does not encode exact metabolite identities.
+      observables:
+      - id: metabolic_pathway_state_1
+        label: Metabolic Pathway state 1
+        maps_to: Lys
+      - id: aspartyl_p
+        label: Aspartyl P
+        maps_to: AspP
+      - id: threonine
+        label: Threonine
+        maps_to: Thr
+      - id: aspartate_semialdehyde
+        label: Aspartate Semialdehyde
+        maps_to: ASA
+      - id: homoserine
+        label: Homoserine
+        maps_to: Hser
+      - id: phosphohomoserine
+        label: Phosphohomoserine
+        maps_to: PHser
+      - id: metabolic_pathway_state_7
+        label: Metabolic Pathway state 7
+        maps_to: TS1
+      - id: isoleucine
+        label: Isoleucine
+        maps_to: Ile
+  communication_step: 1.0
+runtime:
+  dependencies:
+    packages:
+    - PyYAML==6.0.2
+parameters:
+- name: integration_step
+  value: 1.0
+  min: 0.0
+  units: model_time
+  description: Sampling step for the visualisation model.
+io:
+  inputs:
+  - name: metabolism_sbml_curien2009_aspartate_metabolism_biomd0000000212_model_observable_values
+    description: Latest user-facing observable values from the core metabolism model.
+  - name: metabolism_sbml_curien2009_aspartate_metabolism_biomd0000000212_model_run_summary
+    description: Run summary from the core metabolism model.
+  - name: metabolism_sbml_curien2009_aspartate_metabolism_biomd0000000212_model_observable_labels
+    description: Display labels for user-facing observables.
+  outputs: []

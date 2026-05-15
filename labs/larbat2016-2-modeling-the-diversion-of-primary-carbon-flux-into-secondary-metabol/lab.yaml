@@ -1,0 +1,82 @@
+schema_version: '2.0'
+title: Larbat2016.2 - Modeling the diversion of primary carbon flux into secondary metabolism
+  under variable nitrate and light or dark conditions (Light Dark Cycles) Lab
+description: This is a global mathematical model describing metabolic partitioning of carbon
+  resources in plants between growth and defense, as a function of nitrate fertilization.
+  It can be used to explore metabolic flux dynamics and compare pathway behavior across conditions.
+io:
+  inputs:
+  - name: initial_metabolic_pathway_state_1
+    maps_to: metabolism_sbml_larbat2016_2_modeling_the_diversion_of_primary_c_biomd0000000858_model.initial_metabolic_pathway_state_1
+    default: 0.748
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 1. Maps to bundled SBML symbol
+      `sucr`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_metabolic_pathway_state_2
+    maps_to: metabolism_sbml_larbat2016_2_modeling_the_diversion_of_primary_c_biomd0000000858_model.initial_metabolic_pathway_state_2
+    default: 2.825
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 2. Maps to bundled SBML symbol
+      `EtrioseP`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_metabolic_pathway_state_3
+    maps_to: metabolism_sbml_larbat2016_2_modeling_the_diversion_of_primary_c_biomd0000000858_model.initial_metabolic_pathway_state_3
+    default: 9.751e-07
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 3. Maps to bundled SBML symbol
+      `Ephe`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_metabolic_pathway_state_4
+    maps_to: metabolism_sbml_larbat2016_2_modeling_the_diversion_of_primary_c_biomd0000000858_model.initial_metabolic_pathway_state_4
+    default: 4.998
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 4. Maps to bundled SBML symbol
+      `N`. Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_metabolic_pathway_state_5
+    maps_to: metabolism_sbml_larbat2016_2_modeling_the_diversion_of_primary_c_biomd0000000858_model.initial_metabolic_pathway_state_5
+    default: 6.041
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 5. Maps to bundled SBML symbol
+      `starch`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: metabolic_pathway_state_1
+    maps_to: metabolism_sbml_larbat2016_2_modeling_the_diversion_of_primary_c_biomd0000000858_model.metabolic_pathway_state_1
+  - name: metabolic_pathway_state_2
+    maps_to: metabolism_sbml_larbat2016_2_modeling_the_diversion_of_primary_c_biomd0000000858_model.metabolic_pathway_state_2
+  - name: metabolic_pathway_state_3
+    maps_to: metabolism_sbml_larbat2016_2_modeling_the_diversion_of_primary_c_biomd0000000858_model.metabolic_pathway_state_3
+  - name: metabolic_pathway_state_4
+    maps_to: metabolism_sbml_larbat2016_2_modeling_the_diversion_of_primary_c_biomd0000000858_model.metabolic_pathway_state_4
+  - name: metabolic_pathway_state_5
+    maps_to: metabolism_sbml_larbat2016_2_modeling_the_diversion_of_primary_c_biomd0000000858_model.metabolic_pathway_state_5
+  - name: observable_values
+    maps_to: metabolism_sbml_larbat2016_2_modeling_the_diversion_of_primary_c_biomd0000000858_model.observable_values
+  - name: run_summary
+    maps_to: metabolism_sbml_larbat2016_2_modeling_the_diversion_of_primary_c_biomd0000000858_model.run_summary
+  - name: observable_labels
+    maps_to: metabolism_sbml_larbat2016_2_modeling_the_diversion_of_primary_c_biomd0000000858_model.observable_labels
+models:
+- alias: metabolism_sbml_larbat2016_2_modeling_the_diversion_of_primary_c_biomd0000000858_model
+  path: models/core
+  parameters:
+    model_path: data/BIOMD0000000858.xml
+    integration_step: 0.1
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: metabolism_sbml_larbat2016_2_modeling_the_diversion_of_primary_c_biomd0000000858_model.observable_values
+  to:
+  - visualisation.metabolism_sbml_larbat2016_2_modeling_the_diversion_of_primary_c_biomd0000000858_model_observable_values
+- from: metabolism_sbml_larbat2016_2_modeling_the_diversion_of_primary_c_biomd0000000858_model.run_summary
+  to:
+  - visualisation.metabolism_sbml_larbat2016_2_modeling_the_diversion_of_primary_c_biomd0000000858_model_run_summary
+- from: metabolism_sbml_larbat2016_2_modeling_the_diversion_of_primary_c_biomd0000000858_model.observable_labels
+  to:
+  - visualisation.metabolism_sbml_larbat2016_2_modeling_the_diversion_of_primary_c_biomd0000000858_model_observable_labels
+runtime:
+  duration: 10.0
+  communication_step: 1.0
+  initial_inputs: {}

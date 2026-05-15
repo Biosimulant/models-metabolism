@@ -1,0 +1,81 @@
+schema_version: '2.0'
+title: Piedrafita2010_MR_System Lab
+description: "This is the self maintaining metabolism model described in the article: A Simple\
+  \ Self-Maintaining Metabolic System: Robustness, Autocatalysis, Bistability. Piedrafita\
+  \ G, Montero F, Mor\xE1n F, C\xE1rdenas M."
+io:
+  inputs:
+  - name: initial_metabolic_pathway_state_1
+    maps_to: metabolism_sbml_piedrafita2010_mr_system_biomd0000000257_model.initial_metabolic_pathway_state_1
+    default: 5.0
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 1. Maps to bundled SBML symbol
+      `STU`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_metabolic_pathway_state_2
+    maps_to: metabolism_sbml_piedrafita2010_mr_system_biomd0000000257_model.initial_metabolic_pathway_state_2
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 2. Maps to bundled SBML symbol
+      `STUS`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_metabolic_pathway_state_3
+    maps_to: metabolism_sbml_piedrafita2010_mr_system_biomd0000000257_model.initial_metabolic_pathway_state_3
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 3. Maps to bundled SBML symbol
+      `STUST`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_metabolic_pathway_state_4
+    maps_to: metabolism_sbml_piedrafita2010_mr_system_biomd0000000257_model.initial_metabolic_pathway_state_4
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 4. Maps to bundled SBML symbol
+      `STUSU`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_metabolic_pathway_state_5
+    maps_to: metabolism_sbml_piedrafita2010_mr_system_biomd0000000257_model.initial_metabolic_pathway_state_5
+    default: 0.0
+    units: native SBML value
+    description: Initial condition for metabolic pathway state 5. Maps to bundled SBML symbol
+      `SU`. Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: metabolic_pathway_state_1
+    maps_to: metabolism_sbml_piedrafita2010_mr_system_biomd0000000257_model.metabolic_pathway_state_1
+  - name: metabolic_pathway_state_2
+    maps_to: metabolism_sbml_piedrafita2010_mr_system_biomd0000000257_model.metabolic_pathway_state_2
+  - name: metabolic_pathway_state_3
+    maps_to: metabolism_sbml_piedrafita2010_mr_system_biomd0000000257_model.metabolic_pathway_state_3
+  - name: metabolic_pathway_state_4
+    maps_to: metabolism_sbml_piedrafita2010_mr_system_biomd0000000257_model.metabolic_pathway_state_4
+  - name: metabolic_pathway_state_5
+    maps_to: metabolism_sbml_piedrafita2010_mr_system_biomd0000000257_model.metabolic_pathway_state_5
+  - name: observable_values
+    maps_to: metabolism_sbml_piedrafita2010_mr_system_biomd0000000257_model.observable_values
+  - name: run_summary
+    maps_to: metabolism_sbml_piedrafita2010_mr_system_biomd0000000257_model.run_summary
+  - name: observable_labels
+    maps_to: metabolism_sbml_piedrafita2010_mr_system_biomd0000000257_model.observable_labels
+models:
+- alias: metabolism_sbml_piedrafita2010_mr_system_biomd0000000257_model
+  path: models/core
+  parameters:
+    model_path: data/BIOMD0000000257.xml
+    integration_step: 0.1
+- alias: visualisation
+  path: models/visualisation
+wiring:
+- from: metabolism_sbml_piedrafita2010_mr_system_biomd0000000257_model.observable_values
+  to:
+  - visualisation.metabolism_sbml_piedrafita2010_mr_system_biomd0000000257_model_observable_values
+- from: metabolism_sbml_piedrafita2010_mr_system_biomd0000000257_model.run_summary
+  to:
+  - visualisation.metabolism_sbml_piedrafita2010_mr_system_biomd0000000257_model_run_summary
+- from: metabolism_sbml_piedrafita2010_mr_system_biomd0000000257_model.observable_labels
+  to:
+  - visualisation.metabolism_sbml_piedrafita2010_mr_system_biomd0000000257_model_observable_labels
+runtime:
+  duration: 10.0
+  communication_step: 1.0
+  initial_inputs: {}

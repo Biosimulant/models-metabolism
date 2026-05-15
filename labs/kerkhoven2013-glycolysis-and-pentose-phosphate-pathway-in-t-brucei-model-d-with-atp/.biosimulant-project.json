@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "local_id": "9fc7956e-bb7d-497d-a1ce-0e83b91c99e3",
+  "kind": "lab",
+  "source": "local",
+  "hub_id": "bd6edbf1-3583-430d-afc6-d609396c4a0a",
+  "created_at": "2026-05-15T16:03:02.500372033+00:00",
+  "last_synced_at": "2026-05-15T20:00:34.679062+00:00",
+  "hub_manifest_hash": "ac3b737fafc9793d0aaffe094c0c18b3c5dbc52b44981173dea6e51cf136fc60",
+  "package_name": "k2013-datp-glycolysis-lab"
+}

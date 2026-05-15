@@ -1,0 +1,105 @@
+schema_version: '2.0'
+title: Galazzo1990_FermentationPathwayKinetics
+description: 'This a model from the article: Fermentation pathway kinetics and metabolic flux
+  control in suspended and immobilized Saccharomyces cerevisiae Jorge L. It can be used to
+  explore metabolic flux dynamics and compare pathway behavior across conditions.'
+standard: sbml
+tags:
+- biomodels_ebi
+- faithful
+- metabolism
+- ode
+- sbml
+- tellurium
+authors:
+- Biosimulant Team
+- Jorge L. Galazzo and James E. Bailey
+upstream:
+  id: biomodels_ebi:BIOMD0000000063
+  source_db: biomodels_ebi
+  source_id: BIOMD0000000063
+  standard: sbml
+  original_url: https://www.ebi.ac.uk/biomodels/BIOMD0000000063
+  download_url: https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000063?filename=BIOMD0000000063_url.xml
+  license: CC0
+biosim:
+  entrypoint: src.galazzo1990_fermentationpathwaykinetics_biomd0000000063_model:Galazzo1990FermentationpathwaykineticsBiomd0000000063Model
+  init_kwargs:
+    model_path: data/BIOMD0000000063.xml
+    integration_step: 0.1
+  communication_step: 1.0
+runtime:
+  python_version: '3.12'
+  dependencies:
+    packages:
+    - tellurium==2.2.11.2
+io:
+  inputs:
+  - name: initial_glucose_inside_the_cell
+    maps_to: Glci
+    default: 0.0345
+    units: native SBML value
+    description: Initial condition for glucose inside the cell. Maps to bundled SBML symbol
+      `Glci`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_atp
+    maps_to: ATP
+    default: 1.19
+    units: native SBML value
+    description: Initial condition for atp. Maps to bundled SBML symbol `ATP`. Applied before
+      the Tellurium simulation starts; this does not change kinetic parameters or equations.
+      Default from bundled SBML initial value.
+  - name: initial_glucose_6_phosphate
+    maps_to: G6P
+    default: 1.011
+    units: native SBML value
+    description: Initial condition for glucose 6 phosphate. Maps to bundled SBML symbol `G6P`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  - name: initial_fructose_1_6_phosphate
+    maps_to: FDP
+    default: 9.144
+    units: native SBML value
+    description: Initial condition for fructose 1 6 phosphate. Maps to bundled SBML symbol
+      `FDP`. Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
+  - name: initial_phosphoenol_pyruvate
+    maps_to: PEP
+    default: 0.0095
+    units: native SBML value
+    description: Initial condition for phosphoenol pyruvate. Maps to bundled SBML symbol `PEP`.
+      Applied before the Tellurium simulation starts; this does not change kinetic parameters
+      or equations. Default from bundled SBML initial value.
+  outputs:
+  - name: glucose_inside_the_cell
+    maps_to: Glci
+    label: Glucose Inside The Cell
+    description: Glucose Inside The Cell. Maps to SBML symbol `Glci`.
+  - name: atp
+    maps_to: ATP
+    label: ATP
+    description: ATP. Maps to SBML symbol `ATP`.
+  - name: glucose_6_phosphate
+    maps_to: G6P
+    label: Glucose 6 Phosphate
+    description: Glucose 6 Phosphate. Maps to SBML symbol `G6P`.
+  - name: fructose_1_6_phosphate
+    maps_to: FDP
+    label: Fructose 1 6 Phosphate
+    description: Fructose 1 6 Phosphate. Maps to SBML symbol `FDP`.
+  - name: phosphoenol_pyruvate
+    maps_to: PEP
+    label: Phosphoenol Pyruvate
+    description: Phosphoenol Pyruvate. Maps to SBML symbol `PEP`.
+  - name: observable_values
+    description: Latest user-facing observable values from the SBML run.
+  - name: run_summary
+    description: Largest-change and peak summary across simulated SBML observables.
+  - name: observable_labels
+    description: Mapping from user-facing observable ports to display labels.
+parameters:
+- name: integration_step
+  value: 0.1
+  min: 0.0
+  units: model_time
+  description: Internal sampling step for Tellurium output collection.
