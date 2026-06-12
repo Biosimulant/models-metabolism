@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: odea2007-ikappab
+version: 1.0.0
 title: ODea2007_IkappaB Lab
 description: O'Dea, E.L., Barken, D., Peralta, R.Q., Tran K.T., Werner, S.L., Kearns, J.D.,
   Levchenko, A., Hoffmann, A. A homeostatic model of IkB metabolism to control constitutive

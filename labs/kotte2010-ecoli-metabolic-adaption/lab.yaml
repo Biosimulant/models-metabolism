@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: kotte2010-ecoli-metabolic-adaption
+version: 1.0.0
 title: Kotte2010_Ecoli_Metabolic_Adaption Lab
 description: 'This is the model described in: Bacterial adaptation through distributed sensing
   of metabolic fluxes Oliver Kotte, Judith B Zaugg and Matthias Heinemann; Mol Sys Biol 2010;

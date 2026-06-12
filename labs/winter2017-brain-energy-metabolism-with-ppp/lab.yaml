@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: winter2017-brain-energy-metabolism-with-ppp
+version: 1.0.0
 title: Winter2017 - Brain Energy Metabolism with PPP Lab
 description: 'Winter2017 - Brain Energy Metabolism with PPP This model is described in the
   article: Mathematical analysis of the influence of brain metabolism on the BOLD signal in

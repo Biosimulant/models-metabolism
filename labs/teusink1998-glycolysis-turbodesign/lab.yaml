@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: teusink1998-glycolysis-turbodesign
+version: 1.0.0
 title: Teusink1998_Glycolysis_TurboDesign Lab
 description: 'This is the model described in the article: The danger of metabolic pathways
   with turbo design Teusink B, Walsh MC, van Dam K, Westerhoff HV Trends Biochem. It can be

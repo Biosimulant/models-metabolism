@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: morgan2016-dynamics-of-cholesterol-metabolism-and-ageing
+version: 1.0.0
 title: Morgan2016 - Dynamics of cholesterol metabolism and ageing Lab
 description: 'Morgan2016 - Dynamics of cholesterolmetabolism and ageing This model is described
   in the article: Mathematically modelling the dynamics of cholesterol metabolism and ageing.

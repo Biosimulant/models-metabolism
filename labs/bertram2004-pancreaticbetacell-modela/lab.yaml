@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: bertram2004-pancreaticbetacell-modela
+version: 1.0.0
 title: Bertram2004_PancreaticBetaCell_modelA Lab
 description: 'This a model from the article: Calcium and glycolysis mediate multiple bursting
   modes in pancreatic islets. Bertram R, Satin L, Zhang M, Smolen P, Sherman A.'

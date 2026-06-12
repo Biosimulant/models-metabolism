@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: aubert2005-interaction-between-astrocytes-and-neurons-o-04ee33cf
+version: 1.0.0
 title: Aubert2005 - Interaction between astrocytes and neurons on energy metabolism Lab
 description: 'Aubert2005 - Interaction between astrocytesand neurons on energy metabolism
   Enocded non-curated model. Issues: - Confusing equations A.41 and A.42 - Missing values

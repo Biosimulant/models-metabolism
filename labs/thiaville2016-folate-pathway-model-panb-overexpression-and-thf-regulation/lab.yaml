@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: thiaville2016-folate-pathway-model-panb-overexpression-dceb8075
+version: 1.0.0
 title: Thiaville2016 - Folate pathway model (PanB overexpression and THF regulation) Lab
 description: 'Henry2016 Folate pathway model with inducedPanB reaction This model is described
   in the article: Experimental and Metabolic Modeling Evidence for a Folate-Cleaving Side-Activity

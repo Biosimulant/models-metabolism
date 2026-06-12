@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: mosca2012-central-carbon-metabolism-regulated-by-akt
+version: 1.0.0
 title: Mosca2012 - Central Carbon Metabolism Regulated by AKT Lab
 description: Mosca2012 - Central Carbon Metabolism Regulated by AKT The role of the PI3K/Akt/PKB
   signalling pathway in oncogenesis has been extensively investigated and altered expression

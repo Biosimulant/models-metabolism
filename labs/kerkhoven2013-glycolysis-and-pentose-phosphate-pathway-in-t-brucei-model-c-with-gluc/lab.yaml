@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: kerkhoven2013-glycolysis-and-pentose-phosphate-pathway-093c38b2
+version: 1.0.0
 title: Kerkhoven2013 C-Glucose Standalone Glycolysis Lab
 description: Kerkhoven2013 - Glycolysis and Pentose Phosphate Pathway in T.brucei -MODEL C
   (with glucosomal ribokinase) There are six models (Model A, B, C, C-fruc, D, D-fruc) described

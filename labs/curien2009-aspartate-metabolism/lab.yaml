@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: curien2009-aspartate-metabolism
+version: 1.0.0
 title: Curien2009_Aspartate_Metabolism Lab
 description: 'This a model described in the article: Understanding the regulation of aspartate
   metabolism using a model based on measured kinetic parameters. Curien G, Bastien O, Robert-Genthon

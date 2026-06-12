@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: larbat2016-3-modeling-the-diversion-of-primary-carbon-f-1a850185
+version: 1.0.0
 title: Larbat2016.3 - Modeling the diversion of primary carbon flux into secondary metabolism
   under variable nitrate and light or dark conditions (Light Dark Cycles with Minimum Starch
   Adaption) Lab

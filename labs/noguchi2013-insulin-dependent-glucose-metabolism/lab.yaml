@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: noguchi2013-insulin-dependent-glucose-metabolism
+version: 1.0.0
 title: Noguchi2013 - Insulin dependent glucose metabolism Lab
 description: Rei Noguchi, Hiroyuki Kubota, Katsuyuki Yugi, Yu Toyoshima, Yasunori Komori,
   Tomoyoshi Soga & Shinya Kuroda. The selective control of glycolysis, gluconeogenesis and

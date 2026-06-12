@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: nitin2023-kinetic-model-of-cellular-metabolism
+version: 1.0.0
 title: Nitin2023- Kinetic model of cellular metabolism Lab
 description: A simplistic numerical model designed to simulate and augment the commercially
   available real-time, in-vitro, end-point kinetic glycolysis assay with and without pathway-modulating

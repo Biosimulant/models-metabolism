@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: smallbone2013-glycolysis-in-s-cerevisiae-iteration-15
+version: 1.0.0
 title: Smallbone2013 - Glycolysis in S.cerevisiae - Iteration 15 Lab
 description: 'Smallbone2013 - Glycolysis in S.cerevisiae - Iteration 15 This model is described
   in the article: A model of yeast glycolysis based on a consistent kinetic characterization

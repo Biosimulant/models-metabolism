@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: deborasoncini2024-nad-biosynthesis-in-human-b-lymphocyt-b54ec8e4
+version: 1.0.0
 title: DeboraSoncini2024 - NAD_Biosynthesis_in Human_B_Lymphocytes,ODE model Lab
 description: This SBML file was created to capture NAD biosynthesis in human B-cells. This
   model contains 27 reactions with 42 enzymes, 31 metabolites and 157 parameters.

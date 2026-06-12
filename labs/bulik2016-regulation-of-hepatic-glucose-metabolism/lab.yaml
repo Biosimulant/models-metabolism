@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: bulik2016-regulation-of-hepatic-glucose-metabolism
+version: 1.0.0
 title: Bulik2016 - Regulation of hepatic glucose metabolism Lab
 description: 'Bulik2016 - Regulation of hepatic glucosemetabolism This model is described
   in the article: The relative importance of kinetic mechanisms and variable enzyme abundances

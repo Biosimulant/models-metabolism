@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: sluka2016-acetaminophen-metabolism
+version: 1.0.0
 title: Sluka2016 - Acetaminophen metabolism Lab
 description: 'Sluka2016 - Acetaminophen metabolism Liver metabolism of Acetaminophen: Acetaminophen
   (APAP) ismetabolized in the liver in both Phase I and Phase II reactions.Phase II reactions

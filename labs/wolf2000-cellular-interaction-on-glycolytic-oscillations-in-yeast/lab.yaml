@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: wolf2000-cellular-interaction-on-glycolytic-oscillation-79ba1d79
+version: 1.0.0
 title: Wolf2000 - Cellular interaction on glycolytic oscillations in yeast Lab
 description: Wolf2000 - Cellular interaction on glycolyticoscillations in yeast A two-cell
   model of glycolysis. It can be used to explore metabolic flux dynamics and compare pathway

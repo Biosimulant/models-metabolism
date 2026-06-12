@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: teusink2000-glycolysis
+version: 1.0.0
 title: Teusink2000_Glycolysis Lab
 description: Can yeast glycolysis be understood in terms of in vitro kinetics of the constituent
   enzymes? It can be used to explore metabolic flux dynamics and compare pathway behavior

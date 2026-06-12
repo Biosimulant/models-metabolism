@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: mcdougal2017-metabolism-in-ischemic-cardiomyocytes
+version: 1.0.0
 title: McDougal2017 - Metabolism in ischemic cardiomyocytes Lab
 description: Heart disease remains the leading cause of death globally. Although reperfusion
   following myocardial ischemia can prevent death by restoring nutrient flow, ischemia/reperfusion

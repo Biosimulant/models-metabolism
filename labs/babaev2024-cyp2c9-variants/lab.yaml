@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: babaev2024-cyp2c9-variants
+version: 1.0.0
 title: Babaev2024 - CYP2C9 variants Lab
 description: Modified model of losartan metabolism (Karatza and Karalis, 2020) incorporating
   different allelic variants of CYP2C9. It can be used to explore metabolic flux dynamics

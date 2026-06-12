@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: reddyhoff2015-acetaminophen-metabolism-and-toxicity
+version: 1.0.0
 title: Reddyhoff2015 - Acetaminophen metabolism and toxicity Lab
 description: Reddyhoff2015 - Acetaminophen metabolism and toxicity This model examines acetaminophen
   metabolism and related hepatotoxicity. Multiple pathways associated with APAP metabolism

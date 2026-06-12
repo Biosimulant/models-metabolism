@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: green1985-whole-body-vitamin-a-metabolism-in-rats
+version: 1.0.0
 title: Green1985 - whole-body vitamin A metabolism in rats Lab
 description: The first known metabolic model of Vitamin A metabolism. It can be used to explore
   metabolic flux dynamics and compare pathway behavior across conditions.

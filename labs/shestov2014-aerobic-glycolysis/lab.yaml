@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: shestov2014-aerobic-glycolysis
+version: 1.0.0
 title: Shestov2014 - aerobic glycolysis Lab
 description: Metabolism Shestov2014Aerobic Glycolysis Model1504010000Model models metabolism
   shestov2014 aerobic glycolysis model1504010000 dynamics as a OTHER simulation curated from

@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: luna2013-circadianclock-sirt1
+version: 1.0.0
 title: Luna2013_CircadianClock_SIRT1 Lab
 description: An in silico model to examine damage-induced circadian phase shifts by investigating
   a possible mechanism linking circadian rhythms to metabolism. The proposed model involves

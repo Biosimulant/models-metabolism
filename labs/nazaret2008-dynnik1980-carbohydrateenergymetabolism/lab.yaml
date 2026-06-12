@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: nazaret2008-dynnik1980-carbohydrateenergymetabolism
+version: 1.0.0
 title: Nazaret2008_Dynnik1980_CarbohydrateEnergyMetabolism Lab
 description: "This model is from the article: An old paper revisited: \u2018\u2018A mathematical\
   \ model of carbohydrate energy metabolism. Interaction between glycolysis, the Krebs cycle\

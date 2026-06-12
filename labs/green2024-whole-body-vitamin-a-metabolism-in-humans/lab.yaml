@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: green2024-whole-body-vitamin-a-metabolism-in-humans
+version: 1.0.0
 title: Green2024 - whole-body vitamin A metabolism in humans Lab
 description: Metabolism Green2024Whole Body Vitamin AMetabolism In Hum Model2411290001Model
   models core biological dynamics as a OTHER simulation curated from biomodels_ebi (biomodels_ebi:MODEL2411290001),

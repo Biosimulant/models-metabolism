@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: vanbeek2007-oxphos-heartmusclecells
+version: 1.0.0
 title: vanBeek2007_OxPhos_HeartMuscleCells Lab
 description: 'This a model from the article: Adenine nucleotide-creatine-phosphate module
   in myocardial metabolic systemexplains fast phase of dynamic regulation of oxidative phosphorylation.

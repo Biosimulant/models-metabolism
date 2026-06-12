@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: smallbone2013-serine-biosynthesis
+version: 1.0.0
 title: Smallbone2013 - Serine biosynthesis Lab
 description: 'Smallbone2013 - Serine biosynthesis Kinetic modelling of metabolic pathways
   in application to Serine biosynthesis. This model is described in the article: Kinetic Modeling

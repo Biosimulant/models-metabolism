@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: mcauley2012-whole-body-cholesterol-metabolism
+version: 1.0.0
 title: McAuley2012 - Whole-body Cholesterol Metabolism Lab
 description: McAuley2012 - Whole-body Cholesterol Metabolism Lipid metabolism has a key role
   to play in human longevity and healthy aging. A whole-body mathematical model of cholesterol

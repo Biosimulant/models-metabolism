@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: green1994-whole-body-vitamin-a-metabolism-in-humans
+version: 1.0.0
 title: Green1994 - whole-body vitamin A metabolism in humans Lab
 description: Metabolism Green1994Whole Body Vitamin AMetabolism In Hum Model2403010001Model
   represents core biological mechanisms from biomodels_ebi reference biomodels_ebi:MODEL2403010001.

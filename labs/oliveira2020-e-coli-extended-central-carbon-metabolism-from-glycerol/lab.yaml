@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: oliveira2020-e-coli-extended-central-carbon-metabolism-d9e6aea3
+version: 1.0.0
 title: Oliveira2020 - E. coli Extended Central Carbon Metabolism from Glycerol Lab
 description: The kinetic model of E. coli central carbon metabolism developed by Millard et
   al.

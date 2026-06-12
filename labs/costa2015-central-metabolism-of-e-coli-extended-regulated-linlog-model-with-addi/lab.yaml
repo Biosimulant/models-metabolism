@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: costa2015-central-metabolism-of-e-coli-extended-regulat-02d4c2cf
+version: 1.0.0
 title: Costa2015 - Central metabolism of E. coli, extended regulated linlog model ( with additional
   allosteric regulations than the Model1) Lab
 description: Metabolism Costa2015Central Metabolism Of EColi Extended Model1504080006Model

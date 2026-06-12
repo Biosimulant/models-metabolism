@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: klipp2002-metabolicoptimization-linearpathway-n-2
+version: 1.0.0
 title: Klipp2002_MetabolicOptimization_linearPathway(n=2) Lab
 description: Klipp2002_MetabolicOptimization_linearPathway(n=2) The model describes time dependent
   gene expression as a means to enable cells to adapt metabolic activity optimally based on

@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: larbat2016-1-modeling-the-diversion-of-primary-carbon-f-1f8f5259
+version: 1.0.0
 title: Larbat2016.1 - Modeling the diversion of primary carbon flux into secondary metabolism
   under variable nitrate and light or dark conditions (Base Model) Lab
 description: This is a global mathematical model describing metabolic partitioning of carbon

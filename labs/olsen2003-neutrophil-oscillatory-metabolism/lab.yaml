@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: olsen2003-neutrophil-oscillatory-metabolism
+version: 1.0.0
 title: Olsen2003_neutrophil_oscillatory_metabolism Lab
 description: 'Olsen2003_neutrophil_oscillatory_metabolism This model is described in the article:
   A model of the oscillatory metabolism of activated neutrophils. Olsen LF, Kummer U, Kindzelskii

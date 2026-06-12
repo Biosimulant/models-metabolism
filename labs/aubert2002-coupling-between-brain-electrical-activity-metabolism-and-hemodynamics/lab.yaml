@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: aubert2002-coupling-between-brain-electrical-activity-m-2ac3056e
+version: 1.0.0
 title: Aubert2002 - Coupling between Brain electrical activity, Metabolism and Hemodynamics
   Lab
 description: 'Aubert2002 - Coupling between Brainelectrical activity, Metabolism and Hemodynamics

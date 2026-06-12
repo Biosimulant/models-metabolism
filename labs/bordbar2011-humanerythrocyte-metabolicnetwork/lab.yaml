@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: bordbar2011-humanerythrocyte-metabolicnetwork
+version: 1.0.0
 title: Bordbar2011_HumanErythrocyte_MetabolicNetwork Lab
 description: 'This model is from the article: iAB-RBC-283: A proteomically derived knowledge-base
   of erythrocyte metabolism that can be used to simulate its physiological and patho-physiological

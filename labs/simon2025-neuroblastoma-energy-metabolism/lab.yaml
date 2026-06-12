@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: simon2025-neuroblastoma-energy-metabolism
+version: 1.0.0
 title: Simon2025 - Neuroblastoma energy metabolism Lab
 description: Metabolism Simon2025Neuroblastoma Energy Metabolism Model2502190001Model models
   core biological dynamics as a OTHER simulation curated from biomodels_ebi (biomodels_ebi:MODEL2502190001),

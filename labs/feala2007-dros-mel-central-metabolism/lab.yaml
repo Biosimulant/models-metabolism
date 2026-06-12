@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: feala2007-dros-mel-central-metabolism
+version: 1.0.0
 title: Feala2007_dros_mel_central_metabolism Lab
 description: 'Model described in: Flexibility in energy metabolism supports hypoxia tolerance
   in Drosophila flight muscle: metabolomic and computational systems analysis. It can be used

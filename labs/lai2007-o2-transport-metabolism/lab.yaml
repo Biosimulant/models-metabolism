@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: lai2007-o2-transport-metabolism
+version: 1.0.0
 title: Lai2007_O2_Transport_Metabolism Lab
 description: 'This file describes the SBML version of the mathematical model in the following
   journal article: Linking Pulmonary Oxygen Uptake, Muscle Oxygen Utilization and Cellular

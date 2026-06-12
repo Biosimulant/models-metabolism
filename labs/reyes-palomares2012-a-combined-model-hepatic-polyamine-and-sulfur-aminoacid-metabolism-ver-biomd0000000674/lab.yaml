@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: reyes-palomares2012-a-combined-model-hepatic-polyamine-94875c60
+version: 1.0.0
 title: Reyes-Palomares2012 V1 Standalone Polyamine Sulfur Lab
 description: Reyes-Palomares2012 - a combined modelhepatic polyamine and sulfur aminoacid
   metabolism - version1 Mammalian polyamine metabolism consists of a bi-cycle with two required

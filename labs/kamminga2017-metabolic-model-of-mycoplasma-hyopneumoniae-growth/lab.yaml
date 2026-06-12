@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: kamminga2017-metabolic-model-of-mycoplasma-hyopneumoniae-growth
+version: 1.0.0
 title: Kamminga2017 - Metabolic model of Mycoplasma hyopneumoniae growth Lab
 description: 'Kamminga2017 - Metabolic model of Mycoplasma hyopneumoniae growth This model
   is described in the article: Metabolic modeling of energy balances in Mycoplasma hyopneumoniae

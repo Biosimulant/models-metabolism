@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: macdonald2011-geneticmetabolicdeterminants-buchnereaphidicola
+version: 1.0.0
 title: MacDonald2011_GeneticMetabolicDeterminants_BuchnereAphidicola Lab
 description: 'This model is from the article: Genetic and metabolic determinants of nutritional
   phenotype in an insect-bacterial symbiosis. It can be used to explore metabolic flux dynamics

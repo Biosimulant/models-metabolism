@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: costa2015-central-metabolism-of-e-coli-non-regulated-li-3f9f85f1
+version: 1.0.0
 title: Costa2015 - Central metabolism of E. coli, non-regulated linlog model (without allosteric
   regulations) Lab
 description: Metabolism Costa2015Central Metabolism Of EColi Non Regul Model1504080005Model

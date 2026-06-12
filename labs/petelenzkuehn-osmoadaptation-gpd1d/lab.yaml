@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: petelenzkuehn-osmoadaptation-gpd1d
+version: 1.0.0
 title: PetelenzKuehn_osmoadaptation_gpd1D Lab
 description: 'Petelenz-kurdzeil2013 - Osmo adaptationgpd1D This model is described in the
   article: Quantitative analysis of glycerol accumulation, glycolysis and growth under hyper

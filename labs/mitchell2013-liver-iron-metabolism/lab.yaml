@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: mitchell2013-liver-iron-metabolism
+version: 1.0.0
 title: Mitchell2013 - Liver Iron Metabolism Lab
 description: 'Mitchell2013 - Liver Iron Metabolism The model includes the core regulatory
   components of human liver iron metabolism. This model is described in the article: A computational

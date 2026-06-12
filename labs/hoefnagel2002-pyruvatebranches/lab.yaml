@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: hoefnagel2002-pyruvatebranches
+version: 1.0.0
 title: Hoefnagel2002_PyruvateBranches Lab
 description: 'This a model from the article: Metabolic engineering of lactic acid bacteria,
   the combined approach: kinetic modelling, metabolic control and experimental analysis. It

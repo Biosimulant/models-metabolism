@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: sier2017-e2-combined
+version: 1.0.0
 title: Sier2017_E2_combined Lab
 description: Using scaling from PhysB modelBlood flow in L/hrCompartments in KgBaseline as
   ~0.003nM Free E2 in Blood_venous E2 biosynthesis rate constant = 2 E2 biosynthesis species

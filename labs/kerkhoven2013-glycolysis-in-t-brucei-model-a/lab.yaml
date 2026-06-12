@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: kerkhoven2013-glycolysis-in-t-brucei-model-a
+version: 1.0.0
 title: Kerkhoven2013 - Glycolysis in T.brucei - MODEL A Lab
 description: Kerkhoven2013 - Glycolysis in T.brucei - MODEL A There are six models (Model
   A, B, C, C-fruc, D, D-fruc) described in the paper. Model A ( BIOMD0000000513 ) is the model

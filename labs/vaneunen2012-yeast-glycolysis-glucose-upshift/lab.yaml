@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: vaneunen2012-yeast-glycolysis-glucose-upshift
+version: 1.0.0
 title: vanEunen2012 - Yeast Glycolysis (glucose upshift) Lab
 description: 'This is corresponding to the model of yeast glycolysis ''glucose upshift'' condition
   described in the paper ''Testing Biochemistry Revisited: How In Vivo Metabolism Can Be Understood

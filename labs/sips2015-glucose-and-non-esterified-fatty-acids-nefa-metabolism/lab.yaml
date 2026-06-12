@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: sips2015-glucose-and-non-esterified-fatty-acids-nefa-metabolism
+version: 1.0.0
 title: Sips2015 - Glucose and non-esterified fatty acids (NEFA) metabolism Lab
 description: 'This a model from the article: Model-Based Quantification of the Systemic Interplay
   between Glucose and Fatty Acids in the Postprandial State. It can be used to explore metabolic

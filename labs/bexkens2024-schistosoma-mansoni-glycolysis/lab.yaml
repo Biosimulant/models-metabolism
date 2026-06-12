@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: bexkens2024-schistosoma-mansoni-glycolysis
+version: 1.0.0
 title: Bexkens2024 - Schistosoma mansoni glycolysis Lab
 description: A kinetic model of S. mansoni glycolysis in which we can vary the allosteric
   regulation on lactate dehydrogenase (LDH).

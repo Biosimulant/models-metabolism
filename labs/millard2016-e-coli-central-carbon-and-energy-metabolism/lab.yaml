@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: millard2016-e-coli-central-carbon-and-energy-metabolism
+version: 1.0.0
 title: Millard2016 - E. coli central carbon and energy metabolism Lab
 description: 'Millard2016 - E. coli central carbon andenergy metabolism This model is described
   in the article: Metabolic regulation is sufficient for global and robust coordination of

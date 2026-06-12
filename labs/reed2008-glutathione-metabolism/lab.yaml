@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: reed2008-glutathione-metabolism
+version: 1.0.0
 title: Reed2008_Glutathione_Metabolism Lab
 description: 'This is the model described in the article: A mathematical model of glutathione
   metabolism. Michael C Reed, Rachel L Thomas, Jovana Pavisic, S.'

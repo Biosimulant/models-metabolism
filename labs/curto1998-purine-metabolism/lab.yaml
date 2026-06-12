@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: curto1998-purine-metabolism
+version: 1.0.0
 title: Curto1998 - purine metabolism Lab
 description: Curto1998 - purine metabolism This is a purine metabolism model that is geared
   toward studies of gout. It can be used to explore metabolic flux dynamics and compare pathway

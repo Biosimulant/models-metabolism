@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: costa2014-computational-model-of-l-lactis-metabolism
+version: 1.0.0
 title: Costa2014 - Computational Model of L. lactis Metabolism Lab
 description: 'Costa2014 - Computational Model of L. lactisMetabolism This model is described
   in the article: An extended dynamic model of Lactococcus lactis metabolism for mannitol

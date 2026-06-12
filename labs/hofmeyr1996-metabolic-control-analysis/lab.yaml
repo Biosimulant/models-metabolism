@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: hofmeyr1996-metabolic-control-analysis
+version: 1.0.0
 title: Hofmeyr1996 - metabolic control analysis Lab
 description: Hofmeyr1996 - metabolic control analysis Understanding of genetic mechanisms
   would not be possible by studying the properties of individual components. To better understand

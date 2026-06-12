@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: nazaret2009-tca-rc-atp
+version: 1.0.0
 title: Nazaret2009_TCA_RC_ATP Lab
 description: 'This a model from the article: Mitochondrial energetic metabolism: a simplified
   model of TCA cycle with ATP production. Nazaret C, Heiske M, Thurley K, Mazat JP J.'

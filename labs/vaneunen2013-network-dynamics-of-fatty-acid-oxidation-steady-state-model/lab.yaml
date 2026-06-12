@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: vaneunen2013-network-dynamics-of-fatty-acid-oxidation-s-61da8dff
+version: 1.0.0
 title: "vanEunen2013 - Network dynamics of fatty acid \u03B2-oxidation (steady-state model)\
   \ Lab"
 description: "vanEunen2013 - Network dynamics of fatty acid \u03B2-oxidation (steady-state\

@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: gupta2009-eicosanoid-metabolism
+version: 1.0.0
 title: Gupta2009 - Eicosanoid Metabolism Lab
 description: 'Gupta2009 - Eicosanoid Metabolism Integrated model of eicosanoid metabolism
   and signaling based on lipidomics flux analysis. This model is described in the article:

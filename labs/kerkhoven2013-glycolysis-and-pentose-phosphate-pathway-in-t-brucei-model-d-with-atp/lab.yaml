@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: kerkhoven2013-glycolysis-and-pentose-phosphate-pathway-c7fd6979
+version: 1.0.0
 title: Kerkhoven2013 D-ATP Standalone Glycolysis Lab
 description: Kerkhoven2013 - Glycolysis and Pentose Phosphate Pathway in T.brucei - MODEL
   D (with ATP:ADP antiporter) There are six models (Model A, B, C, C-fruc, D, D-fruc) described

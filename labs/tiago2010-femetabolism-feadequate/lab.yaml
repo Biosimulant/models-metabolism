@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: tiago2010-femetabolism-feadequate
+version: 1.0.0
 title: Tiago2010_FeMetabolism_FeAdequate Lab
 description: 'This a model from the article: Systems analysis of iron metabolism: the network
   of iron pools and fluxes Tiago JS Lopes, Tatyana Luganskaja, Maja Vujic-Spasic, Matthias

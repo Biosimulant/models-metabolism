@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: pritchard2002-glycolysis
+version: 1.0.0
 title: Pritchard2002_glycolysis Lab
 description: 'from: Schemes of fluc control in a model of Saccharomyces cerevisiae glycolysis
   Pritchard, L and Kell, DB Eur. It can be used to explore metabolic flux dynamics and compare

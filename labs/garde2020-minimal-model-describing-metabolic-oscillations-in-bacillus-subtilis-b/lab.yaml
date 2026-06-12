@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: garde2020-minimal-model-describing-metabolic-oscillatio-e575953d
+version: 1.0.0
 title: Garde2020-Minimal model describing metabolic oscillations in Bacillus subtilis biofilms
   Lab
 description: Biofilms offer an excellent example of ecological interaction among bacteria.

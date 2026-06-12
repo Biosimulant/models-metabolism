@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: chedere2022-nad-biosynthesis-in-human-liver
+version: 1.0.0
 title: Chedere2022 - NAD Biosynthesis in Human Liver Lab
 description: This SBML (L2V4) file is a well-annotated ODE-based model created to capture
   NAD biosynthesis in the human liver. This model contains 26 reactions with 29 genes, 31

@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: messiha2013-combined-glycolysis-and-pentose-phosphate-p-27c443bc
+version: 1.0.0
 title: Messiha2013 - combined glycolysis and pentose phosphate pathway model Lab
 description: Messiha2013 - combined glycolysis and pentose phosphate pathway model BIOMD0000000502
   and MODEL1303260018 are combined to examine the response to oxidative stress. It can be

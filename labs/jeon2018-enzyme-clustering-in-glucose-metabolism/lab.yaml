@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: jeon2018-enzyme-clustering-in-glucose-metabolism
+version: 1.0.0
 title: Jeon2018 - Enzyme clustering in Glucose metabolism Lab
 description: Miji Jeon, Hye-Won Kang & Songon An. A Mathematical Model for Enzyme Clustering
   in Glucose Metabolism.

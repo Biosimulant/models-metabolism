@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: bruck2008-glycolysis
+version: 1.0.0
 title: Bruck2008_Glycolysis Lab
 description: 'Exploring the effect of variable enzyme concentrations in a kinetic model of
   yeast glycolysis Jozsef Bruck, Wolfram Liebermeister, Edda Klipp, Genome Inform 2008 20:1-14

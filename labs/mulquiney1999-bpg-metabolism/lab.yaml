@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: mulquiney1999-bpg-metabolism
+version: 1.0.0
 title: Mulquiney1999_BPG_metabolism Lab
 description: 'This model is described and analysed in a series of three articles: Model of
   2,3-bisphosphoglycerate metabolism in the human erythrocyte based on detailed enzyme kinetic

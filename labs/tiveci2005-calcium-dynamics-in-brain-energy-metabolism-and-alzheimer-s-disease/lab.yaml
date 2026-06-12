@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: tiveci2005-calcium-dynamics-in-brain-energy-metabolism-0e0adb90
+version: 1.0.0
 title: Tiveci2005 - Calcium dynamics in brain energy metabolism and Alzheimer's disease Lab
 description: "Tiveci2005 - Calcium dynamics in brain energymetabolism and Alzheimer's disease\
   \ Encoded non-curated model. Issues: - Missing values: dHb,0 ; \u03B1 ; V ; \u03B3 ; Volume\

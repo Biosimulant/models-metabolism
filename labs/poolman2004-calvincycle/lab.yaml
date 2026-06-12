@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: poolman2004-calvincycle
+version: 1.0.0
 title: Poolman2004_CalvinCycle Lab
 description: 'This a model from the article: Applications of metabolic modelling to plant
   metabolism. It can be used to explore metabolic flux dynamics and compare pathway behavior

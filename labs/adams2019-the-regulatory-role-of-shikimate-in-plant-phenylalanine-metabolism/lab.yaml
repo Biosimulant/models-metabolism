@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: adams2019-the-regulatory-role-of-shikimate-in-plant-phe-83497f38
+version: 1.0.0
 title: Adams2019 - The regulatory role of shikimate in plant phenylalanine metabolism Lab
 description: This is a mathematical model of phenylalanine metabolism in plants as influenced
   by shikimate, with specific evidence of how shikimate dynamics influence phenylalanine metabolism

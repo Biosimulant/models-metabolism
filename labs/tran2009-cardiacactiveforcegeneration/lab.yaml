@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: tran2009-cardiacactiveforcegeneration
+version: 1.0.0
 title: Tran2009_CardiacActiveForceGeneration Lab
 description: 'This a model from the article: A metabolite-sensitive, thermodynamically constrained
   model of cardiaccross-bridge cycling: implications for force development during ischemia.

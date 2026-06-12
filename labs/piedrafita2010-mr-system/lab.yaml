@@ -1,4 +1,6 @@
 schema_version: '2.0'
+package: piedrafita2010-mr-system
+version: 1.0.0
 title: Piedrafita2010_MR_System Lab
 description: "This is the self maintaining metabolism model described in the article: A Simple\
   \ Self-Maintaining Metabolic System: Robustness, Autocatalysis, Bistability. Piedrafita\
