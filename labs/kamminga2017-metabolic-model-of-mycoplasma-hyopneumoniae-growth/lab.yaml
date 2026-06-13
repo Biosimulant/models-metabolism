@@ -1,48 +1,51 @@
 schema_version: '2.0'
 package: kamminga2017-metabolic-model-of-mycoplasma-hyopneumoniae-growth
-version: 1.0.0
+version: 1.0.1
 title: Kamminga2017 - Metabolic model of Mycoplasma hyopneumoniae growth Lab
-description: 'Kamminga2017 - Metabolic model of Mycoplasma hyopneumoniae growth This model
-  is described in the article: Metabolic modeling of energy balances in Mycoplasma hyopneumoniae
-  shows that pyruvate addition. It can be used to explore metabolic flux dynamics and compare
-  pathway behavior across conditions.'
+description: 'Kamminga2017 - Metabolic model of Mycoplasma hyopneumoniae growth This
+  model is described in the article: Metabolic modeling of energy balances in Mycoplasma
+  hyopneumoniae shows that pyruvate addition. It can be used to explore metabolic
+  flux dynamics and compare pathway behavior across conditions.'
 io:
   inputs:
   - name: initial_metabolic_pathway_state_1
     maps_to: metabolism_sbml_kamminga2017_metabolic_model_of_mycoplasma_hyopn_model1704250001_model.initial_metabolic_pathway_state_1
     default: 1.0
     units: native SBML value
-    description: Initial condition for metabolic pathway state 1. Maps to bundled SBML symbol
-      `M_AMMONIUM_c`. Applied before the Tellurium simulation starts; this does not change
-      kinetic parameters or equations. Default from bundled SBML initial value.
+    description: Initial condition for metabolic pathway state 1. Maps to bundled
+      SBML symbol `M_AMMONIUM_c`. Applied before the Tellurium simulation starts;
+      this does not change kinetic parameters or equations. Default from bundled SBML
+      initial value.
   - name: initial_lipoyl_adenylate
     maps_to: metabolism_sbml_kamminga2017_metabolic_model_of_mycoplasma_hyopn_model1704250001_model.initial_lipoyl_adenylate
     default: 1.0
     units: native SBML value
-    description: Initial condition for lipoyl adenylate. Maps to bundled SBML symbol `M_LIPOYLAMP_c`.
-      Applied before the Tellurium simulation starts; this does not change kinetic parameters
-      or equations. Default from bundled SBML initial value.
+    description: Initial condition for lipoyl adenylate. Maps to bundled SBML symbol
+      `M_LIPOYLAMP_c`. Applied before the Tellurium simulation starts; this does not
+      change kinetic parameters or equations. Default from bundled SBML initial value.
   - name: initial_metabolic_pathway_state_3
     maps_to: metabolism_sbml_kamminga2017_metabolic_model_of_mycoplasma_hyopn_model1704250001_model.initial_metabolic_pathway_state_3
     default: 1.0
     units: native SBML value
-    description: Initial condition for metabolic pathway state 3. Maps to bundled SBML symbol
-      `M_ACET_c`. Applied before the Tellurium simulation starts; this does not change kinetic
-      parameters or equations. Default from bundled SBML initial value.
+    description: Initial condition for metabolic pathway state 3. Maps to bundled
+      SBML symbol `M_ACET_c`. Applied before the Tellurium simulation starts; this
+      does not change kinetic parameters or equations. Default from bundled SBML initial
+      value.
   - name: initial_l_ribulose_5_phosphate
     maps_to: metabolism_sbml_kamminga2017_metabolic_model_of_mycoplasma_hyopn_model1704250001_model.initial_l_ribulose_5_phosphate
     default: 1.0
     units: native SBML value
-    description: Initial condition for l ribulose 5 phosphate. Maps to bundled SBML symbol
-      `M_LRIBULOSE5P_c`. Applied before the Tellurium simulation starts; this does not change
-      kinetic parameters or equations. Default from bundled SBML initial value.
+    description: Initial condition for l ribulose 5 phosphate. Maps to bundled SBML
+      symbol `M_LRIBULOSE5P_c`. Applied before the Tellurium simulation starts; this
+      does not change kinetic parameters or equations. Default from bundled SBML initial
+      value.
   - name: initial_l_valine
     maps_to: metabolism_sbml_kamminga2017_metabolic_model_of_mycoplasma_hyopn_model1704250001_model.initial_l_valine
     default: 1.0
     units: native SBML value
-    description: Initial condition for l valine. Maps to bundled SBML symbol `M_VAL_c`. Applied
-      before the Tellurium simulation starts; this does not change kinetic parameters or equations.
-      Default from bundled SBML initial value.
+    description: Initial condition for l valine. Maps to bundled SBML symbol `M_VAL_c`.
+      Applied before the Tellurium simulation starts; this does not change kinetic
+      parameters or equations. Default from bundled SBML initial value.
   outputs:
   - name: metabolic_pathway_state_1
     maps_to: metabolism_sbml_kamminga2017_metabolic_model_of_mycoplasma_hyopn_model1704250001_model.metabolic_pathway_state_1

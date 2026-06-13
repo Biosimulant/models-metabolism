@@ -1,48 +1,48 @@
 schema_version: '2.0'
 package: kerkhoven2013-glycolysis-and-pentose-phosphate-pathway-935a4fdf
-version: 1.0.0
+version: 1.0.1
 title: Kerkhoven2013 D-Fructose Standalone Glycolysis Lab
-description: Kerkhoven2013 - Glycolysis and Pentose Phosphate Pathway in T.brucei - MODEL
-  D in fructose medium (with ATP:ADP antiporter) There are six models (Model A, B, C, C-fruc,
-  D, D-fruc) described in the pap. It can be used to explore metabolic flux dynamics and compare
-  pathway behavior across conditions.
+description: Kerkhoven2013 - Glycolysis and Pentose Phosphate Pathway in T.brucei
+  - MODEL D in fructose medium (with ATP:ADP antiporter) There are six models (Model
+  A, B, C, C-fruc, D, D-fruc) described in the pap. It can be used to explore metabolic
+  flux dynamics and compare pathway behavior across conditions.
 io:
   inputs:
   - name: initial_glycolysis_state_1
     maps_to: metabolism_sbml_kerkhoven2013_glycolysis_and_pentose_phosphate_p_biomd0000000516_model.initial_glycolysis_state_1
     default: 0.1
     units: native SBML value
-    description: Initial condition for glycolysis state 1. Maps to bundled SBML symbol `_2PGA_c`.
-      Applied before the Tellurium simulation starts; this does not change kinetic parameters
-      or equations. Default from bundled SBML initial value.
+    description: Initial condition for glycolysis state 1. Maps to bundled SBML symbol
+      `_2PGA_c`. Applied before the Tellurium simulation starts; this does not change
+      kinetic parameters or equations. Default from bundled SBML initial value.
   - name: initial_glycolysis_state_2
     maps_to: metabolism_sbml_kerkhoven2013_glycolysis_and_pentose_phosphate_p_biomd0000000516_model.initial_glycolysis_state_2
     default: 0.1
     units: native SBML value
-    description: Initial condition for glycolysis state 2. Maps to bundled SBML symbol `Fru_g`.
-      Applied before the Tellurium simulation starts; this does not change kinetic parameters
-      or equations. Default from bundled SBML initial value.
+    description: Initial condition for glycolysis state 2. Maps to bundled SBML symbol
+      `Fru_g`. Applied before the Tellurium simulation starts; this does not change
+      kinetic parameters or equations. Default from bundled SBML initial value.
   - name: initial_glycolysis_state_3
     maps_to: metabolism_sbml_kerkhoven2013_glycolysis_and_pentose_phosphate_p_biomd0000000516_model.initial_glycolysis_state_3
     default: 0.1
     units: native SBML value
-    description: Initial condition for glycolysis state 3. Maps to bundled SBML symbol `Fru_c`.
-      Applied before the Tellurium simulation starts; this does not change kinetic parameters
-      or equations. Default from bundled SBML initial value.
+    description: Initial condition for glycolysis state 3. Maps to bundled SBML symbol
+      `Fru_c`. Applied before the Tellurium simulation starts; this does not change
+      kinetic parameters or equations. Default from bundled SBML initial value.
   - name: initial_glycolysis_state_4
     maps_to: metabolism_sbml_kerkhoven2013_glycolysis_and_pentose_phosphate_p_biomd0000000516_model.initial_glycolysis_state_4
     default: 2.23132912
     units: native SBML value
-    description: Initial condition for glycolysis state 4. Maps to bundled SBML symbol `DHAP_c`.
-      Applied before the Tellurium simulation starts; this does not change kinetic parameters
-      or equations. Default from bundled SBML initial value.
+    description: Initial condition for glycolysis state 4. Maps to bundled SBML symbol
+      `DHAP_c`. Applied before the Tellurium simulation starts; this does not change
+      kinetic parameters or equations. Default from bundled SBML initial value.
   - name: initial_glycolysis_state_5
     maps_to: metabolism_sbml_kerkhoven2013_glycolysis_and_pentose_phosphate_p_biomd0000000516_model.initial_glycolysis_state_5
     default: 0.2405
     units: native SBML value
-    description: Initial condition for glycolysis state 5. Maps to bundled SBML symbol `ATP_g`.
-      Applied before the Tellurium simulation starts; this does not change kinetic parameters
-      or equations. Default from bundled SBML initial value.
+    description: Initial condition for glycolysis state 5. Maps to bundled SBML symbol
+      `ATP_g`. Applied before the Tellurium simulation starts; this does not change
+      kinetic parameters or equations. Default from bundled SBML initial value.
   outputs:
   - name: glycolysis_state_1
     maps_to: metabolism_sbml_kerkhoven2013_glycolysis_and_pentose_phosphate_p_biomd0000000516_model.glycolysis_state_1
